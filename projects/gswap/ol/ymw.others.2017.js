@@ -898,26 +898,6 @@ function removeYmwLoginPop() {
                 $this.removeAttr('href').attr({'data-aid':aid,'data-itemid':1019002});
             })
         },
-        indexPop:function () {
-            var cookiePopKey = 'indexOpenAppPop',cookiePopVal = 'isopened';
-            function showOpenAppPop() {
-                var openAppPopDom = '';
-                openAppPopDom += '<div class="openAppPop openAppPopMask openAppPopClose"></div>';
-                openAppPopDom += '<div class="openAppPop openAppPopMain">';
-                openAppPopDom += '<h5>温馨提示</h5><p>使用游民App，享受更顺畅的<br>阅读体验</p>';
-                openAppPopDom += '<div class="openAppPopBtns"><a class="openAppPopCloseBtn openAppPopClose">继续浏览网页版</a><a class="openAppPopBtn openAppPopClose countHit countHitSql" data-itemid="1019203">打开游民App</a></div>';
-                openAppPopDom += '</div>';
-
-                $('body').append(openAppPopDom);
-                $.cookie(cookiePopKey,cookiePopVal, {path: "/",expires: 1});
-                $('.openAppPopClose').on('click',function () {
-                    $('.openAppPop').remove();
-                })
-            }
-            if($.cookie(cookiePopKey) !== cookiePopVal){
-                showOpenAppPop();
-            }
-        },
         writeBtn:function () {
             if($(this.config.content.target).length>0){
                 this.contentBtn();
@@ -934,9 +914,6 @@ function removeYmwLoginPop() {
             }
             if($(this.config.content.backtarget).length>0 || $(this.config.content.target).length>0){
                 this.relContentBtn();
-            }
-            if($('.pagePositionIndex').length>0){
-                this.indexPop();
             }
         },
         bindClk:function () {
@@ -960,9 +937,6 @@ function removeYmwLoginPop() {
             $('.ymw-rel-list').on('click','.openAppRelContentBtn',function () {
                 var $this = $(this),aid = $this.attr('data-aid');
                 thObj.clkEvents('contentTuijian',aid,1019004);
-            });
-            $(document).on('click','.openAppPopBtn',function () {
-                thObj.clkEvents('home',0,1019204);
             });
         },
         init:function () {
@@ -1005,8 +979,10 @@ function removeYmwLoginPop() {
             function bindClk() {
                 var openBtn = $('#gsAreaContextOpen');
                 openBtn.find('a').on('tap',function () {
-                    $tar.addClass('cur');
-                    $tar.css('max-height','');
+                    setTimeout(function () {
+                        $tar.addClass('cur');
+                        $tar.css('max-height','');
+                    },300);
                 });
             }
             tarHeightRem = tarHeight/ww*7.2;

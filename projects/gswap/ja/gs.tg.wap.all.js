@@ -1,5 +1,5 @@
 (function ($) {
-    var basepath = 'ja/';
+    var basepath = 'http://ja1.gamersky.com/';
     var tgList = [
         {//wap首页底部浮窗（全站通发）(V1)
             tid:'#gsTgWapBottomFixed',
