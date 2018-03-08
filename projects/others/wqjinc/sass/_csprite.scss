@@ -1,0 +1,145 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$b-wi-btn-h-name: 'b-wi-btn-h';
+$b-wi-btn-h-x: 0px;
+$b-wi-btn-h-y: 92px;
+$b-wi-btn-h-offset-x: 0px;
+$b-wi-btn-h-offset-y: -92px;
+$b-wi-btn-h-width: 38px;
+$b-wi-btn-h-height: 20px;
+$b-wi-btn-h-total-width: 240px;
+$b-wi-btn-h-total-height: 112px;
+$b-wi-btn-h-image: '../ztimages/csprite.png';
+$b-wi-btn-h: (0px, 92px, 0px, -92px, 38px, 20px, 240px, 112px, '../ztimages/csprite.png', 'b-wi-btn-h', );
+$b-wi-btn-name: 'b-wi-btn';
+$b-wi-btn-x: 46px;
+$b-wi-btn-y: 92px;
+$b-wi-btn-offset-x: -46px;
+$b-wi-btn-offset-y: -92px;
+$b-wi-btn-width: 38px;
+$b-wi-btn-height: 20px;
+$b-wi-btn-total-width: 240px;
+$b-wi-btn-total-height: 112px;
+$b-wi-btn-image: '../ztimages/csprite.png';
+$b-wi-btn: (46px, 92px, -46px, -92px, 38px, 20px, 240px, 112px, '../ztimages/csprite.png', 'b-wi-btn', );
+$b-wi-mask-name: 'b-wi-mask';
+$b-wi-mask-x: 0px;
+$b-wi-mask-y: 0px;
+$b-wi-mask-offset-x: 0px;
+$b-wi-mask-offset-y: 0px;
+$b-wi-mask-width: 240px;
+$b-wi-mask-height: 38px;
+$b-wi-mask-total-width: 240px;
+$b-wi-mask-total-height: 112px;
+$b-wi-mask-image: '../ztimages/csprite.png';
+$b-wi-mask: (0px, 0px, 0px, 0px, 240px, 38px, 240px, 112px, '../ztimages/csprite.png', 'b-wi-mask', );
+$wi-btn-h-name: 'wi-btn-h';
+$wi-btn-h-x: 92px;
+$wi-btn-h-y: 92px;
+$wi-btn-h-offset-x: -92px;
+$wi-btn-h-offset-y: -92px;
+$wi-btn-h-width: 38px;
+$wi-btn-h-height: 20px;
+$wi-btn-h-total-width: 240px;
+$wi-btn-h-total-height: 112px;
+$wi-btn-h-image: '../ztimages/csprite.png';
+$wi-btn-h: (92px, 92px, -92px, -92px, 38px, 20px, 240px, 112px, '../ztimages/csprite.png', 'wi-btn-h', );
+$wi-btn-name: 'wi-btn';
+$wi-btn-x: 138px;
+$wi-btn-y: 92px;
+$wi-btn-offset-x: -138px;
+$wi-btn-offset-y: -92px;
+$wi-btn-width: 38px;
+$wi-btn-height: 20px;
+$wi-btn-total-width: 240px;
+$wi-btn-total-height: 112px;
+$wi-btn-image: '../ztimages/csprite.png';
+$wi-btn: (138px, 92px, -138px, -92px, 38px, 20px, 240px, 112px, '../ztimages/csprite.png', 'wi-btn', );
+$wi-mask-name: 'wi-mask';
+$wi-mask-x: 0px;
+$wi-mask-y: 46px;
+$wi-mask-offset-x: 0px;
+$wi-mask-offset-y: -46px;
+$wi-mask-width: 240px;
+$wi-mask-height: 38px;
+$wi-mask-total-width: 240px;
+$wi-mask-total-height: 112px;
+$wi-mask-image: '../ztimages/csprite.png';
+$wi-mask: (0px, 46px, 0px, -46px, 240px, 38px, 240px, 112px, '../ztimages/csprite.png', 'wi-mask', );
+$spritesheet-width: 240px;
+$spritesheet-height: 112px;
+$spritesheet-image: '../ztimages/csprite.png';
+$spritesheet-sprites: ($b-wi-btn-h, $b-wi-btn, $b-wi-mask, $wi-btn-h, $wi-btn, $wi-mask, );
+$spritesheet: (240px, 112px, '../ztimages/csprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import 'comm';
+.Mid5{
+    margin-top: 40px;
+    padding-top: 40px;
+    width: 100%;
+    background: url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/part1-bgall.jpg) center top;
+    width: 100%;
+    font-family: '\5FAE\8F6F\96C5\9ED1';
+    .Midtit{
+        margin: 0 auto;
+        width: 1100px;
+        .tit{
+            color: #fff;
+        }
+    }
+}
+.kpl-sc{
+    padding-bottom: 40px;
+    div{
+        overflow: visible;
+    }
+    .star-assisted-scene{margin:0 auto;background:url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/sprite-tick-bespoke.png) no-repeat 0 0;width:1111px;height:76px}
+    .a-header{background:url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/sprite.png) no-repeat 0 -1301px;width:1068px;height:74px}
+    .champion-line{background:url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/sprite.png) no-repeat -1821px -948px;width:175px;height:7px}
+    .champion{background:url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/sprite.png) no-repeat -1151px -452px;width:82px;height:96px}
+    .second{background:url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/sprite.png) no-repeat -1962px -522px;width:82px;height:96px}
+    .third{background:url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/sprite.png) no-repeat -1962px -414px;width:83px;height:96px}
+    .total-money{background:url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/sprite.png) no-repeat -1562px -1018px;width:288px;height:28px}
+    .clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+    .fl{float:left}
+    .a-header{margin:70px auto 0}
+    .total-money{position:relative;text-indent:-999em;margin:90px auto 10px}
+    .total-rmb{width:160px;margin:0 auto;color:#0ff;font-size:54px;position:relative}
+    .total-rmb .text-pre{display:inline-block;position:absolute;font-size:14px;right:-55px;top:25px;font-weight:400}
+    .total-rmb:after{content:'RMB';font-size:19px;position:absolute;right:-50px;top:43px}
+    .ranking-area{width:690px;height:350px;margin:70px auto 0;text-align:center;position:relative}
+    .ranking-area .ranking-item{width:227px;height:283px;position:relative}
+    .ranking-area .ranking-item .champion,.ranking-area .ranking-item .second,.ranking-area .ranking-item .third{display:inline-block}
+    .ranking-area .ranking-item h2{position:relative;font-size:40px;color:#0ff;margin-top:45px}
+    .ranking-area .ranking-item h2 .text-pre1{position:absolute;font-size:14px;left:50%;bottom:-20px;display:inline-block;font-weight:100;margin-left:-40px}
+    .ranking-area .ranking-item h2 .text-pre1 b{vertical-align:-1px}
+    .ranking-area .ranking-sep:before{content:'';position:absolute;right:0;background:#1d559a;width:1px;height:170px;top:66px}
+    .ranking-area .rank{position:relative;font-size:30px;width:100%;font-weight:700;color:#fff;letter-spacing:6px;padding-left:5px}
+    .ranking-area .rank .champion-line{position:absolute;left:30px;top:22px}
+
+    .container{
+        margin: 0 auto;
+        width: 1200px;
+    }
+    .kpl-vs-fight{
+        padding: 80px 0 40px;
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 1221px;
+        }
+    }
+    .swiper-container{overflow: hidden;width:884px;height:550px;margin:60px auto 20px;cursor:pointer!important}
+    .swiper-container .swiper-bg{background:url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/swiper-bg.png) no-repeat left top;width:884px;height:550px;position:absolute;left:0;top:0;right:0;bottom:0;margin:0 auto;z-index:2;pointer-events:none}
+    .swiper-container .swiper-wrapper{width:880px;height:472px;margin:2px 2px}
+    .swiper-container .swiper-pagination{width:100%;text-align:center;left:0;bottom:20px}
+    .swiper-container .swiper-pagination .swiper-pagination-bullet{display:inline-block;width:44px;height:8px;border-radius:1px;background:#4c5d99;margin:0 4px;opacity:.8;cursor:pointer}
+    .swiper-container .swiper-pagination .swiper-pagination-bullet-active{background:#4fbecf}
+    .swiper-container .swiper-button-prev{background:url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/sprite.png) no-repeat -2049px -522px;width:26px;height:34px;top:240px;left:30px}
+    .swiper-container .swiper-button-prev:active{background:url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/sprite.png) no-repeat -2050px -453px}
+    .swiper-container .swiper-button-next{background:url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/sprite.png) no-repeat -2050px -414px;width:26px;height:34px;top:240px;right:30px}
+    .swiper-container .swiper-button-next:active{background:url(http://game.gtimg.cn/images/yxzj/cp/a20171120wzrynet/sprite.png) no-repeat -2039px -349px}
+
+}

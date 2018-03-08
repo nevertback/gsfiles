@@ -1,0 +1,39 @@
+//百度分享样式6
+.bdsharewrap.bdstyle-c{
+	width:237px;height:36px;
+	overflow: hidden;
+	.bdsharebuttonbox {
+		width:800px; height:36px;
+		*font-size: 0;
+		&:after,&.before{
+			display:table;content:" ";
+		}
+		&:after{clear:both}
+		a {
+			display: block;float:left; margin:0 4px 0 0; padding:0;
+			width:36px; height:36px;
+			background:url("http://image.gamersky.com/webimg13/zhuanti/common/bd-fx9.png") 0 0 no-repeat;
+			text-indent: 99999px;
+			overflow: hidden;
+			&.bds_tsina {background-position:     0 0;}
+			&.bds_weixin{background-position: -40px 0;}
+			&.bds_qzone {background-position: -80px 0;}
+			&.bds_renren{background-position:-121px 0;}
+			&.bds_sqq	{background-position:-161px 0;}
+			&.bds_count  {background-position:-201px 0;}
+			//待添加
+			&.bds_tieba,&.bds_douban,&.bds_more
+			{display: none}
+			//待添加 end
+			&:hover{
+				opacity: 1;
+				&.bds_tsina {background-position:     0 -48px;}
+				&.bds_weixin{background-position: -40px -48px;}
+				&.bds_qzone {background-position: -80px -48px;}
+				&.bds_renren{background-position:-121px -48px;}
+				&.bds_sqq	{background-position:-161px -48px;}
+				&.bds_count  {background-position:-201px -48px;}
+			}
+		}		
+	}
+}

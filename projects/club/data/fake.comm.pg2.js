@@ -1,0 +1,46 @@
+var fakeCommData = {
+    "someval":"后端自定义的一些参数",
+    "dataType":"ok",
+    "page":2,
+    "sumcount":5,
+    "cardid":48965,
+    "commlist":[
+        {
+            "commid":6878,
+            "head":"http://image.gamersky.com/avatar/original/anime/anime297.jpg",
+            "name":"月天容惠",
+            "replytime":"6小时前",
+            "context":"<p>我朋友临死前想看一眼only on xboxone</p>"
+        },
+        {
+            "commid":6878,
+            "head":"http://image.gamersky.com/avatar/original/anime/anime086.jpg",
+            "name":"時崎狂三丶",
+            "reply":"月天容惠",
+            "replytime":"7小时前",
+            "context":"<p>说了也没用，你没看dc漫威电影底下，手机底下，显卡底下，到处都有撕逼的吗？这年头放不放香菜都有人能争个半天。说白了都是闲的</p>"
+        },
+        {
+            "commid":6878,
+            "head":"http://image.gamersky.com/avatar/original/anime/anime265.jpg",
+            "name":"DC理智粉",
+            "replytime":"8小时前",
+            "context":"<p>魂2巨火塔跳楼导师龙骑士不服，不但玩家能落水，BOSS都能落水，服不服（其实第一次打我是双刃莽过去的，后来才知道还能下海这么玩）</p>"
+        },
+        {
+            "commid":6878,
+            "head":"http://image.gamersky.com/avatar/original/animal/animal036.jpg",
+            "name":"游民_fd9c2vH220160422212746",
+            "replytime":"9小时前",
+            "context":"<p>有些任务不能招稀人 就没什么玩头了</p>"
+        },
+        {
+            "commid":6878,
+            "head":"http://image.gamersky.com/avatar/original/game/game330.jpg",
+            "name":"逸仙丶神之旅",
+            "reply":"游民_fd9c2vH220160422212746",
+            "replytime":"10小时前",
+            "context":"<p>然后你国辣鸡跟风----游民喷子必备四词</p>"
+        }
+    ]
+};

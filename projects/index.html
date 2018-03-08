@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>专题</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body,html{
+            background-color: #f7f7f7;
+        }
+        header{
+            margin-bottom: 20px;
+            padding: 30px 0;
+            background-color: #fff;
+        }
+        header h2{
+            margin: 0;
+            padding: 0;
+            color: #aaa;
+        }
+        footer img{
+            display: block;
+            margin: 0 auto;
+            padding: 0;
+        }
+        footer{
+            padding: 30px 0;
+            display: block;
+            background-color: #222;
+        }
+        .box{
+            margin-bottom: 20px;
+            margin-left: -30px;
+            padding:15px 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px #eee;
+        }
+        .box h3{
+            margin: 0;
+            padding: 10px 0;
+            height: 40px;
+            line-height: 40px;
+            color: #555;
+            box-sizing:content-box;
+        }
+        .box .con a{
+            float: left;
+            margin-right: 10px;
+        }
+        .box .time{
+            float: left;
+            line-height: 34px;
+            font-size: 14px;
+            margin-right: 30px;
+        }
+        .box .list-group-item h4{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h2 class="text-center">已完成项目列表</h2>
+</header>
+<div class="container" id="mainList"></div>
+<footer>
+    <img width="200" src="codingnet.png" alt="">
+</footer>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    (function ($) {
+        var list = {
+            chl:{
+                name:'频道/特殊专题',
+                list:[
+                    {
+                        tit:'自定义查询静态页',
+                        url:'others/queryArticle/',
+                        ol:'',
+                        img:'',
+                        time:'2018-03-01'
+                    },
+                    {
+                        tit:'玩儿趣奖2017预热',
+                        url:'chl/wqj2017yr/',
+                        ol:'http://www.gamersky.com/zhuanti/wqj2017/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/wqj2017/yr/350.jpg',
+                        time:'2017-12-05'
+                    },
+                    {
+                        tit:'玩儿趣奖2017',
+                        url:'chl/wqj2017/',
+                        ol:'http://www.gamersky.com/zhuanti/wqj2017/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/wqj2017/yr/350.jpg',
+                        time:'2017-12-15'
+                    }
+                ]
+            },
+            dgy:{
+                name:'大观园/特色专题',
+                list:[
+                    {
+                        tit:'5分钟带你玩转经典IP大作《使命召唤OL》！ _ 游民星空 Gamersky.com',
+                        url:'dgy/codolts/',
+                        ol:'http://www.gamersky.com/zhuanti/codolts/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/codolts/pic/350.jpg',
+                        time:'2017-12-12'
+                    },
+                    {
+                        tit:'怪物猎人：世界大观园专题:狩猎最强古龙|游民星空',
+                        url:'dgy/mhw/',
+                        ol:'http://www.gamersky.com/z/mhw/preview/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/mhw/pc/350.jpg',
+                        time:'2018-01-18'
+                    },
+                    {
+                        tit:'你可以在手机上“体验”一把《怪物猎人：世界》了',
+                        url:'dgy/mhwm/',
+                        ol:'http://www.gamersky.com/z/mhw/preview/m.shtml',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/mhw/pc/350.jpg',
+                        time:'2018-01-18'
+                    }
+                ]
+            },
+            zhuanti:{
+                name:'专题',
+                list:[
+                    {
+                        tit:'《王者荣耀》五军对决·春节开黑新玩法活动专题|游民星空',
+                        url:'zhuanti/0224pvpcjkhwf/',
+                        ol:'http://www.gamersky.com/zhuanti/pvpcjkhwf/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/pvpcjkhwf/350.jpg',
+                        time:'2018-02-24'
+                    },
+                    {
+                        tit:'这是一个暴露年龄的网站',
+                        url:'zhuanti/020815years/',
+                        ol:'http://www.gamersky.com/zhuanti/15years/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/15years/350.jpg',
+                        time:'2018-02-08'
+                    },
+                    {
+                        tit:'游民星空福利_游民星空15周年活动 - 游民星空游戏平台',
+                        url:'zhuanti/020715thanniversary/',
+                        ol:'http://www.gamersky.com/zhuanti/15thanniversary/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/qxzl2cs/pic/350.jpg',
+                        time:'2018-02-07'
+                    },
+                    {
+                        tit:'《群雄逐鹿2》第二轮测试活动专题|游民星空',
+                        url:'zhuanti/0103qxzl2cs/',
+                        ol:'http://www.gamersky.com/zhuanti/qxzl2cs/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/qxzl2cs/pic/350.jpg',
+                        time:'2018-01-03'
+                    },
+                    {
+                        tit:'《火影忍者》手游2周年活动专题|游民星空',
+                        url:'zhuanti/0102hyrz2zn/',
+                        ol:'http://www.gamersky.com/zhuanti/hyrz2zn/',
+                        img:'http://www.gamersky.com/zhuanti/hyrz2zn/350.jpg',
+                        time:'2018-01-02'
+                    }
+                ]
+            },
+            zt2017:{
+                name:'2017年专题',
+                list:[
+                    {
+                        tit:'《QQ飞车手游》不限号活动专题|游民星空',
+                        url:'zhuanti/1229speedmsc/',
+                        ol:'http://www.gamersky.com/zhuanti/speedmsc/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/speedmsc/350.jpg',
+                        time:'2017-12-29'
+                    },
+                    {
+                        tit:'《刀剑斗神传》手游12月29日全平台公测|游民星空',
+                        url:'zhuanti/1228djdszgc/',
+                        ol:'http://www.gamersky.com/zhuanti/djdszgc/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/djdszgc/350.jpg',
+                        time:'2017-12-28'
+                    },
+                    {
+                        tit:'《流放之路》不限号活动专题|游民星空',
+                        url:'zhuanti/1228poebxh/',
+                        ol:'http://www.gamersky.com/zhuanti/poebxh/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/poebxh/350.jpg',
+                        time:'2017-12-28'
+                    },
+                    {
+                        tit:'凛冽来袭 《大唐无双》新职业寒冰登场！|游民星空',
+                        url:'zhuanti/1227dthb/',
+                        ol:'http://www.gamersky.com/zhuanti/dthb/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/dthb/350.jpg',
+                        time:'2017-12-27'
+                    },
+                    {
+                        tit:'《剑网3》重制版不限号公测活动专题|游民星空',
+                        url:'zhuanti/1226jx3czgc/',
+                        ol:'http://www.gamersky.com/zhuanti/jx3czgc/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/jx3czgc/350.jpg',
+                        time:'2017-12-26'
+                    },
+                    {
+                        tit:'7日轮回 《永远的7日之都》命运倒数即刻开始 _ 游民星空 Gamersky.com',
+                        url:'zhuanti/1129fcts/',
+                        ol:'http://www.gamersky.com/zhuanti/fcts/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/fcts/350.jpg',
+                        time:'2017-11-29'
+                    },
+                    {
+                        tit:'策略变革者 《汉王纷争》11月28日全平台公测 _ 游民星空 Gamersky.com',
+                        url:'zhuanti/1124fzts/',
+                        ol:'http://www.gamersky.com/zhuanti/fzts/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/fzts/350.jpg',
+                        time:'2017-11-24'
+                    },
+                    {
+                        tit:'《择天记》手游企鹅电竞直播活动专题 _ 游民星空 Gamersky.com',
+                        url:'zhuanti/1124ztjsyzb/',
+                        ol:'http://www.gamersky.com/zhuanti/ztjsyzb/',
+                        img:'zhuanti/1124ztjsyzb/ztimages/350.jpg',
+                        time:'2017-11-24'
+                    },
+                    {
+                        tit:'《幻想全明星》全球首款10V10动漫大乱斗活动专题 _ 游民星空 Gamersky.com',
+                        url:'zhuanti/1123hxqmx10v10/',
+                        ol:'http://www.gamersky.com/zhuanti/hxqmx10v10/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/hxqmx10v10/350.jpg',
+                        time:'2017-11-23'
+                    },
+                    {
+                        tit:'元神飞升 万象更新《镇魔曲》全新年度资料篇上线 _ 游民星空 Gamersky.com',
+                        url:'zhuanti/1123zmqndxbb/',
+                        ol:'http://www.gamersky.com/zhuanti/zmqndxbb/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/350.jpg',
+                        time:'2017-11-23'
+                    },
+                    {
+                        tit:'一言不合列阵斗法 《元气封神》今日全平台公测 _ 游民星空 Gamersky.com',
+                        url:'zhuanti/1122yqfsts/',
+                        ol:'http://www.gamersky.com/zhuanti/yqfsts/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/yqfsts/350.jpg',
+                        time:'2017-11-22'
+                    },
+                    {
+                        tit:'《QQ飞车手游》预热 活动专题 _ 游民星空 Gamersky.com',
+                        url:'zhuanti/1116speedmgs/',
+                        ol:'http://www.gamersky.com/zhuanti/speedmgs/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/speedmgs/350.jpg',
+                        time:'2017-11-16'
+                    },
+                    {
+                        tit:'大家一起来跳伞！《小米枪战》11月15日正式公测 _ 游民星空 Gamersky.com',
+                        url:'zhuanti/1115gunts/',
+                        ol:'http://www.gamersky.com/zhuanti/gunts/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/gunts/350.jpg',
+                        time:'2017-11-15'
+                    },
+                    {
+                        tit:'战术协作 娱乐竞技《终结者2：审判日》特色玩法介绍 _ 游民星空 Gamersky.com',
+                        url:'zhuanti/1115t2ts/',
+                        ol:'http://www.gamersky.com/zhuanti/t2ts/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/t2ts/350.jpg',
+                        time:'2017-11-15'
+                    },
+                    {
+                        tit:'《小米枪战》今日公测 活动专题 _ 游民星空 Gamersky.com',
+                        url:'zhuanti/1115xmqzgc/',
+                        ol:'http://www.gamersky.com/zhuanti/xmqzgc/',
+                        img:'http://image.gamersky.com/webimg13/zhuanti/xmqzgc/350.jpg',
+                        time:'2017-11-15'
+                    }
+                ]
+            }
+        };
+        var main = {
+            createBox:function (dt) {
+                var box = '',imgurl = dt.img;
+                box += '<div class="list-group-item"><h4>';
+                box += dt.tit;
+                box += '</h4><div class="clearfix con">';
+                box += '<div class="time"><i class="glyphicon glyphicon-time" aria-hidden="true"></i>&nbsp;&nbsp;'+dt.time+'</div>';
+                box += '<a target="_blank" href="'+dt.url+'" class="btn btn-default" role="button"><i class="glyphicon glyphicon-hdd"></i>&nbsp;&nbsp;本地地址</a>';
+                box += '<a target="_blank" href="'+dt.ol+'" class="btn btn-default" role="button"><i class="glyphicon glyphicon-globe"></i>&nbsp;&nbsp;线上地址</a></div></div>';
+                return box;
+            },
+            createList:function (list) {
+                var boxs = '';
+                $.each(list,function (idx,lis) {
+                    boxs += '<div class="box"><h3>'+lis.name+'</h3><div class="list-group">';
+                    $.each(lis.list,function (i,item) {
+                        boxs += main.createBox(item);
+                    });
+                    boxs += '</div></div>';
+                });
+                $('#mainList').html(boxs);
+            },
+            init:function () {
+                this.createList(list);
+            }
+        };
+        main.init();
+    })(jQuery);
+</script>
+</body>
+</html>

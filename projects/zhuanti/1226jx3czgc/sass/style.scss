@@ -1,0 +1,405 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 900px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 560px;
+		.paras{
+			width: 600px;
+			p{
+				line-height: 25px;
+				font-size: 14px;
+				color: #000;
+			}
+		}
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 52px;
+			left: 339px;
+			width: 222px;
+		}
+		.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_count{
+			display: none;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 179px;
+			top: 46px;
+			width: 139px;
+			height: 47px;
+			background: url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-black.png) 0 0 no-repeat;
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 20px;
+			@include sprite($logo-gf);
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			top: 687px;
+			@include sprite($s1-btn);
+			line-height: 84px;
+			font-size: 36px;
+			color: #faf9f5;
+			font-weight:bold;
+			text-align: center;
+			font-family: '思源宋体','思源宋体 CN','Source Han Serif SC',SimSun;
+			&:hover{
+				@include sprite($s1-btn-h);
+			}
+			&.btn1{
+				left: 0;
+			}
+			&.btn2{
+				left:278px;
+			}
+			&.btn3{
+				left:556px;
+			}
+			&.btn4{
+				left:834px;
+			}
+		}
+		.play{
+			display: block;
+			position: absolute;
+			left: 184px;
+			top: 411px;
+			@include sprite($s1-play);
+		}
+	}
+}
+.zt-section2{
+	height: 902px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.list{
+			position: absolute;
+			top: 675px;
+			left: 620px;
+			width: 410px;
+			li{
+				line-height: 24px;
+				font-size: 14px;
+				color: #fff;
+			}
+		}
+		.context{
+			margin-left: 400px;
+			padding-top: 143px;
+			width: 700px;
+			.para{
+				margin-bottom: 25px;
+				p{
+					line-height: 25px;
+					font-size: 14px;
+					color: #000;
+					text-align: center;
+				}
+			}
+			.btngroup{
+				padding-left: 117px;
+				width: 600px;
+				height: 68px;
+				a{
+					display: block;
+					float: left;
+					margin-right: 10px;
+					@include sprite($s2-btn);
+					line-height: 68px;
+					font-size: 24px;
+					color: #fff;
+					text-align: center;
+					&:hover{
+						@include sprite($s2-btn-h);
+					}
+				}
+			}
+			.notice{
+				margin-top: 10px;
+				height: 22px;
+				line-height: 22px;
+				font-size: 14px;
+				color: #a93a5b;
+				text-align: center;
+			}
+			.time{
+				margin-top: 92px;
+				height: 22px;
+				line-height: 22px;
+				font-size: 14px;
+				color: #111;
+				text-align: center;
+			}
+			.gifts{
+				display: block;
+				margin-top: 60px;
+				width: 700px;
+				height: 200px;
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 658px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.container{
+		padding-top: 119px;
+		.ztTab{
+			position: relative;
+			margin-left: -5px;
+			width: 1110px;
+			height: 495px;
+			.loadingPic{
+				position: absolute;
+				left: 50%;
+				top: 260px;
+				margin-left: -16px;
+				width: 30px;
+				height: 30px;
+			}
+			.ztTabCon{
+				li{
+					position: relative;
+					width: 1110px;
+					height: 423px;
+					.mp-img{
+						display: block;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 1110px;
+						height: 423px;
+						img{
+							display: block;
+							position: absolute;
+							left: 0;
+							bottom: 0;
+						}
+					}
+					.mp-text {
+						width: 280px;
+						position: absolute;
+						left: 810px;
+						top: 190px;
+						h2 {
+							margin-bottom: 8px;
+							color: #feeb16;
+							font-size: 14px;
+							line-height: 24px;
+							font-weight: normal;
+						}
+						p {
+							margin-bottom: 18px;
+							color: #fff;
+							line-height: 18px;
+							font-size: 14px;
+						}
+					}
+				}
+			}
+			.ztTabNav{
+				position: absolute;
+				left: 18px;
+				top: 460px;
+				li{
+					position: relative;
+					float: left;
+					margin-right: -1px;
+					width: 84px;
+					height: 35px;
+					i{
+						display: block;
+						position: absolute;
+						top: 4px;
+						right: 1px;
+						width: 1px;
+						height: 27px;
+						background-color: #bbb;
+					}
+					a{
+						position: relative;
+						display: block;
+						width: 84px;
+						height: 35px;
+						background: url(http://image.gamersky.com/webimg13/zhuanti/jx3czgc/nav-mp.png) 0 0 no-repeat;
+					}
+					&.cur{
+						background: url(http://image.gamersky.com/webimg13/zhuanti/jx3czgc/nav-mp.png) -30px -113px no-repeat;
+						i{
+							display: none;
+						}
+					}
+				}
+				li a.mt01{background-position:-12px -4px}
+				li.cur a.mt01{background-position:-12px -50px}
+				li a.mt02{background-position:-94px -4px}
+				li.cur a.mt02{background-position:-94px -50px}
+				li a.mt03{background-position:-175px -4px}
+				li.cur a.mt03{background-position:-175px -50px}
+				li a.mt04{background-position:-260px -4px}
+				li.cur a.mt04{background-position:-260px -50px}
+				li a.mt04{background-position:-260px -4px}
+				li.cur a.mt04{background-position:-260px -50px}
+				li a.mt05{background-position:-342px -4px}
+				li.cur a.mt05{background-position:-342px -50px}
+				li a.mt06{background-position:-423px -4px}
+				li.cur a.mt06{background-position:-423px -50px}
+				li a.mt07{background-position:-506px -4px}
+				li.cur a.mt07{background-position:-506px -50px}
+				li a.mt08{background-position:-587px -4px}
+				li.cur a.mt08{background-position:-587px -50px}
+				li a.mt09{background-position:-670px -4px}
+				li.cur a.mt09{background-position:-670px -50px}
+				li a.mt10{background-position:-753px -4px}
+				li.cur a.mt10{background-position:-753px -50px}
+				li a.mt11{background-position:-835px -4px}
+				li.cur a.mt11{background-position:-835px -50px}
+				li a.mt12{background-position:-918px -4px}
+				li.cur a.mt12{background-position:-918px -50px}
+				li a.mt13{background-position:-1000px -4px}
+				li.cur a.mt13{background-position:-1000px -50px}
+			}
+		}
+	}
+}
+.zt-section4{
+	height: 802px;
+	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 143px;
+		.mytab{
+			position: relative;
+			margin-left: -50px;
+			width: 1200px;
+			height: 620px;
+			overflow: hidden;
+			user-select: none;
+			.myTabNav{
+				margin-bottom: 22px;
+				padding-left: 149px;
+				width: 940px;
+				height: 60px;
+				a{
+					float: left;
+					width: 256px;
+					height: 60px;
+					background: url(http://image.gamersky.com/webimg13/zhuanti/jx3czgc/nav-slide.png) 0 0 no-repeat;
+					&.mn1{background-position: -1px 3px;}
+					&.mn2{background-position: -322px 4px;}
+					&.mn3{background-position: -650px 4px;}
+					&.cur{
+						&.mn1{background-position: 0 -109px;}
+						&.mn2{background-position: -321px -109px;}
+						&.mn3{background-position: -649px -109px;}
+					}
+				}
+				i{
+					float: left;
+					margin: 12px 35px 0;
+					display: block;
+					width: 1px;
+					height: 27px;
+					background-color: #bbb;
+				}
+			}
+			.myTabCon{
+				position: relative;
+				width: 1200px;
+				height: 530px;
+				.loadingPic{
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					margin-left: -16px;
+					margin-top: -16px;
+					width: 30px;
+					height: 30px;
+				}
+				.myTabItem{
+					display: none;
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					&.cur{
+						display: block;
+					}
+					.ztSldWrap{
+						position: relative;
+						width: 1200px;
+						height: 530px;
+						.arrBtn{
+							display: block;
+							position: absolute;
+							top: 231px;
+							&.arrBtnL{
+								left: 0;
+								@include sprite($arr-l);
+								&:hover{@include sprite-position($arr-l-h);}
+							}
+							&.arrBtnR{
+								right: 0;
+								@include sprite($arr-r);
+								&:hover{@include sprite-position($arr-r-h);}
+							}
+						}
+						.ztSld{
+							position: relative;
+							margin: 0 auto;
+							width: 1110px;
+							height: 530px;
+							.ztSldCon{
+								li{
+									position: relative;
+									width: 1110px;
+									height: 512px;
+									background-color: #111;
+									img.pic{
+										position: relative;
+										display: block;
+										width: 100%;
+										height: 100%;
+									}
+								}
+							}
+							.ztSldNav{
+								position: absolute;
+								left: 0;
+								bottom: 0;
+								width: 100%;
+								height: 8px;
+								font-size: 0;
+								text-align: center;
+								li{
+									cursor: pointer;
+									display: inline-block;
+									margin: 0 3px;
+									width: 36px;
+									height: 8px;
+									*display: inline;
+									*zoom:1;
+									background-color: #d4a1b7;
+									&.cur{
+										background-color: #be3a62;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+

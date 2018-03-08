@@ -1,0 +1,144 @@
+@charset "UTF-8";
+.clearfix:before, .clearfix:after { display: table; content: " "; }
+
+.clearfix:after { clear: both; }
+
+* { -webkit-tap-highlight-color: transparent; }
+
+h1, h2, h3, h4, h5, h6, p, ul, li { margin: 0; padding: 0; }
+
+ul, dl, ol { list-style: none; }
+
+button { display: block; border: none; }
+
+html, body { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: '思源黑体 CN','Noto Sans S Chinese','思源黑体','Source Han Sans CN','Noto Sans CJK SC'; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-color: #000; }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; padding: 0; }
+
+a { text-decoration: none; cursor: pointer; }
+
+.clearfix:before, .clearfix:after { display: table; content: " "; }
+
+.clearfix:after { clear: both; }
+
+#wrap { position: absolute; left: 50%; top: 50%; margin-left: -960px; margin-top: -540px; width: 1920px; height: 1080px; overflow: hidden; }
+
+.logo { position: absolute; left: 63px; top: 34px; z-index: 90; }
+
+.logo path { fill: #fff; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+
+.logo.red path { fill: #d71c34; }
+
+nav { position: absolute; padding-right: 30px; bottom: 20px; right: 0; height: 50px; display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-transform: translate(250px, 0); -ms-transform: translate(250px, 0); transform: translate(250px, 0); -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+
+nav.gaming-nav { -webkit-transform: translate(180px, 0); -ms-transform: translate(180px, 0); transform: translate(180px, 0); }
+
+nav:hover { -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); transform: translate(0, 0); }
+
+nav .open { cursor: pointer; display: block; margin-right: 14px; width: 46px; height: 46px; background: url(../ztimages/icon-sj.png) center center no-repeat; border: 2px solid #fff; border-radius: 10px; }
+
+nav .open:hover { background-color: rgba(255, 255, 255, 0.2); }
+
+nav .btn-group { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; height: 46px; border: 2px solid #fff; border-radius: 10px; }
+
+nav .btn-group a { cursor: pointer; display: block; padding: 0 20px; height: 46px; line-height: 46px; font-size: 18px; color: #fff; font-weight: bold; border-left: 1px solid #fff; }
+
+nav .btn-group a:first-child { border-left: none; }
+
+nav .btn-group a:hover { background-color: rgba(255, 255, 255, 0.2); }
+
+nav .btn-group a.dis { cursor: default; background-color: rgba(255, 255, 255, 0.5); }
+
+nav .btn-group a.dis:hover { background-color: rgba(255, 255, 255, 0.5); }
+
+.back { cursor: pointer; display: block; position: absolute; right: 30px; bottom: 20px; width: 46px; height: 46px; background: url(../ztimages/icon-sj-back.png) center center no-repeat; border: 2px solid #fff; border-radius: 10px; }
+
+.back:hover { background-color: rgba(255, 255, 255, 0.2); }
+
+.full-btn { display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat; }
+
+.list, .main { position: relative; width: 100%; height: 100%; }
+
+.list { display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 10; }
+
+.list.cur { display: block; }
+
+.nh-prize, .nh-draw, .nh-list { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+
+.nh-prize { background: url(../ztimages/nh-prize.jpg) center center no-repeat; }
+
+.nh-prize .bigpic { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+
+.nh-prize .tit { position: absolute; right: 0; top: 335px; width: 1190px; color: #fff; text-align: center; }
+
+.nh-prize .tit h4 { height: 100px; line-height: 100px; font-size: 70px; font-weight: normal; }
+
+.nh-prize .tit h5 { height: 234px; line-height: 234px; font-size: 140px; font-weight: normal; }
+
+.nh-draw { background: url(../ztimages/nh-draw.jpg) center center no-repeat; }
+
+.nh-draw .headNextBtn { display: none; }
+
+.nh-draw .headNextBtn.cur { display: block; }
+
+.nh-draw .drawAnimArea { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+
+.nh-draw .drawAnimArea .winner-name { display: none; }
+
+.nh-draw .drawAnimArea .draw-head { position: absolute; left: 573px; top: 190px; width: 724px; height: 724px; border-radius: 50%; border: 27px solid #fff; -webkit-box-shadow: -28px 28px 0 rgba(0, 0, 0, 0.1); box-shadow: -28px 28px 0 rgba(0, 0, 0, 0.1); overflow: hidden; }
+
+.nh-draw .drawAnimArea .draw-head .videoArea { position: absolute; left: 0; top: 0; width: 724px; height: 724px; overflow: hidden; border-radius: 50%; }
+
+.nh-draw .drawAnimArea .draw-head .videoArea #animVd2 { -webkit-filter: blur(3px); filter: blur(3px); }
+
+.nh-draw .drawAnimArea .draw-head .videoArea .animVd { display: none; position: absolute; left: 0; top: 0; width: 724px; height: 724px; }
+
+.nh-draw .drawAnimArea .draw-head .videoArea .animVd.cur { display: block; }
+
+.nh-draw .drawAnimArea .head-list { visibility: hidden; position: absolute; left: 0; top: 0; background-color: #fff; }
+
+.nh-draw .drawAnimArea .head-list.cur { visibility: visible; }
+
+.nh-draw .drawAnimArea .head-list .head-item { margin-bottom: 20px; width: 724px; height: 724px; }
+
+.nh-draw .drawAnimArea .head-list .head-item img { display: block; width: 100%; height: 100%; -webkit-filter: blur(3px); filter: blur(3px); }
+
+.nh-draw .drawAnimArea.cur { background: url(../ztimages/win-c2.png) 348px 0 no-repeat; }
+
+.nh-draw .drawAnimArea.cur:after { display: block; position: absolute; content: ''; left: 425px; top: 41px; width: 1039px; height: 921px; background: url(../ztimages/win-c1.png) 0 0 no-repeat; }
+
+.nh-draw .drawAnimArea.cur .winner-name { display: block; position: absolute; left: 818px; top: 825px; z-index: 2; width: 280px; height: 80px; line-height: 80px; font-size: 50px; color: #282828; font-weight: bold; text-align: center; }
+
+.nh-draw .drawAnimArea.cur .head-list .head-item img { -webkit-filter: blur(0px); filter: blur(0px); }
+
+.nh-draw .headAnimBtn { display: none; }
+
+.nh-draw .headAnimBtn.cur { display: block; }
+
+.nh-list { background: url(../ztimages/nh-list.jpg) center center no-repeat; }
+
+.nh-list .win-list { position: absolute; left: 30px; top: 513px; width: 1890px; }
+
+.nh-list .win-list ul { width: 1920px; }
+
+.nh-list .win-list ul li { float: left; margin-right: 26px; position: relative; width: 100px; height: 400px; }
+
+.nh-list .win-list ul li:nth-child(1) { margin-right: 72px; }
+
+.nh-list .win-list ul li:nth-child(2) { margin-right: 34px; }
+
+.nh-list .win-list ul li:nth-child(3) { margin-right: 80px; }
+
+.nh-list .win-list ul li:nth-child(4) { margin-right: 53px; }
+
+.nh-list .win-list ul li:nth-child(5) { margin-right: 53px; }
+
+.nh-list .win-list ul li:nth-child(6) { margin-right: 53px; }
+
+.nh-list .win-list ul li:nth-child(7) { margin-right: 64px; }
+
+.nh-list .win-list ul li .win-pic { display: block; margin-bottom: 18px; width: 100px; height: 100px; background: url(../ztimages/win-def.png) 0 0 no-repeat; border-radius: 50%; overflow: hidden; }
+
+.nh-list .win-list ul li .win-pic img { display: block; width: 100%; height: 100%; }
+
+.nh-list .win-list ul li .win-name { padding: 0 25px; width: 50px; line-height: 45px; font-size: 45px; color: #888; text-align: center; }

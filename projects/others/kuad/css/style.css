@@ -1,0 +1,63 @@
+.clearfix:before, .clearfix:after { display: table; content: " "; }
+
+.clearfix:after { clear: both; }
+
+.tg-fenxiao-long { position: relative; margin: 20px auto 30px; width: 100%; height: 64px; background-color: #fff; -webkit-box-shadow: 0 1px 0 rgba(102, 102, 102, 0.15); box-shadow: 0 1px 0 rgba(102, 102, 102, 0.15); font-family: 'Microsoft YaHei'; }
+
+.tg-fenxiao-long div { overflow: visible; }
+
+.tg-fenxiao-long a { text-decoration: none; }
+
+.tg-fenxiao-long a:hover { text-decoration: none; }
+
+.tg-fenxiao-long .tg-fenxiao-name { padding-left: 55px; width: 250px; height: 64px; line-height: 64px; font-size: 18px; color: #262626; font-weight: bold; background: url(http://image.gamersky.com/webimg15/tg/long-buy.png) 18px center no-repeat; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.tg-fenxiao-long .tg-fenxiao-right { position: absolute; right: 16px; top: 16px; }
+
+.tg-fenxiao-long .tg-fenxiao-right .tg-fenxiao-price { position: absolute; top: 0; right: 118px; height: 32px; line-height: 32px; color: #333; }
+
+.tg-fenxiao-long .tg-fenxiao-right .tg-fenxiao-price span { font-size: 14px; }
+
+.tg-fenxiao-long .tg-fenxiao-right .tg-fenxiao-price i { font-size: 18px; font-style: normal; }
+
+.tg-fenxiao-long .tg-fenxiao-right .tg-fenxiao-price.tg-fenxiao-price-off { right: 168px; color: #df3900; }
+
+.tg-fenxiao-long .tg-fenxiao-right .tg-fenxiao-price.tg-fenxiao-price-off del { margin-right: 14px; font-size: 14px; color: #666; }
+
+.tg-fenxiao-long .tg-fenxiao-right .tg-fenxiao-btn { display: block; width: 100px; height: 32px; line-height: 32px; background: url(http://image.gamersky.com/webimg15/tg/long-btn.png) 0 0 no-repeat; font-size: 14px; color: #fff; text-align: center; }
+
+.tg-fenxiao-long .tg-fenxiao-right .tg-fenxiao-btn span { display: none; }
+
+.tg-fenxiao-long .tg-fenxiao-right .tg-fenxiao-btn:hover { background-position: 0 -40px; }
+
+.tg-fenxiao-long .tg-fenxiao-right .tg-fenxiao-btn.tg-fenxiao-btn-off { padding-left: 48px; background-position: 0 -79px; }
+
+.tg-fenxiao-long .tg-fenxiao-right .tg-fenxiao-btn.tg-fenxiao-btn-off span { display: block; position: absolute; left: 0; top: 0; width: 48px; text-align: center; }
+
+.tg-fenxiao-long .tg-fenxiao-right .tg-fenxiao-btn.tg-fenxiao-btn-off:hover { text-decoration: none; background-position: 0 -119px; }
+
+.tg-fenxiao-middle { position: relative; margin: 0 15px 15px; height: 39px; border-top: 1px solid #424242; border-bottom: 1px solid #424242; }
+
+.tg-fenxiao-middle a { text-decoration: none; }
+
+.tg-fenxiao-middle a:hover { text-decoration: none; }
+
+.tg-fenxiao-middle .tg-fenxiao-price { position: relative; height: 39px; line-height: 39px; color: #f35f1c; font-family: 'Microsoft YaHei'; }
+
+.tg-fenxiao-middle .tg-fenxiao-price span { font-size: 14px; }
+
+.tg-fenxiao-middle .tg-fenxiao-price i { font-size: 18px; font-style: normal; }
+
+.tg-fenxiao-middle .tg-fenxiao-price.tg-fenxiao-price-off del { margin-right: 14px; font-size: 14px; color: #aaa; }
+
+.tg-fenxiao-middle .tg-fenxiao-btn { position: absolute; right: 0; top: 7px; display: block; width: 72px; height: 25px; line-height: 25px; background: url(http://image.gamersky.com/webimg15/tg/mid-btn.png) 0 0 no-repeat; font-size: 12px; color: #fff0eb; text-align: center; }
+
+.tg-fenxiao-middle .tg-fenxiao-btn span { display: none; }
+
+.tg-fenxiao-middle .tg-fenxiao-btn:hover { background-position: 0 -30px; color: #fff0eb; }
+
+.tg-fenxiao-middle .tg-fenxiao-btn.tg-fenxiao-btn-off { padding-left: 44px; background-position: 0 -60px; }
+
+.tg-fenxiao-middle .tg-fenxiao-btn.tg-fenxiao-btn-off span { display: block; position: absolute; left: 0; top: 0; width: 44px; text-align: center; }
+
+.tg-fenxiao-middle .tg-fenxiao-btn.tg-fenxiao-btn-off:hover { text-decoration: none; background-position: 0 -90px; }

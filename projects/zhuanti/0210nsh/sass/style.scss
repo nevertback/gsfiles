@@ -1,0 +1,162 @@
+@import 'comm';
+.Midtit .tit.pr_ZYZL{
+    background: url(../ztimages/zy-tit-icon.png) 6px center no-repeat;
+}
+.Mid-zy{
+    margin: 0 auto 15px;
+    width: 1100px;
+}
+.Mid-zy-con{
+    .des{
+        padding-top: 10px;
+        p{
+            margin: 0;
+            line-height: 32px;
+            font-size: 18px;
+            color: #000;
+            text-indent: 36px;
+        }
+    }
+    .zy-video{
+        .Mtit{
+            margin-bottom: 10px;
+        }
+        .videolist{
+            width: 420px;
+            li{
+                float: left;
+                margin-right: 10px;
+                width: 185px;
+                height: 165px;
+                a{
+                    width: 185px;
+                    height: 165px;
+                    .play{
+                        top: 32px;
+                        left: 70px;
+                        width: 48px;
+                        height: 48px;
+                        background: url(../ztimages/play.png) 0 0 no-repeat;
+                    }
+                    img{
+                        width: 185px;
+                        height: 104px;
+                    }
+                    &:hover{
+                        .play{
+                            background-position: 0 -48px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .zy-list{
+        padding-top: 10px;
+        .Ptxt{
+            padding-top: 0;
+        }
+    }
+    .area-left{
+        float: left;
+        margin-right: 21px;
+        width: 698px;
+        .big-pic{
+            display: block;
+            width: 698px;
+            margin-bottom: 24px;
+        }
+        .big-pic-bg{
+            position: relative;
+            width: 698px;
+            height: 400px;
+            margin-bottom: 24px;
+            .big-pic{
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: none;
+                &.cur{
+                    display: block;
+                }
+            }
+            .bp-btns{
+                position: absolute;
+                left: 29px;
+                top: 301px;
+                width: 180px;
+                height: 78px;
+                a{
+                    cursor: pointer;
+                    display: block;
+                    float: left;
+                    width: 79px;
+                    height: 78px;
+                    background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+                }
+            }
+        }
+    }
+    .area-right{
+        float: left;
+        width: 380px;
+    }
+    .mzc-tab{
+        position: relative;
+        width: 1100px;
+        height: 640px;
+        .mzc-tab-nav{
+            width: 1120px;
+            margin-bottom: 19px;
+            a{
+                cursor: pointer;
+                display: block;
+                float: left;
+                margin-right: 4px;
+                &.mzc-tn1{
+                    @include sprite($zy-nav1);
+                    &.cur{@include sprite($zy-nav1-h);}
+                }
+                &.mzc-tn2{
+                    @include sprite($zy-nav2);
+                    &.cur{@include sprite($zy-nav2-h);}
+                }
+                &.mzc-tn3{
+                    @include sprite($zy-nav3);
+                    &.cur{@include sprite($zy-nav3-h);}
+                }
+                &.mzc-tn4{
+                    @include sprite($zy-nav4);
+                    &.cur{@include sprite($zy-nav4-h);}
+                }
+                &.mzc-tn5{
+                    @include sprite($zy-nav5);
+                    &.cur{@include sprite($zy-nav5-h);}
+                }
+                &.mzc-tn6{
+                    @include sprite($zy-nav6);
+                    &.cur{@include sprite($zy-nav6-h);}
+                }
+            }
+        }
+        .mzc-tab-box{
+            position: relative;
+            width: 1100px;
+            height: 540px;
+            .mzc-tab-item{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 1100px;
+                height: 540px;
+                opacity: 0;
+                visibility: hidden;
+                transition:all 0.5s ease;
+                &.cur{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}

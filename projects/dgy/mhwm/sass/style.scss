@@ -1,0 +1,582 @@
+//专题
+@import 'comm';
+.pgBegin{
+    .logo-dgy{
+        display: block;
+        @include sprite($logo-dgy);
+    }
+    .logo-gf{
+        display: block;
+        position: absolute;
+        left: 2.54rem;
+        top: 0.15rem;
+        @include sprite($logo-gf);
+    }
+    .btn-start{
+        display: block;
+        position: absolute;
+        left: 1.68rem;
+        top: 4.83rem;
+        @include sprite($btn-begin);
+    }
+    .btn-handbook{
+        display: block;
+        position: absolute;
+        left: 8.61rem;
+        top: 4.77rem;
+        @include sprite($btn-handbook);
+    }
+}
+.pgStarBase{
+    .btn-pic{
+        position: absolute;
+        &.btn-pic1{left: 4.06rem;top:0.95rem;}
+        &.btn-pic2{left: 6.68rem;top:2.64rem;}
+        &.btn-pic3{left: 7.72rem;top:3.56rem;}
+    }
+    .tips{
+        position: absolute;
+        left: 2.55rem;
+        top: 4.23rem;
+        @include sprite($sb-tips);
+        line-height: 0.53rem;
+        font-size: 0.26rem;
+        color: #fff;
+        text-align: center;
+        &.lightflash{
+            color: #fff;
+            text-shadow: 0 0 0.1rem #00d00a,0 0 0.05rem #000;
+        }
+    }
+    .btn-next{
+        display: block;
+        position: absolute;
+        top: 4.86rem;
+        left: 3.46rem;
+        @include sprite($sb-btn);
+    }
+}
+.pgMeeting,.pgBar,.pgMyself,.pgWorking{
+    .tips{
+        position: absolute;
+        padding: 0 0.5rem;
+        left: 0;
+        bottom: 0.3rem;
+        font-size: 0.24rem;
+        color: #fff;
+        p{
+            line-height: 0.32rem;
+            text-indent: 0.48rem;
+            text-shadow: 0 0 0.05rem rgba(0, 0, 0, 1);
+        }
+    }
+}
+.pgMeeting{
+    .btn-pic{
+        left: 6.84rem;
+        top: 2.1rem;
+    }
+}
+.pgMyself{
+    .btn-pop{
+        display: block;
+        position: absolute;
+        background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+        &.btn-pop1{
+            left: 4.04rem;
+            top: 2.36rem;
+            width: 0.59rem;
+            height: 1.26rem;
+        }
+        &.btn-pop2{
+            left: 0.28rem;
+            top: 2.86rem;
+            width: 1.26rem;
+            height: 1.4rem;
+        }
+        &.btn-pop3{
+            left: 1.63rem;
+            top: 1.87rem;
+            width: 1.85rem;
+            height: 1.5rem;
+        }
+    }
+}
+.pgWorking{
+    .btn-pick{
+        position: absolute;
+        left: 5.16rem;
+        top: 2.97rem;
+        @include sprite($btn-pick);
+        &.cur{
+            @include sprite-position($btn-pick-c);
+        }
+    }
+}
+.pgMap{
+    .btn-next{
+        display: none;
+        position: absolute;
+        left: 7.89rem;
+        top: 5.34rem;
+        @include sprite($btn-next);
+        &.cur{
+            display: block;
+        }
+    }
+    .map-btn{
+        display: block;
+        position: absolute;
+        width: 1.5rem;
+        height: 1rem;
+        background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+        &.map-btn0{left: 3.53rem;top: 4.93rem;}
+        &.map-btn1{left: 1.88rem;top: 4.16rem;}
+        &.map-btn2{left: 5.50rem;top: 4.83rem;}
+        &.map-btn3{left: 4.46rem;top: 1.92rem;}
+        &.map-btn4{left: 4.54rem;top: 3.65rem;}
+    }
+    .page-tit{
+        position: absolute;
+        top: -0.06rem;
+        left: 3.2rem;
+    }
+    .map-pic{
+        display: block;
+        position: absolute;
+        left: -0.17rem;
+        top: 0.57rem;
+        width: 10.56rem;
+        height: 6.07rem;
+    }
+    .map-pos{
+        display: block;
+        position: absolute;
+        left: 4.14rem;
+        top: 4.9rem;
+        @include sprite($map-pos);
+        animation: mpTipsAnim 0.8s ease infinite;
+    }
+}
+.gifArea{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 98;
+    @include flexbox;
+    @include ConCen;
+    img{
+        display: block;
+        width: 7.8rem;
+        height: 4.46rem;
+        border: 2px solid #52514f;
+        border-radius: 2px;
+    }
+    .gifAreaClose{
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: 2.0rem;
+        margin-top: 1.4rem;
+        @include sprite($btn-next);
+    }
+}
+.pgGamerVer{
+    .page-tit{
+        position: absolute;
+        top: -0.06rem;
+        left: 3.2rem;
+        span{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0.9rem;
+            width: 100%;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            font-size: 0.22rem;
+            color: #b8b8b8;
+            text-align: center;
+        }
+    }
+    .btn-next{
+        display: block;
+        position: absolute;
+        left: 0.62rem;
+        top: 5.46rem;
+        @include sprite($gv-btn);
+    }
+    .btn-back{
+        display: block;
+        position: absolute;
+        left: 0.62rem;
+        top: 5.46rem;
+        @include sprite($gv-btn2);
+    }
+    .box-nav{
+        position: absolute;
+        left: 0.62rem;
+        top: 1.5rem;
+        width: 5.8rem;
+        height: 0.45rem;
+        line-height: 0.45rem;
+        overflow: hidden;
+        a{
+            margin-right: 0.34rem;
+            font-weight: bold;
+            font-size: 0.24rem;
+            color: #fff;
+            transition:all 0.15s ease;
+            &.cur{
+                font-size: 0.28rem;
+                color: #cfee1d;
+            }
+        }
+    }
+    .box{
+        position: absolute;
+        left: 0.62rem;
+        top: 1.5rem;
+        width: 9.6rem;
+        height: 4.8rem;
+        .item{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition:all 0.25s ease;
+            background: url(../ztimages/gv-line.png) 3.61rem 0.08rem no-repeat;
+            background-size: 0.11rem;
+            &.cur{
+                opacity: 1;
+                visibility: visible;
+            }
+            .buy{
+                display: block;
+                position: absolute;
+                left: 0.6rem;
+                top: 3rem;
+                @include sprite($gv-buy);
+            }
+            .para{
+                position: absolute;
+                left: 4rem;
+                top:0;
+                width: 5.5rem;
+                .para-eh{
+                    position: relative;
+                    padding-left: 0.5rem;
+                    width: 5.1rem;
+                    i{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        font-size: 0.21rem;
+                        color: #cfee1d;
+                        font-style: normal;
+                    }
+                    p{
+                        margin-bottom: 0.05rem;
+                        line-height: 0.32rem;
+                        font-size: 0.24rem;
+                        color: #fff;
+                        span{
+                            display: block;
+                            font-size: 0.21rem;
+                            color: #838383;
+                        }
+                    }
+                }
+            }
+            img{
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0.54rem;
+                width: 3.35rem;
+                height: 1.86rem;
+            }
+        }
+    }
+}
+.pgEnd{
+    .icon-share{
+        position: absolute;
+        left: 0.1rem;
+        top: 0;
+        width: 3.32rem;
+        height: 1.85rem;
+        background: url(../ztimages/end-share.png) 0 0 no-repeat;
+        background-size:100%;
+    }
+    .page-tit{
+        position: absolute;
+        top: -0.06rem;
+        left: 3.2rem;
+        span{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0.9rem;
+            width: 100%;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            font-size: 0.22rem;
+            color: #b8b8b8;
+            text-align: center;
+        }
+    }
+    .infos{
+        position: absolute;
+        top: 1.74rem;
+        left: -0.97rem;
+        padding: 1.15rem 0 0 1.22rem;
+        width: 6.12rem - 1.22rem;
+        height: 2.92rem - 1.15rem;
+        background: url(../ztimages/end-txt.png) 0 0 no-repeat;
+        background-size: 100%;
+        p{
+            line-height: 0.35rem;
+            font-size: 0.2rem;
+            color: #c8c8c8;
+            b{
+                color: #fff;
+            }
+        }
+    }
+    .btn-comment{
+        display: block;
+        position: absolute;
+        left: 0.23rem;
+        top: 4.93rem;
+        @include sprite($end-comm);
+    }
+}
+.hdb-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+    background: url(../ztimages/bg-room.jpg) 0 0 no-repeat;
+    background-size: 100%;
+    opacity: 0;
+    transition:all 0.25s ease;
+    .hdb-area{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -5.8rem;
+        margin-top: -3.6rem;
+        width: 11.6rem;
+        height: 7.2rem;
+        background: url(../ztimages/hdb-area.jpg) 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .btnPick{
+        position: absolute;
+        left: 1196px;
+        top: 930px;
+    }
+    .hdbNav{
+        position: absolute;
+        left: 9.89rem;
+        top: 1.01rem;
+        z-index: 1;
+        width: 1rem;
+        a{
+            position: relative;
+            display: block;
+            margin-bottom: 0.21rem;
+            width: 1rem;
+            height: 0.53rem;
+            line-height: 0.5rem;
+            font-size: 0.24rem;
+            color: #a8a8a8;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 0 0 0.04rem #000,0 0 0.04rem #000,0 0 0.04rem #000,0 0 0.04rem #000;
+            transform:rotate(-4deg);
+            &:hover,&.cur{
+                color: #cfee1d;
+                text-shadow: 0 0 18px rgba(168,255,0,0.6);
+            }
+            &.dis{
+                &.cur:hover{
+                    color: #cfee1d;
+                    text-shadow: 0 0 18px rgba(168,255,0,0.6);
+                }
+                &:hover{
+                    cursor: default;
+                    color: #a8a8a8;
+                    text-shadow: 0 1px 4px #000;
+                }
+            }
+        }
+    }
+    .hdb-con{
+        position: absolute;
+        left: 1rem;
+        top: 1.2rem;
+        width: 8.4rem;
+        height: 5.6rem;
+        .hd-arr{
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: 4.84rem;
+            &.hd-arr-l{
+                left: 2.63rem;
+                @include sprite($hd-arr-l);
+                &.swiper-button-disabled{@include sprite-position($hd-arr-l-dis);}
+            }
+            &.hd-arr-r{
+                left: 4.31rem;
+                @include sprite($hd-arr-r);
+                &.swiper-button-disabled{@include sprite-position($hd-arr-r-dis);}
+            }
+            &.dis{
+                cursor: default;
+                color: #807a7e;
+            }
+        }
+        .hd-swp{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8.4rem;
+            height: 5.6rem;
+            .swiper-slide{
+                width: 8.4rem;
+                height: 5.6rem;
+            }
+            .tit{
+                position: absolute;
+                left: 1.09rem;
+                top: 0;
+                width: 6.11rem;
+                height: 1.52rem;
+                line-height: 1.56rem;
+                background: url(../ztimages/hd-tit-bg.png) 0 0 no-repeat;
+                background-size: 100%;
+                font-size: 0.28rem;
+                color: #340d08;
+                text-align: center;
+                font-weight: bold;
+                text-indent: 0.35rem;
+            }
+            .des{
+                position: absolute;
+                left: 6.06rem;
+                top: 1.37rem;
+                width: 2.17rem;
+                line-height: 0.34rem;
+                font-size: 0.22rem;
+                color: #340d08;
+                text-indent: 0.44rem;
+            }
+            .pic-wrap{
+                position: absolute;
+                left: 0.22rem;
+                top: 1.4rem;
+                padding: 0.13rem 0 0 0.12rem;
+                width: 5.51rem - 0.12rem;
+                height: 3.22rem - 0.13rem;
+                background: url(../ztimages/hdb-most-bd.png) 0 0 no-repeat;
+                background-size: 100%;
+                img{
+                    display: block;
+                    width: 5.27rem;
+                    height: 2.97rem;
+                }
+            }
+        }
+    }
+    .hd-pick-btn{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        left: 2.6rem;
+        top: 4.87rem;
+        @include sprite($hb-btn-pick);
+    }
+    &.cur{
+        opacity: 1;
+    }
+    .hdb-monster{
+        .hd-swp{
+            left: -1rem;
+            top: -1.2rem;
+            width: 11.6rem;
+            height: 7.2rem;
+            .swiper-slide{
+                width: 11.6rem;
+                height: 7.2rem;
+                .tit{
+                    left: 2.08rem;
+                    top: 1.13rem;
+                }
+                .pic-wrap{
+                    left: 0.61rem;
+                    top: 0.67rem;
+                    width: 10.06rem;
+                    height: 5.66rem;
+                    background: none;
+                    img{
+                        display: block;
+                        width: 10.06rem;
+                        height: 5.66rem;
+                    }
+                }
+                .des{
+                    left: 1.34rem;
+                    top: 3.05rem;
+                    width: 2.09rem;
+                    color: #fff;
+                    text-shadow: 0 0 6px #1d0000,0 0 6px #1d0000,0 0 6px #1d0000,0 0 6px #1d0000;
+                }
+            }
+        }
+    }
+    .hdb-weapon{
+        .hd-swp{
+            .swiper-slide{
+                .pic-wrap{
+                    left:0;
+                    top:2rem;
+                    padding-bottom: 0.3rem;
+                    width: 8.4rem;
+                    height: 2.2rem;
+                    background: none;
+                    overflow: auto;
+                    img{
+                        display: block;
+                        margin: 0 auto;
+                        width: 4.8rem;
+                        height: auto;
+                    }
+                }
+                .des{
+                    left: 0.3rem;
+                    top: 1.35rem;
+                    width:7.8rem;
+                }
+            }
+        }
+        &.pick-open{
+            .hd-arr-l{
+                left: 0.97rem;
+            }
+            .hd-arr-r{
+                left: 6.01rem;
+            }
+        }
+    }
+}

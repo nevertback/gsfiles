@@ -1,0 +1,569 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 1180px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 30px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: -36px;
+			top: 26px;
+			@include sprite($logo-gs);
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 134px;
+			top: 0;
+			@include sprite($logo-gf);
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			&.btn1{
+				left: 1px;
+				top: 885px;
+				@include sprite($s1-btn1);
+				&:hover{
+					@include sprite($s1-btn1-h);
+				}
+			}
+			&.btn2{
+				left: 223px;
+				top: 879px;
+				@include sprite($s1-btn2);
+				&:hover{
+					@include sprite($s1-btn2-h);
+				}
+			}
+			&.btn3{
+				left: 504px;
+				top: 879px;
+				@include sprite($s1-btn3);
+				&:hover{
+					@include sprite($s1-btn3-h);
+				}
+			}
+			&.btn4{
+				left: 786px;
+				top: 885px;
+				@include sprite($s1-btn4);
+				&:hover{
+					@include sprite($s1-btn4-h);
+				}
+			}
+		}
+		.play{
+			display: block;
+			position: absolute;
+			left: 445px;
+			top: 442px;
+			width: 109px;
+			height: 109px;
+			i{
+				display: block;
+				position: absolute;
+				&.r2{
+					left: 0;
+					top: 0;
+					@include sprite($play-r2);
+					animation: rotateAnim 4s linear infinite;
+				}
+				&.r1{
+					left: 34px;
+					top: 27px;
+					@include sprite($play-r1);
+				}
+			}
+			&:hover{
+				i.r2{
+					animation-direction: reverse;
+					animation-duration: 2s;
+				}
+			}
+		}
+	}
+}
+.zt-section2{
+	height: 960px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 257px;
+		.live_con{
+			position: relative;
+			margin-left: 57px;
+			width: 890px;
+			height: 449px;
+			overflow: hidden;
+			.holdpic{
+				display: block;
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 860px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 155px;
+		.ztSldWrap{
+			position: relative;
+			margin-left: -28px;
+			padding-top: 16px;
+			width: 1025px;
+			height: 540px - 16px;
+			background: url(../ztimages/s3-sld-bg.png) 0 0 no-repeat;
+			.arrBtn{
+				display: block;
+				position: absolute;
+				top: 197px;
+				&.arrBtnL{
+					left: 29px;
+					@include sprite($arr-l);
+				}
+				&.arrBtnR{
+					right: 1px;
+					@include sprite($arr-r);
+				}
+			}
+			.ztSld{
+				position: relative;
+				margin-left: 137px;
+				width: 780px;
+				height: 440px;
+				.ztSldNav{display: none;}
+				.ztSldCon{
+					li{
+						position: relative;
+						width: 780px;
+						height: 440px;
+						.loadingPic{
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							margin: -15px 0 0 -15px;
+							width: 30px;
+							height: 30px;
+						}
+						.pic{
+							display: block;
+							position: relative;
+							width: 780px;
+							height: 440px;
+						}
+					}
+				}
+			}
+		}
+		.ztTab{
+			position: relative;
+			width: 1000px;
+			.ztTabNav{
+				margin-bottom: 20px;
+				padding-left: 207px;
+				width: 750px;
+				height: 60px;
+				li{
+					position: relative;
+					cursor: pointer;
+					float: left;
+					margin-right: 63px;
+					padding: 0 35px;
+					height: 60px;
+					line-height: 60px;
+					font-size: 24px;
+					color: #373737;
+					font-weight: bold;
+					font-family:'思源宋体 CN',SimSun;
+					.nv{
+						display: block;
+						position: absolute;
+						top: 50%;
+						margin-top: -10px;
+						opacity: 0;
+						visibility: hidden;
+						transition:all 0.25s ease;
+						&.nv-l{
+							left: 0;
+							@include sprite($nv-l);
+							transform:translate3d(20px,0,0);
+						}
+						&.nv-r{
+							right: 0;
+							@include sprite($nv-r);
+							transform:translate3d(-20px,0,0);
+						}
+					}
+					&.cur{
+						color: #fe4c23;
+						.nv{
+							opacity: 1;
+							visibility: visible;
+							&.nv-l,&.nv-r{transform:translate3d(0,0,0);}
+						}
+					}
+				}
+			}
+			.ztTabCon{
+				.item{
+					position: relative;
+					width: 1000px;
+					height: 585px;
+					img{
+						display: block;
+					}
+					.pic1{
+						margin-left: -28px;
+						width: 977px;
+					}
+					.pic2{
+						margin-left: -28px;
+						width: 977px;
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section4{
+	position: relative;
+	height: 1000px;
+	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
+	.spec-tab{
+		position: absolute;
+		left: 50%;
+		margin-left: -960px;
+		width: 1920px;
+		height: 1000px - 67px;
+		overflow: hidden;
+		.st-txt{
+			position: absolute;
+            z-index: 10;
+			left: 449px;
+			top: 641px;
+			width: 1017px;
+			height: 292px;
+			background: url(../ztimages/st-txt.png) 0 0 no-repeat;
+			.st-txt-item{
+				position: absolute;
+				left: 0;
+				top: 0;
+				padding-top: 100px;
+				width: 100%;
+				line-height: 48px;
+				font-size: 24px;
+				color: #373737;
+				font-weight: bold;
+				text-align: center;
+				font-family: '思源宋体','思源宋体 CN','Source Han Serif SC',SimSun;
+				opacity: 0;
+				visibility: hidden;
+				transition:all 0.25s ease;
+				&.cur{
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+		.st-tit{
+			position: absolute;
+            z-index: 10;
+			left: 732px;
+			top: 515px;
+			width: 431px;
+			height: 431px;
+			background: url(../ztimages/st-tit.png) 0 0 no-repeat;
+			transform:rotate(120deg);
+			transition:all 0.3s ease-out;
+			//animation: rotateAnim 0.2s linear infinite;
+		}
+        .st-rws{
+            .st-rw{
+                display: block;
+                position: absolute;
+                transform-origin: 0 0;
+                transition:all 0.5s cubic-bezier(.42,0,.58,1);
+                &.st-rw1{
+                    width: 673px;
+                    height: 616px;
+                    transform:scale(0.8032);
+                }
+                &.st-rw2{
+                    width: 503px;
+                    height: 639px;
+                    transform:scale(0.7753);
+                }
+                &.st-rw3{
+                    width: 672px;
+                    height: 573px;
+                    transform:scale(0.8571);
+                }
+            }
+            &.stRws0{
+                .st-rw1{
+                    left: 328px;
+                    top: 106px;
+                    transform:scale(1);
+                    z-index: 1;
+                }
+                .st-rw2{
+                    left: 797px;
+                    top: 202px;
+                }
+                .st-rw3{
+                    left: 933px;
+                    top: 197px;
+                }
+            }
+            &.stRws1,&.stRws-1{
+                .st-rw1{
+                    left: 410px;
+                    top: 191px;
+                }
+                .st-rw2{
+                    left: 663px;
+                    top: 137px;
+                    transform:scale(1);
+                    z-index: 1;
+                }
+                .st-rw3{
+                    left: 863px;
+                    top: 197px;
+                }
+            }
+            &.stRws2,&.stRws-2{
+                .st-rw1{
+                    left: 340px;
+                    top: 191px;
+                }
+                .st-rw2{
+                    left: 657px;
+                    top: 201px;
+                    z-index: 1;
+                }
+                .st-rw3{
+                    left: 737px;
+                    top: 118px;
+                    transform:scale(1);
+                    z-index: 2;
+                }
+            }
+        }
+		.st-arr{
+			display: block;
+			position: absolute;
+            z-index: 10;
+			top: 386px;
+			&.st-arr-l{
+				left: 461px;
+				@include sprite($arr-l);
+			}
+			&.st-arr-r{
+				right: 461px;
+				@include sprite($arr-r);
+			}
+		}
+        &.sbieCss{
+            .st-tit{
+                &.stTit0{background: url(../ztimages/st-tit0.png) 0 0 no-repeat;}
+                &.stTit2{background: url(../ztimages/st-tit2.png) 0 0 no-repeat;}
+            }
+            .st-rws{
+                .st-rw{
+                    &.st-rw1{
+						width: 544px;
+						height: 498px;
+					}
+                    &.st-rw2{
+						width: 390px;
+						height: 499px;
+					}
+                    &.st-rw3{
+						width: 576px;
+						height: 492px;
+					}
+                }
+                &.stRws0{
+                    .st-rw1{
+						width: 673px;
+						height: 616px;
+					}
+                }
+                &.stRws1,&.stRws-1{
+                    .st-rw2{
+						width: 503px;
+						height: 639px;
+					}
+                }
+                &.stRws2,&.stRws-2{
+                    .st-rw3{
+						width: 672px;
+						height: 573px;
+					}
+                }
+            }
+        }
+	}
+}
+.zt-section5{
+	height: 1000px;
+	background:url(#{$mpath}zt-bg5.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 335px;
+		.codewrap{
+			img{
+				display: block;
+				margin: 0 auto;
+				width: 150px;
+				height: 150px;
+			}
+			p{
+				margin: 20px auto 33px;
+				font-size: 16px;
+				color: #373737;
+				text-align: center;
+			}
+			.btngroup{
+				width: 100%;
+				height: 54px;
+				font-size: 0;
+				text-align: center;
+				a{
+					display: inline-block;
+					margin: 0 10px;
+					*display: inline;
+					*zoom: 1;
+					&.btn1{
+						@include sprite($s5-btn1);
+						&:hover{@include sprite-position($s5-btn1-h);}
+					}
+					&.btn2{
+						@include sprite($s5-btn2);
+						&:hover{@include sprite-position($s5-btn2-h);}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section6{
+	height: 1169px;
+	background:url(#{$mpath}zt-bg6.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 300px;
+		.notice{
+			margin-top: 90px;
+			margin-left: 3px;
+			width: 800px;
+			h5{
+				height: 30px;
+				line-height: 30px;
+				font-size: 16px;
+				color: #6d6d6d;
+			}
+			ul{
+				li{
+					line-height: 24px;
+					font-size: 14px;
+					color: #6d6d6d;
+				}
+			}
+		}
+		.ztSldWrap{
+			position: relative;
+			padding-top: 16px;
+			width: 1000px;
+			height: 471px - 16px;
+			background: url(../ztimages/s6-sld-bg.png) center 0 no-repeat;
+			.arrBtn{
+				display: block;
+				position: absolute;
+				top: 197px;
+				&.arrBtnL{
+					left: 1px;
+					@include sprite($arr-l);
+				}
+				&.arrBtnR{
+					right: 1px;
+					@include sprite($arr-r);
+				}
+			}
+			.ztSld{
+				position: relative;
+				margin: 0 auto;
+				width: 840px;
+				height: 439px;
+				.ztSldNav{display: none;}
+				.ztSldCon{
+					li{
+						position: relative;
+						width: 840px;
+						height: 439px;
+						.loadingPic{
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							margin: -15px 0 0 -15px;
+							width: 30px;
+							height: 30px;
+						}
+						.pic{
+							display: block;
+							position: relative;
+							width: 840px;
+							height: 439px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.fx-code {
+    position: absolute;
+    left: 50%;
+    margin-left: 560px;
+    top: 1443px;
+    width: 116px;
+    height: 315px;
+    background: url(../ztimages/bg-aside.png) no-repeat top center;
+    z-index: 200;
+    &.cur {
+        position: fixed;
+        top: 50%;
+        margin-top: -158px;
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 85px;
+    }
+    .ewm01 {
+        margin-top: 81px;
+    }
+    .ewm02 {
+        margin-top: 36px;
+    }
+}
+@keyframes rotateAnim {
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+
+

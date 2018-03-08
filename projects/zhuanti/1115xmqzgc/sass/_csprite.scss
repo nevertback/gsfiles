@@ -1,0 +1,244 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$logo-gf-name: 'logo-gf';
+$logo-gf-x: 198px;
+$logo-gf-y: 0px;
+$logo-gf-offset-x: -198px;
+$logo-gf-offset-y: 0px;
+$logo-gf-width: 216px;
+$logo-gf-height: 53px;
+$logo-gf-total-width: 500px;
+$logo-gf-total-height: 408px;
+$logo-gf-image: '../ztimages/csprite.png';
+$logo-gf: (198px, 0px, -198px, 0px, 216px, 53px, 500px, 408px, '../ztimages/csprite.png', 'logo-gf', );
+$s1-btn1-h-name: 's1-btn1-h';
+$s1-btn1-h-x: 191px;
+$s1-btn1-h-y: 314px;
+$s1-btn1-h-offset-x: -191px;
+$s1-btn1-h-offset-y: -314px;
+$s1-btn1-h-width: 183px;
+$s1-btn1-h-height: 43px;
+$s1-btn1-h-total-width: 500px;
+$s1-btn1-h-total-height: 408px;
+$s1-btn1-h-image: '../ztimages/csprite.png';
+$s1-btn1-h: (191px, 314px, -191px, -314px, 183px, 43px, 500px, 408px, '../ztimages/csprite.png', 's1-btn1-h', );
+$s1-btn1-name: 's1-btn1';
+$s1-btn1-x: 108px;
+$s1-btn1-y: 207px;
+$s1-btn1-offset-x: -108px;
+$s1-btn1-offset-y: -207px;
+$s1-btn1-width: 183px;
+$s1-btn1-height: 43px;
+$s1-btn1-total-width: 500px;
+$s1-btn1-total-height: 408px;
+$s1-btn1-image: '../ztimages/csprite.png';
+$s1-btn1: (108px, 207px, -108px, -207px, 183px, 43px, 500px, 408px, '../ztimages/csprite.png', 's1-btn1', );
+$s1-btn2-h-name: 's1-btn2-h';
+$s1-btn2-h-x: 0px;
+$s1-btn2-h-y: 365px;
+$s1-btn2-h-offset-x: 0px;
+$s1-btn2-h-offset-y: -365px;
+$s1-btn2-h-width: 183px;
+$s1-btn2-h-height: 43px;
+$s1-btn2-h-total-width: 500px;
+$s1-btn2-h-total-height: 408px;
+$s1-btn2-h-image: '../ztimages/csprite.png';
+$s1-btn2-h: (0px, 365px, 0px, -365px, 183px, 43px, 500px, 408px, '../ztimages/csprite.png', 's1-btn2-h', );
+$s1-btn2-name: 's1-btn2';
+$s1-btn2-x: 0px;
+$s1-btn2-y: 263px;
+$s1-btn2-offset-x: 0px;
+$s1-btn2-offset-y: -263px;
+$s1-btn2-width: 183px;
+$s1-btn2-height: 43px;
+$s1-btn2-total-width: 500px;
+$s1-btn2-total-height: 408px;
+$s1-btn2-image: '../ztimages/csprite.png';
+$s1-btn2: (0px, 263px, 0px, -263px, 183px, 43px, 500px, 408px, '../ztimages/csprite.png', 's1-btn2', );
+$s1-btn3-h-name: 's1-btn3-h';
+$s1-btn3-h-x: 191px;
+$s1-btn3-h-y: 263px;
+$s1-btn3-h-offset-x: -191px;
+$s1-btn3-h-offset-y: -263px;
+$s1-btn3-h-width: 183px;
+$s1-btn3-h-height: 43px;
+$s1-btn3-h-total-width: 500px;
+$s1-btn3-h-total-height: 408px;
+$s1-btn3-h-image: '../ztimages/csprite.png';
+$s1-btn3-h: (191px, 263px, -191px, -263px, 183px, 43px, 500px, 408px, '../ztimages/csprite.png', 's1-btn3-h', );
+$s1-btn3-name: 's1-btn3';
+$s1-btn3-x: 0px;
+$s1-btn3-y: 314px;
+$s1-btn3-offset-x: 0px;
+$s1-btn3-offset-y: -314px;
+$s1-btn3-width: 183px;
+$s1-btn3-height: 43px;
+$s1-btn3-total-width: 500px;
+$s1-btn3-total-height: 408px;
+$s1-btn3-image: '../ztimages/csprite.png';
+$s1-btn3: (0px, 314px, 0px, -314px, 183px, 43px, 500px, 408px, '../ztimages/csprite.png', 's1-btn3', );
+$s1-code-name: 's1-code';
+$s1-code-x: 0px;
+$s1-code-y: 0px;
+$s1-code-offset-x: 0px;
+$s1-code-offset-y: 0px;
+$s1-code-width: 190px;
+$s1-code-height: 147px;
+$s1-code-total-width: 500px;
+$s1-code-total-height: 408px;
+$s1-code-image: '../ztimages/csprite.png';
+$s1-code: (0px, 0px, 0px, 0px, 190px, 147px, 500px, 408px, '../ztimages/csprite.png', 's1-code', );
+$s1-play-i-h-name: 's1-play-i-h';
+$s1-play-i-h-x: 422px;
+$s1-play-i-h-y: 86px;
+$s1-play-i-h-offset-x: -422px;
+$s1-play-i-h-offset-y: -86px;
+$s1-play-i-h-width: 78px;
+$s1-play-i-h-height: 78px;
+$s1-play-i-h-total-width: 500px;
+$s1-play-i-h-total-height: 408px;
+$s1-play-i-h-image: '../ztimages/csprite.png';
+$s1-play-i-h: (422px, 86px, -422px, -86px, 78px, 78px, 500px, 408px, '../ztimages/csprite.png', 's1-play-i-h', );
+$s1-play-i-name: 's1-play-i';
+$s1-play-i-x: 422px;
+$s1-play-i-y: 0px;
+$s1-play-i-offset-x: -422px;
+$s1-play-i-offset-y: 0px;
+$s1-play-i-width: 78px;
+$s1-play-i-height: 78px;
+$s1-play-i-total-width: 500px;
+$s1-play-i-total-height: 408px;
+$s1-play-i-image: '../ztimages/csprite.png';
+$s1-play-i: (422px, 0px, -422px, 0px, 78px, 78px, 500px, 408px, '../ztimages/csprite.png', 's1-play-i', );
+$s1-play-r-name: 's1-play-r';
+$s1-play-r-x: 0px;
+$s1-play-r-y: 155px;
+$s1-play-r-offset-x: 0px;
+$s1-play-r-offset-y: -155px;
+$s1-play-r-width: 100px;
+$s1-play-r-height: 100px;
+$s1-play-r-total-width: 500px;
+$s1-play-r-total-height: 408px;
+$s1-play-r-image: '../ztimages/csprite.png';
+$s1-play-r: (0px, 155px, 0px, -155px, 100px, 100px, 500px, 408px, '../ztimages/csprite.png', 's1-play-r', );
+$s2-btn-h-name: 's2-btn-h';
+$s2-btn-h-x: 198px;
+$s2-btn-h-y: 61px;
+$s2-btn-h-offset-x: -198px;
+$s2-btn-h-offset-y: -61px;
+$s2-btn-h-width: 193px;
+$s2-btn-h-height: 44px;
+$s2-btn-h-total-width: 500px;
+$s2-btn-h-total-height: 408px;
+$s2-btn-h-image: '../ztimages/csprite.png';
+$s2-btn-h: (198px, 61px, -198px, -61px, 193px, 44px, 500px, 408px, '../ztimages/csprite.png', 's2-btn-h', );
+$s2-btn-name: 's2-btn';
+$s2-btn-x: 108px;
+$s2-btn-y: 155px;
+$s2-btn-offset-x: -108px;
+$s2-btn-offset-y: -155px;
+$s2-btn-width: 193px;
+$s2-btn-height: 44px;
+$s2-btn-total-width: 500px;
+$s2-btn-total-height: 408px;
+$s2-btn-image: '../ztimages/csprite.png';
+$s2-btn: (108px, 155px, -108px, -155px, 193px, 44px, 500px, 408px, '../ztimages/csprite.png', 's2-btn', );
+$sld-arr-l-name: 'sld-arr-l';
+$sld-arr-l-x: 422px;
+$sld-arr-l-y: 172px;
+$sld-arr-l-offset-x: -422px;
+$sld-arr-l-offset-y: -172px;
+$sld-arr-l-width: 57px;
+$sld-arr-l-height: 67px;
+$sld-arr-l-total-width: 500px;
+$sld-arr-l-total-height: 408px;
+$sld-arr-l-image: '../ztimages/csprite.png';
+$sld-arr-l: (422px, 172px, -422px, -172px, 57px, 67px, 500px, 408px, '../ztimages/csprite.png', 'sld-arr-l', );
+$sld-arr-r-name: 'sld-arr-r';
+$sld-arr-r-x: 422px;
+$sld-arr-r-y: 247px;
+$sld-arr-r-offset-x: -422px;
+$sld-arr-r-offset-y: -247px;
+$sld-arr-r-width: 57px;
+$sld-arr-r-height: 67px;
+$sld-arr-r-total-width: 500px;
+$sld-arr-r-total-height: 408px;
+$sld-arr-r-image: '../ztimages/csprite.png';
+$sld-arr-r: (422px, 247px, -422px, -247px, 57px, 67px, 500px, 408px, '../ztimages/csprite.png', 'sld-arr-r', );
+$spritesheet-width: 500px;
+$spritesheet-height: 408px;
+$spritesheet-image: '../ztimages/csprite.png';
+$spritesheet-sprites: ($logo-gf, $s1-btn1-h, $s1-btn1, $s1-btn2-h, $s1-btn2, $s1-btn3-h, $s1-btn3, $s1-code, $s1-play-i-h, $s1-play-i, $s1-play-r, $s2-btn-h, $s2-btn, $sld-arr-l, $sld-arr-r, );
+$spritesheet: (500px, 408px, '../ztimages/csprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

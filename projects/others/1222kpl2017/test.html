@@ -1,0 +1,1733 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="gbk">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="robots" content="all"/>
+    <meta name="author" content="Tencent-TGideas"/>
+    <meta name="Copyright" content="Tencent"/>
+    <meta name="description"
+          content="《王者荣耀》是腾讯天美工作室历时3年推出的东方英雄即时对战手游大作，抗塔强杀、团灭超神，领略爽热血竞技的酣畅淋漓！1v1、3v3、5v5、闯关等丰富游戏模式，随时战，更自由！跨服匹配秒开局，好友组队战排位，不靠装备、没有等级，更公平、更爽快的无差异对战！"/>
+    <meta name="keywords" content="王者荣耀,王者联盟,英雄对战,王者荣耀职业联赛,5V5,MOBA,手游"/>
+    <title>王者荣耀职业联赛-腾讯游戏</title>
+    <link href="css/kpl_index.css?d=20171116" rel="stylesheet"/>
+    <link href="css/live_common.css" rel="stylesheet"/>
+    <script>
+        (function () {
+            var a = navigator.userAgent;
+            if (-1 != a.indexOf("iPhone") || -1 != a.indexOf("iPad") || -1 != a.indexOf("iPod") || -1 != a.indexOf("Android")) {
+                self.location = "http://pvp.qq.com/ingame/all/match3/live.shtml?match_id=8"
+            }
+        })();
+        var speed_start=new Date(),speed_load=null,speed_all_load=null;
+    </script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="chromeframe">您使用的IE浏览器版本过低。<a href="http://windows.microsoft.com/">升级您的IE浏览器</a>，或使用<a
+        href="http://www.google.com/chromeframe/?redirect=true">Google Chrome</a>、<a
+        href="http://www.firefox.com.cn/download/">Firefox</a>等高级浏览器，将会得到更好的体验！</p>
+<![endif]-->
+<div id="header_top">
+    <?//xml version="1.0" encoding="gb2312"?>
+    <div class="header">
+        <div class="center">
+            <a href="http://pvp.qq.com" target="_blank" title="王者荣耀" class="logo_link logo1">
+                王者荣耀
+            </a>
+            <a href="http://pvp.qq.com/match/kpl/index.shtml" title="赛事中心" class="logo_link logo2">
+                赛事中心
+            </a>
+            <ul class="nav_ul">
+                <li class="btn_nav1" onclick="pgvSendClick({ hottag: 'match.nav1' })">
+                    <a href="http://pvp.qq.com/match/kpl/index.shtml" title="首页">
+                        首页<span>HOME</span>
+                    </a>
+                </li>
+                <li class="btn_navmatch" onclick="pgvSendClick({ hottag: 'match.nav2' })">
+                    <a href="javascript:;" title="赛事">
+                        赛事<i></i><span>MATCH</span>
+                    </a>
+                </li>
+                <li class="btn_nav2" onclick="pgvSendClick({ hottag: 'match.nav3' })">
+                    <a href="/webplat/info/news_version3/15592/22661/22664/m14593/list_1.shtml" title="新闻">
+                        新闻<span>NEWS</span>
+                    </a>
+                </li>
+                <li class="btn_nav3" onclick="pgvSendClick({ hottag: 'match.nav4' })">
+                    <a href="http://pvp.qq.com/match/kpl/list.shtml#video_wrapper" title="视频">
+                        视频<span>VIDEO</span>
+                    </a>
+                </li>
+                <li class="btn_nav4" onclick="pgvSendClick({ hottag: 'match.nav5' })">
+                    <a href="javascript:alert('敬请期待');" title="荣誉殿堂">
+                        荣誉殿堂<span>HONOR</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="login_detail">
+                <!--登录前状态 Start-->
+                <p id="unlogin" style="display: block">
+                    召唤师您好，请 <a href="javascript:;" id="dologin">[登录]</a>
+                </p>
+                <!--登录后未选择区服状态 End-->
+                <p id="logined_not_selected" style="display:none">
+                    您已登录,请<a href="javascript:;" id="" class="select_role">选择大区</a>，或者<a href="javascript:;" class="dologout">[注销]</a>
+                </p>
+                <!--登录后选择区服状态 End-->
+                <p id="logined_selected" style="display:none">
+                    玩家名称 <span id="nickname"></span> ，<a href="javascript:;" class="dologout">[注销]</a> <a href="javascript:;" class="select_role">[切换大区]</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="macthboxs">
+        <div class="macthlist swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="http://pvp.qq.com/match/kpl/index.shtml" onclick="pgvSendClick({ hottag: 'match.navlink.kpl' })">
+                        <img src="http://game.gtimg.cn/images/yxzj/match/img1.jpg" width="200" height="158" alt="职业联赛" />
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="http://pvp.qq.com/match/kcc.shtml" onclick="pgvSendClick({ hottag: 'match.navlink.kcc' })">
+                        <img src="//game.gtimg.cn/images/yxzj/match/kcc/kcc.jpg" width="200" height="158" alt="冠军杯" />
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="//pvp.qq.com/cp/a20170808city/index.shtml" onclick="pgvSendClick({ hottag: 'match.navlink.city' })">
+                        <img src="http://game.gtimg.cn/images/yxzj/match/img2.jpg" width="200" height="158" alt="王者城市赛" />
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="//pvp.qq.com/webplat/info/news_version3/15592/22661/22664/22667/m15268/201711/657710.shtml" onclick="pgvSendClick({ hottag: 'match.navlink.qgc' })">
+                        <img src="http://game.gtimg.cn/images/yxzj/match/img3.jpg?d=20171116" width="200" height="158" alt="QGC" />
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="http://tga.qq.com/match/2017/pc_game.html?game=wzry&tga=1" onclick="pgvSendClick({ hottag: 'match.navlink.tga' })">
+                        <img src="http://game.gtimg.cn/images/yxzj/match/img4.jpg" width="200" height="158" alt="TGA" />
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="//pvp.qq.com/cp/a20170818school/index.shtml" target="_blank" onclick="pgvSendClick({ hottag: 'match.navlink.school' })">
+                        <img src="http://game.gtimg.cn/images/yxzj/match/img7.jpg" width="200" height="158" alt="校园争霸赛" />
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="javascript:showDialog.show({id:'wgc'});" target="_blank" onclick="pgvSendClick({ hottag: 'match.navlink.wgc' })">
+                        <img src="http://game.gtimg.cn/images/yxzj/match/img8.jpg" width="200" height="158" alt="WGC" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a class="left arrow-left" href="javasript:;"></a>
+        <a class="right arrow-right" href="javasript:;"></a>
+    </div>
+    <div class="pop pr" style="display: none;" id="login_select" role="dialog" tabindex="-1">
+        <a href="javascript:showDialog.hide()" class="close pa db ht">关闭</a>
+        <a href="javascript:void(0)" id="wxlogin" class="wx-login pa db ht">微信用户登录</a>
+        <a href="javascript:void(0)" id="qqlogin" class="qq-login pa db ht">QQ用户登录</a>
+    </div>
+    <div class="pop2 pr" style="display: none;" id="area_select" role="dialog" tabindex="-1">
+        <a href="javascript:showDialog.hide()" class="close pa db ht">关闭</a>
+        <div class="se-input">
+            <select name="channelContentId" id="channelContentId">
+                <option selected="">选择渠道</option>
+
+            </select>
+            <select name="areaContentId" id="areaContentId"><option value="">请选择大区</option></select>
+            <select name="roleContentId" id="roleContentId"><option value="">选择角色</option></select>
+        </div>
+        <div class="se-btn clearfix">
+            <a id="RoleSelectBtn" href="javascript:showDialog.hide()" class="fl ht">确定</a>
+            <a href="javascript:showDialog.hide()" class="fl ht">取消</a>
+        </div>
+    </div>
+    <div class="wgc pr" id="wgc" style="display: none;">
+        <div class="dia-wgc">
+            <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+        </div>
+    </div>
+
+</div>
+<div class="kv_wp kv_small">
+    <a href="/index.shtml" class="schedule-spr logo" target="_blank"></a>
+    <div class="kv_video">
+        <!-- <video id="kvVideo" autoplay="ture">
+            <source src="//game.gtimg.cn/images/yxzj/match/kpl/kv/kpl_kv0705.mp4"></source>
+        </video> -->
+    </div>
+    <!-- <a href="http://pvp.qq.com/act/a20170625kpl/index.htm" onclick="pgvSendClick({hottag:'index.kpl.kv.more'});" target="_blank" class="kv_link" alt="查看更多"></a> -->
+    <div class="nav_list">
+        <ul class="clearfix">
+            <li class="on">
+                <a href="javascript:;" onclick="scroller('header_1', 800);PTTSendClick('nav','nav1','直播');">
+                    <b>直播</b>
+                    <span class="ename">LIVE</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" onclick="scroller('header_2', 800);PTTSendClick('nav','nav2','赛程');">
+                    赛程
+                    <span class="ename">SCHEDULE</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" onclick="scroller('header_3', 800);PTTSendClick('nav','nav3','战队');">
+                    战队
+                    <span class="ename">TEAM</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" onclick="scroller('header_4', 800);PTTSendClick('nav','nav4','解说');">
+                    解说
+                    <span class="ename">COMMENTARY</span>
+                </a>
+            </li>
+            <li>
+                <a href="rule.shtml" target="_blank" onclick="PTTSendClick('nav','nav5','规则');">
+                    规则
+                    <span class="ename">RULE</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" onclick="scroller('header_6', 800);PTTSendClick('nav','nav6','场馆购票');">
+                    场馆购票
+                    <span class="ename">TICKET</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" onclick="scroller('header_7', 800);PTTSendClick('nav','nav7','合作伙伴');">
+                    合作伙伴
+                    <span class="ename">TICKET</span>
+                </a>
+            </li>
+            <!-- <li class="hot">
+                <a href="http://pvp.qq.com/cp/a20161123wzkplpc/ticket.htm" target="_blank"
+                   onclick="pgvSendClick({hottag:'index.kpl.nav.ticket'});">
+                    赛场购票
+                    <span class="ename">TICKET</span>
+                </a>
+            </li> -->
+        </ul>
+    </div>
+</div>
+
+<!-- 视频直播 -->
+<div class="kpl_live_wp" onclick="PTTSendClick('wp','wp1','直播块');">
+    <h2 class="wp-hd"><span class="hd-num">01</span><span class="hd-tit">直播</span><span class="etit">LIVE</span></h2>
+    <div class="live_wp clearfix" id="header_1" name="header_1">
+        <div class="live_video">
+            <p id="cid" class="hid" data-id="124208301"></p>
+            <a href="javascript:;" class="clspop">&times</a>
+            <div class="" id="liveCon">
+
+            </div>
+        </div>
+        <div class="live_right fr" id="chat_room">
+            <ul class="live_tab clearfix" id="txtlive_chat_tab">
+                <li><a href="javascript:;"><i class="schedule-spr"></i><span>聊天</span></a></li>
+            </ul>
+            <div class="live_right_main">
+                <div class="chatroom" id="chatroomBox" style="display:block">
+                    <div class="pr chatroom_main" id="chatMain">
+                        <ul class="pa chat_list" id="chatList">
+                            <li class="chat_item_other"> <div class="chat_item_tit"> <span class="name">打不赢就跳水</span>  </div> <div class="chat_item_cont"> 无语无语无语无语无语无语无语无语无语无语无语无语</div> </li><li class="chat_item_other"> <div class="chat_item_tit"> <span class="name">打不赢就跳水</span>  </div> <div class="chat_item_cont"> 能不能带我上分</div> </li><li class="chat_item_other"> <div class="chat_item_tit"> <span class="name">水果丶apple</span>  </div> <div class="chat_item_cont"> 声音</div> </li>
+                            <li class="chat_item_other"> <div class="chat_item_tit"> <span class="name">打不赢就跳水</span>  </div> <div class="chat_item_cont"> 无语无语无语无语无语无语无语无语无语无语无语无语</div> </li><li class="chat_item_other"> <div class="chat_item_tit"> <span class="name">打不赢就跳水</span>  </div> <div class="chat_item_cont"> 能不能带我上分</div> </li><li class="chat_item_other"> <div class="chat_item_tit"> <span class="name">水果丶apple</span>  </div> <div class="chat_item_cont"> 声音</div> </li>
+                            <li class="chat_item_other"> <div class="chat_item_tit"> <span class="name">打不赢就跳水</span>  </div> <div class="chat_item_cont"> 无语无语无语无语无语无语无语无语无语无语无语无语</div> </li><li class="chat_item_other"> <div class="chat_item_tit"> <span class="name">打不赢就跳水</span>  </div> <div class="chat_item_cont"> 能不能带我上分</div> </li><li class="chat_item_other"> <div class="chat_item_tit"> <span class="name">水果丶apple</span>  </div> <div class="chat_item_cont"> 声音</div> </li>
+                        </ul>
+                    </div>
+                    <div class="chat_speak ovh">
+                        <div class="speak_box pr">
+                            <input class="speak_text" type="text" id="speak_msg" maxlength="30">
+                            <span style="display:none;" class="index-spr pa phiz"></span>
+                        </div>
+                        <a href="javascript:;" class="speak_btn" id="sendmsg">发送</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="videopop" id="videopop">
+        <a href="javascript:;" class="clspop">&times</a>
+        <div class="vpop" id="vpop"></div>
+    </div>
+</div>
+
+<!-- 赛程list -->
+<div class="schedule ovh pr" onclick="PTTSendClick('wp','wp2','赛程块');">
+    <h2 class="wp-hd" id="header_2"><span class="hd-num">02</span><span class="hd-tit">赛程</span><span class="etit">SCHEDULE</span></h2>
+    <ul class="kpl_schedule_nav clearfix">
+        <li class="w1 season_schedule on"><a href="javascript:;" onclick="PTTSendClick('schedule','nav1','秋季赛常规赛')">秋季赛常规赛</a></li>
+        <li class="w2 after_season_schedule"><a href="javascript:;" onclick="PTTSendClick('schedule','nav2','秋季赛季后赛')">秋季赛季后赛</a></li>
+        <li class="w3 pre_season_schedule"><a href="javascript:alert('敬请期待');" onclick="PTTSendClick('schedule','nav3','春季赛预选赛')">春季赛预选赛</a></li>
+    </ul>
+    <div class="schedule_inner">
+        <a id="datePrev" href="javascript:;" class="pa schedule-spr date-arr-btn sprev ht">上翻</a>
+        <a id="dateNext" href="javascript:;" class="pa schedule-spr date-arr-btn snext ht">下翻</a>
+        <div class="schedule_date">
+            <div class="kpl_schedule_date clearfix">
+                <div class="kpl_schedule_date_box">
+                    <a href="javascript:void(0);" class="on schedule_week" data-btime="2017-09-21" data-etime="2017-09-25" data-seasonid='KPL2017S2' data-weeknum='1'>第<em>1</em>周</a>
+                    <a href="javascript:void(0);" class="schedule_week" data-btime="2017-09-28" data-etime="2017-10-02" data-seasonid='KPL2017S2' data-weeknum='2'>第<em>2</em>周</a>
+                    <a href="javascript:void(0);" class="schedule_week" data-btime="2017-10-05" data-etime="2017-10-09" data-seasonid='KPL2017S2' data-weeknum='3'>第<em>3</em>周</a>
+                    <a href="javascript:void(0);" class="schedule_week" data-btime="2017-10-12" data-etime="2017-10-16" data-seasonid='KPL2017S2' data-weeknum='4'>第<em>4</em>周</a>
+                    <a href="javascript:void(0);" class="schedule_week" data-btime="2017-10-19" data-etime="2017-10-23" data-seasonid='KPL2017S2' data-weeknum='5'>第<em>5</em>周</a>
+                    <a href="javascript:void(0) ;" class="schedule_week" data-btime="2017-10-26" data-etime="2017-10-30" data-seasonid='KPL2017S2' data-weeknum='6'>第<em>6</em>周</a>
+                    <a href="javascript:void(0);" class="schedule_week" data-btime="2017-11-02" data-etime="2017-11-06" data-seasonid='KPL2017S2' data-weeknum='7'>第<em>7</em>周</a>
+                    <a href="javascript:void(0);" class="schedule_week" data-btime="2017-11-09" data-etime="2017-11-13" data-seasonid='KPL2017S2' data-weeknum='8'>第<em>8</em>周</a>
+                </div>
+            </div>
+            <div class="after_season_kpl_schedule_date kpl_schedule_date clearfix" style="display:none;">
+                <div class="kpl_schedule_date_box">
+                    <a href="javascript:void(0);" class="on schedule_week" data-btime='2017-11-18' data-etime='2017-11-27' data-seasonid='KPL2017S2J' data-weeknum='1'>第<em>1</em>周</a>
+                    <a href="javascript:void(0);" class="schedule_week" data-btime='2017-12-01' data-etime='2017-12-04' data-seasonid='KPL2017S2J' data-weeknum='2'>第<em>2</em>周</a>
+                    <a href="javascript:void(0);" class="schedule_week" data-btime='2017-12-09' data-etime='2017-12-11' data-seasonid='KPL2017S2J' data-weeknum='3'>第<em>3</em>周</a>
+                    <a href="javascript:void(0);" class="schedule_week" data-btime='2017-12-23' data-etime='2017-12-24' data-seasonid='KPL2017S2J' data-weeknum='3'>总决赛</a>
+                </div>
+            </div>
+            <div class="pre_season_kpl_schedule_date kpl_schedule_date clearfix" style="display:none;">
+            </div>
+        </div>
+
+        <a id="matchPrev" href="javascript:;" class="pa schedule-spr match-arr-btn sprev ht" style="display:none;">上翻</a>
+        <a id="matchNext" href="javascript:;" class="pa schedule-spr match-arr-btn snext ht">下翻</a>
+        <div id="matchBox" class="match_box">
+            <div class="kpl_schedule_date_box kpl_schedule_date_box_schedule">
+                <ul class="pr list" id="matchList">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="kpl_match_progress">
+
+        <!-- 常规赛 Start -->
+        <div class="progress_box routine_match_box  clearfix">
+            <div class="team-score fl">
+                <h3 class="kpl_title"><i class="schedule-spr"></i><p>战队积分榜<span>/Team standings</span></p></h3>
+                <div class="match-rank clearfix">
+                    <a href="javascript:;" class="on" id=''>A组战队积分</a><a href="javascript:;"  id=''>B组战队积分</a>
+                </div>
+                <div class="match-rank-con" style="display: block;">
+                    <ul class="match-title ovh tc">
+                        <li class="match-pm">排名</li>
+                        <li class="match-tm">战队</li>
+                        <li class="match-fv">胜负</li>
+                        <li class="match-cent">积分</li>
+                        <li class="match-jcent">净积分</li>
+                    </ul>
+
+                    <div class="progress_scroll_pad">
+                        <div class="progress_scroll sheight teamCompetition">
+                        </div>
+                    </div>
+                </div>
+                <div class="match-rank-con" style="display:none;">
+                </div>
+            </div>
+            <div class="player-kda fr">
+                <h3 class="kpl_title"><i class="schedule-spr"></i><p>选手KDA榜<span>/Player rankings</span></p></h3>
+                <ul class="match-title ovh tc">
+                    <li class="match-pm">排名</li>
+                    <li class="match-tm">选手</li>
+                    <li class="match-fv"></li>
+                    <li class="match-cent">KDA</li>
+                </ul>
+
+                <div class="progress_scroll_pad">
+                    <div class="progress_scroll sheight">
+                        <ul class="match-rank-list tc ovh clearfix playerCompetition"> </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 常规赛 End -->
+
+        <!-- 季后赛 Start -->
+        <div class="progress_box season_match_box" id="season_match_id" style="display:none;">
+
+            <h3 class="kpl_title"><i class="schedule-spr"></i><p>季后赛战队晋级<span>/Match charts</span></p></h3>
+            <div class="progress_playoff">
+
+            </div>
+        </div>
+        <!-- 季后赛 End -->
+    </div>
+</div>
+<!-- 资讯 -->
+<div class="kpl_news" onclick="PTTSendClick('wp','wp3','资讯块');">
+
+    <!--资讯-->
+    <div class="kpl_news_wp">
+        <div class="kpl_video_box clearfix">
+            <div class="news-left">
+                <h2 class="kpl_title" name="header_2" id="header_2"><i class="schedule-spr"></i><p>最新资讯<span>/news</span></p>
+                    <a class="news-more" href="http://pvp.qq.com/webplat/info/news_version3/15592/22661/22664/25563/m14593/list_1.shtml" target="_blank"><i class="schedule-spr"></i>查看更多</a></h2>
+                <div class="tab slide" id="tab">
+                    <div class="hd">
+                        <ul class="clearfix">
+                            <li><a href="###">最新资讯</a></li>
+                            <li><a href="###">官方新闻</a></li>
+                            <li><a href="###">前瞻战报</a></li>
+                            <li><a href="###">分析解读</a></li>
+                            <li><a href="###">媒体新闻</a></li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <div class="tab-panel dis">
+                            <ul class="news-list ovh">
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25659/m14538/201712/673401.shtml">
+                                        观赛指南：QQ大战再升级！2017KPL秋季赛总决赛等你来看
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">官方新闻</a>
+                                    <em>12/22</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25662/m14538/201712/673415.shtml">
+                                        “QQ”争霸王者之巅，是成就连冠霸业还是新王首度登基？
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">媒体新闻</a>
+                                    <em>12/22</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25661/m14538/201712/673406.shtml">
+                                        eStarPro战队秋季赛回顾：巅峰之路，从未止步
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">分析解读</a>
+                                    <em>12/22</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25661/m14538/201712/672870.shtml">
+                                        QGhappy前线实录二——万事皆备 这是我的主场
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">分析解读</a>
+                                    <em>12/21</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25662/m14538/201712/672784.shtml">
+                                        抗压如何反击，上单对位或成总决赛最大变数
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">媒体新闻</a>
+                                    <em>12/21</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25661/m14538/201712/672351.shtml">
+                                        强势点亮深圳七座地标 2017年KPL秋季赛总决赛开启王者之路
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">分析解读</a>
+                                    <em>12/20</em>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-panel dis">
+                            <ul class="news-list ovh">
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25659/m14538/201712/673401.shtml">
+                                        观赛指南：QQ大战再升级！2017KPL秋季赛总决赛等你来看
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">官方新闻</a>
+                                    <em>12/22</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25659/m14538/201712/670172.shtml">
+                                        一入江湖岁月催，KPL巅峰荣耀归
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">官方新闻</a>
+                                    <em>12/14</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25659/m14538/201712/668919.shtml">
+                                        季后赛数据盘点：XQ与QG会师总决赛，五大中路霸主齐亮相
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">官方新闻</a>
+                                    <em>12/12</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25659/m14538/201712/668402.shtml">
+                                        秋季赛季后赛一周回顾：XQ夺得总决赛门票，eStar、JC分获季军、殿军
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">官方新闻</a>
+                                    <em>12/11</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25659/m14538/201712/668387.shtml">
+                                        战报：带着你们的梦想去深圳！XQ力克eStar首次挺进总决赛
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">官方新闻</a>
+                                    <em>12/10</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25659/m14538/201712/668308.shtml">
+                                        战报：气势如虹！eStar 4:0 零封JC 明日迎战XQ
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">官方新闻</a>
+                                    <em>12/09</em>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-panel dis">
+                            <ul class="news-list ovh">
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25660/m14538/201712/668387.shtml">
+                                        战报：带着你们的梦想去深圳！XQ力克eStar首次挺进总决赛
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">前瞻战报</a>
+                                    <em>12/10</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25660/m14538/201712/668308.shtml">
+                                        战报：气势如虹！eStar 4:0 零封JC 明日迎战XQ
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">前瞻战报</a>
+                                    <em>12/09</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25660/m14538/201712/665563.shtml">
+                                        战报：王朝将临！QG让二追四逆转XQ我们深圳见
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">前瞻战报</a>
+                                    <em>12/03</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25660/m14538/201712/665413.shtml">
+                                        战报：铁军难挡！JC4:1送别RNG.M踏入四强
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">前瞻战报</a>
+                                    <em>12/02</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25660/m14538/201712/665193.shtml">
+                                        战报：戮力同心！eStar 4:1拿下WF锁定四强席位
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">前瞻战报</a>
+                                    <em>12/01</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25660/m14538/201711/662111.shtml">
+                                        战报：强者之战！3:4铁军JC险些拉双冠QG下马
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">前瞻战报</a>
+                                    <em>11/27</em>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-panel dis">
+                            <ul class="news-list ovh">
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25661/m14538/201712/673401.shtml">
+                                        观赛指南：QQ大战再升级！2017KPL秋季赛总决赛等你来看
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">分析解读</a>
+                                    <em>12/22</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25661/m14538/201712/673406.shtml">
+                                        eStarPro战队秋季赛回顾：巅峰之路，从未止步
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">分析解读</a>
+                                    <em>12/22</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25661/m14538/201712/672870.shtml">
+                                        QGhappy前线实录二——万事皆备 这是我的主场
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">分析解读</a>
+                                    <em>12/21</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25661/m14538/201712/672351.shtml">
+                                        强势点亮深圳七座地标 2017年KPL秋季赛总决赛开启王者之路
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">分析解读</a>
+                                    <em>12/20</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25661/m14538/201712/672473.shtml">
+                                        KPL总决赛 —— 明星票选阵容揭晓
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">分析解读</a>
+                                    <em>12/20</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25661/m14538/201712/672363.shtml">
+                                        【真王者】最强射手Hurt：追求百分表现 渴望夺冠成就QG王朝
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">分析解读</a>
+                                    <em>12/20</em>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-panel dis">
+                            <ul class="news-list ovh">
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25662/m14538/201712/673415.shtml">
+                                        “QQ”争霸王者之巅，是成就连冠霸业还是新王首度登基？
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">媒体新闻</a>
+                                    <em>12/22</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25662/m14538/201712/672784.shtml">
+                                        抗压如何反击，上单对位或成总决赛最大变数
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">媒体新闻</a>
+                                    <em>12/21</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25662/m14538/201712/671720.shtml">
+                                        坚持还是改变，最强射手总决赛将如何对位？
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">媒体新闻</a>
+                                    <em>12/19</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25662/m14538/201712/670473.shtml">
+                                        不可忽视的中坚力量，四强战队中单扛起一片天
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">媒体新闻</a>
+                                    <em>12/15</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25662/m14538/201712/668944.shtml">
+                                        下克上完成一串三，eStar夺下KPL秋季赛季军！
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">媒体新闻</a>
+                                    <em>12/12</em>
+                                </li>
+                                <li>
+                                    <a target="_blank" class="news-tit" href="/webplat/info/news_version3/15592/22661/22664/25563/25662/m14538/201712/667627.shtml">
+                                        败者组半决赛大战，eStar、JC谁将锁定秋季赛前三？
+                                        <i></i>
+                                    </a>
+                                    <a class="news-type" href="javascript:;">媒体新闻</a>
+                                    <em>12/08</em>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-gg">
+                <div class="news-gg-box">
+                    <a class="big_gg" href='#' data-tgad='15912,19795'></a>
+                    <a class="small_gg" href='#' data-tgad='15912,19796'></a>
+                    <a class="small_gg" href='#' data-tgad='15912,19797'></a>
+                    <a class="small_gg" href='#' data-tgad='15912,19798'></a>
+                    <a class="small_gg" href='#' data-tgad='15912,19799'></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--视频中心-->
+    <div class="kpl_video_wp">
+        <div class="kpl_video_box">
+            <h2 class="kpl_title"><i class="schedule-spr"></i><p>视频中心<span>/video center</span></p><a class="news-more" href="list.shtml#video_wrapper" target="_blank"><i class="schedule-spr"></i>查看更多</a></h2>
+            <ul class="chosen_list kpl_video_nav clearfix">
+                <li class="w1"><a title="所有" type="iSubType" id="962" onclick="SearchData(this)" class="on">所有</a></li>
+                <li class="w2"><a title="eStar" type="iKeyword" id="1275" onclick="SearchData(this)">eStar</a></li>
+                <li class="w3"><a title="AG超玩会" type="iKeyword" id="1274" onclick="SearchData(this)">AG超玩会</a></li>
+                <li class="w4"><a title="QGhappy" type="iKeyword" id="2378" onclick="SearchData(this)">QGhappy</a></li>
+                <li class="w5"><a title="WF" type="iKeyword" id="1270" onclick="SearchData(this)">WF</a></li>
+                <li class="w6"><a title="sViper" type="iKeyword" id="1264" onclick="SearchData(this)">sViper</a></li>
+                <li class="w7"><a title="AS仙阁" type="iKeyword" id="1268" onclick="SearchData(this)">AS仙阁</a></li>
+                <li class="w8"><a title="XQ" type="iKeyword" id="1269" onclick="SearchData(this)">XQ</a></li>
+                <li class="w9"><a title="JC" type="iKeyword" id="2009" onclick="SearchData(this)">JC</a></li>
+                <li class="w10"><a title="YTG" type="iKeyword" id="2012" onclick="SearchData(this)">YTG</a></li>
+                <li class="w11"><a title="GK" type="iKeyword" id="2008" onclick="SearchData(this)">GK</a></li>
+                <li class="w12"><a title="DL" type="iKeyword" id="1271" onclick="SearchData(this)">DL</a></li>
+                <li class="w13"><a title="SC" type="iKeyword" id="1267" onclick="SearchData(this)">SC</a></li>
+                <!--<li class="w14"><a title="其他" type="iKeyword" id="990" onclick="SearchData(this)">其他</a></li>-->
+            </ul>
+            <div class="v_list_box kpl_video_list">
+                <ul class="video_list pv-list ovh">
+                    <li><a class="v_pic" href="../videodetail.shtml?G_Biz=18&amp;tid=163260&amp;e_code=pvpweb.searchiSubType.iSubType962" onclick="WMP_LOG_EAS('pvpweb','searchiSubType','iSubType962',163260,'../videodetail.shtml?G_Biz=18&amp;tid=163260&amp;e_code=pvpweb.searchiSubType.iSubType962')" target="_blank" title="【KPL春季赛】2017总决赛纪录片"><img src="//shp.qpic.cn/cfwebcap/3146194188/d56afb6dd666e71db894797f2a69d590/0/" width="200" height="112" alt="【KPL春季赛】2017总决赛纪录片"><div class="video_hover"></div></a><a class="v_tlt" href="../videodetail.shtml?G_Biz=18&amp;tid=163260&amp;e_code=pvpweb.searchiSubType.iSubType962" onclick="WMP_LOG_EAS('pvpweb','searchiSubType','iSubType962',163260,'../videodetail.shtml?G_Biz=18&amp;tid=163260&amp;e_code=pvpweb.searchiSubType.iSubType962')" target="_blank" title="【KPL春季赛】2017总决赛纪录片"><i class="schedule-spr"></i>【KPL春季赛】2017总决赛纪录片</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="kpl_team_wp" id="header_3" name="header_3" onclick="PTTSendClick('wp','wp4','战队块');">
+    <h2 class="wp-hd"><span class="hd-num">03</span><span class="hd-tit">战队</span><span class="etit">TEAM</span></h2>
+    <!--队伍信息-->
+    <div class="kpl_team_box" id="kplTeam">
+        <ul class="team_list clearfix">
+            <li class="on">
+                <img src=""/>
+                <p>SC</p>
+            </li>
+            <li><img src=""/><p></p></li><li><img src=""/><p></p></li><li><img src=""/><p></p></li><li><img src=""/><p></p></li><li><img src=""/><p></p></li><li><img src=""/><p></p></li><li><img src=""/><p></p></li><li><img src=""/><p></p></li><li><img src=""/><p></p></li><li><img src=""/><p></p></li><li><img src=""/><p></p></li>
+        </ul>
+        <div class="team_desc">
+            <p>按照春季赛季后赛排名显示1-4支队伍，其中并列第三的两支队伍按照常规赛积分排名。</p>
+            <p>按春季赛常规赛积分排名显示5-9支队伍，秋季赛预选赛晋级的队伍按积分排名显示第10-12名，其余队伍按秋季赛预选赛积分排名显示。</p>
+            <p>其中原BEST现改名为EDG.M，原WJY现改名为RNG.M</p>
+        </div>
+        <div class="team_member">
+            <h3><em>SC</em>战队现役选手</h3>
+            <a id="teamPrev" href="javascript:;" class="pa schedule-spr team-arr-btn sprev ht">上翻</a>
+            <a id="teamNext" href="javascript:;" class="pa schedule-spr team-arr-btn snext ht">下翻</a>
+            <div class="member_list_box">
+                <ul class="member_list clearfix">
+                    <li>
+                        <div class="member-cover">
+                            <div class="cover-bg"></div>
+                            <img src=""/>
+                            <p class="bname">中单</p>
+                            <p class="sname">选手名字</p>
+                        </div>
+                        <div class="member-hero">
+                            <p>擅长英雄</p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="kpl_jieshuo" onclick="PTTSendClick('wp','wp5','解说块');">
+
+    <h2 class="wp-hd" id="header_4"><span class="hd-num">04</span><span class="hd-tit">解说</span><span class="etit">COMMENTARY </span></h2>
+    <!--解说阵容-->
+    <div class="kpl_jieshuo_box" id="header_4">
+        <a id="jsPrev" href="javascript:;" class="pa schedule-spr js-arr-btn sprev ht" style="display:none;">上翻</a>
+        <a id="jsNext" href="javascript:;" class="pa schedule-spr js-arr-btn snext ht">下翻</a>
+        <div class="kpl_jieshuo_cbox">
+            <ul class="kpl_jieshuo_list clearfix">
+                <li>
+                    <a href="#none">
+                        <div class="jieshuo-cover schedule-spr"></div>
+                        <img src="http://game.gtimg.cn/images/yxzj/match/kcc/jieshuo/4.jpg"><span>李九</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="jieshuo-cover schedule-spr"></div>
+                        <img src="http://game.gtimg.cn/images/yxzj/match/kcc/jieshuo/5.jpg"><span>瓶子</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="jieshuo-cover schedule-spr"></div>
+                        <img src="http://game.gtimg.cn/images/yxzj/match/kcc/jieshuo/1.jpg"><span>GINI</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="jieshuo-cover schedule-spr"></div>
+                        <img src="http://game.gtimg.cn/images/yxzj/match/kcc/jieshuo/6.jpg"><span>琪琪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="jieshuo-cover schedule-spr"></div>
+                        <img src="http://game.gtimg.cn/images/yxzj/match/kcc/jieshuo/3.jpg"><span>狂人</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="jieshuo-cover schedule-spr"></div>
+                        <img src="http://game.gtimg.cn/images/yxzj/match/kcc/jieshuo/2.jpg"><span>白乐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="jieshuo-cover schedule-spr"></div>
+                        <img src="http://game.gtimg.cn/images/yxzj/match/kcc/jieshuo/7.jpg"><span>英凯</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#none">
+                        <div class="jieshuo-cover schedule-spr"></div>
+                        <img src="http://game.gtimg.cn/images/yxzj/match/kpl/jieshuo_qiqi.png"><span>琪琪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <div class="jieshuo-cover schedule-spr"></div>
+                        <img src="http://game.gtimg.cn/images/yxzj/match/kpl/jieshuo_yingkai.png"><span>英凯</span>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="kpl_ticket" onclick="PTTSendClick('wp','wp6','购票块');">
+    <h2 class="wp-hd" id="header_6"><span class="hd-num">05</span><span class="hd-tit">购票</span><span class="etit">TICKET </span></h2>
+    <div class="kpl_ticket_box">
+        <ul class="ticket_hd">
+            <li class="schedule-spr">
+                <p>2017年秋季赛<b>常规赛</b></p>
+                <span class="schedule-spr ticket-dis">比赛结束</span>
+            </li>
+            <li class="schedule-spr">
+                <p>2017年秋季赛<b>季后赛</b></p>
+                <span class="schedule-spr ticket-dis">比赛结束</span>
+            </li>
+            <li class="schedule-spr on">
+                <p>2017年秋季赛<b>总决赛</b></p>
+                <span class="schedule-spr ticket-on">售票开启</span>
+            </li>
+        </ul>
+        <div class="ticket-map">
+            <div class="map-wrap fl">
+                <div id="ticket-map" class="map"></div>
+            </div>
+            <div class="ticket-info fr">
+                <h4 class="ticket-info-hd"><p>2017年秋季赛<b>总决赛</b></p></h4>
+                <ul class="ticket-adr">
+                    <li>
+                        <span class="info">比赛场馆<i></i></span>
+                        <p>华润深圳湾体育中心“春茧”体育馆</p>
+                    </li>
+                    <li>
+                        <span class="info">场馆地址<i></i></span>
+                        <p>广东省深圳市南山区滨海大道3001号</p>
+                    </li>
+                    <li>
+                        <span class="info">深圳地铁<i></i></span>
+                        <p>深圳地铁2号线（蛇口线）后海站、11号线后海站H出口</p>
+                    </li>
+                    <li>
+                        <span class="info">乘坐公交<i></i></span>
+                        <p class="info-tit-spec">229，337，K204路及其他路线滨海科苑立交站或深圳湾体育中心站</p>
+                    </li>
+                    <li>
+                        <span class="info">KPL秋季赛总决赛售票时间<i></i></span>
+                        <p>12月11日12:00—12月16日23:59</p>
+                    </li>
+                    <li>
+                        <span class="info">售票价格<i></i></span>
+                        <p class="price">
+                            <span class="price-dis">一区</span>
+                            <span>688元</span>
+                            <span class="price-dis">二区</span>
+                            <span>488元</span>
+                            <span class="price-dis">三区</span>
+                            <span>288元</span>
+                            <span class="price-dis">四区</span>
+                            <span>188元</span>
+                        </p>
+                    </li>
+                </ul>
+                <a href="http://pvp.qq.com/cp/a20171120wzrynet/tick-buy.html" target="_blank" class="schedule-spr buy" onclick="PTTSendClick('ticket','buy','立即购票')">立即购票</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="partner" onclick="PTTSendClick('wp','wp7','合作伙伴块');">
+    <h2 class="wp-hd" id="header_7"><span class="hd-num">06</span><span class="hd-tit">合作伙伴</span><span class="etit">PARTNER</span></h2>
+</div>
+<div class="footer-wrap">  <div class="footer bc">
+    <div class="foot-t clearfix">
+        <div class="foot-logo fl clearfix">
+            <a href="http://ieg.tencent.com/" target="_blank" class="logo1 spr fl ht">腾讯互动娱乐</a>
+            <a href="http://timi.qq.com/" target="_blank" class="logo2 spr fl ht">timi</a>
+        </div>
+        <div class="fl media-pic">
+            <a href="http://cy.qq.com/p/caiyun/1886.html" target="_blank"><img src="http://game.gtimg.cn/images/yxzj/match/kpl/qgame.png"></a>
+            <a href="http://k.18183.com/zhuanlan/hz/kpl.html" target="_blank"><img src="http://game.gtimg.cn/images/yxzj/match/kpl/18183.png" class="media_special"></a>
+            <a href="http://event.m.shihou.tv/iweb/index.html?uid=247769" target="_blank"><img src="http://game.gtimg.cn/images/yxzj/match/kpl/youxiduo.png"></a>
+            <a href="http://pvp.uuu9.com/zt/kplbs/?67677" target="_blank"><img src="http://game.gtimg.cn/images/yxzj/match/kpl/youjiu.png"></a>
+            <a href="http://www.wanplus.com/kog" target="_blank"><img src="http://game.gtimg.cn/images/yxzj/match/kpl/wanjia.png"></a>
+        </div>
+        <div id="media" class="foot-media pr fr" onclick="pgvSendClick({hottag:'main.footer.media'});">
+            <h3 class="media-tit">合作媒体</h3>
+            <div class="arrow-ico-btn pa"><span class="arrow-ico db spr"></span></div>
+            <ul style="display: none;" id="mediaCon" class="media-list pa">
+                <li><a target="_blank" href="http://news.17173.com/z/pvp/zt/match/2017KPL.shtml">17173</a></li>
+                <li><a target="_blank" href="http://cy.qq.com/p/caiyun/1886.html">腾讯游戏频道</a></li>
+                <li><a target="_blank" href="http://shouji.tgbus.com/zt/kpl2017/index.html">电玩巴士</a></li>
+                <li><a target="_blank" href="http://saishi.youxibao.com/wzry_kpl/">52PK</a></li>
+                <li><a target="_blank" href="http://k.18183.com/zhuanlan/hz/kpl.html">18183</a></li>
+                <li><a target="_blank" href="http://event.m.shihou.tv/iweb/index.html?uid=247769">游戏多</a></li>
+                <li><a target="_blank" href="http://pvp.uuu9.com/zt/kplbs/?67677">U9</a></li>
+                <li><a target="_blank" href="http://wzry.duowan.com/kpl/">多玩</a></li>
+                <li><a target="_blank" href="http://me.15w.com/zt/2016kpl/">15W</a></li>
+                <li><a target="_blank" href="http://pvp.qq.com/match/kpl/">兔玩网</a></li>
+                <li><a target="_blank" href="http://www.wanplus.com/kog">玩加赛事</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="foot-tips fl">
+            <p class="fb">温馨提示：本游戏适合18岁(含)以上玩家娱乐</p>
+            <p class="f12"><em>抵制不良游戏</em><em>拒绝盗版游戏</em><em>注意自我保护</em><em>谨防受骗上当</em><em>适度游戏益脑</em><em>沉迷游戏伤身</em><em>合理安排时间</em><em>享受健康生活</em></p>
+        </div>
+        <div class="foot-b f12 tr">
+            <p><a target="_blank" href="http://ieg.tencent.com">腾讯互动娱乐</a> | <a target="_blank" href="http://game.qq.com/contract.shtml">服务条款</a> | <a target="_blank" href="http://adver.qq.com/">广告服务</a> | <a target="_blank" href="http://game.qq.com/hr/">腾讯游戏招聘</a> | <a target="_blank" href="http://service.qq.com/">腾讯游戏客服</a> | <a target="_blank" href="http://game.qq.com/gnav">游戏地图</a> | <a target="_blank" href="http://tgact.qq.com/">游戏活动</a> | <a target="_blank" href="http://game.qq.com/brand/business.htm">商务合作</a> | <a target="_blank" href="http://www.qq.com/map/">网站导航</a></p>
+            <p class="foot-txt fr"><em class="fl">COPYRIGHT &copy; 1998 – 2016 TENCENT. ALL RIGHTS RESERVED.</em><a target="_blank" href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" class="fr">腾讯公司 版权所有</a></p>
+            <p class="cb">文网游备字[2016]M-CSG 0059</p>
+        </div>
+    </div>
+</div>
+</div>
+<script>speed_load=new Date();</script>
+<script src="http://ossweb-img.qq.com/images/js/title.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/milo/util/jquery-1.11.3.min.js"></script>
+<script src="http://gzhcache.qq.com/assets/js/common/template.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+<script src="http://imgcache.qq.com/tencentvideo_v1/tvp/js/tvp.player_v2_jq.js"></script>
+<script src="http://ams.qq.com/wmp/data/js/PAGE_WMP_BIZ_TYPE.js"></script>
+<script src="http://ams.qq.com/wmp/sys/v3.0/js/wmpCommon_v3.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/clientpop/js/tgadshow.min.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/eas/eas.js"></script>
+<script src="js/play-info-1709.js"></script>
+<script src="js/esports_index.js"></script>
+<script src="js/kpl_index.js"></script>
+<script src="js/logic.js"></script>
+<script charset="utf-8" src="//map.qq.com/api/js?v=2.exp"></script>
+<script>
+    var center = new qq.maps.LatLng(22.5181700000,113.9487900000);
+    var map = new qq.maps.Map(document.getElementById('ticket-map'),{
+        center: center,
+        zoom: 50
+    });
+    var infoWin = new qq.maps.InfoWindow({
+        map: map
+    });
+    infoWin.open();
+    //tips  自定义内容
+    infoWin.setContent('<div style="width:120px;text-align: center;font-size: 16px">'+
+        '“春茧”体育馆</div>');
+    infoWin.setPosition(center);
+</script>
+<script type="text/javascript">
+    //此段代码不能放到外链JS中，
+    var setSite={ //设置网站属性
+        siteType:"kpl", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType:"main", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName:"王者职业联赛", //必填项:页面中文名
+        stayTime:0
+    }
+    if(typeof(pgvMain) == 'function')pgvMain();
+    $(window).load(function(){
+        speed_all_load = new Date();
+        var url = 'http://isdspeed.qq.com/cgi-bin/r.cgi?flag1=7718&flag2=249&flag3=1&30='+(speed_load-speed_start)+'&31='+(speed_all_load-speed_start);
+        if(Math.random()<0.5){  //做30％抽样上报，可按照业务流量大小调整
+            imgSendTimePoint=new Image();
+            imgSendTimePoint.src=url;
+        };
+    });
+    (function () {
+        var center = new qq.maps.LatLng(22.5181700000,113.9487900000);
+        var map = new qq.maps.Map(document.getElementById('map-wrap'),{
+            center: center,
+            zoom: 50
+        });
+        var infoWin = new qq.maps.InfoWindow({
+            map: map
+        });
+        infoWin.open();
+        //tips  自定义内容
+        infoWin.setContent('<div style="width:120px;text-align: center;font-size: 16px">'+
+            '“春茧”体育馆</div>');
+        infoWin.setPosition(center);
+        // var vidTest = document.createElement("video");
+        // if(vidTest.canPlayType && vidTest.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"')){
+        // 	$('#kvVideo').bind('timeupdate',function(){
+        // 		if(this.duration - this.currentTime < .5){
+        // 			var img = document.createElement("img");
+        // 			img.src = "//game.gtimg.cn/images/yxzj/match/kpl/kv/kpl_kv0705.jpg";
+        // 			img.onload = function(){
+        // 				$('#kvVideo').hide();
+        // 				$('.kv_video').css('background-image','url("//game.gtimg.cn/images/yxzj/match/kpl/kv/kpl_kv0705.jpg")');
+        // 			}
+
+        // 		}
+        // 	})
+        // }else {
+        // 	$('#kvVideo').html('');
+        // 	$('#kvVideo').hide();
+        // 	$('.kv_video').css('background-image','url("//game.gtimg.cn/images/yxzj/match/kpl/kv/kpl_kv0705.jpg")');
+        // }
+        var player = null;
+        function createChannel(wrapId,cid,wid,heit) {
+            var video = new tvp.VideoInfo();
+            video.setChannelId(cid);
+
+            player= new tvp.Player();
+            player.create({
+                width:wid,
+                height: heit,
+                type: 1,
+                video: video,
+                modId: wrapId,
+                autoplay: 1,
+                oid: cid
+                /*liveFlashExtVars: {
+                 bullet: 1, //是否显示弹幕，默认不显示。0为隐藏，1为显示
+                 advbullet: 1, //是否显示高级图片弹幕，默认不显示。0为隐藏，1为显示
+                 registid: '弹幕的评论ID'
+                 }*/
+            });
+        }
+        function dragVideo() {
+            var box = $(".live_video")[0];
+            box.onmousedown = function (event) {
+                if(showpop){
+                    var e = event || window.event,
+                        t = e.target || e.srcElement,
+                        x1 = e.clientX,
+                        y1 = e.clientY,
+                        dragLeft = this.offsetLeft,
+                        dragTop = this.offsetTop;
+                    document.onmousemove = function (event) {
+                        var e = event || window.event,
+                            t = e.target || e.srcElement,
+                            x2 = e.clientX,
+                            y2 = e.clientY,
+                            x = x2 - x1,
+                            y = y2 - y1;
+                        box.style.left = (dragLeft + x) + 'px';
+                        box.style.top = (dragTop + y) + 'px';
+                    }
+                    document.onmouseup = function () {
+                        this.onmousemove = null;
+                        box.style.left = 'auto';
+                        box.style.top = 'auto';
+                    }
+                }
+            }
+        }
+        var cid = $("#cid").attr("data-id"),showpop;
+        createChannel("liveCon",cid,'100%','100%');
+        $(window).scroll(function() {
+            if($(document).scrollTop()>=1463&&!showpop){
+                // 显示下面 隐藏上面
+                // $("#videopop").show();
+                $(".live_video").addClass("livefix");
+                dragVideo();
+                showpop = true;
+                PTTSendClick('pop','pshow','显示视频弹窗');
+            }if($(document).scrollTop()<1463&&!!showpop){
+                // 隐藏下面，显示上面
+                // $("#vpop").html("");
+                $(".live_video").removeClass("livefix");
+                // createChannel("liveCon",cid,'100%',560);
+                showpop = false;
+                PTTSendClick('pop','vshow','显示大视频');
+            }
+        });
+        $(".clspop").on("click",function(){
+            // $("#vpop").html("");
+            $(".live_video").removeClass("livefix");
+            PTTSendClick('pop','vclose','关闭视频弹窗');
+        })
+// teams load
+
+        var _thtml = '',heroInfo = null;
+        $.ajax({
+            url : 'http://pvp.qq.com/web201605/js/herolist.json',
+            type : 'GET',
+            dataType : 'json',
+            success : function(data){
+                heroInfo = data;
+                setIcon();
+            }
+        });
+        function setIcon(){
+            $.each(kccTeams,function(i,data){
+                _thtml += '<li><img src="'+data.logo+'" alt="'+data.name+'"/><p>'+data.name+'</p></li>'
+            })
+            $('.team_list').html(_thtml);
+            $('.team_list').on('click','li',function(){
+                var n = $(this).index(),data = kccTeams[n],_mhtml = '',_src = data.src;
+                if(!$(this).hasClass('on')){
+                    $('.team_list').find('.on').removeClass('on');
+                    $('.team_list li').eq(n).addClass('on')
+                    $.each(data.member,function(i,e){
+                        _mhtml += '<li><div class="member-cover"><div class="cover-bg"></div><img src="//game.gtimg.cn/images/yxzj/match/kpl/kpl0917/teams/'+_src+"/"+i+'.jpg" alt="'+e[0]+'"/><p class="bname">'+e[1]+'</p><p class="sname">'+e[0]+'</p></div>';
+                        if(e[2]){
+                            if(!e[3]){
+                                var hL = heroInfo.length;
+                                var names = e[2].split(','),iconNum = [];
+                                for(var k=0;k<hL;k++){
+                                    var index;
+                                    if(names.indexOf){
+                                        index = names.indexOf(heroInfo[k].cname);
+                                    }else {
+                                        for(var ii = 0;ii<3;ii++){
+                                            if(names[ii] == heroInfo[k].cname){
+                                                index = ii;
+                                            }
+                                        }
+                                    }
+                                    if(index>=0){
+                                        iconNum[index] = heroInfo[k].ename;
+                                    }
+                                    e.push(iconNum);
+                                }
+                            }
+                            _mhtml +='<div class="member-hero"><p>擅长英雄</p><ul>';
+                            $.each(e[3],function(i,ele){
+                                _mhtml += '<li><img src="http://game.gtimg.cn/images/yxzj/img201606/heroimg/'+ele+'/'+ele+'.jpg" /></li>'
+                            })
+                            _mhtml +='</ul></div>'
+
+                        }
+                        _mhtml +='</li>';
+                    });
+                    $('.member_list').html(_mhtml);
+                    $('.member_list').css('margin-left','0');
+                    if(data.member.length > 8){
+                        $('#teamNext').show();
+                        $('#teamPrev').hide();
+                    }else {
+                        $('#teamPrev,#teamNext').hide();
+                    }
+                    $('.team_member h3 em').text(data.name);
+                }
+                PTTSendClick('team','team'+n,'战队'+n);
+            });
+            $('.team_list li').eq(0).click();
+        }
+        $('#teamPrev,#teamNext').on('click',function(){
+            var ml = parseInt(parseInt($('.member_list').css('margin-left'))/136),n = $('.member_list').children().length,
+                o = $(this).attr('id').indexOf('Next') > 0 ? -1 : 1;
+            $('.member_list').css('margin-left',((ml+o)*136+'px'));
+            ml+o == 0 ? $('#teamPrev').hide() : $('#teamPrev').show();
+            ml+o+n > 8 ? $('#teamNext').show() : $('#teamNext').hide();
+            var tt = o == -1 ? 'next' : 'prev';
+            PTTSendClick('team','btn'+tt,'队伍'+tt);
+        });
+        if($('.kpl_schedule_date a').length > 8){
+            $('#dateNext').show();
+            $('#datePrev').hide();
+        }else {
+            $('#datePrev,#dateNext').hide();
+        }
+        $('#datePrev,#dateNext').on('click',function(){
+            var ml = parseInt(parseInt($('.kpl_schedule_date .kpl_schedule_date_box').css('margin-left'))/132),n = $('.kpl_schedule_date a').length,
+                o = $(this).attr('id').indexOf('Next') > 0 ? -1 : 1;
+            $('.kpl_schedule_date .kpl_schedule_date_box').css('margin-left',((ml+o)*132+'px'));
+            ml+o == 0 ? $('#datePrev').hide() : $('#datePrev').show();
+            ml+o+n > 8 ? $('#dateNext').show() : $('#dateNext').hide();
+            var tt = o == -1 ? 'next' : 'prev';
+            PTTSendClick('date','btn'+tt,'日期'+tt);
+        });
+        $('#matchPrev,#matchNext').on('click',function(){
+            var ml = parseInt(parseInt($('.match_box .kpl_schedule_date_box').css('margin-left'))/364),n = $('#matchList li').length,
+                o = $(this).attr('id').indexOf('Next') > 0 ? -1 : 1;
+            $('.match_box .kpl_schedule_date_box').css('margin-left',((ml+o)*364+'px'));
+            ml+o == 0 ? $('#matchPrev').hide() : $('#matchPrev').show();
+            ml+o+n > 3 ? $('#matchNext').show() : $('#matchNext').hide();
+            var tt = o == -1 ? 'next' : 'prev';
+            PTTSendClick('match','btn'+tt,'赛程'+tt);
+        });
+        $('#jsPrev,#jsNext').on('click',function(){
+            var ml = parseInt(parseInt($('.kpl_jieshuo_list').css('margin-left'))/184),n = $('.kpl_jieshuo_list li').length,
+                o = $(this).attr('id').indexOf('Next') > 0 ? -1 : 1;
+            $('.kpl_jieshuo_list').css('margin-left',((ml+o)*184+'px'));
+            ml+o == 0 ? $('#jsPrev').hide() : $('#jsPrev').show();
+            ml+o+n > 6 ? $('#jsNext').show() : $('#jsNext').hide();
+            var tt = o == -1 ? 'next' : 'prev';
+            PTTSendClick('jieshuo','btn'+tt,'解说'+tt);
+        });
+        // $(document).one('scroll',function(){
+        // 	$('.kv_wp').addClass('kv_small');
+        // })
+    })();
+
+
+    //视频中心
+    var G_biz = 18;
+    var G_Source = 'web';
+    var G_Detail = '../videodetail.shtml';
+
+    var order = "sIdxTime"//初始化排序类型;
+    var Page = 1;//初始化页数
+    var PageSize = 6;//初始化每页显示多少条
+    var Type = "all";//初始化搜索类型
+    var TypeId = 0;//初始化搜索类型ID
+    var search = "";//初始化模糊搜索内容
+    if (+GetQueryString('iType')) {
+        Type = 'iType';
+        TypeId = +GetQueryString('iType')
+    }
+    if (+GetQueryString('iKeyword')) {
+        Type = 'iKeyword';
+        TypeId = +GetQueryString('iKeyword')
+    }
+    if (GetQueryString('sKeyword')) {
+        search = decodeURIComponent(GetQueryString('sKeyword'))
+    }
+    var SearchData = function SearchData(_this) {
+        Page = 1;
+        search = '';
+        if ($(_this).hasClass('fl_chosen')) {
+            $(_this).removeClass('fl_chosen');
+            $('.chosen_list').html('');
+            Type = 'all';
+            TypeId = 0;
+            LoadDefaultData();
+        } else {
+            $(".chosen_list a").removeClass("on");
+            $(_this).addClass("on");
+            Type = $(_this).attr('Type');
+            TypeId = _this.id;
+            LoadDefaultData();
+        }
+    };//点击选择分类准备数据
+    var LoadDefaultData = function LoadDefaultData() {
+        if (search != '') {
+            QueryAllSearchList(search, Page, PageSize, order, function (data) {
+                if (data.status == 0) {
+                    $('.video_list').html(PushData(data['msg']['result'], PageSize, 'videoAllsearch', search));
+                } else {
+                    $('.video_list').html('<li>' + data.msg + '</li>');
+                }
+            });
+        } else {
+            QuerySearchList(Page, PageSize, order, Type, TypeId, function (data) {
+                if (data.status == 0) {
+                    $('.video_list').html(PushData(data['msg']['result'], PageSize, 'videosearch' + Type, TypeId));
+                } else {
+                    $('.video_list').html('<li>' + data.msg + '</li>');
+                }
+            });
+        }
+    };//加载数据
+    var PushData = function PushData(data, num, str, iType) {
+        var RetHTML = '';
+        var length = data.length > num ? num : data.length;
+        for (var x = 0; x < length; x++) {
+            RetHTML += '<li>';
+            RetHTML += '<a class="v_pic" href="' + data[x]['sUrl'] + '" onclick="' + data[x]['sLog'] + '" target="_blank" title="' + data[x]['sTitle'] + '"><img src="' + data[x]['sIMG'] + '" width="200" height="112" alt="' + data[x]['sTitle'] + '"><div class="video_hover"></div></a>';
+            RetHTML += '<a class="v_tlt" href="' + data[x]['sUrl'] + '" onclick="' + data[x]['sLog'] + '" target="_blank" title="' + data[x]['sTitle'] + '"><i class="schedule-spr"></i>' + data[x]['sTitle'] + '</a></li>';
+        }
+        return RetHTML;
+    };//填充数据
+
+    //初始化
+    Page = 1;
+    search = '';
+    Type = 'iSubType';
+    TypeId = 962;
+    LoadDefaultData();
+</script>
+
+<!-- <script src="js/login.js"></script>
+<script src="js/chat.js"></script> -->
+
+<script id="esports_content" type="text/html">
+    {{if matchResults && matchResults.length}}
+    {{each matchResults as value}}
+
+    <li class="{{if value.match_state==1}}unstart{{else if value.match_state==2}}unstart{{else if value.match_state==3}}match-start{{else}}end{{/if}}">
+        <div class="match-date">
+            <p class="match-time">
+                <i>{{value.match_time | dateFormat:'MM-dd'}}</i> <span>{{value.match_time | dateFormat:'hh:mm'}}</span>
+
+            </p>
+            <p class="match-status">{{if value.match_state==1}}未开始{{else if value.match_state==2}}已取消{{else if value.match_state==3}}正在比赛{{else}}已经结束{{/if}}</p>
+        </div>
+        <div class="match-team pr">
+            <div class="team fl">
+                <p class="team-pic"><a target="_blank" href="javascript:void(0)" class="on">
+                    <img alt="" src="{{value.hlogo}}"></a>
+                </p>
+                <p class="team-info">{{value.hname}}</p>
+            </div>
+            <div class="team fr">
+                <p class="team-pic">
+                    <a target="_blank" href="javascript:void(0)"><img alt="" src="{{value.glogo}}"></a>
+                </p>
+                <p class="team-info">{{value.gname}}</p>
+            </div>
+            <div class="pa match-score">
+                <p class="fl bgn">
+                    <em>{{value.host_score}}</em>
+                </p>
+                <p class="fr bgn lose-score">
+                    <em>{{value.guest_score}}</em>
+                </p>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+    {{/if}}
+</script>
+
+<script id="team_competition" type="text/html">
+
+    <ul class="match-rank-list tc ovh clearfix" >
+        {{if teamCompetitionList.A && teamCompetitionList.A.length}}
+        {{each teamCompetitionList.A as value index}}
+        <li>
+            <em>{{index+1}}</em>
+            <div class="match-rank-team">
+                <a target="_blank" href="javascript:;">
+                    <img src="{{value.logo}}" width="52" height="52">
+                </a>
+                <span>{{value.name}}</span>
+            </div>
+            <p class="match-rank-rult"><span class="vic">{{value.wscore}}</span> <span class="centline">/</span>{{value.lscore}}
+            </p>
+            <i>{{value.wpoint}}</i>
+            <i>{{value.net_points}}</i>
+        </li>
+        {{/each}}
+        {{/if}}
+    </ul>
+
+    <ul class="match-rank-list tc ovh clearfix" style="display: none;">
+        {{if teamCompetitionList.B && teamCompetitionList.B.length}}
+        {{each teamCompetitionList.B as value index}}
+        <li>
+            <em>{{index+1}}</em>
+            <div class="match-rank-team">
+                <a target="_blank" href="javascript:;">
+                    <img src="{{value.logo}}" width="52" height="52">
+                </a>
+                <span>{{value.name}}</span>
+            </div>
+            <p class="match-rank-rult"><span class="vic">{{value.wscore}}</span> <span class="centline">/</span>{{value.lscore}}
+            </p>
+            <i>{{value.wpoint}}</i>
+            <i>{{value.net_points}}</i>
+        </li>
+        {{/each}}
+        {{/if}}
+    </ul>
+</script>
+
+
+<script id="progress_playoff" type="text/html">
+    {{if matchResults && matchResults.length}}
+    <div class="match_team_box">
+        <div class="corss-line"></div>
+        <div class="ver-line"></div>
+        <div class="teams_winner">
+            <span>胜者组</span>
+        </div>
+        <div class="teams_loser">
+            <span>败者组</span>
+        </div>
+        <div class="season_team">
+            <div class="season_team_hd">
+                <span class="format">BO7</span>
+                <div class="date">12-23 <span class="time">{{matchResults[9].match_time.substr(11,5)}}</span></div>
+            </div>
+            <ul class="season_team_list">
+                {{if matchResults[9].match_state  == 4 }}
+                <li {{if matchResults[9].host_score > matchResults[9].guest_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                    {{else}}
+                <li>
+                    {{/if}}
+                    <span class="team_score">{{matchResults[9].host_score}}</span>
+                    {{if matchResults[9].hname == '待定'}}
+                    <span class="progress_ico"></span>
+                    {{else}}
+                    <img src="{{matchResults[9].hlogo}}" alt="{{matchResults[9].hname}}">
+                    {{/if}}
+                    <span class="team_name">{{matchResults[9].hname}}</span>
+                </li>
+                {{if matchResults[9].match_state  == 4 }}
+                <li {{if matchResults[9].guest_score > matchResults[9].host_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                    {{else}}
+                <li>
+                    {{/if}}
+                    <span class="team_score">{{matchResults[9].guest_score}}</span>
+                    {{if matchResults[9].hname == '待定'}}
+                    <span class="progress_ico"></span>
+                    {{else}}
+                    <img src="{{matchResults[9].glogo}}" alt="{{matchResults[9].gname}}">
+                    {{/if}}
+                    <span class="team_name">{{matchResults[9].gname}}</span>
+                </li>
+            </ul>
+            <p class="format-info"><span class="format-ico"></span>冠亚军</p>
+        </div>
+        <div class="match_winner">
+
+            <div class="season_team">
+                <div class="season_team_hd">
+                    <span class="format">BO7</span>
+                    <div class="date">12-03 <span class="time">{{matchResults[6].match_time.substr(11,5)}}</span></div>
+                </div>
+                <ul class="season_team_list">
+                    {{if matchResults[6].match_state  == 4 }}
+                    <li {{if matchResults[6].host_score > matchResults[6].guest_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                        {{else}}
+                    <li>
+                        {{/if}}
+                        <span class="team_score">{{matchResults[6].host_score}}</span>
+                        {{if matchResults[6].hname == '待定'}}
+                        <span class="progress_ico"></span>
+                        {{else}}
+                        <img src="{{matchResults[6].hlogo}}" alt="{{matchResults[6].hname}}">
+                        {{/if}}
+                        <span class="team_name">{{matchResults[6].hname}}</span>
+                    </li>
+                    {{if matchResults[6].match_state  == 4 }}
+                    <li {{if matchResults[6].guest_score > matchResults[6].host_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                        {{else}}
+                    <li>
+                        {{/if}}
+                        <span class="team_score">{{matchResults[6].guest_score}}</span>
+                        {{if matchResults[6].hname == '待定'}}
+                        <span class="progress_ico"></span>
+                        {{else}}
+                        <img src="{{matchResults[6].glogo}}" alt="{{matchResults[6].gname}}">
+                        {{/if}}
+                        <span class="team_name">{{matchResults[6].gname}}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="match_first">
+                <div class="season_team">
+                    <div class="season_team_hd">
+                        <span class="format">BO7</span>
+                        <div class="date">11-24 <span class="time">{{matchResults[1].match_time.substr(11,5)}}</span></div>
+                    </div>
+                    <ul class="season_team_list">
+                        {{if matchResults[1].match_state  == 4 }}
+                        <li {{if matchResults[1].host_score > matchResults[1].guest_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                            {{else}}
+                        <li>
+                            {{/if}}
+                            <span class="team_score">{{matchResults[1].host_score}}</span>
+                            {{if matchResults[1].hname == '待定'}}
+                            <span class="progress_ico"></span>
+                            {{else}}
+                            <img src="{{matchResults[1].hlogo}}" alt="{{matchResults[1].hname}}">
+                            {{/if}}
+                            <span class="team_name">{{matchResults[1].hname}}</span>
+                        </li>
+                        {{if matchResults[1].match_state  == 4 }}
+                        <li {{if matchResults[1].guest_score > matchResults[1].host_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                            {{else}}
+                        <li>
+                            {{/if}}
+                            <span class="team_score">{{matchResults[1].guest_score}}</span>
+                            {{if matchResults[1].hname == '待定'}}
+                            <span class="progress_ico"></span>
+                            {{else}}
+                            <img src="{{matchResults[1].glogo}}" alt="{{matchResults[1].gname}}">
+                            {{/if}}
+                            <span class="team_name">{{matchResults[1].gname}}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="season_team team_bottom">
+                    <div class="season_team_hd">
+                        <span class="format">BO7</span>
+                        <div class="date">11-26 <span class="time">{{matchResults[3].match_time.substr(11,5)}}</span></div>
+                    </div>
+                    <ul class="season_team_list">
+                        {{if matchResults[3].match_state  == 4 }}
+                        <li {{if matchResults[3].host_score > matchResults[3].guest_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                            {{else}}
+                        <li>
+                            {{/if}}
+                            <span class="team_score">{{matchResults[3].host_score}}</span>
+                            {{if matchResults[3].hname == '待定'}}
+                            <span class="progress_ico"></span>
+                            {{else}}
+                            <img src="{{matchResults[3].hlogo}}" alt="{{matchResults[3].hname}}">
+                            {{/if}}
+                            <span class="team_name">{{matchResults[3].hname}}</span>
+                        </li>
+                        {{if matchResults[3].match_state  == 4 }}
+                        <li {{if matchResults[3].guest_score > matchResults[3].host_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                            {{else}}
+                        <li>
+                            {{/if}}
+                            <span class="team_score">{{matchResults[3].guest_score}}</span>
+                            {{if matchResults[3].hname == '待定'}}
+                            <span class="progress_ico"></span>
+                            {{else}}
+                            <img src="{{matchResults[3].glogo}}" alt="{{matchResults[3].gname}}">
+                            {{/if}}
+                            <span class="team_name">{{matchResults[3].gname}}</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="match_loser">
+
+            <div class="season_team">
+                <div class="season_team_hd">
+                    <span class="format">BO7</span>
+                    <div class="date">12-10 <span class="time">{{matchResults[8].match_time.substr(11,5)}}</span></div>
+                </div>
+                <ul class="season_team_list">
+                    {{if matchResults[8].match_state  == 4 }}
+                    <li {{if matchResults[8].host_score > matchResults[8].guest_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                        {{else}}
+                    <li>
+                        {{/if}}
+                        <span class="team_score">{{matchResults[8].host_score}}</span>
+                        {{if matchResults[8].hname == '待定'}}
+                        <span class="progress_ico"></span>
+                        {{else}}
+                        <img src="{{matchResults[8].hlogo}}" alt="{{matchResults[8].hname}}">
+                        {{/if}}
+                        <span class="team_name">{{matchResults[8].hname}}</span>
+                    </li>
+                    {{if matchResults[8].match_state  == 4 }}
+                    <li {{if matchResults[8].guest_score > matchResults[8].host_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                        {{else}}
+                    <li>
+                        {{/if}}
+                        <span class="team_score">{{matchResults[8].guest_score}}</span>
+                        {{if matchResults[8].hname == '待定'}}
+                        <span class="progress_ico"></span>
+                        {{else}}
+                        <img src="{{matchResults[8].glogo}}" alt="{{matchResults[8].gname}}">
+                        {{/if}}
+                        <span class="team_name">{{matchResults[8].gname}}</span>
+                    </li>
+                </ul>
+                <p class="format-info"><span class="format-ico"></span>季军</p>
+            </div>
+            <div class="season_team team_left">
+                <div class="season_team_hd">
+                    <span class="format">BO7</span>
+                    <div class="date">12-09 <span class="time">{{matchResults[7].match_time.substr(11,5)}}</span></div>
+                </div>
+                <ul class="season_team_list">
+                    {{if matchResults[7].match_state  == 4 }}
+                    <li {{if matchResults[7].host_score > matchResults[7].guest_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                        {{else}}
+                    <li>
+                        {{/if}}
+                        <span class="team_score">{{matchResults[7].host_score}}</span>
+                        {{if matchResults[7].hname == '待定'}}
+                        <span class="progress_ico"></span>
+                        {{else}}
+                        <img src="{{matchResults[7].hlogo}}" alt="{{matchResults[7].hname}}">
+                        {{/if}}
+                        <span class="team_name">{{matchResults[7].hname}}</span>
+                    </li>
+                    {{if matchResults[7].match_state  == 4 }}
+                    <li {{if matchResults[7].guest_score > matchResults[7].host_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                        {{else}}
+                    <li>
+                        {{/if}}
+                        <span class="team_score">{{matchResults[7].guest_score}}</span>
+                        {{if matchResults[7].hname == '待定'}}
+                        <span class="progress_ico"></span>
+                        {{else}}
+                        <img src="{{matchResults[7].glogo}}" alt="{{matchResults[7].gname}}">
+                        {{/if}}
+                        <span class="team_name">{{matchResults[7].gname}}</span>
+                    </li>
+                </ul>
+                <p class="format-info"><span class="format-ico"></span>殿军</p>
+            </div>
+            <div class="match_first">
+                <div class="season_team">
+                    <div class="season_team_hd">
+                        <span class="format">BO7</span>
+                        <div class="date">12-02 <span class="time">{{matchResults[5].match_time.substr(11,5)}}</span></div>
+                    </div>
+                    <ul class="season_team_list">
+                        {{if matchResults[5].match_state  == 4 }}
+                        <li {{if matchResults[5].host_score > matchResults[5].guest_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                            {{else}}
+                        <li>
+                            {{/if}}
+                            <span class="team_score">{{matchResults[5].host_score}}</span>
+                            {{if matchResults[5].hname == '待定'}}
+                            <span class="progress_ico"></span>
+                            {{else}}
+                            <img src="{{matchResults[5].hlogo}}" alt="{{matchResults[5].hname}}">
+                            {{/if}}
+                            <span class="team_name">{{matchResults[5].hname}}</span>
+                        </li>
+                        {{if matchResults[5].match_state  == 4 }}
+                        <li {{if matchResults[5].guest_score > matchResults[5].host_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                            {{else}}
+                        <li>
+                            {{/if}}
+                            <span class="team_score">{{matchResults[5].guest_score}}</span>
+                            {{if matchResults[5].hname == '待定'}}
+                            <span class="progress_ico"></span>
+                            {{else}}
+                            <img src="{{matchResults[5].glogo}}" alt="{{matchResults[5].gname}}">
+                            {{/if}}
+                            <span class="team_name">{{matchResults[5].gname}}</span>
+                        </li>
+                    </ul>
+                    <p class="format-info"><span class="format-ico"></span>并列第五</p>
+                </div>
+                <div class="season_team  team_left">
+                    <div class="season_team_hd">
+                        <span class="format">BO7</span>
+                        <div class="date">11-25 <span class="time">{{matchResults[2].match_time.substr(11,5)}}</span></div>
+                    </div>
+                    <ul class="season_team_list">
+                        {{if matchResults[2].match_state  == 4 }}
+                        <li {{if matchResults[2].host_score > matchResults[2].guest_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                            {{else}}
+                        <li>
+                            {{/if}}
+                            <span class="team_score">{{matchResults[2].host_score}}</span>
+                            {{if matchResults[2].hname == '待定'}}
+                            <span class="progress_ico"></span>
+                            {{else}}
+                            <img src="{{matchResults[2].hlogo}}" alt="{{matchResults[2].hname}}">
+                            {{/if}}
+                            <span class="team_name">{{matchResults[2].hname}}</span>
+                        </li>
+                        {{if matchResults[2].match_state  == 4 }}
+                        <li {{if matchResults[2].guest_score > matchResults[2].host_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                            {{else}}
+                        <li>
+                            {{/if}}
+                            <span class="team_score">{{matchResults[2].guest_score}}</span>
+                            {{if matchResults[2].hname == '待定'}}
+                            <span class="progress_ico"></span>
+                            {{else}}
+                            <img src="{{matchResults[2].glogo}}" alt="{{matchResults[2].gname}}">
+                            {{/if}}
+                            <span class="team_name">{{matchResults[2].gname}}</span>
+                        </li>
+                    </ul>
+                    <p class="format-info"><span class="format-ico"></span>并列第七</p>
+                </div>
+                <div class="season_team team_bottom">
+                    <div class="season_team_hd">
+                        <span class="format">BO7</span>
+                        <div class="date">12-01 <span class="time">{{matchResults[4].match_time.substr(11,5)}}</span></div>
+                    </div>
+                    <ul class="season_team_list">
+                        {{if matchResults[4].match_state  == 4 }}
+                        <li {{if matchResults[4].host_score > matchResults[4].guest_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                            {{else}}
+                        <li>
+                            {{/if}}
+                            <span class="team_score">{{matchResults[4].host_score}}</span>
+                            {{if matchResults[4].hname == '待定'}}
+                            <span class="progress_ico"></span>
+                            {{else}}
+                            <img src="{{matchResults[4].hlogo}}" alt="{{matchResults[4].hname}}">
+                            {{/if}}
+                            <span class="team_name">{{matchResults[4].hname}}</span>
+                        </li>
+                        {{if matchResults[4].match_state  == 4 }}
+                        <li {{if matchResults[4].guest_score > matchResults[4].host_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                            {{else}}
+                        <li>
+                            {{/if}}
+                            <span class="team_score">{{matchResults[4].guest_score}}</span>
+                            {{if matchResults[4].hname == '待定'}}
+                            <span class="progress_ico"></span>
+                            {{else}}
+                            <img src="{{matchResults[4].glogo}}" alt="{{matchResults[4].gname}}">
+                            {{/if}}
+                            <span class="team_name">{{matchResults[4].gname}}</span>
+                        </li>
+                    </ul>
+                    <p class="format-info"><span class="format-ico"></span>并列第五</p>
+                </div>
+                <div class="season_team team_bottom team_left">
+                    <div class="season_team_hd">
+                        <span class="format">BO7</span>
+                        <div class="date">11-23 <span class="time">{{matchResults[0].match_time.substr(11,5)}}</span></div>
+                    </div>
+                    <ul class="season_team_list">
+                        {{if matchResults[0].match_state  == 4 }}
+                        <li {{if matchResults[0].host_score > matchResults[0].guest_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                            {{else}}
+                        <li>
+                            {{/if}}
+
+                            <span class="team_score">{{matchResults[0].host_score}}</span>
+                            {{if matchResults[0].hname == '待定'}}
+                            <span class="progress_ico"></span>
+                            {{else}}
+                            <img src="{{matchResults[0].hlogo}}" alt="{{matchResults[0].hname}}">
+                            {{/if}}
+                            <span class="team_name">{{matchResults[0].hname}}</span>
+                        </li>
+
+                        {{if matchResults[0].match_state  == 4 }}
+                        <li {{if matchResults[0].guest_score > matchResults[0].host_score}} class="team_win" {{else}} class="team_lose" {{/if}} >
+                            {{else}}
+                        <li>
+                            {{/if}}
+                            <span class="team_score">{{matchResults[0].guest_score}}</span>
+                            {{if matchResults[0].hname == '待定'}}
+                            <span class="progress_ico"></span>
+                            {{else}}
+                            <img src="{{matchResults[0].glogo}}" alt="{{matchResults[0].gname}}">
+                            {{/if}}
+                            <span class="team_name">{{matchResults[0].gname}}</span>
+                        </li>
+                    </ul>
+                    <p class="format-info"><span class="format-ico"></span>并列第七</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+</script>
+
+<script id="player_competition" type="text/html">
+    {{if player_rank}}
+    {{each player_rank as value index}}
+    <li>
+        <em>{{value.player_rank}}</em>
+        <div class="match-rank-team">
+            <a target="_blank" href="javascript:void(0);">
+                <img src="{{value.player_logo}}" width="52" height="52">
+            </a>
+            <span>{{value.player_name}}</span>
+        </div>
+        <p class="match-rank-rult"></p>
+        <i>{{value.player_kda}}</i>
+    </li>
+    {{/each}}
+    {{/if}}
+</script>
+</html>

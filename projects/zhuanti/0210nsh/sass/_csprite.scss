@@ -1,0 +1,211 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$zy-nav1-h-name: 'zy-nav1-h';
+$zy-nav1-h-x: 0px;
+$zy-nav1-h-y: 88px;
+$zy-nav1-h-offset-x: 0px;
+$zy-nav1-h-offset-y: -88px;
+$zy-nav1-h-width: 180px;
+$zy-nav1-h-height: 80px;
+$zy-nav1-h-total-width: 556px;
+$zy-nav1-h-total-height: 344px;
+$zy-nav1-h-image: '../ztimages/csprite.png';
+$zy-nav1-h: (0px, 88px, 0px, -88px, 180px, 80px, 556px, 344px, '../ztimages/csprite.png', 'zy-nav1-h', );
+$zy-nav1-name: 'zy-nav1';
+$zy-nav1-x: 0px;
+$zy-nav1-y: 264px;
+$zy-nav1-offset-x: 0px;
+$zy-nav1-offset-y: -264px;
+$zy-nav1-width: 180px;
+$zy-nav1-height: 80px;
+$zy-nav1-total-width: 556px;
+$zy-nav1-total-height: 344px;
+$zy-nav1-image: '../ztimages/csprite.png';
+$zy-nav1: (0px, 264px, 0px, -264px, 180px, 80px, 556px, 344px, '../ztimages/csprite.png', 'zy-nav1', );
+$zy-nav2-h-name: 'zy-nav2-h';
+$zy-nav2-h-x: 188px;
+$zy-nav2-h-y: 0px;
+$zy-nav2-h-offset-x: -188px;
+$zy-nav2-h-offset-y: 0px;
+$zy-nav2-h-width: 180px;
+$zy-nav2-h-height: 80px;
+$zy-nav2-h-total-width: 556px;
+$zy-nav2-h-total-height: 344px;
+$zy-nav2-h-image: '../ztimages/csprite.png';
+$zy-nav2-h: (188px, 0px, -188px, 0px, 180px, 80px, 556px, 344px, '../ztimages/csprite.png', 'zy-nav2-h', );
+$zy-nav2-name: 'zy-nav2';
+$zy-nav2-x: 188px;
+$zy-nav2-y: 88px;
+$zy-nav2-offset-x: -188px;
+$zy-nav2-offset-y: -88px;
+$zy-nav2-width: 180px;
+$zy-nav2-height: 80px;
+$zy-nav2-total-width: 556px;
+$zy-nav2-total-height: 344px;
+$zy-nav2-image: '../ztimages/csprite.png';
+$zy-nav2: (188px, 88px, -188px, -88px, 180px, 80px, 556px, 344px, '../ztimages/csprite.png', 'zy-nav2', );
+$zy-nav3-h-name: 'zy-nav3-h';
+$zy-nav3-h-x: 0px;
+$zy-nav3-h-y: 176px;
+$zy-nav3-h-offset-x: 0px;
+$zy-nav3-h-offset-y: -176px;
+$zy-nav3-h-width: 180px;
+$zy-nav3-h-height: 80px;
+$zy-nav3-h-total-width: 556px;
+$zy-nav3-h-total-height: 344px;
+$zy-nav3-h-image: '../ztimages/csprite.png';
+$zy-nav3-h: (0px, 176px, 0px, -176px, 180px, 80px, 556px, 344px, '../ztimages/csprite.png', 'zy-nav3-h', );
+$zy-nav3-name: 'zy-nav3';
+$zy-nav3-x: 188px;
+$zy-nav3-y: 176px;
+$zy-nav3-offset-x: -188px;
+$zy-nav3-offset-y: -176px;
+$zy-nav3-width: 180px;
+$zy-nav3-height: 80px;
+$zy-nav3-total-width: 556px;
+$zy-nav3-total-height: 344px;
+$zy-nav3-image: '../ztimages/csprite.png';
+$zy-nav3: (188px, 176px, -188px, -176px, 180px, 80px, 556px, 344px, '../ztimages/csprite.png', 'zy-nav3', );
+$zy-nav4-h-name: 'zy-nav4-h';
+$zy-nav4-h-x: 0px;
+$zy-nav4-h-y: 0px;
+$zy-nav4-h-offset-x: 0px;
+$zy-nav4-h-offset-y: 0px;
+$zy-nav4-h-width: 180px;
+$zy-nav4-h-height: 80px;
+$zy-nav4-h-total-width: 556px;
+$zy-nav4-h-total-height: 344px;
+$zy-nav4-h-image: '../ztimages/csprite.png';
+$zy-nav4-h: (0px, 0px, 0px, 0px, 180px, 80px, 556px, 344px, '../ztimages/csprite.png', 'zy-nav4-h', );
+$zy-nav4-name: 'zy-nav4';
+$zy-nav4-x: 188px;
+$zy-nav4-y: 264px;
+$zy-nav4-offset-x: -188px;
+$zy-nav4-offset-y: -264px;
+$zy-nav4-width: 180px;
+$zy-nav4-height: 80px;
+$zy-nav4-total-width: 556px;
+$zy-nav4-total-height: 344px;
+$zy-nav4-image: '../ztimages/csprite.png';
+$zy-nav4: (188px, 264px, -188px, -264px, 180px, 80px, 556px, 344px, '../ztimages/csprite.png', 'zy-nav4', );
+$zy-nav5-h-name: 'zy-nav5-h';
+$zy-nav5-h-x: 376px;
+$zy-nav5-h-y: 0px;
+$zy-nav5-h-offset-x: -376px;
+$zy-nav5-h-offset-y: 0px;
+$zy-nav5-h-width: 180px;
+$zy-nav5-h-height: 80px;
+$zy-nav5-h-total-width: 556px;
+$zy-nav5-h-total-height: 344px;
+$zy-nav5-h-image: '../ztimages/csprite.png';
+$zy-nav5-h: (376px, 0px, -376px, 0px, 180px, 80px, 556px, 344px, '../ztimages/csprite.png', 'zy-nav5-h', );
+$zy-nav5-name: 'zy-nav5';
+$zy-nav5-x: 376px;
+$zy-nav5-y: 88px;
+$zy-nav5-offset-x: -376px;
+$zy-nav5-offset-y: -88px;
+$zy-nav5-width: 180px;
+$zy-nav5-height: 80px;
+$zy-nav5-total-width: 556px;
+$zy-nav5-total-height: 344px;
+$zy-nav5-image: '../ztimages/csprite.png';
+$zy-nav5: (376px, 88px, -376px, -88px, 180px, 80px, 556px, 344px, '../ztimages/csprite.png', 'zy-nav5', );
+$zy-nav6-h-name: 'zy-nav6-h';
+$zy-nav6-h-x: 376px;
+$zy-nav6-h-y: 176px;
+$zy-nav6-h-offset-x: -376px;
+$zy-nav6-h-offset-y: -176px;
+$zy-nav6-h-width: 180px;
+$zy-nav6-h-height: 80px;
+$zy-nav6-h-total-width: 556px;
+$zy-nav6-h-total-height: 344px;
+$zy-nav6-h-image: '../ztimages/csprite.png';
+$zy-nav6-h: (376px, 176px, -376px, -176px, 180px, 80px, 556px, 344px, '../ztimages/csprite.png', 'zy-nav6-h', );
+$zy-nav6-name: 'zy-nav6';
+$zy-nav6-x: 376px;
+$zy-nav6-y: 264px;
+$zy-nav6-offset-x: -376px;
+$zy-nav6-offset-y: -264px;
+$zy-nav6-width: 180px;
+$zy-nav6-height: 80px;
+$zy-nav6-total-width: 556px;
+$zy-nav6-total-height: 344px;
+$zy-nav6-image: '../ztimages/csprite.png';
+$zy-nav6: (376px, 264px, -376px, -264px, 180px, 80px, 556px, 344px, '../ztimages/csprite.png', 'zy-nav6', );
+$spritesheet-width: 556px;
+$spritesheet-height: 344px;
+$spritesheet-image: '../ztimages/csprite.png';
+$spritesheet-sprites: ($zy-nav1-h, $zy-nav1, $zy-nav2-h, $zy-nav2, $zy-nav3-h, $zy-nav3, $zy-nav4-h, $zy-nav4, $zy-nav5-h, $zy-nav5, $zy-nav6-h, $zy-nav6, );
+$spritesheet: (556px, 344px, '../ztimages/csprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

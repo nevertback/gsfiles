@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head>
+<noscript>&lt;meta http-equiv="refresh" content="0; url=/"&gt;</noscript>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+<meta name="viewport" content="user-scalable=no, width=device-width">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?7b87e8814f59adf402c97e19b3b2a9e2";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        var notag;
+    </script>
+</head>
+<body>
+<div id="download-guide" style="display:none;padding:20px;font-size:16px">微信用户若不能安装，请点右上角的跳转按钮，选择“在浏览器中打开”即可正常！</div>
+<script>
+    var apkList = {
+        wap:'http://btfile.gamersky.com/app/2018/01/gamersky_v3.6.2_wap.apk',
+        WapTuiJian:'http://btfile.gamersky.com/app/2018/01/gamersky_v3.6.2_WapTuiJian.apk',
+        WapNeiRong:'http://btfile.gamersky.com/app/2018/01/gamersky_v3.6.2_WapNeiRong.apk'
+    };
+    (function(){
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-20961733-4', 'gamersky.com');
+        var redirected = false,downLoadId = getQueryString('source');
+        function redirect(){
+            if (redirected) return;
+            redirected = true;
+            location.href = href;
+        }
+        var href = '/';
+        var search = location.search;
+        var type = search.indexOf('qrcode') ? 'QRCode' : 'Other';
+        var ua = navigator.userAgent.toLowerCase();
+        alert(ua);
+        var browser;
+        if (/iphone|ipad|ipod/.test(ua)) {
+            browser = ' Safari ';
+            if (/micromessenger/.test(ua)) {
+                href = 'https://itunes.apple.com/cn/app/you-min-xing-kong/id886118205?mt=8';
+            } else {
+                href = 'https://itunes.apple.com/cn/app/you-min-xing-kong/id886118205?mt=8';
+            }
+            ga('set', 'page', '/download/ios' + search);
+            ga('send', 'pageview');
+            ga('send', 'event', type, 'iOS_Download', {'hitCallback': redirect});
+            setTimeout(redirect, 2000);
+        } else if (/android/.test(ua)) {
+            href = apkList[downLoadId];
+            if(typeof href === 'undefined'){
+                href = apkList.wap;
+            }
+            setTimeout(redirect, 1000);
+        } else if (/windows phone|blackberry/.test(ua)) {
+            ga('set', 'page', '/download/other' + search);
+            ga('send', 'pageview');
+            alert('抱歉，暂不支持您的系统');
+            location.href = 'http://wap.gamersky.com/';
+            setTimeout(redirect, 2000);
+        } else {
+            ga('send', 'pageview');
+            location.href = 'http://a.gamersky.com/';
+        }
+        if (browser && /micromessenger/.test(ua)) {
+            var div = document.createElement('div');
+            div.style.clear = 'both';
+            div.appendChild(document.createTextNode('微信用户若不能安装，请点右上角的跳转按钮，选择「在' +浏览器+ '中打开」即可正常！'));
+            document.body.appendChild(div);
+            div = document.createElement('div');
+            div.style.float = 'right';
+            div.appendChild(document.createTextNode('——'));
+            document.body.appendChild(div);
+        }
+    })();
+	var ua = navigator.userAgent.toLowerCase();
+	if(ua.indexOf('micromessenger')>-1){
+	    document.getElementById('download-guide').style.display="block";
+	}
+</script>
+</body></html>

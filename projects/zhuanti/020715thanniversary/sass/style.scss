@@ -1,0 +1,246 @@
+//专题
+@import 'comm';
+.zt-section1{
+	position: relative;
+	height: 1000px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 800px;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 30px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 26px;
+			width: 139px;
+			height: 47px;
+			background: url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-black.png) 0 0 no-repeat;
+		}
+		.time{
+			height: 38px;
+			line-height: 38px;
+			font-size: 16px;
+			color: #ffc87d;
+			text-align: center;
+		}
+	}
+}
+.para{
+	p{
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+		color: #ffcc85;
+		text-align: center;
+	}
+}
+.list{
+	h5{
+		line-height: 36px;
+		font-size: 18px;
+		color: #ffcc85;
+	}
+	li{
+		line-height: 30px;
+		font-size: 16px;
+		color: #ac8a5a;
+	}
+}
+.zt-section2{
+	height: 863px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 140px;
+		.btn{
+			position: absolute;
+			left: 321px;
+			top: 413px;
+			display: block;
+			@include sprite($s2-btn);
+			&:hover{@include sprite-position($s2-btn-h);}
+		}
+		.para{
+			margin-bottom: 468px;
+		}
+	}
+}
+.zt-section3{
+	height: 1256px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 170px;
+		.box{
+			margin: 65px auto 50px;
+			width: 1000px;
+			height: 667px;
+			ul{
+				width: 1040px;
+				li{
+					position: relative;
+					float: left;
+					margin:0 11px 12px 0;
+					@include sprite($box-li-bg);
+					&.row2{
+						margin-left: 125px;
+					}
+					img{
+						position: absolute;
+						left: 1px;
+						top: 1px;
+						display: block;
+						width: 240px;
+						height: 320px;
+					}
+					.box-bot{
+						position: absolute;
+						left: 1px;
+						bottom: 1px;
+						width: 240px;
+						height: 60px;
+						background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;
+						a{
+							display: block;
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							margin-left: -75px;
+							margin-top: -17px;
+							width: 150px;
+							height: 35px;
+							line-height: 35px;
+							background-color: #ffcc01;
+							font-size: 16px;
+							color: #080502;
+							text-align: center;
+							border-radius: 35px;
+							&:hover{
+								background-color: #ffa10e;
+							}
+						}
+					}
+					.box-tips{
+						position: absolute;
+						left: 1px;
+						top: 1px;
+						width: 240px;
+						height: 320px;
+						&.box-over{
+							background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;
+						}
+						&.box-ready{}
+						h5{
+							padding-top: 146px;
+							height: 30px;
+							line-height: 30px;
+							font-size: 16px;
+							color: #ffcc01;
+							text-align: center;
+							font-weight: normal;
+						}
+						p{
+							line-height: 74px;
+							font-size: 30px;
+							color: #ffd69c;
+							text-align: center;
+						}
+					}
+					&.over{
+						.box-bot,.box-ready{
+							display: none;
+						}
+						.box-over{
+							display: block;
+						}
+					}
+					&.open{
+						.box-over,.box-ready{
+							display: none;
+						}
+						.box-bot{
+							display: block;
+						}
+					}
+					&.ready{
+						img{
+							display: none;
+						}
+						.box-bot,.box-over{
+							display: none;
+						}
+						.box-ready{
+							display: block;
+						}
+					}
+				}
+			}
+		}
+		.service{
+			display: block;
+			position: absolute;
+			left: 842px;
+			top: 984px;
+			@include sprite($service);
+			span{
+				display: block;
+				position: absolute;
+				left: 45px;
+				top: 186px;
+				width: 105px;
+				height: 24px;
+				line-height: 24px;
+				font-size: 15px;
+				color: #ffd69c;
+				text-align: center;
+			}
+			&:hover{
+				span{
+					color: #fbe9cf;
+				}
+			}
+		}
+	}
+}
+.scene{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -960px;
+	width: 1920px;
+	height: 1000px;
+	overflow: hidden;
+	.sceneParallax{
+		width: 100%;
+		height: 100%;
+	}
+}
+.anim-icons{
+	display: block;
+	position: absolute;
+	left: 50%;
+	&.anim-icons1{margin-left: -986px;top: 360px;@include sprite($s1-anim1)}
+	&.anim-icons2{margin-left:  608px;top: 580px;@include sprite($s1-anim2)}
+	&.anim-icons3{margin-left:  834px;top: 264px;@include sprite($s1-anim3)}
+	&.anim-icons4{margin-left: -524px;top: 655px;@include sprite($s1-anim4)}
+	&.anim-icons5{margin-left:  500px;top: 965px;@include sprite($s1-anim5);}
+	&.anim-icons6{margin-left: -470px;top: 367px;@include sprite($s1-anim6)}
+}
+.anim-icons4{animation: upDown 20s linear infinite reverse;}
+.anim-icons5{animation: upDown 20s linear infinite;}
+@keyframes upDown {
+	0%{
+		transform:translate(0,0) rotate(0deg);
+	}
+	50%{
+		transform:translate(0,-10px) rotate(180deg);
+	}
+	100%{
+		transform:translate(0,0) rotate(360deg);
+	}
+}

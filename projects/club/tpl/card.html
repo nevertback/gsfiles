@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    @@include('comm/header.html')
+</head>
+<body>
+@@include('comm/nav.html')
+<div class="qzMain" id="qzMain">
+    <section class="qz-page" id="qzCardContext" data-cid="16722" >
+    </section>
+    <section class="qz-comment-like">
+        <nav class="tabNavCl">
+            <a class="cur commentNum" data-tar="qzClComment">评论<i>0</i></a>
+            <a data-tar="qzClLike">赞<i>7</i></a>
+        </nav>
+        <!--列表为无限加载-->
+        <ul class="qz-cl-comment qzClCon qzClComment cur" id="qzClComment" data-cid="16722" data-page="0"></ul>
+        <ul class="qz-cl-like qzClCon qzClLike" id="qzClLike" data-cid="16722" ></ul>
+    </section>
+</div>
+@@include('comm/footer.html')

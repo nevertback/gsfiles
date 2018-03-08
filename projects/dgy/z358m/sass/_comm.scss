@@ -1,0 +1,202 @@
+@import 'csprite';
+@import 'libs';
+@import 'anim';
+html,body{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+body{font-size: 0.2rem;}
+h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
+a{text-decoration: none;-webkit-tap-highlight-color: transparent;}
+%ffsys{
+	font-family: '思源宋体 CN','思源宋体','Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘ Source Han Serif ’ , source-han-serif-sc, serif,SimSun;
+}
+.clearfix:before,
+.clearfix:after{display: table;content: " ";}
+.clearfix:after{clear: both;}
+.sound-effect{
+	display: none;
+}
+.wrap{
+	margin: 0 auto;
+	width: 7.2rem;
+    overflow-x: hidden;
+}
+$loadingBg:#000;
+#loading{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99998;
+	width: 100%;
+	height: 100%;
+	background-color: $loadingBg;
+}
+#loadingAnim{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -1.8rem;
+	margin-top: -1rem;
+	z-index: 99999;
+	width: 3.6rem;
+	height: 2rem;
+	.loadingtit{
+		width: 100%;
+		height: 0.5rem;
+		line-height: 0.5rem;
+		font-size: 0.3rem;
+		color: #999;
+		text-align: center;
+	}
+	.loadingtxt{
+		width: 100%;
+		height: 0.8rem;
+		line-height: 0.8rem;
+		font-size: 0.6rem;
+		color: #fff;
+		text-align: center;
+	}
+	.loadingAnim-img-wrap{
+		position: absolute;
+		left: 0.8rem;
+		top: 1.5rem;
+		width: 2rem;
+		height: 1px;
+		.loadingAnim-img{
+			position: absolute;
+			right:0;
+			top:0;
+			width: 100%;
+			height: 1px;
+			background-color: $loadingBg;
+		}
+		.loadingAnim-img-g{
+			position: absolute;
+			right:0;
+			top:0;
+			width: 100%;
+			height: 1px;
+			background-color: #fff;
+		}
+	}
+}
+.volBtn{
+	display: block;
+	position: fixed;
+	left: 50%;
+	top: 0.43rem;
+	z-index: 990;
+	margin-left: 2.57rem;
+	@include sprite($vol-play);
+	&.volPause{@include sprite-position($vol-pause);}
+}
+.arr-btn{
+	display: block;
+	&.arr-btn-l{@include sprite($arr-l)}
+	&.arr-btn-r{@include sprite($arr-r)}
+}
+.big-tit{
+	position: absolute;
+	left: 0.36rem;
+	top: -0.17rem;
+	display: block;
+	pointer-events: none;
+	&.big-tit2{@include sprite($p2-tit);}
+	&.big-tit3{@include sprite($p3-tit);}
+	&.big-tit4{@include sprite($p4-tit);}
+	&.big-tit5{@include sprite($p5-tit);}
+	&.big-tit6{@include sprite($p6-tit);}
+	&.big-tit7{@include sprite($p7-tit);}
+	&.big-tit8{@include sprite($p8-tit);}
+}
+.pg-pop-mask{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 998;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+}
+.pg-pop-main{
+	position: fixed;
+	left: 0;
+	top: 50%;
+	z-index: 999;
+	width: 100%;
+	transform:translate(0,-50%);
+	.pg-pop-close{
+		display: block;
+		position: absolute;
+		right: 0.4rem;
+		top: 0.2rem;
+		@include sprite($close);
+	}
+	&.pg-pop-vd{
+		.pg-pop-close{
+			top: -0.6rem;
+		}
+	}
+}
+.pop-world{
+	.pw-tit{
+		height: 0.8rem;
+		line-height: 0.8rem;
+		font-size: 0.3rem;
+		color: #fff;
+		text-align: center;letter-spacing: 0.05rem;
+		@extend %ffsys;
+		font-weight: bold;
+	}
+	.pw-pic{
+		margin: 0 auto 0.25rem;
+		padding: 0.16rem 0.16rem 0.16rem 0.15rem;
+		width: 6.1rem;
+		height: 3.43rem;
+		background: url(../ztimages/pw-pic.png) 0 0 no-repeat;
+		background-size: 100%;
+		img{
+			display: block;
+			width: 6.1rem;
+			height: 3.43rem;
+		}
+	}
+	.pw-txt{
+		margin: 0 auto;
+		width: 6.4rem;
+		line-height: 0.38rem;
+		font-size: 0.24rem;
+		color: #acacac;
+		text-indent: 0.48rem;
+	}
+	&.pop-world-single{}
+    &.pop-world-mut{
+        .swiper-container{
+            position: relative;
+            .arr-btn{
+                position: absolute;
+                top: 1.55rem;
+                z-index: 2;
+                &.swiper-button-disabled{
+                    display: none;
+                }
+                &.arr-btn-l{
+                    left: 0.57rem;
+                }
+                &.arr-btn-r{
+                    right: 0.57rem;
+                }
+            }
+        }
+    }
+}
+.swiper-lazy-preloader{
+    width: 0.42rem;
+    height: 0.42rem;
+    margin-left: -0.21rem;
+    margin-top: -0.21rem;
+}

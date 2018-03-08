@@ -1,0 +1,235 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 900px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 768px;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 30px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 26px;
+			width: 139px;
+			height: 47px;
+			background: url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-black.png) 0 0 no-repeat;
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 151px;
+			top: 22px;
+			@include sprite($logo-gf);
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			left: 540px;
+			&.btn1{
+				top: 547px;
+				@include sprite($s1-btn1);
+				&:hover{
+					@include sprite-position($s1-btn1-h);
+				}
+			}
+			&.btn2{
+				top: 598px;
+				@include sprite($s1-btn2);
+				&:hover{
+					@include sprite-position($s1-btn2-h);
+				}
+			}
+			&.btn3{
+				top: 650px;
+				@include sprite($s1-btn3);
+				&:hover{
+					@include sprite-position($s1-btn3-h);
+				}
+			}
+		}
+		.code{
+			position: absolute;
+			left: 743px;
+			top: 546px;
+			@include sprite($s1-code);
+			img{
+				display: block;
+				position: absolute;
+				left: 51px;
+				top: 11px;
+				width: 126px;
+				height: 126px;
+			}
+		}
+		.para{
+			margin: 0 auto;
+			width: 920px;
+			p{
+				line-height: 26px;
+				font-size: 16px;
+				color: #fff;
+				text-indent: 32px;
+			}
+		}
+		.play{
+			display: block;
+			position: absolute;
+			left: 208px;
+			top: 396px;
+			width: 100px;
+			height: 100px;
+			i{
+				display: block;
+				position: absolute;
+				&.round{
+					left: 0;
+					top: 0;
+					@include sprite($s1-play-r);
+					animation:rotateAnim 4s linear infinite;
+				}
+				&.icon{
+					left: 11px;
+					top: 11px;
+					@include sprite($s1-play-i);
+				}
+			}
+			&:hover{
+				i.icon{
+					@include sprite-position($s1-play-i-h)
+				}
+			}
+		}
+	}
+}
+.zt-section2{
+	height: 907px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 180px;
+		.para{
+			h5{
+				line-height: 46px;
+				font-size: 24px;
+				color: #80d5ff;
+				text-align: center;
+			}
+			p{
+				line-height: 30px;
+				font-size: 16px;
+				color: #fff;
+				text-align: center;
+				span{
+					margin-left: 10px;
+					color: #85b4cb;
+				}
+				i{
+					margin: 0 5px 0 15px;
+					color: #ff5a69;
+					font-style: normal;
+				}
+			}
+		}
+		.code{
+			position: relative;
+			margin: 80px 0 114px 289px;
+			width: 640px;
+			height: 147px;
+			img{
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 147px;
+				height: 147px;
+			}
+			.txt{
+				padding-top: 20px;
+				margin-left: 200px;
+				width: 294px;
+				p{
+					margin-bottom: 30px;
+					line-height: 30px;
+					font-size: 18px;
+					color: #80d5ff;
+					text-align: center;
+				}
+				a{
+					display: block;
+					margin: 0 auto;
+					@include sprite($s2-btn);
+					&:hover{
+						@include sprite-position($s2-btn-h);
+					}
+				}
+			}
+		}
+		.s2-bot{
+			margin-left: 20px;
+			h5{
+				padding-left: 10px;
+				margin-bottom: 20px;
+				height: 16px;
+				line-height: 16px;
+				font-size: 16px;
+				color: #fff;
+				font-weight: normal;
+				border-left: 3px solid #fff;
+			}
+			.notice{
+				float: left;
+				width: 417px;
+				ul{
+					padding-top: 20px;
+					padding-left: 5px;
+					width: 417px;
+					li{
+						line-height: 22px;
+						font-size: 14px;
+						color: #85b4cb;
+					}
+				}
+			}
+			.gift{
+				float: left;
+				margin-left: 10px;
+				width: 537px;
+				img{
+					display: block;
+					width: 537px;
+				}
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 700px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 151px;
+	}
+}
+.zt-section4{
+	height: 700px;
+	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 151px;
+	}
+}
+
+@keyframes rotateAnim {
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}

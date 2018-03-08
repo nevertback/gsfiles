@@ -1,0 +1,139 @@
+.hide{display:none!important}
+body,html{width:100%;min-width:1280px;}
+.warp{width:100%;min-width:1280px;position:relative;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/bg1_c2c52eb.jpg) center top no-repeat}
+.warp .bg-videoBox{width:100%;height:1080px;max-width:1920px;min-width:1280px;overflow-x:hidden;overflow-y:inherit;position:absolute;top:0;left:0;z-index:0}
+.warp .bg-videoBox .bg-video{width:1920px;height:1080px;position:absolute;top:0;left:50%;z-index:0;transform:translate(-50%,0)}
+.warp .SideBar{width:212px;height:0;overflow:hidden;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/SideBarBg_c2dd28c.png) 0 0 no-repeat;position:absolute;top:128px;left:32px;z-index:999;-webkit-transition:.2s;-moz-transition:.2s;-ms-transition:.2s;transition:.2s;opacity:0;filter:alpha(opacity=0)}
+.warp .SideBar.show{height:640px;opacity:100;filter:alpha(opacity=10000);opacity:1;filter:alpha(opacity=100)}
+.warp .SideBar.SideBarLeft{width:212px;height:640px;overflow:inherit!important;position:fixed;top:50%;left:-212px;margin:-320px 0 0 0;opacity:100;filter:alpha(opacity=10000);opacity:1;filter:alpha(opacity=100);-webkit-transition:.5s;-moz-transition:.5s;-ms-transition:.5s;transition:.5s}
+.warp .SideBar.SideBarLeft.SideBarShow{left:0}
+.warp .SideBar.SideBarLeft.SideBarHide{left:-212px!important;opacity:0;filter:alpha(opacity=0)}
+.warp .SideBar.SideBarLeft .closeBtn{width:30px;height:74px;background:#4b0803;border:1px solid #94190b;position:absolute;top:120px;right:-30px;cursor:pointer}
+.warp .SideBar.SideBarLeft .closeBtn i{display:block;width:14px;height:20px;position:absolute;top:26px;left:8px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/SideBarLeftIcon_092b3d4.png) 0 0 no-repeat}
+.warp .SideBar .navList{width:100%;padding:10px 0}
+.warp .SideBar .navList .navItem{display:block;width:100%;height:49px;line-height:49px;text-align:center;color:#f9edba;font-size:16px;cursor:pointer}
+.warp .SideBar .navList .navItem.cur,.warp .SideBar .navList .navItem:hover{height:48px;line-height:48px;color:#440e0a;background:#ebdca7;border-top:1px solid #fff}
+.warp .SideBar .btnDown_PC{display:block;margin:0 auto;width:136px;height:34px;background-repeat:no-repeat}
+.warp .fristBg{z-index:6}
+.warp .fristBg.fristBg1{width:248px;height:280px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/prospect1_4b48537.png) 0 0 no-repeat;position:absolute;bottom:-100px;right:114px}
+.warp .fristBg.fristBg2{width:324px;height:335px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/prospect2_6c8e3fa.png) 0 0 no-repeat;position:absolute;bottom:-220px;left:86px}
+.warp .fristBg.fristBg3{width:306px;height:266px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/prospect3_8023be1.png) 0 0 no-repeat;position:absolute;bottom:-128px;right:44px}
+.warp .fristBg.fristBg4{width:248px;height:279px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/prospect4_fbf5e01.png) 0 0 no-repeat;position:absolute;bottom:-176px;left:86px}
+.warp .content{width:100%;position:relative}
+.warp .content .main{width:1200px;padding:100px 0 0;position:relative;margin:0 auto;opacity:100;filter:alpha(opacity=10000);opacity:1;filter:alpha(opacity=100)}
+.warp .content .main .conTitle{width:670px;height:40px;margin:0 auto 40px;position:relative}
+.warp .contAf{height:760px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/bg1_c2c52eb.jpg) center top no-repeat}
+.warp .contAf .titleBox{width:610px;position:absolute;top:150px;left:50%;margin:0 0 0 -500px}
+.warp .contAf .titleBox .title{width:610px;height:320px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/Title_346444e.png) 0 0 no-repeat}
+.warp .contBf{height:866px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/bg2_8ac2de2.png) center top no-repeat}
+.warp .contBf .main{height:820px;z-index:6}
+.warp .contBf .main .conTitle1{background-repeat:no-repeat}
+.warp .contBf .main .swiper-container{width:994px;height:380px;overflow:hidden;position:relative;margin:180px auto 0;cursor:inherit!important}
+.warp .contBf .main .swiper-container .swiper-wrapper{height:310px}
+.warp .contBf .main .swiper-container .swiper-wrapper .swiper-slide{opacity:20;filter:alpha(opacity=2000);opacity:.2;filter:alpha(opacity=20);-webkit-transform:scale(.8);-moz-transform:scale(.8);-ms-transform:scale(.8);transform:scale(.8);float:left;width:620px;height:310px;position:relative}
+.warp .contBf .main .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active{opacity:100;filter:alpha(opacity=10000);opacity:1;filter:alpha(opacity=100);-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}
+.warp .contBf .main .swiper-container .swiper-wrapper .swiper-slide .item{float:left;width:190px;height:310px;margin:0 8px;position:relative;background-repeat:no-repeat}
+.warp .contBf .main .swiper-container .swiper-wrapper .swiper-slide .item img{width:136px;position:absolute;left:24px;top:36px}
+.warp .contBf .main .swiper-container .swiper-wrapper .swiper-slide .item .name{display:block;width:100%;height:20px;line-height:20px;font-size:14px;font-weight:700;padding:210px 0 0;color:#80241e;text-align:center}
+.warp .contBf .main .swiper-container .swiper-wrapper .swiper-slide .item .Motto{width:140px;line-height:20px;margin:10px auto 0;text-align:center}
+.warp .contBf .main .swiper-container .swiper-button-next,.warp .contBf .main .swiper-container .swiper-button-prev{display:block;width:24px;height:42px;position:absolute;top:120px;cursor:pointer}
+.warp .contBf .main .swiper-container .swiper-button-next.swiper-button-prev,.warp .contBf .main .swiper-container .swiper-button-prev.swiper-button-prev{left:0;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/btn_left_e9b6cdd.png) 0 0 no-repeat}
+.warp .contBf .main .swiper-container .swiper-button-next.swiper-button-next,.warp .contBf .main .swiper-container .swiper-button-prev.swiper-button-next{right:0;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/btn_right_08bd5b6.png) 0 0 no-repeat}
+.warp .contBf .main .swiper-container .swiper-button-next.btn_hide,.warp .contBf .main .swiper-container .swiper-button-prev.btn_hide{cursor:inherit;opacity:60;filter:alpha(opacity=6000);opacity:.6;filter:alpha(opacity=60)}
+.warp .contBf .main .swiper-container .swiper-pagination{width:144px;height:20px;position:absolute;bottom:0;left:50%;margin:0 0 0 -72px}
+.warp .contBf .main .swiper-container .swiper-pagination .swiper-pagination-switch{display:block;float:left;width:16px;height:16px;margin:0 20px 0 0;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/swiper_switch_h_55538a5.png) 0 0 no-repeat}
+.warp .contBf .main .swiper-container .swiper-pagination .swiper-pagination-switch.swiper-active-switch{background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/swiper_switch_43aa6a9.png) 0 0 no-repeat}
+.warp .contCf{height:986px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/bg3_a92615e.png) center top no-repeat}
+.warp .contCf .main{height:890px;padding:50px 0 0;z-index:6}
+.warp .contCf .main .conTitle2{background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/title2_1_597e69a.png) 0 0 no-repeat}
+.warp .contCf .main .videoBox{width:994px;height:562px;margin:0 auto;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/program_b03da58.png) no-repeat;position:relative}
+.warp .contCf .main .videoBox .video{width:855px;height:471px;position:absolute;top:50%;left:50%;margin:-235.5px 0 0 -427.5px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/video_5ae0f79.png) 0 0 no-repeat}
+.warp .contCf .main .videoNavList{width:996px;height:88px;margin:20px auto 0}
+.warp .contCf .main .videoNavList .videoNavItem{float:left;width:186px;height:88px;margin:0 -20px 0 0;position:relative;cursor:pointer}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem1{background-repeat:no-repeat}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem1.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem1:hover{background-repeat:no-repeat}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem2{background-repeat:no-repeat}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem2.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem2:hover{background-repeat:no-repeat}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem3{margin:0;width:166px;background-repeat:no-repeat}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem3.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem3:hover{background-repeat:no-repeat}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem4{width:166px;background-repeat:no-repeat}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem4 img{margin:0 0 0 -82px}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem4.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem4:hover{background-repeat:no-repeat}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem5{background-repeat:no-repeat}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem5 img{margin:0 0 0 -76px}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem5.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem5:hover{background-repeat:no-repeat}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem6{margin:0 0 0 -1px;background-repeat:no-repeat}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem6 img{margin:0 0 0 -76px}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem6.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem6:hover{background-repeat:no-repeat}
+.warp .contCf .main .videoNavList .videoNavItem img{display:block;width:168px;height:76px;position:absolute;top:12px;left:50%;margin:0 0 0 -92px}
+.warp .contDf{height:902px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/bg4_1014705.png) center top no-repeat}
+.warp .contDf .main{height:750px;z-index:6}
+.warp .contDf .main .conTitle3{background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/title3_f25329b.png) 0 0 no-repeat}
+.warp .contDf .main .program{width:994px;height:562px;margin:0 auto;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/program_b03da58.png) no-repeat;position:relative}
+.warp .contDf .main .program .slimScrollDiv{position:absolute;top:50px;left:68px}
+.warp .contDf .main .program .programMain{width:820px!important;height:490px;padding:0 40px 0 0;overflow:hidden}
+.warp .contDf .main .program .programMain table{margin:0 auto}
+.warp .contDf .main .program .programMain table td,.warp .contDf .main .program .programMain table th{width:126px;height:30px;padding:5px 10px;font-size:18px;line-height:40px;text-align:center;border-left:1px solid #f8eab6}
+.warp .contDf .main .program .programMain table.table1 td{border:0;border-bottom:1px solid #f8eab6}
+.warp .contDf .main .program .programMain table.table1 td.borderNone{border:0}
+.warp .contDf .main .program .programMain table .d1{width:158px}
+.warp .contDf .main .program .programMain table .d2{width:330px}
+.warp .contDf .main .program .programMain table .d3{width:330px;padding:0}
+.warp .contDf .main .program .programMain table .tr1{background:#f8eab6}
+.warp .contDf .main .program .programMain table .tr2{background:#ffe585}
+.warp .contDf .main .program .programMain table .tr3{background:#bc8f62}
+.warp .contDf .main .program .programMain table .tr3 td{color:#fff}
+.warp .contDf .main .program .programMain table th{color:#fff;background:#8d4700}
+.warp .contDf .main .program .programMain table td{color:#484848}
+.warp .contDf .main .program .programMain table td.d2,.warp .contDf .main .program .programMain table td.d3{text-align:left}
+.warp .contEf{height:896px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/bg5_306286f.png) center top no-repeat}
+.warp .contEf .main{height:620px;z-index:6}
+.warp .contEf .main .conTitle4{background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/title4_b565d75.png) 0 0 no-repeat}
+.warp .contEf .main .introduction{width:1040px;height:488px;margin:0 auto;position:relative;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/introduction_cdedf34.png) 0 0 no-repeat}
+.warp .contEf .main .introduction .introMain{width:956px;height:330px;position:absolute;top:80px;left:38px}
+.warp .contEf .main .introduction .introMain .p1{width:750px;line-height:40px;margin:0 auto;font-size:20px;color:#fff;padding:50px 0 20px;text-indent:40px}
+.warp .contEf .main .introduction .introMain .btn_intro{display:block;width:276px;height:75px;margin:0 auto;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/btn_intro_177e4c7.png) 0 0 no-repeat}
+.warp .contFf{height:852px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/bg6_473a06b.png) center top no-repeat}
+.warp .contFf .main{height:750px;z-index:6;padding:50px 0 0}
+.warp .contFf .main .conTitle5{background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/title5_501e237.png) 0 0 no-repeat}
+.warp .contFf .main .logoBox{width:1140px;height:750px;overflow:hidden;margin:0 auto}
+.warp .contFf .main .logoBox .logoList{width:1140px;height:100%}
+.warp .contFf .main .logoBox .logoList .logoItem{float:left;padding:0 8px 8px 0}
+.pop_map{position: relative;display: block;padding: 80px 0 140px;height:auto;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/bg4_1014705.png) center top no-repeat}
+.pop_map .popMain{position: relative;margin: 0 auto;width:1082px;height:610px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/pop_mapBg_f4444ce.png) center no-repeat}
+.pop_map .popMain .map_close{width:44px;height:44px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/popCloseBtn_baf6c0e.png) center no-repeat;position:absolute;top:30px;right:-30px;transition:transform .5s}
+.pop_map .popMain .map_close:hover{transform:rotate(90deg)}
+.pop_map .popMain .popTxt{width:784px;position:absolute;top:128px;left:176px}
+.pop_map .popMain .popTxt p{margin: 20px 0;}
+.pop_map .popMain .popTxt .p2{width:784px;color:#ffedb6;font-size:20px}
+.pop_map .popMain .popTxt .p2 span{color:#ffedb6}
+.pop_map .popMain .mapBox{display:block;width:783px;height:222px;position:absolute;top:312px;left:172px;background:url(https://mc.res.netease.com/pc/zt/20180110150153/img/map_ab51438.jpg) center no-repeat}
+.warp .contBf .main .swiper-container .swiper-wrapper .swiper-slide .item{background-position:0 0}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem2.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem2:hover{background-position:-190px 0}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem5.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem5:hover{background-position:-190px -88px}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem6.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem6:hover{background-position:-190px -176px}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem3{background-position:-376px 0}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem1{background-position:0 -310px}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem1.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem1:hover{background-position:-186px -310px}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem2{background-position:0 -398px}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem5{background-position:-186px -398px}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem4.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem4:hover{background-position:-376px -88px}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem3.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem3:hover{background-position:-376px -176px}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem4{background-position:-372px -310px}
+.warp .contCf .main .videoNavList .videoNavItem.videoNavItem6{background-position:-542px 0}
+.warp .contAf .shareBox .btn_home{background-position:0 -486px}
+.warp .contAf .titleBox .btn.Btn_map{background-position:-244px -486px}
+.warp .contAf .titleBox .btn.Btn_video{background-position:-436px -486px}
+.nie-download .link-android{background-position:-542px -88px}
+.nie-download .link-apple{background-position:-542px -129px}
+.nie-download .link-android:hover{background-position:-542px -170px}
+.warp .contBf .main .conTitle1{background-position:0 -564px}
+.warp .contAf .downTipsIcon{background-position:-542px -211px}
+.warp .SideBar .btnDown_PC{background-position:-542px -251px}
+.warp .contAf .shareBox #NIE-share .NIE-share-txt{background-position:-612px -211px}
+.nie-download .downTips .downIcon{background-position:-679px -88px}
+.nie-download .downTips .downIcon,.nie-download .link-android,.nie-download .link-android:hover,.nie-download .link-apple,.warp .SideBar .btnDown_PC,.warp .contAf .downTipsIcon,.warp .contAf .shareBox #NIE-share .NIE-share-txt,.warp .contAf .shareBox .btn_home,.warp .contAf .titleBox .btn.Btn_map,.warp .contAf .titleBox .btn.Btn_video,.warp .contBf .main .conTitle1,.warp .contBf .main .swiper-container .swiper-wrapper .swiper-slide .item,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem1,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem1.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem1:hover,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem2,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem2.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem2:hover,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem3,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem3.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem3:hover,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem4,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem4.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem4:hover,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem5,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem5.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem5:hover,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem6,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem6.cur,.warp .contCf .main .videoNavList .videoNavItem.videoNavItem6:hover{background-image:url(https://mc.res.netease.com/pc/zt/20180110150153/img/spriter/index_z_9b87014.png)}
+
+.Bot{background-color: #2c0a08;}
+.Bot .Copyright a,.Bot .Copyright{color: #fff;}
+.Bot .Copyright a:hover{text-decoration: underline;}

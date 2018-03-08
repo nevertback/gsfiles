@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="format-detection" content="telephone=no">
+	<title>大家一起来跳伞！《小米枪战》11月15日正式公测 _ 游民星空 Gamersky.com</title>
+	<meta name="keywords" content="小米枪战,小米枪战世界观,小米枪战常规模式,小米枪战生化模式,小米枪战实战训练模式,小米枪战玩法介绍,小米枪战PVP模式,小米枪战PVE模式,小米枪战特色系统,小米枪战赛事系统,小米枪战枪械皮肤系统,小米枪战任务系统,小米枪战好友系统,小米枪战排名系统,小米枪战勋章系统,小米枪战战队系统,小米枪战游戏亮点,小米枪战武器库,小米枪战M4A1,小米枪战AK47,小米枪战沙漠之鹰,小米枪战地图资料,小米枪战爆破地图,小米枪战复生地图,小米枪战底比斯遗址,小米枪战第七区,小米枪战电车小巷,小米枪战秘港">
+	<meta name="description" content="《小米枪战》利用虚幻4引擎打造了画面精致、情境逼真、枪械写实的枪战场景。实训模式中，60人紧张而又刺激的实战之旅将在4X4平方公里的大地图中展开。更多相关资讯请关注游民星空。">
+	<meta itemprop="name" content="大家一起来跳伞！《小米枪战》11月15日正式公测 _ 游民星空 Gamersky.com" />
+	<meta itemprop="image" content="http://image.gamersky.com/webimg13/zhuanti/gunts/350.jpg" />
+	<link href="http://j.gamersky.com/g/normalize.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="http://j.gamersky.com/web2015/css/QZnav.css" />
+	<style>@-webkit-keyframes arrAnim{0%{-webkit-transform:translate3d(0,2px,0);transform:translate3d(0,2px,0)}to{-webkit-transform:translate3d(0,-2px,0);transform:translate3d(0,-2px,0)}}@keyframes arrAnim{0%{-webkit-transform:translate3d(0,2px,0);transform:translate3d(0,2px,0)}to{-webkit-transform:translate3d(0,-2px,0);transform:translate3d(0,-2px,0)}}.bdsharewrap.bdstyle-c{width:242px;height:36px;overflow:hidden}.bdsharewrap.bdstyle-c .bdsharebuttonbox{width:800px;height:36px;*font-size:0}.bdsharewrap.bdstyle-c .bdsharebuttonbox.before,.bdsharewrap.bdstyle-c .bdsharebuttonbox:after,.clearfix:after,.clearfix:before,.container:after,.container:before{display:table;content:" "}.bdsharewrap.bdstyle-c .bdsharebuttonbox:after,.clearfix:after,.container:after{clear:both}.bdsharewrap.bdstyle-c .bdsharebuttonbox a{float:left;margin:0 4px 0 0;padding:0;display:inline-block;*display:inline;*zoom:1;width:37px;height:36px;background:url(http://image.gamersky.com/webimg13/zhuanti/cf8zn/fx.png) 0 0 no-repeat}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tsina{background-position:0 0}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_weixin{background-position:-40px 0}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_qzone{background-position:-80px 0}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_renren{background-position:-121px 0}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_sqq{background-position:-161px 0}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_count{background-position:-200px 0;text-indent:9999px;white-space:nowrap;overflow:hidden}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_douban,.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_more,.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tieba{display:none}body,html{min-width:1280px}body{font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px}h1,h2,h3,h4,h5,p,ul{margin:0;padding:0;list-style:none}a{text-decoration:none;cursor:pointer}.container{margin-right:auto;margin-left:auto;width:1200px}.zt-section{margin:0;padding:0;overflow:hidden;width:100%}.Bot,.QZnav,.zt-section{min-width:1200px}.QZnav .topbar{width:1200px}.QZnav .QZ-nav{display:none}.Bot{width:100%;height:155px;background:#111;font-size:14px}.Bot .Copyright{margin:0 auto;padding-top:50px;width:1200px;height:auto;line-height:30px;text-align:center;color:#555}.Bot .Copyright a{margin:0 5px;color:#555}.Bot .Copyright a:hover{color:#777}.gsPopup,.gsPopupMask{opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}.gsPopupMask{position:fixed;top:0;left:0;width:100%;height:100%;background:url(../ztimages/pop-bg.png) 0 0;z-index:99998}.gsPopupMask.cur{opacity:1;visibility:visible}.gsPopup{z-index:99999}.gsPopup .gsPopupCon{width:100%;height:100%;background-color:#000}.gsPopup .gsPopupCon img{display:block}.gsPopup .gsPopupCon video{display:block;width:100%;height:100%}.gsPopup .gsPopupClose{position:absolute;top:0;right:-44px;overflow:hidden;background-image:url(../ztimages/csprite.png);background-position:-496px -236px;width:35px;height:36px}.gsPopup .gsPopupClose:hover{background-position:-539px -236px}.gsPopup.cur{opacity:1;visibility:visible}.fixednav,.ztTab1 .ztTabNav li{background-image:url(../ztimages/csprite.png)}.fixednav{display:none;position:fixed;right:63px;top:50%;margin-top:-167px;z-index:999;padding-top:22px;background-position:0 0;width:120px;height:313px}.fixednav li,.fixednav li a{width:120px;height:36px}.fixednav li a{display:block;line-height:38px;font-size:15px;color:#2582f5;text-align:center;font-weight:700}.fixednav li a.cur,.fixednav li a:hover{color:#fff}.fixednav li,.fixednav.cur,.zt-section1 .container .btn.btn3:hover img,.zt-section4 .container .ztTab2 .ztTabNav li.cur i{display:block}.ztTab1 .ztTabNav{width:600px;height:60px}.ztTab1 .ztTabNav li{cursor:pointer;float:left;margin-right:5px;background-position:-309px -100px;width:180px;height:60px;line-height:60px;font-size:18px;color:#bec1c4;text-align:center}.ztTab1 .ztTabNav li.cur{background-position:-309px -168px;color:#fdffff}.zt-section2 .container .ztTab .ztTabCon li .context,.ztTab1,.ztTab1 .ztTabCon li{width:1200px}.zt-section1{height:1055px;background:url(http://image.gamersky.com/webimg13/zhuanti/gunts/zt-bg1.jpg) center 0 no-repeat}.zt-section1 .container{position:relative}.zt-section1 .container .bdsharewrap.bdstyle-c{position:absolute;top:45px;right:0}.zt-section1 .container .logo_gf,.zt-section1 .container .logo_gs{display:block;position:absolute;left:0;top:32px;width:164px;height:63px;background:url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0}.zt-section1 .container .logo_gf{left:182px;top:23px;width:228px;height:79px}.zt-section1 .container .btn{display:block;position:absolute;top:658px;background-image:url(../ztimages/csprite.png);background-position:-497px -100px;width:179px;height:56px;line-height:56px;font-size:20px;color:#2e528e;text-align:center}.zt-section1 .container .btn.btn3:hover,.zt-section1 .container .btn:hover{background-image:url(../ztimages/csprite.png);background-position:-497px -168px;width:179px;height:56px;color:#e2e9f1}.zt-section1 .container .btn.btn1{left:528px}.zt-section1 .container .btn.btn2{left:702px}.zt-section1 .container .btn.btn3{left:878px;color:#e2e9f1;background-image:url(../ztimages/csprite.png);background-position:-309px -236px;width:179px;height:56px}.zt-section1 .container .btn.btn3 img{display:none;position:absolute;left:-37px;top:-255px;width:254px;height:279px}.zt-section2{height:756px;background:url(http://image.gamersky.com/webimg13/zhuanti/gunts/zt-bg2.jpg) center 0 no-repeat}.zt-section2 .container{position:relative;padding-top:108px}.zt-section2 .container .ztTab .ztTabNav{padding-left:666px;margin-bottom:62px}.zt-section2 .container .ztTab .ztTabCon li .context .pics,.zt-section3 .container .ztTab .ztTabCon li .context{width:1220px}.zt-section2 .container .ztTab .ztTabCon li .context .pics img{display:block;width:1200px}.zt-section2 .container .ztTab .ztTabCon li .context .txt{position:relative;margin-top:-70px;padding-left:30px;border-left:2px solid #384450}.zt-section2 .container .ztTab .ztTabCon li .context .txt i{display:block;position:absolute;left:-2px;background-image:url(../ztimages/csprite.png);background-position:-200px -343px;width:4px;height:53px}.zt-section2 .container .ztTab .ztTabCon li .context .txt .para{padding-right:20px;max-height:150px;overflow-y:auto}.zt-section2 .container .ztTab .ztTabCon li .context .txt p,.zt-section3 .container .ztTab .ztTabCon li .context .txt .para p{line-height:30px;font-size:14px;color:#c9d0d6}.zt-section2 .container .ztTab .ztTabCon li .context .txt ::-webkit-scrollbar{width:8px;height:8px;border-radius:0;background-color:rgba(0,0,0,.1)}.zt-section2 .container .ztTab .ztTabCon li .context .txt ::-webkit-scrollbar-track{border-radius:10px;background-color:rgba(0,0,0,.2)}.zt-section2 .container .ztTab .ztTabCon li .context .txt ::-webkit-scrollbar-track:hover{background-color:rgba(0,0,0,.4)}.zt-section2 .container .ztTab .ztTabCon li .context .txt ::-webkit-scrollbar-track:active{background-color:rgba(0,0,0,.3)}.zt-section2 .container .ztTab .ztTabCon li .context .txt ::-webkit-scrollbar-thumb{border-radius:0;background-color:rgba(34,133,255,.8)}.zt-section2 .container .ztTab .ztTabCon li .context .txt ::-webkit-scrollbar-thumb:hover{background-color:#2285ff}.zt-section2 .container .ztTab .ztTabCon li .context .txt ::-webkit-scrollbar-thumb:active{background-color:rgba(34,133,255,.6)}.zt-section3{height:980px;background:url(http://image.gamersky.com/webimg13/zhuanti/gunts/zt-bg3.jpg) center 0 no-repeat}.zt-section3 .container{position:relative;padding-top:72px}.zt-section3 .container .ztTab .ztTabNav{padding-left:845px;margin-bottom:68px}.zt-section3 .container .ztTab .ztTabCon li .context .txt{position:relative;padding-left:32px;float:left;margin-right:23px;width:545px;border-left:2px solid #384450}.zt-section3 .container .ztTab .ztTabCon li .context .txt img{display:block;margin-top:42px;width:545px;height:307px}.zt-section3 .container .ztTab .ztTabCon li .context .txt .tit{position:relative;line-height:30px;font-size:14px;color:#e66c7a}.zt-section3 .container .ztTab .ztTabCon li .context .txt .tit i,.zt-section4 .container .ztTab2 .ztTabNav li i{display:block;position:absolute;left:-33px;background-image:url(../ztimages/csprite.png);background-position:-200px -343px;width:4px;height:53px}.zt-section3 .container .ztTab .ztTabCon li .context .txt .para{margin-top:30px}.zt-section3 .container .ztTab .ztTabCon li .context .txt .para h5{position:relative;height:30px;line-height:30px;font-size:16px;color:#2285ff}.zt-section3 .container .ztTab .ztTabCon li .context .txt .para h5 i{display:block;position:absolute;top:50%;left:-32px;margin-top:-1px;width:20px;height:2px;background-color:#384450}.zt-section3 .container .ztTab .ztTabCon li .context .pics{float:left;width:597px}.zt-section3 .container .ztTab .ztTabCon li .context .pics img{display:block;margin-bottom:7px;max-width:100%}.zt-section4{height:820px;background:url(http://image.gamersky.com/webimg13/zhuanti/gunts/zt-bg4.jpg) center 0 no-repeat}.zt-section4 .container{padding-top:224px}.zt-section4 .container .ztTab2{position:relative;width:1200px;height:546px}.zt-section4 .container .ztTab2 .ztTabNav{margin-top:36px;padding-left:210px;width:880px;height:104px}.zt-section4 .container .ztTab2 .ztTabNav li{position:relative;cursor:pointer;display:block;float:left;margin-right:23px;background-image:url(../ztimages/csprite.png);background-position:-100px -343px;width:92px;height:104px}.zt-section4 .container .ztTab2 .ztTabNav li i{display:none;top:-10px;left:50%;margin-left:-17px;background-position:-582px -236px;width:35px;height:14px;-webkit-animation:arrAnim 1s ease infinite;animation:arrAnim 1s ease infinite}.zt-section4 .container .ztTab2 .ztTabNav li span{display:block;line-height:102px;font-size:16px;color:#7a9cc8;text-align:center;font-weight:700}.zt-section4 .container .ztTab2 .ztTabNav li span.db{padding-top:30px;line-height:22px}.zt-section4 .container .ztTab2 .ztTabNav li.cur{background-image:url(../ztimages/csprite.png);background-position:0 -343px;width:92px;height:104px}.zt-section4 .container .ztTab2 .ztTabNav li.cur span{color:#ff9e2b}.zt-section4 .container .ztTab2 .ztTabCon li{position:relative;width:1200px;height:406px}.zt-section4 .container .ztTab2 .ztTabCon li .context{position:relative;margin:0 auto;width:1000px;height:406px}.zt-section4 .container .ztTab2 .ztTabCon li .context img{display:block;width:720px;height:406px}.zt-section4 .container .ztTab2 .ztTabCon li .context .txt{position:absolute;right:0;top:0;width:439px;height:406px;background:url(http://image.gamersky.com/webimg13/zhuanti/gunts/tab2-txt.png) 0 0 no-repeat}.zt-section4 .container .ztTab2 .ztTabCon li .context .txt .para{padding:40px 0 0 140px;width:270px}.zt-section4 .container .ztTab2 .ztTabCon li .context .txt .para h5{line-height:60px;font-size:26px;color:#ff9e2b}.zt-section4 .container .ztTab2 .ztTabCon li .context .txt .para p{line-height:26px;font-size:14px;color:#e5d1ec}.zt-section4 .container .ztTab2 .ztTabArr{display:block;position:absolute;top:182px}.zt-section4 .container .ztTab2 .ztTabArr.ztTabArrP{left:40px;background-image:url(../ztimages/csprite.png);background-position:-165px -236px;width:29px;height:42px}.zt-section4 .container .ztTab2 .ztTabArr.ztTabArrP:hover{background-position:-202px -236px}.zt-section4 .container .ztTab2 .ztTabArr.ztTabArrN{right:40px;background-image:url(../ztimages/csprite.png);background-position:-128px -236px;width:29px;height:42px}.zt-section4 .container .ztTab2 .ztTabArr.ztTabArrN:hover{background-position:-239px -236px}.zt-section5{height:840px;background:url(http://image.gamersky.com/webimg13/zhuanti/gunts/zt-bg5.jpg) center 0 no-repeat}.zt-section5 .container{padding-top:193px}.zt-section5 .container .ztTab3 .ztTabNav{position:absolute;left:0;top:0;width:173px;height:550px}.zt-section5 .container .ztTab3 .ztTabNav li{position:relative;display:block;cursor:pointer;margin-bottom:33px;background-image:url(../ztimages/csprite.png);background-position:-128px 0;width:173px;height:110px}.zt-section5 .container .ztTab3 .ztTabNav li img{display:block;width:160px;height:110px}.zt-section5 .container .ztTab3 .ztTabNav li span{position:absolute;left:0;top:72px;width:160px;height:26px;line-height:26px;font-size:17px;color:#90a0ae;text-align:center;font-weight:700}.zt-section5 .container .ztTab3 .ztTabNav li.cur{background-position:-128px -118px}.zt-section5 .container .ztTab3 .ztTabNav li.cur span{color:#fff}.zt-section5 .container .ztTab3,.zt-section5 .container .ztTab3 .ztTabCon li{position:relative;width:1200px;height:550px}.zt-section5 .container .ztTab3 .ztTabCon li .context{position:relative;margin-left:187px;width:1013px;height:540px;background:url(http://image.gamersky.com/webimg13/zhuanti/gunts/s5-con-bg.png) 0 0 no-repeat}.zt-section5 .container .ztTab3 .ztTabCon li .context img{display:block;position:absolute;top:0;right:0;width:587px;height:385px;-webkit-transition:all .4s ease .1s;transition:all .4s ease .1s;opacity:0;-webkit-transform-origin:100% 0;-ms-transform-origin:100% 0;transform-origin:100% 0;-webkit-transform:translate3d(20px,20px,0) rotate(-5deg);transform:translate3d(20px,20px,0) rotate(-5deg)}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-infos{padding:12px 0 0 34px;width:385px}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-infos h4{height:52px;line-height:52px;font-size:30px;color:#2983f2}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-infos .gun-data .row{position:relative;height:24px;line-height:24px}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-infos .gun-data .row .tit{font-size:14px;color:#90a0ae}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-infos .gun-data .row .num{position:absolute;left:307px;top:0;font-size:14px;color:#2983f2}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-infos .gun-data .row .pro{position:absolute;left:98px;top:7px;width:200px;height:10px;background-color:#364250;overflow:hidden}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-infos .gun-data .row .pro i{display:block;position:absolute;height:10px;background-color:#1b5292;-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scale(0,1);-ms-transform:scale(0,1);transform:scale(0,1);-webkit-transition:all .4s ease-out .1s;transition:all .4s ease-out .1s}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-infos .gun-chr{margin-top:10px}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-infos .gun-chr h5{line-height:26px;font-size:14px;color:#2983f2;font-weight:700}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-infos .gun-chr p{line-height:24px;font-size:14px;color:#c9d0d6}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-comm{position:absolute;left:34px;top:403px;width:965px}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-comm h5{margin-bottom:6px;line-height:26px;font-size:14px;color:#2983f2;font-weight:700}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-comm p{margin-bottom:6px;line-height:18px;font-size:14px;color:#c9d0d6}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-comm.gun-comm-mini h5{margin-bottom:0}.zt-section5 .container .ztTab3 .ztTabCon li .context .gun-comm.gun-comm-mini p{margin-bottom:4px}.zt-section5 .container .ztTab3 .ztTabCon li.cur .context img{opacity:1;-webkit-transform:translate3d(0,0,0) rotate(0);transform:translate3d(0,0,0) rotate(0)}.zt-section5 .container .ztTab3 .ztTabCon li.cur .context .gun-infos .row .pro i{-webkit-transform:scale(1,1);-ms-transform:scale(1,1);transform:scale(1,1)}.zt-section5 .container .btn,.zt-section5 .container .btn:hover{background-image:url(../ztimages/csprite.png);width:367px;height:42px}.zt-section5 .container .btn{display:block;margin:10px auto 0;line-height:42px;font-size:14px;color:#ebfbfe;text-indent:130px;background-position:-309px 0}.zt-section5 .container .btn:hover{background-position:-309px -50px}.zt-section6{height:550px;background:url(http://image.gamersky.com/webimg13/zhuanti/gunts/zt-bg6.jpg) center 0 no-repeat}.zt-section6 .container{position:relative;padding-top:168px}.zt-section6 .container .list{width:1210px}.zt-section6 .container .list li{float:left;margin:0 1px 1px 0;width:299px;height:162px}.zt-section6 .container .list li a{position:relative;display:block;width:299px;height:162px;overflow:hidden}.zt-section6 .container .list li a img{display:block;width:100%;height:100%;-webkit-transition:all .3s ease;transition:all .3s ease}.zt-section6 .container .list li a span{display:block;position:absolute;left:0;bottom:0;width:100%;height:30px;line-height:30px;font-size:14px;text-align:center;color:#fff;background:url(http://image.gamersky.com/webimg13/zhuanti/gunts/pop-bg.png) 0 0}.zt-section6 .container .list li a:hover img{-webkit-transform:scale(1.06);-ms-transform:scale(1.06);transform:scale(1.06)}.zt-section7{height:926px;background:url(http://image.gamersky.com/webimg13/zhuanti/gunts/zt-bg7.jpg) center 0 no-repeat}.zt-section7 .container{position:relative;padding-top:183px}.zt-section7 .container img{display:block;margin-left:-2px;width:1203px}.zt-sectionComm{padding-bottom:30px;height:auto;background-color:#e1e9ed}.zt-sectionComm .container{position:relative;padding-top:60px}.zt-sectionComm .container .Comment{padding:0 30px}</style>
+	<script type="text/javascript" src="http://j.gamersky.com/g/jquery-1.8.3.js"></script>
+	<!-- 创建时间：20171115 设计：ONE像素 前端：MrrrTian -->
+</head>
+<body>
+<!-- 全站导航 -->
+<script type="text/javascript" src="http://www.gamersky.com/autoinc/allsite/allsite_nav_js.htm"></script>
+<!-- 分享用 -->
+<div style="width:0;height:0;overflow:hidden">
+	<h3>大家一起来跳伞！《小米枪战》11月15日正式公测 _ 游民星空 Gamersky.com</h3>
+	<p>《小米枪战》利用虚幻4引擎打造了画面精致、情境逼真、枪械写实的枪战场景。实训模式中，60人紧张而又刺激的实战之旅将在4X4平方公里的大地图中展开。更多相关资讯请关注游民星空。</p>
+	<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/350.jpg" alt="大家一起来跳伞！《小米枪战》11月15日正式公测 _ 游民星空 Gamersky.com">
+</div>
+<!-- 分享用 end-->
+<div id="section1" class="zt-section zt-section1">
+	<div class="container">
+		<a target="_blank" href="http://www.gamersky.com/" class="logo_gs"></a>
+		<a target="_blank" href="http://gun.mi.com/?channel=bdad" class="logo_gf"></a>
+		<!-- 百度分享 -->
+<div class="bdsharewrap bdstyle-c">
+	<div class="bdsharebuttonbox bdshare-button-style0-16" data-tag="share_1" data-bd-bind="1446461622481">
+		<a class="bdicons bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+		<a class="bdicons bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+		<a class="bdicons bds_sqq" data-cmd="sqq" title="分享到QQ"></a>
+		<a class="bdicons bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+		<a class="bdicons bds_tieba" data-cmd="tieba" title="分享到贴吧"></a>
+		<a class="bdicons bds_renren" data-cmd="renren" title="分享到人人"></a>
+		<a class="bdicons bds_douban" data-cmd="douban" title="分享到豆瓣"></a>
+		<a class="bdicons bds_more" data-cmd="more"></a>
+		<a class="bds_count" data-cmd="count" title=""></a>
+	</div>
+</div>
+<!-- 百度分享 end-->
+		<a target="_blank" href="http://gun.mi.com/?channel=bdad" class="btn btn1">官方网站</a>
+		<a target="_blank" href="http://shouyou.gamersky.com/z/gun/" class="btn btn2">游戏专区</a>
+		<a class="btn btn3">游戏下载<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/code.png" alt="code"></a>
+	</div>
+</div>
+<div id="section2" class="zt-section zt-section2">
+	<div class="container">
+		<div class="ztTab ztTab1" id="tab2">
+			<ul class="ztTabNav">
+				<li>实战训练模式</li>
+				<li>常规模式</li>
+				<li>生化模式</li>
+			</ul>
+			<ul class="ztTabCon">
+				<li>
+					<div class="clearfix context">
+						<div class="clearfix pics">
+							<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s201.png" alt="pics">
+						</div>
+						<div class="txt">
+							<i></i>
+							<div class="para">
+								<p>2031年，为了提高各国联合应对和处置危机的能力，伊格、罗塞等国在海岛基地展开了一系列的联合军事演习。</p>
+								<p>首次演习主要进行部队集结与展开、空降、战略轰炸机远程轰炸、空中运输补给、大规模实弹射击、生化战、战场自救与互救等科目的演练。</p>
+								<p>各国参演部队在登陆岛集合，乘坐运输机开往海岛基地，空降海岛后，以单兵或小队为单位进行实战演练。最终，通过演习并生存下来的作战单位会接受野战兵王勋章嘉奖。</p>
+								<p>未来，各国还将应用大气层外空间卫星，在海岛上制造多种极限作战环境，如迷雾、冰雪等，以提高军队在极度恶劣环境下的作战能力。</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="clearfix context">
+						<div class="clearfix pics">
+							<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s202.png" alt="pics">
+						</div>
+						<div class="txt">
+							<i></i>
+							<div class="para">
+								<p>“一、不增加军费；二、不使用生化武器；三，不进行军备竞争。”</p>
+								<p>“五年前，伊格和罗塞两大邻邦强国的冷战随着这份《天平公约》的出台，终于落下帷幕。”</p>
+								<p>“世界人民再一次看到了和平的曙光。”</p>
+								<p>“但就在半个月前，小国克莱尔因经济危机宣告破产，执政党决定进行公投，在接壤的伊格与 罗塞两大联邦之间选择国家归属。”</p>
+								<p>“公投前夜，当地极端组织“尘世”浮出水面，宣扬极端种族主义，使用生化武器破坏公投， 克莱尔危机由此爆发。”</p>
+								<p>“据悉，为剿灭“尘世”组织，伊格和罗塞一周前已出兵封锁了克莱尔境内。”</p>
+								<p>“两国对于克莱尔顶尖的基因改造科技觊觎已久，所以，在克莱尔的归属问题上，两国却始终 无法达成共识。”</p>
+								<p>“军事专家普遍认为，伊格和罗塞之争已不可避免，但当前首要任务，还是共同消灭尘世组织 。”</p>
+								<p>“我们相信，同作为“天平公约”的签署国，两国即使开战，也会在公约框架下，进行一场公 平的强强对决！”</p>
+								<p>“后续，我们会持续为您报……”（画面消失，雪花满屏）</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="clearfix context">
+						<div class="clearfix pics">
+							<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s203.png" alt="pics">
+						</div>
+						<div class="txt">
+							<i></i>
+							<div class="para">
+								<p>小国克莱尔东部山区发现了一种有机生命体，这种从未曝光过的新物种似乎超出了一般地球生物的寿命，并好像具有强大的自我修复能力。这种新物种引起了克莱尔政府的注意，并与伊格和罗塞合作组成一个多国科研小组，一同研究此生物。</p>
+								<p>数月后，对于“共生体”研究进入了瓶颈，核心组成员之一阿蕾莎弗尔提出活体实验改为在人体身上进行，而遭到了多数人的反对。阿蕾莎弗尔见提议无法被通过，偷偷从实验室偷出了一剂“共生体”样本，并将其注入了体内。令人意外的是，她与“共生体”契合度达到了98%以上。</p>
+								<p>在短时间内，阿蕾莎弗尔外形发现变化，身体表面生成角质层，类似于岩石一样的骨质突出物。其身体机能大幅度提高并具有了正常人类没有的可怕能力，感染同化其他正常人类，使其变为“共生体”的一员。</p>
+								<p>阿蕾莎弗尔作为“始源共生体”（母体）迅速感染了研究所内所有的科研人员，紧接着与研究所相邻的城镇也出现“共生体”感染者，使原本孱弱平民瞬间变为可怕的怪物。一场人类与“共生体”的战争自此拉开了序幕。</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="section3" class="zt-section zt-section3">
+	<div class="container">
+		<div class="ztTab ztTab1" id="tab3">
+			<ul class="ztTabNav">
+				<li>PVP模式</li>
+				<li>PVE模式</li>
+			</ul>
+			<ul class="ztTabCon">
+				<li>
+					<div class="clearfix context">
+						<div class="txt">
+							<p class="tit"><i></i>PVP模式目前有13种特色玩法，包括：实战训练模式，团队模式，人机对战，爆破模式，个人复生，狙战模式，刀战模式，幽灵模式，躲猫猫模式，生化模式，暴击模式，无限手雷，无限火力。</p>
+							<div class="para">
+								<h5><i></i>实战训练模式</h5>
+								<p>以到达集合地并获取更高积分淘汰对手为目的，训练单兵或团队进行空降、射击、驾驶、隐蔽、搜索、战场自救与互救等项目的综合性技能比拼，从而具备反恐能力。</p>
+							</div>
+							<div class="para">
+								<h5><i></i>团队模式</h5>
+								<p>分为两个阵营，无限复活，快节奏的模式，在固定时间内率先击败规定数量的敌人即可获胜。</p>
+							</div>
+							<div class="para">
+								<h5><i></i>爆破模式</h5>
+								<p>分为两个阵营，进攻方需要使用C4炸弹摧毁目标物，而防守方则要组织目标物被摧毁，在摧毁或保护目标物的前提下，率先完败敌方队伍即可获得当前小局胜利。对玩家配合要求很高，具备超强竞技性。</p>
+							</div>
+							<div class="para">
+								<h5><i></i>生化模式</h5>
+								<p>回合开始会有玩家随机变成感染者，被感染者击败的人类玩家也会立即变成感染者，人类玩家团结协作，在规定时间内抵御住感染者进攻即可获得胜利，当全部人类均被感染者感染，则感染者胜利。</p>
+							</div>
+						</div>
+						<div class="pics">
+							<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s301.png" alt="pics">
+							<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s302.png" alt="pics">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="clearfix context">
+						<div class="txt">
+							<p class="tit"><i></i>PVE模式目前有2种特色玩法，包括：剧情模式，合作模式。</p>
+							<div class="para">
+								<h5><i></i>剧情模式</h5>
+								<p>目前开放到第二章的剧情任务。难度分为简单、困难、噩梦三种，需要逐关解锁。玩家通过关卡会获得经验和金币奖励，还有丰富的通关奖励。</p>
+							</div>
+							<div class="para">
+								<h5><i></i>合作模式</h5>
+								<p>你所在的阿尔法小组被困在一栋建筑物中，为了脱离这里，你和你的队友需要一同抵御怪物的袭击，直至逃离。在战斗过程中，玩家需要通过队友间配合，对地形及周围设施的合理运用来阻击敌人。每次消灭最终敌人后可以获得丰厚的奖励，挑战的难度越高，获得的奖励品质及概率越高！</p>
+							</div>
+							<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s305.png" alt="pics">
+						</div>
+						<div class="pics">
+							<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s303.png" alt="pics">
+							<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s304.png" alt="pics">
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="section4" class="zt-section zt-section4">
+	<div class="container">
+		<div class="ztTab ztTab2" id="tab4">
+			<ul class="ztTabCon">
+				<li>
+					<div class="context">
+						<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s401.png" alt="pics">
+						<div class="txt">
+							<div class="para">
+								<h5>赛事系统</h5>
+								<p>作为绿色公平竞技FPS手游的《小米枪战》，顺应电竞大势，致力于呼唤所有热爱电竞、愿意为电竞付出的人一起走下去，力求构建线上、线下专业的赛事体系，以赛事的多样化和竞技的公平性为基础，让玩家能够随时参赛，全民参与电竞盛世。《小米枪战》赛事系统分为线上赛、线下赛。</p>
+								<p>线上赛分为：常规赛、天梯赛、锦标赛。</p>
+								<p>线下赛分为：城市赛、区域赛、全国赛、世界赛。</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="context">
+						<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s402.png" alt="pics">
+						<div class="txt">
+							<div class="para">
+								<h5>枪械皮肤系统</h5>
+								<p>《小米枪战》力争公平公正属性，基础武器可以通过升级解锁，完全免费，在武器差异化上也只做皮肤差异，属性追求极致平衡。</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="context">
+						<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s403.png" alt="pics">
+						<div class="txt">
+							<div class="para">
+								<h5>任务系统</h5>
+								<p>游戏内任务系统有丰富的福利，玩家可以通过完成任务获取金币、经验、勋章值等奖励。</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="context">
+						<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s404.png" alt="pics">
+						<div class="txt">
+							<div class="para">
+								<h5>好友系统</h5>
+								<p>游戏支持玩家相互加好友，好友之间可以完成聊天、互送金币、互送礼物等交互内容，寂寞时分找战友一起来一发吧！</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="context">
+						<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s405.png" alt="pics">
+						<div class="txt">
+							<div class="para">
+								<h5>排名系统</h5>
+								<p>游戏在天梯赛、军衔、各个模式、战队方面均有服务器排行榜、好友排行榜等榜单，方便玩家了解自己当前实力，战备需求，知己知彼，百战不殆！</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="context">
+						<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s406.png" alt="pics">
+						<div class="txt">
+							<div class="para">
+								<h5>勋章系统</h5>
+								<p>勋章系统包括步枪、狙击枪、霰弹枪、机关枪、冲锋枪、投掷、手枪近战等武器，剧情合作、生化等模式，以及通用的各项属性加成，玩家可以根据自己擅长的方面选择某些属性进行专精加点。让自己在游戏内战斗如虎添翼！</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="context">
+						<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s407.png" alt="pics">
+						<div class="txt">
+							<div class="para">
+								<h5>战队系统</h5>
+								<p>基于公平竞技设定的《小米枪战》，战队系统是为电竞而生必不可少的部分，战队签到可获得丰厚奖励，战队成员之间也可以经常组队战斗来提高默契。</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="ztTabNav">
+				<li><i></i><span>赛事系统</span></li>
+				<li><i></i><span class="db">枪械皮肤<br>系统</span></li>
+				<li><i></i><span>任务系统</span></li>
+				<li><i></i><span>好友系统</span></li>
+				<li><i></i><span>排名系统</span></li>
+				<li><i></i><span>勋章系统</span></li>
+				<li><i></i><span>战队系统</span></li>
+			</ul>
+			<a class="ztTabArr ztTabArrP"></a>
+			<a class="ztTabArr ztTabArrN"></a>
+		</div>
+	</div>
+</div>
+<div id="section5" class="zt-section zt-section5">
+	<div class="container">
+		<div class="ztTab ztTab3" id="tab5">
+			<ul class="ztTabCon">
+				<li>
+					<div class="context">
+						<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s5g1b.png" alt="gun">
+						<div class="gun-infos">
+							<h4>M4A1</h4>
+							<div class="gun-data">
+								<div class="row">
+									<span class="tit">威力：</span>
+									<div class="pro"><i style="width:58%"></i></div>
+									<span class="num">58</span>
+								</div>
+								<div class="row">
+									<span class="tit">穿透：</span>
+									<div class="pro"><i style="width:70%"></i></div>
+									<span class="num">70</span>
+								</div>
+								<div class="row">
+									<span class="tit">射速：</span>
+									<div class="pro"><i style="width:78%"></i></div>
+									<span class="num">78</span>
+								</div>
+								<div class="row">
+									<span class="tit">精准：</span>
+									<div class="pro"><i style="width:81%"></i></div>
+									<span class="num">81</span>
+								</div>
+								<div class="row">
+									<span class="tit">换弹：</span>
+									<div class="pro"><i style="width:63%"></i></div>
+									<span class="num">63</span>
+								</div>
+								<div class="row">
+									<span class="tit">稳定：</span>
+									<div class="pro"><i style="width:75%"></i></div>
+									<span class="num">75</span>
+								</div>
+								<div class="row">
+									<span class="tit">便携：</span>
+									<div class="pro"><i style="width:66%"></i></div>
+									<span class="num">66</span>
+								</div>
+								<div class="row">
+									<span class="tit">前置弹夹：</span>
+									<div class="pro"><i style="width:30%"></i></div>
+									<span class="num">30</span>
+								</div>
+								<div class="row">
+									<span class="tit">后备弹药量：</span>
+									<div class="pro"><i style="width:60%"></i></div>
+									<span class="num">60</span>
+								</div>
+							</div>
+							<div class="gun-chr">
+								<h5>特点</h5>
+								<p>弹道精准，连续射击稳定，后坐力小，弹道易于控制，<br>对于新手玩家来说易上手</p>
+							</div>
+						</div>
+						<div class="gun-comm">
+							<h5>点评</h5>
+							<p>1. 单发点射：M4A1弹道精准，单点稳定，后坐力小，适当的控制住准星，掌握好点射的节奏，在快速点击射击时每一颗子弹的弹着点基本都会在同一点。</p>
+							<p>2. 4~5连发射击：M4A1前几发子弹较为容易判断，瞄准敌人上半身连发射击即可，也可在连射的基础上增加点射的操作，这样相结合的射击弹道易于掌控。</p>
+							<p>3. 扫射：M4A1最常用的使用方法就是扫射，射速和穿透威力较强，扫射时候一定要注意看着弹道，M4A1弹道稍微有点飘，注意横向的偏移。</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="context">
+						<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s5g2b.png" alt="gun">
+						<div class="gun-infos">
+							<h4>AK47</h4>
+							<div class="gun-data">
+								<div class="row"><span class="tit">威力：</span><div class="pro"><i style="width:61%"></i></div><span class="num">61</span></div>
+								<div class="row"><span class="tit">穿透：</span><div class="pro"><i style="width:61%"></i></div><span class="num">61</span></div>
+								<div class="row"><span class="tit">射速：</span><div class="pro"><i style="width:76%"></i></div><span class="num">76</span></div>
+								<div class="row"><span class="tit">精准：</span><div class="pro"><i style="width:76%"></i></div><span class="num">76</span></div>
+								<div class="row"><span class="tit">换弹：</span><div class="pro"><i style="width:59%"></i></div><span class="num">59</span></div>
+								<div class="row"><span class="tit">稳定：</span><div class="pro"><i style="width:69%"></i></div><span class="num">69</span></div>
+								<div class="row"><span class="tit">便携：</span><div class="pro"><i style="width:66%"></i></div><span class="num">66</span></div>
+								<div class="row"><span class="tit">前置弹夹：</span><div class="pro"><i style="width:30%"></i></div><span class="num">30</span></div>
+								<div class="row"><span class="tit">后备弹药量：</span><div class="pro"><i style="width:60%"></i></div><span class="num">60</span></div>
+							</div>
+							<div class="gun-chr">
+								<h5>特点</h5>
+								<p>单发精准度极高，伤害高，适合点射，对于有一定FPS射击技巧的玩家来说易上手，可以说是一把追求精准爆头的武器。</p>
+							</div>
+						</div>
+						<div class="gun-comm gun-comm-mini">
+							<h5>点评</h5>
+							<p>1. 单发点射：单点发射是AK系列的最佳打法，单点时AK后坐力大，需要射击键略微向下压枪来稳定住准星，熟能生巧，在对弹道进行一定射击练习后，可掌握其弹道规律!</p>
+							<p>2. 连发点射：充分利用AK武器后坐力大，弹道上扬的特点，配合射击键对准星的控制，进行连续2~3连发的射击，很容易第一发击中胸部，随后的几发子弹靠后坐力的上扬爆头。</p>
+							<p>3.AK47弹道在连续射击时弹道走向为正7，或为反7随机。</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="context">
+						<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s5g3b.png" alt="gun">
+						<div class="gun-infos">
+							<h4>沙漠之鹰</h4>
+							<div class="gun-data">
+								<div class="row"><span class="tit">威力：</span><div class="pro"><i style="width:56%"></i></div><span class="num">56</span></div>
+								<div class="row"><span class="tit">穿透：</span><div class="pro"><i style="width:32%"></i></div><span class="num">32</span></div>
+								<div class="row"><span class="tit">射速：</span><div class="pro"><i style="width:32%"></i></div><span class="num">32</span></div>
+								<div class="row"><span class="tit">精准：</span><div class="pro"><i style="width:45%"></i></div><span class="num">45</span></div>
+								<div class="row"><span class="tit">换弹：</span><div class="pro"><i style="width:71%"></i></div><span class="num">71</span></div>
+								<div class="row"><span class="tit">稳定：</span><div class="pro"><i style="width:73%"></i></div><span class="num">73</span></div>
+								<div class="row"><span class="tit">便携：</span><div class="pro"><i style="width:73%"></i></div><span class="num">73</span></div>
+								<div class="row"><span class="tit">前置弹夹：</span><div class="pro"><i style="width:7%"></i></div><span class="num">7</span></div>
+								<div class="row"><span class="tit">后备弹药量：</span><div class="pro"><i style="width:35%"></i></div><span class="num">35</span></div>
+							</div>
+							<div class="gun-chr">
+								<h5>特点</h5>
+								<p>威力大，易上手，是一把性能高效的手枪。</p>
+							</div>
+						</div>
+						<div class="gun-comm">
+							<h5>点评</h5>
+							<p>1.沙漠之鹰副武器伤害高，可在主武器子弹缺失紧急关头切出使用；</p>
+							<p>2.沙鹰子弹量较少，但是伤害高，点射时注意弹道的偏移特性保证命中率；</p>
+							<p>3.沙鹰弹道准，快速点射时瞄准敌人胸口关键部位，关键时刻可打出爆头命中。</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="context">
+						<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s5g4b.png" alt="gun">
+						<div class="gun-infos">
+							<h4>M249</h4>
+							<div class="gun-data">
+								<div class="row"><span class="tit">威力：</span><div class="pro"><i style="width:56%"></i></div><span class="num">56</span></div>
+								<div class="row"><span class="tit">穿透：</span><div class="pro"><i style="width:63%"></i></div><span class="num">63</span></div>
+								<div class="row"><span class="tit">射速：</span><div class="pro"><i style="width:59%"></i></div><span class="num">59</span></div>
+								<div class="row"><span class="tit">精准：</span><div class="pro"><i style="width:53%"></i></div><span class="num">53</span></div>
+								<div class="row"><span class="tit">换弹：</span><div class="pro"><i style="width:44%"></i></div><span class="num">44</span></div>
+								<div class="row"><span class="tit">稳定：</span><div class="pro"><i style="width:49%"></i></div><span class="num">49</span></div>
+								<div class="row"><span class="tit">便携：</span><div class="pro"><i style="width:62%"></i></div><span class="num">62</span></div>
+								<div class="row"><span class="tit">前置弹夹：</span><div class="pro"><i style="width:120%"></i></div><span class="num">120</span></div>
+								<div class="row"><span class="tit">后备弹药量：</span><div class="pro"><i style="width:120%"></i></div><span class="num">120</span></div>
+							</div>
+							<div class="gun-chr">
+								<h5>特点</h5>
+								<p>弹夹容量极大，持续火力强劲。</p>
+							</div>
+						</div>
+						<div class="gun-comm">
+							<h5>点评</h5>
+							<p>1.强大的火力还是巨大的弹夹容量。</p>
+							<p>2.射速和弹容量都有了更进一步的提升。</p>
+							<p>3.射速、精度高，强大的火力压制给敌方造成巨大压力。</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="ztTabNav">
+				<li><img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s5g1.png" alt="gun"><span>M4A1</span></li>
+				<li><img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s5g2.png" alt="gun"><span>AK47</span></li>
+				<li><img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s5g3.png" alt="gun"><span>沙漠之鹰</span></li>
+				<li><img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s5g4.png" alt="gun"><span>M249</span></li>
+			</ul>
+		</div>
+		<a target="_blank" href="http://gun.mi.com/html/main/zl/guns_pc.html" class="btn">查看更多枪械</a>
+	</div>
+</div>
+<div id="section6" class="zt-section zt-section6">
+	<div class="container">
+		<ul class="clearfix list">
+			<li><a class="popupBtn" data-sty="pics" data-sid="http://image.gamersky.com/webimg13/zhuanti/gunts/b701.jpg" data-w="800" data-h="434"><img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s701.jpg" alt="pics"><span>复生地图-西部小镇</span></a></li>
+			<li><a class="popupBtn" data-sty="pics" data-sid="http://image.gamersky.com/webimg13/zhuanti/gunts/b702.jpg" data-w="800" data-h="434"><img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s702.jpg" alt="pics"><span>爆破地图-底比斯遗址</span></a></li>
+			<li><a class="popupBtn" data-sty="pics" data-sid="http://image.gamersky.com/webimg13/zhuanti/gunts/b703.jpg" data-w="800" data-h="434"><img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s703.jpg" alt="pics"><span>爆破地图-第七区</span></a></li>
+			<li><a class="popupBtn" data-sty="pics" data-sid="http://image.gamersky.com/webimg13/zhuanti/gunts/b704.jpg" data-w="800" data-h="434"><img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s704.jpg" alt="pics"><span>爆破地图-飞鹰坠落</span></a></li>
+			<li><a class="popupBtn" data-sty="pics" data-sid="http://image.gamersky.com/webimg13/zhuanti/gunts/b705.jpg" data-w="800" data-h="434"><img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s705.jpg" alt="pics"><span>爆破地图-洲际酒店</span></a></li>
+			<li><a class="popupBtn" data-sty="pics" data-sid="http://image.gamersky.com/webimg13/zhuanti/gunts/b706.jpg" data-w="800" data-h="434"><img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s706.jpg" alt="pics"><span>复生地图-电车小巷</span></a></li>
+			<li><a class="popupBtn" data-sty="pics" data-sid="http://image.gamersky.com/webimg13/zhuanti/gunts/b707.jpg" data-w="800" data-h="434"><img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s707.jpg" alt="pics"><span>复生地图-极地科研站</span></a></li>
+			<li><a class="popupBtn" data-sty="pics" data-sid="http://image.gamersky.com/webimg13/zhuanti/gunts/b708.jpg" data-w="800" data-h="434"><img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s708.jpg" alt="pics"><span>复生地图-秘港</span></a></li>
+		</ul>
+	</div>
+</div>
+<div id="section7" class="zt-section zt-section7">
+	<div class="container">
+		<img src="http://image.gamersky.com/webimg13/zhuanti/gunts/s7big.png" alt="pics">
+	</div>
+</div>
+<div id="sectionComm" class="zt-section zt-sectionComm">
+	<div class="container">
+		<div class="Comment commmentStyBai">
+			<div id="SOHUCS" sid="512179"></div>
+		</div>
+	</div>
+</div>
+<!-- Bot -->
+<div class="Bot">
+	<script type="text/javascript" src="http://www.gamersky.com/autoinc/allsite/allsite_copyright_2_js.htm"></script>
+</div>
+<!--Bot end-->
+<!-- 浮动导航 -->
+<ul id="fixednav" class="fixednav">
+	<li><a class="" data-to="#section1" data-off="36">返回顶部</a></li>
+	<li><a class="" data-to="#section2">世界观</a></li>
+	<li><a class="" data-to="#section3">玩法介绍</a></li>
+	<li><a class="" data-to="#section4">特色系统</a></li>
+	<li><a class="" data-to="#section5">游戏亮点</a></li>
+	<li><a class="" data-to="#section6">枪械库</a></li>
+	<li><a class="" data-to="#section7">地图资料</a></li>
+	<li><a class="" data-to="#sectionComm">玩家讨论</a></li>
+</ul>
+<!-- 浮动导航 end-->
+<span id="countn" generalId="512179" style="display:none;"></span>
+<!-- 加载页面JS -->
+<script type="text/javascript" src="http://j.gamersky.com/g/jquery.gamersky.v4.min.js"></script>
+<script src="http://j.gamersky.com/g/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">"use strict";var _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};!function(t){t.fn.gsPopup=function(s){function e(s){var e="";e+='<div id="gsPopupMask" class="gsPopupMask"></div>',e+='<div id="gsPopup" class="gsPopup" style="',e+=s.style,e+='"><div class="gsPopupCon">',e+=function(s,e){switch(e){case"video_tgs":return'<embed wmode="direct" flashvars="vid='+s+'&amp;tpid=0&amp;showend=1&amp;showcfg=1&amp;searchbar=1&amp;skin=http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf&amp;shownext=1&amp;list=2&amp;autoplay=1" src="http://imgcache.qq.com/tencentvideo_v1/player/TPout.swf?max_age=86400&amp;v=20140714" quality="high" name="tenvideo_flash_player_1492679771297" id="tenvideo_flash_player_1492679771297" bgcolor="#000000" width="100%" height="100%" align="middle" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/cn/flashplayer/">';case"video_yk":return'<embed height="100%" flashvars="isAutoPlay=true" allowscriptaccess="sameDomain" width="100%" align="middle" quality="high" invokeurls="false" src="http://player.youku.com/player.php/sid/'+s+'/v.swf" type="application/x-shockwave-flash" wmode="transparent">';case"video_other":return s;case"pics":return'<img src="'+s+'" alt="popimgs" width="100%" height="100%">';case"custom":return t(s)[0].outerHTML}}(s.sid,s.sty),e+='</div><a  class="gsPopupClose" id="gsPopupClose"></a></div>',t("body").append(e),n=setTimeout(function(){t("#gsPopupMask").addClass("cur"),t("#gsPopup").addClass("cur")},10)}function o(){clearTimeout(n),t("#gsPopupMask").removeClass("cur"),t("#gsPopup").removeClass("cur"),a=setTimeout(function(){t("#gsPopupMask").remove(),t("#gsPopup").remove()},150)}function i(){t("#gsPopupClose").on("click",o),t("#gsPopupMask").on("click",o)}var a,n,r=t.extend({afterOpen:""},s);t(this).on("click",function(){clearTimeout(a);var s,o=t(this),n=o.data("w"),l=o.data("h"),c=t(window).height(),p={pos:"fixed",width:n,height:l,sid:o.data("sid"),sty:o.data("sty")};s="width:"+p.width+"px;height:"+p.height+"px;",p.style="position:"+p.pos+";top:50%;left:50%;margin-left:-"+p.width/2+"px;margin-top:-"+p.height/2+"px;"+s,l>c&&(p.pos="absolute",p.style="position:"+p.pos+";top:"+o.offset().top+"px;left:50%;margin-left:-"+p.width/2+"px;"+s),e(p),i(),"function"==typeof r.afterOpen&&r.afterOpen()})}}(jQuery),$(".popupBtn").gsPopup(),function(t){var s={ztTabs:function(s){var e=t(s),o=e.find(".ztTabNav").find("li"),i=e.find(".ztTabCon"),a=e.find(".ztTabArrP"),n=e.find(".ztTabArrN");t(s).slide({titCell:o,titOnClassName:"cur",mainCell:i,effect:"fold",delayTime:250,prevCell:a,nextCell:n,endFun:function(t,s){i.find("li").removeClass("cur").eq(t).addClass("cur")}})},fnavA:function(s,e,o){!function(t){function i(s,e){var o,i=t.proxy(this.process,this),a=t(t(s).is("body")?window:s);this.options=t.extend({},t.fn.scrollspy.defaults,e),this.$scrollElement=a.on("scroll.scroll-spy.data-api",i),this.selector=(this.options.target||(o=t(s).attr("data-to"))&&o.replace(/.*(?=#[^\s]+$)/,"")||"")+" li>a",this.$body=t("body"),this.refresh(),this.process()}i.prototype={constructor:i,refresh:function(){var s=this;this.offsets=t([]),this.targets=t([]),this.$body.find(this.selector).map(function(){var e=t(this).data("to"),o=/^#\w/.test(e)&&t(e);return o&&o.length&&[[o.position().top+(!t.isWindow(s.$scrollElement.get(0))&&s.$scrollElement.scrollTop()),e]]||null}).sort(function(t,s){return t[0]-s[0]}).each(function(){s.offsets.push(this[0]),s.targets.push(this[1])})},process:function(){var i,a=this.$scrollElement.scrollTop()+this.options.offset,n=(this.$scrollElement[0].scrollHeight||this.$body[0].scrollHeight)-this.$scrollElement.height(),r=this.offsets,l=this.targets,c=this.activeTarget,p=t(window).width();if(a>=n)return c!==(i=l.last()[0])&&this.activate(i);for(i=r.length;i--;)c!==l[i]&&a>=r[i]&&(!r[i+1]||a<=r[i+1])&&this.activate(l[i]);a>=e&&p>o?t(s).addClass("cur"):t(s).removeClass("cur")},activate:function(s){var e;this.activeTarget=s,t(this.selector).removeClass("cur"),e=this.selector+s+","+this.selector+'[data-to="'+s+'"]',t(e).addClass("cur").trigger("activate")}};var a=t.fn.scrollspy;t.fn.scrollspy=function(s){return this.each(function(){var e=t(this),o=e.data("scrollspy"),a="object"===(void 0===s?"undefined":_typeof(s))&&s;o||e.data("scrollspy",o=new i(this,a)),"string"==typeof s&&o[s]()})},t.fn.scrollspy.Constructor=i,t.fn.scrollspy.defaults={offset:36},t.fn.scrollspy.noConflict=function(){return t.fn.scrollspy=a,this},t(window).on("load",function(){t("body").each(function(){t(this).scrollspy({target:s})})})}(window.jQuery),t(s).find("a").on("click",function(s){if(!s||!s.preventDefault)return window.event.returnValue=!1,!1;s.preventDefault();var e=t(this).data("to"),o=t(this).data("off")||0;t("html,body").animate({scrollTop:t(e).offset().top-o},400)}),t(window).resize(function(){t(window).width()>o?t("body").scrollTop()>e&&t(s).addClass("cur"):t(s).removeClass("cur")})}};t(".ztTab").each(function(){s.ztTabs("#"+t(this).attr("id"))}),s.fnavA("#fixednav",100,1620)}(jQuery);</script>
+<script>
+    //百度
+    window._bd_share_config = {
+        common: {
+            bdText: '大家一起来跳伞！《小米枪战》11月15日正式公测 _ 游民星空 Gamersky.com',
+            bdDesc: '《小米枪战》利用虚幻4引擎打造了画面精致、情境逼真、枪械写实的枪战场景。实训模式中，60人紧张而又刺激的实战之旅将在4X4平方公里的大地图中展开。更多相关资讯请关注游民星空。',
+            bdPic: 'http://image.gamersky.com/webimg13/zhuanti/gunts/350.jpg'
+        },
+        share: [{
+            "bdSize": 16
+        }]
+    };
+    with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+    // 评论
+    (function() {
+        var doc = document,
+            s = doc.createElement('script'),
+            h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+        s.type = 'text/javascript';
+        s.charset = 'utf-8';
+        s.src = 'http://j.gamersky.com/web2015/comment/js/commentconfig.js';
+        h.insertBefore(s, h.firstChild);
+        window.SCS_NO_IFRAME = true;
+    })()
+</script>
+<!-- 加载页面JS end-->
+<div style="display:none">
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdcb5060fba0123ff56d253331f28db6a' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</div>
+</body>
+</html>

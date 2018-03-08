@@ -1,0 +1,427 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 845px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 740px;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 30px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 26px;
+			width: 139px;
+			height: 47px;
+			background: url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-white2.png) 0 0 no-repeat;
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 169px;
+			top: 12px;
+			@include sprite($logo-gf);
+		}
+		.live{
+			display: block;
+			position: absolute;
+			left: 403px;
+			top: 631px;
+			@include sprite($s1-live);
+			i.light{
+				display: block;
+				position: absolute;
+				left: -22px;
+				top: -22px;
+				@include sprite($s1-light);
+				animation: lightAnim 1.2s ease-in-out infinite;
+			}
+			.icons{
+				position: relative;
+				display: block;
+				@include sprite($s1-live);
+			}
+			&:hover{
+				i.light{
+					animation: none;
+				}
+			}
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			top: 651px;
+			&.btn1{
+				left: 56px;
+				@include sprite($s1-btn1);
+				&:hover{
+					@include sprite($s1-btn1-h);
+				}
+			}
+			&.btn2{
+				left: 227px;
+				@include sprite($s1-btn2);
+				&:hover{
+					@include sprite($s1-btn2-h);
+				}
+			}
+			&.btn3{
+				left: 621px;
+				@include sprite($s1-btn3);
+				&:hover{
+					@include sprite($s1-btn3-h);
+				}
+			}
+			&.btn4{
+				left: 792px;
+				@include sprite($s1-btn4);
+				&:hover{
+					@include sprite($s1-btn4-h);
+				}
+			}
+		}
+		.play{
+			display: block;
+			position: absolute;
+			left: 451px;
+			top: 388px;
+			@include sprite($s1-play);
+		}
+		.para{
+			p{
+				line-height: 28px;
+				font-size: 16px;
+				color: #dde9ff;
+				text-indent: 32px;
+			}
+		}
+	}
+}
+@keyframes lightAnim {
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes zoomAnim {
+	0%{
+		transform:scale(1);
+	}
+	50%{
+		transform:scale(1.02);
+	}
+	100%{
+		transform:scale(1);
+	}
+}
+.zt-section2{
+	height: 1215px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 235px;
+		.para{
+			margin-bottom: 396px;
+			p{
+				line-height: 28px;
+				font-size: 18px;
+				color: #82a2db;
+				text-align: center;
+			}
+		}
+		.yuyue{
+			display: block;
+			margin: 0 auto;
+			@include sprite($s2-btn1);
+			animation:zoomAnim 0.7s ease-in-out infinite;
+			&:hover{
+				@include sprite-position($s2-btn1-h);
+				animation:none;
+			}
+		}
+		.infos{
+			margin-top: 100px;
+			width: 1100px;
+			li{
+				float: left;
+				margin-right: 20px;
+				width: 490px;
+				h5{
+					height: 40px;
+					line-height: 40px;
+					font-size: 20px;
+					color: #ffa200;
+					font-weight: normal;
+					text-align: center;
+					background: url(../ztimages/s2-tit-bg.png) center center no-repeat;
+				}
+				.tips{
+					margin-bottom: 24px;
+					height: 46px;
+					line-height: 46px;
+					font-size: 16px;
+					color: #82a2db;
+					text-align: center;
+				}
+				.con{
+					position: relative;
+					width: 490px;
+					height: 226px;
+					background-color: #1a274d;
+					.tit{
+						padding-top: 40px;
+						height: 50px;
+						line-height: 50px;
+						text-align: center;
+						font-size: 34px;
+						color: #ccdfff;
+					}
+					.des{
+						margin-bottom: 30px;
+						height: 32px;
+						line-height: 32px;
+						text-align: center;
+						font-size: 16px;
+						color: #82a2db;
+					}
+					.btn-upload{
+						display: block;
+						margin: 0 auto;
+						@include sprite($s2-btn2);
+						&:hover{@include sprite-position($s2-btn2-h)}
+					}
+					.imgwrap{
+						float: left;
+						padding-top: 27px;
+						width: 212px;
+						&.imgwrap1{
+							margin-left: 40px;
+						}
+						img{
+							display: block;
+							margin: 0 auto;
+							width: 135px;
+							height: 134px;
+						}
+						p{
+							margin-top: 20px;
+							height: 26px;
+							line-height: 26px;
+							text-align: center;
+							font-size: 16px;
+							color: #ccdfff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 840px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 223px;
+		.ztTab{
+			position: relative;
+			width: 1000px;
+			height: 553px;
+			.ztTabCon{
+				li{
+					position: relative;
+					width: 1000px;
+					height: 553px;
+					img{
+						display: block;
+						position: absolute;
+						left: 617px;
+						top: 22px;
+						width: 311px;
+						height: 516px;
+					}
+					.txt{
+						padding: 250px 0 0 40px;
+						width: 500px;
+						h5{
+							padding-left: 32px;
+							height: 50px;
+							line-height: 50px;
+							font-size: 30px;
+							color: #b6a2ff;
+							font-weight: normal;
+							font-family:SimSun;
+							background: url(../ztimages/s3-dot.png) 0 center no-repeat;
+						}
+						p{
+							line-height: 28px;
+							font-size: 16px;
+							color: #4e4e4e;
+							text-indent: 32px;
+						}
+					}
+				}
+			}
+			.ztTabNav{
+				position: absolute;
+				left: 40px;
+				top: 127px;
+				li{
+					cursor: pointer;
+					float: left;
+					margin-right: 10px;
+					&.nav1{
+						@include sprite($s3-n1);
+						&:hover,&.cur{@include sprite-position($s3-n1-c);}
+					}
+					&.nav2{
+						@include sprite($s3-n2);
+						&:hover,&.cur{@include sprite-position($s3-n2-c);}
+					}
+					&.nav3{
+						@include sprite($s3-n3);
+						&:hover,&.cur{@include sprite-position($s3-n3-c);}
+					}
+					&.nav4{
+						@include sprite($s3-n4);
+						&:hover,&.cur{@include sprite-position($s3-n4-c);}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section4{
+	height: 817px;
+	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 244px;
+		.ztTab{
+			position: relative;
+			width: 1000px;
+			height: 520px;
+			.ztTabNav{
+				margin-left: 299px;
+				margin-bottom: 58px;
+				width: 500px;
+				height: 86px;
+				li{
+					cursor: pointer;
+					float: left;
+					margin-right: 19px;
+					&.nav1{
+						@include sprite($s4-n1);
+						&:hover,&.cur{@include sprite-position($s4-n1-c);}
+					}
+					&.nav2{
+						@include sprite($s4-n2);
+						&:hover,&.cur{@include sprite-position($s4-n2-c);}
+					}
+					&.nav3{
+						@include sprite($s4-n3);
+						&:hover,&.cur{@include sprite-position($s4-n3-c);}
+					}
+					&.nav4{
+						@include sprite($s4-n4);
+						&:hover,&.cur{@include sprite-position($s4-n4-c);}
+					}
+				}
+			}
+			.ztTabCon{
+				li{
+					position: relative;
+					width: 1000px;
+					height: 520px;
+					::-webkit-scrollbar {
+						width: 5px;
+						height: 5px;
+						border-radius: 0;
+					}
+					::-webkit-scrollbar-track {
+						border-radius: 10px;
+						background-color: transparent;
+						background: url(../ztimages/slc.png) center 0 repeat-y;
+					}
+					::-webkit-scrollbar-thumb {
+						border-radius: 0;
+						background-color: rgba(169,150,244,1);
+					}
+					::-webkit-scrollbar-thumb:hover {
+						background-color: rgba(169,150,244,0.8);
+					}
+					::-webkit-scrollbar-thumb:active {
+						background-color: rgba(169,150,244,0.6);
+					}
+					.ztSldwrap{
+						position: relative;
+						margin-left: 37px;
+						width: 598px;
+						height: 364px;
+						background: url(../ztimages/s4-sld-bg.png) 0 0 no-repeat;
+						.ztSld{
+							position: absolute;
+							left: 10px;
+							top: 10px;
+							width: 578px;
+							height: 344px;
+							.ztSldCon{
+								li{
+									position: relative;
+									width: 578px;
+									height: 344px;
+									img{
+										display: block;
+										width: 100%;
+										height: 100%;
+									}
+								}
+							}
+						}
+						.ztSldArr{
+							display: block;
+							position: absolute;
+							top: 154px;
+							&.ztSldArrP{
+								left: -36px;
+								@include sprite($arr-p);
+								&:hover{@include sprite-position($arr-p-h)}
+							}
+							&.ztSldArrN{
+								right:-36px;
+								@include sprite($arr-n);
+								&:hover{@include sprite-position($arr-n-h)}
+							}
+						}
+					}
+					.txt{
+						position: absolute;
+						top: 0;
+						right: 0;
+						padding-right: 30px;
+						width: 260px;
+						height: 364px;
+						overflow: hidden;
+						overflow-y: auto;
+						p{
+							line-height: 28px;
+							font-size: 15px;
+							color: #82a2db;
+							text-indent: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

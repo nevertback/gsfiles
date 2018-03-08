@@ -1,0 +1,911 @@
+//专题
+@import 'comm';
+.zt-section1{
+	position: relative;
+	height: 1009px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.gray-bg{
+		display: block;
+		position: absolute;
+		left: 50%;
+		margin-left: -960px;
+		top: 0;
+		width: 1920px;
+	}
+    &.cur{
+        .gray-bg{
+            animation: grayFadeOut 2s ease 0.5s 1 both;
+        }
+    }
+	.container{
+		position: relative;
+		padding-top: 856px;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 30px;
+			right:0;
+		}
+		.logo-gs{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 26px;
+			@include sprite($logo-gs);
+		}
+		.logo-dgy{
+			display: block;
+			position: absolute;
+			left: 163px;
+			top: 20px;
+			width: 128px;
+			height: 58px;
+			background: url(../ztimages/logo-dgy.png) 0 0 no-repeat;
+		}
+		.logo-gf{
+			cursor: default;
+			display: block;
+			position: absolute;
+			left: 673px;
+			top: 357px;
+			@include sprite($logo-gf);
+		}
+		.zt-tit{
+			margin-bottom: 40px;
+		}
+	}
+}
+.zt-section2{
+	height: 799px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.location-btn{
+			display: block;
+			position: absolute;
+			width: 81px;
+			height: 101px;
+			i{
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 81px;
+				height: 101px;
+				background: url(../ztimages/loc-btn-b.png) 0 0 no-repeat;
+				animation: locBtn 1s steps(58) infinite;
+				animation-play-state: paused;
+			}
+			span{
+				display: block;
+				position: absolute;
+				left: 50%;
+				top: -44px;
+				margin-left: -85px;
+				width:170px;
+				height: 44px;
+				line-height:44px;
+				text-align: center;
+				font-size: 22px;
+				color: #ffd481;
+				font-weight: bold;letter-spacing: 8px;
+				@extend %ffsys;
+				text-shadow: 0 0 7px rgba(255,48,0,0.6);
+			}
+			&:hover{
+				i{animation-play-state: running;}
+			}
+			&.location-btn0{left: 137px;top: 234px;}
+			&.location-btn1{left: 375px;top: 481px;}
+			&.location-btn2{left: 363px;top: 295px;}
+			&.location-btn3{left: 580px;top: 269px;}
+			&.location-btn4{left: 177px;top: 511px;}
+			&.location-btn5{left: 741px;top: 187px;}
+			&.location-btn6{left: 799px;top: 349px;}
+			&.location-btn7{left: 890px;top: 69px;}
+			&.location-btn8{left: 643px;top: 500px;}
+			&.location-btn9{left: 974px;top: 420px;}
+		}
+	}
+}
+.zt-section3{
+	height: 954px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.zt-tit{
+			margin-bottom: 15px;
+		}
+		.hero-nav{
+			margin-bottom: 24px;
+			width: 1200px;
+			height: 68px;
+			@include flexbox;
+			@include ConCen;
+			a{
+				margin: 0 13px;
+				@include flexbox;
+				@include ConCen;
+				@include sprite($wj-nav);
+				font-size: 24px;
+				color: #c7a54e;
+				font-weight: bold;
+				@extend %ffsys;
+				&.cur{
+					@include sprite-position($wj-nav-c);
+					color: #151515;
+				}
+			}
+		}
+		.hero-main {
+			margin: 0 auto;
+			width: 1000px;
+			height: 694px;
+			user-select: none;
+			.hero-btn{
+				position: relative;
+				display: block;
+				float: left;
+				margin-right: 19px;
+				margin-bottom: 21px;
+				@include sprite($pic-bd3);
+				img{
+					display: block;
+					position: absolute;
+					left: 8px;
+					top: 9px;
+					width: 139px;
+					height: 277px;
+				}
+				i{
+					display: block;
+					position: absolute;
+					bottom: 9px;
+					left: 8px;
+					width: 139px;
+					height: 139px;
+				}
+				span{
+					position: absolute;
+					top: 250px;
+					left: 0;
+					width: 155px;
+					height: 37px;
+					line-height: 37px;
+					font-size: 18px;
+					color: #0e0c0a;
+					text-align: center;
+					background: url(../ztimages/hb-txt.png) 0 center no-repeat;
+					transform:translate(0,0);
+					opacity: 1;
+					transition:all 0.25s ease;
+				}
+				&:hover{
+					@include sprite-position($pic-bd3-h);
+					span{
+						transform:translate(0,10px);
+						opacity: 0;
+					}
+				}
+			}
+			.hero-btn-wrap{
+				padding-left: 73px;
+				&.hero-btn-wrap-wei .hero-btn i{@include gradient-vertical(rgba(176,166,219,0),rgba(176,166,219,1));}
+				&.hero-btn-wrap-shu .hero-btn i{@include gradient-vertical(rgba(165,220,181,0),rgba(165,220,181,1));}
+				&.hero-btn-wrap-wu .hero-btn i{@include gradient-vertical(rgba(218,167,166,0),rgba(218,167,166,1));}
+				&.hero-btn-wrap-jin .hero-btn i{@include gradient-vertical(rgba(180,213,224,0),rgba(180,213,224,1));}
+				&.hero-btn-wrap-ta .hero-btn i{@include gradient-vertical(rgba(218,206,164,0),rgba(218,206,164,1));}
+			}
+			.swiper-container{
+				position: relative;
+				width: 1000px;
+				height: 694px;
+				.arr-btn{
+					position: absolute;
+					top: 274px;
+					z-index: 2;
+					&.swiper-button-disabled{
+						display: none;
+					}
+					&.arr-btn-l{
+						left: 0;
+					}
+					&.arr-btn-r{
+						right:0;
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section4{
+	height: 942px;
+	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
+    .container{
+        .gs-tab{
+            position: relative;
+            margin: 0 auto;
+            width: 1000px;
+            height: 770px;
+			.wq-txt{
+				margin-top: 9px;
+				position: relative;
+				line-height: 28px;
+				font-size: 16px;
+				color: #c7a54e;
+				text-align: center;
+				i{
+					display: inline-block;
+					margin-right: 17px;
+					vertical-align: middle;
+					@include sprite($txt-dot);
+				}
+			}
+			.wq-des{
+				margin-top: 24px;
+				p{
+					line-height: 28px;
+					font-size: 16px;
+					color: #797979;
+					text-indent: 32px;
+				}
+			}
+            .gs-tab-nav{
+                position: absolute;
+                left: 0;
+                top: -11px;
+				z-index: 1;
+				padding-top: 156px;
+				padding-left: 12px;
+                width: 61px - 12px;
+                height: 686px - 156px;;
+                background: url(../ztimages/wq-nav-bg.png) 0 0 no-repeat;
+                a{
+					cursor: pointer;
+                    display: block;
+					margin-bottom: 20px;
+                    @include sprite($wq-nav);
+					span{
+						display: block;
+						margin: 0 auto;
+						width: 20px;
+						height: 123px;
+						line-height: 22px;
+						font-size: 18px;
+						color: #c7a54e;
+						text-align: center;
+						@include flexbox;
+						@include ConCenV;
+					}
+                    &.cur{
+                        @include sprite-position($wq-nav-h);
+						a{
+							color: #3d3c39;
+						}
+                    }
+                }
+            }
+            .gs-tab-box{
+				position: relative;
+				width: 100%;
+				height: 100%;
+                .gs-tab-item{
+                    padding-left: 94px;
+					width: 907px;
+					height: 770px;
+					.swiper-container{
+						position: relative;
+						width: 907px;
+						height: 562px;
+						.arr-btn{
+							position: absolute;
+							top: 200px;
+							z-index: 2;
+							&.swiper-button-disabled{
+								display: none;
+							}
+							&.arr-btn-l{
+								left: 0;
+								@include sprite($arr2-l);
+								&:hover{@include sprite-position($arr2-l-h);}
+							}
+							&.arr-btn-r{
+								right:0;
+								@include sprite($arr2-r);
+								&:hover{@include sprite-position($arr2-r-h);}
+							}
+						}
+					}
+                }
+            }
+        }
+    }
+}
+.zt-section5{
+	height: 970px;
+	background:url(#{$mpath}zt-bg5.jpg) center 0 no-repeat;
+	.container{
+		.para{
+			margin: 25px auto;
+			width: 1000px;
+			p{
+				line-height: 28px;
+				font-size: 16px;
+				color: #797979;
+				text-indent: 32px;
+			}
+		}
+		.p5-vd{
+			margin: 75px auto 0;
+			position: relative;
+			width: 843px;
+			height: 454px;
+			.p5-vd-con{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background-color: #000;
+                .p5img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+			}
+			.p5-vd-mask{
+				position: absolute;
+				left: -17px;
+				top: -56px;
+				width: 882px;
+				height: 566px;
+				background: url(../ztimages/p5-vd-mask.png) 0 0 no-repeat;
+                pointer-events: none;
+			}
+			.p5-vd-btn{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+				i{
+                    display: block;
+                    position: absolute;
+                    left: 372px;
+                    top: 178px;
+                    @include sprite($play);
+                }
+                &:hover{
+                    i{@include sprite-position($play-h);}
+                }
+			}
+		}
+	}
+}
+.zt-section6{
+	height: 933px;
+	background:url(#{$mpath}zt-bg6.jpg) center 0 no-repeat;
+	.container{
+		.gs-tabinner{
+			position: relative;
+			width: 907px;
+			height: 770px;
+			.gs-tabinner-nav{
+                margin-bottom: 10px;
+				padding-top: 20px;
+                height: 50px;
+				@include flexbox;
+				@include ConCen;
+                .light{
+                    display: none;
+                    position: absolute;
+                    top: -10px;
+                    left: 50%;
+                    margin-left: -130px;
+					@include sprite($inner-nav-light);
+                    pointer-events: none;
+                }
+                .line{
+                    position: absolute;
+                    left: -36px;
+                    top: 50%;
+                    display: block;
+                    margin:-10px 0 0;
+                    @include sprite($nav-line);
+                    pointer-events: none;
+                }
+				a{
+                    position: relative;
+					display: block;
+                    margin: 0 35px;
+                    height: 50px;
+                    line-height: 50px;
+					font-size: 20px;
+					color: #c7a54e;
+					font-weight: bold;
+					@extend %ffsys;
+					&.cur{
+                        line-height: 42px;
+						font-size: 26px;
+						color: #4b2000;
+						@include textStroke(1px,#ffe9bc);
+						.light{
+							display: block;
+						}
+					}
+				}
+			}
+			.gs-tabinner-box{
+				width: 907px;
+				height: 770px;
+				.gs-tabinner-item {
+					width: 907px;
+					height: 0;
+					overflow: hidden;
+					transition-property: opacity;
+					&.cur{
+						height: 770px;
+					}
+				}
+			}
+		}
+		.gs-tab{
+			position: relative;
+			margin: 0 auto;
+			width: 1000px;
+			height: 770px;
+			.dz-txt{
+				margin-top: 9px;
+				position: relative;
+				line-height: 28px;
+				font-size: 16px;
+				color: #c7a54e;
+				text-align: center;
+				i{
+					display: inline-block;
+					margin-right: 17px;
+					vertical-align: middle;
+					@include sprite($txt-dot);
+				}
+			}
+			.dz-des{
+				margin-bottom: 10px;
+				p{
+					line-height: 28px;
+					font-size: 16px;
+					color: #797979;
+					text-indent: 32px;
+				}
+			}
+			.gs-tab-nav{
+				position: absolute;
+				left: 0;
+				top: -11px;
+				z-index: 1;
+				padding-top: 156px;
+				padding-left: 12px;
+				width: 61px - 12px;
+				height: 686px - 156px;;
+				background: url(../ztimages/wq-nav-bg.png) 0 0 no-repeat;
+				a{
+					cursor: pointer;
+					display: block;
+					margin-bottom: 20px;
+					@include sprite($wq-nav);
+					&:nth-child(1){
+						@include sprite($wq-nav-long);
+					}
+					span{
+						display: block;
+						margin: 0 auto;
+						width: 20px;
+						height: 100%;
+						line-height: 22px;
+						font-size: 18px;
+						color: #c7a54e;
+						text-align: center;
+						@include flexbox;
+						@include ConCenV;
+					}
+					&.cur{
+						@include sprite-position($wq-nav-h);
+						&:nth-child(1){
+							@include sprite-position($wq-nav-long-h);
+						}
+						a{
+							color: #3d3c39;
+						}
+					}
+				}
+			}
+			.gs-tab-box{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				.gs-tab-item{
+					padding-left: 94px;
+					width: 907px;
+					height: 0;
+					overflow: hidden;
+					transition-property: opacity;
+					&.cur{
+						height: 770px;
+					}
+					.swiper-container{
+						position: relative;
+						width: 907px;
+						height: 562px;
+						.arr-btn{
+							position: absolute;
+							top: 200px;
+							z-index: 2;
+							&.swiper-button-disabled{
+								display: none;
+							}
+							&.arr-btn-l{
+								left: 0;
+								@include sprite($arr2-l);
+								&:hover{@include sprite-position($arr2-l-h);}
+							}
+							&.arr-btn-r{
+								right:0;
+								@include sprite($arr2-r);
+								&:hover{@include sprite-position($arr2-r-h);}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section7{
+	height: 988px;
+	background:url(#{$mpath}zt-bg7.jpg) center 0 no-repeat;
+    .container{
+        position: relative;
+        .zt-tit{
+            margin-bottom: 15px;
+        }
+        .para{
+            margin: 0 auto;
+            width: 1000px;
+            p{
+                line-height: 28px;
+                font-size: 16px;
+                color: #797979;
+                text-indent: 32px;
+            }
+        }
+        .jb-pagination{
+            position: absolute;
+            left: 100px;
+            top: 261px;
+            z-index: 2;
+            width: 1100px;
+            height: 53px;
+            .jb-bullet{
+                position: relative;
+                display: block;
+                float: left;
+                margin-right: 10px;
+                width: 90px;
+                height: 53px;
+                line-height: 53px;
+                font-size: 20px;
+                color: #c7a54e;
+                text-align: center;
+                font-weight: bold;
+                @extend %ffsys;
+                &:before{
+                    display: none;
+                    position: absolute;
+                    content:'';
+                    top: -10px;
+                    left: 50%;
+                    margin-left: -130px;
+                    @include sprite($inner-nav-light);
+                    pointer-events: none;
+                }
+                &:after{
+                    display: block;
+                    position: absolute;
+                    content: '';
+                    right: -9px;
+                    top: 17px;
+                    @include sprite($nav-line);
+                    pointer-events: none;
+                }
+                &.jb-bullet-cur{
+                    line-height: 42px;
+                    font-size: 26px;
+                    color: #4b2000;
+                    @include textStroke(1px,#fff);
+                    &:before{
+                        display: block;
+                    }
+                }
+            }
+        }
+		.swiper-container{
+			margin-top: 30px;
+			padding-top: 90px;
+			width: 1000px;
+			height: 563px;
+            user-select: none;
+			.swiper-slide{
+				width: 1000px;
+				height: 563px;
+				background: url(../ztimages/jb-bg.png) 0 bottom no-repeat;
+				.jb-pic{
+					position: absolute;
+					right: 1px;
+					bottom: 1px;
+					width: 998px;
+					height:561px;
+					overflow: hidden;
+					img{
+						position: absolute;
+						display: block;
+						bottom: 0;
+						right: 0;
+						height:561px;
+					}
+				}
+				.jb-con{
+					position: absolute;
+                    left: 40px;
+                    top: 305px;
+                    width: 415px;
+                    line-height: 28px;
+					font-size: 16px;
+					color: #acacac;
+                    text-indent: 32px;
+				}
+				.jb-cpt{
+					position: absolute;
+                    left: 40px;
+					top: 154px;
+					@include sprite($jb-cpt);
+					span{
+						display: block;
+                        width: 150px;
+                        height: 25px;
+                        line-height: 25px;
+                        font-size: 15px;
+						color: #151515;
+						text-align: center;
+					}
+				}
+				.jb-top{
+					position: absolute;
+                    left: 40px;
+					top: 154px;
+                    width: 800px;
+					@extend %ffsys;
+					color: #c7a54e;
+					font-weight: bold;
+					h4{
+						height: 100px;
+						line-height: 100px;
+						font-size: 60px;
+					}
+					.jb-time{
+						padding-left: 170px;
+                        height: 25px;
+                        line-height: 25px;
+                        font-size: 24px;
+					}
+				}
+			}
+		}
+    }
+}
+.zt-section8{
+	position: relative;
+	height: 1184px;
+	background:url(#{$mpath}zt-bg8.jpg) center 0 no-repeat;
+    .container{
+        position: relative;
+        .rw-bg{
+            display: block;
+            position: absolute;
+            left: 29px;
+            top: 130px;
+        }
+        .zt-tit{
+            position: relative;
+			margin-bottom: 95px;
+        }
+		.bb-arr{
+			display: block;
+			position: absolute;
+			top: 80px;
+			left: 50%;
+			z-index: 3;
+			&.swiper-button-disabled{
+				display: none;
+			}
+			&.bb-arr-prev{
+				margin-left: -157px;
+				@include sprite($bb-arr-l);
+			}
+			&.bb-arr-next{
+				margin-left: 132px;
+				@include sprite($bb-arr-r);
+			}
+		}
+		.bb-buy{
+			display: block;
+			position: absolute;
+            left: 314px;
+            top: 587px;
+            @include sprite($bb-buy);
+		}
+        .swiper-container{
+			position: absolute;
+			top: 248px;
+			left: 50%;
+			margin-left: -1239px;
+			width: 2478px;
+			height: 650px;
+			.swiper-slide{
+				width: 826px;
+				height: 650px;
+				.bb-main{
+					position: relative;
+					width: 826px;
+					height: 650px;
+					opacity: 0;
+					transition:all 0.25s ease;
+					.bb-tit{
+						position: absolute;
+						left: 179px;
+						top: 0;
+						width: 476px;
+						height: 156px;
+						background: url(../ztimages/bb-tit.png) 0 0 no-repeat;
+						opacity: 0;
+						transform:translate(0,20px);
+						transition:all 0.25s ease;
+						span{
+							display: block;
+							padding-top: 67px;
+							padding-left: 79px;
+							width: 310px;
+							height: 44px;
+							line-height: 44px;
+							color: #fff;
+							font-size: 30px;
+							font-weight: bold;
+							text-align: center;
+							@extend %ffsys;
+						}
+					}
+					.bb-pic{
+						position: relative;
+						padding-top: 120px;
+						width: 826px;
+						height: 500px;
+						img{
+							display: block;
+							width: 826px;
+							height: 500px;
+						}
+					}
+				}
+				&.swiper-slide-prev,&.swiper-slide-next{
+					.bb-main{
+						opacity: 0.2;
+					}
+				}
+				&.swiper-slide-active{
+					.bb-main{
+						opacity: 1;
+						.bb-tit{
+							opacity: 1;
+							transform:translate(0,0);
+							transition-delay: 0.3s;
+						}
+					}
+				}
+			}
+        }
+    }
+	.creaters{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -960px;
+		width: 1920px;
+		height: 179px;
+		background: url(../ztimages/p8-creater.png) 0 0 no-repeat;
+		@include flexbox;
+		@include ConCen;
+		.creaters-m{
+			margin: 0 80px;
+			padding-top: 20px;
+			width: 152px;
+			.zanbtn{
+				@include sprite($zan-btn);
+				@include flexbox;
+				@include ConCen;
+				font-size: 16px;
+				color: #0b0908;
+				.zan-icon{
+					display: block;
+					margin-right: 10px;
+					@include sprite($zan-icon);
+				}
+				.zanNum{
+					font-style: normal;
+				}
+				&:hover{
+					color: #0e0c0a;
+					@include sprite-position($zan-btn-h);
+					.zan-icon{
+						@include sprite-position($zan-icon-h);
+					}
+				}
+				&.clked{
+					color: #0b0908;
+					@include sprite-position($zan-btn);
+					.zan-icon{
+						@include sprite-position($zan-icon);
+					}
+				}
+			}
+			.go-dgy{
+				display: block;
+				margin-top: 10px;
+				line-height: 52px;
+				font-size: 22px;
+				color: #c7a54e;
+				font-weight: bold;
+				text-align: center;
+				@extend %ffsys;
+				letter-spacing: 6px;
+				&:hover{
+					color: #ffeab3;
+				}
+			}
+		}
+		.creaters-name{
+			width: 194px;
+			height: 70px;
+			h4{
+				height: 40px;
+				line-height: 40px;
+				background: url(../ztimages/cts-n.png) 0 center no-repeat;
+				font-size: 20px;
+				color: #c7a54e;
+				text-align: center;
+				font-weight: normal;
+			}
+			p{
+				height: 30px;
+				line-height: 30px;
+				font-size: 16px;
+				color: #797979;
+				text-align: center;
+			}
+		}
+	}
+}
+.zt-sectionComm{
+	padding-bottom: 30px;
+	height:auto;
+	background:#100d0b url(#{$mpath}zt-bg-comm.jpg) center 0 fixed no-repeat;
+	.container{
+		position: relative;
+		padding-top: 86px;
+		.zt-tit{
+			margin-bottom: 40px;
+		}
+		.Comment{
+			margin: 0 auto;
+			padding:0 45px 0 85px;
+			width: 870px;
+		}
+	}
+}
+
+

@@ -1,0 +1,299 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$btn-and-h-name: 'btn-and-h';
+$btn-and-h-x: 217px;
+$btn-and-h-y: 318px;
+$btn-and-h-offset-x: -217px;
+$btn-and-h-offset-y: -318px;
+$btn-and-h-width: 173px;
+$btn-and-h-height: 40px;
+$btn-and-h-total-width: 825px;
+$btn-and-h-total-height: 774px;
+$btn-and-h-image: '../ztimages/csprite.png';
+$btn-and-h: (217px, 318px, -217px, -318px, 173px, 40px, 825px, 774px, '../ztimages/csprite.png', 'btn-and-h', );
+$btn-and-name: 'btn-and';
+$btn-and-x: 0px;
+$btn-and-y: 472px;
+$btn-and-offset-x: 0px;
+$btn-and-offset-y: -472px;
+$btn-and-width: 173px;
+$btn-and-height: 40px;
+$btn-and-total-width: 825px;
+$btn-and-total-height: 774px;
+$btn-and-image: '../ztimages/csprite.png';
+$btn-and: (0px, 472px, 0px, -472px, 173px, 40px, 825px, 774px, '../ztimages/csprite.png', 'btn-and', );
+$btn-ios-h-name: 'btn-ios-h';
+$btn-ios-h-x: 398px;
+$btn-ios-h-y: 318px;
+$btn-ios-h-offset-x: -398px;
+$btn-ios-h-offset-y: -318px;
+$btn-ios-h-width: 173px;
+$btn-ios-h-height: 40px;
+$btn-ios-h-total-width: 825px;
+$btn-ios-h-total-height: 774px;
+$btn-ios-h-image: '../ztimages/csprite.png';
+$btn-ios-h: (398px, 318px, -398px, -318px, 173px, 40px, 825px, 774px, '../ztimages/csprite.png', 'btn-ios-h', );
+$btn-ios-name: 'btn-ios';
+$btn-ios-x: 579px;
+$btn-ios-y: 318px;
+$btn-ios-offset-x: -579px;
+$btn-ios-offset-y: -318px;
+$btn-ios-width: 173px;
+$btn-ios-height: 40px;
+$btn-ios-total-width: 825px;
+$btn-ios-total-height: 774px;
+$btn-ios-image: '../ztimages/csprite.png';
+$btn-ios: (579px, 318px, -579px, -318px, 173px, 40px, 825px, 774px, '../ztimages/csprite.png', 'btn-ios', );
+$close-h-name: 'close-h';
+$close-h-x: 93px;
+$close-h-y: 520px;
+$close-h-offset-x: -93px;
+$close-h-offset-y: -520px;
+$close-h-width: 52px;
+$close-h-height: 52px;
+$close-h-total-width: 825px;
+$close-h-total-height: 774px;
+$close-h-image: '../ztimages/csprite.png';
+$close-h: (93px, 520px, -93px, -520px, 52px, 52px, 825px, 774px, '../ztimages/csprite.png', 'close-h', );
+$close-name: 'close';
+$close-x: 759px;
+$close-y: 384px;
+$close-offset-x: -759px;
+$close-offset-y: -384px;
+$close-width: 52px;
+$close-height: 52px;
+$close-total-width: 825px;
+$close-total-height: 774px;
+$close-image: '../ztimages/csprite.png';
+$close: (759px, 384px, -759px, -384px, 52px, 52px, 825px, 774px, '../ztimages/csprite.png', 'close', );
+$fx-bg-name: 'fx-bg';
+$fx-bg-x: 0px;
+$fx-bg-y: 0px;
+$fx-bg-offset-x: 0px;
+$fx-bg-offset-y: 0px;
+$fx-bg-width: 209px;
+$fx-bg-height: 376px;
+$fx-bg-total-width: 825px;
+$fx-bg-total-height: 774px;
+$fx-bg-image: '../ztimages/csprite.png';
+$fx-bg: (0px, 0px, 0px, 0px, 209px, 376px, 825px, 774px, '../ztimages/csprite.png', 'fx-bg', );
+$logo-gf-name: 'logo-gf';
+$logo-gf-x: 576px;
+$logo-gf-y: 384px;
+$logo-gf-offset-x: -576px;
+$logo-gf-offset-y: -384px;
+$logo-gf-width: 175px;
+$logo-gf-height: 70px;
+$logo-gf-total-width: 825px;
+$logo-gf-total-height: 774px;
+$logo-gf-image: '../ztimages/csprite.png';
+$logo-gf: (576px, 384px, -576px, -384px, 175px, 70px, 825px, 774px, '../ztimages/csprite.png', 'logo-gf', );
+$play-i-name: 'play-i';
+$play-i-x: 760px;
+$play-i-y: 318px;
+$play-i-offset-x: -760px;
+$play-i-offset-y: -318px;
+$play-i-width: 12px;
+$play-i-height: 21px;
+$play-i-total-width: 825px;
+$play-i-total-height: 774px;
+$play-i-image: '../ztimages/csprite.png';
+$play-i: (760px, 318px, -760px, -318px, 12px, 21px, 825px, 774px, '../ztimages/csprite.png', 'play-i', );
+$play-name: 'play';
+$play-x: 0px;
+$play-y: 520px;
+$play-offset-x: 0px;
+$play-offset-y: -520px;
+$play-width: 85px;
+$play-height: 85px;
+$play-total-width: 825px;
+$play-total-height: 774px;
+$play-image: '../ztimages/csprite.png';
+$play: (0px, 520px, 0px, -520px, 85px, 85px, 825px, 774px, '../ztimages/csprite.png', 'play', );
+$s1-btn1-h-name: 's1-btn1-h';
+$s1-btn1-h-x: 217px;
+$s1-btn1-h-y: 54px;
+$s1-btn1-h-offset-x: -217px;
+$s1-btn1-h-offset-y: -54px;
+$s1-btn1-h-width: 300px;
+$s1-btn1-h-height: 80px;
+$s1-btn1-h-total-width: 825px;
+$s1-btn1-h-total-height: 774px;
+$s1-btn1-h-image: '../ztimages/csprite.png';
+$s1-btn1-h: (217px, 54px, -217px, -54px, 300px, 80px, 825px, 774px, '../ztimages/csprite.png', 's1-btn1-h', );
+$s1-btn1-name: 's1-btn1';
+$s1-btn1-x: 525px;
+$s1-btn1-y: 230px;
+$s1-btn1-offset-x: -525px;
+$s1-btn1-offset-y: -230px;
+$s1-btn1-width: 300px;
+$s1-btn1-height: 80px;
+$s1-btn1-total-width: 825px;
+$s1-btn1-total-height: 774px;
+$s1-btn1-image: '../ztimages/csprite.png';
+$s1-btn1: (525px, 230px, -525px, -230px, 300px, 80px, 825px, 774px, '../ztimages/csprite.png', 's1-btn1', );
+$s1-btn2-h-name: 's1-btn2-h';
+$s1-btn2-h-x: 217px;
+$s1-btn2-h-y: 142px;
+$s1-btn2-h-offset-x: -217px;
+$s1-btn2-h-offset-y: -142px;
+$s1-btn2-h-width: 300px;
+$s1-btn2-h-height: 80px;
+$s1-btn2-h-total-width: 825px;
+$s1-btn2-h-total-height: 774px;
+$s1-btn2-h-image: '../ztimages/csprite.png';
+$s1-btn2-h: (217px, 142px, -217px, -142px, 300px, 80px, 825px, 774px, '../ztimages/csprite.png', 's1-btn2-h', );
+$s1-btn2-name: 's1-btn2';
+$s1-btn2-x: 525px;
+$s1-btn2-y: 142px;
+$s1-btn2-offset-x: -525px;
+$s1-btn2-offset-y: -142px;
+$s1-btn2-width: 300px;
+$s1-btn2-height: 80px;
+$s1-btn2-total-width: 825px;
+$s1-btn2-total-height: 774px;
+$s1-btn2-image: '../ztimages/csprite.png';
+$s1-btn2: (525px, 142px, -525px, -142px, 300px, 80px, 825px, 774px, '../ztimages/csprite.png', 's1-btn2', );
+$s1-btn3-h-name: 's1-btn3-h';
+$s1-btn3-h-x: 525px;
+$s1-btn3-h-y: 54px;
+$s1-btn3-h-offset-x: -525px;
+$s1-btn3-h-offset-y: -54px;
+$s1-btn3-h-width: 300px;
+$s1-btn3-h-height: 80px;
+$s1-btn3-h-total-width: 825px;
+$s1-btn3-h-total-height: 774px;
+$s1-btn3-h-image: '../ztimages/csprite.png';
+$s1-btn3-h: (525px, 54px, -525px, -54px, 300px, 80px, 825px, 774px, '../ztimages/csprite.png', 's1-btn3-h', );
+$s1-btn3-name: 's1-btn3';
+$s1-btn3-x: 217px;
+$s1-btn3-y: 230px;
+$s1-btn3-offset-x: -217px;
+$s1-btn3-offset-y: -230px;
+$s1-btn3-width: 300px;
+$s1-btn3-height: 80px;
+$s1-btn3-total-width: 825px;
+$s1-btn3-total-height: 774px;
+$s1-btn3-image: '../ztimages/csprite.png';
+$s1-btn3: (217px, 230px, -217px, -230px, 300px, 80px, 825px, 774px, '../ztimages/csprite.png', 's1-btn3', );
+$s2-btn-h-name: 's2-btn-h';
+$s2-btn-h-x: 288px;
+$s2-btn-h-y: 384px;
+$s2-btn-h-offset-x: -288px;
+$s2-btn-h-offset-y: -384px;
+$s2-btn-h-width: 280px;
+$s2-btn-h-height: 80px;
+$s2-btn-h-total-width: 825px;
+$s2-btn-h-total-height: 774px;
+$s2-btn-h-image: '../ztimages/csprite.png';
+$s2-btn-h: (288px, 384px, -288px, -384px, 280px, 80px, 825px, 774px, '../ztimages/csprite.png', 's2-btn-h', );
+$s2-btn-name: 's2-btn';
+$s2-btn-x: 0px;
+$s2-btn-y: 384px;
+$s2-btn-offset-x: 0px;
+$s2-btn-offset-y: -384px;
+$s2-btn-width: 280px;
+$s2-btn-height: 80px;
+$s2-btn-total-width: 825px;
+$s2-btn-total-height: 774px;
+$s2-btn-image: '../ztimages/csprite.png';
+$s2-btn: (0px, 384px, 0px, -384px, 280px, 80px, 825px, 774px, '../ztimages/csprite.png', 's2-btn', );
+$s4-tit-name: 's4-tit';
+$s4-tit-x: 217px;
+$s4-tit-y: 0px;
+$s4-tit-offset-x: -217px;
+$s4-tit-offset-y: 0px;
+$s4-tit-width: 608px;
+$s4-tit-height: 46px;
+$s4-tit-total-width: 825px;
+$s4-tit-total-height: 774px;
+$s4-tit-image: '../ztimages/csprite.png';
+$s4-tit: (217px, 0px, -217px, 0px, 608px, 46px, 825px, 774px, '../ztimages/csprite.png', 's4-tit', );
+$s4-txt-name: 's4-txt';
+$s4-txt-x: 0px;
+$s4-txt-y: 613px;
+$s4-txt-offset-x: 0px;
+$s4-txt-offset-y: -613px;
+$s4-txt-width: 43px;
+$s4-txt-height: 161px;
+$s4-txt-total-width: 825px;
+$s4-txt-total-height: 774px;
+$s4-txt-image: '../ztimages/csprite.png';
+$s4-txt: (0px, 613px, 0px, -613px, 43px, 161px, 825px, 774px, '../ztimages/csprite.png', 's4-txt', );
+$spritesheet-width: 825px;
+$spritesheet-height: 774px;
+$spritesheet-image: '../ztimages/csprite.png';
+$spritesheet-sprites: ($btn-and-h, $btn-and, $btn-ios-h, $btn-ios, $close-h, $close, $fx-bg, $logo-gf, $play-i, $play, $s1-btn1-h, $s1-btn1, $s1-btn2-h, $s1-btn2, $s1-btn3-h, $s1-btn3, $s2-btn-h, $s2-btn, $s4-tit, $s4-txt, );
+$spritesheet: (825px, 774px, '../ztimages/csprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

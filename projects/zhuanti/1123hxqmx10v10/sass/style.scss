@@ -1,0 +1,314 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 900px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 49px;
+			right:0;
+			a{
+				border-radius: 5px;
+			}
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 27px;
+			width: 139px;
+			height: 47px;
+			background: url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-white2.png) 0 0 no-repeat;
+		}
+	}
+}
+.zt-section2{
+	height: 580px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+        padding-top: 370px;
+		.btn{
+			display: block;
+			position: absolute;
+			&.btn1{
+				left: 58px;
+                top: 162px;
+				@include sprite($s1-btn1);
+				&:hover{
+					@include sprite($s1-btn1-h);
+				}
+			}
+			&.btn2{
+                top: 121px;
+				left: 325px;
+				@include sprite($s1-btn2);
+				&:hover{
+					@include sprite($s1-btn2-h);
+				}
+			}
+			&.btn3{
+                top: 81px;
+				left: 600px;
+				@include sprite($s1-btn3);
+				&:hover{
+					@include sprite($s1-btn3-h);
+				}
+			}
+			&.btn4{
+                top: 44px;
+				left: 883px;
+				@include sprite($s1-btn4);
+				&:hover{
+					@include sprite($s1-btn4-h);
+				}
+			}
+		}
+        .play{
+            display: block;
+            position: absolute;
+            top: 239px;
+            left: 905px;
+            @include sprite($s2-play);
+            &:hover{
+                @include sprite($s2-play-h);
+            }
+        }
+        .para{
+            margin-left: 178px;
+            width: 860px;
+            p{
+                line-height: 30px;
+                font-size: 16px;
+                color: #fffcf1;
+            }
+        }
+	}
+}
+@keyframes handAnim {
+	0%{
+		transform:translate3d(0,5px,0);
+		opacity: 0;
+	}
+	50%{
+		transform:translate3d(0,0,0);
+		opacity: 1;
+	}
+	100%{
+		transform:translate3d(0,0,0);
+		opacity: 0;
+	}
+}
+@keyframes handRound {
+	0%{
+		transform:scale(1);
+		opacity: 0;
+	}
+	49%{
+		transform:scale(1);
+		opacity: 0;
+	}
+	50%{
+		transform:scale(1);
+		opacity: 1;
+	}
+	100%{
+		transform:scale(1.5);
+		opacity: 0;
+	}
+}
+@keyframes handRoundHide {
+	0%{
+		opacity: 1;
+		visibility: visible;
+	}
+	100%{
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+.zt-section3{
+	height: 560px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 120px;
+		.btn{
+			display: block;
+			position: absolute;
+			.hand{
+				display: block;
+				position: absolute;
+				@include sprite($s3-hand);
+				animation: handAnim 1.2s ease-in-out infinite;
+			}
+			.round1{
+				display: block;
+				position: absolute;
+				@include sprite($s3-r1);
+				animation:handRound 1.2s ease-in-out infinite;
+			}
+			.round2{
+				display: block;
+				position: absolute;
+				@include sprite($s3-r2);
+				animation:handRoundHide 0.1s ease-in-out 1 both;
+			}
+			&.btn1{
+				top: 130px;
+				left: 474px;
+				@include sprite($s3-btn1);
+				.hand{left: 210px;top: 77px;}
+				.round1{left: 211px;top: 68px;}
+				.round2{left: 206px;top: 63px;}
+			}
+			&.btn2{
+				cursor: default;
+				top: 252px;
+				left: 464px;
+				@include sprite($s3-btn2);
+			}
+			&.btn3{
+				top: 363px;
+				left: 474px;
+				@include sprite($s3-btn3);
+				.hand{left: -2px;top: 97px;}
+				.round1{left: -1px;top: 88px;}
+				.round2{left: -6px;top: 83px;}
+			}
+		}
+		.huodong{
+			float: left;
+			width: 400px;
+			h5{
+				margin-bottom: 5px;
+				height: 36px;
+				line-height: 36px;
+				font-size: 18px;
+				color: #ecd07b;
+			}
+			p{
+				margin-bottom: 15px;
+				font-size: 16px;
+				color: #fffcf1;
+				b{
+					font-size: 20px;
+					font-weight: bold;
+				}
+			}
+			.gifts{
+				padding-top: 5px;
+				img{
+					display: block;
+					float: left;
+					width: 200px;
+					height: 125px;
+				}
+				ul{
+					display: block;
+					float: left;
+					margin-left: 15px;
+					width: 170px;
+					li{
+						position: relative;
+						padding-left: 10px;
+						line-height: 30px;
+						font-size: 16px;
+						color: #fffcf1;
+						background: url(http://image.gamersky.com/webimg13/zhuanti/hxqmx10v10/s3-dot.png) 0 center no-repeat;
+					}
+				}
+			}
+		}
+		.rule{
+			float: left;
+			margin-left: 390px;
+			width: 400px;
+			h5{
+				margin-bottom: 5px;
+				height: 36px;
+				line-height: 36px;
+				font-size: 18px;
+				color: #ecd07b;
+			}
+			ul{
+				li{
+					position: relative;
+					line-height: 30px;
+					font-size: 16px;
+					color: #fffcf1;
+					i{
+						display: block;
+						float: left;
+						margin-right: 10px;
+						width: 22px;
+						height: 30px;
+						line-height: 30px;
+						font-size: 16px;
+						color: #fffcf1;
+						font-style: normal;
+						text-align: center;
+						background: url(http://image.gamersky.com/webimg13/zhuanti/hxqmx10v10/s3-num.png) 0 center no-repeat;
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section4{
+	height: 812px;
+	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
+	.container{
+		padding-top: 128px;
+		.ztSldwrap{
+			position: relative;
+			width: 1200px;
+			height: 633px;
+			.ztSld{
+				position: relative;
+				margin: 0 auto;
+				width: 1020px;
+				height: 575px;
+				.ztSldCon{
+					li{
+						position: relative;
+						width: 1020px;
+						height: 575px;
+						img{
+							display: block;
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+				i{
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 0;
+					z-index: 10;
+					width: 1020px - 6px;
+					height: 575px - 6px;
+					border: 3px solid #000;
+				}
+			}
+			.ztSldArr{
+				display: block;
+				position: absolute;
+				top: 222px;
+				&.ztSldArrP{
+					left: 30px;
+					@include sprite($arr-p);
+					&:hover{@include sprite-position($arr-p-h)}
+				}
+				&.ztSldArrN{
+					right: 30px;
+					@include sprite($arr-n);
+					&:hover{@include sprite-position($arr-n-h)}
+				}
+			}
+		}
+	}
+}

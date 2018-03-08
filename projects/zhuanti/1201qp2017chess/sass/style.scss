@@ -1,0 +1,523 @@
+@import 'comm';
+.sections{
+    position: relative;
+    width: 100%;
+    background: #eae8e9 url(http://image.gamersky.com/webimg13/zt/pressconference/qp2017chess/culture-cont-bg.jpg) repeat-y center top;
+    padding-bottom: 48px;
+    div, ul, li{
+        overflow: visible;
+    }
+}
+.section{
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 1100px;
+}
+.container{
+    margin: 0 auto;
+    width: 1100px;
+}
+.content-main {
+    position: relative;
+    padding: 30px 15px 0;
+    width: 1070px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, .3);
+}
+.chess-tab{
+    padding-bottom: 0;
+    .content-wrap{
+        position: relative;
+        margin: 0 auto 30px;
+        width: 1098px;
+        height: 81px;
+        z-index: 2;
+        overflow: hidden;
+    }
+    .nav-list {
+        position: relative;
+        width: 1100px;
+        height: 81px;
+        background: url(http://image.gamersky.com/webimg13/zt/pressconference/qp2017chess/chess-navbg.png) no-repeat;
+    }
+    .nav-item {
+        width: 183px;
+        float: left;
+        text-align: center;
+        line-height: 80px;
+        font-size: 24px;
+        color: #626161;
+        position: relative;
+        &:after {
+            display: block;
+            position: absolute;
+            right: -1px;
+            top: 32px;
+            width: 1px;
+            height: 19px;
+            background-color: #d6d6d6;
+            content: "";
+        }
+        &.last:after {
+            width: 0;
+        }
+        &.active {
+            width: 183px;
+            height: 80px;
+            background: url(http://image.gamersky.com/webimg13/zt/pressconference/qp2017chess/icons.png) no-repeat -667px -156px;
+            a{
+                color: #fff;
+            }
+        }
+        a {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #626161;
+        }
+    }
+    .content-main-item {
+        position: relative;
+        display: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        &.active{
+            display: block;
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+    }
+    .content-main-gap {
+        margin-top: 30px;
+    }
+    .chess-tdt {
+        height: 400px;
+        padding-left: 365px;
+        color: #666;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 8%;
+            left: 360px;
+            width: 1px;
+            height: 84%;
+            background-color: #dedede;
+        }
+        h3 {
+            font-size: 28px;
+            line-height: 100%;
+            padding-bottom: 18px;
+            font-weight: normal;
+        }
+        img {
+            display: block;
+            position: absolute;
+            top: 86px;
+            left: 46px;
+            width: 281px;
+            height: 217px;
+        }
+        p {
+            padding-right: 15px;
+            line-height: 40px;
+            font-size: 16px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 8;
+            overflow: hidden;
+        }
+    }
+    .chess-title {
+        position: relative;
+        margin-left: 15px;
+        padding-bottom: 30px;
+        line-height: 100%;
+        font-size: 24px;
+        color: #4c4c4c;
+        font-weight: normal;
+        letter-spacing: 2px;
+        border-bottom: 1px solid #d6d6d6;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 102px;
+            height: 3px;
+            background: #bf9d68;
+        }
+    }
+    .chess-process {
+        background-color: #f8f8f8;
+    }
+    .chess-tdt-img {
+        width: 700px;
+        display: block;
+        margin: 67px auto 80px;
+    }
+    .chess-award-img {
+        width: 700px;
+        display: block;
+        margin: 110px auto 0;
+        padding-bottom:90px;
+    }
+}
+.chess-sld{
+    width: 1040px;
+    padding: 30px 30px 40px;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        display: block;
+        border-left: 20px solid #caa775;
+        border-bottom: 20px solid transparent;
+    }
+    &:before {
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 387px;
+        height: 357px;
+        background: url(http://image.gamersky.com/webimg13/zt/pressconference/qp2017chess/culture-game-bg.png) no-repeat;
+    }
+    .culture-img-wrap {
+        width: 640px;
+        height: 480px;
+        overflow: hidden;
+        margin: 0 40px 30px 0;
+    }
+    .culture-img-list {
+        width: 3840px;
+        height: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .culture-img-item {
+        width: 640px;
+        height: 100%;
+        float: left;
+        position: relative;
+    }
+    .culture-preview-wrap {
+        width: 556px;
+        height: 120px;
+        margin-left: 45px;
+        overflow: hidden;
+        position: relative;
+    }
+    .culture-preview-img {
+        width: 1188px;
+        height: 120px;
+        position: relative;
+        overflow: hidden;
+    }
+    .culture-preview-item {
+        float: left;
+        width: 160px;
+        height: 100%;
+        margin-right: 38px;
+        position: relative;
+        cursor: pointer;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            opacity: .3;
+            filter: alpha(opacity=30);
+        }
+        &.active:after {
+            width: 0;
+            height: 0;
+        }
+    }
+    .culture-preview-prev, .culture-preview-next {
+        position: absolute;
+        bottom: 85px;
+        width: 15px;
+        height: 34px;
+        display: block;
+        cursor: pointer;
+    }
+    .culture-preview-prev {
+        left: 36px;
+        background: url(http://image.gamersky.com/webimg13/zt/pressconference/qp2017chess/icons.png) no-repeat -322px -119px;
+        transition: all .3s;
+        &.disabled {
+            background: url(http://image.gamersky.com/webimg13/zt/pressconference/qp2017chess/icons.png) no-repeat -274px -119px;
+        }
+    }
+    .culture-preview-next {
+        left: 656px;
+        background: url(http://image.gamersky.com/webimg13/zt/pressconference/qp2017chess/icons.png) no-repeat -346px -119px;
+        transition: all .3s;
+        &.disabled {
+            background: url(http://image.gamersky.com/webimg13/zt/pressconference/qp2017chess/icons.png) no-repeat -298px -119px;
+        }
+    }
+    .culture-decr-wrap {
+        position: absolute;
+        width: 350px;
+        height: 600px;
+        top: 50px;
+        right: 30px;
+        overflow: hidden;
+    }
+    .culture-decr {
+        display: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        h3 {
+            color: #4c4c4c;
+            font-size: 24px;
+            line-height: 100%;
+            padding-bottom: 20px;
+            font-weight: normal;
+        }
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            color: #666;
+            text-indent: 2em;
+        }
+        a {
+            position: absolute;
+            bottom: 90px;
+            right: 100px;
+            width: 150px;
+            &:after {
+                content: "扫描玩游戏";
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
+                color: #4c4c4c;
+                cursor: default;
+                padding-top: 5px;
+            }
+        }
+        img {
+            border: 1px solid #caa775;
+            width: 100%;
+        }
+    }
+}
+.chess-res{
+    .content-video-box {
+        width: 925px;
+        height: 550px;
+        background: url(http://image.gamersky.com/webimg13/zt/pressconference/qp2017chess/video-bg.jpg) no-repeat;
+        margin: 0 auto 60px;
+        position: relative;
+        cursor: pointer;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 113px;
+            height: 113px;
+            margin: -56px 0 0 -56px;
+            background: url(http://image.gamersky.com/webimg13/zt/pressconference/qp2017chess/icons.png) no-repeat -240px 0;
+        }
+        h4 {
+            width: 100%;
+            height: 94px;
+            line-height: 94px;
+            color: #fff;
+            font-size: 24px;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            font-weight: normal;
+        }
+    }
+
+    .content-video-mark {
+        width: 100%;
+        height: 94px;
+        position: absolute;
+        bottom: 0;
+        background: #000;
+        opacity: .4;
+        filter: alpha(opacity=40);
+    }
+
+    .content-main-title {
+        width: 1002px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 73px;
+        height: 73px;
+        font-size: 28px;
+        color: #fff;
+        background: url(http://image.gamersky.com/webimg13/zt/pressconference/qp2017chess/res-banner-bg.jpg) no-repeat center center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    }
+    .child-img-container {
+        position: relative;
+    }
+    .child-imgs-wrap {
+        width: 926px;
+        margin: 40px auto 20px;
+        overflow: hidden;
+    }
+    .child-imgs {
+        width: 2124px;
+        position: relative;
+    }
+    .child-imgs-item {
+        float: left;
+        margin-right: 10px;
+        width: 302px;
+        height: 191px;
+        position: relative;
+        a {
+            cursor: default;
+            display: block;
+            width: 100%;
+            height: 100%;
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .text-decr {
+        padding:0 0 30px;
+        margin: 0 auto;
+        width: 925px;
+        font-size: 14px;
+        line-height: 20px;
+        text-indent: 2em;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+}
+.video-mark {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    display: none;
+}
+
+.video-dialog {
+    display: none;
+}
+
+.video-dialog-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -445px;
+    width: 890px;
+    height: 499px;
+    background-color: #fff;
+    box-shadow: 0 0 250px 0 rgba(255, 255, 255, 0.9);
+}
+
+.video-dialog-close {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    color: #fff;
+    margin: -320px 0 0 445px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.chess-table{
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    td, th {
+        padding: 0;
+        border: none;
+        background: none;
+    }
+
+    .date-table {
+        width: 1098px;
+        margin: 0 auto;
+        border: 1px solid #a57837;
+        th {
+            width: 105px;
+            line-height: 76px;
+            font-size: 20px;
+            color: #fff;
+            font-weight: normal;
+        }
+        .one {
+            background: #bf9c69;
+        }
+        .double {
+            background: #ae8e61;
+        }
+    }
+
+    td {
+        border-right: 1px solid #cec8c4;
+        border-bottom: 1px solid #cec8c4;
+        background: #e4e2e3;
+        height: 75px;
+    }
+
+    .caption {
+        height: 75px;
+        font-size: 22px;
+        color: #a98b5e;
+        text-align: center;
+        td {
+            background: #efedee;
+            border: 1px solid #bb9c69;
+        }
+    }
+
+    .ddz {
+        background: #efedee;
+        color: #a98b5e;
+        text-align: center;
+        font-size: 22px;
+        border-color: #a98b5e;
+    }
+
+    .br {
+        border-right-color: #a98b5e;
+    }
+
+    .bb {
+        border-bottom-color: #a98b5e;
+    }
+
+    .line {
+        display: block;
+        position: relative;
+        width: 60px;
+        height: 1px;
+        top: 0;
+        left: 30px;
+        background: #bcb9b7;
+        transform: rotateZ(-20deg);
+    }
+}

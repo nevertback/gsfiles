@@ -1,0 +1,1126 @@
+//专题
+@import 'tcss';
+@import 'comm';
+.main{
+    width: 100%;
+    h3.title{
+        position: relative;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        font-size: 0.3rem;
+        color: #333;
+        @include flexbox();
+        @include ConCen();
+        &:before,&:after{
+            display: block;
+            margin: 0 0.18rem;
+            content: '';
+            width: 0.58rem;
+            height: 0.07rem;
+            background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/title-re.png) 0 0 repeat-x;
+            background-size: auto 0.07rem;
+        }
+    }
+}
+.section{
+    width: 6.4rem;
+    background-color: #fff;
+}
+.section-top{
+    padding-top: 3.67rem;
+    background: #2b2b2d url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/logo-wqj-m.png) center 0.4rem no-repeat;
+    background-size: 4.79rem auto;
+    .btn{
+        display: block;
+        width: 6.4rem;
+        height: 6rem;
+        background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/zjyx-bg2.png) 0 0 no-repeat;
+        background-size: 6.4rem auto;
+    }
+}
+.section-zjyx{
+    background: #2b2b2d;
+    .btn{
+        display: block;
+        width: 6.4rem;
+        height: 6rem;
+        background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/zjyx-bg2.png) 0 0 no-repeat;
+        background-size: 6.4rem auto;
+    }
+}
+.section-vt{
+    position: relative;
+    background-color: #29292c;
+    min-height: 7.7rem;
+    .vt-bg{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .vt-header{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 0.8rem;
+        border-bottom: 1px solid rgba(253,254,255,0.1);
+        .vt-logo{
+            display: block;
+            margin: 0.16rem;
+            width: 1.97rem;
+            height: 0.99rem;
+            background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/logo-m.png) 0 0 no-repeat;
+            background-size: 1.97rem 0.99rem;
+        }
+    }
+    .vt-des{
+        position: relative;
+        margin-bottom: 0.3rem;
+        padding-top: 1.1rem;
+        text-align: center;
+        .wqj-ico{
+            margin: 0 auto;
+        }
+        .title{
+            height: 0.45rem;
+            line-height: 0.45rem;
+            font-size: 0.3rem;
+            color: #fff;
+        }
+        .time{
+            height: 0.53rem;
+            line-height: 0.55rem;
+            font-size: 0.2rem;
+            color: #aaa;
+        }
+    }
+    .vt-note{
+        position: relative;
+        width: 100%;
+        height: 1.1rem;
+        @include flexbox;
+        @include ConCen;
+        i{
+            display: block;
+            width: 1rem;
+            height: 1px;
+            background-color: #444;
+        }
+        span{
+            margin: 0 0.15rem;
+            font-size: 0.18rem;
+            color: #999;
+        }
+    }
+    .arr-area{
+        position: relative;
+        width: 100%;
+        height: 0.98rem;
+        @include flexbox;
+        @include justifyCon;
+        .vt-arrs{
+            position: relative;
+            display: block;
+            width: 3.18rem;
+            height: 0.98rem;
+            line-height: 0.98rem;
+            background-color: #3f3f42;
+            background-repeat: no-repeat;
+            background-size: 0.12rem;
+            font-size: 0.2rem;
+            color: #fff;
+            @include flexbox;
+            @include ConCen;
+            &:after{
+                display: block;
+                content: '';
+                position: absolute;
+                top: 50%;
+                margin-top: -0.1rem;
+                width: 0.12rem;
+                height: 0.2rem;
+                background:0 0 no-repeat;
+                background-size: 100% 100%;
+            }
+            span{
+                margin-left: 0.16rem;
+            }
+            &.vt-arr-left{
+                &:after{
+                    left: 0.12rem;
+                    background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/arr-l.png);
+                }
+            }
+            &.vt-arr-right{
+                &:after{
+                    right: 0.12rem;
+                    background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/arr-r.png);
+                }
+            }
+        }
+    }
+    .vt-items{
+        position: relative;
+        width: 7rem;
+        .vt-item{
+            position: relative;
+            float: left;
+            margin-right: 0.04rem;
+            margin-bottom: 0.04rem;
+            width: 3.18rem;
+            height: 4.4rem;
+            background-color: #000;
+            overflow: hidden;
+            .vtg-buy{
+                position: absolute;
+                left: 0.2rem;
+                top: 0.15rem;
+                width: 1.46rem;
+                height: 0.4rem;
+            }
+            .vt-area{
+                position: relative;
+                width: 3.18rem;
+                height: 4.4rem;
+                overflow: hidden;
+                .vtg-pic{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 3.18rem;
+                }
+                .vtg-pic-mask{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 3.18rem;
+                    height: 4.4rem;
+                    background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/vtg-mask.png) 0 bottom repeat-x;
+                    background-size: auto 2.93rem;
+                }
+                .vtg-infos{
+                    position: absolute;
+                    left: 0.2rem;
+                    bottom: .17rem;
+                    width: 2.78rem;
+                    h4{
+                        line-height: 0.3rem;
+                        font-size: 0.22rem;
+                        font-weight: normal;
+                        a{
+                            color: #fff;
+                        }
+                    }
+                    .vtg-zp{
+                        height: 0.3rem;
+                        i{
+                            font-style: normal;
+                        }
+                        .vtg-zp-btn{
+                            display: block;
+                            height: 0.3rem;
+                            line-height: 0.3rem;
+                            font-size: 0.18rem;
+                            color: #aaa;
+                        }
+                        span{
+                            font-size: 0.16rem;
+                            b{
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                    .vtg-num{
+                        position: relative;
+                        margin-top: 0.24rem;
+                        height: 0.36rem;
+                        span{
+                            font-size: 0.22rem;
+                            color: #e99c2c;
+                            i{
+                                font-style: normal;
+                            }
+                        }
+                        a.vtg-btn{
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 0.92rem;
+                            height: 0.36rem;
+                            line-height: 0.36rem;
+                            background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/vt-btn.png) 0 0 no-repeat;
+                            background-size: 0.92rem 0.36rem;
+                            font-size: 0.2rem;
+                            color: #e99c2c;
+                            text-align: center;
+                            font-weight: bold;
+                            b{
+                                display: block;
+                                position: absolute;
+                                top: 50%;
+                                left: -0.2rem;
+                                margin-top: -0.1rem;
+                                width: 0.2rem;
+                                height: 0.2rem;
+                                line-height:0.2rem;
+                                font-size: 0.18rem;
+                                color: #f6ac44;
+                                text-align: center;
+                                font-style: normal;
+                                opacity: 0;
+                                visibility: hidden;
+                                transform:translate3d(0,0,0);
+                            }
+                            &.clksuccess{
+                                b{
+                                    animation: btnAnim 0.3s linear 1 both;
+                                }
+                            }
+                            @keyframes btnAnim {
+                                0%{
+                                    opacity: 0;
+                                    visibility: visible;
+                                    transform:translate3d(0,0,0);
+
+                                }
+                                50%{
+                                    opacity: 1;
+                                    visibility: visible;
+                                    transform:translate3d(-0.1rem,0,0);
+
+                                }
+                                100%{
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transform:translate3d(-0.2rem,0,0);
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .vt-winners{
+        position: relative;
+        display: none;
+        .vt-winners-box{
+            position: relative;
+            width: 6.4rem;
+            height: 8rem;
+            overflow: hidden;
+            .vtw-bg{
+                display: block;
+                width: 6.4rem;
+                height: 8rem;
+            }
+            .vtw-shadow{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 6.4rem;
+                height: 8rem;
+                background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/tgw-mask.png) 0 bottom repeat-x;
+                background-size: auto 4.03rem;
+            }
+            .vtw-con{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 6.4rem;
+                height: 8rem;
+                .vtw-num{
+                    position: absolute;
+                    right: 0.2rem;
+                    top: 0.48rem;
+                    padding-top: 0.74rem;
+                    width: 1.11rem;
+                    height: 1.38rem - 0.74rem;
+                    background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/vtw-num.png) 0 0 no-repeat;
+                    background-size: 1.11rem 1.38rem;
+                    text-align: center;
+                    font-size: 0.2rem;
+                    color: #fbaf38;
+                    font-weight: bold;
+                    span{
+                        position: relative;
+                        i{
+                            position: absolute;
+                            top: -0.1rem;
+                            right: -0.15rem;
+                            font-size: 0.14rem;
+                            color: #d8d8d8;
+                            font-style: normal;
+                        }
+                    }
+                }
+                .vtw-buy{
+                    position: absolute;
+                    right: 0.2rem;
+                    bottom: 0.4rem;
+                    width: 1.46rem;
+                    height: 0.4rem;
+                }
+                .vtw-infos{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0.4rem;
+                    .vtw-belong{
+                        height: 0.6rem;
+                        line-height: 0.6rem;
+                        font-size: 0.24rem;
+                        color: #feaa2c;
+                        font-weight: bold;
+                        @include flexbox;
+                        i{
+                            margin-left: 0.05rem;
+                            margin-right: 0.03rem;
+                        }
+                    }
+                    .vtw-tits{
+                        margin-top: 0.1rem;
+                        padding: 0 0.68rem;
+                        a{
+                            color: #fff;
+                        }
+                        h4{
+                            height: 0.4rem;
+                            line-height: 0.4rem;
+                            font-size: 0.3rem;
+                        }
+                        h5{
+                            height: 0.32rem;
+                            line-height: 0.32rem;
+                            font-size: 0.18rem;
+                            font-weight: normal;
+                        }
+                    }
+                    .vtw-attr{
+                        padding-left: 0.68rem;
+                        height: 0.37rem;
+                        line-height: 0.37rem;
+                        font-size: 0.2rem;
+                        color: #ccc;
+                        span{
+                            margin-right: 15px;
+                        }
+                    }
+                    .vtw-zp{
+                        margin-top: .017rem;
+                        padding-left: 0.68rem;
+                        height: 0.4rem;
+                        line-height: 0.4rem;
+                        a{
+                            font-size: 0.2rem;
+                            color: #ccc;
+                            span{
+                                font-size: 0.26rem;
+                                color: #fff;
+                            }
+                            b{
+                                font-size: 0.26rem;
+                                color: #4dba6b;
+                            }
+                            i{
+                                font-style: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.section-vt-res{
+        .vt-des{
+            display: none;
+        }
+        .vt-winners{
+            display: block;
+        }
+        .vt-items{
+            padding-bottom: 0.41rem;
+            .vt-item .vt-area .vtg-infos .vtg-num a.vtg-btn{
+                display: none;
+            }
+        }
+    }
+}
+.section-bd{
+    position: relative;
+    padding-bottom: 0.45rem;
+    background-color: #29292c;
+    .title{
+        position: relative;
+        width: 100%;
+        height: 0.8rem;
+        @include flexbox;
+        @include ConCen;
+        i{
+            display: block;
+            width: 0.8rem;
+            height: 1px;
+            background-color: #444;
+        }
+        span{
+            margin: 0 0.15rem;
+            font-size: 0.2rem;
+            color: #999;
+        }
+    }
+    .bdshare{
+        height: 0.8rem;
+        @include flexbox;
+        @include ConCen;
+        a{
+            display: block;
+            float: none;
+            margin: 0 0.15rem;
+            padding: 0;
+            width: 0.8rem;
+            height: 0.8rem;
+            background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/bd-fx.png) 0 0 no-repeat;
+            background-size: 4rem 0.8rem;
+            &:hover{
+                opacity: 1;
+            }
+            &.bds_sqq{background-position: 0 0;}
+            &.bds_tsina{background-position: -2rem 0;}
+            &.bds_qzone{background-position: -3rem 0;}
+            &.bds_more,&.bds_count{
+                display: none;
+            }
+        }
+    }
+}
+.section-club{
+    margin-bottom: 0.1rem;
+}
+.section5 {
+    padding: 0.4rem 0 0.4rem;
+    overflow: hidden;
+    .listwrap{
+        margin: 0.4rem 0 0 0.2rem;
+        width: 6rem;
+        box-sizing: border-box;
+        border-top: 1px solid #e5e5e5;
+        border-left: 1px solid #e5e5e5;
+    }
+    .list{
+        width: 7rem;
+        li{
+            float: left;
+            width: 1.5rem;
+            height: 0.89rem;
+            box-sizing: border-box;
+            border-bottom: 1px solid #e5e5e5;
+            border-right: 1px solid #e5e5e5;
+            a{
+                @include flexbox;
+                @include ConCen;
+                width: 100%;
+                height: 100%;
+                img{
+                    display: block;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+}
+.section-rule{
+    padding: 0.2rem 0 0.2rem;
+    background:#2b2b2d url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/gifts.jpg) 0 0 no-repeat;
+    background-size: 6.4rem auto;
+    h3.title{
+        color: #fff;
+        font-size: .24rem;
+    }
+    .zcr-res-btn{
+        display: block;
+        margin: 0.2rem auto 0;
+        width: 6rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        font-size: 0.22rem;
+        color: #000;
+        text-align: center;
+        background-color: #e99c2c;
+        border-radius: 0.14rem;
+    }
+    .zcr-box1{
+        .zcr-con{
+            padding-top: 2.55rem;
+            p{
+                margin-bottom: 0.15rem;
+                padding: 0 0.2rem;
+                line-height: 0.32rem;
+                font-size: 0.2rem;
+                text-align: center;
+                color: #eee;
+                b{color: #ffaf3a;}
+            }
+        }
+    }
+    .zcr-box2{
+        margin: 0 auto;
+        padding: 0.25rem 0 0.1rem;
+        width: 6rem;
+        border-radius: 0.2rem;
+        box-sizing: border-box;
+        border: 1px solid #9c753d;
+    }
+    .zcrListZk{
+        user-select: none;
+        display: block;
+        margin: 0 auto;
+        width: 1.6rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        font-size: 0.18rem;
+        color: #f5a634;
+        @include flexbox;
+        @include ConCen;
+        &:after{
+            display: block;
+            margin-left: 0.09rem;
+            content: '';
+            width: 0.23rem;
+            height: 0.14rem;
+            background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/zk-down.png) 0 0 no-repeat;
+            background-size: 0.23rem 0.14rem;
+        }
+        &.cur{
+            &:after{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/zk-up.png);}
+        }
+    }
+    .zcr-list{
+        margin-top: 0.15rem;
+        padding:0 0.35rem;
+        h5{
+            margin-bottom: 0.1rem;
+            line-height: 0.4rem;
+            font-size: 0.22rem;
+            color: #fff;
+        }
+        p{
+            margin-bottom: 0.32rem;
+            line-height: 0.32rem;
+            font-size: 0.18rem;
+            color: #ebe2c6;
+            b{
+                font-size: 16px;
+            }
+            span{
+                color: #e99c2c;
+            }
+        }
+        ul{
+            li{
+                position: relative;
+                line-height: 0.32rem;
+                i{
+                    font-style: normal;
+                }
+            }
+        }
+        &.cur{
+            height: 2.4rem;
+            overflow: hidden;
+        }
+    }
+}
+.section-pk{
+    position: relative;
+    min-height: 9.5rem;
+    background-color: #29282d;
+    overflow-x: hidden;
+    .pkNav{
+        position: relative;
+        padding: 0.33rem 0 0.1rem 0.12rem;
+        width:6.8rem;
+        height: 1.55rem;
+        .line{
+            position: absolute;
+            left: 0;
+            top: 0.81rem;
+            width: 100%;
+            height: 2px;
+            background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/nv-line.png) 0 0 repeat-x;
+        }
+        a{
+            position: relative;
+            width: 1.1rem;
+            height: 1.55rem;
+            float: left;
+            margin-right: 0.58rem;
+            i{
+                display: block;
+                margin: 0 auto 0.15rem;
+                width: 0.8rem;
+                height: 0.92rem;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                background-size: 0.8rem 0.92rem;
+            }
+            span{
+                display: block;
+                height: 0.27rem;
+                line-height: 0.27rem;
+                font-size: 0.2rem;
+                color: #7e7e85;
+                text-align: center;
+            }
+            b{
+                display: block;
+                line-height: 0.2rem;
+                font-size: 0.16rem;
+                color: #7e7e85;
+                text-align: center;
+                font-weight: normal;
+            }
+            &.nv1 i{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/nv1.png);}
+            &.nv2 i{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/nv2.png);}
+            &.nv3 i{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/nv3.png);}
+            &.nv4 i{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/nv4.png);}
+            &.cur{
+                span{
+                    color: #ffaf3d;
+                }
+                &.nv1 i{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/nv1-h.png);}
+                &.nv2 i{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/nv2-h.png);}
+                &.nv3 i{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/nv3-h.png);}
+                &.nv4 i{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/nv4-h.png);}
+            }
+        }
+    }
+    .pkBoxs{
+        position: relative;
+        padding-top: 0.5rem;
+        width: 6.4rem;
+        .pkBoxBg{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 6.4rem;
+        }
+        .pkBox{
+            position: relative;
+            padding-left: 0.2rem;
+            margin-bottom: 0.4rem;
+            width: 6.2rem;
+            height: 2.67rem;
+            .pkBox-title{
+                position: relative;
+                margin-bottom: 0.27rem;
+                padding-left: 0.7rem;
+                height: 0.6rem;
+                h4{
+                    line-height: 0.34rem;
+                    font-size: 0.22rem;
+                    color: #fff;
+                }
+                h5{
+                    line-height: 0.22rem;
+                    font-size: 0.16rem;
+                    color: #aaa;
+                }
+                .wqj-ico{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                .voteBtn{
+                    position: absolute;
+                    right: 0.2rem;
+                    top: 0.12rem;
+                    display: block;
+                    width: 0.92rem;
+                    height: 0.36rem;
+                    line-height: 0.36rem;
+                    background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/vt-btn.png) 0 0 no-repeat;
+                    background-size: 0.92rem auto;
+                    font-size: 0.2rem;
+                    color: #e99c2c;
+                    text-align: center;
+                }
+            }
+            .pkBox-swp{
+                position: relative;
+                width: 6.2rem;
+                height: 1.8rem;
+                .pkBox-Mask{
+                    display: block;
+                    position: absolute;
+                    left: -0.2rem;
+                    top: 0;
+                    z-index: 10;
+                    width: 6.4rem;
+                    height: 100%;
+                    background-color: rgba(0,0,0,0.6);
+                    font-size: 0.28rem;
+                    color: #ffa624;
+                    font-weight: bold;
+                    @include flexbox;
+                    @include ConCen;
+                    &:after{
+                        display: block;
+                        margin-left: 0.11rem;
+                        content: '';
+                        width: 0.18rem;
+                        height: 0.29rem;
+                        background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/vt-res-arr.png) 0 0 no-repeat;
+                        background-size: 0.18rem 0.29rem;
+                    }
+                }
+                .pkBoxSwpItems{
+                    position: relative;
+                    width: 6.2rem;
+                    height: 1.8rem;
+                    .pkBoxSwpItem{
+                        position: relative;
+                        width: 1.5rem;
+                        height: 1.8rem;
+                        a{
+                            display: block;
+                            width: 1.3rem;
+                            height: 1.8rem;
+                            overflow: hidden;
+                            background-color: #000;
+                            border-radius: 0.08rem;
+                            img{
+                                display: block;
+                                width: 1.3rem;
+                                min-height: 1.8rem;
+                                border-radius: 0.08rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.draw-mace{
+    position: relative;
+    margin-left: 0.93rem;
+    width: 4.77rem;
+    height: 7.33rem;
+    background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/draw/draw-mace.png) 0 0.28rem no-repeat;
+    background-size: 4.51rem auto;
+    .dwm-light1{
+        position: absolute;
+        left: 1.54rem;
+        top: 0.01rem;
+        width: 1.43rem;
+        height: 1.1rem;
+        background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/draw/kf-light1.png) 0 0 no-repeat;
+        background-size: 1.43rem auto;
+        animation: dmwLight1 0.3s steps(3) infinite;
+    }
+    .dwm-light2{
+        position: absolute;
+        left: 0.31rem;
+        top: 1.21rem;
+        width: 3.9rem;
+        height: 0.9rem;
+        background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/draw/kf-light2.png) 0 0 no-repeat;
+        background-size: 3.9rem auto;
+        animation: dmwLight2 0.6s steps(2) infinite;
+    }
+    @keyframes dmwLight1 {
+        from{
+            background-position: 0 0;
+        }
+        to{
+            background-position: 0 -3.3rem;
+        }
+    }
+    @keyframes dmwLight2 {
+        from{
+            background-position: 0 0;
+        }
+        to{
+            background-position: 0 -1.8rem;
+        }
+    }
+    .dwm-txt{
+        position: absolute;
+        left: 0.5rem;
+        top: 1.38rem;
+        width: 3.52rem;
+        height: 0.52rem;
+        line-height: 0.52rem;
+        font-size: 0.20rem;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+    }
+    .dwm-btn{
+        display: block;
+        position: absolute;
+        left: 4.24rem;
+        top: 2.43rem;
+        width: 0.55rem;
+        height: 1.95rem;
+        background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/draw/dwm-btn-m.png) 0 0 no-repeat;
+        background-size: 0.55rem auto;
+        i{
+            display: block;
+            position: absolute;
+            left: 0.07rem;
+            top: 0;
+            width: 0.48rem;
+            height: 1.76rem;
+            background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/draw/dwm-btn-anim.png) 0 0 no-repeat;
+            background-size: 3.36rem auto;
+        }
+        @keyframes dmwYg {
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: right 0;
+            }
+        }
+        &.cur i{
+            animation: dmwYg 0.3s steps(6) 1;
+        }
+    }
+    .dwm-prize{
+        position: absolute;
+        left: 0.93rem;
+        top: 3.22rem;
+        width: 3.30rem;
+        height: 0.94rem;
+        .dwm-prize-ico{
+            display: block;
+            width: 0.72rem;
+            height: 0.94rem;
+            background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/draw/dwm-prize.png) 0 0 no-repeat;
+            background-size: 4.8rem auto;
+            &.dwm-prize-ico1{background-position: 0 0;}
+            &.dwm-prize-ico2{background-position: -0.80rem 0;}
+            &.dwm-prize-ico3{background-position: -1.60rem 0;}
+            &.dwm-prize-ico4{background-position: -2.40rem 0;}
+            &.dwm-prize-ico5{background-position: -3.20rem 0;}
+            &.dwm-prize-ico6{background-position: -4.00rem 0;}
+        }
+        .dwm-prize-li{
+            position: relative;
+            float: left;
+            margin-right: 0.24rem;
+            width: 0.72rem;
+            height: 0.94rem;
+            overflow: hidden;
+            .dwm-prize-wrap{
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}
+
+.section-mace {
+    position: relative;
+    padding-top: 1rem;
+    background-color: #29292c;
+    min-height: 7.7rem;
+    .vt-header {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 0.8rem;
+        border-bottom: 1px solid rgba(253, 254, 255, 0.1);
+        .vt-logo {
+            display: block;
+            margin: 0.16rem;
+            width: 1.97rem;
+            height: 0.99rem;
+            background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/logo-m.png) 0 0 no-repeat;
+            background-size: 1.97rem 0.99rem;
+        }
+    }
+    .draw-list{
+        margin-top: 0.4rem;
+        width: 6.4rem;
+        h3{
+            margin-bottom: 0.2rem;
+            color: #fff;
+        }
+        .draw-list-box{
+            position: relative;
+            margin: 0 auto;
+            padding: 0.2rem 0.3rem;
+            width: 6rem;
+            height: 4.3rem;
+            overflow: hidden;
+            border-radius: 0.2rem;
+            border: 1px solid #9c753d;
+            box-sizing: border-box;
+        }
+        ul{
+            position: absolute;
+            left: 0.2rem;
+            top: 0;
+            width: 5.4rem;
+            li{
+                width: 100%;
+                height: 0.36rem;
+                line-height: 0.36rem;
+                font-size: 0.2rem;
+                color: #ccc;
+                text-align: center;
+                overflow: hidden;
+            }
+        }
+    }
+    .draw-rule{
+        padding: 0.4rem 0;
+        h3{
+            margin-bottom: 0.1rem;
+            color: #fff;
+        }
+        ul{
+            padding: 0 0.25rem;
+            li{
+                position: relative;
+                padding-left: 0.25rem;
+                line-height: 0.32rem;
+                font-size: 0.18rem;
+                color: #999;
+                i{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    color: #e99c2c;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
+.drawPopMask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+}
+.drawPopCon{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -2.1rem;
+    padding: 0 0.45rem;
+    width: 3.3rem;
+    height: auto;
+    z-index: 9999;
+    background-color: #fff;
+    box-shadow: 0.05rem 0.05rem 0.2rem rgba(0,0,0,0.25);
+    border-radius: 0.1rem;
+    .dp-context{
+        padding: 0.25rem 0;
+        .center{
+            text-align: center;
+        }
+        .dpc-ipt{
+            margin-top: 0.1rem;
+            padding: 0.1rem;
+            height: 0.3rem;
+            border: 1px solid #ddd;
+            border-radius: 0.05rem;
+            box-sizing: border-box;
+            input{
+                display: block;
+                float: left;
+                margin: 0;
+                padding: 0;
+                width: 3rem;
+                height: 0.3rem;
+                line-height: 0.3rem;
+                outline: 0;
+                border: none;
+                font-size: 0.2rem;
+                color: #333;
+                background: none;
+            }
+        }
+        .dpc-txt{
+            h5{
+                line-height: 0.4rem;
+                font-size:0.26rem;
+                color: #333;
+                text-align: center;
+            }
+            p{
+                line-height: 0.3rem;
+                font-size: 0.22rem;
+                color: #333;
+                span{
+                    color: #e4040f;
+                }
+            }
+        }
+        .dpc-notice{
+            margin-top: 0.1rem;
+            h5{
+                line-height: 0.26rem;
+                font-size:0.22rem;
+                color: #666;
+                font-weight: normal;
+            }
+            p{
+                line-height:0.22rem;
+                font-size:0.2rem;
+                color: #666;
+                span{
+                    color: #e4040f;
+                }
+                a{
+                    color: #e4040f;
+                    &:hover{
+                        color: #f33;
+                    }
+                }
+            }
+        }
+        .draw-pop-btn-group{
+            margin-top: 0.15rem;
+            height: 0.44rem;
+            text-align: center;
+            a{
+                display: inline-block;
+                margin: 0 0.05rem;
+                width: 1.4rem;
+                height: 0.44rem;
+                line-height: 0.44rem;
+                background-color: #eee;
+                border-radius: 0.05rem;
+                font-size: 0.2rem;
+                color: #333;
+                text-align: center;
+                &:hover{
+                    background-color: #ddd;
+                }
+                &.dp-btn-yellow{
+                    background-color: #ffbe33;
+                    &:hover{
+                        background-color: #f3ae1a;
+                    }
+                }
+            }
+        }
+    }
+}

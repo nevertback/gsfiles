@@ -1,0 +1,1532 @@
+@import 'funcss';
+@import 'comm';
+.qzMain{
+    margin: 0 auto;
+    width:6.4rem;
+}
+.qz-loading{
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.22rem;
+    text-align: center;
+    color: #999;
+    @include flexbox;
+    @include ConCen;
+    &:before{
+        display: block;
+        content: '';
+        margin-right: 0.1rem;
+        width: 0.2rem;
+        height: 0.2rem;
+        background: url(http://image.gamersky.com/webimg15/loading.gif) 0 0 no-repeat;
+        background-size: 0.2rem 0.2rem;
+    }
+}
+//加载完成
+.qz-loaded{
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.22rem;
+    text-align: center;
+    color: #999;
+}
+//空内容
+.qz-loadnull{
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.22rem;
+    text-align: center;
+    color: #999;
+}
+//top
+.qz-top{
+    position: relative;
+    width:6.4rem;
+    background-color: #fff;
+    .bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 6.4rem;
+        height: 1.8rem;
+    }
+    .icon{
+        display: block;
+        position: absolute;
+        left: 0.2rem;
+        top: 0.3rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 0.15rem;
+        }
+    }
+    .intro{
+        position: relative;
+        padding: 0.3rem 0.2rem 0 1.6rem;
+        height: 1.5rem;
+        h5{
+            margin-bottom: 0.1rem;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            font-size: 0.28rem;
+            color: #fff;
+            overflow: hidden;
+        }
+        p{
+            margin-bottom: 0.12rem;
+            width: 2.8rem;
+            height: 0.26rem;
+            line-height: 0.26rem;
+            overflow: hidden;
+            font-size: 0.22rem;
+            color: #ddd;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            &+p{
+                width: auto;
+                height: 0.34rem;
+                line-height: 0.34rem;
+                font-size: 0.22rem;
+                color: #ddd;
+            }
+            span{color: $primaryColor;}
+        }
+    }
+    .btnarea{
+        position: absolute;
+        right: 0.2rem;
+        top: 0.3rem;
+        width: 1.6rem;
+        height: 0.5rem;
+        .btn{
+            display: block;
+            width: 1.6rem;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            border-radius: 0.08rem;
+            font-size: 0.22rem;
+            color: #fff;
+            text-indent: 0.56rem;
+            background: $primaryColor url(http://image.gamersky.com/webimg15/user/club/wap/qz-icon-smt2.png) 0.22rem 0.12rem no-repeat;
+            background-size: 0.27rem auto;
+        }
+    }
+    &.qz-top-topic{
+        margin-bottom: 0.1rem;
+        .bg{
+            display: none;
+        }
+        .icon{
+            top: 0.25rem;
+            width: 1.4rem;
+            height: 1.4rem;
+        }
+        .intro{
+            padding: .25rem .2rem 0 1.85rem;
+            height: 1.63rem;
+            h5{
+                margin-bottom: .08rem;
+                height: .5rem;
+                line-height: .5rem;
+                font-size: .36rem;
+                color: #222;
+            }
+            p{
+                margin-bottom: 0;
+                width: auto;
+                height: .44rem;
+                line-height: .44rem;
+                color: #666;
+                span{
+                    color: $primaryColor;
+                }
+            }
+        }
+        .line{
+            margin: 0 0.2rem;
+            height: 1px;
+            background-color: #f5f5f5;
+        }
+        .btnarea{
+            position: relative;
+            padding: 0.12rem 0;
+            top: auto;
+            right: auto;
+            width: auto;
+            height: auto;
+            .btn{
+                display: block;
+                margin: 0 auto;
+                width: 2rem;
+                height: 0.52rem;
+                line-height: 0.52rem;
+                border-radius: 0.26rem;
+                font-size: 0.22rem;
+                color: #fff;
+                text-indent: 0;
+                text-align: center;
+                background: $primaryColor;
+            }
+        }
+    }
+}
+//更多话题
+.qz-more-topic{
+    padding-top: 0.02rem;
+    margin-bottom: 0.1rem;
+    background-color: #fff;
+    ul{
+        li{
+            position: relative;
+            height: 0.76rem;
+            border-bottom: 1px solid #eee;
+            a{
+                position: relative;
+                display: block;
+                padding: 0 0.2rem;
+                height: 0.76rem;
+                line-height: 0.76rem;
+                font-size: 0.26rem;
+                color: #999;
+                b{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0.85rem;
+                    width: 3.8rem;
+                    height: 0.76rem;
+                    line-height: 0.76rem;
+                    color: #333;
+                    overflow: hidden;
+                }
+                span{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0.2rem;
+                    height: 0.76rem;
+                    line-height: 0.76rem;
+                    font-size: 0.22rem;
+                    i{
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
+    .btnarea{
+        height: 0.76rem;
+        line-height: 0.76rem;
+        font-size: 0.24rem;
+        text-align: center;
+        a{
+            position: relative;
+            color: #aaa;
+            @include flexbox;
+            @include ConCen;
+            &:after{
+                display: block;
+                content: '';
+                margin-left: 0.1rem;
+                width: 0.11rem;
+                height: 0.17rem;
+                background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-arr-r.png) 0 0 no-repeat;
+                background-size:100%;
+            }
+        }
+    }
+}
+//圈子页导航
+.qzNavPos{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+}
+.qz-nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0.87rem;
+    background-color: #fff;
+    border-bottom: 0.01rem solid #eee;
+    &.openQzNavFixed{
+        position: fixed;
+        left: 50%;
+        top: 0;
+        margin-left: -3.2rem;
+        width: 6.4rem;
+        z-index: 999;
+    }
+    nav{
+        a{
+            display: block;
+            float: left;
+            width: 1.1rem;
+            height: 0.83rem;
+            line-height: 0.83rem;
+            border-bottom: 0.04rem solid transparent;
+            font-size: 0.24rem;
+            color: #222;
+            text-align: center;
+            &.cur{
+                color: $primaryColor;
+                border-color: $primaryColor;
+            }
+        }
+    }
+    .qz-nav-sort{
+        display: block;
+        position: absolute;
+        top: 0.25rem;
+        right: 0.2rem;
+        width: 1.4rem;
+        height: 0.4rem;
+        font-size: 0.2rem;
+        color: #aaa;
+        text-align: center;
+        text-indent: 0.2rem;
+        border: 1px solid #eee;
+        border-radius: 0.2rem;
+        outline:0;
+        background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-arr-down.png) 1.1rem center no-repeat;
+        background-size:0.12rem 0.08rem;
+    }
+}
+//调用顶部
+.qzOuter{
+    padding-top: 0.15rem;
+    background-color: #f5f5f5;
+}
+.qz-card-top{
+    position: relative;
+    margin: 0 0 0.15rem;
+    padding: 0.3rem 0;
+    height: 1rem;
+    background-color: #fff;
+    .icon{
+        display: block;
+        float: left;
+        margin-left: 0.25rem;
+        width: 1rem;
+        height: 1rem;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .intro{
+        float: left;
+        margin-left: 0.25rem;
+        width: 4.65rem;
+        height: 1rem;
+        h5{
+            margin-bottom: 0.1rem;
+            width: 100%;
+            height: 0.3rem;
+            line-height: 0.3rem;
+            font-size: 0.28rem;
+            color: #222;
+            overflow: hidden;
+        }
+        p{
+            margin-bottom: 0.05rem;
+            width: 100%;
+            height: 0.26rem;
+            line-height: 0.26rem;
+            font-size: 0.2rem;
+            color: #999;
+            overflow: hidden;
+        }
+        .btn{
+            display: block;
+            width: 1.15rem;
+            height: 0.3rem;
+            line-height: 0.28rem;
+            font-size: 0.2rem;
+            color: #aaa;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 0.035rem;
+            box-sizing: border-box;
+        }
+    }
+    .qz-smt{
+        display: block;
+        position: absolute;
+        right: 0.25rem;
+        top: 0.3rem;
+        width: 1.6rem;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        background:$primaryColor url(http://image.gamersky.com/webimg15/user/club/wap/qz-icon-smt1.png) 0.22rem 0.12rem no-repeat;
+        background-size:0.27rem 0.26rem;
+        border-radius: 0.05rem;
+        text-indent: 0.55rem;
+        font-size: 0.2rem;
+        color: #fff;
+    }
+}
+.qzFixSmt{
+    display: block;
+    position: fixed;
+    right: 0.25rem;
+    bottom: 1.3rem;
+    z-index: 99999;
+    width: 0.6rem;
+    height: 0.6rem;
+    background:$primaryColor url(http://image.gamersky.com/webimg15/user/club/wap/qz-icon-smt2.png) 0.18rem 0.17rem no-repeat;
+    background-size: 0.3rem 0.28rem;
+    border-radius: 50%;
+}
+.ymw-backtotop{
+    a{
+        width: 0.6rem;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        &.ymw-btt-btn:after{
+            width: 0.3rem;
+            height: 0.16rem;
+        }
+    }
+}
+@media (max-width:320px){
+    .ymw-backtotop{
+        bottom: 120px;
+        a{
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+        }
+    }
+    .qzFixSmt{
+        bottom: 74px;
+        width: 36px;
+        height: 36px;
+        background-size:18px 17px;
+        background-position: 11px 10px;
+    }
+}
+//用户卡片
+.qz-card{
+    position: relative;
+    margin-bottom: 0.15rem;
+    background-color: #fff;
+    header{
+        display: block;
+        position: relative;
+        padding: 0 0.2rem;
+        height: 1rem;
+        @include flexbox;
+        .head{
+            display: block;
+            margin-top: 0.3rem;
+            margin-right: 0.2rem;
+            width: 0.6rem;
+            height: 0.6rem;
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .spec-icons{
+            position: absolute;
+            right: 0.2rem;
+            top: 0.36rem;
+            @include flexbox;
+            a{
+                @include flexbox;
+                @include ConCenV;
+                margin-left: 0.06rem;
+                padding: 0 0.08rem;
+                height: 0.24rem;
+                font-size: 0.18rem;
+                color: #fff;
+                border-radius: 0.05rem;
+                &.spec-top{
+                    background-color: #f7b20f;
+                }
+                &.spec-value{
+                    background-color: #24a1db;
+                }
+            }
+        }
+        .info{
+            padding-top: 0.3rem;
+            h5{
+                height: 0.34rem;
+                @include flexbox;
+                @include ConCenV;
+                a{
+                    display: block;
+                    max-width:3rem;
+                    height: 0.34rem;
+                    line-height: 0.34rem;
+                    font-size: 0.24rem;
+                    font-weight: normal;
+                    color: #222;
+                    white-space:nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                i.member{
+                    &.member-v1{
+                        margin-left: 0.08rem;
+                        width: 0.26rem;
+                        height: 0.2rem;
+                        background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-icon-v1.png) 0 0 no-repeat;
+                        background-size:100%;
+                    }
+                    &.member-v2{
+                        margin-left: 0.08rem;
+                        width: 0.26rem;
+                        height: 0.2rem;
+                        background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-icon-v2.png) 0 0 no-repeat;
+                        background-size:100%;
+                    }
+                }
+                img{
+                    margin-left: 0.08rem;
+                    width: 0.26rem;
+                    height: 0.2rem;
+                }
+            }
+            p{
+                height: 0.26rem;
+                line-height: 0.26rem;
+                font-size: 0.18rem;
+                color: #aaa;
+                a{
+                    color: #aaa;
+                    &:active{
+                        color: #aaa;
+                    }
+                }
+            }
+            .time{
+                margin-right: 0.2rem;
+            }
+        }
+    }
+    .detail{
+        padding: 0 0.2rem;
+        .content{
+            margin-bottom: 0.15rem;
+            line-height: 0.42rem;
+            font-size: 0.24rem;
+            color: #222;
+            overflow-x: hidden;
+            a{
+                margin: 0;
+                color: #1c8ddc;
+            }
+            a.link{
+                display: inline-block;
+                padding-left: 0.3rem;
+                background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-link.png) 0 center no-repeat;
+                background-size: 0.24rem 0.25rem;
+            }
+            a.link-video{
+                display: inline-block;
+                max-width:5.62rem;
+                max-height: 0.42rem;
+                padding-left: 0.38rem;
+                background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-link-video.png) 0 center no-repeat;
+                background-size: 0.3rem 0.2rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                vertical-align: middle;
+            }
+        }
+
+        .gif{
+            &:after{
+                display: block;
+                position: absolute;
+                content: '';
+                right: 0.05rem;
+                bottom: 0.05rem;
+                width: 0.41rem;
+                height: 0.24rem;
+                background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-img-tips-gif.png) 0 0 no-repeat;
+                background-size: 0.41rem 0.24rem;
+            }
+        }
+        .long{
+            &:after{
+                display: block;
+                position: absolute;
+                content: '';
+                right: 0.05rem;
+                bottom: 0.05rem;
+                width: 0.41rem;
+                height: 0.24rem;
+                background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-img-tips-long.png) 0 0 no-repeat;
+                background-size: 0.41rem 0.24rem;
+            }
+        }
+        .media-pic-list{
+            .qz-figs{
+                width: 3.8rem;
+                figure{
+                    position: relative;
+                    float: left;
+                    margin: 0 0.05rem 0.05rem 0;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit:cover;
+                        vertical-align: top;
+                    }
+                }
+            }
+        }
+        .media-pic{
+            position: relative;
+            figure{
+                position: relative;
+                display: block;
+                margin: 0;
+                padding: 0;
+                max-width:3.7rem;
+                max-height: 2.9rem;
+                overflow: hidden;
+                a{
+                    display: block;
+                }
+                img{
+                    display: block;
+                    max-width:100%;
+                    max-height: 100%;
+                }
+            }
+
+        }
+        .media-video{
+            position: relative;
+            max-width:3.7rem;
+            max-height: 2.9rem;
+            @include flexbox;
+            overflow: hidden;
+            a{
+                position: relative;
+                display: block;
+                &:after{
+                    display: block;
+                    position: absolute;
+                    content: '';
+                    left: 50%;
+                    top: 50%;
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-icon-play.png) 0 0 no-repeat;
+                    background-size: 0.8rem 0.8rem;
+                    transform:translate3d(-50%,-50%,0);
+                }
+            }
+            img{
+                position: relative;
+                display: block;
+                max-width:100%;
+            }
+        }
+    }
+    .from{
+        display: inline-block;
+        margin-top: 0.1rem;
+        margin-left: 0.2rem;
+        padding: 0 0.02rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        color: #999;
+        font-size: 0.18rem;
+        a{
+            color: #4a99bd;
+        }
+    }
+    footer{
+        margin-top: 0.15rem;
+        @include flexbox;
+        @include ConCen;
+        height: 0.5rem;
+        border-top: 1px solid #f2f2f3;
+        span{
+            display: block;
+            width: 1px;
+            min-width:1px;
+            height: 0.3rem;
+            background-color: #ddd;
+        }
+        a{
+            @include flexbox;
+            @include ConCen;
+            width: 100%;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            font-size: 0.2rem;
+            color: #999;
+            &.btn-like{
+                b{
+                    font-weight: normal;
+                }
+                i{
+                    position: relative;
+                    display: block;
+                    margin-right: 0.07rem;
+                    width: 0.24rem;
+                    height: 0.24rem;
+                    background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-icon-like-g.png) 0 -0.07rem no-repeat;
+                    background-size: 0.85rem 0.31rem;
+                    &:after{
+                        display: block;
+                        position: absolute;
+                        content: '';
+                        left: 0.05rem;
+                        top: -0.07rem;
+                        width: 0.14rem;
+                        height: 0.06rem;
+                        background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-icon-like-g.png) -0.35rem 0 no-repeat;
+                        background-size: 0.85rem 0.31rem;
+                        transform:translate3d(0,5px,0) scale(0);
+                        transform-origin: 50% 0;
+                        opacity: 0;
+                    }
+                }
+                &.cur{
+                    i{
+                        background-position: -0.61rem -0.07rem;
+                        &:after{animation:likeIng 0.5s ease;}
+                    }
+                }
+            }
+            &.btn-comment{
+                &:before{
+                    display: block;
+                    content: '';
+                    margin-right: 0.06rem;
+                    width: 0.26rem;
+                    height: 0.23rem;
+                    background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-icon-comm.png) 0 0 no-repeat;
+                    background-size: 0.26rem 0.23rem;
+                }
+            }
+        }
+    }
+}
+//列表
+.qz-box{
+    position: relative;
+    padding-top: 0.88rem;
+}
+//话题
+.qz-rem{
+    margin-bottom: 0.1rem;
+    .qz-rem-top{
+        padding: 0 0.2rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        background-color: #fff;
+        border-bottom: 1px solid #f2f2f3;
+        a{
+            color: #1c8ddc;
+        }
+    }
+    .qz-card-more{
+        display: block;
+        width: 100%;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        background-color: #fff;
+        font-size: 0.24rem;
+        color: #333;
+        text-align: center;
+    }
+}
+//全部话题
+.qz-all-topic{
+    background-color: #fff;
+    h5{
+        margin-bottom: 0.03rem;
+        padding: 0 0.2rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        font-size: 0.28rem;
+        color: #333;
+        border-bottom: 1px solid #eee;
+    }
+    ul{
+        li{
+            padding: 0 0.2rem;
+            height: 1.25rem;
+            border-bottom: 1px solid #eee;
+            .num-comm{
+                margin-left: 0.36rem;
+            }
+            a{
+                display: block;
+                height: 1.25rem;
+                b{
+                    display: block;
+                    padding-top: 0.25rem;
+                    height: 0.44rem;
+                    line-height: 0.44rem;
+                    font-size: 0.28rem;
+                    color: #333;
+                    font-weight: normal;
+                    white-space:nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                span{
+                    display: block;
+                    height: 0.4rem;
+                    line-height: 0.4rem;
+                    font-size: 0.22rem;
+                    color: #999;
+                    i{
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+//内容单页
+.qz-comment-like{
+    nav{
+        position: relative;
+        padding: 0 0.2rem;
+        height: 0.82rem;
+        background-color: #fff;
+        border: 1px solid #e2e2e2;
+        a{
+            display: block;
+            float: left;
+            padding: 0 0.25rem;
+            height: 0.78rem;
+            line-height: 0.78rem;
+            border-bottom: 0.04rem solid transparent;
+            font-size: 0.24rem;
+            color: #222;
+            text-align: center;
+            i{
+                margin-left: 0.05rem;
+                font-style: normal;
+            }
+            &.cur{
+                color: $primaryColor;
+                border-color: $primaryColor;
+            }
+        }
+    }
+    ul{
+        display: none;
+        &.cur{
+            display: block;
+        }
+        li{
+            position: relative;
+            padding: 0.28rem 0.2rem 0;
+            border-bottom: 1px solid #eee;
+            @include flexbox;
+            .head{
+                display: block;
+                margin-right: 0.2rem;
+                width: 0.6rem;
+                max-width:0.6rem;
+                min-width:0.6rem;
+                height: 0.6rem;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
+        &.qz-cl-comment{
+            .info{
+                padding-bottom: 0.18rem;
+                width: 5.2rem;
+                max-width: 5.2rem;
+                min-width:5.2rem;
+                h5{
+                    line-height: 0.34rem;
+                    font-size: 0.24rem;
+                    color: #222;
+                    font-weight: normal;
+                    white-space:nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    b{
+                        margin: 0 0.07rem;
+                        font-weight: normal;
+                        color: #aaa;
+                    }
+                }
+                p.time{
+                    line-height: 0.3rem;
+                    font-size: 0.18rem;
+                    color: #aaa;
+                }
+                .context{
+                    line-height: 0.42rem;
+                    font-size: 0.24rem;
+                    color: #222;
+                    overflow-x: hidden;
+                }
+            }
+            &.qz-cl-comment-full{
+                background-color: #fff;
+                .club-card-comment-more{
+                    display: block;
+                    height: 0.75rem;
+                    line-height: 0.75rem;
+                    font-size: 0.26rem;
+                    color: #888;
+                    text-align: center;
+                }
+                li{
+                    border-bottom-color: #dddddd;
+                }
+                .info-comment{
+                    position: relative;
+                    margin-top: 0.14rem;
+                    padding: 0.14rem;
+                    background-color: #f5f5f5;
+                    .info-comment-link{
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background:url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 no-repeat;
+                    }
+                    .info-comment-more{
+                        display: block;
+                        margin-top: 0.14rem;
+                        height: 0.31rem;
+                        line-height: 0.31rem;
+                        font-size: 0.21rem;
+                        color: #0075c4;
+                    }
+                    .ic-item{
+                        font-size: 0.21rem;
+                        .ici-name{
+                            color: #0075c4;
+                        }
+                        .ici-context{
+                            color: #353535;
+                        }
+                        &:first-child{
+                            margin-bottom: 0.14rem;
+                        }
+                    }
+                }
+                .info{
+                    h5{
+                        @include flexbox;
+                        @include ConCenV;
+                        height: 0.38rem;
+                        font-size: 0.26rem;
+                        color: #0075c4;
+                        img{
+                            display: block;
+                            margin-left: 0.09rem;
+                            width: 0.22rem;
+                        }
+                    }
+                    .context{
+                        line-height: 0.38rem;
+                        font-size: 0.26rem;
+                    }
+                    .info-bottom{
+                        position: relative;
+                        margin-top: 0.12rem;
+                        height: 0.34rem;
+                        line-height: 0.34rem;
+                        font-size: 0.19rem;
+                        color: #888;
+                        .info-time{
+                            margin-right: 0.12rem;
+                        }
+                        .info-reply{
+                            @include flexbox;
+                            @include ConCenV;
+                            float: right;
+                            &:before{
+                                display: block;
+                                content: '';
+                                width: 0.28rem;
+                                height: 0.28rem;
+                                background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M24 25H7a4 4 0 0 1-4-4V11a4 4 0 0 1 4-4h13a4 4 0 0 1 4 4v11.362A13.432 13.432 0 0 0 27 25zM7 19h9v-2H7v2zm13-7H7v2h13v-2z" fill="#bbb" fill-rule="evenodd"/></svg>') 0 0 no-repeat;
+                                background-size: 100% auto;
+                            }
+                        }
+                        .info-like{
+                            float: right;
+                            margin-left: 0.31rem;
+                            @include flexbox;
+                            @include ConCenV;
+                            &:before{
+                                display: block;
+                                content: '';
+                                width: 0.28rem;
+                                height: 0.28rem;
+                                background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path data-name="like" d="M19 25H4a1.024 1.024 0 0 1-1-1v-9.875S3.047 12 4 12h2c1.952 0 3.75-.062 5-3 1.272-2.988 1.687-3.375 3-3s2.482-.546 1 6h7s2.27.239 2 2c-.776 5.051-3.969 11-5 11zM9 15a1 1 0 1 0-2 0v7a1 1 0 1 0 2 0v-7z" fill="#bbb" fill-rule="evenodd"/></svg>') 0 0 no-repeat;
+                                background-size: 100% auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.qz-cl-like{
+            .name{
+                padding-bottom: 0.28rem;
+                height: 0.54rem;
+                line-height:0.54rem;
+                font-size: 0.24rem;
+                white-space:nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                a{color: #222;}
+            }
+        }
+    }
+}
+//评论 发布 弹窗
+.qz-pop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999999;
+    @include flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    opacity: 0;
+    visibility: hidden;
+    transform:translate3d(100%,0,0);
+    transition:all 0.25s ease;
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+        transform:translate3d(0,0,0);
+    }
+    header{
+        position: relative;
+        height: 0.96rem;
+        line-height: 0.96rem;
+        text-align: center;
+        font-size: 0.26rem;
+        color: #333;
+        .qz-pop-close{
+            display: block;
+            position: absolute;
+            width: 0.6rem;
+            height: 0.6rem;
+            left: 0.18rem;
+            top: 0.18rem;
+            background: url(http://image.gamersky.com/webimg15/user/club/wap/pop-close.png) 0 0 no-repeat;
+            background-size: 0.6rem 0.6rem;
+        }
+        .qz-pop-smt{
+            display: block;
+            position: absolute;
+            right: 0.2rem;
+            top: 0.25rem;
+            width: 1rem;
+            height: 0.46rem;
+            line-height: 0.46rem;
+            background-color: $primaryColor;
+            font-size: 0.24rem;
+            color: #fff;
+            text-align: center;
+            border-radius: 0.1rem;
+        }
+    }
+    .pop-con{
+        position: relative;
+        padding: 0 0.2rem 0;
+        flex-shrink: 1;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        overflow-y: auto;
+        .pop-srl{
+            position: relative;
+            line-height: 0.4rem;
+            font-size: 0.26rem;
+            textarea{
+                display: block;
+                padding: 0;
+                width: 100%;
+                resize: none;
+            }
+            .mathIpt{
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -99999;
+                visibility: hidden;
+            }
+        }
+        .qz-pic-list{
+            margin-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            width: 6.2rem;
+            .qz-pic-list-li{
+                padding-bottom: 0.15rem;
+                position: relative;
+                float: left;
+                margin-right: 0.15rem;
+                width: 1.9rem;
+                height: 1.9rem;
+                overflow: hidden;
+                @include flexbox;
+                @include ConCen;
+                border-radius: 0.1rem;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit:cover;
+                    border-radius: 0.1rem;
+                }
+                label{
+                    display: block;
+                    width: 1.9rem;
+                    height: 1.9rem;
+                    background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-upload-big.png) 0 0 no-repeat;
+                    background-size: 1.9rem 1.9rem;
+                }
+                .qz-img-remove{
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 0.36rem;
+                    height: 0.36rem;
+                    background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-upload-remove.png) 0 0 no-repeat;
+                    background-size: 0.36rem 0.36rem;
+                }
+                &.temp{
+                    img{
+                        width: 0.4rem;
+                        height: 0.4rem;
+                        object-fit: inherit;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        position: relative;
+        min-height:0.94rem;
+        height: 0.94rem;
+        line-height: 0.94rem;
+        font-size: 0.26rem;
+        color: #999;
+        border-top: 1px solid #eee;
+        .qz-select-photo{
+            display: none;
+        }
+        .qz-upload-pic{
+            display: block;
+            position: absolute;
+            left: 0.5rem;
+            top: 0;
+            padding-left: 0.5rem;
+            height: 0.94rem;
+            line-height: 0.94rem;
+            background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-icon-upload.png) 0 center no-repeat;
+            background-size: 0.36rem 0.27rem;
+        }
+        .qz-pop-sel{
+            display: block;
+            position: absolute;
+            right: 0.5rem;
+            top: 0;
+            padding-right: 0.25rem;
+            height: 0.94rem;
+            line-height: 0.94rem;
+            text-align: right;
+            background: url(http://image.gamersky.com/webimg15/user/club/wap/qz-arr-down2.png) right center no-repeat;
+            background-size: 0.16rem 0.12rem;
+            direction: rtl;
+            option{
+                direction: ltr;
+            }
+        }
+    }
+}
+//图片 弹窗
+.pswp{
+    z-index: 999999;
+    opacity: 0;
+    //transition:opacity 0.15s ease;
+    //&.pswp--visible{
+    //    opacity: 1;
+    //    transition-delay: 0.15s;
+    //}
+    .pswpBtnOrigin{
+        display: block;
+        background-position: -88px 0;
+    }
+}
+.qz-video-pop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+    }
+    .qz-video-pop-con{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        @include flexbox;
+        @include ConCen;
+        iframe{
+            display: block;
+            width: 6.4rem;
+            height: 3.6rem;
+        }
+    }
+    .qz-video-bar{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 44px;
+        a{
+            display: block;
+            float: right;
+            background: url(http://image.gamersky.com/webimg13/lib/photoswipe/default-skin.png) 0 -44px no-repeat;
+            background-size: 264px 88px;
+            width: 44px;
+            height: 44px;
+        }
+    }
+}
+//圈子主页样式
+.qzIndex{
+    .from{
+        display: none;
+    }
+}
+//登录
+.gs_zp_pop{
+    transform: translate3d(-50%,-50%,0) scale(0.88);
+}
+@keyframes likeIng {
+    0%{
+        transform:translate3d(0,5px,0) scale(0);
+        opacity: 1;
+    }
+    80%{
+        transform:translate3d(0,0,0) scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform:translate3d(0,0,0) scale(1);
+        opacity: 0;
+    }
+}
+//列表内回复
+.qz-comment-inlist{
+    padding: 0.2rem 0.2rem 0.05rem;
+    ul{
+        background-color: #f8f8f8;
+        li{
+            position: relative;
+            padding: 0.25rem 0.25rem 0;
+            border-top: 1px solid #e9e9e9;
+            @include flexbox;
+            &:first-child{
+                border-top: none;
+            }
+            .head{
+                display: block;
+                margin-right: 0.2rem;
+                width: 0.45rem;
+                max-width:0.45rem;
+                min-width:0.45rem;
+                height: 0.45rem;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+            .info{
+                padding-bottom: 0.18rem;
+                width: 4.9rem;
+                max-width: 4.9rem;
+                min-width:4.9rem;
+                h5{
+                    line-height: 0.34rem;
+                    font-size: 0.22rem;
+                    color: #222;
+                    font-weight: normal;
+                    white-space:nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    b{
+                        margin: 0 0.07rem;
+                        font-weight: normal;
+                        color: #aaa;
+                    }
+                }
+                p.time{
+                    line-height: 0.3rem;
+                    font-size: 0.18rem;
+                    color: #aaa;
+                }
+                .context{
+                    line-height: 0.42rem;
+                    font-size: 0.22rem;
+                    color: #666;
+                    overflow-x: hidden;
+                }
+            }
+        }
+    }
+}
+//热门评论标签
+.with-hot-tags{
+    &:after{
+        display: block;
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 0;
+        width: 0.4rem;
+        height: 0.4rem;
+        background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path data-name="hot" d="M4 0h44v44z" fill-rule="evenodd" fill="#2196f3"/><path d="M29.967 18.977a14.9 14.9 0 0 0 1.833-2.843l-.974-.269a12.03 12.03 0 0 1-1.834 2.716zm4.2-7.6l-.113-.948c-.55.156-1.115.3-1.665.453V8.977h1.641v-.99h-1.636V6.036h-.974v1.951h-2.1v.99h2.1v2.178c-.917.241-1.735.453-2.4.608l.268 1.018c.621-.184 1.354-.4 2.13-.622V14.3c0 .184-.07.226-.254.24s-.762 0-1.411-.014a3.546 3.546 0 0 1 .31.948 4.828 4.828 0 0 0 1.834-.184.882.882 0 0 0 .494-.99v-2.4zm-.967 4.899a16.621 16.621 0 0 1 .282 2.574l1.03-.156a15.318 15.318 0 0 0-.353-2.517zm2.892-.028a15.25 15.25 0 0 1 .847 2.588l1.03-.226a12.766 12.766 0 0 0-.917-2.546zm3.034-7.284c-.042 4.144-.056 6.619 1.608 6.619.832 0 1.143-.467 1.256-2.065a3.477 3.477 0 0 1-.818-.424c-.042 1.174-.141 1.542-.4 1.542-.762.014-.748-2.178-.649-6.577h-2.862c.028-.636.028-1.315.042-2.051h-1c0 .735-.014 1.414-.028 2.051h-1.9v.904h1.877a14.43 14.43 0 0 1-.282 2.433c-.395-.226-.79-.467-1.157-.679l-.508.707c.437.269.917.58 1.411.877a4.423 4.423 0 0 1-2.173 2.447 2.615 2.615 0 0 1 .663.764 5.1 5.1 0 0 0 2.356-2.645c.663.467 1.256.905 1.665 1.259l.536-.835a22.715 22.715 0 0 0-1.919-1.329 14.865 14.865 0 0 0 .4-3h1.891zm-.141 7.213a17.145 17.145 0 0 1 1.848 2.829l.959-.467a15.913 15.913 0 0 0-1.892-2.773z" fill="#fff" fill-rule="evenodd"/></svg>') 0 0 no-repeat;
+        background-size: 100% auto;
+    }
+}
+//卡片内评论单独页
+.club-comment-one{
+    .context{
+        line-height: 0.38rem;
+        font-size: 0.26rem;
+        color: #353535;
+        overflow-x: hidden;
+        .context-reply-tags{
+            margin-right: 0.1rem;
+            color: #888;
+        }
+        .context-reply{
+            margin-right: 0.1rem;
+            color: #0075c4;
+        }
+    }
+    .info-bottom{
+        position: relative;
+        margin-top: 0.12rem;
+        height: 0.34rem;
+        line-height: 0.34rem;
+        font-size: 0.19rem;
+        color: #888;
+        .info-time{
+            float: left;
+            margin-right: 0.12rem;
+        }
+        .info-device{
+            float: left;
+            display: block;
+            width: 2rem;
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .info-delete{
+            float: right;
+        }
+        .info-reply{
+            @include flexbox;
+            @include ConCenV;
+            float: right;
+            margin-left: 0.3rem;
+            &:before{
+                display: block;
+                content: '';
+                width: 0.28rem;
+                height: 0.28rem;
+                background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M24 25H7a4 4 0 0 1-4-4V11a4 4 0 0 1 4-4h13a4 4 0 0 1 4 4v11.362A13.432 13.432 0 0 0 27 25zM7 19h9v-2H7v2zm13-7H7v2h13v-2z" fill="#bbb" fill-rule="evenodd"/></svg>') 0 0 no-repeat;
+                background-size: 100% auto;
+            }
+        }
+        .info-like{
+            float: right;
+            margin-left: 0.3rem;
+            @include flexbox;
+            @include ConCenV;
+            &:before{
+                display: block;
+                content: '';
+                width: 0.28rem;
+                height: 0.28rem;
+                background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path data-name="like" d="M19 25H4a1.024 1.024 0 0 1-1-1v-9.875S3.047 12 4 12h2c1.952 0 3.75-.062 5-3 1.272-2.988 1.687-3.375 3-3s2.482-.546 1 6h7s2.27.239 2 2c-.776 5.051-3.969 11-5 11zM9 15a1 1 0 1 0-2 0v7a1 1 0 1 0 2 0v-7z" fill="#bbb" fill-rule="evenodd"/></svg>') 0 0 no-repeat;
+                background-size: 100% auto;
+            }
+        }
+    }
+    .cc-one-top{
+        position: relative;
+        padding: 0.28rem 0.2rem 0;
+        background-color: #fff;
+        border-bottom: 1px solid #e2e2e2;
+        .head{
+            @include flexbox;
+            @include ConCenV;
+            margin-bottom: 0.16rem;
+            height: 0.6rem;
+            .head-pic{
+                display: block;
+                margin-right: 0.2rem;
+                width: 0.6rem;
+                height: 0.6rem;
+                border-radius: 50%;
+                border: 1px solid #e2e2e2;
+                box-sizing: border-box;
+            }
+            h5{
+                max-width:3rem;
+                font-size: 0.26rem;
+                color: #0075c4;
+                font-weight: normal;
+                white-space:nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .head-icon{
+                display: block;
+                margin-left: 0.09rem;
+                width: 0.22rem;
+            }
+        }
+        .info{
+            padding-bottom: 0.15rem;
+        }
+    }
+    .cc-one-list{
+        li{
+            @include flexbox;
+            position: relative;
+            padding: 0.28rem 0.2rem 0;
+            border-bottom: 1px solid #e2e2e2;
+            .head{
+                display: block;
+                margin-right: 0.2rem;
+                width: 0.6rem;
+                max-width:0.6rem;
+                min-width:0.6rem;
+                height: 0.6rem;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+            .info{
+                padding-bottom: 0.18rem;
+                width: 5.2rem;
+                max-width: 5.2rem;
+                min-width:5.2rem;
+                h5{
+                    @include flexbox;
+                    @include ConCenV;
+                    height: 0.38rem;
+                    font-size: 0.26rem;
+                    color: #0075c4;
+                    font-weight: normal;
+                    img{
+                        display: block;
+                        margin-left: 0.09rem;
+                        width: 0.22rem;
+                    }
+                }
+            }
+        }
+    }
+    .club-comment-one-bottom{
+        @include flexbox;
+        padding: 0.2rem;
+        a{
+            display: block;
+            height: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.05rem;
+            font-size: 0.22rem;
+            &.club-comment-one-more{
+                width: 100%;
+                margin-left: 1%;
+                @include flexbox;
+                @include ConCen;
+                color: #666;
+                &:before{
+                    display: block;
+                    margin-right: 0.05rem;
+                    content: '+';
+                    color: #2196f3;
+                    font-size: 0.35rem;
+                }
+                &.club-comment-one-more-all{
+                    color: #c3c3c3;
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+            &.club-comment-one-reply{
+                min-width: 40%;
+                width: 40%;
+                @include flexbox;
+                @include ConCen;
+                color: #666;
+                &:before{
+                    display: block;
+                    content: '';
+                    width: 0.35rem;
+                    height: 0.35rem;
+                    background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path data-name="1" d="M10 14a2 2 0 0 1 2-2h24a2 2 0 0 1 2 2v22a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V14zm2 0h24v22H12V14zm17-2h9v8h-9v-8zM15 28h10v2H15v-2zm0-5h6v2h-6v-2zm9.929 1.071a1 1 0 0 1 0-1.414L37.657 9.929a1 1 0 0 1 1.414 0 1 1 0 0 1 0 1.414L26.343 24.071a1 1 0 0 1-1.414 0z" fill="#2196f3" fill-rule="evenodd"/></svg>') 0 0 no-repeat;
+                    background-size: 100% auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,165 @@
+@import 'comm';
+#gsTgWapLkInner{
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    .gsTgWapLkInnerTg{
+        display:block;
+        position: absolute;
+        right: 0.1rem;
+        top: 0.1rem;
+        padding:0;
+        width:0.5rem;
+        height:0.25rem;
+        line-height:0.25rem;
+        background-color:rgba(0,0,0,0.6);
+        border:1px solid #fff;
+        font-size:0.2rem;
+        color:#fff;
+        text-align:center;
+    }
+    .gsTgWapLkInnerMain{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        will-change:transform;
+        transform-origin:0 0;
+        img{
+            display: block;
+            width: 100%;
+        }
+        .gsTgWapLkInnerLink{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .gsTgWapLkInnerCloseBtn{
+        display: none;
+        position: fixed;
+        left: 0.25rem;
+        top: 0.25rem;
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 0.7rem;
+        transform: translateZ(0);
+        background: rgba(2,2,2,0.6) url(http://image.gamersky.com/webimg13/lib/photoswipe/default-skin.svg) 0 0 no-repeat;
+        background-size: auto 1.4rem;
+        background-position: 0 -0.7rem;
+    }
+    &.cur{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: auto !important;
+        overflow-x: hidden !important;
+        margin: auto;
+        z-index: 999990;
+        height: 100% !important;
+        .gsTgWapLkInnerCloseBtn{
+            display: block;
+        }
+        .gsTgWapLkInnerMain{
+            .gsTgWapLkInnerLink{
+                display: block;
+            }
+        }
+    }
+}
+#gsTgWapLkInnerV2{
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    .gsTgWapLkInnerFakeImg{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        visibility: hidden;
+    }
+    .gsTgWapLkInnerMain{
+        width: 100%;
+        height: 100%;
+        canvas{
+            display: block;
+        }
+    }
+    .gsTgWapLkInnerTg{
+        display:block;
+        position: absolute;
+        right: 0.1rem;
+        top: 0.1rem;
+        padding:0;
+        width:0.5rem;
+        height:0.25rem;
+        line-height:0.25rem;
+        background-color:rgba(0,0,0,0.1);
+        border:1px solid rgba(255,255,255,0.2);
+        font-size:0.2rem;
+        color:rgba(255,255,255,0.2);
+        text-align:center;
+    }
+    .gsTgWapLkInnerOpenBtn{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .gsTgWapLkInnerCloseBtn{
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        left: 50%;
+        top: 0.25rem;
+        margin-left: -3.6rem + 0.25rem;
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 0.7rem;
+        transform: translateZ(0);
+        background: rgba(2,2,2,0.6) url(http://image.gamersky.com/webimg13/lib/photoswipe/default-skin.svg) 0 0 no-repeat;
+        background-size: auto 1.4rem;
+        background-position: 0 -0.7rem;
+        transition:all 0.25s ease;
+    }
+    &.cur{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100% !important;
+        overflow-y: auto;
+        margin: auto;
+        z-index: 999990;
+        .gsTgWapLkInnerFakeImg{
+            visibility: visible;
+        }
+        .gsTgWapLkInnerOpenBtn{
+            display: none;
+        }
+        .gsTgWapLkInnerCloseBtn{
+            opacity: 1;
+            visibility: visible;
+            transition-delay:0.25s;
+        }
+        .gsTgWapLkInnerMain{
+            canvas{
+                display: none;
+            }
+            .gsTgWapLkInnerLink{
+                position: relative;
+                display: block;
+            }
+        }
+    }
+}

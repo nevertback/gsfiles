@@ -1,0 +1,260 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 900px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 664px;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 30px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 145px;
+			top: 25px;
+			width: 139px;
+			height: 47px;
+			background: url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-black.png) 0 0 no-repeat;
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			@include sprite($logo-gf);
+		}
+		.btngroup{
+			text-align: center;
+			font-size: 0;
+			.btn{
+				display: inline-block;
+				margin: 0 10px;
+				*display: inline;
+				*zoom: 1;
+				&.btn1{
+					@include sprite($s1-btn1);
+					&:hover{@include sprite-position($s1-btn1-h);}
+				}
+				&.btn2{
+					@include sprite($s1-btn2);
+					&:hover{@include sprite-position($s1-btn2-h);}
+				}
+				&.btn3{
+					@include sprite($s1-btn3);
+					&:hover{@include sprite-position($s1-btn3-h);}
+				}
+				&.btn4{
+					@include sprite($s1-btn4);
+					&:hover{@include sprite-position($s1-btn4-h);}
+				}
+			}
+		}
+		.para{
+			margin-bottom: 30px;
+			p{
+				line-height: 22px;
+				font-size: 14px;
+				color: #fff;
+				text-align: center;
+			}
+		}
+		.play{
+			display: block;
+			position: absolute;
+			left: 678px;
+			top: 553px;
+			@include sprite($play);
+		}
+	}
+}
+.zt-section2{
+	height: 1500px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 167px;
+		p{
+			line-height: 22px;
+			font-size: 14px;
+			color: #96afe7;
+			text-align: center;
+		}
+		.notice{
+			line-height: 22px;
+			font-size: 14px;
+			color: #3b465f;
+			text-align: center;
+		}
+		.para1{
+			margin-bottom: 15px;
+			height: 44px;
+		}
+		.get-con1{
+			padding-top: 82px;
+			width: 1100px;
+			height: 392px;
+			.gt-form{
+				margin: 12px auto 19px;
+				width: 860px;
+				height: 203px;
+				background: url(http://image.gamersky.com/webimg13/zhuanti/qxzl2cs/pic/form-bg.png) 0 0 no-repeat;
+				input,textarea{
+					margin: 0;
+					padding: 0;
+					background: none;
+					outline: 0;
+					border: none;
+					resize: none;
+					&::-webkit-input-placeholder {
+						color:#96afe7;
+					}
+				}
+				.gt-text{
+					padding:15px 20px;
+					width: 860px - 40px;
+					height: 154px - 30px;
+					textarea{
+						display: block;
+						width: 860px - 40px;
+						height: 154px - 30px;
+						line-height: 22px;
+						font-size: 16px;
+						color: #fff;
+					}
+				}
+				.gt-row{
+					margin-top: 1px;
+					width: 870px;
+					height: 48px;
+					label{
+						cursor: pointer;
+						display: block;
+						float: left;
+						width: 115px;
+						height: 48px;
+						line-height: 48px;
+						font-size: 16px;
+						color: #fff04a;
+						text-align: center;
+					}
+					.gt-ipt{
+						float: left;
+						padding: 5px 17px;
+						width: 504px - 34px;
+						height: 48px - 10px;
+						input{
+							display: block;
+							width: 504px - 34px;
+							height: 48px - 10px;
+							font-size: 16px;
+							color: #fff;
+						}
+					}
+					.gt-btn{
+						display: block;
+						float: left;
+						margin-left: 1px;
+						width: 240px;
+						height: 48px;
+						line-height: 48px;
+						background-color: #395694;
+						font-size: 20px;
+						color: #fff04a;
+						text-align: center;
+						font-weight: bold;
+						&:hover{
+							background-color: #5072be;
+						}
+					}
+				}
+			}
+		}
+		.get-con-pos{
+			position: absolute;
+			top: 628px;
+			width: 545px;
+			height: 508px;
+			&.get-con-pos-l{
+				left: 0;
+			}
+			&.get-con-pos-r{
+				right: 0;
+			}
+			.para2{
+				padding-top: 83px;
+				margin: 0 auto;
+				width: 450px;
+				height: 44px;
+			}
+			.notice{
+				position: absolute;
+				left: 0;
+				top: 459px;
+				width: 100%;
+			}
+			.codewrap{
+				padding-top: 34px;
+				width: 100%;
+				img{
+					display: block;
+					margin: 0 auto 20px;
+					width: 140px;
+					height: 140px;
+				}
+				.wx-reply{
+					margin-top: 20px;
+					line-height: 22px;
+					font-size: 20px;
+					color: #fff04a;
+					text-align: center;
+					font-weight: bold;
+				}
+			}
+			.qq-group{
+				padding-top: 34px;
+				width: 100%;
+				text-align: center;
+				a{
+					margin: 0 25px;
+				}
+			}
+		}
+	}
+}
+.zt-section3{
+	position: relative;
+	height: 1179px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.bg-pic{
+		display: block;
+		position: absolute;
+		left: 50%;
+		margin-left: -960px;
+		top: 0;
+	}
+	.container{
+		position: relative;
+		padding-top: 950px;
+		.flash_con{
+			position: absolute;
+			top: 12px;
+			left: 50%;
+			margin-left: -630px;
+			width: 1200px;
+			height: 900px;
+		}
+		ul{
+			padding-left: 295px;
+			width: 780px;
+			li{
+				line-height: 22px;
+				font-size: 14px;
+				color: #ccc;
+			}
+		}
+	}
+}

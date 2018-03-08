@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta itemprop="name" content="" />
+	<meta itemprop="image" content="ztimages/350.jpg" />
+	<link href="http://j.gamersky.com/g/normalize.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="http://j.gamersky.com/web2015/css/QZnav.css" />
+	<link href="css/style.min.css" rel="stylesheet">
+	<script type="text/javascript" src="http://j.gamersky.com/g/jquery-1.8.3.js"></script>
+	<script>
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+        var wapUrl = "http://www.gamersky.com/zhuanti/wqj2017/mvt.shtml"+"?wqjpageid="+getQueryString('wqjpageid'); var contentPageIndex = 1; var pageIndex = 1;</script>
+	<script src="http://j.gamersky.com/g/mobileesp.js"></script>
+	<!-- 创建时间：20171213 设计：ONE像素 前端：MrrrTian -->
+</head>
+<body>
+<!-- 全站导航 -->
+<script type="text/javascript" src="http://www.gamersky.com/autoinc/allsite/allsite_nav_js.htm"></script>
+<!-- 分享用 -->
+<div style="width:0;height:0;overflow:hidden">
+	<h3></h3>
+	<p></p>
+	<img src="ztimages/350.jpg" alt="">
+</div>
+<!-- 分享用 end-->
+<div id="section-vote" class="zt-section zt-section-vote">
+    <img src="http://image.gamersky.com/webimg13/zhuanti/common/blank.png" alt="bg" class="vt-bg" id="vtBg">
+    <div class="vt-bg-mask"></div>
+    <div class="vt-header">
+        <a target="_blank" href="http://www.gamersky.com/zhuanti/wqj2017/" class="vt-logo"></a>
+        <!-- 百度分享 -->
+<div class="bdsharewrap bdstyle-c">
+	<div class="bdsharebuttonbox bdshare-button-style0-16" data-tag="share_1" data-bd-bind="1446461622481">
+		<a class="bdicons bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+		<a class="bdicons bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+		<a class="bdicons bds_sqq" data-cmd="sqq" title="分享到QQ"></a>
+		<a class="bdicons bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+		<a class="bdicons bds_tieba" data-cmd="tieba" title="分享到贴吧"></a>
+		<a class="bdicons bds_renren" data-cmd="renren" title="分享到人人"></a>
+		<a class="bdicons bds_douban" data-cmd="douban" title="分享到豆瓣"></a>
+		<a class="bdicons bds_more" data-cmd="more"></a>
+		<a class="bds_count" data-cmd="count" title=""></a>
+	</div>
+</div>
+<!-- 百度分享 end-->
+        <div class="title" id="vtResTitle"></div>
+    </div>
+    <div class="container">
+        <div class="vt-des" id="vtDes"></div>
+        <div class="vt-winners" id="vtWinners"></div>
+        <div class="clearfix vt-items" id="vtList"></div>
+    </div>
+</div>
+<div id="section-cooper" class="zt-section zt-section-cooper">
+    <div class="container">
+        <div class="title">合作厂商</div>
+        <div class="list-wrap">
+            <ul class="clearfix list" id="cooperLogos"></ul>
+        </div>
+    </div>
+</div>
+<div id="section-club" class="zt-section zt-section-club">
+    <div class="container">
+        <div class="zt-club" id="clubMain">
+            <div class="QZCMT-outer-title"><i></i><a target="_blank" href="" id="QZCMTouterTitleUrl">玩儿趣奖圈子</a></div>
+        </div>
+        <div class="zt-club-right" id="clubRight"></div>
+    </div>
+</div>
+<!-- Bot -->
+<div class="Bot">
+	<script type="text/javascript" src="http://www.gamersky.com/autoinc/allsite/allsite_copyright_2_js.htm"></script>
+</div>
+<!--Bot end-->
+<!-- 浮动导航 -->
+<ul id="fixednav" class="fixednav">
+	<li><a class="" data-to="#section1" data-off="36"></a></li>
+	<li><a class="" data-to="#section2"></a></li>
+	<li><a class="" data-to="#section3"></a></li>
+	<li><a class="" data-to="#section4"></a></li>
+	<li><a class="" data-to="#section5"></a></li>
+	<li><a class="" data-to="#sectionComm"></a></li>
+</ul>
+<!-- 浮动导航 end-->
+<!-- 加载页面JS -->
+<script type="text/javascript" src="http://j.gamersky.com/g/jquery.gamersky.v4.min.js"></script>
+<script type="text/javascript" src="jsmin/main.min.js"></script>
+<script>
+    //百度
+    window._bd_share_config = {
+        common: {
+            bdText: '',
+            bdDesc: '',
+            bdPic: 'ztimages/350.jpg'
+        },
+        share: [{
+            "bdSize": 16
+        }]
+    };
+    with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>
+<!-- 加载页面JS end-->
+<div style="display:none">
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdcb5060fba0123ff56d253331f28db6a' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</div>
+</body>
+</html>

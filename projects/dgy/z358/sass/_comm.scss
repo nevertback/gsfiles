@@ -1,0 +1,526 @@
+$mpath:'../ztimages/';
+@import "anim";
+$basewidth:1200px;
+@import 'csprite';
+@import './scsslib/tcss/tcss';
+@import './scsslib/baidushare/bds6';
+html,body{min-width:1280px;background-color: #100d0b;}
+body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
+h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
+a{text-decoration: none;cursor: pointer;}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after{display: table;content: " ";}
+.clearfix:after,
+.container:after{clear: both;}
+.container{margin-right: auto;margin-left: auto;width: $basewidth;}
+.zt-section{margin: 0;padding: 0;overflow: hidden;width: 100%;min-width:$basewidth;}
+//头部
+.QZnav {min-width:$basewidth;}
+.QZnav .topbar {width:$basewidth;}
+.QZnav .QZ-nav {display: none;}
+//底部
+.Bot{
+	width:100%; min-width:$basewidth; height:150px;
+	background:#141414;font-size: 14px;
+	.Copyright {
+		margin:0 auto;padding-top:45px;
+		width:$basewidth;height:auto;line-height:30px;
+		text-align:center; color:#555;
+		a{
+			margin:0 5px; color:#555;
+			&:hover {color:#777;}
+		}
+	}	
+}
+%ffsys{
+	font-family: '思源宋体 CN','思源宋体','Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC','Source Han Serif', source-han-serif-sc, serif,SimSun;
+}
+
+$loadingBg:#000;
+.lockScroll{
+    overflow: hidden;
+}
+#loading{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99998;
+    width: 100%;
+    height: 100%;
+    background-color: $loadingBg;
+}
+#loadingAnim{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -180px;
+    margin-top: -100px;
+    z-index: 99999;
+    width: 360px;
+    height: 200px;
+    .loadingtit{
+        width: 100%;
+        height: 20px;
+        line-height:20px;
+        font-size:16px;
+        color: #999;
+        text-align: center;
+    }
+    .loadingtxt{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+    }
+    .loadingAnim-img-wrap{
+        position: absolute;
+        left: 50%;
+        top:70px;
+        margin-left: -50px;
+        width: 100px;
+        height: 1px;
+        .loadingAnim-img{
+            position: absolute;
+            right:0;
+            top:0;
+            width: 100%;
+            height: 1px;
+            background-color: $loadingBg;
+        }
+        .loadingAnim-img-g{
+            position: absolute;
+            right:0;
+            top:0;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+        }
+    }
+}
+.arr-btn{
+    display: block;
+    &.swiper-button-disabled{
+        display: none;
+    }
+    &.arr-btn-l{
+        @include sprite($arr-l);
+        &:hover{@include sprite-position($arr-l-h)}
+    }
+    &.arr-btn-r{
+        @include sprite($arr-r);
+        &:hover{@include sprite-position($arr-r-h)}
+    }
+}
+//弹层
+.pg-pop-mask{
+	position: fixed;z-index: 99990;top: 0;left: 0;
+	width: 100%;height: 100%;
+	background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;
+	opacity: 0;
+	visibility: hidden;
+	transition:all 0.25s ease;
+	&.cur{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.pg-pop-main{
+	left:50%;
+	z-index: 99991;
+	opacity: 0;
+	visibility: hidden;
+	transition:all 0.25s ease;
+	&.cur{
+		opacity: 1;
+		visibility: visible;
+	}
+	.pg-pop-close{
+		display: block;
+		position: absolute;
+		right: 25px;
+		top: 75px;
+		z-index: 99992;
+		@include sprite($close);
+		&:hover{
+			@include sprite-position($close-h);
+		}
+	}
+}
+.pop-hero{
+	background: url(../ztimages/pop-hero-bg.png) 0 0 no-repeat;
+	.pg-pop-close{
+		right: 10px;
+		top: 10px;
+	}
+	.phm-infos{
+		padding-left: 40px;
+		.phm-infos-top{
+			margin-bottom: 32px;
+			padding-top: 50px;
+			width: 500px;
+			height: 90px;
+			@include flexbox;
+			@include ConCen;
+			.phm-name{
+				height: 90px;
+				line-height: 90px;
+				font-weight: bold;
+				font-size: 60px;
+				color: #c7a54e;
+				@extend %ffsys;
+			}
+			.phm-line{
+				margin: 0 20px 0 20px;
+				@include sprite($ht-line);
+			}
+			.phm-others{
+				padding: 6px 0 0;
+				height: 84px;
+				text-align: center;
+				h4{
+					height: 42px;
+					line-height: 42px;
+					font-size: 24px;
+					color: #c7a54e;
+					@extend %ffsys;
+					text-align: center;
+				}
+				h5{
+					display: block;
+					margin: 0 auto;
+					line-height: 25px;
+					font-size: 15px;
+					color: #151515;
+					text-align: center;
+					@include sprite($ht-h5);
+				}
+			}
+		}
+		.phm-infos-bot{
+			width: 430px;
+			p{
+				line-height: 28px;
+				font-size: 16px;
+				color: #acacac;
+				text-indent: 32px;
+                text-align: justify;
+			}
+		}
+	}
+	.phm-vd{
+		position: absolute;
+		top: 354px;
+		left: 0;
+		width: 500px;
+		height: 300px;
+		.phm-vd-tit{
+			padding-top: 12px;
+			height: 38px;
+			line-height: 38px;
+			font-size: 20px;
+			color: #c7a54e;
+			font-weight: bold;
+			text-align: center;
+			background: url(../ztimages/phm-vd-tit.png) center 0 no-repeat;
+			@extend %ffsys;
+		}
+        .phm-vd-con-wrap{
+            position: relative;
+            margin: 0 auto;
+			width: 413px;
+			height: 241px;
+			background:#000 url(../ztimages/phm-vd-bd.png) 0 0 no-repeat;
+            .phm-vd-con{
+                position: absolute;
+                left: 2px;
+                top: 2px;
+                width: 409px;
+                height: 237px;
+				.phm-vd-btn{
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					img{
+						display: block;
+						width: 409px;
+						height: 237px;
+					}
+					.arr{
+						position: absolute;
+						left: 174px;
+						top: 88px;
+						display: block;
+						@include sprite($phm-vd-arr);
+					}
+					&:hover{
+						i.arr{@include sprite-position($phm-vd-arr-h)}
+					}
+				}
+            }
+        }
+	}
+	.phm-tab{
+		position: absolute;
+		left: 545px;
+		top: 67px;
+		width: 415px;
+		height: 587px;
+		.phm-tab-nav{
+            padding-left: 94px;
+            margin-bottom: 25px;
+            height: 37px;
+			a{
+                cursor: pointer;
+				float: left;
+                margin-right: 20px;
+                @include sprite($phm-tab-nav);
+                line-height: 37px;
+                font-size: 18px;
+                color: #c7a54e;
+                text-align: center;
+                &.cur{
+                    @include sprite-position($phm-tab-nav-h);
+                    color: #3d3c39;
+                }
+			}
+		}
+        .phm-tab-con{
+            width: 415px;
+            height: 525px;
+            background: url(../ztimages/phm-tab-con.png) 0 0 no-repeat;
+            .gs-tab-item{
+                .phm-pic-wrap{
+                    position: absolute;
+                    left: 13px;
+                    top: 11px;
+                    width: 388px;
+                    height: 500px;
+                    img{
+                        display: block;
+                        width: 388px;
+                        height: 500px;
+                    }
+                }
+            }
+        }
+	}
+}
+.pop-world{
+	user-select: none;
+	.pw-tit{
+		height: 76px;
+		line-height: 70px;
+		font-size:30px;
+		color: #fff;
+		text-align: center;letter-spacing:8px;
+		@extend %ffsys;
+		font-weight: bold;
+	}
+	.pw-pic{
+		margin: 0 auto 10px;
+		padding: 16px 16px 16px 15px;
+		width: 819px;
+		height: 461px;
+		background: url(../ztimages/pw-pic.png) 0 0 no-repeat;
+		img{
+			display: block;
+			width: 819px;
+			height: 461px;
+		}
+	}
+	.pw-txt{
+		margin: 0 auto;
+		width: 850px;
+		line-height: 28px;
+		font-size: 16px;
+		color: #acacac;
+		text-indent: 32px;
+	}
+	&.pop-world-single{}
+	&.pop-world-mut{
+		.swiper-container{
+			position: relative;
+			width: 1000px;
+			height: 604px;
+			.arr-btn{
+				position: absolute;
+				top: 214px;
+				z-index: 2;
+				&.swiper-button-disabled{
+					display: none;
+				}
+				&.arr-btn-l{
+					left: 0;
+				}
+				&.arr-btn-r{
+					right:0;
+				}
+			}
+		}
+	}
+}
+.big-pic{
+	padding: 17px 16px 16px 14px;
+	width: 875px;
+	height: 492px;
+	background: url(../ztimages/big-pic-bd.png) 0 0 no-repeat;
+	img{
+		display: block;
+		width: 875px;
+		height: 492px;
+	}
+}
+.gsPopupMask{
+	position: fixed;z-index: 99998;top: 0;left: 0;
+	width: 100%;height: 100%;
+	background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;
+	opacity: 0;
+	visibility: hidden;
+    transition: all 0.25s ease;
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.gsPopup{
+	z-index: 99999;
+	opacity: 0;
+	visibility: hidden;
+    transition: all 0.25s ease;
+	.gsPopupCon{
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		img{
+			display: block;
+		}
+		video{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.gsPopupClose{
+		position: absolute;top:0;right:-50px;overflow: hidden;
+		width: 38px;height: 38px;
+		background:url(http://image.gamersky.com/webimg13/zhuanti/common/gsPopupClose.png) 5px 5px no-repeat;
+		&:hover{background-position: -33px 5px;}
+	}
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.fixednav{
+	display: none;position: fixed;
+	right: 10px;
+	top: 50%;margin-top: -258px;z-index: 999;
+	padding-top: 122px;
+	width: 157px;
+	height: 516px - 122px;
+	background: url(../ztimages/fx-bg.png) 0 0 no-repeat;
+	li{
+		display: block;
+		width: 152px;height: 42px;
+		a{
+			position: relative;
+			display: block;
+			width: 152px;height: 42px;
+			line-height: 42px;
+			font-size: 16px;
+			color: #c5ab78;
+			text-align: center;
+			i{
+				position: absolute;
+				display: block;
+				left: 50%;
+				bottom: 0;
+				margin-left: -40px;
+				@include sprite($fx-line);
+			}
+			&.cur,&:hover{
+				color: #ffedc0;
+			}
+		}
+	}
+	&.cur{
+		display: block;
+	}
+}
+.zt-tit{
+	display: block;
+	margin: 0 auto;
+	&.zt-tit2{@include sprite($zt-tit2)}
+	&.zt-tit3{@include sprite($zt-tit3)}
+	&.zt-tit4{@include sprite($zt-tit4)}
+	&.zt-tit5{@include sprite($zt-tit5)}
+	&.zt-tit6{@include sprite($zt-tit6)}
+	&.zt-tit7{@include sprite($zt-tit7)}
+	&.zt-tit8{@include sprite($zt-tit8)}
+	&.zt-tit-comm{@include sprite($zt-tit-comm)}
+}
+.gs-tab{
+	position: relative;
+	.gs-tab-nav{}
+	.gs-tab-box{
+		position: relative;
+		.gs-tab-item{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			visibility: hidden;
+			transition:all 0.25s ease;
+			&.cur{
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+.gs-tabinner{
+    position: relative;
+    .gs-tabinner-nav{}
+    .gs-tabinner-box{
+        position: relative;
+        .gs-tabinner-item{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition:all 0.25s ease;
+            &.cur{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+.volBtn{
+	display: block;
+	position: fixed;
+	right: 30px;
+	top: 65px;
+	z-index: 10;
+	width: 33px;
+	height: 30px;
+	background: url(../ztimages/vol-btn.png) 0 0 no-repeat;
+	&.volPause{
+		background-position: -33px 0;
+	}
+}
+@mixin textStroke($p,$c) {
+    text-shadow: $p 0 0 $c,-$p 0 0 $c,0 $p 0 $c, 0 0-$p 0 $c;
+}

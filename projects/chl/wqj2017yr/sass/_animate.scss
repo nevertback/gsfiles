@@ -1,0 +1,143 @@
+@keyframes scJump{
+    0%{
+        transform:translate3d(0,0,0);
+    }
+    50%{
+        transform:translate3d(0,-5px,0);
+    }
+    100%{
+        transform:translate3d(0,0,0);
+    }
+}
+@keyframes scLr2{
+    0%{
+        transform:translate3d(0,0,0);
+    }
+    49%{
+        transform:translate3d(-450px,0,0) rotateY(0deg);
+    }
+    50%{
+        transform:translate3d(-450px,0,0) rotateY(180deg);
+    }
+    99%{
+        transform:translate3d(0,0,0) rotateY(180deg);
+    }
+    100%{
+        transform:translate3d(0,0,0) rotateY(0deg);
+    }
+}
+@keyframes scLr1{
+    0%{
+        transform:translate3d(0,0,0);
+    }
+    49%{
+        transform:translate3d(-50px,0,0) rotateY(0deg);
+    }
+    50%{
+        transform:translate3d(-50px,0,0) rotateY(180deg);
+    }
+    99%{
+        transform:translate3d(0,0,0) rotateY(180deg);
+    }
+    100%{
+        transform:translate3d(0,0,0) rotateY(0deg);
+    }
+}
+@keyframes scLrwd{
+    0%{
+        transform:translate3d(0,0,0);
+    }
+    50%{
+        transform:translate3d(-5px,0,0);
+    }
+    100%{
+        transform:translate3d(0,0,0);
+    }
+}
+@keyframes scCell{
+    0%{
+        transform:rotate(-45deg);
+    }
+    50%{
+        transform:rotate(45deg);
+    }
+    100%{
+        transform:rotate(-45deg);
+    }
+}
+@keyframes scJdqs{
+    0%{
+        transform:rotate(0deg);
+    }
+    40%{
+        transform:rotate(90deg);
+    }
+    60%{
+        transform:translate3d(5px,-10px,0);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+@keyframes scMla{
+    0%{
+        transform:translate3d(0,0,0);
+    }
+    50%{
+        transform:translate3d(0,-20px,0);
+    }
+    100%{
+        transform:translate3d(0,0,0);
+    }
+}
+@keyframes scRotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@keyframes scCdr{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+@keyframes tipsAnim{
+    0%{
+        height: 0;
+        transform:scale(1,1);
+    }
+    100%{
+        height: 25px;
+        transform:scale(1,2.4);
+    }
+}
+@keyframes lineAnim{
+    0%{
+        transform:scale(0,1);
+    }
+    35%{
+        transform:scale(0,1);
+    }
+    45%{
+        transform:scale(3,1);
+    }
+    100%{
+        transform:scale(3,1);
+    }
+}
+@keyframes lightAnim{
+    0%{
+        background-position: -408px -173px;
+    }
+    17%{
+        background-position: 340px -173px;
+    }
+    100%{
+        background-position: 340px -173px;
+    }
+}

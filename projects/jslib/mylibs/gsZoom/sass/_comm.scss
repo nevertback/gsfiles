@@ -1,0 +1,11 @@
+html,body{min-width:1280px;}
+body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
+body{
+    padding-top: 220px;
+    background: url(../ztimages/zt-bg8.jpg) center 0 no-repeat;
+}
+h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
+a{text-decoration: none;cursor: pointer;}
+.clearfix:before,
+.clearfix:after{display: table;content: " ";}
+.clearfix:after{clear: both;}

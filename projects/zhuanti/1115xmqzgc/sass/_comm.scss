@@ -1,0 +1,147 @@
+$mpath:'http://image.gamersky.com/webimg13/zhuanti/xmqzgc/';
+$basewidth:1000px;
+@import 'csprite';
+@import './scsslib/tcss/tcss';
+@import './scsslib/baidushare/bds6';
+html,body{min-width:1280px;}
+body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
+h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
+a{text-decoration: none;cursor: pointer;}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after{display: table;content: " ";}
+.clearfix:after,
+.container:after{clear: both;}
+.container{margin-right: auto;margin-left: auto;width: $basewidth;}
+.zt-section{margin: 0;padding: 0;overflow: hidden;width: 100%;min-width:$basewidth;}
+//头部
+.QZnav {min-width:$basewidth;}
+.QZnav .topbar {width:$basewidth;}
+.QZnav .QZ-nav {display: none;}
+//底部
+.Bot{
+	width:100%; min-width:$basewidth; height:155px; 
+	background:#111;font-size: 14px;
+	.Copyright {
+		margin:0 auto;padding-top:50px; 
+		width:$basewidth;height:auto;line-height:30px;
+		text-align:center; color:#555;
+		a{
+			margin:0 5px; color:#555;
+			&:hover {color:#777;}
+		}
+	}	
+}
+
+//弹层
+.gsPopupMask{
+	position: fixed;z-index: 99998;top: 0;left: 0;
+	width: 100%;height: 100%;
+	background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;
+	opacity: 0;
+	visibility: hidden;
+    transition: all 0.25s ease;
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.gsPopup{
+	z-index: 99999;
+	opacity: 0;
+	visibility: hidden;
+    transition: all 0.25s ease;
+	.gsPopupCon{
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		img{
+			display: block;
+		}
+		video{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.gsPopupClose{
+		position: absolute;top:0;right:-50px;overflow: hidden;
+		width: 38px;height: 38px;
+		background:url(http://image.gamersky.com/webimg13/zhuanti/common/gsPopupClose.png) 5px 5px no-repeat;
+		&:hover{background-position: -33px 5px;}
+	}
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.ztSldWarp{
+	position: relative;
+	width: 1000px;
+	height: 500px;
+	.ztSld{
+		position: relative;
+		margin: 0 auto;
+		width: 859px;
+		height: 464px;
+		border: 4px solid #55b5ff;
+		.ztSldCon{
+			li{
+				width: 859px;
+				height: 464px;
+				img{
+					display: block;
+					width: 859px;
+					height: 464px;
+				}
+			}
+		}
+	}
+	.ztSldArr{
+		display: block;
+		position: absolute;
+		top: 203px;
+		opacity: 0.7;
+		filter:alpha(opacity=70);
+		&:hover{
+			opacity: 1;
+			filter:alpha(opacity=100);
+		}
+		&.ztSldArrP{
+			left: 0;
+			@include sprite($sld-arr-l);
+		}
+		&.ztSldArrN{
+			right: 0;
+			@include sprite($sld-arr-r);
+		}
+	}
+	.ztSldNav{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 8px;
+		font-size: 0;
+		text-align: center;
+		li{
+			cursor: pointer;
+			margin: 0 4px;
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			width: 8px;
+			height: 8px;
+			background-color: #80d5ff;
+			opacity: 0.5;
+			filter:alpha(opacity=50);
+			transition:all 0.25s ease;
+			&.cur{
+				width: 20px;
+				opacity: 1;
+				filter:alpha(opacity=100);
+			}
+		}
+	}
+}

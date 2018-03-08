@@ -1,0 +1,34 @@
+var fakeLikeData = {
+    "someval":"后端自定义的一些参数",
+    "dataType":"ok",
+    "page":2,
+    "sumcount":5,
+    "cardid":48965,
+    "likelist":[
+        {
+            "likeid":6878,
+            "head":"http://image.gamersky.com/avatar/original/animal/animal009.jpg",
+            "name":"杰罗姆惋庭"
+        },
+        {
+            "likeid":6878,
+            "head":"http://image.gamersky.com/avatar/original/alien/alien030.jpg",
+            "name":"天磊依秋"
+        },
+        {
+            "likeid":6878,
+            "head":"http://image.gamersky.com/avatar/original/game/game177.jpg",
+            "name":"战术大米"
+        },
+        {
+            "likeid":6878,
+            "head":"http://image.gamersky.com/avatar/original/game/game277.jpg",
+            "name":"海的声音"
+        },
+        {
+            "likeid":6878,
+            "head":"http://image.gamersky.com/avatar/original/anime/anime344.jpg",
+            "name":"丹萱伊莲恩"
+        }
+    ]
+};

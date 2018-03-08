@@ -1,0 +1,11 @@
+.clearfix:before, .clearfix:after { display: table; content: " "; }
+
+.clearfix:after { clear: both; }
+
+.tarVidep { display: block; width: 100%; }
+
+.container { width: 400px; height: 300px; }
+
+.myCanvas { position: absolute; }
+
+.play { position: absolute; top: 0; left: 0; z-index: 10; display: block; width: 100px; height: 100px; line-height: 100px; text-align: center; background-color: #eee; font-size: 20px; }

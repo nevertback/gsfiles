@@ -1,0 +1,251 @@
+$mpath:'http://image.gamersky.com/webimg13/zhuanti/wqj2017/yr/pc/';
+$basewidth:1200px;
+@import 'csprite';
+@import './scsslib/tcss/tcss';
+html,body{min-width:1280px;}
+body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
+h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
+a{text-decoration: none;cursor: pointer;}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after{display: table;content: " ";}
+.clearfix:after,
+.container:after{clear: both;}
+.container{margin-right: auto;margin-left: auto;width: $basewidth;}
+.zt-section{margin: 0;padding: 0;overflow: hidden;width: 100%;min-width:$basewidth;}
+//头部
+.QZnav {min-width:$basewidth;}
+.QZnav .topbar {width:$basewidth;}
+.QZnav .QZ-nav {display: none;}
+//底部
+.Bot{
+	width:100%; min-width:$basewidth; height:155px; 
+	background:#111;font-size: 14px;
+	.Copyright {
+		margin:0 auto;padding-top:50px; 
+		width:$basewidth;height:auto;line-height:30px;
+		text-align:center; color:#555;
+		a{
+			margin:0 5px; color:#555;
+			&:hover {color:#777;}
+		}
+	}	
+}
+.bdsharewrap.bdstyle-c{
+	width:152px;height:20px;
+	overflow: hidden;
+	.bdsharebuttonbox {
+		width:800px; height:20px;
+		&:after,&.before{
+			display:table;content:" ";
+		}
+		&:after{clear:both}
+		a {
+			float:left;
+			padding:0;
+			margin: 0;
+			margin-right: 24px;
+			&.bds_sqq	{@include sprite($bd-qq);}
+			&.bds_weixin {@include sprite($bd-wx);}
+			&.bds_tsina {@include sprite($bd-wb);}
+			&.bds_qzone {@include sprite($bd-qz);}
+		}
+	}
+}
+.nums{
+	display: block;
+	width: 38px;
+	height: 60px;
+	background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/yr/pc/nums.png) 0 0 no-repeat;
+	@for $i from 0 through 9{
+		&.num#{$i}{background-position: -48px*$i 0;}
+	}
+}
+.sc-icons{
+	display: block;
+	&.sc-yunshi{@include sprite($sc-yunshi)}
+	&.sc-gstar{@include sprite($sc-gstar)}
+	&.sc-cell{
+		@include sprite($sc-cell);
+		transform-origin: 50% 0;
+		animation: scCell 3s ease-in-out infinite;
+	}
+	&.sc-star{@include sprite($sc-star)}
+	&.sc-x{@include sprite($sc-x)}
+	&.sc-db3{@include sprite($sc-db3)}
+	&.sc-dbx{@include sprite($sc-dbx)}
+	&.sc-db4{@include sprite($sc-db4)}
+	&.sc-bkb{
+		@include sprite($sc-bkb);
+		animation: scRotate 6s linear infinite;
+	}
+	&.sc-cdr1{@include sprite($sc-cdr1)}
+	&.sc-cdr2{
+		@include sprite($sc-cdr2);
+		transform-origin: 100% 0;
+		animation: scCdr 1s ease-in infinite;
+	}
+	&.sc-mla{
+		@include sprite($sc-mla);
+		animation: scMla 3s ease-in-out infinite;
+	}
+	&.sc-moon{@include sprite($sc-moon)}
+	&.sc-jzt1{@include sprite($sc-jzt1)}
+	&.sc-jdqs{
+		@include sprite($sc-jdqs);
+		transform-origin: 100% 0;
+		animation: scJdqs 2s linear infinite;
+	}
+	&.sc-jxs{@include sprite($sc-jxs)}
+	&.sc-jzt2{@include sprite($sc-jzt2)}
+	&.sc-ts{@include sprite($sc-ts)}
+	&.sc-house{@include sprite($sc-house);}
+	&.sc-syq{
+		@include sprite($sc-syq);
+		animation: scLr2 8s linear infinite;
+	}
+	&.sc-sea1{
+		@include sprite($sc-sea1);
+		animation: scLrwd 4s ease-in-out infinite;
+	}
+	&.sc-sea2{
+		@include sprite($sc-sea2);
+	}
+	&.sc-cbt{
+		@include sprite($sc-cbt);
+		animation: scLr1 2s ease-in-out infinite;
+	}
+	&.sc-sed{
+		@include sprite($sc-sed);
+		animation: scJump 1s ease-in-out infinite;
+	}
+	&.sc-bg{@include sprite($sc-bg);}
+}
+.pinned{
+	position: fixed;
+	left: 50%;
+	margin-left: -1px;
+	bottom: 0;
+	width: 2px;
+	height: 60px;
+	background-color: #757678;
+	i{
+		display: block;
+		width: 2px;
+		height: 0;
+		background-color: #fff;
+		transform-origin: 0 0;
+		animation: tipsAnim 1s ease-in-out infinite;
+	}
+}
+.btn-def{
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background-color: #f2a02c;
+    &:hover{
+        background-color: #feb650;
+    }
+}
+.cooper-pop-mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999998;
+    width: 100%;
+    height: 100%;
+    background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+	opacity: 0;
+	visibility: hidden;
+	transition:all 0.25s ease;
+	&.cur{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.cooper-pop-main{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -230px;
+    margin-top: -270px;
+    z-index: 999999;
+    width: 460px;
+    height: 540px;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    *border: 1px solid #3a3b3d;
+	opacity: 0;
+	visibility: hidden;
+	transition:all 0.25s ease;
+	transform-origin: 50% 0;
+	transform:translate3d(0,-30px,0);
+	&.cur{
+		opacity: 1;
+		visibility: visible;
+		transform:translate3d(0,0,0);
+	}
+    .cp-con{
+        padding: 20px 50px 0;
+        h5{
+            margin-bottom: 10px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 22px;
+            color: #444;
+            text-align: center;
+        }
+		.cp-row{
+			position: relative;
+			margin: 0 auto 17px;
+			padding: 5px 15px;
+			width: 328px;
+			height: 32px;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			&.error{
+				border-color: #f2a02c;
+			}
+			&.last{
+				margin-bottom: 28px;
+			}
+			input{
+				position: relative;
+				display: block;
+				width: 328px;
+				height: 30px;
+				line-height: 30px;
+				border: none;
+				background: none;
+				outline: 0;
+				font-size: 14px;
+				color: #333;
+			}
+			.tips{
+				position: absolute;
+				left: 15px;
+				top: 10px;
+				width: 100px;
+				height: 20px;
+				line-height: 20px;
+				color: #888;
+				font-size: 14px;
+				white-space: nowrap;
+				&.cur{
+					left: 100%;
+					margin-left: -115px;
+					text-align: right;
+					color: #f2a02c;
+				}
+			}
+		}
+        a{
+            margin: 0 auto 0;
+        }
+    }
+}

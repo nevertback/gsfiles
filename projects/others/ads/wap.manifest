@@ -1,0 +1,19 @@
+CACHE MANIFEST
+# 2018-01-09 v0.0.7
+http://j.gamersky.com/g/swiper.min.css
+http://j.gamersky.com/wap/css/new/ymwap-main.css
+http://j.gamersky.com/wap/css/new/oldstyle.css
+http://j.gamersky.com/g/jquery-1.8.3.js
+http://j.gamersky.com/g/touch-0.2.14.min.js
+http://j.gamersky.com/web2015/js/lyz.delayLoading.min.js
+http://j.gamersky.com/g/swiper-3.3.1.jquery.min.js
+http://j.gamersky.com/wap/js/new/gamersky.mobile.v4.min.js
+http://j.gamersky.com/shouyou/z/js/booklayer.js
+http://j.gamersky.com/wap/js/new/ymw.others.2017.js
+http://i.gamersky.com/js/removeCookie.js
+/js/main.js
+
+NETWORK:
+*
+
+FALLBACK:

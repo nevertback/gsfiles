@@ -1,0 +1,55 @@
+.clearfix:before, .clearfix:after { display: table; content: " "; }
+
+.clearfix:after { clear: both; }
+
+* { -webkit-tap-highlight-color: transparent; }
+
+h1, h2, h3, h4, h5, h6, p, ul, li { margin: 0; padding: 0; }
+
+ul, dl, ol { list-style: none; }
+
+button { display: block; border: none; }
+
+@-webkit-keyframes volAnim { 0% { -webkit-transform: scale(1, 1); transform: scale(1, 1); }
+  50% { -webkit-transform: scale(0.9, 0.8); transform: scale(0.9, 0.8); }
+  100% { -webkit-transform: scale(1, 1); transform: scale(1, 1); } }
+
+@keyframes volAnim { 0% { -webkit-transform: scale(1, 1); transform: scale(1, 1); }
+  50% { -webkit-transform: scale(0.9, 0.8); transform: scale(0.9, 0.8); }
+  100% { -webkit-transform: scale(1, 1); transform: scale(1, 1); } }
+
+@-webkit-keyframes mpTipsAnim { to { -webkit-transform: translate(0, 0.05rem); transform: translate(0, 0.05rem); } }
+
+@keyframes mpTipsAnim { to { -webkit-transform: translate(0, 0.05rem); transform: translate(0, 0.05rem); } }
+
+html, body { position: relative; width: 100%; overflow: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+
+body { font-size: 0.2rem; }
+
+h1, h2, h3, h4, h5, p, ul { margin: 0; padding: 0; list-style: none; }
+
+a { text-decoration: none; -webkit-tap-highlight-color: transparent; }
+
+.clearfix:before, .clearfix:after { display: table; content: " "; }
+
+.clearfix:after { clear: both; }
+
+.sound-effect { display: none; }
+
+.wrap { margin: 0 auto; width: 7.2rem; }
+
+#loading { position: fixed; left: 0; top: 0; z-index: 99998; width: 100%; height: 100%; background-color: #000; }
+
+#loadingAnim { position: fixed; left: 50%; top: 50%; margin-left: -1.8rem; margin-top: -1rem; z-index: 99999; width: 3.6rem; height: 2rem; }
+
+#loadingAnim .loadingtit { width: 100%; height: 0.5rem; line-height: 0.5rem; font-size: 0.3rem; color: #999; text-align: center; }
+
+#loadingAnim .loadingtxt { width: 100%; height: 0.8rem; line-height: 0.8rem; font-size: 0.6rem; color: #fff; text-align: center; }
+
+#loadingAnim .loadingAnim-img-wrap { position: absolute; left: 0.8rem; top: 1.5rem; width: 2rem; height: 1px; }
+
+#loadingAnim .loadingAnim-img-wrap .loadingAnim-img { position: absolute; right: 0; top: 0; width: 100%; height: 1px; background-color: #000; }
+
+#loadingAnim .loadingAnim-img-wrap .loadingAnim-img-g { position: absolute; right: 0; top: 0; width: 100%; height: 1px; background-color: #fff; }
+
+.main { background: url(../ztimages/bg-long.jpg) 0 0 no-repeat; -webkit-background-size: 100% auto; background-size: 100% auto; }

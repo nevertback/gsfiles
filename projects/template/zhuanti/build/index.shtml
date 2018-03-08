@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="format-detection" content="telephone=no">
+	<title>网页标题</title>
+	<meta name="keywords" content="关键词">
+	<meta name="description" content="网页描述">
+	<meta itemprop="name" content="网页标题" />
+	<meta itemprop="image" content="ztimages/350.jpg" />
+	<link href="http://j.gamersky.com/g/normalize.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="http://j.gamersky.com/web2015/css/QZnav.css" />
+	<style>.Bot,body{font-size:14px}.bdsharewrap.bdstyle-c .bdsharebuttonbox:after,.clearfix:after,.container:after{clear:both}body,html{min-width:1280px}.Bot,.QZnav,.zt-section{min-width:1100px}body{font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif}h1,h2,h3,h4,h5,p,ul{margin:0;padding:0;list-style:none}a{text-decoration:none;cursor:pointer}.bdsharewrap.bdstyle-c .bdsharebuttonbox.before,.bdsharewrap.bdstyle-c .bdsharebuttonbox:after,.clearfix:after,.clearfix:before,.container:after,.container:before{display:table;content:" "}.container{margin-right:auto;margin-left:auto;width:1100px}.zt-section{margin:0;padding:0;overflow:hidden;width:100%}.QZnav .topbar{width:1100px}.QZnav .QZ-nav{display:none}.Bot{width:100%;height:155px;background:#111}.Bot .Copyright{margin:0 auto;padding-top:50px;width:1100px;height:auto;line-height:30px;text-align:center;color:#555}.Bot .Copyright a{margin:0 5px;color:#555}.Bot .Copyright a:hover{color:#777}.gsPopup,.gsPopupMask{opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}.gsPopupMask{position:fixed;top:0;left:0;width:100%;height:100%;background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png);z-index:99998}.gsPopupMask.cur{opacity:1;visibility:visible}.gsPopup{z-index:99999}.fixednav li a,.gsPopup .gsPopupCon{width:100%;height:100%;background-color:#000}.gsPopup .gsPopupCon img{display:block}.gsPopup .gsPopupCon video{display:block;width:100%;height:100%}.gsPopup .gsPopupClose{position:absolute;top:0;right:-50px;overflow:hidden;width:38px;height:38px;background:url(http://image.gamersky.com/webimg13/zhuanti/common/gsPopupClose.png) 5px 5px no-repeat}.gsPopup .gsPopupClose:hover{background-position:-33px 5px}.gsPopup.cur{opacity:1;visibility:visible}.fixednav{display:none;position:fixed;right:38px;top:50%;margin-top:-75px;z-index:999}.fixednav li,.fixednav.cur{display:block}.fixednav li{margin-bottom:25px;width:10px;height:10px}.fixednav li a{display:block;width:10px;height:10px;border-radius:100%}.fixednav li a.cur,.fixednav li a:hover{background-color:#f33}.bdsharewrap.bdstyle-c{width:242px;height:36px;overflow:hidden}.bdsharewrap.bdstyle-c .bdsharebuttonbox{width:800px;height:36px;*font-size:0}.bdsharewrap.bdstyle-c .bdsharebuttonbox a{float:left;margin:0 4px 0 0;padding:0;display:inline-block;*display:inline;*zoom:1;width:37px;height:36px;background:url(http://image.gamersky.com/webimg13/zhuanti/cf8zn/fx.png) no-repeat}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tsina{background-position:0 0}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_weixin{background-position:-40px 0}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_qzone{background-position:-80px 0}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_renren{background-position:-121px 0}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_sqq{background-position:-161px 0}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_count{background-position:-200px 0;text-indent:9999px;white-space:nowrap;overflow:hidden}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_douban,.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_more,.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tieba{display:none}.zt-section1{height:400px;background:url(../ztimages/zt-bg1.jpg) center 0 no-repeat}.zt-section1 .container{position:relative}.zt-section1 .container .bdsharewrap.bdstyle-c{position:absolute;top:30px;right:0}.zt-section1 .container .logo_gs{display:block;position:absolute;left:0;top:24px;width:139px;height:47px;background:url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-white2.png) no-repeat}.zt-section1 .container .logo_gf{display:block;position:absolute;left:160px;top:30px;background-image:url(../ztimages/csprite.png);background-position:0 0;width:138px;height:44px}.zt-section2{height:400px;background:url(../ztimages/zt-bg2.jpg) center 0 no-repeat}.zt-section3{height:400px;background:url(../ztimages/zt-bg3.jpg) center 0 no-repeat}.zt-section4{height:400px;background:url(../ztimages/zt-bg4.jpg) center 0 no-repeat}.zt-section5{height:400px;background:url(../ztimages/zt-bg5.jpg) center 0 no-repeat}.zt-sectionComm{padding-bottom:30px;height:auto}.zt-sectionComm .container{position:relative;padding-top:86px;width:1100px}.zt-sectionComm .container .line{display:block;margin-bottom:10px;position:relative;width:100%;height:1px;background-color:#cecece}.zt-sectionComm .container .line span{display:block;position:absolute;left:0;top:-2px;width:65px;height:5px;background-color:#e13800}.zt-sectionComm .container h4{margin:0 0 20px;height:48px;line-height:48px;font-size:30px;color:#e23500;font-weight:700}</style>
+	<script type="text/javascript" src="http://j.gamersky.com/g/jquery-1.8.3.js"></script>
+	<!-- 创建时间：20171114 设计：Hiei133 Drakedooog 大冰 ONE像素 前端：MrrrTian -->
+</head>
+<body>
+<!-- 全站导航 -->
+<script type="text/javascript" src="http://www.gamersky.com/autoinc/allsite/allsite_nav_js.htm"></script>
+<!-- 分享用 -->
+<div style="width:0;height:0;overflow:hidden">
+	<h3>网页标题</h3>
+	<p>网页描述</p>
+	<img src="ztimages/350.jpg" alt="网页标题">
+</div>
+<!-- 分享用 end-->
+<div id="section1" class="zt-section zt-section1">
+	<div class="container">
+		<a target="_blank" href="http://www.gamersky.com/" class="logo_gs"></a>
+		<a target="_blank" href="" class="logo_gf"></a>
+		<!-- 百度分享 -->
+<div class="bdsharewrap bdstyle-c">
+	<div class="bdsharebuttonbox bdshare-button-style0-16" data-tag="share_1" data-bd-bind="1446461622481">
+		<a class="bdicons bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+		<a class="bdicons bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+		<a class="bdicons bds_sqq" data-cmd="sqq" title="分享到QQ"></a>
+		<a class="bdicons bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+		<a class="bdicons bds_tieba" data-cmd="tieba" title="分享到贴吧"></a>
+		<a class="bdicons bds_renren" data-cmd="renren" title="分享到人人"></a>
+		<a class="bdicons bds_douban" data-cmd="douban" title="分享到豆瓣"></a>
+		<a class="bdicons bds_more" data-cmd="more"></a>
+		<a class="bds_count" data-cmd="count" title=""></a>
+	</div>
+</div>
+<!-- 百度分享 end-->
+	</div>
+</div>
+<div id="section2" class="zt-section zt-section2">
+	<div class="container">
+        <img src="ztimages/logo1.png" alt="pics">
+        <a class="popupBtn" data-sty="video_tgs" data-sid="w0394vtbfkt" data-w="800" data-h="500">打开视频弹层</a>
+        <a class="popupBtn" data-sty="pics" data-sid="http://img1.gamersky.com/image2017/04/20170420_lmh_241_6/gamersky_02origin_03_20174201353B73.jpg" data-w="800" data-h="500">打开图片弹层</a>
+        <a class="popupBtn" data-sty="custom" data-sid=".logopic" data-w="800" data-h="500">打开自定义弹层</a></div>
+</div>
+<div id="section3" class="zt-section zt-section3"></div>
+<div id="section4" class="zt-section zt-section4"></div>
+<div id="section5" class="zt-section zt-section5"></div>
+<div id="sectionComm" class="zt-section zt-sectionComm">
+	<div class="container">
+		<h4 class="ztTitle">网友评论</h4>
+		<div class="line"><span></span></div>
+		<!--加载畅言Comment E-->
+		<div class="Comment commmentStyBai">
+			<div id="SOHUCS" sid="512179"></div>
+		</div>
+	</div>
+</div>
+<!-- Bot -->
+<div class="Bot">
+	<script type="text/javascript" src="http://www.gamersky.com/autoinc/allsite/allsite_copyright_2_js.htm"></script>
+</div>
+<!--Bot end-->
+<!-- 浮动导航 -->
+<ul id="fixednav" class="fixednav">
+	<li><a class="" data-to="#section1" data-off="36"></a></li>
+	<li><a class="" data-to="#section2"></a></li>
+	<li><a class="" data-to="#section3"></a></li>
+	<li><a class="" data-to="#section4"></a></li>
+	<li><a class="" data-to="#section5"></a></li>
+	<li><a class="" data-to="#sectionComm"></a></li>
+</ul>
+<!-- 浮动导航 end-->
+<span id="countn" generalId="512179" style="display:none;"></span>
+<!-- 加载页面JS -->
+<script type="text/javascript" src="http://j.gamersky.com/g/jquery.gamersky.v4.min.js"></script>
+<script src="http://j.gamersky.com/g/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">"use strict";var _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};!function(t){t.fn.gsPopup=function(s){function o(s,o){var e;switch(o){case"video_tgs":return e='<embed wmode="direct" flashvars="vid='+s+'&amp;tpid=0&amp;showend=1&amp;showcfg=1&amp;searchbar=1&amp;skin=http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf&amp;shownext=1&amp;list=2&amp;autoplay=1" src="http://imgcache.qq.com/tencentvideo_v1/player/TPout.swf?max_age=86400&amp;v=20140714" quality="high" name="tenvideo_flash_player_1492679771297" id="tenvideo_flash_player_1492679771297" bgcolor="#000000" width="100%" height="100%" align="middle" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/cn/flashplayer/">';case"video_yk":return e='<embed height="100%" flashvars="isAutoPlay=true" allowscriptaccess="sameDomain" width="100%" align="middle" quality="high" invokeurls="false" src="http://player.youku.com/player.php/sid/'+s+'/v.swf" type="application/x-shockwave-flash" wmode="transparent">';case"video_other":return e=s;case"pics":return e='<img src="'+s+'" alt="popimgs" width="100%" height="100%">';case"custom":return e=t(s)[0].outerHTML,console.log(e),e}}function e(s){var e="";e+='<div id="gsPopupMask" class="gsPopupMask"></div>',e+='<div id="gsPopup" class="gsPopup" style="',e+=s.style,e+='"><div class="gsPopupCon">',e+=o(s.sid,s.sty),e+='</div><a  class="gsPopupClose" id="gsPopupClose"></a></div>',t("body").append(e),r=setTimeout(function(){t("#gsPopupMask").addClass("cur"),t("#gsPopup").addClass("cur")},10)}function i(){clearTimeout(r),t("#gsPopupMask").removeClass("cur"),t("#gsPopup").removeClass("cur"),n=setTimeout(function(){t("#gsPopupMask").remove(),t("#gsPopup").remove()},150)}function a(){t("#gsPopupClose").on("click",i),t("#gsPopupMask").on("click",i)}var n,r,l={afterOpen:""},c=t.extend(l,s),p=t(this);p.on("click",function(){clearTimeout(n);var s,o=t(this),i=o.data("w"),r=o.data("h"),l=t(window).height(),p={pos:"fixed",width:i,height:r,sid:o.data("sid"),sty:o.data("sty")};s="width:"+p.width+"px;height:"+p.height+"px;",p.style="position:"+p.pos+";top:50%;left:50%;margin-left:-"+p.width/2+"px;margin-top:-"+p.height/2+"px;"+s,r>l&&(p.pos="absolute",p.style="position:"+p.pos+";top:"+o.offset().top+"px;left:50%;margin-left:-"+p.width/2+"px;"+s),e(p),a(),"function"==typeof c.afterOpen&&c.afterOpen()})}}(jQuery),$(".popupBtn").gsPopup(),function(t){var s={fnavA:function(s,o,e){function i(){var i=t(window).width();i>e?t("body").scrollTop()>o&&t(s).addClass("cur"):t(s).removeClass("cur")}!function(t){function i(s,o){var e,i=t.proxy(this.process,this),a=t(t(s).is("body")?window:s);this.options=t.extend({},t.fn.scrollspy.defaults,o),this.$scrollElement=a.on("scroll.scroll-spy.data-api",i),this.selector=(this.options.target||(e=t(s).attr("data-to"))&&e.replace(/.*(?=#[^\s]+$)/,"")||"")+" li>a",this.$body=t("body"),this.refresh(),this.process()}i.prototype={constructor:i,refresh:function(){var s,o=this;this.offsets=t([]),this.targets=t([]),s=this.$body.find(this.selector).map(function(){var s=t(this),e=s.data("to"),i=/^#\w/.test(e)&&t(e);return i&&i.length&&[[i.position().top+(!t.isWindow(o.$scrollElement.get(0))&&o.$scrollElement.scrollTop()),e]]||null}).sort(function(t,s){return t[0]-s[0]}).each(function(){o.offsets.push(this[0]),o.targets.push(this[1])})},process:function(){var i,a=this.$scrollElement.scrollTop()+this.options.offset,n=this.$scrollElement[0].scrollHeight||this.$body[0].scrollHeight,r=n-this.$scrollElement.height(),l=this.offsets,c=this.targets,p=this.activeTarget,u=t(window).width();if(a>=r)return p!=(i=c.last()[0])&&this.activate(i);for(i=l.length;i--;)p!=c[i]&&a>=l[i]&&(!l[i+1]||a<=l[i+1])&&this.activate(c[i]);a>=o&&u>e?t(s).addClass("cur"):t(s).removeClass("cur")},activate:function(s){var o,e;this.activeTarget=s,t(this.selector).removeClass("cur"),e=this.selector+s+","+this.selector+'[data-to="'+s+'"]',o=t(e).addClass("cur"),o.trigger("activate")}};var a=t.fn.scrollspy;t.fn.scrollspy=function(s){return this.each(function(){var o=t(this),e=o.data("scrollspy"),a="object"==("undefined"==typeof s?"undefined":_typeof(s))&&s;e||o.data("scrollspy",e=new i(this,a)),"string"==typeof s&&e[s]()})},t.fn.scrollspy.Constructor=i,t.fn.scrollspy.defaults={offset:36},t.fn.scrollspy.noConflict=function(){return t.fn.scrollspy=a,this},t(window).on("load",function(){t("body").each(function(){var o=t(this);o.scrollspy({target:s})})})}(window.jQuery),t(s).find("a").on("click",function(s){if(!s||!s.preventDefault)return window.event.returnValue=!1,!1;s.preventDefault();var o=t(this).data("to"),e=t(this).data("off")||0;t("html,body").animate({scrollTop:t(o).offset().top-e},400)}),t(window).resize(i)}};s.fnavA("#fixednav",100,1350)}(jQuery);</script>
+<script>
+    //百度
+    window._bd_share_config = {
+        common: {
+            bdText: '网页标题',
+            bdDesc: '网页描述',
+            bdPic: 'ztimages/350.jpg'
+        },
+        share: [{
+            "bdSize": 16
+        }]
+    }
+    with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+    // 评论
+    (function() {
+        var doc = document,
+            s = doc.createElement('script'),
+            h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+        s.type = 'text/javascript';
+        s.charset = 'utf-8';
+        s.src = 'http://j.gamersky.com/web2015/comment/js/commentconfig.js';
+        h.insertBefore(s, h.firstChild);
+        window.SCS_NO_IFRAME = true;
+    })()
+</script>
+<!-- 加载页面JS end-->
+<div style="display:none">
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdcb5060fba0123ff56d253331f28db6a' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</div>
+</body>
+</html>

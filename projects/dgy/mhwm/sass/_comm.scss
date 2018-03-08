@@ -1,0 +1,533 @@
+@import 'csprite';
+@import 'libs';
+@import 'anim';
+html,body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
+h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
+a{text-decoration: none;-webkit-tap-highlight-color: transparent;cursor: pointer;}
+.clearfix:before,
+.clearfix:after{display: table;content: " ";}
+.clearfix:after{clear: both;}
+.sound-effect{
+	display: none;
+}
+.wrap{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.main{
+	transform-origin: 0 0;
+	background-color: #000;
+}
+.rt-handbook{
+	display: none;
+	position: absolute;
+	z-index: 8;
+	left: 50%;
+	top: 50%;
+	margin-left: 3.77rem;
+	margin-top: -3.21rem;
+	@include sprite($handbook);
+	&.cur{
+		display: block;
+	}
+}
+.rt-vol{
+	display: block;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: 50%;
+	margin-left: 4.25rem;
+	margin-top: -3.21rem;
+	width: 0.16rem;
+	height: 0.32rem;
+	background: url(../ztimages/vol.png) 0 0 no-repeat;
+	background-size: 100%;
+	&:after{
+		display: block;
+		position: absolute;
+		left: 0.18rem;
+		top: 0.06rem;
+		content: '';
+		width: 0.12rem;
+		height: 0.2rem;
+		background: url(../ztimages/vol-anim.png) 0 0 no-repeat;
+		background-size: 100%;
+		animation: volAnim 0.6s ease infinite;
+		transform-origin: 0 50%;
+	}
+	&.volPause{
+		&:after{
+			display: none;
+		}
+	}
+}
+.pages{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition:all 0.5s ease;
+	&.cur{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+.page-cells{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	.page-bg{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.page-safe{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 10.22rem;
+		height: 6.41rem;
+		transform:translate(-50%,-50%);
+	}
+}
+.icon-tit{
+	display: block;
+	&.icon-tit1{@include sprite($icon-tit1)}
+	&.icon-tit2{@include sprite($icon-tit2)}
+	&.icon-tit3{@include sprite($icon-tit3)}
+	&.icon-tit4{@include sprite($icon-tit4)}
+	&.icon-tit5{@include sprite($icon-tit5)}
+	&.icon-tit6{@include sprite($icon-tit6)}
+	&.icon-tit7{@include sprite($icon-tit7)}
+	&.icon-tit8{@include sprite($icon-tit8)}
+	&.icon-tit9{@include sprite($icon-tit9)}
+}
+.page-tit{
+	width: 3.89rem;
+	height: 0.88rem;
+	background: url(../ztimages/title-bg.png) 0 0 no-repeat;
+	background-size: 100%;
+	@include flexbox;
+	@include ConCen;
+	i.icon-tit{
+		margin-top: 0.08rem;
+	}
+}
+
+.btn-pic{
+	display: block;
+	position: relative;
+	width: 2.38rem;
+	height: 0.56rem;
+	background: url(../ztimages/btn-pic.png) 0 0 no-repeat;
+	background-size: 100%;
+	span{
+		display: block;
+		position: absolute;
+		left: 0.53rem;
+		top: 0;
+		height: 0.56rem;
+		line-height: 0.56rem;
+		font-size: 0.2rem;
+		color: #e1ff9a;
+		text-shadow: 0 0 0.05rem #000;
+		white-space: nowrap;
+	}
+	i.icons{
+		position: absolute;
+		display: block;
+		left: -0.64rem;
+		top: -0.33rem;
+	}
+	&.btn-pic1 i.icons{@include sprite($bp1);}
+	&.btn-pic2 i.icons{@include sprite($bp2);}
+	&.btn-pic3 i.icons{@include sprite($bp3);}
+	&.btn-pic4 i.icons{@include sprite($bp4);}
+}
+.btn-back{
+	display: block;
+	position: absolute;
+	left: 0.5rem;
+	top: 0.57rem;
+	@include sprite($btn-back);
+}
+.page-room{
+	position: absolute;
+	left: 0.05rem;
+	top: 0.51rem;
+	width: 10.13rem;
+	height: 5.84rem;
+	background: url(../ztimages/safe-room.png) 0 0 no-repeat;
+	background-size: 100%;
+	.page-pbg{
+		display: block;
+		position: absolute;
+		left: 0.13rem;
+		top: 0.14rem;
+		width: 9.85rem;
+		height: 5.54rem;
+	}
+	.page-room-top{
+		position: absolute;
+		top: -0.32rem;
+		left: 0;
+		width: 10.25rem;
+		height: 0.55rem;
+		background: url(../ztimages/safe-room-top.png) 0 0 no-repeat;
+		background-size: 100%;
+	}
+	.page-tit{
+		position: absolute;
+		top: -0.57rem;
+		left: 3.2rem;
+	}
+}
+
+.rt-nav{
+	display: block;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: 50%;
+	margin-left: 4.73rem;
+	margin-top: -3.20rem;
+	width: 0.3rem;
+	height: 0.31rem;
+	background: url(../ztimages/nav.png) 0 0 no-repeat;
+	background-size: 100%;
+	&:after{
+		display: none;
+		content: '';
+		background-image: url(../ztimages/nav-close.png);
+	}
+	&.cur{
+		background-image: url(../ztimages/nav-close.png);
+	}
+}
+.nav-pop{
+	position: absolute;
+	z-index: 9;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition:all 0.25s ease;
+	transform:translate(0,-1rem);
+	.nav-bg{
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&.cur{
+		opacity: 1;
+		visibility: visible;
+		transform:translate(0,0);
+	}
+	.fma-box{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -5.11rem;
+		width: 10.22rem;
+		transform:translate(0,-50%);
+		.fma-row{
+			position: relative;
+			height: 0.78rem;
+			line-height: 0.78rem;
+			@include flexbox;
+			a{
+				color: #fff;
+				&.cur{
+					color: #cfee1d;
+				}
+			}
+			i{
+				display: block;
+				left: 50%;
+				bottom: 0;
+                margin-left: -0.8rem;
+				position: absolute;
+				width: 1.6rem;
+				height: 1px;
+				background-color: rgba(255,255,255,0.3);
+			}
+			.fma-lev1{
+                margin: 0 auto;
+				width: 1.6rem;
+                text-align: center;
+				a{
+					height: 0.78rem;
+					line-height: 0.77rem;
+					font-size: 0.36rem;
+					font-weight: bold;
+				}
+			}
+			.fma-lev2{
+				@include flexbox;
+                display: none;
+				a{
+					font-size: 0.24rem;
+				}
+				span{
+					margin: 0 0.15rem;
+					font-size: 0.24rem;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+.swp-arr{
+    display: block;
+    &.swp-arr-l{@include sprite($swp-arr-l)}
+    &.swp-arr-r{@include sprite($swp-arr-r)}
+}
+.page-comment{
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+	z-index: 100;
+	transform-origin: 0 0;
+	.commentClose{
+		display: block;
+		position: absolute;
+		z-index: 101;
+		bottom: 80px;
+		left: 50%;
+		margin-left: -33.5px;
+		width: 67px;
+		height: 67px;
+		background: url(../ztimages/comment-close.png) 0 0 no-repeat;
+	}
+	.page-comment-con{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		overflow-y: auto;
+		transition:all 0.25s ease;
+		opacity: 0;
+		transform:translate(0,50px);
+	}
+	&.cur{
+		visibility: visible;
+		.page-comment-con{
+			opacity: 1;
+			transform:translate(0,0);
+		}
+	}
+}
+.pg-pop-mask{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 90;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.9);
+}
+.pg-pop-main{
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 91;
+	.pg-pop-close{
+		display: block;
+		position: absolute;
+        z-index: 92;
+		width: 1rem;
+		height: 1rem;
+		background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+	}
+}
+.pop-ms{
+	margin-left: -5.94rem;
+	margin-top: -3.69rem;
+	width: 13.38rem;
+	height: 7.64rem;
+	&.pop-ms1{
+		background: url(../ztimages/ms-pop1.png) 0 0 no-repeat;
+		background-size: 100%;
+		.pg-pop-close{left: 7.63rem;top: 2rem;}
+	}
+	&.pop-ms2{
+		background: url(../ztimages/ms-pop2.png) 0 0 no-repeat;
+		background-size: 100%;
+		.pg-pop-close{left: 7.63rem;top: 1.44rem;}
+	}
+	&.pop-ms3{
+		background: url(../ztimages/ms-pop3.png) 0 0 no-repeat;
+		background-size: 100%;
+		.pg-pop-close{left: 10.03rem;top: 0.89rem;}
+        .pop-ms3-swp{
+            position: absolute;
+            left: 1.75rem;
+            top: 2.29rem;
+            width: 8.3rem;
+            height: 3.6rem;
+            .swiper-slide{
+                width: 8.3rem;
+                height: 3.6rem;
+                img{
+                    display: block;
+                    width: 8.3rem;
+                    height: 3.6rem;
+                }
+            }
+        }
+        .swp-arr{
+            position: absolute;
+        }
+        .swp-arr-l{left: 1.14rem;top: 3.69rem;}
+        .swp-arr-r{left: 10.09rem;top: 3.69rem;}
+	}
+}
+.pop-map{
+    margin-left: -5.93rem;
+    margin-top: -3.69rem;
+    width: 11.95rem;
+    height: 7.64rem;
+    .pg-pop-close{
+        left: 10rem;
+        top: 0.9rem;
+    }
+    &.mp1{
+        background: url(../ztimages/mp-bg1.png) 0 0 no-repeat;
+        background-size: 100%;
+        .map-infos{
+            background: url(../ztimages/map-info1.png) 0 0 no-repeat;
+            background-size: 100%;
+        }
+    }
+    &.mp2{
+        background: url(../ztimages/mp-bg2.png) 0 0 no-repeat;
+        background-size: 100%;
+        .map-infos{
+            background: url(../ztimages/map-info2.png) 0 0 no-repeat;
+            background-size: 100%;
+        }
+    }
+    &.mp3{
+        background: url(../ztimages/mp-bg3.png) 0 0 no-repeat;
+        background-size: 100%;
+        .map-infos{
+            background: url(../ztimages/map-info3.png) 0 0 no-repeat;
+            background-size: 100%;
+        }
+    }
+    &.mp4{
+        background: url(../ztimages/mp-bg4.png) 0 0 no-repeat;
+        background-size: 100%;
+        .map-infos{
+            background: url(../ztimages/map-info4.png) 0 0 no-repeat;
+            background-size: 100%;
+        }
+    }
+    .map-pop-area{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .map-infos{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        .btn-hunt-begin{
+            display: block;
+            position: absolute;
+            left: 4.25rem;
+            top: 5.82rem;
+            @include sprite($hunt-begin);
+        }
+    }
+    .pop-map-swp{
+        position: relative;
+        width: 11.95rem;
+        height: 7.64rem;
+        .swiper-slide{
+            width: 11.95rem;
+            height: 7.64rem;
+            img{
+                display: block;
+                position: absolute;
+                left: -0.49rem;
+                top: 0.23rem;
+                width: 11.95rem;
+                height: 6.72rem;
+            }
+            .tit{
+                position: absolute;
+                left: 1.63rem;
+                top: 2.04rem;
+                @include sprite($map-pop-tit);
+                line-height: 1rem;
+                font-size: 0.36rem;
+                color: #fff;
+                font-weight: bold;
+                text-align: center;
+            }
+            .des{
+                position: absolute;
+                left: 1.95rem;
+                top: 3rem;
+                width: 2.22rem;
+                p{
+                    line-height: 0.34rem;
+                    font-size: 0.24rem;
+                    color: #fff;
+                    text-indent: 0.48rem;
+                    text-shadow: 0 0 0.06rem #000,0 0 0.06rem #000,0 0 0.06rem #000,0 0 0.06rem #000,0 0 0.06rem #000,0 0 0.06rem #000,0 0 0.06rem #000,0 0 0.06rem #000,0 0 0.06rem #000;
+                }
+            }
+            .map-pop-acts{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                .btn-act{
+                    display: block;
+                    position: absolute;
+                    left: 9.17rem;
+                    top: 5.42rem;
+                    @include sprite($hunt-act);
+                }
+                &.cur{
+                    background: url(../ztimages/map-acted.png) 0 0 no-repeat;
+                    background-size: 100%;
+                }
+            }
+        }
+    }
+    .swp-arr{
+        position: absolute;
+        z-index: 93;
+    }
+    .swp-arr-l{left: 1.12rem;top: 3.59rem;}
+    .swp-arr-r{left: 10.06rem;top: 3.59rem;}
+}

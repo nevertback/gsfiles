@@ -1,0 +1,58 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$arr-l: (-572/100*1rem,-796/100*1rem,44/100*1rem,69/100*1rem);
+$arr-r: (-518/100*1rem,-796/100*1rem,44/100*1rem,69/100*1rem);
+$arrow-up: (-573/100*1rem,-593/100*1rem,69/100*1rem,44/100*1rem);
+$close: (-652/100*1rem,-593/100*1rem,40/100*1rem,40/100*1rem);
+$dz-nav-c: (-845/100*1rem,-489/100*1rem,259/100*1rem,61/100*1rem);
+$icon-loc: (-518/100*1rem,-723/100*1rem,71/100*1rem,63/100*1rem);
+$p1-logo-dgy: (-573/100*1rem,-489/100*1rem,262/100*1rem,94/100*1rem);
+$p1-logo-gf: (-296/100*1rem,-652/100*1rem,212/100*1rem,235/100*1rem);
+$p2-tit: (0/100*1rem,-489/100*1rem,563/100*1rem,153/100*1rem);
+$p3-tit: (-573/100*1rem,-326/100*1rem,563/100*1rem,153/100*1rem);
+$p4-tit: (0/100*1rem,-163/100*1rem,563/100*1rem,153/100*1rem);
+$p5-tit: (0/100*1rem,0/100*1rem,563/100*1rem,153/100*1rem);
+$p6-tit: (-573/100*1rem,-163/100*1rem,563/100*1rem,153/100*1rem);
+$p7-tit: (-573/100*1rem,0/100*1rem,563/100*1rem,153/100*1rem);
+$p8-tit: (0/100*1rem,-326/100*1rem,563/100*1rem,153/100*1rem);
+$p9-share: (0/100*1rem,-652/100*1rem,286/100*1rem,278/100*1rem);
+$vol-pause: (-599/100*1rem,-723/100*1rem,62/100*1rem,57/100*1rem);
+$vol-play: (-671/100*1rem,-723/100*1rem,62/100*1rem,57/100*1rem);
+$wq-nav-c: (-518/100*1rem,-652/100*1rem,259/100*1rem,61/100*1rem);
+$zan-btn: (-787/100*1rem,-652/100*1rem,191/100*1rem,52/100*1rem);
+$zan-icon: (-845/100*1rem,-560/100*1rem,25/100*1rem,23/100*1rem);
+.spritesheet {
+    background-image: url('../ztimages/csprite.png');
+    background-repeat: no-repeat;
+    background-size: 1136/100*1rem 930/100*1rem;
+}
+@mixin sprite-width($sprite) {
+    width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+    height: nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+    $sprite-offset-x: nth($sprite, 1);
+    $sprite-offset-y: nth($sprite, 2);
+    background-position: $sprite-offset-x  $sprite-offset-y;
+}
+@mixin sprite($sprite) {
+    background-image: url('../ztimages/csprite.png');
+    background-repeat: no-repeat;
+@include sprite-position($sprite);
+@include sprite-width($sprite);
+@include sprite-height($sprite);
+    background-size: 1136/100*1rem 930/100*1rem;
+}
+
+

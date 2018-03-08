@@ -1,0 +1,568 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 1000px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 30px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 1px;
+			top: 26px;
+			width: 139px;
+			height: 47px;
+			background: url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-black.png) 0 0 no-repeat;
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 164px;
+			top: 6px;
+			@include sprite($logo-gf);
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			top: 849px;
+			&.btn1{
+				left: 39px;
+				@include sprite($s1-btn1);
+				&:hover{
+					@include sprite($s1-btn1-h);
+				}
+			}
+			&.btn2{
+				left: 365px;
+				@include sprite($s1-btn2);
+				&:hover{
+					@include sprite($s1-btn2-h);
+				}
+			}
+			&.btn3{
+				left: 693px;
+				@include sprite($s1-btn3);
+				&:hover{
+					@include sprite($s1-btn3-h);
+				}
+			}
+		}
+	}
+}
+.zt-section2{
+	height: 680px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 145px;
+		.play{
+			position: absolute;
+			display: block;
+			top: 330px;
+			left: 200px;
+			width: 600px;
+			height: 270px;
+			img{
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			i{
+				display: block;
+				position: absolute;
+				left: 271px;
+				top: 106px;
+				@include sprite($s2-play);
+				transition:all 0.25s ease;
+			}
+			&:hover{
+				i{
+					transform:translate3d(0,-3px,0);
+				}
+			}
+		}
+		.para{
+			margin: 0 auto;
+			width: 920px;
+			p{
+				line-height: 30px;
+				font-size: 16px;
+				color: #d4d4d4;
+				text-indent: 32px;
+			}
+		}
+	}
+
+}
+.zt-section3{
+	height: 890px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 200px;
+		.intro-img{
+			display: block;
+			position: absolute;
+			left: 414px;
+			top: 214px;
+			width: 585px;
+			height: 329px;
+		}
+		.intro{
+			width: 400px;
+			h5{
+				margin-bottom: 10px;
+				margin-left: -20px;
+				width: 400px;
+				line-height: 40px;
+				font-size: 28px;
+				color: #79a5ed;
+				font-weight: normal;
+				text-align: right;
+				span{
+					line-height: 30px;
+					font-size: 18px;
+				}
+			}
+			p{
+				margin-bottom: 15px;
+				width: 380px;
+				line-height: 24px;
+				font-size: 14px;
+				color: #5473a5;
+				text-align: justify;
+				b{
+					float: left;
+					margin-right: 10px;
+					line-height: 60px;
+					font-size: 60px;
+					color: #fcdc94;
+				}
+			}
+		}
+		.skills{
+			position: absolute;
+			left: 0;
+			width: 1000px;
+			ul{
+				li{
+					position: relative;
+					float: left;
+					margin-right: 10px;
+					padding: 8px;
+					width: 64px;
+					height: 64px;
+					background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/skill-bg.png) 0 0 no-repeat;
+					a{
+						display: block;
+						position: relative;
+						width: 64px;
+						height: 64px;
+						img{
+							display: block;
+							width: 100%;
+							height: 100%;
+						}
+						i.bd{
+							position: absolute;
+							left: 0;
+							top: 0;
+							@include sprite($skill-cur);
+							visibility: hidden;
+							opacity: 0;
+							transition:all 0.25s ease;
+						}
+						span{
+							position: absolute;
+							left: -5px;
+							top: 75px;
+							padding: 25px 43px 0;
+							width: 424px - 43px*2;
+							height: 177px - 25px;
+							background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/skill-pop.png) 0 0 no-repeat;
+							visibility: hidden;
+							opacity: 0;
+							transition:all 0.25s ease;
+							pointer-events: none;
+							z-index: 1;
+							&.pop-r{
+								left: auto;
+								right: -5px;
+							}
+							i{
+								display: block;
+								font-style: normal;
+								&.tit{
+									margin-bottom: 10px;
+									height: 44px;
+									line-height: 44px;
+									font-size: 24px;
+									color: #011940;
+									font-weight: bold;
+								}
+								&.aoyi{
+									position: absolute;
+									right: 43px;
+									top: 35px;
+									height: 32px;
+									line-height: 32px;
+									font-size: 16px;
+									color: #011940;
+									text-align: right;
+								}
+								&.des{
+									line-height: 22px;
+									font-size: 14px;
+									color: #011940;
+									text-indent: 28px;
+								}
+							}
+						}
+						&:hover{
+							i.bd{
+								opacity: 1;
+								visibility: visible;
+							}
+							span{
+								opacity: 1;
+								visibility: visible;
+							}
+						}
+					}
+				}
+			}
+			&.skills1{
+				top: 580px;
+				height: 104px;
+				background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/s3-skill1.png) 0 0 no-repeat;
+				ul{
+					padding-left: 85px;
+					padding-top: 12px;
+					width: 920px;
+				}
+			}
+			&.skills2{
+				top: 704px;
+				height: 104px;
+				background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/s3-skill2.png) 0 0 no-repeat;
+				ul{
+					padding-left: 265px;
+					padding-top: 12px;
+					width: 740px;
+					li{
+						&.group2{
+							margin-left: 190px;
+						}
+						a{
+							span{
+								top: auto;
+								bottom: 75px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section4{
+	height: 880px;
+	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 148px;
+		.ztTab1{
+			height: 624px;
+			.ztTabNav{
+				top: 171px;
+			}
+			.ztTabCon{
+				li{
+					padding-top: 44px;
+					height:580px;
+					img{
+						display: block;
+						&.img1{margin-left: 79px;}
+						&.img2{margin-left: 88px;}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section5{
+	height: 905px;
+	background:url(#{$mpath}zt-bg5.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 55px;
+		.ztSld{
+			position: relative;
+			width: 1000px;
+			height: 742px;
+			overflow: hidden;
+			.ztSldCon{
+				li{
+					position: relative;
+					width: 1000px;
+					height: 742px;
+					overflow: hidden;
+					.rw-pic{
+						display: block;
+						position: absolute;
+						left: 0;
+						bottom: 305px;
+						width: 1000px;
+						opacity: 0;
+						visibility: hidden;
+						transition:all 0.25s ease;
+						&.cur{
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+					.name{
+						display: none;
+						position: absolute;
+						opacity: 0;
+						visibility: hidden;
+						transition:all 0.25s ease;
+						&.cur{
+							display: block;
+							transform:translate3d(-100px,0,0);
+						}
+						&.name-yeying{left: 29px;top: 178px;@include sprite($name-yeying)}
+						&.name-yeshou{left: 29px;top: 188px;@include sprite($name-yeshou)}
+						&.name-yingsha{left: 28px;top: 182px;@include sprite($name-yingsha)}
+						&.name-yansha{left: 28px;top: 184px;@include sprite($name-yansha)}
+						&.name-shengxiu{left: 29px;top: 176px;@include sprite($name-shengxiu)}
+						&.name-longjiang{left: 28px;top: 187px;@include sprite($name-longjiang)}
+						&.name-yuling{left: 28px;top: 187px;@include sprite($name-yuling)}
+						&.name-xingshu{left: 28px;top: 193px;@include sprite($name-xingshu)}
+					}
+					.btn{
+						display: block;
+						position: absolute;
+						top: 388px;
+						&.btnBoy{
+							left: 166px;
+							@include sprite($s5-btn-boy);
+							&:hover,&.cur{@include sprite-position($s5-btn-boy-c);}
+						}
+						&.btnGirl{
+							left: 198px;
+							@include sprite($s5-btn-girl);
+							&:hover,&.cur{@include sprite-position($s5-btn-girl-c);}
+						}
+					}
+					.infos{
+						position: absolute;
+						top: 555px;
+						left: 55px;
+						width: 890px;
+						text-align: center;
+						opacity: 0;
+						visibility: hidden;
+						transition:all 0.25s ease;
+						transform:translate3d(0,20px,0);
+						p{
+							line-height: 24px;
+							font-size: 14px;
+							color: #5473a5;
+						}
+						h5{
+							line-height: 24px;
+							font-size: 14px;
+							color: #f1d38f;
+							font-weight: normal;
+						}
+						.des{
+							margin-bottom: 24px;
+						}
+					}
+					.name.cur,.infos{
+						transition-duration: 0s;
+						transition-delay:0s;
+					}
+					&.cur{
+						.name.cur,.infos{
+							opacity: 1;
+							visibility: visible;
+							transition-duration: 0.25s;
+							transition-delay:0.1s;
+							transform:translate3d(0,0,0);
+						}
+					}
+				}
+			}
+			.ztSldNav{
+				position: absolute;
+				top: 481px;
+				left: 103px;
+				width: 850px;
+				height: 40px;
+				background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/s5-nav-bg.png) 104px center no-repeat;
+				li{
+					cursor: pointer;
+					float: left;
+					margin-right: 12px;
+					width: 104px;
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					font-size: 18px;
+					color: #fff;
+					&.cur{
+						color: #fcdc94;
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section6{
+	height: 810px;
+	background:url(#{$mpath}zt-bg6.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 230px;
+		.ztTab1{
+			height: 472px;
+			.ztTabNav{
+				top: 85px;
+			}
+			.ztTabCon{
+				li{
+					height: 472px;
+					img{
+						display: block;
+						margin-left: 105px;
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section7{
+	height: 763px;
+	background:url(#{$mpath}zt-bg7.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 182px;
+		.ztTab1{
+			margin-left: -44px;
+			width: 1044px;
+			height: 476px;
+			.ztTabNav{
+				padding-left: 309px;
+				margin-bottom: 40px;
+				width: 620px;
+			}
+			.ztTabCon{
+				li{
+					width: 1044px;
+					height: 385px;
+					img{
+						display: block;
+						width: 581px;
+						height: 385px;
+					}
+					::-webkit-scrollbar {
+						width: 5px;
+						height: 5px;
+						border-radius: 0;
+					}
+					::-webkit-scrollbar-track {
+						border-radius: 10px;
+						background-color: transparent;
+						background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/scl.png) center 0 repeat-y;
+					}
+					::-webkit-scrollbar-thumb {
+						border-radius: 0;
+						background-color: rgba(127,172,246,1);
+					}
+					::-webkit-scrollbar-thumb:hover {
+						background-color: rgba(127,172,246,0.8);
+					}
+					::-webkit-scrollbar-thumb:active {
+						background-color: rgba(127,172,246,0.6);
+					}
+					.txt{
+						display: block;
+						position: absolute;
+						left: 605px;
+						top:2px;
+						width: 440px;
+						height: 380px;
+						overflow: hidden;
+						overflow-y: auto;
+						h5{
+							line-height: 34px;
+							font-size: 24px;
+							color: #7facf6;
+							font-weight: normal;
+						}
+						h4{
+							margin-bottom: 15px;
+							line-height: 44px;
+							font-size: 32px;
+							color: #7facf6;
+							span{
+								color: #fcdc94;
+							}
+						}
+						p{
+							margin-bottom: 10px;
+							padding-right: 20px;
+							line-height: 24px;
+							font-size: 14px;
+							color: #5473a5;
+							span{
+								display: block;
+								padding-left: 20px;
+								color: #f1d38f;
+								background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/s7-dot.png) 0 center no-repeat;
+							}
+							.list{
+								display: block;
+								padding-left: 36px;
+								font-style: normal;
+								b{
+									font-weight: normal;
+									&.tit{
+										display: block;
+										color: #7facf6;
+									}
+									&.num{
+										margin-right: 8px;
+										color: #fcdc94;
+									}
+								}
+							}
+							.lighter{
+								font-style: normal;
+								color: #7facf6;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-sectionComm{
+	padding-bottom: 30px;
+	height:auto;
+	background-color: #1b1e25;
+	.container{
+		position: relative;
+		padding-top: 60px;
+	}
+}
+
+

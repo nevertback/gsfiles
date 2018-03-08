@@ -1,0 +1,217 @@
+@import 'comm';
+.list,.main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.list{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    &.cur{
+        display: block;
+    }
+}
+.nh-prize,.nh-draw,.nh-list{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.nh-prize{
+    background: url(../ztimages/nh-prize.jpg) center center no-repeat;
+    .bigpic{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1920px;
+        height: 1080px;
+    }
+    .tit{
+        position: absolute;
+        right: 0;
+        top: 335px;
+        width: 1190px;
+        color: #fff;
+        text-align: center;
+        h4{
+            height: 100px;
+            line-height: 100px;
+            font-size: 70px;
+            font-weight: normal;
+        }
+        h5{
+            height: 234px;
+            line-height: 234px;
+            font-size: 140px;
+            font-weight: normal;
+        }
+    }
+}
+.nh-draw{
+    background: url(../ztimages/nh-draw.jpg) center center no-repeat;
+    .headNextBtn{
+        display: none;
+        &.cur{
+            display: block;
+        }
+    }
+    .drawAnimArea{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        .winner-name{
+            display: none;
+        }
+        .draw-head{
+            position: absolute;
+            left: 573px;
+            top: 190px;
+            width: 724px;
+            height: 724px;
+            border-radius: 50%;
+            border: 27px solid #fff;
+            box-shadow: -28px 28px 0 rgba(0,0,0,0.1);
+            overflow: hidden;
+            .videoArea{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 724px;
+                height: 724px;
+                overflow: hidden;
+                border-radius: 50%;
+                #animVd2{
+                    filter:blur(3px);
+                }
+                .animVd{
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 724px;
+                    height: 724px;
+                    &.cur{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .head-list{
+            visibility: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+            &.cur{
+                visibility: visible;
+            }
+            .head-item{
+                margin-bottom: 20px;
+                width: 724px;
+                height: 724px;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    filter:blur(3px);
+                }
+            }
+        }
+        &.cur{
+            background: url(../ztimages/win-c2.png) 348px 0 no-repeat;
+            &:after{
+                display: block;
+                position: absolute;
+                content: '';
+                left: 425px;
+                top: 41px;
+                width: 1039px;
+                height: 921px;
+                background: url(../ztimages/win-c1.png) 0 0 no-repeat;
+            }
+            .winner-name{
+                display: block;
+                position: absolute;
+                left: 818px;
+                top: 825px;
+                z-index: 2;
+                width: 280px;
+                height: 80px;
+                line-height: 80px;
+                font-size: 50px;
+                color: #282828;
+                font-weight: bold;
+                text-align: center;
+            }
+            .head-list{
+                .head-item{
+                    img{
+                        filter:blur(0px);
+                    }
+                }
+            }
+        }
+    }
+    .headAnimBtn{
+        display: none;
+        &.cur{
+            display: block;
+        }
+    }
+}
+.nh-list{
+    background: url(../ztimages/nh-list.jpg) center center no-repeat;
+    .win-list{
+        position: absolute;
+        left: 30px;
+        top: 513px;
+        width: 1890px;
+        ul{
+            width: 1920px;
+            li{
+                float: left;
+                margin-right: 26px;
+                position: relative;
+                width: 100px;
+                height:400px;
+                &:nth-child(1){margin-right: 72px;}
+                &:nth-child(2){margin-right: 34px;}
+                &:nth-child(3){margin-right: 80px;}
+                &:nth-child(4){margin-right: 53px;}
+                &:nth-child(5){margin-right: 53px;}
+                &:nth-child(6){margin-right: 53px;}
+                &:nth-child(7){margin-right: 64px;}
+                .win-pic{
+                    display: block;
+                    margin-bottom: 18px;
+                    width: 100px;
+                    height: 100px;
+                    background: url(../ztimages/win-def.png) 0 0 no-repeat;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .win-name{
+                    padding: 0 25px;
+                    width: 50px;
+                    line-height: 45px;
+                    font-size: 45px;
+                    color: #888;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="format-detection" content="telephone=no">
+	<title>判断浏览器，并获取版本</title>
+	<link href="http://j.gamersky.com/g/normalize.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/monokai.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.min.css">
+	<link href="css/style.min.css" rel="stylesheet" inline>
+	<script type="text/javascript" src="http://j.gamersky.com/g/jquery-1.8.3.js"></script>
+</head>
+<body>
+<div class="section">
+	<div class="container">
+		<h4 class="codeTitle">判断浏览器，并获取版本：</h4>
+		<pre><code class="javascript">/*
+ * @desc   获取浏览器类型和版本
+ * @return {String} 获取的浏览器(ie,edge,firefox,opera,chrome,safari),版本
+ */
+(function($){
+    var gs = {
+        gsExplore:function () {
+            var sys = {},
+                ua = navigator.userAgent.toLowerCase(),
+                s;
+            (s = ua.match(/rv:([\d.]+)\) like gecko/)) ? sys= {ie:true,ver : s[1]}:
+                (s = ua.match(/msie ([\d\.]+)/)) ? sys = {ie:true,ver : s[1]} :
+                    (s = ua.match(/edge\/([\d\.]+)/)) ? sys = {edge:true,ver : s[1]} :
+                        (s = ua.match(/firefox\/([\d\.]+)/)) ? sys = {firefox:true,ver : s[1]} :
+                            (s = ua.match(/(?:opera|opr).([\d\.]+)/)) ? sys = {opera:true,ver : s[1]} :
+                                (s = ua.match(/chrome\/([\d\.]+)/)) ? sys = {chrome:true,ver : s[1]} :
+                                    (s = ua.match(/version\/([\d\.]+).*safari/)) ? sys = {safari:true,ver : s[1]} : 0;
+            return sys;
+        },
+        init:function(){
+            console.log(this.gsExplore());
+        }
+    };
+    gs.init();
+})(jQuery);</code></pre>
+		<h5 class="codeTitle">console输出结果：</h5>
+		<pre><code class="javascript">{chrome: true, ver: "62.0.3202.94"}</code></pre>
+	</div>
+</div>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script >hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript" src="jsmin/main.min.js" inline></script>
+</body>
+</html>

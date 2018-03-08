@@ -1,0 +1,176 @@
+@import 'csprite';
+html,body{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+    background-color: #f8f8f8;
+}
+body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
+h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
+a{text-decoration: none;-webkit-tap-highlight-color: transparent;}
+.clearfix:before,
+.clearfix:after{display: table;content: " ";}
+.clearfix:after{clear: both;}
+.wrap{
+    position: relative;
+	margin: 0 auto;
+	width: 6.4rem;
+    background-color: #eee;
+}
+.nums{
+    display: block;
+    width: 0.38rem;
+    height: 0.6rem;
+    background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/nums.png) 0 0 no-repeat;
+    background-size: 4.8rem 0.6rem;
+    @for $i from 0 through 9{
+        &.num#{$i}{background-position: -0.48rem*$i 0;}
+    }
+}
+footer.ymw-footer{
+    position: relative;padding: 14px;
+    height: 42px;
+    background-color: #262626;
+    .ymw-logo-f{
+        display: block;margin-bottom: 6px;
+        width: 85px;height: 20px;
+        img{
+            display: block;
+            width: 85px;height: 20px;
+        }
+    }
+    p{
+        font-size: 11px;color: #777;
+    }
+    .ymw-btns{
+        display: block;position: absolute;top: 14px;
+        width: 40px;height: 45px;
+        img{
+            display: block;margin: 0 auto;
+        }
+        span{
+            display: block;position: absolute;left: 0;bottom: 0;
+            width: 40px;height: 16px;line-height: 16px;
+            font-size: 12px;color: #888;text-align: center;
+        }
+        &.ymw-btns-pc{
+            right: 80px;
+            img{width: 34px}
+        }
+        &.ymw-btns-app{
+            right: 14px;
+            img{width: 27px}
+        }
+    }
+}
+.wqj-ico{
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/wqj-ico.png) 0 0 no-repeat;
+    background-size: 2.4rem 6rem;
+    //.wqj-ico-dzmxyx .wqj-ico-dzmxyx-b
+    $nxyx:( 0 , 0 , 'nxyx');
+    $zjwy:( -0.6rem , 0 , 'zjwy');
+    $dsjzb:( -1.2rem , 0 , 'dsjzb');
+    $swyx:( -1.8rem , 0 , 'swyx');
+    $zqdsy:( 0 , -0.6rem , 'zqdsy');
+    $zjdlsy:( -0.6rem , -0.6rem , 'zjdlsy');
+    $zqdwy:( -1.2rem , -0.6rem , 'zqdwy');
+    $wyzjbbgx:( -1.8rem , -0.6rem , 'wyzjbbgx');
+    $dlyx:( 0 , -1.2rem , 'dlyx');
+    $jsyx:( -0.6rem , -1.2rem , 'jsyx');
+    $yxbg:( -1.2rem , -1.2rem , 'yxbg');
+    $zjsy:( -1.8rem , -1.2rem , 'zjsy');
+    $zjyx:( 0 , -1.8rem , 'zjyx');
+    $dzmxyx:( -0.6rem , -1.8rem , 'dzmxyx');
+    $sjyx:( -1.2rem , -1.8rem , 'sjyx');
+    $rpgyx:( -1.8rem , -1.8rem , 'rpgyx');
+    $icons:($nxyx,$zjwy,$dsjzb,$swyx,$zqdsy,$zjdlsy,$zqdwy,$wyzjbbgx,$dlyx,$jsyx,$yxbg,$zjsy,$zjyx,$dzmxyx,$sjyx,$rpgyx);
+    @each $icon in $icons {
+        $icon-name: nth($icon, 3);
+        &.wqj-ico-#{$icon-name} {
+            background-position: nth($icon,1) nth($icon,2);
+        }
+        &.wqj-ico-#{$icon-name}-b {
+            background-position: nth($icon,1) nth($icon,2)-3rem;
+        }
+    }
+}
+
+.tg-buy{
+    position: relative;
+    width: 1.46rem;
+    height: 0.4rem;
+    background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/vt-buy.png) 0 0 no-repeat;
+    background-size: 1.46rem 0.4rem;
+    overflow: hidden;
+    .tgb-plat{
+        padding-left: 0.4rem;
+        padding-top: 0.06rem;
+        width: 0.3rem;
+        height: 0.34rem;
+        line-height: 0.14rem;
+        font-size: 0.12rem;
+        color: #bbb;
+        background-repeat: no-repeat;
+        background-position: 0.1rem center;
+        &.tgb-plat-ns{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/tgb-plat-ns.png);background-size: 0.25rem auto;}
+        &.tgb-plat-ps{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/tgb-plat-ps.png);background-size: 0.32rem auto;
+            background-position: 0.06rem center;}
+        &.tgb-plat-xbx{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/tgb-plat-xbx.png);background-size: 0.24rem auto;}
+        &.tgb-plat-pc{background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/tgb-plat-pc.png);background-size: 0.25rem auto;}
+    }
+    a{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-right:0.12rem;
+        width: 100%;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        font-size: 0.22rem;
+        color: #a2d4ff;
+        text-align: right;
+    }
+}
+.backToTop{
+    display: none;
+    position: fixed;
+    right: 0.25rem;
+    bottom: 2.7rem;
+    z-index: 99999;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/vt-back.png) 0 0 no-repeat;
+    background-size: 0.6rem 0.6rem;
+    &.cur{
+        display: block;
+    }
+}
+.navDraw{
+    display: block;
+    position: fixed;
+    right: 0.25rem;
+    bottom: 2rem;
+    z-index: 99999;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/wap/vt-draw.png) 0 0 no-repeat;
+    background-size: 0.6rem 0.6rem;
+    &.cur{
+        animation: rotAnim 0.8s linear 1;
+    }
+
+}
+@keyframes rotAnim {
+    0%{
+        transform:rotateY(0deg);
+    }
+    100%{
+        transform:rotateY(-360deg);
+    }
+}

@@ -1,0 +1,425 @@
+$mpath:'http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/';
+$basewidth:1200px;
+@import 'csprite';
+@import './scsslib/tcss/tcss';
+html,body{min-width:1280px;}
+body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
+h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
+a{text-decoration: none;cursor: pointer;}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after{display: table;content: " ";}
+.clearfix:after,
+.container:after{clear: both;}
+.container{margin-right: auto;margin-left: auto;width: $basewidth;}
+.zt-section{margin: 0;padding: 0;overflow: hidden;width: 100%;min-width:$basewidth;}
+//头部
+.QZnav {min-width:$basewidth;}
+.QZnav .topbar {width:$basewidth;}
+.QZnav .QZ-nav {display: none;}
+//底部
+.Bot{
+	width:100%; min-width:$basewidth; height:155px; 
+	background:#f8f8f8;font-size: 14px;
+	.Copyright {
+		margin:0 auto;padding-top:50px; 
+		width:$basewidth;height:auto;line-height:30px;
+		text-align:center; color:#aaa;
+		a{
+			margin:0 5px; color:#aaa;
+			&:hover {color:#777;}
+		}
+	}	
+}
+.bdsharewrap.bdstyle-c{
+    width:166px;height:34px;
+    overflow: hidden;
+    .bdsharebuttonbox {
+        width:800px; height:34px;
+        &:after,&.before{
+            display:table;content:" ";
+        }
+        &:after{clear:both}
+        a {
+            float:left;
+            padding:0;
+            margin: 0;
+            margin-right: 2px;
+            &:hover{opacity: 1;}
+            &.bds_sqq	{@include sprite($bd-qq);}
+            &.bds_weixin{@include sprite($bd-wx);}
+            &.bds_tsina {@include sprite($bd-wb);}
+            &.bds_qzone {@include sprite($bd-qz);}
+            &.bds_sqq:hover	  {@include sprite($bd-qq-h);}
+            &.bds_weixin:hover{@include sprite($bd-wx-h);}
+            &.bds_tsina:hover {@include sprite($bd-wb-h);}
+            &.bds_qzone:hover {@include sprite($bd-qz-h);}
+        }
+    }
+}
+.tg-buy{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: #3f3f3f;
+	overflow: hidden;
+	.tgb-plat{
+		padding-left: 46px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 14px;
+		color: #888;
+		&.tgb-plat-ns{background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/tgb-plat-ns.png) 14px center no-repeat;}
+		&.tgb-plat-ps{background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/tgb-plat-ps.png) 10px center no-repeat;}
+		&.tgb-plat-xbx{background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/tgb-plat-xbx.png) 15px center no-repeat;}
+        &.tgb-plat-pc{background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/tgb-plat-pc.png) 14px center no-repeat;}
+	}
+	a{
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding-right: 20px;
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/tg-buy-btn.png) right 0 no-repeat;
+		font-size: 14px;
+		color: #1bdcff;
+		text-align: right;
+		&:hover{
+			color: #fff;
+			background-position: right -40px;
+		}
+	}
+}
+.fixNav{
+	position: absolute;
+	right: 0;
+	top: 965px;
+	width: 60px;
+	height: 85px;
+	&.fixNav-index{
+		top: 1057px;
+	}
+    &.cur{
+        position: fixed;
+        top: 50%;
+        margin-top: -40px;
+    }
+	.nav-box{
+		position: relative;
+		margin-bottom: 5px;
+		width: 60px;
+		height: 40px;
+		background-color: #eda746;
+		a{
+			&.nav-draw{
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 60px;
+				height: 40px;
+				background: #eda746 url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/fx-draw-num.png) 8px center no-repeat;
+				transition:width 0.25s ease;
+				overflow: hidden;
+				.num{
+					display: block;
+					height: 40px;
+					line-height: 40px;
+					font-size: 12px;
+					color: #ddd;
+					text-indent: 18px;
+					b{
+						margin-right: 2px;
+						font-size: 16px;
+					}
+				}
+				.txt{
+					position: absolute;
+					left: 64px;
+					top: 0;
+					height: 40px;
+					line-height: 40px;
+					font-size: 15px;
+					color: #222;
+					white-space: nowrap;
+				}
+				&:hover,&.cur{
+					width: 190px;
+				}
+			}
+			&.nav-btn{
+				display: block;
+				width: 60px;
+				height: 40px;
+				background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/fx-logo.png) 0 0 no-repeat;
+				&:hover{
+					background-position: 0 -45px;
+				}
+			}
+		}
+		.nav-pop{
+			display: none;
+			position: absolute;
+			top: 40px;
+			right: 0;
+			padding-top: 1px;
+			width: 400px;
+			height: 320px;
+			.nav-pop-con{
+				position: relative;
+				padding-left: 35px;
+				padding-top: 17px;
+				width: 400px - 35px;
+				height: 320px - 17px;
+				background-color: #eda746;
+				overflow: hidden;
+				.np-home{
+					display: block;
+					padding-left: 24px;
+					margin-bottom: 10px;
+					width: 170px;
+					height: 30px;
+					line-height: 30px;
+					font-size: 16px;
+					color: #222;
+					font-weight: bold;
+					background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/fx-home.png) 0 0 no-repeat;
+					&:hover{
+						color: #fff;
+						background-position: 0 -40px;
+					}
+				}
+				.np-list{
+					width: 370px;
+					li{
+						float: left;
+						margin-right: 18px;
+						width: 165px;
+						height: 30px;
+						line-height: 30px;
+						a{
+							font-size: 15px;
+							color: #111;
+							&:hover{
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+			&.cur{
+				display: block;
+			}
+		}
+	}
+}
+.zt-section-cooper{
+    .container{
+		position: relative;
+        padding: 50px 0;
+        .title{
+			position: absolute;
+			left: 0;
+			top: 52px;
+			@include sprite($cooper-title);
+			line-height: 28px;
+			font-size: 16px;
+			color: #666;
+			text-align: center;
+        }
+        .list-wrap{
+            width: 1210px;
+        }
+        .list{
+			padding-left: 175px;
+            li{
+                float: left;
+                margin-right: 15px;
+                width: 122px;
+                height: 72px;
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &.bigCooper{
+					position: relative;
+                    width: 160px;
+                    height: 144px;
+					overflow: hidden;
+					img{
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 50%;
+						margin-left: -122px;
+						width: 244px;
+						height: 144px;
+					}
+                }
+            }
+        }
+    }
+}
+.zt-section-club{
+	height: auto;
+	background-color: #eee;
+	.container{
+		position: relative;
+		padding: 50px 0 30px;
+		.zt-club{
+			float: left;
+			width: 760px;
+			.QZCMT-outer-title{
+				position: relative;
+				padding-left: 40px;
+				margin-bottom: 20px;
+				height: 30px;
+				line-height: 30px;
+				background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/yr/pc/logo-qz.png) 0 0 no-repeat;
+				font-size: 22px;
+				i{
+					display: none;
+					position: absolute;
+					left: 235px;
+					top: 5px;
+					width: 121px;
+					height: 18px;
+					background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/qz-txt.png) 0 0 no-repeat;
+				}
+				a{
+					color: #444;
+					&:hover{
+						color: #2786ed;
+					}
+				}
+			}
+		}
+		.zt-club-right{
+			float: right;
+			margin-top: 50px;
+			padding-bottom: 38px;
+			width: 410px;
+			overflow: hidden;
+			.zcr-title{
+				margin-bottom: 10px;
+				height: 58px;
+				line-height: 58px;
+				border-bottom: 1px solid #eee;
+				font-size: 18px;
+				color: #444;
+				font-weight: bold;
+			}
+			.zcr-list{
+				padding-bottom: 20px;
+				.zcrListZk{
+					user-select: none;
+					display: block;
+					margin: 10px auto 0;
+					width: 80px;
+					height: 24px;
+					line-height: 24px;
+					background: #eee url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/zk-down.png) 51px center no-repeat;
+					text-indent: 23px;
+					font-size: 12px;
+					color: #777;
+					&.cur{
+						background-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/zk-up.png);
+					}
+				}
+                h5{
+                    line-height: 20px;
+                    font-size: 14px;
+                    color: #444;
+                }
+                p{
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: #444;
+                    b{
+                        font-size: 16px;
+                    }
+                    span{
+                        color: #f33;
+                    }
+                }
+				ul{
+					height: 111px;
+					overflow: hidden;
+					li{
+						position: relative;
+						margin-bottom: 15px;
+						padding-left: 25px;
+						line-height: 24px;
+						i{
+							position: absolute;
+							left: 0;
+							top: 0;
+							font-size: 14px;
+							color: #444;
+							font-weight: bold;
+							font-style: normal;
+						}
+					}
+				}
+				&.cur{
+					ul{
+						height: auto;
+						overflow: hidden;
+					}
+				}
+			}
+			.zcr-box{
+				padding: 0 25px;
+				margin-bottom: 10px;
+				width: 360px;
+				background-color: #fff;
+				border-radius: 4px;
+				&.zcr-box-isyou{
+					background:#fff url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/isyou.png) 241px 18px  no-repeat;
+				}
+				&.zcr-box-draw{
+					padding: 15px 25px;
+					background-color: #f2a538;
+					.zcr-box-draw-txt{
+						position: relative;
+						padding-left: 40px;
+						height: 30px;
+						line-height: 30px;
+						background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/pic/draw-club-right.png) 0 5px no-repeat;
+						font-size: 18px;
+						color: #fff;
+						font-weight: bold;
+						a{
+							display: block;
+							position: absolute;
+							right: 0;
+							top: 0;
+							width: 90px;
+							height: 30px;
+							line-height: 30px;
+							font-size: 15px;
+							color: #333;
+							background-color: #fff;
+							border-radius: 5px;
+							font-weight: normal;
+							text-align: center;
+							&:hover{
+								color: #ffa11b;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

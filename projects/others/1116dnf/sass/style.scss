@@ -1,0 +1,104 @@
+@import 'comm';
+.dnf-con{
+    background: url(http://image.gamersky.com/webimg13/match/dnff1/dnf-bg.png) center 44px no-repeat;
+    p,li,ul,h5{margin: 0;padding: 0;}
+    .dnf-para{
+        padding-top: 96px;
+        height: 60px;
+        p{
+            line-height: 30px;
+            font-size: 16px;
+            color: #767676;
+            text-align: center;
+        }
+    }
+    .dnf-form{
+        margin-left: 358px;
+        margin-top: 178px;
+        width: 384px;
+        height: 265px;
+        textarea,input{
+            display: block;
+            background: none;
+            border: none;
+            outline:0;
+            resize: none;
+        }
+        .dnf-form-textarea{
+            margin-bottom: 10px;
+            padding: 0;
+            width: 384px;
+            height: 165px;
+            background-color: #fff;
+            textarea{
+                margin: 10px auto 0;
+                width: 360px;
+                height: 140px;
+                color: #222;
+                font-size: 16px;
+            }
+        }
+        .dnf-form-row{
+            width: 390px;
+            height: 35px;
+            label{
+                display: block;
+                float: left;
+                width: 141px;
+                height: 35px;
+                line-height: 35px;
+                background-color: #744848;
+                font-size: 16px;
+                color: #fff;
+                text-align: center;
+            }
+            .dnf-form-ipt{
+                float: left;
+                margin-left: 10px;
+                width: 234px;
+                height: 35px;
+                background-color: #686868;
+                input{
+                    padding: 6px 10px;
+                    width: 214px;
+                    height: 23px;
+                    line-height: 23px;
+                    color: #fff;
+                }
+            }
+        }
+        .dnfBtn{
+            cursor: pointer;
+            display: block;
+            margin: 20px auto 0;
+            width: 194px;
+            height: 35px;
+            line-height: 35px;
+            background-color: #f65c5c;
+            font-size: 18px;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            &:hover{
+                background-color: #fff;
+                color: #222;
+            }
+        }
+    }
+    .dnf-notice{
+        padding:118px 0 35px 26px;
+        h5{
+            height: 24px;
+            line-height: 24px;
+            font-size: 16px;
+            color: #e32223;
+        }
+        ul{
+            li{
+                line-height: 24px;
+                font-size: 15px;
+                color: #767676;
+            }
+        }
+    }
+}

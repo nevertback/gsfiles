@@ -1,0 +1,78 @@
+@import 'comm';
+.slg-con{
+    position: relative;
+    margin-bottom: 40px;
+    width: 1100px;
+    height: 523px;
+    background: url(http://image.gamersky.com/webimg13/match/slg2017/slg-bg.png) 0 0 no-repeat;
+    p,ul,li,h5,h4{
+        margin: 0;
+        padding: 0;
+    }
+    .slg-con-top{
+        padding-top: 75px;
+        height: 171px - 75px;
+        p{
+            line-height: 30px;
+            font-size: 16px;
+            color: #767676;
+            text-align: center;
+        }
+    }
+    .slg-con-bot{
+        padding-top: 24px;
+        padding-left: 50px;
+        width: 550px;
+        h4{
+            padding-left: 24px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 18px;
+            color: #f85e5e;
+            font-weight: bold;
+            background: url(http://image.gamersky.com/webimg13/match/slg2017/slg-dot.png) 0 center no-repeat;
+        }
+        ul{
+            padding-left: 24px;
+            li{
+                h5{
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 16px;
+                    color: #723118;
+                    font-weight: bold;
+                }
+                p{
+                    line-height: 28px;
+                    font-size: 15px;
+                    color: #895a49;
+                    text-indent: 30px;
+                    span{
+                        color: #ff6263;
+                    }
+                }
+            }
+        }
+    }
+    .slg-code{
+        position: absolute;
+        left: 747px;
+        top: 208px;
+        width: 215px;
+        img{
+            display: block;
+            width: 215px;
+            height: 215px;
+        }
+        p{
+            line-height: 30px;
+            font-size: 18px;
+            color: #723118;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+.Mid4{
+    display: none;
+}

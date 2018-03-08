@@ -1,0 +1,178 @@
+@import 'csprite';
+html,body{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+    background-color: #f8f8f8;
+}
+body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
+h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
+a{text-decoration: none;-webkit-tap-highlight-color: transparent;}
+.clearfix:before,
+.clearfix:after{display: table;content: " ";}
+.clearfix:after{clear: both;}
+.wrap{
+    position: relative;
+	margin: 0 auto;
+	width: 6.4rem;
+    background-color: #eee;
+}
+.nums{
+    display: block;
+    width: 0.38rem;
+    height: 0.6rem;
+    background: url(../ztimages/nums.png) 0 0 no-repeat;
+    background-size: 4.8rem 0.6rem;
+    @for $i from 0 through 9{
+        &.num#{$i}{background-position: -0.48rem*$i 0;}
+    }
+}
+footer.ymw-footer{
+    position: relative;padding: 14px;
+    height: 42px;
+    background-color: #262626;
+    .ymw-logo-f{
+        display: block;margin-bottom: 6px;
+        width: 85px;height: 20px;
+        img{
+            display: block;
+            width: 85px;height: 20px;
+        }
+    }
+    p{
+        font-size: 11px;color: #777;
+    }
+    .ymw-btns{
+        display: block;position: absolute;top: 14px;
+        width: 40px;height: 45px;
+        img{
+            display: block;margin: 0 auto;
+        }
+        span{
+            display: block;position: absolute;left: 0;bottom: 0;
+            width: 40px;height: 16px;line-height: 16px;
+            font-size: 12px;color: #888;text-align: center;
+        }
+        &.ymw-btns-pc{
+            right: 80px;
+            img{width: 34px}
+        }
+        &.ymw-btns-app{
+            right: 14px;
+            img{width: 27px}
+        }
+    }
+}
+.btn-def{
+    display: block;
+    width: 3rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.24rem;
+    color: #222;
+    text-align: center;
+    background-color: #ffcb41;
+    border-radius: 0.05rem;
+}
+.cooper-pop-mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999998;
+    width: 100%;
+    height: 100%;
+    background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition:all 0.25s ease;
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.cooper-pop-main{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -2.3rem;
+    margin-top: -2.9rem;
+    z-index: 999999;
+    width: 4.6rem;
+    height: 5.8rem;
+    background-color: #fff;
+    box-shadow: 0 0 0.4rem rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition:all 0.25s ease;
+    transform-origin: 50% 0;
+    transform:translate3d(0,-0.3rem,0);
+    border-radius: 0.1rem;
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+        transform:translate3d(0,0,0);
+    }
+    .cp-con{
+        padding: 0.2rem 0.5rem 0;
+        h5{
+            margin-bottom: 0.1rem;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            font-size: 0.3rem;
+            color: #444;
+            text-align: center;
+        }
+        .cp-row{
+            position: relative;
+            margin: 0 auto 0.15rem;
+            padding: 0 0.15rem;
+            width: 3.3rem;
+            height: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 0.04rem;
+            //box-sizing: border-box;
+            &.error{
+                border-color: #f2a02c;
+            }
+            &.last{
+                margin-bottom: 0.2rem;
+            }
+            input{
+                position: absolute;
+                left: 0.15rem;
+                top: 0;
+                display: block;
+                width: 3rem;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                border: none;
+                background: none;
+                outline: 0;
+                font-size: 0.22rem;
+                color: #333;
+            }
+            .tips{
+                position: absolute;
+                left: 0.15rem;
+                top: 0;
+                width: 1rem;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                color: #888;
+                font-size: 0.22rem;
+                white-space: nowrap;
+                &.cur{
+                    left: 100%;
+                    margin-left: -1.15rem;
+                    text-align: right;
+                    color: #f2a02c;
+                }
+            }
+        }
+        a{
+            margin: 0 auto 0;
+        }
+    }
+}

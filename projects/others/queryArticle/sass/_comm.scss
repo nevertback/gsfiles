@@ -1,0 +1,11 @@
+button,input{
+    outline: 0;
+}
+.clearfix:before,
+.clearfix:after{display: table;content: " ";}
+.clearfix:after{clear: both;}
+@mixin gradient-vertical($gradient...) {
+    background-image: -webkit-linear-gradient(top, $gradient); // Safari 5.1+, Chrome 10+
+    background-image: -o-linear-gradient(top, $gradient); // Opera 11.10
+    background-image: linear-gradient(to bottom, $gradient); // Standard, IE10
+}

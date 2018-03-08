@@ -1,0 +1,20 @@
+button,input{outline:0}
+.clearfix:after,.clearfix:before{display:table;content:" "}
+.clearfix:after{clear:both}
+#list{padding-top:71px}
+#list .diy-pop-btn{cursor:pointer}
+#list .back-to-top{margin-left:20px}
+#list .btn-group{padding:30px 0}
+#list .navbar{border-radius:0}
+#list .navbar .navbar-brand{padding:5px;margin-right:10px}
+#list .navbar .navbar-brand img{width:40px}
+#list .navbar .navbar-nav li a{cursor:pointer}
+.artList dt{padding:8px 0;border-bottom:2px solid #ddd}
+.artList dd{padding:8px 0;border-bottom:1px solid #ddd}
+.artList dd:nth-child(odd){background-color:#f9f9f9}
+.artList dd:hover{background-color:#eee}
+.artList dd a:visited{color:#3c763d}
+.upAnim-enter-active,.upAnim-leave-active{-webkit-transition:opacity .25s;transition:opacity .25s}
+.upAnim-enter,.upAnim-leave-to{opacity:0}
+.loading{position:fixed;left:50%;top:50%;margin:-9px 0 0 -9px;width:18px;height:18px;background:url(http://image.gamersky.com/webimg13/lib/icons/loading-dark.gif) 0 0 no-repeat;z-index:98}
+.diy-form .alert{margin-top:10px}

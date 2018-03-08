@@ -1,0 +1,336 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 900px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.play{
+			display: block;
+			position: absolute;
+			left: 382px;
+			top: 498px;
+			@include sprite($play);
+			&:hover{
+				@include sprite($play-h);
+			}
+		}
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 45px;
+			left: 355px;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 40px;
+			width: 139px;
+			height: 47px;
+			background: url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-black.png) 0 0 no-repeat;
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 157px;
+			top: 29px;
+			@include sprite($logo-gf);
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			left: 149px;
+			&.btn1{
+				top: 478px;
+				@include sprite($s1-btn1);
+				&:hover{
+					@include sprite($s1-btn1-h);
+				}
+			}
+			&.btn2{
+				top: 552px;
+				@include sprite($s1-btn2);
+				&:hover{
+					@include sprite($s1-btn2-h);
+				}
+			}
+			&.btn3{
+				top: 625px;
+				@include sprite($s1-btn3);
+				span{
+					display: none;
+					padding-top: 67px;
+					width: 100%;
+					height: 145px;
+					img{
+						display: block;
+						margin: 0 auto;
+						width: 145px;
+						height: 145px;
+					}
+				}
+				&:hover{
+					@include sprite($s1-btn3-h);
+					span{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section2{
+	height: 960px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 194px;
+		.play{
+			display: block;
+			position: absolute;
+			left: 143px;
+			top: 481px;
+			@include sprite($play);
+			&:hover{
+				@include sprite($play-h);
+			}
+		}
+		.para{
+			padding-left: 456px;
+			width: 644px;
+			height: 218px;
+			overflow: hidden;
+			h5{
+				height: 40px;
+				line-height: 40px;
+				font-size: 18px;
+				color: #fbc06a;
+			}
+			p{
+				margin-bottom: 24px;
+				line-height: 24px;
+				font-size: 14px;
+				color: #8c9cd6;
+			}
+		}
+		.ztTab{
+			position: relative;
+			margin-left: 456px;
+			width: 644px;
+			height: 520px;
+			overflow: hidden;
+			.loadingPic{
+				position: absolute;
+				left: 50%;
+				top: 167px;
+				margin-left: -16px;
+				width: 30px;
+				height: 30px;
+			}
+			.ztTabCon{
+				li{
+					position: relative;
+					width: 640px;
+					height: 360px;
+					background-color: #171718;
+					border: 2px solid #bc9761;
+					border-radius: 2px;
+					img.pic{
+						position: relative;
+						display: block;
+						width: 640px;
+						height: 360px;
+					}
+				}
+			}
+			.ztTabNav{
+				margin-top: 22px;
+				width: 680px;
+				li{
+					float: left;
+					margin-right: 17px;
+					width: 56px;
+					a{
+						display: block;
+						width: 56px;
+						i{
+							display: block;
+							width: 56px;
+							height: 56px;
+							background: url(http://image.gamersky.com/webimg13/zhuanti/dthb/skills.png) 0 0 no-repeat;
+							@for $i from 1 through 9{
+								&.tn#{$i}{background-position: -73px*($i - 1) 0;}
+							}
+						}
+						span{
+							display: block;
+							width: 56px;
+							height: 32px;
+							line-height: 32px;
+							font-size: 12px;
+							font-family: SimSun;
+							text-align: center;
+							color: #a0addb;
+						}
+					}
+					&.cur{
+						a{
+							i{
+								@for $i from 1 through 9{
+									&.tn#{$i}{background-position: -73px*($i - 1) -60px;}
+								}
+							}
+							span{
+								color: #fbc06a;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 740px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.container{
+		padding-top: 160px;
+		.para{
+			p{
+				line-height: 24px;
+				font-size: 14px;
+				color: #111;
+				text-indent: 28px;
+			}
+		}
+	}
+}
+.zt-section4{
+	height: 740px;
+	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 160px;
+		.para{
+			p{
+				line-height: 24px;
+				font-size: 14px;
+				color: #8c9cd6;
+				text-indent: 28px;
+			}
+		}
+		.play{
+			position: absolute;
+			left: 275px;
+			top: 286px;
+			display: block;
+			width: 550px;
+			height: 303px;
+			i{
+				display: block;
+				position: absolute;
+				left: 227px;
+				top: 104px;
+				@include sprite($play);
+			}
+			&:hover{
+				i{@include sprite($play-h);}
+			}
+		}
+	}
+}
+.zt-section5{
+	height: 740px;
+	background:url(#{$mpath}zt-bg5.jpg) center 0 no-repeat;
+	.container{
+		padding-top: 160px;
+		.para{
+			p{
+				line-height: 24px;
+				font-size: 14px;
+				color: #111;
+				text-indent: 28px;
+			}
+		}
+	}
+}
+.zt-section6{
+	height: 740px;
+	background:url(#{$mpath}zt-bg6.jpg) center 0 no-repeat;
+}
+.zt-section7{
+	height: 800px;
+	background:url(#{$mpath}zt-bg7.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 170px;
+		.ztTab{
+			position: relative;
+			margin: 0 auto;
+			width: 940px;
+			height: 600px;
+			.ztTabCon{
+				li{
+					position: relative;
+					width: 940px;
+					height: 528px;
+					img{
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+			.ztTabNav{
+				margin-top: 24px;
+				margin-left: 352px;
+				width: 320px;
+				height: 26px;
+				background: url(http://image.gamersky.com/webimg13/zhuanti/dthb/s7-line2.png) 35px 12px no-repeat;
+				li{
+					cursor: pointer;
+					float: left;
+					margin-right: 14px;
+					width: 36px;
+					height: 26px;
+					background: url(http://image.gamersky.com/webimg13/zhuanti/dthb/s7-nav2.png) 0 0 no-repeat;
+					&.cur{
+						background-image: url(http://image.gamersky.com/webimg13/zhuanti/dthb/s7-nav2-h.png);
+					}
+				}
+			}
+		}
+	}
+}
+.zt-sectionComm{
+	padding-bottom: 30px;
+	height:auto;
+	background:#171718 url(#{$mpath}zt-bg8.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 190px;
+		.line{
+			display: block;
+			margin-bottom: 10px;
+			position: relative;
+			width: 100%;height: 1px;
+			background-color: #cecece;
+			span{
+				display: block;
+				position: absolute;
+				left: 0;
+				top: -2px;
+				width: 65px;
+				height: 5px;
+				background-color: #e13800;
+			}
+		}
+		h4{
+			margin: 0 0 20px;
+			height: 48px;line-height: 48px;
+			font-size: 30px;color: #e23500;font-weight: bold;
+		}
+	}
+}
+
+

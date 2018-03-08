@@ -1,0 +1,278 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 920px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 36px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 1px;
+			top: 26px;
+			width: 139px;
+			height: 47px;
+			background: url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-white2.png) 0 0 no-repeat;
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 162px;
+			top: 1px;
+			@include sprite($logo-gf);
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			top: 819px;
+			&.btn1{
+				left: 43px;
+				@include sprite($s1-btn1);
+				&:hover{
+					@include sprite($s1-btn1-h);
+				}
+			}
+			&.btn2{
+				left: 268px;
+				@include sprite($s1-btn2);
+				&:hover{
+					@include sprite($s1-btn2-h);
+				}
+			}
+			&.btn3{
+				left: 493px;
+				@include sprite($s1-btn3);
+				&:hover{
+					@include sprite($s1-btn3-h);
+				}
+			}
+			&.btn4{
+				left: 718px;
+				@include sprite($s1-btn4);
+				&:hover{
+					@include sprite($s1-btn4-h);
+				}
+			}
+		}
+		.play{
+			position: absolute;
+			left: 405px;
+			top: 647px;
+			padding: 4px;
+			width: 190px - 8px;
+			height: 141px - 8px;
+			i{
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				@include sprite($s1-play);
+			}
+			img{
+				display: block;
+				width: 182px;
+				height: 96px;
+			}
+		}
+	}
+}
+.zt-section2{
+	height: 1220px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 155px;
+		.para{
+			margin: 0 auto;
+			width: 920px;
+			p{
+				line-height: 30px;
+				font-size: 16px;
+				text-indent: 32px;
+				color: #42251b;
+				span{color: #c03200;}
+			}
+			&.tac{
+				p{
+					text-indent: 0;
+					text-align: center;
+				}
+			}
+			&.para2{margin-top: 130px;}
+			&.para3{margin-top: 115px;
+				height: 180px;}
+			&.para4{margin-top: 235px;}
+		}
+		.btn{
+			display: block;
+			margin: 25px auto 0;
+			@include sprite($s2-btn);
+			&:hover{
+				@include sprite($s2-btn-h);
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 1040px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 103px;
+		.tit{
+			height: 30px;
+			line-height: 30px;
+			font-size: 16px;
+			color: #fff;
+			text-align: center;
+			text-shadow: 0 3px 5px #100600;
+		}
+		.list{
+			margin-left: 39px;
+			padding-top: 53px;
+			width: 920px;
+			ul{
+				width: 1060px;
+				li{
+					position: relative;
+					float: left;
+					margin-right: 87px;
+					margin-bottom: 72px;
+					width: 249px;
+					height: 344px;
+					img{
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+					.voteNums{
+						position: absolute;
+						left: 0;
+						top: 220px;
+						width: 100%;
+						font-size: 18px;
+						color: #a50c23;
+						font-weight: bold;
+						text-align: center;
+						i{
+							margin-right: 5px;
+							font-size: 36px;
+							font-style: normal;
+							vertical-align: sub;
+						}
+					}
+					.voteBtn{
+						position: absolute;
+						display: block;
+						left: 28px;
+						top: 273px;
+						@include sprite($s3-btn);
+						&:hover{
+							@include sprite-position($s3-btn-h);
+						}
+						&.clked{
+							cursor: default;
+							&:hover{
+								@include sprite-position($s3-btn);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section4{
+	height: 800px;
+	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 123px;
+		.ztSldWrap{
+			position: relative;
+			padding-top: 10px;
+			width: 1000px;
+			height: 630px;
+			background: url(../ztimages/s4-bg.png) center 0 no-repeat;
+			.arrBtn{
+				display: block;
+				position: absolute;
+				top: 221px;
+				&.arrBtnL{
+					left: -2px;
+					@include sprite($arr-l);
+					&:hover{@include sprite-position($arr-l-h)}
+				}
+				&.arrBtnR{
+					right: -2px;
+					@include sprite($arr-r);
+					&:hover{@include sprite-position($arr-r-h)}
+				}
+			}
+			.ztSld{
+				margin-left: 64px;
+				width: 873px;
+				height: 600px;
+				.ztSldCon{
+					li{
+						position: relative;
+						width: 873px;
+						height: 600px;
+						.pic{
+							display: block;
+							width: 873px;
+							height: 515px;
+							background: url(http://image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat;
+						}
+						p{
+							margin-top: 20px;
+							height: 40px;
+							line-height: 40px;
+							font-size: 20px;
+							color: #fff;
+							font-weight: bold;
+							text-align: center;
+							text-shadow: 0 3px 5px #100600;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.fx-code{
+	position: absolute;
+	left: 50%;
+	top: 425px;
+	margin-left: -654px;
+	width: 139px;
+	height: 240px;
+	&.cur{
+		position: fixed;
+		top: 50%;
+		margin-top: -120px;
+	}
+	img{
+		display: block;
+		margin-bottom: 7px;
+		width: 139px;
+		height: 139px;
+	}
+	.btn{
+		display: block;
+		margin: 0 auto 8px;
+		&.btn1{
+			@include sprite($fx-btn-and);
+			&:hover{@include sprite-position($fx-btn-and-h)}
+		}
+		&.btn2{
+			@include sprite($fx-btn-ios);
+			&:hover{@include sprite-position($fx-btn-ios-h)}
+		}
+	}
+}

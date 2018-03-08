@@ -1,0 +1,76 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$bp1: (0/100*1rem,-946/100*1rem,122/100*1rem,122/100*1rem);
+$bp2: (-396/100*1rem,-946/100*1rem,122/100*1rem,122/100*1rem);
+$bp3: (-264/100*1rem,-946/100*1rem,122/100*1rem,122/100*1rem);
+$bp4: (-132/100*1rem,-946/100*1rem,122/100*1rem,122/100*1rem);
+$btn-back: (-171/100*1rem,-578/100*1rem,160/100*1rem,48/100*1rem);
+$btn-begin: (-522/100*1rem,0/100*1rem,694/100*1rem,153/100*1rem);
+$btn-handbook: (0/100*1rem,-505/100*1rem,161/100*1rem,134/100*1rem);
+$btn-next: (-325/100*1rem,-834/100*1rem,180/100*1rem,79/100*1rem);
+$btn-pick-c: (-216/100*1rem,-722/100*1rem,249/100*1rem,73/100*1rem);
+$btn-pick: (-475/100*1rem,-722/100*1rem,249/100*1rem,73/100*1rem);
+$end-comm: (-839/100*1rem,-505/100*1rem,324/100*1rem,63/100*1rem);
+$gv-btn: (-668/100*1rem,-649/100*1rem,324/100*1rem,63/100*1rem);
+$gv-btn2: (-171/100*1rem,-505/100*1rem,324/100*1rem,63/100*1rem);
+$gv-buy: (-813/100*1rem,-274/100*1rem,222/100*1rem,47/100*1rem);
+$handbook: (-1171/100*1rem,-208/100*1rem,29/100*1rem,31/100*1rem);
+$hb-btn-pick: (-505/100*1rem,-505/100*1rem,324/100*1rem,63/100*1rem);
+$hd-arr-l-dis: (-1054/100*1rem,-722/100*1rem,150/100*1rem,67/100*1rem);
+$hd-arr-l: (-685/100*1rem,-834/100*1rem,150/100*1rem,67/100*1rem);
+$hd-arr-r-dis: (-734/100*1rem,-722/100*1rem,150/100*1rem,67/100*1rem);
+$hd-arr-r: (-894/100*1rem,-722/100*1rem,150/100*1rem,67/100*1rem);
+$hunt-act: (-1070/100*1rem,-393/100*1rem,135/100*1rem,102/100*1rem);
+$hunt-begin: (0/100*1rem,-649/100*1rem,324/100*1rem,63/100*1rem);
+$icon-tit1: (-162/100*1rem,-834/100*1rem,153/100*1rem,100/100*1rem);
+$icon-tit2: (0/100*1rem,-393/100*1rem,259/100*1rem,102/100*1rem);
+$icon-tit3: (0/100*1rem,-834/100*1rem,152/100*1rem,102/100*1rem);
+$icon-tit4: (-522/100*1rem,-163/100*1rem,303/100*1rem,101/100*1rem);
+$icon-tit5: (0/100*1rem,-722/100*1rem,206/100*1rem,102/100*1rem);
+$icon-tit6: (-269/100*1rem,-393/100*1rem,258/100*1rem,102/100*1rem);
+$icon-tit7: (-835/100*1rem,-163/100*1rem,255/100*1rem,101/100*1rem);
+$icon-tit8: (-537/100*1rem,-393/100*1rem,257/100*1rem,102/100*1rem);
+$icon-tit9: (-804/100*1rem,-393/100*1rem,256/100*1rem,102/100*1rem);
+$logo-dgy: (-515/100*1rem,-834/100*1rem,160/100*1rem,77/100*1rem);
+$logo-gf: (0/100*1rem,0/100*1rem,512/100*1rem,264/100*1rem);
+$map-pop-tit: (0/100*1rem,-274/100*1rem,289/100*1rem,109/100*1rem);
+$map-pos: (-1171/100*1rem,-163/100*1rem,27/100*1rem,35/100*1rem);
+$sb-btn: (-334/100*1rem,-649/100*1rem,324/100*1rem,63/100*1rem);
+$sb-tips: (-299/100*1rem,-274/100*1rem,504/100*1rem,55/100*1rem);
+$swp-arr-l: (-1100/100*1rem,-163/100*1rem,61/100*1rem,78/100*1rem);
+$swp-arr-r: (-528/100*1rem,-946/100*1rem,61/100*1rem,78/100*1rem);
+.spritesheet {
+    background-image: url('../ztimages/csprite.png');
+    background-repeat: no-repeat;
+    background-size: 1216/100*1rem 1068/100*1rem;
+}
+@mixin sprite-width($sprite) {
+    width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+    height: nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+    $sprite-offset-x: nth($sprite, 1);
+    $sprite-offset-y: nth($sprite, 2);
+    background-position: $sprite-offset-x  $sprite-offset-y;
+}
+@mixin sprite($sprite) {
+    background-image: url('../ztimages/csprite.png');
+    background-repeat: no-repeat;
+@include sprite-position($sprite);
+@include sprite-width($sprite);
+@include sprite-height($sprite);
+    background-size: 1216/100*1rem 1068/100*1rem;
+}
+
+

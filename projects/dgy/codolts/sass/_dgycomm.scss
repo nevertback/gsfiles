@@ -1,0 +1,649 @@
+@import "csprite";
+html,body{
+	position: relative;
+	width: 100%;height: 100%;max-height:100%;
+	overflow: hidden;
+	user-select:none;
+	::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+		border-radius: 0;
+		background-color: rgba(255,255,255,0.1);
+	}
+	::-webkit-scrollbar-track {
+		border-radius: 10px;
+		background-color: rgba(255,255,255,0.2);
+	}
+	::-webkit-scrollbar-track:hover {
+		background-color: rgba(255,255,255,0.4);
+	}
+	::-webkit-scrollbar-track:active {
+		background-color: rgba(255,255,255,0.3);
+	}
+	::-webkit-scrollbar-thumb {
+		border-radius: 0;
+		background-color: rgba(255,255,255,0.8);
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background-color: rgba(255,255,255,1);
+	}
+	::-webkit-scrollbar-thumb:active {
+		background-color: rgba(255,255,255,0.6);
+	}
+}
+body{
+	font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	background-color: #000;
+}
+h1,h2,h3,h4,h5,p,ul{
+	margin: 0;padding: 0;
+	list-style:none;
+}
+a{text-decoration: none;cursor: pointer;user-select:none}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after{
+  display: table;
+  content: " ";
+}
+.clearfix:after,
+.container:after{
+  clear: both;
+}
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	width: $basewidth;
+}
+//IE
+.ielt9{
+	position: absolute;top: 0px;left: 0;z-index: 10000;
+	width: 100%;height: 100%;
+	background:url('http://img1.gamersky.com/image2016/06/20160603_zl_91_4/ielt9.jpg') center center no-repeat;
+	p{
+		padding-top: 25%;
+		font-size: 22px;text-align: center;line-height: 40px;
+		span{color: #ff6600}
+	}
+
+}
+.dn{display: none !important}
+.sound_effect{display: none}
+%blank{
+	background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+}
+
+.page_bg{
+	display: block;
+}
+
+//loading
+#loading{
+	position: absolute;left: 0;top: 0;
+	width: 100%;height: 100%;
+	background-color: #000;
+	z-index: 9998;
+}
+//预加载
+#jpreOverlay{
+	background-color: #000;
+	#jpreLoader{
+		display: none;
+		width: 100%;height: 4px;
+		#jpreBar{
+			height: 4px;
+			background-color: #f6c783;
+		}
+		#jprePercentage{
+			padding-top:35px;
+			width: 100%;
+			font-size: 16px;text-align: center;color: #f6c783;
+		}
+	}
+}
+#jpreSlide{
+	width: 100%;height: 100%;
+}
+#loadingAnim{
+	$ldWidth:274px;$ldHeight:120px;
+	display: block;position: absolute;top: 50%;left: 50%;margin-left: -$ldWidth/2;margin-top: -($ldHeight + 40px)/2;z-index: 9999;
+	width: $ldWidth;height:$ldHeight + 40px;
+	.loadingAnim-img-g{
+		display: block;
+		width: $ldWidth;height:$ldHeight;
+	}
+	.loadingAnim-img{
+		display: block;position: absolute;top: 0;right: 0;
+		width: $ldWidth;height:$ldHeight;
+		overflow: hidden;
+		img{
+			display: block;position: absolute;top: 0;right: 0;
+			width: $ldWidth;height:$ldHeight;
+		}
+	}
+	.loadingtxt{
+		position: absolute;bottom: 0;left: 0;
+		width: $ldWidth;height:33px;line-height:33px;
+		font-size: 14px;color: #fff;text-align: center;
+	}
+}
+.closeLoading{
+	display: none;position: absolute;top: 50%;left: 50%;margin-left: -400px;margin-top: -55px;z-index: 9999;
+	width: 800px;height: 110px;
+	.txt{
+		margin-bottom: 10px;
+		height: 60px;line-height:30px;
+		font-size: 24px;color: #ef7800;text-align: center;
+		span{display: block;font-size: 18px;color: #eee}
+	}
+	.btngroup{
+		width: 800px;height: 40px;line-height: 40px;
+		a{
+			display: block;margin: 10px auto 0;
+			width: 160px;height: 40px;line-height: 40px;
+			background-color: #333;
+			font-size: 20px;color: #fff;text-align: center;
+			&:hover{background-color: #555}
+		}
+	}
+}
+
+.autoMH{
+	position: absolute;top: 0;left: 50%;
+	width: 1920px;height: 1080px;
+}
+.pageswrap{
+	position: relative;
+	width: 100%;height: 100%;
+	overflow: hidden;
+}
+.pages{
+	position: absolute;top: 0;left: 0;
+	width: 100%;height: 100%;
+	visibility: hidden;opacity: 0;
+	@extend %transbg;	
+	.page_con{
+		position: relative;
+		width: 100%;height: 100%;
+	}
+	&.cur{
+		visibility: visible;opacity: 1;
+	}
+}
+.volbtn{
+	display: none;
+	position: absolute;
+	right:34px;
+	top:34px;
+	width: 53px;
+	height: 37px;
+	@include sprite($btn-round);
+	z-index: 99;
+	&:after{
+		display: block;
+		content: '';
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		@include sprite($vol-play);
+	}
+	&:before{
+		display: block;
+		content: '';
+		position: absolute;
+		left: 47px;
+		top: 20px;
+		@include sprite($vol-play-anim);
+		animation: volAnim steps(2) 0.6s infinite;
+	}
+	&.pause{
+		&:after{@include sprite($vol-pause);}
+		&:before{display: none;}
+	}
+	&.cur{
+		display: block;
+	}
+}
+//头部
+.QZnav {min-width:940px;}
+.QZnav .topbar {width:940px;}
+
+.thePlayBtn{
+	display: block;
+	@include sprite($play-bg);
+	&:before,&:after{
+		display: block;
+		content: '';
+		position: absolute;
+	}
+	&:before{
+		left: 4px;
+		top: 4px;
+		@include sprite($play-bd);
+		animation: rotateAnim 6s linear infinite;
+	}
+	&:after{
+		left: 36px;
+		top: 31px;
+		@include sprite($play-arr);
+	}
+	&:hover{
+		&:before{
+			@include sprite($play-bd-h);
+		}
+		&:after{
+			@include sprite($play-arr-h);
+		}
+	}
+}
+
+//弹层
+.gsPopupMask{
+	position: fixed;z-index: 99998;top: 0;left: 0;
+	width: 100%;height: 100%;
+	background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.25s ease;
+	&.cur{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.gsPopup{
+	z-index: 99999;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.25s ease;
+	.gsPopupCon{
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		img{
+			display: block;
+		}
+		video{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.gsPopupClose{
+		position: absolute;top:0;right:-50px;overflow: hidden;
+		width: 38px;height: 38px;
+		background:url(http://image.gamersky.com/webimg13/zhuanti/common/gsPopupClose.png) 5px 5px no-repeat;
+		&:hover{background-position: -33px 5px;}
+	}
+	&.cur{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.fixNav{
+    position: absolute;
+	right: 12px;
+	top: 50%;
+	margin-top: -165px;
+	width: 12px;
+	height: 330px;
+    z-index: 666;
+    transition: all 0.25s ease;
+    opacity: 0;
+    visibility: hidden;
+	transform:translate(0,0);
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+    }
+    .fx_list{
+		width: 12px;
+        a{
+            position: relative;
+            display: block;
+			margin-bottom: 27px;
+			width: 12px;
+			height: 12px;
+			background-color: #456684;
+			border-radius: 6px;
+			&:before{
+				display: block;
+				content: '';
+				position: absolute;
+				left: 4px;
+				top: 14px;
+				@include sprite($fx-line);
+			}
+            i{
+                position: absolute;
+				left: 0;
+				top: 0;
+                display: block;
+				@include sprite($fx-dot-c);
+				opacity: 0;
+                transform:scale(0.5);
+				transition:all 0.25s ease;
+            }
+            span{
+                display: block;
+                position: absolute;
+				top: -6px;
+				right: 0;
+				padding-right: 24px;
+				height: 24px;
+                line-height: 24px;
+                font-size: 18px;
+                color: #278eee;
+				font-weight: bold;
+				white-space: nowrap;
+				visibility: hidden;
+                opacity:0;
+                transform:translate3d(10px,0,0);
+                transition:all 0.25s ease;
+            }
+            &:hover,&.cur{
+                i{
+					transform:scale(1);
+					opacity: 1;
+                }
+				span{
+					visibility: visible;
+					opacity: 1;
+					transform:translate3d(0,0,0);
+				}
+            }
+        }
+		a.fixBtn_comm:before{
+			display: none;
+		}
+    }
+}
+//遮罩
+.commMsk{
+	display: block;position: absolute;top: 0;left:0;
+	width: 100%;height: 100%;
+}
+.page_trans{
+	.letvwrap{
+		position: relative;
+		width: 100%;height: 100%;
+	}
+	.btn_sty.btn_sty2{
+		position: absolute;
+		display: none;
+		z-index: 10;
+		&.cur{
+			display: block;
+		}
+	}
+	.gdvd_btn{
+		position: absolute;
+		left: 1600px;
+		top: 870px;
+		z-index: 10;
+		&.gdvd_loding{
+			position: absolute;
+			left: 1650px;
+			top: 1004px;
+			width: 225px;
+			height: 8px;
+			background-color: rgba(0,0,0,0.6);
+			&:before{
+				display: block;
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 0;
+				height: 8px;
+				background-color: #fff;
+				transition:all 10s ease;
+			}
+			&.cur:before{
+				width: 100%;
+			}
+		}
+	}
+}
+.btn_sty{
+	display: block;
+	position: absolute;
+	&.btn_sty2{
+		position: absolute;
+		left: 1660px;
+		top: 958px;
+		@include sprite($btn-sty2);
+		line-height: 56px;
+		font-size: 32px;
+		color: #070b10;
+		text-align: center;
+		font-weight: bold;
+		&:hover {
+			color: #e91111;
+			text-shadow: 0 1px 0 #fff;
+		}
+	}
+}
+.btn_close{
+	display: block;
+	position: absolute;
+	right: 34px;
+	top: 34px;
+	@include sprite($btn-round2);
+	&:after{
+		display: block;
+		content: '';
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		@include sprite($close);
+	}
+	&:hover{
+		@include sprite($btn-round2-h);
+	}
+}
+.btn_goon{
+	display: block;
+	position: relative;
+	padding-left: 65px;
+	width: 80px;
+	height: 59px;
+	line-height: 55px;
+	font-size: 32px;
+	color: #00f97b;
+	font-weight: bold;
+	overflow: hidden;
+	white-space:nowrap;
+	&:before{
+		display: block;
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		//@include sprite($btn-goon);
+		animation:rotateAnim 6s linear infinite both;
+	}
+	&:after{content: '继续';}
+	&.skip:after{content: '跳过';}
+	&:hover{
+		&:before{
+			animation-duration: 0.8s;
+		}
+	}
+	&:active{
+		&:before{
+			animation-duration: 0.2s;
+		}
+	}
+}
+
+.logo-gs{
+	display: block;
+	position: absolute;
+	left: 17px;
+	top: 24px;
+	@include sprite($logo-gs);
+}
+.logo-gf{
+	display: block;
+	position: absolute;
+	left: 219px;
+	top: 40px;
+	@include sprite($logo-gf);
+}
+.tabs{
+	.tabsItems{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		.tabsItem{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			visibility: hidden;
+			transition:all 0.25s ease;
+			&.cur{
+				visibility: visible;
+			}
+		}
+	}
+}
+.lotTabs{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1920px;
+	height: 1080px;
+	.tabsItems {
+		overflow: hidden;
+		.tabsItem {
+			opacity: 0;
+			img{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 1920px;
+				height: 1080px;
+				opacity: 0;
+				transform:translate3d(-200px,0,0);
+				transition:all 0.25s ease;
+			}
+			.vdplay{
+				position: absolute;
+				left: 508px;
+				top: 663px;
+				@extend .thePlayBtn;
+				opacity: 0;
+				transform:scale(0.5) translate3d(0,200px,0);
+				transition:transform 0.25s ease,opacity 0.25s ease;
+			}
+			.txtwrap{
+				position: absolute;
+				left: 934px;
+				top: 560px;
+				padding:38px 33px 0;
+				width: 769px - 66px;
+				height: 240px - 38px;
+				background: url(http://image.gamersky.com/webimg13/zhuanti/codolts/pic/s6-txt-bg.png) 0 0 no-repeat;
+				text-shadow: 0 1px 0 #fff;
+				opacity: 0;
+				transform:translate3d(50px,0,0);
+				transition:all 0.25s ease;
+				h4{
+					margin-bottom: 10px;
+					line-height: 50px;
+					font-size: 40px;
+					color: #000;
+				}
+				h5{
+					margin-bottom: 10px;
+					line-height: 36px;
+					font-size: 20px;
+					color: #e91111;
+				}
+				p{
+					font-weight: bold;
+					line-height: 28px;
+					font-size: 16px;
+					color: #000;
+				}
+			}
+			&.cur {
+				opacity: 1;
+				.vdplay{
+					opacity: 1;
+					transform:scale(1) translate3d(0,0,0);
+					transition-delay: 0.5s;
+				}
+				img{
+					opacity: 1;
+					transition-delay: 0.25s;
+					transform:translate3d(0,0,0);
+				}
+				.txtwrap{
+					opacity: 1;
+					transition-delay: 0.25s;
+					transform:translate3d(0,0,0);
+				}
+			}
+		}
+	}
+	.tabsNavs{
+		position: absolute;
+		left: 934px;
+		top: 377px;
+		width: 880px;
+		height: 134px;
+		a{
+			position: relative;
+			display: block;
+			float: left;
+			margin-right: 35px;
+			width: 100px;
+			height: 134px;
+			background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+			span{
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 87px;
+				width: 100px;
+				height: 28px;
+				line-height: 28px;
+				font-size: 16px;
+				color: #949fb0;
+				text-align: center;
+			}
+			i{
+				position: absolute;
+				left: 0;
+				top: 18px;
+				display: block;
+				width: 100px;
+				height: 100px;
+				background: url(http://image.gamersky.com/webimg13/zhuanti/codolts/pic/s6-nav.png) 0 0 no-repeat;
+				&.tn1{background-position: 0 0;}
+				&.tn2{background-position: -135px 0;}
+				&.tn3{background-position: -270px 0;}
+				&.tn4{background-position: -405px 0;}
+				&.tn5{background-position: -540px 0;}
+				&.tn6{background-position: -675px 0;}
+			}
+			&.cur{
+				background: url(http://image.gamersky.com/webimg13/zhuanti/codolts/pic/tab-nav-c.png) 0 0 no-repeat;
+				i.tn1{background-position: 0 -110px;}
+				i.tn2{background-position: -135px -110px;}
+				i.tn3{background-position: -270px -110px;}
+				i.tn4{background-position: -405px -110px;}
+				i.tn5{background-position: -540px -110px;}
+				i.tn6{background-position: -675px -110px;}
+				span{
+					color: #fff;
+				}
+			}
+		}
+	}
+}

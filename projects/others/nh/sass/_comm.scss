@@ -1,0 +1,129 @@
+@import "libs";
+html,body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: '思源黑体 CN','Noto Sans S Chinese','思源黑体','Source Han Sans CN','Noto Sans CJK SC';
+    user-select: none;
+    background-color: #000;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.clearfix:before,
+.clearfix:after{display: table;content: " ";}
+.clearfix:after{clear: both;}
+#wrap{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -960px;
+    margin-top: -540px;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+.logo{
+    position: absolute;
+    left: 63px;
+    top: 34px;
+    z-index: 90;
+    path{
+        fill:#fff;
+        transition:all 0.5s ease;
+    }
+    &.red{
+        path{
+            fill:#d71c34;
+        }
+    }
+}
+nav{
+    position: absolute;
+    padding-right: 30px;
+    bottom: 20px;
+    right: 0;
+    height: 50px;
+    @include flexbox;
+    transform:translate(250px,0);
+    transition:all 0.25s ease;
+    &.gaming-nav{
+        transform:translate(180px,0);
+    }
+    &:hover{
+        transform:translate(0,0);
+    }
+    .open{
+        cursor: pointer;
+        display: block;
+        margin-right: 14px;
+        width: 46px;
+        height: 46px;
+        background: url(../ztimages/icon-sj.png) center center no-repeat;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        &:hover{
+            background-color: rgba(255,255,255,0.2);
+        }
+    }
+    .btn-group{
+        @include flexbox;
+        height: 46px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        a{
+            cursor: pointer;
+            display: block;
+            padding: 0 20px;
+            height: 46px;
+            line-height: 46px;
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+            border-left: 1px solid #fff;
+            &:first-child{
+                border-left: none;
+            }
+            &:hover{
+                background-color: rgba(255,255,255,0.2);
+            }
+            &.dis{
+                cursor: default;
+                background-color: rgba(255,255,255,0.5);
+                &:hover{
+                    background-color: rgba(255,255,255,0.5);
+                }
+            }
+        }
+    }
+}
+.back{
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    width: 46px;
+    height: 46px;
+    background: url(../ztimages/icon-sj-back.png) center center no-repeat;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    &:hover{
+        background-color: rgba(255,255,255,0.2);
+    }
+}
+.full-btn{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+}

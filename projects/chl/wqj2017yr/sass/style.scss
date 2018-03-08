@@ -1,0 +1,409 @@
+//专题
+@import 'animate';
+@import 'comm';
+h3.title{
+    height: 120px;
+    line-height: 120px;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    font-weight: normal;
+}
+.zt-section1{
+	position: relative;
+	background-color: #3a3b3d;
+	height: 1031px;
+	.scene{
+		position: absolute;
+		left: 50%;
+		top: 0;
+		margin-left: -960px;
+		width: 1920px;
+		height: 1031px;
+		overflow: hidden;
+		user-select: none;
+		.scene-cells{
+			width: 100%;
+			height: 100%;
+			img{
+				position: absolute;
+				display: block;
+			}
+		}
+		.scene-rain img{
+			left: 139px;
+			top: 80px;
+			width: 1627px;
+			height: 839px;
+		}
+		.scene-shoubing img{
+			left: 734px;
+			top: 177px;
+			width: 442px;
+			height: 326px;
+		}
+		.shoubing-light{
+			position: absolute;
+			left: 734px;
+			top: 177px;
+			width: 442px;
+			height: 326px;
+			background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/yr/pc/light.png) -408px -173px no-repeat;
+			-webkit-mask-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/yr/pc/scene-shoubing.png);
+			mask-image: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/yr/pc/scene-shoubing.png);
+			animation: lightAnim 6s ease-in infinite;
+		}
+		.scene-logo img{
+			left: 671px;
+			top: 248px;
+			width: 576px;
+			height: 174px;
+		}
+		.sc-icons{
+			position: absolute;
+			&.sc-yunshi{left: 298px;top: 186px;}
+			&.sc-gstar{left: 380px;top: 301px;}
+			&.sc-cell{left: 580px;top: 146px;}
+			&.sc-star{left: 701px;top: 174px;}
+			&.sc-x{left: 1241px;top: 366px;}
+			&.sc-db3{left: 669px;top: 448px;}
+			&.sc-dbx{left: 708px;top: 419px;}
+			&.sc-db4{left: 568px;top: 517px;}
+			&.sc-bkb{left: 612px;top: 448px;}
+			&.sc-cdr1{left: 1286px;top: 159px;}
+			&.sc-cdr2{left: 1199px;top: 196px;}
+			&.sc-mla{left: 1313px;top: 443px;}
+			&.sc-moon{left: 1543px;top: 255px;}
+			&.sc-jzt1{left: 1494px;top: 379px;}
+			&.sc-jdqs{left: 1476px;top: 407px;}
+			&.sc-jxs{left: 1462px;top: 638px;}
+			&.sc-jzt2{left: 1327px;top: 614px;}
+			&.sc-ts{left: 1092px;top: 722px;}
+			&.sc-house{left: 1187px;top: 747px}
+			&.sc-syq{left: 1054px;top: 836px}
+			&.sc-sea1{left: 726px;top: 856px}
+			&.sc-sea2{left: 598px;top: 853px}
+			&.sc-cbt{left: 535px;top: 804px}
+			&.sc-sed{left: 304px;top: 637px}
+			&.sc-bg{left: 199px;top: 704px}
+		}
+		.sc-gstar-line{
+			position: absolute;
+			width: 6px;
+			height: 1px;
+			background-color: #000;
+			transform-origin: 100% 0;
+			animation: lineAnim 2s ease-in infinite;
+			&.sc-gstar-line1{left: 368px;top: 321px;}
+			&.sc-gstar-line2{left: 360px;top: 341px;width: 9px;}
+			&.sc-gstar-line3{left: 368px;top: 361px;}
+		}
+	}
+	.container{
+		position: relative;
+		height: 1031px;
+		.layer_time{
+			position: relative;
+			padding-top: 545px;
+			.time-wrap{
+				margin: 0 auto;
+				width: 380px;
+				height: 60px;
+				.started{
+					line-height: 60px;
+					font-size: 40px;
+					color: #f2a02c;
+					font-weight: bold;
+					text-align: center;
+				}
+			}
+			.time{
+				position: relative;
+				width: 600px;
+				.time-box{
+					position: relative;
+					float: left;
+					margin-right: 30px;
+					width: 106px;
+					height: 60px;
+					&.time-s{
+						display: none;
+					}
+					.place-t{
+						float: left;
+						margin-right: 10px;
+					}
+					.place-s{
+						float: left;
+					}
+					span{
+						display: block;
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						font-size: 16px;
+						color: #c78b36;
+					}
+				}
+			}
+			.bdsharewrap.bdstyle-c{
+				margin: 32px auto 0;
+			}
+		}
+	}
+}
+.zt-section2{
+	height: auto;
+	.container{
+		padding-top: 40px;
+        .prizes{
+            width: 1250px;
+            li{
+                float: left;
+                margin: 0 2px 2px 0;
+                @include sprite($prize-bg);
+                a{
+					cursor: default;
+                    position: relative;
+                    display: block;
+                    width: 148px;
+                    height: 200px;
+                    background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+                    .prizes-icon{
+                        display: block;
+                        position: absolute;
+                        width: 148px;
+                        height: 200px;
+                        background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/yr/pc/prize-icons.png) 0 0 no-repeat;
+                        opacity: 1;
+                        transition:all 0.2s ease;
+                        transition-delay: 0.1s;
+                        visibility: visible;
+                        @for $i from 0 through 7 {
+                            &.prizes-icon#{$i}{
+                                background-position: -150px*$i 0;
+                            }
+                        }
+                        @for $j from 8 through 15 {
+                            &.prizes-icon#{$j}{
+                                background-position: -150px*($j - 8 ) -202px;
+                            }
+                        }
+                    }
+                    span{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        display: block;
+                        padding-top: 120px;
+                        width: 145px;
+                        height: 40px;
+                        overflow: hidden;
+                        transition:all 0.25s ease;
+                        .tit{
+                            display: block;
+                            margin: 0 auto;
+                            width: 120px;
+                            height: 60px;
+                            line-height: 20px;
+                            font-size: 14px;
+                            color: #333;
+                            font-style: normal;
+                            text-align: center;
+                        }
+                        .votetime{
+                            display: block;
+                            width: 100%;
+                            line-height: 20px;
+                            text-align: center;
+                            font-style: normal;
+                            font-size: 12px;
+                            color: #888;
+                            b{
+                                font-size: 14px;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                    &:hover{
+                        .prizes-icon{
+                            visibility: hidden;
+                            opacity: 0;
+                            transition-delay: 0s;
+                            transform:scale(0.9);
+                        }
+                        span{
+                            padding-top: 40px;
+                            height: 140px;
+                            transition-delay: 0.1s;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}
+.zt-section3{
+    height: auto;
+    .container{
+        padding-top: 50px;
+        ul{
+            width: 1300px;
+            li{
+                float: left;
+                padding: 25px 0 0;
+                width: 600px;
+                height: 260px - 25px;
+                background-color: #f0b94d;
+                h5{
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 20px;
+                    color: #222;
+                    text-align: center;
+                    font-weight: bold;
+                }
+                p{
+                    line-height: 30px;
+                    font-size: 14px;
+                    color: #222;
+                    text-align: center;
+                }
+                a{
+                    display: block;
+                    margin: 20px auto 0;
+                    width: 129px;
+                    height: 42px;
+                    line-height: 42px;
+                    background-color: #fff;
+                    font-size: 14px;
+                    color: #444;
+                    text-align: center;
+                    &:hover{
+                        background-color: #333;
+                        color: #ffcd6c;
+                    }
+                }
+                &.first{
+                    background-color: #f7c055;
+                }
+            }
+        }
+    }
+}
+.zt-section4 {
+	height: auto;
+	.container {
+		padding-top: 50px;
+		.context{
+			width: 1200px;
+			height: 390px;
+			background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/yr/pc/s4-bg.jpg) 0 0 no-repeat;
+			.rules{
+				padding-left: 45px;
+				padding-top: 30px;
+				width: 690px;
+				h5{
+					height: 45px;
+					line-height: 45px;
+					font-size: 16px;
+					color: #fff;
+				}
+				p{
+					line-height: 24px;
+					font-size: 15px;
+					color: #f2f2f3;
+					span{color: #ffc759;}
+				}
+				ul{
+					margin-bottom: 10px;
+					li{
+						position: relative;
+						padding-left: 24px;
+						line-height: 24px;
+						i{
+							display: block;
+							position: absolute;
+							left: 0;
+							top: 0;
+							font-style: normal;
+							font-size: 15px;
+							color: #f2f2f3;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section5{
+	background-color: #eee;
+	.container{
+		position: relative;
+		padding: 60px 0 30px;
+		.zt-comment{
+			float: left;
+			margin-right: 30px;
+			width: 760px;
+			.QZCMT-outer-title{
+				padding-left: 40px;
+				margin-bottom: 20px;
+				height: 30px;
+				line-height: 30px;
+				background: url(http://image.gamersky.com/webimg13/zhuanti/wqj2017/yr/pc/logo-qz.png) 0 0 no-repeat;
+				font-size: 22px;
+				color: #444;
+			}
+		}
+		.zt-coopers{
+			position: absolute;
+			top: 110px;
+			right: 0;
+			padding-bottom: 38px;
+			width: 410px;
+			background-color: #fff;
+			overflow: hidden;
+			.cooper-title{
+				padding-left: 27px;
+				height: 63px;
+				line-height: 63px;
+				font-size: 18px;
+				color: #333;
+				font-weight: bold;
+			}
+		}
+		.list-wrap{
+			margin-left: 20px;
+			margin-bottom: 36px;
+			width: 368px;
+			border-top: 1px solid #e5e5e5;
+			border-left: 1px solid #e5e5e5;
+		}
+		.list{
+			width: 380px;
+			li{
+				float: left;
+				width: 122px;
+				height: 72px;
+				border-right: 1px solid #e5e5e5;
+				border-bottom: 1px solid #e5e5e5;
+				a{
+					display: block;
+					img{
+						display: block;
+						width: 122px;
+						height: 72px;
+					}
+				}
+			}
+		}
+		a.cooper{
+			margin: 0 auto;
+		}
+	}
+}
+.ieBrowser{
+	.zt-section1 .scene .shoubing-light{
+		display: none;
+	}
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="format-detection" content="telephone=no">
+	<title>网页标题</title>
+	<meta name="keywords" content="关键词">
+	<meta name="description" content="网页描述">
+	<link href="http://j.gamersky.com/g/normalize.min.css" rel="stylesheet">
+	<script type="text/javascript" src="http://j.gamersky.com/g/jquery-1.8.3.js"></script>
+	<link rel="stylesheet" href="http://j.gamersky.com/zt/sszt/css/style.css?201708150" />
+	<link href="css/style.min.css" rel="stylesheet" inline>
+</head>
+<body>
+<div class="Mid Mid5">
+	<div class="Midtit"><div class="tit pr5">精彩瞬间</div><div class="cont"></div><div class="more"></div></div>
+	<div class="container dnf-con">
+		<div class="dnf-para">
+			<p>在活动期间说出你的期望和愿景，说不定明年十周年会帮大家实现了呢！大胆说出你在<br>地下城与勇士中的期望和愿景吧，参与活动还可赢取丰厚奖励。</p>
+		</div>
+		<div class="dnf-form">
+			<div class="dnf-form-textarea">
+				<textarea class="insertIpt" id="dnfTxt" data-placeholder="说出你的期望和愿景吧！"></textarea>
+			</div>
+			<div class="clearfix dnf-form-row">
+				<label for="dnfQQ">QQ号：</label>
+				<div class="dnf-form-ipt"><input type="text" id="dnfQQ"></div>
+			</div>
+			<a class="dnfBtn" id="dnfBtn">确认提交</a>
+		</div>
+		<div class="dnf-notice">
+			<h5>注意事项</h5>
+			<ul>
+				<li>1、 本次活动时间为：11月20日至11月26日；</li>
+				<li>2、 玩家需要按照活动要求进行参与；</li>
+				<li>3、 回帖中内容禁止有其他违规内容，经发现将删除处理；</li>
+				<li>4、 活动进行期间，将选出获奖者给予奖励；</li>
+				<li>5、 虚拟奖励采用邮件的形式发放；</li>
+				<li>6、本活动最终解释权归游民星空所有。</li>
+				<li>7、对以上活动有任何问题，请联系管理员，邮箱：timo@gamersky.com</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+    (function($){
+        var dnf = {
+            verifIpt:function (iptcon,cate) {
+                var bValidate;
+                if(cate === 'qq'){
+                    bValidate = RegExp(/^[1-9][0-9]{4,20}$/).test(iptcon);
+                }else if(cate === 'telephone'){
+                    bValidate = RegExp(/^1\d{10}$/).test(iptcon);
+                }else if(cate === 'email'){
+                    bValidate = RegExp(/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/).test(iptcon);
+                }
+                return bValidate;
+            },
+            lyFunc:function () {
+                var conId = $('#dnfTxt'),
+                    iptId = $('#dnfQQ'),
+                    conPl = conId.data('placeholder'),
+                    colorTxt = '#707070',colorTxtF = '#222';
+                conId.val(conPl).css('color',colorTxt);
+                conId.on({
+                    'focus':function () {
+                        if(conId.val() === conPl){
+                            conId.removeClass('errorClass');
+                            conId.val('').css('color',colorTxtF);
+                        }
+                    },
+                    'blur':function () {
+                        if(conId.val() === '' || $.trim(conId.val()) === '' || conId.val() === conPl){
+                            conId.addClass('errorClass');
+                            conId.val(conPl).css('color',colorTxt);
+                        }
+                    }
+                });
+                $('#dnfBtn').on('click', function() {
+                    var Ml = 'dnff1',Folder = 'match/'+Ml+'/',fname = 'infos',
+                        cookiefname = cookie(Ml),
+                        userCon = conId.val(),
+                        userNum = iptId.val(),isuser = false;
+                    if (cookiefname !== null && cookiefname === userNum) {
+                        alert("您已经提交过了！");
+                        return;
+                    }
+                    $('.insertIpt').each(function () {
+                        var $this = $(this),pla = $this.data('placeholder');
+                        if ($this.val() === pla) {
+                            $this.addClass('errorClass');
+                            isuser = true;
+                        }
+                    });
+                    if(isuser === true){
+                        alert("说出你的期望和愿景吧");
+                        return;
+                    }
+                    if (dnf.verifIpt(userNum,'qq') === false) {
+                        alert("请输入有效的qq！");
+                        return;
+                    }
+                    var content = "---qq：" + userNum + "---愿望：" + userCon + "---";
+                    $.ajax({
+                        type: "GET",
+                        dataType: "jsonp",
+                        url: "http://www3.gamersky.com:81/cfile.asp",
+                        data: {
+                            Submit: "Submit",
+                            Folder:Folder,
+                            Fname: fname,
+                            Content: content
+                        },
+                        success: function(Jsons) {}
+                    });
+                    cookie(Ml, userNum, {
+                        path: '/'
+                    });
+                    alert("提交完成！");
+                    conId.val(conId.data('placeholder')).css('color',colorTxt);
+                    iptId.val('');
+                });
+            },
+            init:function () {
+                this.lyFunc();
+            }
+        };
+        dnf.init();
+    })(jQuery);
+</script>
+</body>
+</html>

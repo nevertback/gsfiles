@@ -1,0 +1,38 @@
+@keyframes volAnim{
+    0%{
+        transform:scale(1,1);
+    }
+    50%{
+        transform:scale(0.9,0.8);
+    }
+    100%{
+        transform:scale(1,1);
+    }
+}
+@keyframes grayScaleAnim{
+    0%{
+        filter:grayscale(100%);
+    }
+    100%{
+        filter:grayscale(0);
+    }
+}
+@keyframes locAnim1{
+    0%{
+        transform:translate3d(0,0,0);
+    }
+    50%{
+        transform:translate3d(0,-0.1rem,0);
+    }
+    100%{
+        transform:translate3d(0,0,0);
+    }
+}
+@keyframes locAnim2{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}

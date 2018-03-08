@@ -1,0 +1,121 @@
+%clearfix{
+	&:before,&:after{display: table;content: " ";}
+	&:after{clear: both;}
+}
+@mixin chuizhi(){
+	position: absolute;top: 50%;
+	transform:translate3d(0,-50%,0);
+}
+//flex
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin justifyCon(){
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+//完全居中
+@mixin ConCen(){
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+//垂直居中
+@mixin ConCenV(){	
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -webkit-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -webkit-order: $val;  
+  order: $val;
+}
+//flex end
+// border-rudius
+@mixin bdrs($val){
+	-webkit-border-radius: $val;
+	border-radius: $val;
+}
+//缓动
+@mixin trans($time:0.25s,$ease:ease-out){
+	-webkit-transition: all $time $ease;
+	transition: all $time $ease;
+}
+@mixin bxsh($h,$v,$b,$c){
+	-webkit-box-shadow: $h $v $b $c;
+	box-shadow: $h $v $b $c;
+}
+// 水平渐变，从左往右
+// @include gradient-horizontal(#333, #ccc);
+@mixin gradient-horizontal($gradient...){
+  background-image: -webkit-linear-gradient(left, $gradient); // Safari 5.1+, Chrome 10+
+  background-image: linear-gradient(to right, $gradient); // Standard, IE10
+}
+// 水平渐变，从左往右，平铺
+// @include gradient-horizontal-repeating(#333 5%, #ccc 10%);
+@mixin gradient-horizontal-repeating($gradient...){
+  background-image: -webkit-repeating-linear-gradient(left, $gradient); // Safari 5.1+, Chrome 10+
+  background-image: repeating-linear-gradient(to right, $gradient); // Standard, IE10
+}
+// 垂直渐变，从上往下
+// @include gradient-vertical(#333 30%, #ccc);
+@mixin gradient-vertical($gradient...) {
+  background-image: -webkit-linear-gradient(top, $gradient); // Safari 5.1+, Chrome 10+
+  background-image: linear-gradient(to bottom, $gradient); // Standard, IE10
+}
+// 垂直渐变，从上往下，平铺
+// @include gradient-vertical-repeating(#333 30%, #ccc 50%);
+@mixin gradient-vertical-repeating($gradient...) {
+  background-image: -webkit-repeating-linear-gradient(top, $gradient); // Safari 5.1+, Chrome 10+
+  background-image: repeating-linear-gradient(to bottom, $gradient); // Standard, IE10
+}
+// 角度渐变
+// @include gradient-angle(45deg, #333 30%, #ccc);
+@mixin gradient-angle($gradient...) {
+  background-image: -webkit-linear-gradient($gradient); // Safari 5.1+, Chrome 10+
+  background-image: linear-gradient($gradient); // Standard, IE1
+}
+// 角度渐变
+// @include gradient-angle(45deg, #333 30%, #ccc 50%);
+@mixin gradient-angle-repeating($gradient...) {
+  background-image: -webkit-repeating-linear-gradient($gradient); // Safari 5.1+, Chrome 10+
+  background-image: repeating-linear-gradient($gradient); // Standard, IE1
+}
+// 径向渐变，可以写点简单的
+// 如：@include gradient-radial(#00F,#FFF);
+// 而@include gradient-radial(farthest-side circle at right,#00F,#FFF);这种的将不会兼容，所以不要调用这个，可以去找工具生成
+@mixin gradient-radial($gradient...){
+  background-image: -webkit-radial-gradient($gradient); // Safari 5.1+, Chrome 10+
+  background-image: radial-gradient($gradient); // Standard, IE1
+  background-repeat: no-repeat;
+}
+*{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.clearfix{
+	@extend %clearfix;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li{
+	margin: 0;padding: 0;
+}
+ul,dl,ol{
+	list-style: none;
+}
+button{
+	display: block;
+	border: none;
+}

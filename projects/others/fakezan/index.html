@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>刷赞专用</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://j.gamersky.com/g/jquery-1.8.3.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2 class="now text-center">当前数据：--</h2>
+    <form class="form-horizontal">
+        <div class="form-group row">
+            <label for="addId" class="col-md-offset-3 col-md-1 control-label">统计/赞ID</label>
+            <div class="col-md-3">
+                <input type="text" class="form-control" id="addId" placeholder="目标ID值">
+            </div>
+            <a type="submit" class="col-md-1 btn btn-default look">查询</a>
+        </div>
+    </form>
+    <form class="form-horizontal">
+        <div class="form-group row">
+            <label for="addNum" class="col-md-offset-3 col-md-1 control-label">增加数据</label>
+            <div class="col-md-3">
+                <input type="text" class="form-control" id="addNum" placeholder="增加数值">
+            </div>
+            <a type="submit" class="col-md-1 btn btn-default smt">提交</a>
+        </div>
+    </form>
+    <p class="text-center text-danger">增加数据不要一次太多，等待数据不变后再关闭网页</p>
+</div>
+<script src="http://j.gamersky.com/g/jquery.gamersky.v4.min.js"></script>
+<script>
+    //刷赞专用
+    function getMe(spId){
+        $.ajax({
+            type: "GET",
+            url: 'http://db5.gamersky.com/LabelJsonpAjax.aspx',
+            dataType: "jsonp",
+            async: false,
+            data: {
+                jsondata: JSON2.stringify({
+                    "type": "updatelabel",
+                    "labelname": "读取支持反对率",
+                    "attr": {
+                        "itemId": spId,
+                        "field": "digg",
+                        "tableName": "PE_U_Article"
+                    }
+                })
+            },
+            success: function(responseJson) {
+                $('.now').html('当前数据：'+responseJson.body);
+            }
+        });
+    }
+    function supMe(spId) {
+        $.ajax({
+            type: "GET",
+            url: 'http://db5.gamersky.com/LabelJsonpAjax.aspx',
+            dataType: "jsonp",
+            async: false,
+            data: {
+                jsondata: JSON2.stringify({
+                    "type": "updatelabel",
+                    "labelname": "Digg统计",
+                    "attr": {
+                        "itemId": spId,
+                        "field": "digg",
+                        "tableName": "PE_U_Article"
+                    }
+                })
+            },
+            success: function(responseJson) {
+                getMe(spId);
+            }
+        });
+    }
+
+    function addNum(spId,num) {
+         for (var i = 0; i < num; i++) {
+         	supMe(spId);
+         }
+    }
+    $('.look').on('click',function () {
+        var ipt = $('#addId').val();
+        getMe(ipt);
+    });
+    $('.smt').on('click',function () {
+        var ipt = $('#addNum').val(),spId = $('#addId').val();
+        addNum(spId,ipt);
+    });
+</script>
+</body>
+</html>

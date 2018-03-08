@@ -1,0 +1,337 @@
+.bdsharewrap.bdstyle-c { width: 242px; height: 36px; overflow: hidden; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox { width: 800px; height: 36px; *font-size: 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox:after, .bdsharewrap.bdstyle-c .bdsharebuttonbox.before { display: table; content: " "; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox:after { clear: both; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a { float: left; margin: 0 4px 0 0; padding: 0; display: inline-block; *display: inline; *zoom: 1; width: 37px; height: 36px; background: url("http://image.gamersky.com/webimg13/zhuanti/cf8zn/fx.png") 0 0 no-repeat; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tsina { background-position: 0 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_weixin { background-position: -40px 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_qzone { background-position: -80px 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_renren { background-position: -121px 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_sqq { background-position: -161px 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_count { background-position: -200px 0; text-indent: 9999px; white-space: nowrap; overflow: hidden; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tieba, .bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_douban, .bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_more { display: none; }
+
+html, body { min-width: 1280px; }
+
+body { font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 12px; }
+
+h1, h2, h3, h4, h5, p, ul { margin: 0; padding: 0; list-style: none; }
+
+a { text-decoration: none; cursor: pointer; }
+
+.clearfix:before, .clearfix:after, .container:before, .container:after { display: table; content: " "; }
+
+.clearfix:after, .container:after { clear: both; }
+
+.container { margin-right: auto; margin-left: auto; width: 1000px; }
+
+.zt-section { margin: 0; padding: 0; overflow: hidden; width: 100%; min-width: 1000px; }
+
+.QZnav { min-width: 1000px; }
+
+.QZnav .topbar { width: 1000px; }
+
+.QZnav .QZ-nav { display: none; }
+
+.Bot { width: 100%; min-width: 1000px; height: 155px; background: #141414; font-size: 14px; }
+
+.Bot .Copyright { margin: 0 auto; padding-top: 50px; width: 1000px; height: auto; line-height: 30px; text-align: center; color: #555; }
+
+.Bot .Copyright a { margin: 0 5px; color: #555; }
+
+.Bot .Copyright a:hover { color: #777; }
+
+.gsPopupMask { position: fixed; z-index: 99998; top: 0; left: 0; width: 100%; height: 100%; background: url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat; opacity: 0; visibility: hidden; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+
+.gsPopupMask.cur { opacity: 1; visibility: visible; }
+
+.gsPopup { z-index: 99999; opacity: 0; visibility: hidden; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+
+.gsPopup .gsPopupCon { width: 100%; height: 100%; background-color: #000; }
+
+.gsPopup .gsPopupCon img { display: block; }
+
+.gsPopup .gsPopupCon video { display: block; width: 100%; height: 100%; }
+
+.gsPopup .gsPopupClose { position: absolute; top: 0; right: -50px; overflow: hidden; width: 38px; height: 38px; background: url(http://image.gamersky.com/webimg13/zhuanti/common/gsPopupClose.png) 5px 5px no-repeat; }
+
+.gsPopup .gsPopupClose:hover { background-position: -33px 5px; }
+
+.gsPopup.cur { opacity: 1; visibility: visible; }
+
+.fixednav { display: none; position: fixed; top: 50%; margin-top: -200px; z-index: 999; background-image: url(../ztimages/csprite.png); background-position: 0px 0px; width: 147px; height: 397px; left: 50%; margin-left: 510px; padding-top: 51px; padding-left: 13px; width: 134px; height: 346px; }
+
+.fixednav li { display: block; padding-bottom: 1px; width: 121px; height: 35px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/fx-line.png) center bottom no-repeat; }
+
+.fixednav li a { display: block; width: 121px; height: 35px; line-height: 35px; font-size: 16px; color: #f9e094; text-align: center; }
+
+.fixednav li a.cur, .fixednav li a:hover { color: #fff; }
+
+.fixednav.cur { display: block; }
+
+.ztTab1 { position: relative; width: 1000px; }
+
+.ztTab1 .ztTabNav li { cursor: pointer; display: block; }
+
+.ztTab1 .ztTabCon li { position: relative; width: 1000px; }
+
+.ztTab1.ztTab1-v .ztTabNav { position: absolute; left: 0; width: 51px; }
+
+.ztTab1.ztTab1-v .ztTabNav li { margin-bottom: 34px; background-image: url(../ztimages/csprite.png); background-position: -756px -480px; width: 51px; height: 134px; text-align: center; line-height: 126px; }
+
+.ztTab1.ztTab1-v .ztTabNav li span { display: inline-block; *display: inline; *zoom: 1; width: 20px; line-height: 22px; font-size: 20px; color: #fcdc94; vertical-align: middle; }
+
+.ztTab1.ztTab1-v .ztTabNav li.cur { background-position: -815px -480px; }
+
+.ztTab1.ztTab1-v .ztTabNav li.cur span { color: #011940; }
+
+.ztTab1.ztTab1-h .ztTabNav { height: 51px; }
+
+.ztTab1.ztTab1-h .ztTabNav li { float: left; margin-right: 33px; background-image: url(../ztimages/csprite.png); background-position: -607px -251px; width: 134px; height: 51px; line-height: 51px; text-align: center; }
+
+.ztTab1.ztTab1-h .ztTabNav li span { font-size: 20px; color: #fcdc94; }
+
+.ztTab1.ztTab1-h .ztTabNav li.cur { background-position: -607px -310px; }
+
+.ztTab1.ztTab1-h .ztTabNav li.cur span { color: #011940; }
+
+.zt-section1 { height: 1000px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/zt-bg1.jpg) center 0 no-repeat; }
+
+.zt-section1 .container { position: relative; }
+
+.zt-section1 .container .bdsharewrap.bdstyle-c { position: absolute; top: 30px; right: 0; }
+
+.zt-section1 .container .logo_gs { display: block; position: absolute; left: 1px; top: 26px; width: 139px; height: 47px; background: url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-black.png) 0 0 no-repeat; }
+
+.zt-section1 .container .logo_gf { display: block; position: absolute; left: 164px; top: 6px; background-image: url(../ztimages/csprite.png); background-position: 0px -718px; width: 159px; height: 71px; }
+
+.zt-section1 .container .btn { display: block; position: absolute; top: 849px; }
+
+.zt-section1 .container .btn.btn1 { left: 39px; background-image: url(../ztimages/csprite.png); background-position: -302px -543px; width: 267px; height: 61px; }
+
+.zt-section1 .container .btn.btn1:hover { background-image: url(../ztimages/csprite.png); background-position: -302px -474px; width: 267px; height: 61px; }
+
+.zt-section1 .container .btn.btn2 { left: 365px; background-image: url(../ztimages/csprite.png); background-position: -302px -405px; width: 267px; height: 61px; }
+
+.zt-section1 .container .btn.btn2:hover { background-image: url(../ztimages/csprite.png); background-position: 0px -649px; width: 267px; height: 61px; }
+
+.zt-section1 .container .btn.btn3 { left: 693px; background-image: url(../ztimages/csprite.png); background-position: -275px -649px; width: 267px; height: 61px; }
+
+.zt-section1 .container .btn.btn3:hover { background-image: url(../ztimages/csprite.png); background-position: -550px -649px; width: 267px; height: 61px; }
+
+.zt-section2 { height: 680px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/zt-bg2.jpg) center 0 no-repeat; }
+
+.zt-section2 .container { position: relative; padding-top: 145px; }
+
+.zt-section2 .container .play { position: absolute; display: block; top: 330px; left: 200px; width: 600px; height: 270px; }
+
+.zt-section2 .container .play img { display: block; width: 100%; height: 100%; }
+
+.zt-section2 .container .play i { display: block; position: absolute; left: 271px; top: 106px; background-image: url(../ztimages/csprite.png); background-position: -528px -248px; width: 58px; height: 58px; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+
+.zt-section2 .container .play:hover i { -webkit-transform: translate3d(0, -3px, 0); transform: translate3d(0, -3px, 0); }
+
+.zt-section2 .container .para { margin: 0 auto; width: 920px; }
+
+.zt-section2 .container .para p { line-height: 30px; font-size: 16px; color: #d4d4d4; text-indent: 32px; }
+
+.zt-section3 { height: 890px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/zt-bg3.jpg) center 0 no-repeat; }
+
+.zt-section3 .container { position: relative; padding-top: 200px; }
+
+.zt-section3 .container .intro-img { display: block; position: absolute; left: 414px; top: 214px; width: 585px; height: 329px; }
+
+.zt-section3 .container .intro { width: 400px; }
+
+.zt-section3 .container .intro h5 { margin-bottom: 10px; margin-left: -20px; width: 400px; line-height: 40px; font-size: 28px; color: #79a5ed; font-weight: normal; text-align: right; }
+
+.zt-section3 .container .intro h5 span { line-height: 30px; font-size: 18px; }
+
+.zt-section3 .container .intro p { margin-bottom: 15px; width: 380px; line-height: 24px; font-size: 14px; color: #5473a5; text-align: justify; }
+
+.zt-section3 .container .intro p b { float: left; margin-right: 10px; line-height: 60px; font-size: 60px; color: #fcdc94; }
+
+.zt-section3 .container .skills { position: absolute; left: 0; width: 1000px; }
+
+.zt-section3 .container .skills ul li { position: relative; float: left; margin-right: 10px; padding: 8px; width: 64px; height: 64px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/skill-bg.png) 0 0 no-repeat; }
+
+.zt-section3 .container .skills ul li a { display: block; position: relative; width: 64px; height: 64px; }
+
+.zt-section3 .container .skills ul li a img { display: block; width: 100%; height: 100%; }
+
+.zt-section3 .container .skills ul li a i.bd { position: absolute; left: 0; top: 0; background-image: url(../ztimages/csprite.png); background-position: -456px -248px; width: 64px; height: 64px; visibility: hidden; opacity: 0; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+
+.zt-section3 .container .skills ul li a span { position: absolute; left: -5px; top: 75px; padding: 25px 43px 0; width: 338px; height: 152px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/skill-pop.png) 0 0 no-repeat; visibility: hidden; opacity: 0; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; pointer-events: none; z-index: 1; }
+
+.zt-section3 .container .skills ul li a span.pop-r { left: auto; right: -5px; }
+
+.zt-section3 .container .skills ul li a span i { display: block; font-style: normal; }
+
+.zt-section3 .container .skills ul li a span i.tit { margin-bottom: 10px; height: 44px; line-height: 44px; font-size: 24px; color: #011940; font-weight: bold; }
+
+.zt-section3 .container .skills ul li a span i.aoyi { position: absolute; right: 43px; top: 35px; height: 32px; line-height: 32px; font-size: 16px; color: #011940; text-align: right; }
+
+.zt-section3 .container .skills ul li a span i.des { line-height: 22px; font-size: 14px; color: #011940; text-indent: 28px; }
+
+.zt-section3 .container .skills ul li a:hover i.bd { opacity: 1; visibility: visible; }
+
+.zt-section3 .container .skills ul li a:hover span { opacity: 1; visibility: visible; }
+
+.zt-section3 .container .skills.skills1 { top: 580px; height: 104px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/s3-skill1.png) 0 0 no-repeat; }
+
+.zt-section3 .container .skills.skills1 ul { padding-left: 85px; padding-top: 12px; width: 920px; }
+
+.zt-section3 .container .skills.skills2 { top: 704px; height: 104px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/s3-skill2.png) 0 0 no-repeat; }
+
+.zt-section3 .container .skills.skills2 ul { padding-left: 265px; padding-top: 12px; width: 740px; }
+
+.zt-section3 .container .skills.skills2 ul li.group2 { margin-left: 190px; }
+
+.zt-section3 .container .skills.skills2 ul li a span { top: auto; bottom: 75px; }
+
+.zt-section4 { height: 880px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/zt-bg4.jpg) center 0 no-repeat; }
+
+.zt-section4 .container { position: relative; padding-top: 148px; }
+
+.zt-section4 .container .ztTab1 { height: 624px; }
+
+.zt-section4 .container .ztTab1 .ztTabNav { top: 171px; }
+
+.zt-section4 .container .ztTab1 .ztTabCon li { padding-top: 44px; height: 580px; }
+
+.zt-section4 .container .ztTab1 .ztTabCon li img { display: block; }
+
+.zt-section4 .container .ztTab1 .ztTabCon li img.img1 { margin-left: 79px; }
+
+.zt-section4 .container .ztTab1 .ztTabCon li img.img2 { margin-left: 88px; }
+
+.zt-section5 { height: 905px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/zt-bg5.jpg) center 0 no-repeat; }
+
+.zt-section5 .container { position: relative; padding-top: 55px; }
+
+.zt-section5 .container .ztSld { position: relative; width: 1000px; height: 742px; overflow: hidden; }
+
+.zt-section5 .container .ztSld .ztSldCon li { position: relative; width: 1000px; height: 742px; overflow: hidden; }
+
+.zt-section5 .container .ztSld .ztSldCon li .rw-pic { display: block; position: absolute; left: 0; bottom: 305px; width: 1000px; opacity: 0; visibility: hidden; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+
+.zt-section5 .container .ztSld .ztSldCon li .rw-pic.cur { opacity: 1; visibility: visible; }
+
+.zt-section5 .container .ztSld .ztSldCon li .name { display: none; position: absolute; opacity: 0; visibility: hidden; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+
+.zt-section5 .container .ztSld .ztSldCon li .name.cur { display: block; -webkit-transform: translate3d(-100px, 0, 0); transform: translate3d(-100px, 0, 0); }
+
+.zt-section5 .container .ztSld .ztSldCon li .name.name-yeying { left: 29px; top: 178px; background-image: url(../ztimages/csprite.png); background-position: -607px 0px; width: 141px; height: 243px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .name.name-yeshou { left: 29px; top: 188px; background-image: url(../ztimages/csprite.png); background-position: -756px 0px; width: 143px; height: 237px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .name.name-yingsha { left: 28px; top: 182px; background-image: url(../ztimages/csprite.png); background-position: -304px 0px; width: 144px; height: 246px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .name.name-yansha { left: 28px; top: 184px; background-image: url(../ztimages/csprite.png); background-position: -456px 0px; width: 143px; height: 240px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .name.name-shengxiu { left: 29px; top: 176px; background-image: url(../ztimages/csprite.png); background-position: -155px 0px; width: 141px; height: 285px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .name.name-longjiang { left: 28px; top: 187px; background-image: url(../ztimages/csprite.png); background-position: -756px -245px; width: 143px; height: 227px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .name.name-yuling { left: 28px; top: 187px; background-image: url(../ztimages/csprite.png); background-position: 0px -405px; width: 144px; height: 236px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .name.name-xingshu { left: 28px; top: 193px; background-image: url(../ztimages/csprite.png); background-position: -152px -405px; width: 142px; height: 222px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .btn { display: block; position: absolute; top: 388px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .btn.btnBoy { left: 166px; background-image: url(../ztimages/csprite.png); background-position: -642px -369px; width: 27px; height: 27px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .btn.btnBoy:hover, .zt-section5 .container .ztSld .ztSldCon li .btn.btnBoy.cur { background-position: -677px -369px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .btn.btnGirl { left: 198px; background-image: url(../ztimages/csprite.png); background-position: -712px -369px; width: 27px; height: 27px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .btn.btnGirl:hover, .zt-section5 .container .ztSld .ztSldCon li .btn.btnGirl.cur { background-position: -607px -369px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .infos { position: absolute; top: 555px; left: 55px; width: 890px; text-align: center; opacity: 0; visibility: hidden; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; -webkit-transform: translate3d(0, 20px, 0); transform: translate3d(0, 20px, 0); }
+
+.zt-section5 .container .ztSld .ztSldCon li .infos p { line-height: 24px; font-size: 14px; color: #5473a5; }
+
+.zt-section5 .container .ztSld .ztSldCon li .infos h5 { line-height: 24px; font-size: 14px; color: #f1d38f; font-weight: normal; }
+
+.zt-section5 .container .ztSld .ztSldCon li .infos .des { margin-bottom: 24px; }
+
+.zt-section5 .container .ztSld .ztSldCon li .name.cur, .zt-section5 .container .ztSld .ztSldCon li .infos { -webkit-transition-duration: 0s; transition-duration: 0s; -webkit-transition-delay: 0s; transition-delay: 0s; }
+
+.zt-section5 .container .ztSld .ztSldCon li.cur .name.cur, .zt-section5 .container .ztSld .ztSldCon li.cur .infos { opacity: 1; visibility: visible; -webkit-transition-duration: 0.25s; transition-duration: 0.25s; -webkit-transition-delay: 0.1s; transition-delay: 0.1s; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+
+.zt-section5 .container .ztSld .ztSldNav { position: absolute; top: 481px; left: 103px; width: 850px; height: 40px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/s5-nav-bg.png) 104px center no-repeat; }
+
+.zt-section5 .container .ztSld .ztSldNav li { cursor: pointer; float: left; margin-right: 12px; width: 104px; height: 40px; line-height: 40px; text-align: center; font-size: 18px; color: #fff; }
+
+.zt-section5 .container .ztSld .ztSldNav li.cur { color: #fcdc94; }
+
+.zt-section6 { height: 810px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/zt-bg6.jpg) center 0 no-repeat; }
+
+.zt-section6 .container { position: relative; padding-top: 230px; }
+
+.zt-section6 .container .ztTab1 { height: 472px; }
+
+.zt-section6 .container .ztTab1 .ztTabNav { top: 85px; }
+
+.zt-section6 .container .ztTab1 .ztTabCon li { height: 472px; }
+
+.zt-section6 .container .ztTab1 .ztTabCon li img { display: block; margin-left: 105px; }
+
+.zt-section7 { height: 763px; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/zt-bg7.jpg) center 0 no-repeat; }
+
+.zt-section7 .container { position: relative; padding-top: 182px; }
+
+.zt-section7 .container .ztTab1 { margin-left: -44px; width: 1044px; height: 476px; }
+
+.zt-section7 .container .ztTab1 .ztTabNav { padding-left: 309px; margin-bottom: 40px; width: 620px; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li { width: 1044px; height: 385px; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li img { display: block; width: 581px; height: 385px; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li ::-webkit-scrollbar { width: 5px; height: 5px; border-radius: 0; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li ::-webkit-scrollbar-track { border-radius: 10px; background-color: transparent; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/scl.png) center 0 repeat-y; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li ::-webkit-scrollbar-thumb { border-radius: 0; background-color: #7facf6; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li ::-webkit-scrollbar-thumb:hover { background-color: rgba(127, 172, 246, 0.8); }
+
+.zt-section7 .container .ztTab1 .ztTabCon li ::-webkit-scrollbar-thumb:active { background-color: rgba(127, 172, 246, 0.6); }
+
+.zt-section7 .container .ztTab1 .ztTabCon li .txt { display: block; position: absolute; left: 605px; top: 2px; width: 440px; height: 380px; overflow: hidden; overflow-y: auto; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li .txt h5 { line-height: 34px; font-size: 24px; color: #7facf6; font-weight: normal; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li .txt h4 { margin-bottom: 15px; line-height: 44px; font-size: 32px; color: #7facf6; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li .txt h4 span { color: #fcdc94; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li .txt p { margin-bottom: 10px; padding-right: 20px; line-height: 24px; font-size: 14px; color: #5473a5; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li .txt p span { display: block; padding-left: 20px; color: #f1d38f; background: url(http://image.gamersky.com/webimg13/zhuanti/zmqndxbb/s7-dot.png) 0 center no-repeat; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li .txt p .list { display: block; padding-left: 36px; font-style: normal; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li .txt p .list b { font-weight: normal; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li .txt p .list b.tit { display: block; color: #7facf6; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li .txt p .list b.num { margin-right: 8px; color: #fcdc94; }
+
+.zt-section7 .container .ztTab1 .ztTabCon li .txt p .lighter { font-style: normal; color: #7facf6; }
+
+.zt-sectionComm { padding-bottom: 30px; height: auto; background-color: #1b1e25; }
+
+.zt-sectionComm .container { position: relative; padding-top: 60px; }

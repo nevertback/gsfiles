@@ -1,0 +1,968 @@
+//*******专题*******
+@import 'csslib';
+@import 'dgycomm';
+//页面
+.dgy_main{
+	.page_bg{
+		display: block;position: absolute;top: 0;left: 0;
+		width: 100%;
+	}
+}
+.dgy_pages{
+	background-color: #000;
+}
+.page_con{
+    .audiotxt{
+        display: none;
+        position: absolute;
+        top: 850px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size:26px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 3px #000;
+        &.cur{
+            display: block;
+        }
+    }
+}
+//首页
+//百度分享样式6
+.bdsharewrap.bdstyle-c{
+    width:220px;height:36px;
+    overflow: hidden;
+    .bdsharebuttonbox {
+        width:800px; height:36px;
+        *font-size: 0;
+        &:after,&.before{
+            display:table;content:" ";
+        }
+        &:after{clear:both}
+        a {
+            display: block;float:left; margin:0 10px 0 0; padding:0;
+            width:36px; height:36px;
+            background:url(../ztimages/bd-fx.png) 0 0 no-repeat;
+            overflow: hidden;
+            &.bds_tsina {background-position:     0 0;}
+            &.bds_weixin{background-position: -40px 0;}
+            &.bds_qzone {background-position: -80px 0;}
+            &.bds_sqq	{background-position:-116px 0;}
+            &.bds_more  {background-position:-152px 0;}
+            //待添加
+            &.bds_tieba,&.bds_douban,&.bds_renren,&.bds_count
+            {display: none}
+        }
+    }
+}
+.page_begin{
+	background-color: #000;
+    .logo-gs{
+        display: block;
+        position: absolute;
+        left: 852px;
+        top: 382px;
+        @include sprite($logo-gs);
+    }
+    .btn1{
+        display: block;
+        position: absolute;
+        left: 865px;
+        top: 805px;
+        @include sprite($begin-btn);
+        &:after{
+            display: block;
+            position: absolute;
+            content: '';
+            left: 17px;
+            top: 19px;
+            @include sprite($begin-btn-anim);
+            pointer-events: none;
+        }
+        &:hover {
+            &:after{
+                transition:all 0.25s ease;
+                transform:scale(2);
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+    .zanbtn{
+        position: absolute;
+        left: 50%;
+        top: 895px;
+        height: 23px;
+        line-height: 28px;
+        text-align: center;
+        color: #b1e6ff;
+        transform:translate(-50%,0);
+        margin-left: 19px;
+        .zan-icon{
+            position: absolute;
+            left: -53px;
+            top: -19px;
+            display: block;
+            @include sprite($zan);
+        }
+        i{
+            font-style: normal;
+            font-size: 16px;
+        }
+        &:hover{
+            .zan-icon{
+                @include sprite-position($zan-h);
+            }
+        }
+        &.clked{
+            cursor: default;
+            .zan-icon{
+                @include sprite-position($zan-h);
+            }
+            &:hover{
+                .zan-icon{
+                    @include sprite-position($zan-h);
+                }
+            }
+        }
+    }
+    .txt{
+        position: absolute;
+        left: 126px;
+        top: 434px;
+        width: 277px;
+        i{
+            display: block;
+            margin-bottom: 15px;
+            @include sprite($kuang-top);
+        }
+        p{
+            margin-bottom: 10px;
+            padding: 0 14px;
+            line-height: 24px;
+            font-size: 16px;
+            color: #340d08;
+            text-indent: 32px;
+            text-align: justify;
+        }
+    }
+    .btn-hdb{
+        display: block;
+        position: absolute;
+        left: 1693px;
+        top: 606px;
+        @include sprite($begin-hdbtn);
+        &:hover{
+            @include sprite($begin-hdbtn-h);
+        }
+    }
+    .ots-btn-group{
+        position: absolute;
+        left: 1451px;
+        top: 773px;
+        a{
+            display: block;
+            position: relative;
+            margin-top: -14px;
+            @include sprite($begin-ots);
+            line-height: 84px;
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            @extend %ffsys;
+            font-weight: bold;
+            &:after{
+                display: block;
+                position: absolute;
+                left: 273px;
+                top: 9px;
+                content: '';
+                @include sprite($begin-ots-light);
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+            }
+            &:hover{
+                @include sprite-position($begin-ots-h);
+                text-shadow: 0 0 8px rgba(102,255,0,0.8),0 0 8px rgba(102,255,0,0.8),0 0 9px rgba(0,16,1,0.8);
+                &:after{
+                    animation: otsBtnAnim 0.9s linear 1 both reverse;
+                }
+            }
+        }
+    }
+}
+.page_end{
+    .bdsharewrap.bdstyle-c{
+        position: absolute;
+        left: 163px;
+        top: 900px;
+    }
+    .btngroup{
+        position: absolute;
+        left: 112px;
+        top: 738px;
+        a{
+            margin: 0 auto;
+        }
+        .btn_comm{
+            margin-bottom: 24px;
+        }
+    }
+    .infos{
+        position: absolute;
+        left: 141px;
+        top: 485px;
+        width: 400px;
+        p{
+            width: 400px;
+            line-height: 32px;
+            font-size: 18px;
+            color: #c8c8c8;
+            text-shadow: 0 0 13px #000,0 0 13px #000,0 0 13px #000;
+            b{
+                color: #fff;
+            }
+        }
+    }
+}
+.dgy_comm{
+	position: absolute;left: 0;top: 0;z-index: 900;
+	width: 100%;height: 100%;
+	background-color: #000;
+	transition:all 0.25s ease;
+	opacity: 0;visibility: hidden;
+	transform:translate3d(100px,0,0);
+	&.cur{
+		opacity: 1;visibility: visible;
+		transform:translate3d(0,0,0);
+	}
+}
+.page_comm{
+    background-color: #000;
+    .btn_close{
+        position: absolute;
+        top: 54px;
+        left: 50%;
+        margin-left: 484px;
+    }
+	.comm_bg{
+		position: absolute;left: 0;top: 0;
+		width: 100%;
+	}
+	.comm{
+		position: absolute;left: 0;top: 0;
+		width: 100%;height: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+		.cont{
+			position: relative;
+            margin: 54px auto 0;
+            padding: 40px;
+			width: 870px;
+            background-color: rgba(0,0,0,0.85);
+		}
+	}
+}
+.page_gmvr{
+    .btn{
+        position: absolute;
+        left: 799px;
+        top: 909px;
+    }
+    .des{
+        position: absolute;
+        left: 0;
+        top: 150px;
+        width: 100%;
+        height: 28px;
+        line-height: 28px;
+        font-size: 16px;
+        color: #b8b8b8;
+        text-align: center;
+    }
+    .list{
+        position: absolute;
+        left: 100px;
+        top: 210px;
+        ul{
+            li{
+                position: relative;
+                float: left;
+                margin-right: 55px;
+                width: 536px;
+                img{
+                    display: block;
+                    margin-bottom: 25px;
+                    width: 536px;
+                    height: 298px;
+                }
+                .tit{
+                    height: 67px;
+                    line-height: 62px;
+                    font-size: 24px;
+                    color: #cfee1d;
+                    font-weight: bold;
+                    text-indent: 141px;
+                }
+                .buy{
+                    display: block;
+                    position: absolute;
+                    left: 237px;
+                    top: 17px;
+                    @include sprite($buy);
+                    line-height: 30px;
+                    font-size: 14px;
+                    color: #cfee1d;
+                    text-indent: 35px;
+                    &:after{
+                        display: block;
+                        position: absolute;
+                        content: '';
+                        left: 97px;
+                        top: 10px;
+                        @include sprite($buy-arr);
+                        transition:all 0.25s ease;
+                    }
+                    &:hover{
+                        &:after{
+                            transform:translate(10px,0);
+                        }
+                    }
+                }
+                .para{
+                    .para-eh{
+                        position: relative;
+                        padding-left: 90px;
+                        line-height: 28px;
+                        i{
+                            position: absolute;
+                            left: 60px;
+                            top: 0;
+                            font-size: 14px;
+                            color: #cfee1d;
+                            font-style: normal;
+                        }
+                        p{
+                            font-size: 16px;
+                            color: #fff;
+                            span{
+                                display: block;
+                                line-height: 20px;
+                                color: #838383;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.page_starbase{
+    .btn{
+        position: absolute;
+        left: 799px;
+        top: 909px;
+    }
+    .pg-intro{
+        position: absolute;
+        left: 121px;
+        top: 461px;
+    }
+    .btn-pic{position: absolute;}
+    .btn-pic1{left: 746px;top: 225px;}
+    .btn-pic2{left: 1259px;top: 400px;}
+    .btn-pic3{left: 1565px;top: 572px;}
+    .notice{
+        position: absolute;
+        top: 856px;
+        left: 785px;
+        @include sprite($tips-bg);
+        line-height: 42px;
+        font-size: 18px;
+        color: #b8b8b8;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 0 0 5px #000;
+        &.cur{
+            animation: txtFlashAnim 0.1s ease 1;
+        }
+    }
+}
+.page_meeting {
+    .btn {
+        position: absolute;
+        left: 161px;
+        top: 847px;
+    }
+    .pg-intro {
+        position: absolute;
+        left: 121px;
+        top: 461px;
+    }
+    .btn-pic4{position: absolute;left: 1259px;top: 400px;}
+}
+.page_myself {
+    .btn {
+        position: absolute;
+        left: 161px;
+        top: 847px;
+    }
+    .pg-intro {
+        position: absolute;
+        left: 1407px;
+        top: 461px;
+    }
+    .btn-light{
+        position: absolute;
+        &:before,&:after{
+            display: block;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &:after{
+            opacity: 0;
+            transition:all 0.25s ease;
+        }
+        &:hover{
+            &:after{
+                opacity: 1;
+            }
+        }
+    }
+    .btn-cat{
+        left: 27px;
+        top: 513px;
+        @include sprite-width($light-cat);
+        @include sprite-height($light-cat);
+        &:before{@include sprite($light-cat);}
+        &:after{@include sprite($light-cat-h);}
+    }
+    .btn-rabbit{
+        left: 729px;
+        top: 400px;
+        @include sprite-width($light-rabbit);
+        @include sprite-height($light-rabbit);
+        &:before{@include sprite($light-rabbit);}
+        &:after{@include sprite($light-rabbit-h);}
+        img{
+            display: block;
+            position: absolute;
+            left: 146px;
+            top: 112px;
+            width: 465px;
+            height: 86px;
+            visibility: hidden;
+            opacity: 0;
+            transition:all 0.25s ease;
+        }
+        &:hover{
+            img{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    .btn-box{
+        left: 291px;
+        top: 342px;
+        @include sprite-width($light-box);
+        @include sprite-height($light-box);
+        &:before{@include sprite($light-box);}
+        &:after{@include sprite($light-box-h);}
+    }
+}
+.page_working {
+    .btn {
+        position: absolute;
+        left: 161px;
+        top: 847px;
+    }
+    .pg-intro {
+        position: absolute;
+        left: 121px;
+        top: 461px;
+    }
+    .dialog{
+        display: block;
+        position: absolute;
+        left: 855px;
+        top: 342px;
+        width: 509px;
+        height: 61px;
+    }
+    .btn-pick{
+        position: absolute;
+        left: 900px;
+        top: 401px;
+    }
+}
+.page_map {
+    .attention{
+        position: absolute;
+        left: 1433px;
+        top: 720px;
+    }
+    .infos {
+        position: absolute;
+        left: 160px;
+        top: 330px;
+        width: 342px;
+        .infos-tit{
+            margin-bottom: 40px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 24px;
+            color: #340d08;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+        .infos-des{
+            p{
+                line-height: 30px;
+                font-size: 18px;
+                color: #340d08;
+                text-indent: 36px;
+                letter-spacing: 5px;
+                text-shadow: 0.8px 0 0 #340d08;
+            }
+        }
+    }
+    .btn-line{
+        display: none;
+        position: absolute;
+        &.cur{
+            display: block;
+        }
+        &.btn-line-mp1{
+            left: 930px;
+            top: 640px;
+            @include sprite($mp-line1);
+        }
+        &.btn-line-mp2{
+            left: 1137px;
+            top: 722px;
+            @include sprite($mp-line2);
+        }
+        &.btn-line-mp3{
+            left: 1111px;
+            top: 394px;
+            @include sprite($mp-line3);
+        }
+        &.btn-line-mp4{
+            left: 1141px;
+            top: 596px;
+            @include sprite($mp-line4);
+        }
+    }
+    .btn-mp{
+        display: block;
+        position: absolute;
+        width: 205px;
+        height: 35px;
+        &:before,&:after{
+            display: block;
+            position: absolute;
+            content: '';
+        }
+        span{
+            position: relative;
+            @include flexbox;
+            @include sprite($mp-btn-txt);
+            @include ConCen;
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+            i.arr{
+                display: block;
+                margin-left: -4px;
+                @include sprite($btn-skip-arr);
+                animation: arrAnim 0.6s ease infinite;
+            }
+        }
+        &:hover{
+            span{
+                color: #e1ff9a;
+                text-shadow: 0 0 10px rgba(0,255,12,0.5),0 0 5px #000;
+                i.arr{@include sprite-position($btn-skip-arr-h);}
+            }
+        }
+        &.btn-disalbe{
+            cursor: default;
+            span{
+                color: #d0d0d0;
+            }
+            &:hover{
+                span{
+                    color: #d0d0d0;
+                    text-shadow: none;
+                    i.arr{@include sprite-position($btn-skip-arr);}
+                }
+            }
+        }
+        &.btn-mp0{
+            left: 1035px;
+            top: 799px;
+            &:after{
+                left: 66px;
+                bottom: 42px;
+                @include sprite($mp-icon0);
+            }
+            i.tips{
+                display: block;
+                position: absolute;
+                left: 77px;
+                bottom: 78px;
+                z-index: 1;
+                @include sprite($mp-tips);
+                animation: mpTipsAnim 0.8s ease infinite;
+            }
+        }
+        &.btn-mp1{
+            left: 829px;
+            top: 700px;
+            &:after{
+                left: 66px;
+                bottom: 42px;
+                @include sprite($mp-icon1);
+            }
+        }
+        &.btn-mp2{
+            left: 1274px;
+            top: 783px;
+            &:after{
+                left: 66px;
+                bottom: 42px;
+                @include sprite($mp-icon2);
+            }
+        }
+        &.btn-mp3{
+            left: 1141px;
+            top: 435px;
+            &:after{
+                left: 66px;
+                bottom: 42px;
+                @include sprite($mp-icon3);
+            }
+        }
+        &.btn-mp4{
+            left: 1156px;
+            top: 635px;
+            &:after{
+                left: 66px;
+                bottom: 42px;
+                @include sprite($mp-icon4);
+            }
+        }
+        &.btn-mp5{
+            left: 987px;
+            top: 576px;
+            &:after{
+                left: 76px;
+                bottom: 42px;
+                @include sprite($mp-icon5);
+            }
+        }
+    }
+}
+.page_monster{
+    .btn_back{
+        position: absolute;
+        left: 120px;
+        top: 847px;
+    }
+    .mpop{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1920px;
+        height: 1080px;
+        background-color: #000;
+        &.cur{
+            display: block;
+        }
+    }
+    .mtab{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1920px;
+        height: 1080px;
+        .mtabNavs{
+            position: absolute;
+            top: 205px;
+            left: 0;
+            width: 100%;
+            @include flexbox;
+            @include ConCen;
+            a{
+                display: block;
+                margin: 0 10px;
+                @include sprite($mtab-nav);
+                line-height: 50px;
+                font-size: 24px;
+                color: #fff;
+                font-weight: bold;
+                text-align: center;
+                letter-spacing: 10px;
+                text-indent: 12px;
+                @extend %ffsys;
+                &.navTar{
+                    position: relative;
+                    color: transparent;
+                    &:after{
+                        display: block;
+                        position: absolute;
+                        left: -9px;
+                        top: -8px;
+                        content: '';
+                        @include sprite($mtab-nav-tar);
+                    }
+                    &:hover,&.cur{
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
+                &:hover,&.cur{
+                    @include sprite-position($mtab-nav-h);
+                    color: #000;
+                }
+            }
+        }
+        .mtab-bigpic{
+            display: block;
+            width: 1920px;
+            height: 1080px;
+        }
+        .mtab-tit{
+            position: absolute;
+            left: 78px;
+            top: 352px;
+            @include sprite($mtab-tit);
+            h5{
+                position: absolute;
+                left: 57px;
+                top: 43px;
+                width: 287px;
+                height: 78px;
+                line-height: 74px;
+                font-size: 48px;
+                color: #fff;
+                text-align: center;
+                letter-spacing: 10px;
+                font-weight: bold;
+                @extend %ffsys;
+            }
+        }
+        .mtab-des{
+            position: absolute;
+            top: 506px;
+            left: 135px;
+            width: 288px;
+            font-size: 18px;
+            color: #b8b8b8;
+            p{
+                line-height: 30px;
+                text-indent: 36px;
+            }
+        }
+        .btn_hunt{
+            position: absolute;
+            left: 112px;
+            top: 760px;
+            &.btnHuntTared{
+            }
+            &.btnHunted{
+                cursor: default;
+                text-align: left;
+                text-indent: 127px;
+                &:before{
+                    position: absolute;
+                    display: block;
+                    left: 75px;
+                    top: 12px;
+                    content: '';
+                    margin-right: 15px;
+                    @include sprite($btn-selected);
+                }
+                &:hover{
+                    @include sprite-position($btn-sty1);
+                    text-shadow:none;
+                }
+            }
+        }
+        .tabbox{
+            .tabitem{
+                opacity: 0;
+                &.cur{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.page_hunt{
+    .btngroup{
+        position: absolute;
+        left: 152px;
+        top: 150px;
+        li{
+            cursor: pointer;
+        }
+    }
+    .btn1{
+        position: relative;
+        display: block;
+        margin-bottom: 3px;
+        @include sprite($hunt-btn1);
+        .btn-pic{
+            display: none;
+            position: absolute;
+            left: 250px;
+            top: 4px;
+            padding-left: 24px;
+            width: 635px;
+            height: 583px;
+            img{
+                display: block;
+                width: 635px;
+                height: 583px;
+            }
+        }
+
+        &:hover{
+            @include sprite-position($hunt-btn1-h);
+            .btn-pic{
+                display: block;
+            }
+        }
+    }
+    .btn2{
+        position: relative;
+        display: block;
+        @include sprite($hunt-btn2);
+        .btn-nav{
+            display: none;
+            position: absolute;
+            left: 250px;
+            top: 4px;
+            padding-left: 43px;
+            padding-top: 26px;
+            width: 231px;
+            height: 510px;
+            background:url(../ztimages/hunt-nav.png) 24px 0 no-repeat;
+            a{
+                display: block;
+                width: 191px;
+                height: 33px;
+                line-height: 33px;
+                font-size: 18px;
+                color: #fff;
+                text-align: center;
+                border-bottom: 1px dashed rgba(184,184,184,0.8);
+                &:last-child{
+                    border-bottom: none;
+                }
+                span{
+                    display: none;
+                    position: absolute;
+                    left: 23px;
+                    top: 549px;
+                    padding: 45px 50px 0;
+                    width: 635px - 100px;
+                    height: 188px - 45px;
+                    line-height: 32px;
+                    font-size: 18px;
+                    color: #b8b8b8;
+                    text-indent: 36px;
+                    text-align: left;
+                    background: url(../ztimages/hunt-nav-txt.png) 0 0 no-repeat;
+                }
+                &:hover{
+                    @include sprite-image($hunt-nav-h);
+                    @include sprite-position($hunt-nav-h);
+                    span{
+                        display: block;
+                    }
+                }
+            }
+        }
+        &:hover{
+            @include sprite-position($hunt-btn2-h);
+            .btn-nav{
+                display: block;
+            }
+        }
+    }
+    .btn_next{
+        position: absolute;
+        right: 150px;
+        top: 940px;
+    }
+    .vdTips{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1920px;
+        height: 1080px;
+        background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+        &.cur{
+            display: block;
+        }
+    }
+    .key-tips{
+        position: absolute;
+        left: 810px;
+        top: 774px;
+        width: 348px;
+        height: 47px;
+        background: url(../ztimages/hunt-key-bg.png) 0 0 no-repeat;
+        @include flexbox;
+        @include ConCen;
+        font-size: 22px;
+        color: #ffe9bc;
+        font-weight: bold;
+        text-shadow: 2px 0 0 #401700,-2px 0 0 #401700,0 2px 0 #401700,0 -2px 0 #401700,0 0 13px #c02d00,-2px 2px 8px #10110f;
+        i{
+            display: block;
+            margin: 0 13px;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            background-color: #1c1210;
+            text-align: center;
+            font-style: normal;
+            font-size: 22px;
+            color: #ffe9bc;
+            border: 3px solid #ffe9bc;
+            box-shadow: 0 0 15px #ffae00,0 0 15px #ffae00,0 0 15px #ffae00,0 0 15px #ffae00;
+        }
+    }
+    .pg-intro{
+        position: absolute;
+        left: 470px;
+        top: 661px;
+        &.pg-intro-video{
+            @include sprite($intro-bg-video-mini);
+        }
+    }
+    .wormbg{
+        display: block;
+        position: absolute;
+        left: 860px;
+        top: 224px;
+        width: 1060px;
+        height: 500px;
+    }
+}
+@import 'resp';
+@import 'animatecss';

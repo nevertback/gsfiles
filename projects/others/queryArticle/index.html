@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="format-detection" content="telephone=no">
+	<link href="http://j.gamersky.com/g/normalize.min.css" rel="stylesheet">
+	<link href="http://j.gamersky.com/g/lib/bootstrap/3.3.7/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css" inline>
+	<script type="text/javascript" src="http://j.gamersky.com/g/lib/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://j.gamersky.com/g/lib/vue.min.js"></script>
+</head>
+<body>
+<div id="list">
+	<transition name="upAnim">
+		<div v-if="loadingShow" class="loading"></div>
+	</transition>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-open" aria-controls="navbar-open" aria-expanded="false">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" target="_blank" href="http://www.gamersky.com/"><img src="http://image.gamersky.com/webimg15/qznav-app-logo.png" alt="gamersky"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-open">
+				<ul class="nav navbar-nav">
+					<li v-for="(item,key) in btngroup" class="clkClose" :class="btnCurNum===key?btnCur:''"><a v-on:click="getAticles(item.cds,key)">{{item.txt}}</a></li>
+				</ul>
+				<p class="navbar-text navbar-right clkClose"><a class="navbar-link diy-pop-btn" id="diyPop" data-toggle="modal" data-target="#diy-pop">自定义</a><a href="#" class="back-to-top">Top</a></p>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div>
+			<dl class="artList">
+				<dt class="row">
+					<div class="col-sm-1 col-xs-2">ID</div>
+					<div class="col-sm-5 col-xs-10">标题</div>
+					<div class="col-sm-2 hidden-xs">录入者</div>
+					<div class="col-sm-2 hidden-xs">发布时间</div>
+					<div class="col-sm-2 hidden-xs">最后修改时间</div>
+				</dt>
+				<dd class="row" v-for="item in articles">
+					<div class="col-sm-1 col-xs-2">{{item.generalId}}</div>
+					<div class="col-sm-5 col-xs-10"><a target="_blank" :href="item.articleUrl">{{item.title}}</a></div>
+					<div class="col-sm-2 hidden-xs">{{item.inputer}}</div>
+					<div class="col-sm-2 hidden-xs">{{item.modifiedTime}}</div>
+					<div class="col-sm-2 hidden-xs">{{item.updateTime}}</div>
+				</dd>
+			</dl>
+			<div v-show="nullData" style="text-align: center;">没有符合查询条件内容！</div>
+		</div>
+	</div>
+	<div class="modal fade" id="diy-pop" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">查询自定义条件</h4>
+				</div>
+				<div class="modal-body">
+					<form class="diy-form form-group">
+						<div class="form-group">
+							<label for="fm1">节点ID</label>
+							<input type="text" class="form-control" id="fm1" placeholder="" v-model="diyQuery.nodeId">
+						</div>
+						<div class="form-group">
+							<label for="fm2">排除节点ID</label>
+							<input type="text" class="form-control" id="fm2" placeholder="" v-model="diyQuery.excludeNodeId">
+						</div>
+						<div class="form-group">
+							<label for="fm3">专题ID：</label>
+							<input type="text" class="form-control" id="fm3" placeholder="" v-model="diyQuery.specialId">
+						</div>
+						<div class="form-group">
+							<label for="fm4">排除专题ID：</label>
+							<input type="text" class="form-control" id="fm4" placeholder="" v-model="diyQuery.excludeSpecialId">
+						</div>
+						<div class="form-group">
+							<label for="fm5">模型：</label>
+							<input type="text" class="form-control" id="fm5" placeholder="查询模型" v-model="diyQuery.modelType">
+							<div class="alert alert-warning" role="alert">PE_U_Article , PE_U_Soft ... </div>
+						</div>
+						<div class="form-group">
+							<label for="fm6">排序方式： </label>
+							<select class="form-control" name="fm6" id="fm6" v-model="diyQuery.orderType">
+								<option v-bind:value="1">
+									发布时间
+								</option>
+								<option v-bind:value="2">
+									最后修改时间
+								</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="fm7">输出条数：</label>
+							<input type="text" class="form-control" id="fm7" placeholder="" v-model="diyQuery.outPut">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal" v-on:click="getDiy()">查询</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="http://j.gamersky.com/g/lib/bootstrap/3.3.7/bootstrap.min.js"></script>
+<script type="text/javascript" src="jsmin/main.min.js" inline></script>
+</body>
+</html>

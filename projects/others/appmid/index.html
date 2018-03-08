@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>右上角-在浏览器打开</title>
+	<link href="http://j.gamersky.com/g/normalize.min.css" rel="stylesheet">
+	<script type="text/javascript" src="http://j.gamersky.com/g/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="http://j.gamersky.com/g/touch-0.2.14.min.js"></script>
+</head>
+<body>
+<img id="wximg" src="http://image.gamersky.com/webimg13/a/app/wxtips.png" alt="右上角-在浏览器打开" style="width: 100%;">
+<script>
+	(function ($) {
+        var bnu = navigator.userAgent;
+        //Open APP
+        var openAppJs = {
+            getQueryString:function(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]);
+                return null;
+            },
+			browser:{
+                isIos: function () {
+                    return !!bnu.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
+                },
+                isAndroid: function () {
+                    return !!bnu.match(/Android/i);
+                },
+                isWx: function () {
+                    return !!bnu.match(/micromessenger/i);
+                },
+                isBaiduBrowser: function () {
+                    return !!bnu.match(/baidubrowser/i);
+                },
+                isUCBrowser: function () {
+                    return !!bnu.match(/UCBrowser/i);
+                },
+                isMiuiBrowser: function () {
+                    return !!bnu.match(/MiuiBrowser/i);
+                },
+                isQQBrowser: function () {
+                    return !!bnu.match(/QQBrowser/i);
+                },
+                isPcBrowser: function () {
+                    return !/Android|webOS|iPhone|iPod|BlackBerry/i.test(bnu);
+                }
+            },
+            fakeAlink:function(url) {
+                var aDom = '',rm = new Date().getTime() + Math.floor(Math.random()*1000),aid = 'fakeAlink'+rm;
+                aDom += '<a id="'+aid+'" target="_blank" style="display: none;" href="'+url+'"></a>';
+                $('body').append(aDom);
+                var fakebtn = document.getElementById(aid);
+                fakebtn.click();
+            },
+            iframeOpenUrl: function(url) {
+                var _this = this;
+                var ifm = document.createElement('iframe');
+                ifm.frameborder = '0';
+                ifm.style.cssText = 'display:none;border:0;width:0;height:0;';
+                document.body.appendChild(ifm);
+                ifm.src = url;
+            },
+            androidJump:function (fig) {
+                var appthis = this;
+                var defaultCfg = {
+                    schema: "home",
+                    protocal: "gamersky",
+                    loadWaiting: "3000",
+                    failUrl: "http://a.gamersky.com/",
+                    apkInfo: {
+                        ACTION: "android.intent.action.VIEW"
+                    }
+                };
+                $.extend(defaultCfg,fig);
+                var vv = {
+                    generateSchema: function (config) {
+                        var schemaStr = '';
+                        // uc,qq
+                        if (appthis.browser.isUCBrowser() || appthis.browser.isQQBrowser()) {
+                            schemaStr = config.protocal + "://" + config.schema;
+                        } else {
+                            schemaStr = "intent://" + config.schema + "#Intent;" +
+                                "scheme=" + config.protocal + ";" +
+                                "action=" + config.apkInfo.ACTION + ";" +
+                                "S.browser_fallback_url=" + encodeURIComponent(config.failUrl) + ";" +
+                                "end";
+                        }
+                        return schemaStr;
+                    },
+                    loadSchema: function (config) {
+                        var schemaUrl = this.generateSchema(config),
+                            loadTimer = null;
+                        if (appthis.browser.isWx()) {
+                            window.location.href = config.failUrl;
+                        } else if(appthis.browser.isQQBrowser()){
+                            appthis.iframeOpenUrl(schemaUrl);
+                        }else{
+                            appthis.fakeAlink(schemaUrl);
+                        }
+                        // 如果LOAD_WAITING时间后,还是无法唤醒app，则直接打开下载页
+                        // opera 无效
+                        var start = Date.now(),
+                            that = this;
+                        loadTimer = setTimeout(function () {
+                            if (document.hidden || document.webkitHidden) {
+                                return;
+                            }
+                            // 如果app启动，浏览器最小化进入后台，则计时器存在推迟或者变慢的问题
+                            // 那么代码执行到此处时，时间间隔必然大于设置的定时时间
+                            if (Date.now() - start > config.loadWaiting + 200) {}
+                            else {
+                                window.location.href = config.failUrl;
+                            }
+
+                        }, config.loadWaiting);
+
+                        var visibilitychange = function () {
+                            var tag = document.hidden || document.webkitHidden;
+                            tag && clearTimeout(loadTimer);
+                        };
+                        document.addEventListener('visibilitychange', visibilitychange, false);
+                        document.addEventListener('webkitvisibilitychange', visibilitychange, false);
+                        // pagehide 必须绑定到window
+                        window.addEventListener('pagehide', function () {
+                            clearTimeout(loadTimer);
+                        }, false);
+                    }
+                };
+                vv.loadSchema(defaultCfg);
+            },
+            JumpBeginOld:function (opt,cid) {
+                var appthis = this;
+                switch (opt) {
+                    case 'home':
+                        if(appthis.browser.isIos()){
+                            appthis.fakeAlink('https://a.gamersky.com/app/home');
+                        }else{
+                            appthis.androidJump({
+                                schema: "home"
+                            });
+                        }
+                        break;
+                    case 'game':
+                        if(appthis.browser.isIos()){
+                            appthis.fakeAlink('https://a.gamersky.com/app/game');
+                        }else{
+                            appthis.androidJump({
+                                schema: "home?tab=game"
+                            });
+                        }
+                        break;
+                    case 'gamecon':
+                        if(appthis.browser.isIos()){
+                            appthis.fakeAlink('https://a.gamersky.com/app/game/'+cid);
+                        }else{
+                            appthis.androidJump({
+                                schema: "home?id="+cid+'&action=game&tab=game'
+                            });
+                        }
+                        break;
+                    case 'ent':
+                    case 'content':
+                        if(appthis.browser.isIos()){
+                            appthis.fakeAlink('https://a.gamersky.com/app/news/'+cid);
+                        }else{
+                            appthis.androidJump({
+                                schema: "home?action=news&id="+cid
+                            });
+                        }
+                        break;
+                    case 'strategy':
+                        if(appthis.browser.isIos()){
+                            appthis.fakeAlink('https://a.gamersky.com/app/game/'+cid+'/strategiesSet');
+                        }else{
+                            appthis.androidJump({
+                                schema: "home?action=game&id="+cid+"&open=strategy&tab=game"
+                            });
+                        }
+                        break;
+                    default:
+                        if(appthis.browser.isIos()){
+                            appthis.fakeAlink('https://a.gamersky.com/app/home');
+                        }else{
+                            appthis.androidJump({
+                                schema: "home"
+                            });
+                        }
+                }
+            },
+            JumpBegin:function (opt,cid,rel) {
+                var appthis = this;
+                switch (opt) {
+                    case 'home':
+                        if(appthis.browser.isIos()){
+                            appthis.fakeAlink('https://a.gamersky.com/app/home/referer/'+rel);
+                        }else{
+                            appthis.androidJump({
+                                schema: "home?referer="+rel
+                            });
+                        }
+                        break;
+                    case 'game':
+                        if(appthis.browser.isIos()){
+                            appthis.fakeAlink('https://a.gamersky.com/app/game/referer/'+rel);
+                        }else{
+                            appthis.androidJump({
+                                schema: "home?tab=game&referer="+rel
+                            });
+                        }
+                        break;
+                    case 'gamecon':
+                        if(appthis.browser.isIos()){
+                            appthis.fakeAlink('https://a.gamersky.com/app/game/'+cid+'/referer/'+rel);
+                        }else{
+                            appthis.androidJump({
+                                schema: "home?id="+cid+'&action=game&tab=game&referer='+rel
+                            });
+                        }
+                        break;
+                    case 'ent':
+                    case 'content':
+                        if(appthis.browser.isIos()){
+                            appthis.fakeAlink('https://a.gamersky.com/app/news/'+cid+'/referer/'+rel);
+                        }else{
+                            appthis.androidJump({
+                                schema: "home?action=news&id="+cid+'&referer='+rel
+                            });
+                        }
+                        break;
+                    case 'strategy':
+                        if(appthis.browser.isIos()){
+                            appthis.fakeAlink('https://a.gamersky.com/app/game/'+cid+'/strategiesSet/referer/'+rel);
+                        }else{
+                            appthis.androidJump({
+                                schema: "home?action=game&id="+cid+"&open=strategy&tab=game&apprel="+rel
+                            });
+                        }
+                        break;
+                    default:
+                        if(appthis.browser.isIos()){
+                            appthis.fakeAlink('https://a.gamersky.com/app/home/referer/'+rel);
+                        }else{
+                            appthis.androidJump({
+                                schema: "home?referer="+rel
+                            });
+                        }
+                }
+            },
+            pageJump:function () {
+                var appthis = this,role,cid,rel;
+                role = appthis.getQueryString('oatype');
+                cid = appthis.getQueryString('oaid');
+                rel = appthis.getQueryString('oarel');
+                if(typeof rel !== 'undefined'){
+                    appthis.JumpBegin(role,cid,rel);
+				}else{
+                    appthis.JumpBeginOld(role,cid);
+				}
+
+            },
+			allFakeClick:function(){
+                var appthis = this,fkBtn = '',btnTxt = '打开游民APP';
+                function setRem() {
+                    var ww = $(window).width();
+                    if(ww>720){
+                        ww=720
+                    }
+                    $('html').css('font-size',ww/7.2+'px');
+                }
+                setRem();
+                $(window).resize(setRem);
+                fkBtn += '<a style="display: block;margin: 1.5rem auto 0;width: 5.4rem;height: 0.8rem;line-height: 0.8rem;background-color: #e72029;font-size: 0.28rem;color: #fff;text-align: center;border-radius: 0.1rem;" id="gsGotoApp">'+btnTxt+'</a>';
+                $('#wximg').hide();
+                $('body').html(fkBtn);
+                $('#gsGotoApp').on('click',function () {
+                    appthis.pageJump();
+                });
+			},
+            init:function () {
+                var appthis = this;
+                if(!appthis.browser.isWx()){
+                    appthis.allFakeClick();
+				}
+            }
+        };
+        $(function () {
+            openAppJs.init();
+        });
+    })(jQuery)
+</script>
+<span id="countn" generalId="1002175" style="display:none;"></span>
+<script type="text/javascript" src="http://j.gamersky.com/g/jquery.gamersky.v4.min.js"></script>
+<div style="display:none">
+	<script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdcb5060fba0123ff56d253331f28db6a' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</div>
+</body>
+</html>

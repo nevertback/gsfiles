@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="format-detection" content="telephone=no">
+	<title>玩儿趣奖2017 选出你心目中的最佳 _ 游民星空 GamerSky.com</title>
+	<meta name="keywords" content="玩儿趣奖，玩儿趣奖2017，游民星空，年度游戏评选">
+	<meta name="description" content="">
+	<meta itemprop="name" content="玩儿趣奖2017 选出你心目中的最佳 _ 游民星空 GamerSky.com" />
+	<meta itemprop="image" content="ztimages/350.jpg" />
+	<link href="http://j.gamersky.com/g/normalize.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="http://j.gamersky.com/web2015/css/QZnav.css" />
+	<style>@-webkit-keyframes scJump{0%,to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}50%{-webkit-transform:translate3d(0,-5px,0);transform:translate3d(0,-5px,0)}}@keyframes scJump{0%,to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}50%{-webkit-transform:translate3d(0,-5px,0);transform:translate3d(0,-5px,0)}}@-webkit-keyframes scLr2{0%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}49%{-webkit-transform:translate3d(-450px,0,0) rotateY(0);transform:translate3d(-450px,0,0) rotateY(0)}50%{-webkit-transform:translate3d(-450px,0,0) rotateY(180deg);transform:translate3d(-450px,0,0) rotateY(180deg)}99%{-webkit-transform:translate3d(0,0,0) rotateY(180deg);transform:translate3d(0,0,0) rotateY(180deg)}to{-webkit-transform:translate3d(0,0,0) rotateY(0);transform:translate3d(0,0,0) rotateY(0)}}@keyframes scLr2{0%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}49%{-webkit-transform:translate3d(-450px,0,0) rotateY(0);transform:translate3d(-450px,0,0) rotateY(0)}50%{-webkit-transform:translate3d(-450px,0,0) rotateY(180deg);transform:translate3d(-450px,0,0) rotateY(180deg)}99%{-webkit-transform:translate3d(0,0,0) rotateY(180deg);transform:translate3d(0,0,0) rotateY(180deg)}to{-webkit-transform:translate3d(0,0,0) rotateY(0);transform:translate3d(0,0,0) rotateY(0)}}@-webkit-keyframes scLr1{0%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}49%{-webkit-transform:translate3d(-50px,0,0) rotateY(0);transform:translate3d(-50px,0,0) rotateY(0)}50%{-webkit-transform:translate3d(-50px,0,0) rotateY(180deg);transform:translate3d(-50px,0,0) rotateY(180deg)}99%{-webkit-transform:translate3d(0,0,0) rotateY(180deg);transform:translate3d(0,0,0) rotateY(180deg)}to{-webkit-transform:translate3d(0,0,0) rotateY(0);transform:translate3d(0,0,0) rotateY(0)}}@keyframes scLr1{0%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}49%{-webkit-transform:translate3d(-50px,0,0) rotateY(0);transform:translate3d(-50px,0,0) rotateY(0)}50%{-webkit-transform:translate3d(-50px,0,0) rotateY(180deg);transform:translate3d(-50px,0,0) rotateY(180deg)}99%{-webkit-transform:translate3d(0,0,0) rotateY(180deg);transform:translate3d(0,0,0) rotateY(180deg)}to{-webkit-transform:translate3d(0,0,0) rotateY(0);transform:translate3d(0,0,0) rotateY(0)}}@-webkit-keyframes scLrwd{0%,to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}50%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}}@keyframes scLrwd{0%,to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}50%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}}@-webkit-keyframes scCell{0%,to{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}50%{-webkit-transform:rotate(45deg);transform:rotate(45deg)}}@keyframes scCell{0%,to{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}50%{-webkit-transform:rotate(45deg);transform:rotate(45deg)}}@-webkit-keyframes scJdqs{0%,to{-webkit-transform:rotate(0);transform:rotate(0)}40%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}60%{-webkit-transform:translate3d(5px,-10px,0);transform:translate3d(5px,-10px,0)}}@keyframes scJdqs{0%,to{-webkit-transform:rotate(0);transform:rotate(0)}40%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}60%{-webkit-transform:translate3d(5px,-10px,0);transform:translate3d(5px,-10px,0)}}@-webkit-keyframes scMla{0%,to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}50%{-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}}@keyframes scMla{0%,to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}50%{-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}}@-webkit-keyframes scRotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes scRotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes scCdr{0%{-webkit-transform:scale(0);transform:scale(0)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scCdr{0%{-webkit-transform:scale(0);transform:scale(0)}to{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes tipsAnim{0%{height:0;-webkit-transform:scale(1,1);transform:scale(1,1)}to{height:25px;-webkit-transform:scale(1,2.4);transform:scale(1,2.4)}}@keyframes tipsAnim{0%{height:0;-webkit-transform:scale(1,1);transform:scale(1,1)}to{height:25px;-webkit-transform:scale(1,2.4);transform:scale(1,2.4)}}@-webkit-keyframes lineAnim{0%,35%{-webkit-transform:scale(0,1);transform:scale(0,1)}45%,to{-webkit-transform:scale(3,1);transform:scale(3,1)}}@keyframes lineAnim{0%,35%{-webkit-transform:scale(0,1);transform:scale(0,1)}45%,to{-webkit-transform:scale(3,1);transform:scale(3,1)}}@-webkit-keyframes lightAnim{0%{background-position:-408px -173px}17%,to{background-position:340px -173px}}@keyframes lightAnim{0%{background-position:-408px -173px}17%,to{background-position:340px -173px}}body,html{min-width:1280px}body{font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px}h1,h2,h3,h4,h5,p,ul{margin:0;padding:0;list-style:none}a{text-decoration:none;cursor:pointer}.bdsharewrap.bdstyle-c .bdsharebuttonbox.before,.bdsharewrap.bdstyle-c .bdsharebuttonbox:after,.clearfix:after,.clearfix:before,.container:after,.container:before{display:table;content:" "}.bdsharewrap.bdstyle-c .bdsharebuttonbox:after,.clearfix:after,.container:after{clear:both}.container{margin-right:auto;margin-left:auto;width:1200px}.zt-section{margin:0;padding:0;overflow:hidden;width:100%}.Bot,.QZnav,.zt-section{min-width:1200px}.QZnav .topbar{width:1200px}.QZnav .QZ-nav,.zt-section1 .container .layer_time .time .time-box.time-s{display:none}.Bot{width:100%;height:155px;background:#111;font-size:14px}.Bot .Copyright{margin:0 auto;padding-top:50px;width:1200px;height:auto;line-height:30px;text-align:center;color:#555}.Bot .Copyright a{margin:0 5px;color:#555}.Bot .Copyright a:hover{color:#777}.bdsharewrap.bdstyle-c{width:152px;height:20px;overflow:hidden}.bdsharewrap.bdstyle-c .bdsharebuttonbox{width:800px;height:20px}.bdsharewrap.bdstyle-c .bdsharebuttonbox a{float:left;padding:0;margin:0 24px 0 0}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_sqq{background-image:url(../ztimages/csprite.png);background-position:-866px -309px;width:18px;height:20px}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_weixin{background-image:url(../ztimages/csprite.png);background-position:-656px -251px;width:23px;height:19px}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tsina{background-image:url(../ztimages/csprite.png);background-position:-715px -251px;width:21px;height:17px}.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_qzone{background-image:url(../ztimages/csprite.png);background-position:-687px -251px;width:20px;height:18px}.nums{width:38px;height:60px;background:url(../ztimages/nums.png) 0 0 no-repeat}.nums.num0,.zt-section2 .container .prizes li a .prizes-icon.prizes-icon0{background-position:0 0}.nums.num1{background-position:-48px 0}.nums.num2{background-position:-96px 0}.nums.num3{background-position:-144px 0}.nums.num4{background-position:-192px 0}.nums.num5{background-position:-240px 0}.nums.num6{background-position:-288px 0}.nums.num7{background-position:-336px 0}.nums.num8{background-position:-384px 0}.nums.num9{background-position:-432px 0}.nums,.pinned i,.sc-icons{display:block}.sc-icons.sc-cell,.sc-icons.sc-gstar,.sc-icons.sc-yunshi{background-image:url(../ztimages/csprite.png);background-position:-1119px -163px;width:45px;height:45px}.sc-icons.sc-cell,.sc-icons.sc-gstar{background-position:-656px -163px;width:113px;height:80px}.sc-icons.sc-cell{background-position:-146px -386px;width:30px;height:66px;-webkit-transform-origin:50% 0;-ms-transform-origin:50% 0;transform-origin:50% 0;-webkit-animation:scCell 3s ease-in-out infinite;animation:scCell 3s ease-in-out infinite}.sc-icons.sc-db3,.sc-icons.sc-star,.sc-icons.sc-x{background-image:url(../ztimages/csprite.png);background-position:-742px -309px;width:39px;height:38px}.sc-icons.sc-db3,.sc-icons.sc-x{background-position:-789px -309px;width:36px;height:36px}.sc-icons.sc-db3{background-position:-694px -309px;width:40px;height:39px}.sc-icons.sc-bkb,.sc-icons.sc-db4,.sc-icons.sc-dbx{background-image:url(../ztimages/csprite.png);background-position:-833px -309px;width:25px;height:25px}.sc-icons.sc-bkb,.sc-icons.sc-db4{background-position:-591px -309px;width:44px;height:44px}.sc-icons.sc-bkb{background-position:-643px -309px;width:43px;height:43px;-webkit-animation:scRotate 6s linear infinite;animation:scRotate 6s linear infinite}.sc-icons.sc-cdr1{background-position:-1061px -163px;width:50px;height:50px}.sc-icons.sc-cdr1,.sc-icons.sc-cdr2,.sc-icons.sc-mla{background-image:url(../ztimages/csprite.png)}.sc-icons.sc-cdr2{-webkit-transform-origin:100% 0;-ms-transform-origin:100% 0;transform-origin:100% 0;background-position:-777px -163px;width:100px;height:67px;-webkit-animation:scCdr 1s ease-in infinite;animation:scCdr 1s ease-in infinite}.sc-icons.sc-mla{background-position:0 -502px;width:50px;height:81px;-webkit-animation:scMla 3s ease-in-out infinite;animation:scMla 3s ease-in-out infinite}.sc-icons.sc-jdqs,.sc-icons.sc-jzt1,.sc-icons.sc-moon{background-image:url(../ztimages/csprite.png);background-position:-1002px -163px;width:51px;height:55px}.sc-icons.sc-jdqs,.sc-icons.sc-jzt1{background-position:-885px -163px;width:109px;height:60px}.sc-icons.sc-jdqs{background-position:-58px -502px;width:22px;height:47px;-webkit-transform-origin:100% 0;-ms-transform-origin:100% 0;transform-origin:100% 0;-webkit-animation:scJdqs 2s linear infinite;animation:scJdqs 2s linear infinite}.sc-icons.sc-jxs,.sc-icons.sc-jzt2,.sc-icons.sc-ts{background-image:url(../ztimages/csprite.png);background-position:0 -386px;width:68px;height:108px}.sc-icons.sc-jzt2,.sc-icons.sc-ts{background-position:0 -163px;width:366px;height:215px}.sc-icons.sc-ts{background-position:-530px -309px;width:53px;height:45px}.sc-icons.sc-house,.sc-icons.sc-sea1,.sc-icons.sc-syq{background-image:url(../ztimages/csprite.png);background-position:-530px -163px;width:118px;height:107px}.sc-icons.sc-sea1,.sc-icons.sc-syq{background-position:-892px -309px;width:16px;height:18px;-webkit-animation:scLr2 8s linear infinite;animation:scLr2 8s linear infinite}.sc-icons.sc-sea1{background-position:-530px -278px;width:573px;height:14px;-webkit-animation:scLrwd 4s ease-in-out infinite;animation:scLrwd 4s ease-in-out infinite}.sc-icons.sc-cbt,.sc-icons.sc-sea2,.sc-icons.sc-sed{background-image:url(../ztimages/csprite.png);background-position:-530px -300px;width:625px;height:1px}.sc-icons.sc-cbt,.sc-icons.sc-sed{background-position:-184px -386px;width:33px;height:39px;-webkit-animation:scLr1 2s ease-in-out infinite;animation:scLr1 2s ease-in-out infinite}.sc-icons.sc-sed{background-position:-76px -386px;width:62px;height:68px;-webkit-animation:scJump 1s ease-in-out infinite;animation:scJump 1s ease-in-out infinite}.sc-icons.sc-bg,.zt-section2 .container .prizes li{background-image:url(../ztimages/csprite.png);background-position:0 0;width:1167px;height:155px}.pinned{position:fixed;left:50%;margin-left:-1px;bottom:0;width:2px;height:60px;background-color:#757678}.pinned i{width:2px;height:0;background-color:#fff;-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;-webkit-animation:tipsAnim 1s ease-in-out infinite;animation:tipsAnim 1s ease-in-out infinite}.btn-def{display:block;width:200px;height:50px;line-height:50px;font-size:16px;color:#fff;text-align:center;background-color:#f2a02c}.btn-def:hover{background-color:#feb650}.cooper-pop-main,.cooper-pop-mask{position:fixed;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}.cooper-pop-mask{background:url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0;left:0;top:0;z-index:999998;width:100%;height:100%}.cooper-pop-main.cur,.cooper-pop-mask.cur{opacity:1;visibility:visible}.cooper-pop-main{left:50%;top:50%;margin-left:-230px;margin-top:-270px;z-index:999999;width:460px;height:540px;background-color:#fff;-webkit-box-shadow:0 0 40px rgba(0,0,0,.2);box-shadow:0 0 40px rgba(0,0,0,.2);*border:1px solid #3a3b3d;-webkit-transform-origin:50% 0;-ms-transform-origin:50% 0;transform-origin:50% 0;-webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)}.cooper-pop-main.cur{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.cooper-pop-main .cp-con{padding:20px 50px 0}.cooper-pop-main .cp-con h5{margin-bottom:10px;height:50px;line-height:50px;font-size:22px;color:#444;text-align:center}.cooper-pop-main .cp-con .cp-row{position:relative;margin:0 auto 17px;padding:5px 15px;width:328px;height:32px;border:1px solid #ddd;border-radius:4px}.cooper-pop-main .cp-con .cp-row.error{border-color:#f2a02c}.cooper-pop-main .cp-con .cp-row.last{margin-bottom:28px}.cooper-pop-main .cp-con .cp-row input{position:relative;display:block;width:328px;height:30px;line-height:30px;border:0;background:0 0;outline:0;font-size:14px;color:#333}.cooper-pop-main .cp-con .cp-row .tips{position:absolute;left:15px;top:10px;width:100px;height:20px;line-height:20px;color:#888;font-size:14px;white-space:nowrap}.cooper-pop-main .cp-con .cp-row .tips.cur{left:100%;margin-left:-115px;text-align:right;color:#f2a02c}h3.title{height:120px;line-height:120px;font-size:36px;color:#333;text-align:center;font-weight:400}.zt-section1{background-color:#3a3b3d}.zt-section1 .scene{position:absolute;left:50%;top:0;margin-left:-960px;width:1920px;height:1031px;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.zt-section1 .scene .scene-cells{width:100%;height:100%}.zt-section1 .scene .scene-cells img{position:absolute;display:block}.zt-section1 .scene .scene-rain img{left:139px;top:80px;width:1627px;height:839px}.zt-section1 .scene .scene-shoubing img,.zt-section1 .scene .shoubing-light{left:734px;top:177px;width:442px;height:326px}.zt-section1 .scene .shoubing-light{position:absolute;background:url(../ztimages/light.png) -408px -173px no-repeat;-webkit-mask-image:url(../ztimages/scene-shoubing.png);mask-image:url(../ztimages/scene-shoubing.png);-webkit-animation:lightAnim 6s ease-in infinite;animation:lightAnim 6s ease-in infinite}.zt-section1 .scene .scene-logo img{left:671px;top:248px;width:576px;height:174px}.zt-section1 .scene .sc-icons{position:absolute}.zt-section1 .scene .sc-icons.sc-yunshi{left:298px;top:186px}.zt-section1 .scene .sc-icons.sc-gstar{left:380px;top:301px}.zt-section1 .scene .sc-icons.sc-cell{left:580px;top:146px}.zt-section1 .scene .sc-icons.sc-star{left:701px;top:174px}.zt-section1 .scene .sc-icons.sc-x{left:1241px;top:366px}.zt-section1 .scene .sc-icons.sc-db3{left:669px;top:448px}.zt-section1 .scene .sc-icons.sc-dbx{left:708px;top:419px}.zt-section1 .scene .sc-icons.sc-db4{left:568px;top:517px}.zt-section1 .scene .sc-icons.sc-bkb{left:612px;top:448px}.zt-section1 .scene .sc-icons.sc-cdr1{left:1286px;top:159px}.zt-section1 .scene .sc-icons.sc-cdr2{left:1199px;top:196px}.zt-section1 .scene .sc-icons.sc-mla{left:1313px;top:443px}.zt-section1 .scene .sc-icons.sc-moon{left:1543px;top:255px}.zt-section1 .scene .sc-icons.sc-jzt1{left:1494px;top:379px}.zt-section1 .scene .sc-icons.sc-jdqs{left:1476px;top:407px}.zt-section1 .scene .sc-icons.sc-jxs{left:1462px;top:638px}.zt-section1 .scene .sc-icons.sc-jzt2{left:1327px;top:614px}.zt-section1 .scene .sc-icons.sc-ts{left:1092px;top:722px}.zt-section1 .scene .sc-icons.sc-house{left:1187px;top:747px}.zt-section1 .scene .sc-icons.sc-syq{left:1054px;top:836px}.zt-section1 .scene .sc-icons.sc-sea1{left:726px;top:856px}.zt-section1 .scene .sc-icons.sc-sea2{left:598px;top:853px}.zt-section1 .scene .sc-icons.sc-cbt{left:535px;top:804px}.zt-section1 .scene .sc-icons.sc-sed{left:304px;top:637px}.zt-section1 .scene .sc-icons.sc-bg{left:199px;top:704px}.zt-section1 .scene .sc-gstar-line{position:absolute;width:6px;height:1px;background-color:#000;-webkit-transform-origin:100% 0;-ms-transform-origin:100% 0;transform-origin:100% 0;-webkit-animation:lineAnim 2s ease-in infinite;animation:lineAnim 2s ease-in infinite}.zt-section1 .scene .sc-gstar-line.sc-gstar-line1{left:368px;top:321px}.zt-section1 .scene .sc-gstar-line.sc-gstar-line2{left:360px;top:341px;width:9px}.zt-section1 .scene .sc-gstar-line.sc-gstar-line3{left:368px;top:361px}.zt-section1,.zt-section1 .container{position:relative;height:1031px}.zt-section1 .container .layer_time{position:relative;padding-top:545px}.zt-section1 .container .layer_time .time-wrap{margin:0 auto;width:380px;height:60px}.zt-section1 .container .layer_time .time-wrap .started,.zt-section3 .container ul li h5{line-height:60px;font-size:40px;color:#f2a02c;font-weight:700;text-align:center}.zt-section1 .container .layer_time .time{position:relative;width:600px}.zt-section1 .container .layer_time .time .time-box{position:relative;float:left;margin-right:30px;width:106px;height:60px}.zt-section1 .container .layer_time .time .time-box .place-t{float:left;margin-right:10px}.zt-section1 .container .layer_time .time .time-box .place-s{float:left}.zt-section1 .container .layer_time .time .time-box span{display:block;position:absolute;bottom:0;right:0;font-size:16px;color:#c78b36}.zt-section1 .container .layer_time .bdsharewrap.bdstyle-c{margin:32px auto 0}.zt-section2,.zt-section3,.zt-section4{height:auto}.zt-section2 .container{padding-top:40px}.zt-section2 .container .prizes{width:1250px}.zt-section2 .container .prizes li{float:left;margin:0 2px 2px 0;background-position:-374px -163px;width:148px;height:200px}.zt-section2 .container .prizes li a{cursor:default;position:relative;display:block;width:148px;height:200px;background:url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0}.zt-section2 .container .prizes li a .prizes-icon{display:block;position:absolute;width:148px;height:200px;background:url(../ztimages/prize-icons.png) 0 0 no-repeat;opacity:1;-webkit-transition:all .2s ease;transition:all .2s ease;-webkit-transition-delay:.1s;transition-delay:.1s;visibility:visible}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon1{background-position:-150px 0}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon2{background-position:-300px 0}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon3{background-position:-450px 0}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon4{background-position:-600px 0}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon5{background-position:-750px 0}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon6{background-position:-900px 0}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon7{background-position:-1050px 0}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon8{background-position:0 -202px}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon9{background-position:-150px -202px}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon10{background-position:-300px -202px}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon11{background-position:-450px -202px}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon12{background-position:-600px -202px}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon13{background-position:-750px -202px}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon14{background-position:-900px -202px}.zt-section2 .container .prizes li a .prizes-icon.prizes-icon15{background-position:-1050px -202px}.zt-section2 .container .prizes li a span{position:absolute;left:0;top:0;display:block;padding-top:120px;width:145px;height:40px;overflow:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}.zt-section2 .container .prizes li a span .tit{display:block;margin:0 auto;width:120px;height:60px;line-height:20px;font-size:14px;color:#333;font-style:normal;text-align:center}.zt-section2 .container .prizes li a span .votetime{display:block;width:100%;line-height:20px;text-align:center;font-style:normal;font-size:12px;color:#888}.zt-section2 .container .prizes li a span .votetime b{font-size:14px;font-weight:400}.zt-section2 .container .prizes li a:hover .prizes-icon{visibility:hidden;opacity:0;-webkit-transition-delay:0s;transition-delay:0s;-webkit-transform:scale(.9);-ms-transform:scale(.9);transform:scale(.9)}.zt-section2 .container .prizes li a:hover span{padding-top:40px;height:140px;-webkit-transition-delay:.1s;transition-delay:.1s}.zt-section3 .container,.zt-section4 .container{padding-top:50px}.zt-section3 .container ul{width:1300px}.zt-section3 .container ul li{float:left;padding:25px 0 0;width:600px;height:235px;background-color:#f0b94d}.zt-section3 .container ul li h5{height:60px;font-size:20px;color:#222}.zt-section3 .container ul li a,.zt-section3 .container ul li p{line-height:30px;font-size:14px;color:#222;text-align:center}.zt-section3 .container ul li a{display:block;margin:20px auto 0;width:129px;height:42px;line-height:42px;background-color:#fff;color:#444}.zt-section3 .container ul li a:hover{background-color:#333;color:#ffcd6c}.zt-section3 .container ul li.first{background-color:#f7c055}.zt-section4 .container .context{width:1200px;height:390px;background:url(../ztimages/s4-bg.jpg) 0 0 no-repeat}.zt-section4 .container .context .rules{padding-left:45px;padding-top:30px;width:690px}.zt-section4 .container .context .rules h5{height:45px;line-height:45px;font-size:16px;color:#fff}.zt-section4 .container .context .rules p{line-height:24px;font-size:15px;color:#f2f2f3}.zt-section4 .container .context .rules p span{color:#ffc759}.zt-section4 .container .context .rules ul{margin-bottom:10px}.zt-section4 .container .context .rules ul li{position:relative;padding-left:24px;line-height:24px}.zt-section4 .container .context .rules ul li i{display:block;position:absolute;left:0;top:0;font-style:normal;font-size:15px;color:#f2f2f3}.zt-section5{background-color:#eee}.zt-section5 .container{position:relative;padding:60px 0 30px}.zt-section5 .container .zt-comment{float:left;margin-right:30px;width:760px}.zt-section5 .container .zt-comment .QZCMT-outer-title{padding-left:40px;margin-bottom:20px;height:30px;line-height:30px;background:url(../ztimages/logo-qz.png) 0 0 no-repeat;font-size:22px;color:#444}.zt-section5 .container .zt-coopers{position:absolute;top:110px;right:0;padding-bottom:38px;width:410px;background-color:#fff;overflow:hidden}.zt-section5 .container .zt-coopers .cooper-title{padding-left:27px;height:63px;line-height:63px;font-size:18px;color:#333;font-weight:700}.zt-section5 .container .list-wrap{margin-left:20px;margin-bottom:36px;width:368px;border-top:1px solid #e5e5e5;border-left:1px solid #e5e5e5}.zt-section5 .container .list{width:380px}.zt-section5 .container .list li{float:left;width:122px;height:72px;border-right:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5}.zt-section5 .container .list li a{display:block}.zt-section5 .container .list li a img{display:block;width:122px;height:72px}.cooper-pop-main .cp-con a,.zt-section5 .container a.cooper{margin:0 auto}.ieBrowser .zt-section1 .scene .shoubing-light{display:none}</style>
+	<script type="text/javascript" src="http://j.gamersky.com/g/jquery-1.8.3.js"></script>
+	<!-- 创建时间：20171205 设计：ONE像素 前端：MrrrTian -->
+	<script>var wapUrl = "http://www.gamersky.com/zhuanti/wqj2017/m.shtml";var contentPageIndex=1;var pageIndex=1;</script>
+	<script src="http://j.gamersky.com/g/mobileesp.js"></script>
+	<script>
+		(function ($) {
+            var sbie = $.browser.msie,
+                ver = parseInt($.browser.version);
+            var nua = navigator.userAgent,
+                isEdge = nua.indexOf("Edge") > -1,
+                isIE11 = (nua.toLowerCase().indexOf("trident") > -1 && nua.indexOf("rv") > -1);
+            if(sbie === true || isEdge === true || isIE11 === true){
+                $('html').addClass('ieBrowser');
+            }
+        })(jQuery);
+	</script>
+</head>
+<body>
+<!-- 全站导航 -->
+<script type="text/javascript" src="http://www.gamersky.com/autoinc/allsite/allsite_nav_js.htm"></script>
+<!-- 分享用 -->
+<div style="width:0;height:0;overflow:hidden">
+	<h3>玩儿趣奖2017 选出你心目中的最佳 _ 游民星空 GamerSky.com</h3>
+	<p></p>
+	<img src="ztimages/350.jpg" alt="玩儿趣奖2017 选出你心目中的最佳 _ 游民星空 GamerSky.com">
+</div>
+<!-- 分享用 end-->
+<div id="section1" class="zt-section zt-section1">
+	<div class="scene" id="scene">
+		<div data-depth="0.05" class="sceneParallax scene-cells scene-rain">
+			<img src="ztimages/scene-rain.png" alt="rain">
+		</div>
+		<div data-depth="0.3" class="sceneParallax scene-cells scene-cells1">
+            <div class="sc-icons sc-jxs"></div>
+            <div class="sc-icons sc-jzt2"></div>
+            <div class="sc-icons sc-house"></div>
+            <div class="sc-icons sc-syq"></div>
+            <div class="sc-icons sc-sea1"></div>
+            <div class="sc-icons sc-sea2"></div>
+            <div class="sc-icons sc-cbt"></div>
+            <div class="sc-icons sc-sed"></div>
+            <div class="sc-icons sc-bg"></div>
+		</div>
+        <div data-depth="0.2" class="sceneParallax scene-cells scene-cells2">
+            <div class="sc-icons sc-cell"></div>
+            <div class="sc-icons sc-star"></div>
+            <div class="sc-icons sc-x"></div>
+            <div class="sc-icons sc-db3"></div>
+            <div class="sc-icons sc-dbx"></div>
+            <div class="sc-icons sc-db4"></div>
+            <div class="sc-icons sc-bkb"></div>
+            <div class="sc-icons sc-cdr1"></div>
+            <div class="sc-icons sc-cdr2"></div>
+            <div class="sc-icons sc-mla"></div>
+        </div>
+        <div data-depth="0.4" class="sceneParallax scene-cells scene-cells3">
+            <div class="sc-icons sc-yunshi"></div>
+            <div class="sc-icons sc-gstar"></div>
+            <div class="sc-gstar-line sc-gstar-line1"></div>
+            <div class="sc-gstar-line sc-gstar-line2"></div>
+            <div class="sc-gstar-line sc-gstar-line3"></div>
+            <div class="sc-icons sc-moon"></div>
+            <div class="sc-icons sc-jzt1"></div>
+            <div class="sc-icons sc-jdqs"></div>
+            <div class="sc-icons sc-ts"></div>
+        </div>
+		<div data-depth="0.1" class="sceneParallax scene-cells scene-shoubing">
+			<img src="ztimages/scene-shoubing.png" alt="logo">
+            <div class="shoubing-light"></div>
+		</div>
+		<div data-depth="0.15" class="sceneParallax scene-cells scene-logo">
+			<img src="ztimages/logo.png" alt="logo">
+		</div>
+	</div>
+	<div class="container">
+		<div class="layer_time">
+			<div class="time-wrap">
+				<div class="clearfix time" id="fromNowTime">
+					<div class="time-box time-d">
+						<i class="place-t nums"></i>
+						<i class="place-s nums"></i>
+						<span>天</span>
+					</div>
+					<div class="time-box time-h">
+						<i class="place-t nums"></i>
+						<i class="place-s nums"></i>
+						<span>时</span>
+					</div>
+					<div class="time-box time-m">
+						<i class="place-t nums"></i>
+						<i class="place-s nums"></i>
+						<span>分</span>
+					</div>
+                    <div class="time-box time-s">
+                        <i class="place-t nums"></i>
+                        <i class="place-s nums"></i>
+                        <span>秒</span>
+                    </div>
+				</div>
+			</div>
+			<!-- 百度分享 -->
+<div class="bdsharewrap bdstyle-c">
+	<div class="bdsharebuttonbox bdshare-button-style0-16" data-tag="share_1" data-bd-bind="1446461622481">
+		<a class="bdicons bds_sqq" data-cmd="sqq" title="分享到QQ"></a>
+		<a class="bdicons bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+		<a class="bdicons bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+		<a class="bdicons bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+	</div>
+</div>
+<!-- 百度分享 end-->
+		</div>
+	</div>
+</div>
+<div id="section2" class="zt-section zt-section2">
+    <div class="container">
+        <h3 class="title">16个大奖 等你来投票</h3>
+        <ul class="clearfix prizes" id="prizes">
+            <li>
+                <a>
+                    <i class="prizes-icon prizes-icon0"></i>
+                    <span>
+                        <i class="tit">年度最佳游戏</i>
+                        <i class="votetime">投票时间<br>2017.12.15——2017.12.18</i>
+                    </span>
+                </a>
+            </li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<div id="section3" class="zt-section zt-section3">
+    <div class="container">
+        <h3 class="title">专题活动</h3>
+        <ul class="clearfix">
+            <li class="first">
+                <h5>说说你心中的2017年最佳Top6游戏</h5>
+                <p>2017年马上就要过去了，来聊聊今年你心目中的六款最佳游戏吧！<br>如果与我们玩趣奖的年度最佳候选提名完全一致<br>还有机会赢取主机哦~</p>
+                <a target="_blank" href="#">点击进入</a>
+            </li>
+            <li>
+                <h5>微博转发送大奖</h5>
+                <p>转发我们的微博，带上#玩儿趣奖2017#话题，并@1名好友，便有<br>机会获得3A正版游戏等大奖！<br>&nbsp;</p>
+                <a target="_blank" href="#">点击进入</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="section4" class="zt-section zt-section4">
+    <div class="container">
+        <h3 class="title">规则&奖品</h3>
+        <div class="context">
+            <div class="rules">
+                <h5>玩儿趣奖活动规则：</h5>
+                <ul>
+                    <li>
+                        <i>1 .</i><p>玩家注册或登录游民帐号，每天来参与评选奖项的投票，就可以赢得一次抽奖资格；有机会赢得正版
+                        游戏激活码，游民商城宝石等丰富礼品。</p>
+                    </li>
+                    <li><i>2 .</i><p>玩家注册或登录游民帐号，在玩儿趣奖的主页、投票页及结果页下，发表有关年度游戏评选、提名游
+                        戏及最终结果的评论，就有机会赢取大奖，包括<span>正版3A游戏，鼠标键盘等游戏周边，甚至是微软索尼
+                            任天堂最新主机！</span></p></li>
+                </ul>
+                <h5>注意事项：</h5>
+                <ul>
+                    <li><i>1 .</i><p>玩儿趣奖期间，不会有任何编辑以任何理由向您收取任何费用。</p></li>
+                    <li><i>2 .</i><p>发奖后，我们会尽快发布公示贴，公布获奖名单。</p></li>
+                </ul>
+                <p>更多玩法与惊喜，敬请期待</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="section5" class="zt-section zt-section5">
+    <div class="container">
+        <div class="zt-comment">
+            <div class="QZCMT-outer-title">玩儿趣奖圈子</div>
+            <div id="QZCMT" clubId="3" topicId="" topic="" data-pageIndex="0"></div>
+        </div>
+        <div class="zt-coopers">
+            <div class="cooper-title">合作厂商</div>
+            <div class="list-wrap">
+                <ul class="clearfix list" id="cooperLogos"></ul>
+            </div>
+            <a class="btn-def cooper" id="openCp">合作申请</a>
+        </div>
+    </div>
+</div>
+<div class="cooperPop cooperPopClose cooper-pop-mask"></div>
+<div class="cooperPop cooper-pop-main">
+    <div class="cp-con">
+        <div class="cp-form" id="cpForm">
+            <h5>申请合作</h5>
+            <div class="cp-row cpIptPar">
+                <input class="cpIpt" type="text" id="cpCompany" data-placeholder="公司名称">
+            </div>
+            <div class="cp-row cpIptPar">
+                <input class="cpIpt" type="text" id="cpName" data-placeholder="联系人姓名">
+            </div>
+            <div class="cp-row cpIptPar">
+                <input class="cpIpt" type="text" id="cpJob" data-placeholder="职务">
+            </div>
+            <div class="cp-row cpIptPar">
+                <input class="cpIpt" type="text" id="cpQQ" data-placeholder="联系人QQ">
+            </div>
+            <div class="cp-row cpIptPar">
+                <input class="cpIpt" type="text" id="cpPhone" data-placeholder="联系人电话">
+            </div>
+            <div class="cp-row cpIptPar last">
+                <input class="cpIpt" type="text" id="cpEmail" data-placeholder="联系人邮箱">
+            </div>
+            <a class="btn-def cooperPopSmt" id="cpSmt">提交报名</a>
+        </div>
+    </div>
+</div>
+<!-- Bot -->
+<div class="Bot">
+	<script type="text/javascript" src="http://www.gamersky.com/autoinc/allsite/allsite_copyright_2_js.htm"></script>
+</div>
+<!--Bot end-->
+<!-- 浮动导航 -->
+<ul id="fixednav" class="fixednav">
+	<li><a class="" data-to="#section1" data-off="36"></a></li>
+	<li><a class="" data-to="#section2"></a></li>
+	<li><a class="" data-to="#section3"></a></li>
+	<li><a class="" data-to="#section4"></a></li>
+	<li><a class="" data-to="#section5"></a></li>
+	<li><a class="" data-to="#sectionComm"></a></li>
+</ul>
+<!-- 浮动导航 end-->
+<span id="countn" generalId="988305" style="display:none;"></span>
+<!-- 加载页面JS -->
+<script type="text/javascript" src="http://j.gamersky.com/g/jquery.gamersky.v4.min.js"></script>
+<script src="http://j.gamersky.com/g/lib/parallax/3.1.0/parallax.min.js"></script>
+<script type="text/javascript" src="jsmin/main.min.js"></script>
+<script>
+    (function () {
+        var doc = document, s = doc.createElement('script'), h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+        s.src = 'http://j.gamersky.com/web2015/qzcomment/js/qzcmtconfig.js?'+new Date().getTime();
+        h.insertBefore(s, h.firstChild); window.SCS_NO_IFRAME = true;
+    })();
+    //百度
+    window._bd_share_config = {
+        common: {
+            bdText: '玩儿趣奖2017 选出你心目中的最佳 _ 游民星空 GamerSky.com',
+            bdDesc: '',
+            bdPic: 'ztimages/350.jpg'
+        },
+        share: [{
+            "bdSize": 16
+        }]
+    };
+    with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>
+<!-- 加载页面JS end-->
+<div style="display:none">
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdcb5060fba0123ff56d253331f28db6a' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</div>
+</body>
+</html>

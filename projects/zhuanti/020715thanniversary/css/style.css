@@ -1,0 +1,199 @@
+.bdsharewrap.bdstyle-c { width: 237px; height: 36px; overflow: hidden; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox { width: 800px; height: 36px; *font-size: 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox:after, .bdsharewrap.bdstyle-c .bdsharebuttonbox.before { display: table; content: " "; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox:after { clear: both; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a { display: block; float: left; margin: 0 4px 0 0; padding: 0; width: 36px; height: 36px; background: url("http://image.gamersky.com/webimg13/zhuanti/common/bd-fx9.png") 0 0 no-repeat; text-indent: 99999px; overflow: hidden; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tsina { background-position: 0 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_weixin { background-position: -40px 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_qzone { background-position: -80px 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_renren { background-position: -121px 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_sqq { background-position: -161px 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_count { background-position: -201px 0; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tieba, .bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_douban, .bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_more { display: none; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a:hover { opacity: 1; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a:hover.bds_tsina { background-position: 0 -48px; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a:hover.bds_weixin { background-position: -40px -48px; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a:hover.bds_qzone { background-position: -80px -48px; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a:hover.bds_renren { background-position: -121px -48px; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a:hover.bds_sqq { background-position: -161px -48px; }
+
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a:hover.bds_count { background-position: -201px -48px; }
+
+html, body { min-width: 1280px; }
+
+body { position: relative; font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 12px; }
+
+h1, h2, h3, h4, h5, p, ul { margin: 0; padding: 0; list-style: none; }
+
+a { text-decoration: none; cursor: pointer; }
+
+.clearfix:before, .clearfix:after, .container:before, .container:after { display: table; content: " "; }
+
+.clearfix:after, .container:after { clear: both; }
+
+.container { margin-right: auto; margin-left: auto; width: 1000px; }
+
+.zt-section { margin: 0; padding: 0; overflow: hidden; width: 100%; min-width: 1000px; }
+
+.QZnav { min-width: 1000px; }
+
+.QZnav .topbar { width: 1000px; }
+
+.QZnav .QZ-nav { display: none; }
+
+.Bot { width: 100%; min-width: 1000px; height: 155px; background: #111; font-size: 14px; }
+
+.Bot .Copyright { margin: 0 auto; padding-top: 50px; width: 1000px; height: auto; line-height: 30px; text-align: center; color: #555; }
+
+.Bot .Copyright a { margin: 0 5px; color: #555; }
+
+.Bot .Copyright a:hover { color: #777; }
+
+.gsPopupMask { position: fixed; z-index: 99998; top: 0; left: 0; width: 100%; height: 100%; background: url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat; opacity: 0; visibility: hidden; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+
+.gsPopupMask.cur { opacity: 1; visibility: visible; }
+
+.gsPopup { z-index: 99999; opacity: 0; visibility: hidden; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+
+.gsPopup .gsPopupCon { width: 100%; height: 100%; background-color: #000; }
+
+.gsPopup .gsPopupCon img { display: block; }
+
+.gsPopup .gsPopupCon video { display: block; width: 100%; height: 100%; }
+
+.gsPopup .gsPopupClose { position: absolute; top: 0; right: -50px; overflow: hidden; width: 38px; height: 38px; background: url(http://image.gamersky.com/webimg13/zhuanti/common/gsPopupClose.png) 5px 5px no-repeat; }
+
+.gsPopup .gsPopupClose:hover { background-position: -33px 5px; }
+
+.gsPopup.cur { opacity: 1; visibility: visible; }
+
+.fixednav { display: none; position: fixed; right: 38px; top: 50%; margin-top: -75px; z-index: 999; }
+
+.fixednav li { display: block; margin-bottom: 25px; width: 10px; height: 10px; }
+
+.fixednav li a { display: block; width: 10px; height: 10px; background-color: #000; border-radius: 100%; }
+
+.fixednav li a.cur, .fixednav li a:hover { background-color: #f33; }
+
+.fixednav.cur { display: block; }
+
+.zt-section1 { position: relative; height: 1000px; background: url(../ztimages/zt-bg1.jpg) center 0 no-repeat; }
+
+.zt-section1 .container { position: relative; padding-top: 800px; }
+
+.zt-section1 .container .bdsharewrap.bdstyle-c { position: absolute; top: 30px; right: 0; }
+
+.zt-section1 .container .logo_gs { display: block; position: absolute; left: 0; top: 26px; width: 139px; height: 47px; background: url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-black.png) 0 0 no-repeat; }
+
+.zt-section1 .container .time { height: 38px; line-height: 38px; font-size: 16px; color: #ffc87d; text-align: center; }
+
+.para p { height: 40px; line-height: 40px; font-size: 16px; color: #ffcc85; text-align: center; }
+
+.list h5 { line-height: 36px; font-size: 18px; color: #ffcc85; }
+
+.list li { line-height: 30px; font-size: 16px; color: #ac8a5a; }
+
+.zt-section2 { height: 863px; background: url(../ztimages/zt-bg2.jpg) center 0 no-repeat; }
+
+.zt-section2 .container { position: relative; padding-top: 140px; }
+
+.zt-section2 .container .btn { position: absolute; left: 321px; top: 413px; display: block; background-image: url(../ztimages/csprite.png); background-position: -194px -574px; width: 357px; height: 112px; }
+
+.zt-section2 .container .btn:hover { background-position: -495px -244px; }
+
+.zt-section2 .container .para { margin-bottom: 468px; }
+
+.zt-section3 { height: 1256px; background: url(../ztimages/zt-bg3.jpg) center 0 no-repeat; }
+
+.zt-section3 .container { position: relative; padding-top: 170px; }
+
+.zt-section3 .container .box { margin: 65px auto 50px; width: 1000px; height: 667px; }
+
+.zt-section3 .container .box ul { width: 1040px; }
+
+.zt-section3 .container .box ul li { position: relative; float: left; margin: 0 11px 12px 0; background-image: url(../ztimages/csprite.png); background-position: 0px -244px; width: 242px; height: 322px; }
+
+.zt-section3 .container .box ul li.row2 { margin-left: 125px; }
+
+.zt-section3 .container .box ul li img { position: absolute; left: 1px; top: 1px; display: block; width: 240px; height: 320px; }
+
+.zt-section3 .container .box ul li .box-bot { position: absolute; left: 1px; bottom: 1px; width: 240px; height: 60px; background: url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat; }
+
+.zt-section3 .container .box ul li .box-bot a { display: block; position: absolute; left: 50%; top: 50%; margin-left: -75px; margin-top: -17px; width: 150px; height: 35px; line-height: 35px; background-color: #ffcc01; font-size: 16px; color: #080502; text-align: center; border-radius: 35px; }
+
+.zt-section3 .container .box ul li .box-bot a:hover { background-color: #ffa10e; }
+
+.zt-section3 .container .box ul li .box-tips { position: absolute; left: 1px; top: 1px; width: 240px; height: 320px; }
+
+.zt-section3 .container .box ul li .box-tips.box-over { background: url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat; }
+
+.zt-section3 .container .box ul li .box-tips h5 { padding-top: 146px; height: 30px; line-height: 30px; font-size: 16px; color: #ffcc01; text-align: center; font-weight: normal; }
+
+.zt-section3 .container .box ul li .box-tips p { line-height: 74px; font-size: 30px; color: #ffd69c; text-align: center; }
+
+.zt-section3 .container .box ul li.over .box-bot, .zt-section3 .container .box ul li.over .box-ready { display: none; }
+
+.zt-section3 .container .box ul li.over .box-over { display: block; }
+
+.zt-section3 .container .box ul li.open .box-over, .zt-section3 .container .box ul li.open .box-ready { display: none; }
+
+.zt-section3 .container .box ul li.open .box-bot { display: block; }
+
+.zt-section3 .container .box ul li.ready img { display: none; }
+
+.zt-section3 .container .box ul li.ready .box-bot, .zt-section3 .container .box ul li.ready .box-over { display: none; }
+
+.zt-section3 .container .box ul li.ready .box-ready { display: block; }
+
+.zt-section3 .container .service { display: block; position: absolute; left: 842px; top: 984px; background-image: url(../ztimages/csprite.png); background-position: -943px 0px; width: 153px; height: 211px; }
+
+.zt-section3 .container .service span { display: block; position: absolute; left: 45px; top: 186px; width: 105px; height: 24px; line-height: 24px; font-size: 15px; color: #ffd69c; text-align: center; }
+
+.zt-section3 .container .service:hover span { color: #fbe9cf; }
+
+.scene { position: absolute; left: 50%; top: 0; margin-left: -960px; width: 1920px; height: 1000px; overflow: hidden; }
+
+.scene .sceneParallax { width: 100%; height: 100%; }
+
+.anim-icons { display: block; position: absolute; left: 50%; }
+
+.anim-icons.anim-icons1 { margin-left: -986px; top: 360px; background-image: url(../ztimages/csprite.png); background-position: -250px -244px; width: 237px; height: 228px; }
+
+.anim-icons.anim-icons2 { margin-left: 608px; top: 580px; background-image: url(../ztimages/csprite.png); background-position: -943px -448px; width: 86px; height: 82px; }
+
+.anim-icons.anim-icons3 { margin-left: 834px; top: 264px; background-image: url(../ztimages/csprite.png); background-position: 0px -574px; width: 186px; height: 256px; }
+
+.anim-icons.anim-icons4 { margin-left: -524px; top: 655px; background-image: url(../ztimages/csprite.png); background-position: -943px -219px; width: 102px; height: 104px; }
+
+.anim-icons.anim-icons5 { margin-left: 500px; top: 965px; background-image: url(../ztimages/csprite.png); background-position: -943px -331px; width: 96px; height: 109px; }
+
+.anim-icons.anim-icons6 { margin-left: -470px; top: 367px; background-image: url(../ztimages/csprite.png); background-position: 0px 0px; width: 935px; height: 236px; }
+
+.anim-icons4 { -webkit-animation: upDown 20s linear infinite reverse; animation: upDown 20s linear infinite reverse; }
+
+.anim-icons5 { -webkit-animation: upDown 20s linear infinite; animation: upDown 20s linear infinite; }
+
+@-webkit-keyframes upDown { 0% { -webkit-transform: translate(0, 0) rotate(0deg); transform: translate(0, 0) rotate(0deg); }
+  50% { -webkit-transform: translate(0, -10px) rotate(180deg); transform: translate(0, -10px) rotate(180deg); }
+  100% { -webkit-transform: translate(0, 0) rotate(360deg); transform: translate(0, 0) rotate(360deg); } }
+
+@keyframes upDown { 0% { -webkit-transform: translate(0, 0) rotate(0deg); transform: translate(0, 0) rotate(0deg); }
+  50% { -webkit-transform: translate(0, -10px) rotate(180deg); transform: translate(0, -10px) rotate(180deg); }
+  100% { -webkit-transform: translate(0, 0) rotate(360deg); transform: translate(0, 0) rotate(360deg); } }

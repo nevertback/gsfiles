@@ -1,0 +1,600 @@
+//*******专题*******
+@import 'csslib';
+@import 'dgycomm';
+//页面
+.dgy_main{
+	.page_bg{
+		display: block;position: absolute;top: 0;left: 0;
+		width: 100%;
+	}
+}
+.dgy_pages{
+	background-color: #000;
+}
+.page_con{
+    .audiotxt{
+        display: none;
+        position: absolute;
+        top: 850px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size:26px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 3px #000;
+        &.cur{
+            display: block;
+        }
+    }
+}
+//首页
+//百度分享样式6
+.bdsharewrap.bdstyle-c{
+    width:227px;height:36px;
+    background: url(http://image.gamersky.com/webimg13/zhuanti/codolts/pic/bd-bg.png) 0 0 no-repeat;
+    overflow: hidden;
+    .bdsharebuttonbox {
+        padding-left: 17px;
+        padding-top: 5px;
+        width:800px; height:28px;
+        &:after,&.before{
+            display:table;content:" ";
+        }
+        &:after{clear:both}
+        a {
+            display: block;float:left; margin:0 11px 0 0; padding:0;
+            width:30px; height:28px;
+            background:url(http://image.gamersky.com/webimg13/zhuanti/codolts/pic/bd-icons.png) 0 0 no-repeat;
+            overflow: hidden;
+            &.bds_sqq	{background-position: -80px 0;}
+            &.bds_weixin{background-position:     0 0;}
+            &.bds_tsina {background-position: -40px 0;}
+            &.bds_qzone {background-position:-120px 0;}
+            &.bds_count {background-position:-160px 0;text-indent: 9999px;}
+            //待添加
+            &.bds_tieba,&.bds_douban,&.bds_renren,&.bds_more
+            {display: none}
+            //待添加 end
+            &:hover{
+                opacity: 1;
+                &.bds_sqq	{background-position: -80px -30px;}
+                &.bds_weixin{background-position:     0 -30px;}
+                &.bds_tsina {background-position: -40px -30px;}
+                &.bds_qzone {background-position:-120px -30px;}
+                &.bds_count {background-position:-160px -30px;}
+            }
+        }
+    }
+}
+.page_begin{
+	background-color: #000;
+    .btn1{
+        display: block;
+        position: absolute;
+        left: 840px;
+        top: 912px;
+        @include sprite($begin-btn);
+        &:hover {
+            @include sprite-position($begin-btn-h);
+        }
+    }
+    .bdsharewrap.bdstyle-c{
+        position: absolute;
+        left: 1555px;
+        top: 52px;
+    }
+    .zanbtn{
+        position: absolute;
+        left: 919px;
+        top: 989px;
+        @include sprite($begin-zan);
+        line-height: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #0e151f;
+        i{
+            font-style: normal;
+            font-size: 16px;
+        }
+        &:hover{
+            color: #e91111;
+            text-shadow: 0 1px 0 #fff;
+        }
+        &.clked{
+            cursor: default;
+            &:hover{
+                color: #0e151f;
+                text-shadow:none;
+            }
+        }
+    }
+}
+.page04{
+    .btn2{
+        display: block;
+        position: absolute;
+        left: 570px;
+        top: 340px;
+        @extend .thePlayBtn;
+    }
+    .para{
+        position: absolute;
+        left: 220px;
+        line-height: 30px;
+        font-size: 16px;
+        color: #fefefe;
+        &.para1{
+            top: 520px;
+            width: 690px;
+        }
+        &.para2{
+            top: 693px;
+            width: 620px;
+        }
+    }
+}
+.page05{
+    .tabs{
+        position: absolute;
+        left: 260px;
+        top: 215px;
+        width: 1400px;
+        height: 647px;
+        .tabsItems{
+            overflow: hidden;
+            .tabsItem{
+                padding-top: 97px;
+                opacity: 0;
+                &.cur{
+                    opacity: 1;
+                    .sfq-boxs{
+                        display: block;
+                    }
+                }
+                .single{
+                    position: relative;
+                }
+                .sfq-boxs{
+                    display: none;
+                    width: 1420px;
+                    .sfq-box{
+                        position: relative;
+                        float: left;
+                        width: 130px;
+                        height: 550px;
+                        background-color: #000;
+                        transition:all 0.25s ease;
+                        overflow: hidden;
+                        .imt-con{
+                            width: 880px;
+                            height: 550px;
+                            opacity: 0;
+                            transform:translate3d(-130px,0,0);
+                            visibility: hidden;
+                            transition:all 0.25s ease;
+                        }
+                        .sfq-box-nav{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 130px;
+                            height: 550px;
+                            opacity: 1;
+                            visibility: visible;
+                            transition:all 0.25s ease;
+                            transform:translate3d(0,0,0);
+                            i{
+                                display: none;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 126px;
+                                height: 546px;
+                                border: 2px solid #e91111;
+                            }
+                            &:hover{
+                                i{
+                                    display: block;
+                                }
+                            }
+                        }
+                        &.cur{
+                            width: 880px;
+                            .imt-con{
+                                opacity: 1;
+                                transform:translate3d(0,0,0);
+                                visibility: visible;
+                            }
+                            .sfq-box-nav{
+                                opacity: 0;
+                                transform:translate3d(-100%,0,0);
+                                visibility: hidden;
+                            }
+                        }
+                    }
+                }
+                .imt-con{
+                    position: relative;
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .txt-mask{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: url(http://image.gamersky.com/webimg13/zhuanti/codolts/pic/s5-txt-mask.png) 0 bottom repeat-x;
+                    }
+                    .imt-txt{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        .tit{
+                            position: relative;
+                            padding-left: 90px;
+                            height: 78px;
+                            line-height: 78px;
+                            font-size: 40px;
+                            color: #2083e6;
+                            font-weight: bold;
+                            .icons{
+                                display: block;
+                                position: absolute;
+                                left: 35px;
+                                top: 22px;
+                                &.icon-arr{@include sprite($icon-arr);}
+                                &.icon-n1{@include sprite($icon-n1);}
+                                &.icon-n2{@include sprite($icon-n2);}
+                                &.icon-n3{@include sprite($icon-n3);}
+                                &.icon-n4{@include sprite($icon-n4);}
+                                &.icon-n5{@include sprite($icon-n5);}
+                            }
+                        }
+                        .para{
+                            padding: 0 35px 30px;
+                            line-height: 28px;
+                            font-size: 16px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .tabsNavs{
+            position: absolute;
+            left: 320px;
+            top: 0;
+            width: 820px;
+            height: 63px;
+            a{
+                display: block;
+                float: left;
+                margin-right: 20px;
+                &.tabsNav1{
+                    @include sprite($p05-n1);
+                    &:hover,&.cur{@include sprite($p05-n1-h);}
+                }
+                &.tabsNav2{
+                    @include sprite($p05-n2);
+                    &:hover,&.cur{@include sprite($p05-n2-h);}
+                }
+                &.tabsNav3{
+                    @include sprite($p05-n3);
+                    &:hover,&.cur{@include sprite($p05-n3-h);}
+                }
+            }
+        }
+    }
+}
+.page07{
+    .infosMore{
+        position: absolute;
+        left: 1662px;
+        top: 331px;
+        @include sprite($look-more);
+        &:hover{
+            @include sprite($look-more-h);
+        }
+    }
+
+    .lotTabs{
+        .tabsItems{
+            .tabsItem{
+                .txtwrap{
+                    h4{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+        .tabsNavs{
+            left: 218px;
+            top: 309px;
+            width: 1550px;
+            a{
+                margin-right: 32px;
+                i{
+                    background-image: url(http://image.gamersky.com/webimg13/zhuanti/codolts/pic/s7-nav.png);
+                    &.tn1{background-position:      0 0;}
+                    &.tn2{background-position: -133px 0;}
+                    &.tn3{background-position: -266px 0;}
+                    &.tn4{background-position: -399px 0;}
+                    &.tn5{background-position: -532px 0;}
+                    &.tn6{background-position: -665px 0;}
+                    &.tn7{background-position: -798px 0;}
+                    &.tn8{background-position: -931px 0;}
+                    &.tn9{background-position:-1064px 0;}
+                    &.tn10{background-position:-1197px 0;}
+                    &.tn11{background-position:-1330px 0;}
+                }
+                &.cur{
+                    i.tn1{background-position:      0 -110px;}
+                    i.tn2{background-position: -133px -110px;}
+                    i.tn3{background-position: -266px -110px;}
+                    i.tn4{background-position: -399px -110px;}
+                    i.tn5{background-position: -532px -110px;}
+                    i.tn6{background-position: -665px -110px;}
+                    i.tn7{background-position: -798px -110px;}
+                    i.tn8{background-position: -931px -110px;}
+                    i.tn9{background-position:-1064px -110px;}
+                    i.tn10{background-position:-1197px -110px;}
+                    i.tn11{background-position:-1330px -110px;}
+                }
+            }
+        }
+    }
+}
+.page_end{
+    .zanbtn{
+        display: block;
+        margin: 20px auto 0;
+        cursor: pointer;
+        width: 120px;
+        height: 96px;
+        .ico_zan{
+            display: block;
+            margin: 0 auto;
+            @include sprite($end-zan);
+        }
+        span{
+            display: block;
+            height: 32px;
+            line-height: 32px;
+            font-size: 16px;
+            color: #fefefe;
+            text-align: center;
+            opacity: 0.5;
+            i{
+                font-style: normal;
+            }
+        }
+        &:hover{
+            .ico_zan{@include sprite-position($end-zan-h);}
+        }
+        &.clked{
+            cursor: default;
+            &:hover{
+                .ico_zan{@include sprite-position($end-zan);}
+            }
+        }
+    }
+    .infos{
+        position: absolute;
+        left: 218px;
+        top: 422px;
+        width: 1484px;
+        height: 380px;
+        p{
+            margin: 0 auto;
+            width: 1030px;
+            line-height: 28px;
+            text-align: center;
+            font-size: 18px;
+            color: #ccc;
+        }
+        .btngroup{
+            margin-top: 23px;
+            padding-left: 230px;
+            .btn{
+                display: block;
+                float: left;
+                margin-right: 15px;
+                &.btn_gf{
+                    @include sprite($end-btn1);
+                    &:hover{
+                        @include sprite-position($end-btn1-h);
+                    }
+                }
+                &.btn_zq{
+                    @include sprite($end-btn2);
+                    &:hover{
+                        @include sprite-position($end-btn2-h);
+                    }
+                }
+                &.btn_dn{
+                    @include sprite($end-btn3);
+                    &:hover{
+                        @include sprite-position($end-btn3-h);
+                    }
+                }
+                &.btn_comm{
+                    @include sprite($end-btn4);
+                    &:hover{
+                        @include sprite-position($end-btn4-h);
+                    }
+                }
+            }
+        }
+        .bdsharewrap.bdstyle-c{
+            margin: 25px auto 0;
+        }
+    }
+}
+.dgy_comm{
+	position: absolute;left: 0;top: 0;z-index: 900;
+	width: 100%;height: 100%;
+	background-color: #000;
+	transition:all 0.25s ease;
+	opacity: 0;visibility: hidden;
+	transform:translate3d(100px,0,0);
+	&.cur{
+		opacity: 1;visibility: visible;
+		transform:translate3d(0,0,0);
+	}
+}
+.page_comm{
+    background-color: #000;
+	.comm_bg{
+		position: absolute;left: 0;top: 0;
+		width: 100%;
+	}
+	.comm{
+		position: absolute;left: 0;top: 0;
+		width: 100%;height: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+		.cont{
+			position: relative;
+            margin: 0 auto;
+            padding: 138px 0 88px;
+			width: 1100px;
+            .tit{
+                margin:0 auto 80px;
+                @include sprite($txt-comm);
+            }
+		}
+	}
+}
+.page_p360{
+    background-color: #000;
+    .btn_load{
+        display: none;
+    }
+    .fake_load{
+        position: absolute;
+        left: 80px;
+        top: 979px;
+        width: 1760px;
+        height: 14px;
+        background-color: rgba(95,95,95,0.5);
+        opacity: 1;
+        visibility: visible;
+        transition:all 0.25s ease 2s;
+        i{
+            display: block;
+            width: 0;
+            height: 14px;
+            background-color: #0eacd3;
+            transition:all 2s ease;
+        }
+        &.cur{
+            opacity: 0;
+            visibility: hidden;
+            i{
+                width: 100%;
+            }
+        }
+    }
+    .btn_go{
+        display: none;
+        font-size: 26px;
+        &.cur{
+            display: block;
+        }
+    }
+}
+.p360_iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    iframe{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: none;
+    }
+    .p360_iframe_close{
+        position: absolute;
+        right: 2.8125%;
+        bottom: 40px;
+        @include sprite($out-360);
+        &:hover{
+            @include sprite($out-360-h);
+        }
+    }
+}
+.page_vdend{
+    .bg-vd{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        transform:translate(0,-50%);
+    }
+    .vd-notice{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 422px;
+        padding: 25px 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.3);
+        .txt{
+            height: 58px;
+            line-height: 58px;
+            font-size: 36px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 0 0 #000,-2px 0 0 #000,0 2px 0 #000,0 -2px 0 #000;
+            b{
+                color: #1499ff;
+            }
+        }
+        .ml-icon{
+            display: block;
+            margin: 10px auto 0;
+            @include sprite($mouse-btn);
+        }
+        &.vd-notice-mr{
+            .btns{
+                position: relative;
+                margin: 20px auto 0;
+                left: auto;
+                top: auto;
+                bottom: auto;
+                right: auto;
+            }
+        }
+        &.vd-notice-end{
+            .btns{
+                position: relative;
+                float: left;
+                left: auto;
+                top: auto;
+                bottom: auto;
+                right: auto;
+            }
+            .btn-again{
+                margin-left: 760px;
+                margin-right: 40px;
+            }
+        }
+
+        &.cur{
+            display: block;
+        }
+    }
+}
+@import 'resp';
+@import 'animatecss';
