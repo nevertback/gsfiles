@@ -1494,16 +1494,17 @@
             font-size: 0.22rem;
             &.club-comment-one-more{
                 width: 100%;
-                margin-left: 1%;
                 @include flexbox;
                 @include ConCen;
+                margin-left: 1%;
                 color: #666;
                 &:before{
                     display: block;
-                    margin-right: 0.05rem;
-                    content: '+';
-                    color: #2196f3;
-                    font-size: 0.35rem;
+                    content: '';
+                    width: 0.35rem;
+                    height: 0.35rem;
+                    background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><path d="M159 105h-54v54h-8v-54H42v-8h55V42h8v55h54v8z" fill="#2196f3" fill-rule="evenodd"/></svg>') 0 0 no-repeat;
+                    background-size: 100% auto;
                 }
                 &.club-comment-one-more-all{
                     color: #c3c3c3;
