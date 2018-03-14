@@ -1215,8 +1215,9 @@ a.gs-goto-app{display:block;margin:.3rem auto;width:5.4rem;height:.8rem;line-hei
 #Ad-b{position:fixed;bottom:0;left:0;z-index:98;width:100%;height:auto;border-bottom:1px solid #fff;-webkit-box-shadow:0 0 8px rgba(0,0,0,.5);box-shadow:0 0 8px rgba(0,0,0,.5)}
 #Ad-b a{display:block;line-height:0}
 #Ad-b .Close{position:absolute;top:0;right:0}
-.Pd3{clear:both;padding:16px 0 0;height:auto}
-.Pd3 a{display:block;width:100%;height:40px;line-height:40px;letter-spacing:1px;text-align:center;color:#fff;background:#3d92e8;border-radius:4px}
+.Pd3{padding:.3rem 0 0}
+.Pd3 a{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-moz-box-pack:center;-moz-box-align:center;-webkit-box-align:center;-webkit-justify-content:center;-moz-justify-content:center;-ms-justify-content:center;-o-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;-o-align-items:center;-ms-flex-align:center;align-items:center;width:100%;height:.8rem;line-height:.8rem;color:#fff;background:#3d92e8;border-radius:.1rem;font-size:.28rem}
+.Pd3 a:before{display:block;margin-right:.16rem;content:'';width:.3rem;height:.3rem;background:url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><path fill-rule="evenodd" fill="#FFF" d="M26 30H4a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h3v2H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3V2h3a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4zm-2.515-16L15 22.485 6.515 14l1.414-1.414L14 18.657V0h2v18.657l6.071-6.071L23.485 14z"/></svg>') 0 0 no-repeat;-webkit-background-size:100% auto;background-size:100% auto}
 .adswrap{display:block;padding:15px;margin:8px 0;width:auto;height:auto;background-color:#fff}
 .adswrap a.download{display:block;width:auto;height:40px;line-height:40px;text-align:center;color:#fff;font-size:18px;background:#f5473a;border-radius:4px}
 .ad1_new{margin-top:10px;padding:10px 0 0;display:block;width:auto;height:auto;border-top:1px solid #eee}

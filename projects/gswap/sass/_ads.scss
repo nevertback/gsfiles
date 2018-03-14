@@ -118,14 +118,24 @@
 
 /* 文章内下载链接 */
 .Pd3 {
-	clear:both; padding:16px 0px 0; 
-	height:auto;
+	padding:0.3rem 0 0;
 	a {
-		display:block; 
-		width:100%; height:40px; line-height:40px; 
-		letter-spacing:1px; text-align:center; color:#fff; 
-		background:#3d92e8; 
-		border-radius:4px;
+		@include flexbox;
+		@include ConCen;
+		width:100%; height:0.8rem; line-height:0.8rem;
+		color:#fff;
+		background:#3d92e8;
+		border-radius:0.1rem;
+		font-size: 0.28rem;
+		&:before{
+			display: block;
+			margin-right: 0.16rem;
+			content: '';
+			width: 0.3rem;
+			height: 0.3rem;
+			background:url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><path fill-rule="evenodd" fill="#FFF" d="M26 30H4a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h3v2H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3V2h3a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4zm-2.515-16L15 22.485 6.515 14l1.414-1.414L14 18.657V0h2v18.657l6.071-6.071L23.485 14z"/></svg>') 0 0 no-repeat;
+			background-size: 100% auto;
+		}
 	}
 }
 /* 文章下方块广告 */
