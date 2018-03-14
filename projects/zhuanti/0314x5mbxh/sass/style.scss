@@ -1,7 +1,7 @@
 //专题
 @import 'comm';
 .zt-section1{
-	height: 400px;
+	height: 1150px;
 	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
 	.container{
 		position: relative;
@@ -14,84 +14,417 @@
 			display: block;
 			position: absolute;
 			left: 0;
-			top: 24px;
-			width: 139px;
-			height: 47px;
-			background: url(http://image.gamersky.com/webimg13/zhuanti/common/logos/logo139x46-white2.png) 0 0 no-repeat;
+			top: 26px;
+			@include sprite($logo-gs);
 		}
 		.logo_gf{
 			display: block;
 			position: absolute;
-			left: 160px;
-			top: 24px;
+			left: 614px;
+			top: 6px;
 			@include sprite($logo-gf);
 		}
 		.btn{
 			display: block;
 			position: absolute;
-			top: 100px;
 			&.btn1{
-				left: 10px;
+				left: 31px;
+				top: 819px;
 				@include sprite($s1-btn1);
 				&:hover{
 					@include sprite($s1-btn1-h);
 				}
 			}
 			&.btn2{
-				left: 200px;
-				@include sprite($s1-btn1);
+				left: 248px;
+				top: 811px;
+				@include sprite($s1-btn2);
 				&:hover{
-					@include sprite($s1-btn1-h);
+					@include sprite($s1-btn2-h);
+				}
+			}
+			&.btn3{
+				left: 496px;
+				top: 811px;
+				@include sprite($s1-btn3);
+				&:hover{
+					@include sprite($s1-btn3-h);
+				}
+			}
+			&.btn4{
+				left: 743px;
+				top: 819px;
+				@include sprite($s1-btn4);
+				&:hover{
+					@include sprite($s1-btn4-h);
+				}
+			}
+		}
+		.play{
+			display: block;
+			position: absolute;
+			left: 460px;
+			top: 510px;
+			@include sprite($play);
+			i{
+				display: block;
+				position: absolute;
+			}
+			.r1{
+				left: 12px;
+				top: 12px;
+				@include sprite($play-r1);
+				animation: rotatea 5s linear infinite;
+			}
+			.r2{
+				left: 5px;
+				top: 5px;
+				@include sprite($play-r2);
+				animation: rotatea 5s linear infinite reverse;
+			}
+		}
+		.lt{
+			position: absolute;
+			display: block;
+			left: 403px;
+			top: 971px;
+			@include sprite($s1-lt);
+			animation: ltAnim 3s ease infinite;
+			i{
+				display: block;
+				position: absolute;
+				left: 9px;
+				top: 0;
+				@include sprite($s1-lt-i);
+			}
+			&.cur{
+				i{
+					animation: ltAnimOpen 0.25s ease;
+					transform-origin: 0 0;
 				}
 			}
 		}
 	}
 }
-.zt-section2{
-	height: 400px;
-	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+@keyframes rotatea {
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
 }
-.zt-section3{
-	height: 400px;
-	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+@keyframes ltAnim {
+	0%{
+		transform: scale(1);
+	}
+	30%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
 }
-.zt-section4{
-	height: 400px;
-	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
-}
-.zt-section5{
-	height: 400px;
-	background:url(#{$mpath}zt-bg5.jpg) center 0 no-repeat;
-}
-.zt-sectionComm{
-	padding-bottom: 30px;
-	height:auto;
-	.container{
-		position: relative;
-		padding-top: 86px;
-		width: 1100px;
-		.line{
-			display: block;
-			margin-bottom: 10px;
-			position: relative;
-			width: 100%;height: 1px;
-			background-color: #cecece;
-			span{
-				display: block;
-				position: absolute;
-				left: 0;
-				top: -2px;
-				width: 65px;
-				height: 5px;
-				background-color: #e13800;
-			}
-		}
-		h4{
-			margin: 0 0 20px;
-			height: 48px;line-height: 48px;
-			font-size: 30px;color: #e23500;font-weight: bold;
-		}
+@keyframes ltAnimOpen {
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1,0.1);
 	}
 }
 
 
+.zt-section2{
+	height: 870px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 171px;
+		p{
+			line-height: 30px;
+			color: #505050;
+			font-size: 16px;
+			text-align: center;
+			span{
+				color: #47a2ff;
+			}
+		}
+		.time{
+			margin-bottom: 90px;
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			&.btn1{
+				left: 277px;
+				top: 375px;
+				z-index: 1;
+				@include sprite($s2-btn1);
+				img{
+					display: block;
+					width: 150px;
+					height: 150px;
+				}
+				span{
+					display: block;
+					position: absolute;
+					top:0;
+					left: 50%;
+					margin-left: -70px;
+					padding-top: 70px;
+					width: 150px;
+					height: 150px;
+					opacity: 0;
+					visibility: hidden;
+					transition:all 0.25s ease;
+				}
+				&:hover{
+					span{
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+			&.btn2{
+				left: 507px;
+				top: 375px;
+				@include sprite($s2-btn2);
+			}
+			&.btn3{
+				left: 344px;
+				top: 462px;
+				@include sprite($s2-btn3);
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 920px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 150px;
+		.paras{
+			margin-bottom: 30px;
+			p{
+				line-height: 30px;
+				font-size: 16px;
+				color: #505050;
+				text-indent: 32px;
+			}
+		}
+		.ztSldWrap{
+			position: relative;
+			width: 1000px;
+			height: 540px;
+			.arrBtn{
+				display: block;
+				position: absolute;
+				top: 260px;
+				&.arrBtnL{
+					left: 20px;
+					@include sprite($arr-l);
+					&:hover{@include sprite-position($arr-l-h)}
+				}
+				&.arrBtnR{
+					right: 20px;
+					@include sprite($arr-r);
+					&:hover{@include sprite-position($arr-r-h)}
+				}
+			}
+			.ztSld{
+				position: relative;
+				margin: 0 auto;
+				width: 808px;
+				height: 540px;
+				.ztSldCon{
+					li{
+						position: relative;
+						padding-top: 10px;
+						width: 808px;
+						height: 530px;
+						.pic{
+							display: block;
+							width: 808px;
+							height: 458px;
+							background: url(http://image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat;
+						}
+						.tit{
+							margin: 0 auto 15px;
+							width: 100%;
+							height: 35px;
+							background-position: center 0;
+							background-repeat: no-repeat;
+							&.tit1{background-image: url(../ztimages/s201t.png);}
+							&.tit2{background-image: url(../ztimages/s202t.png);}
+							&.tit3{background-image: url(../ztimages/s203t.png);}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section4{
+	height: 1118px;
+	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 120px;
+		.box{
+			position: relative;
+			width: 1000px;
+			height: 790px;
+			$liOffset:70px;
+			background: url(../ztimages/box-line.png) 127px 102px no-repeat;
+			.costs-hd {
+				padding-top: 2px;
+				padding-left: 54px;
+				height: 30px;
+				width: 1000px;
+				li {
+					position: relative;
+					float: left;
+					margin-right: 2px;
+					width: 147px;
+					height: 30px;
+					a{
+						display: block;
+						width: 147px;
+						height: 30px;
+						line-height: 30px;
+						text-align: center;
+						font-size: 18px;
+						color: #7a6dff;
+						border-bottom: 3px solid transparent;
+					}
+				}
+				.on a {
+					border-bottom-color: #e9aa00;
+				}
+			}
+			.costs-bd {
+				width: 1200px;
+				margin: 0 auto;
+				position: relative;
+				.tab-con {
+					display: none;
+				}
+				.dis {
+					display: block;
+				}
+			}
+			.humans {
+				width: 300px;
+				height: 744px;
+				position: relative;
+				margin-top: 10px;
+				li {
+					position: absolute;
+					cursor: pointer;
+					width: 108px;
+					height: 108px;
+					text-indent: -200%;
+					overflow: hidden;
+					span {
+						position: absolute;
+						left: 0;
+						width: 100%;
+						top: 0;
+						height: 100%;
+					}
+				}
+				.n1 {
+					left: 170px - $liOffset;
+					top: 40px;
+				}
+				.n2 {
+					left: 110px - $liOffset;
+					top: 155px;
+				}
+				.n3 {
+					left: 75px - $liOffset;
+					top: 272px;
+				}
+				.n4 {
+					left: 70px - $liOffset;
+					top: 400px;
+				}
+				.n5 {
+					left: 108px - $liOffset;
+					top: 520px;
+				}
+				.n6 {
+					left: 165px - $liOffset;
+					top: 635px;
+				}
+				.n7 {
+					left: 255px - $liOffset;
+					top: 705px;
+				}
+				.n8 {
+					left: 385px - $liOffset;
+					top: 725px;
+				}
+				.n9 {
+					left: 515px - $liOffset;
+					top: 727px;
+				}
+				.n10 {
+					left: 645px - $liOffset;
+					top: 727px;
+				}
+				.n11 {
+					left: 774px - $liOffset;
+					top: 730px;
+				}
+				.n12 {
+					left: 906px - $liOffset;
+					top: 731px;
+				}
+				.n13 {
+					left: 1041px - $liOffset;
+					top: 731px;
+				}
+			}
+			.human {
+				position: absolute;
+				left: 276px - $liOffset;
+				top: 40px;
+				display: none;
+			}
+			.line { position: absolute; left: -87px; top: 94px;}
+			.human-list {
+				.dis {
+					display: block;
+				}
+				.pic {
+					width: 694px;
+					height: 636px;
+					margin-left: 90px;
+					position: relative;
+					z-index: 2;
+				}
+				.gif {
+					width: 180px;
+					height: 236px;
+					position: absolute;
+					left: 469px;
+					top: 260px;
+					z-index: 3;
+				}
+			}
+		}
+		.rules{
+			h5{
+				line-height: 26px;
+				color: #7a6dff;
+				font-size: 16px;
+			}
+			ul{
+				li{
+					line-height: 24px;
+					font-size: 14px;
+					color: #505050;
+				}
+			}
+		}
+	}
+}

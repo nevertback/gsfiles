@@ -1,18 +1,12 @@
-'use strict';
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function ($) {
-    $.fn.gsPopup = function (options) {
+(function($){
+    $.fn.gsPopup = function(options){
         var defaults = {
-            //弹出后回调函数
-            afterOpen: ''
-        };
-        var optionsEd = $.extend(defaults, options);
-        var btn = $(this),
-            outTimer,
-            inTimer;
-        function addSource(sid, sty) {
+        	//弹出后回调函数
+        	afterOpen:''
+		};
+        var optionsEd = $.extend(defaults,options);
+        var btn = $(this),outTimer,inTimer;
+        function addSource(sid,sty) {
             var sourceDom;
             switch (sty) {
                 case 'video_tgs':
@@ -24,11 +18,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                     return sourceDom;
                     break;
                 case 'video_yk':
-                    sourceDom = '<embed height="100%" flashvars="isAutoPlay=true" allowscriptaccess="sameDomain" width="100%" align="middle" quality="high" invokeurls="false" src="http://player.youku.com/player.php/sid/' + sid + '/v.swf" type="application/x-shockwave-flash" wmode="transparent">';
+                    sourceDom = '<embed height="100%" flashvars="isAutoPlay=true" allowscriptaccess="sameDomain" width="100%" align="middle" quality="high" invokeurls="false" src="http://player.youku.com/player.php/sid/'+sid+'/v.swf" type="application/x-shockwave-flash" wmode="transparent">';
                     return sourceDom;
                     break;
                 case 'video_bl':
-                    sourceDom = '<iframe height="100%" width="100%" id="vedioSrc" frameborder="0" allowfullscreen src="' + sid + '"></iframe>';
+                    sourceDom = '<iframe height="100%" width="100%" id="vedioSrc" frameborder="0" allowfullscreen src="'+sid+'"></iframe>';
                     return sourceDom;
                     break;
                 case 'video_other':
@@ -36,7 +30,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                     return sourceDom;
                     break;
                 case 'pics':
-                    sourceDom = '<img src="' + sid + '" alt="popimgs" width="100%" height="100%">';
+                    sourceDom = '<img src="'+sid+'" alt="popimgs" width="100%" height="100%">';
                     return sourceDom;
                     break;
                 case 'custom':
@@ -45,210 +39,260 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                     break;
             }
         }
-        function addPopup(opts) {
+        function addPopup(opts,specCls) {
             var popupDom = '';
             popupDom += '<div id="gsPopupMask" class="gsPopupMask"></div>';
-            popupDom += '<div id="gsPopup" class="gsPopup" style="';
+            popupDom += '<div id="gsPopup" class="gsPopup '+specCls+'" style="';
             popupDom += opts.style;
             popupDom += '"><div class="gsPopupCon">';
-            popupDom += addSource(opts.sid, opts.sty);
+            popupDom += addSource(opts.sid,opts.sty);
             popupDom += '</div><a  class="gsPopupClose" id="gsPopupClose"></a></div>';
             $('body').append(popupDom);
             inTimer = setTimeout(function () {
                 $('#gsPopupMask').addClass('cur');
                 $('#gsPopup').addClass('cur');
-            }, 10);
-            if (opts.sty === 'video_tgs2') {
-                $.getScript("http://vm.gtimg.cn/tencentvideo/txp/js/txplayer.js", function () {
+            },10);
+            if(opts.sty === 'video_tgs2'){
+                $.getScript("http://vm.gtimg.cn/tencentvideo/txp/js/txplayer.js",function(){
                     var player = new Txplayer({
                         containerId: 'tgsVideo',
                         vid: opts.sid,
                         width: '100%',
-                        height: opts.height + 35,
-                        autoplay: true,
-                        showBullet: false,
+                        height: opts.height,
+                        autoplay:true,
+                        showBullet:false,
                         showLogo: false,
-                        showRecommendOnEnd: false
+                        showRecommendOnEnd:false
                     });
-                    $('#tgsVideo').closest('.gsPopupCon').css('overflow', 'hidden');
+                    $('#tgsVideo').closest('.gsPopupCon').css('overflow','hidden');
                 });
             }
         }
         function removePopup() {
-            clearTimeout(inTimer);
+        	clearTimeout(inTimer);
             $('#gsPopupMask').removeClass('cur');
             $('#gsPopup').removeClass('cur');
             outTimer = setTimeout(function () {
                 $('#gsPopupMask').remove();
                 $('#gsPopup').hide().remove();
-            }, 150);
+            },150);
         }
         function closePopup() {
-            $('#gsPopupClose').on('click', removePopup);
-            $('#gsPopupMask').on('click', removePopup);
+            $('#gsPopupClose').on('click',removePopup);
+            $('#gsPopupMask').on('click',removePopup);
         }
-        btn.on('click', function () {
+        btn.on('click',function () {
             clearTimeout(outTimer);
-            var $this = $(this),
-                dw = $this.data('w'),
-                dh = $this.data('h'),
-                wh = $(window).height(),
-                gerCss,
+            var $this = $(this),dw = $this.data('w'),dh = $this.data('h'),diysty=$this.data('diy'),
+                wh = $(window).height(),gerCss,
                 popupOptions = {
-                pos: 'fixed',
-                width: dw,
-                height: dh,
-                sid: $this.data('sid'),
-                sty: $this.data('sty')
-            };
-            gerCss = 'width:' + popupOptions.width + 'px;height:' + popupOptions.height + 'px;';
-            popupOptions.style = 'position:' + popupOptions.pos + ';top:50%;left:50%;margin-left:-' + popupOptions.width / 2 + 'px;margin-top:-' + popupOptions.height / 2 + 'px;' + gerCss;
-            if (dh > wh) {
+                    pos:'fixed',
+                    width:dw,
+                    height:dh,
+                    sid:$this.data('sid'),
+                    sty:$this.data('sty'),
+                    diy:diysty
+                },specCls = $this.data('spec') || '';
+            gerCss = 'width:'+popupOptions.width+'px;height:'+popupOptions.height+'px;';
+            popupOptions.style = 'position:'+popupOptions.pos+';top:50%;left:50%;margin-left:-'+popupOptions.width/2+'px;margin-top:-'+popupOptions.height/2+'px;'+gerCss;
+            if(dh>wh){
                 popupOptions.pos = 'absolute';
-                popupOptions.style = 'position:' + popupOptions.pos + ';top:' + $this.offset().top + 'px;left:50%;margin-left:-' + popupOptions.width / 2 + 'px;' + gerCss;
+                popupOptions.style = 'position:'+popupOptions.pos+';top:'+$this.offset().top+'px;left:50%;margin-left:-'+popupOptions.width/2+'px;'+gerCss;
             }
-            addPopup(popupOptions);
+            addPopup(popupOptions,specCls);
             closePopup();
-            if (typeof optionsEd.afterOpen === 'function') {
+            if(typeof optionsEd.afterOpen === 'function'){
                 optionsEd.afterOpen();
-            }
+			}
         });
-    };
+    }
 })(jQuery);
 $('.popupBtn').gsPopup();
 (function ($) {
-    var ymjsModel = {
-        ztTabs: function ztTabs(tabId) {
+	var ymjsModel = {
+        ztTabs:function(tabId){
             var $tabId = $(tabId),
                 $tabNav = $tabId.find('.ztTabNav').find('li'),
                 $tabCon = $tabId.find('.ztTabCon');
             $(tabId).slide({
-                titCell: $tabNav,
-                titOnClassName: 'cur',
-                mainCell: $tabCon,
-                effect: 'fade',
-                delayTime: 250,
-                switchLoad: 'data-src'
+                titCell:$tabNav,
+                titOnClassName:'cur',
+                mainCell:$tabCon,
+                effect:'fade',
+                delayTime:250,
+                switchLoad:'data-src'
             });
         },
-        //右侧导航按钮
-        fnavA: function fnavA(tarFixnav, toTopDes, toWidth) {
-            !function ($) {
-                function ScrollSpy(element, options) {
-                    var process = $.proxy(this.process, this),
-                        $element = $(element).is('body') ? $(window) : $(element),
-                        href;
-                    this.options = $.extend({}, $.fn.scrollspy.defaults, options);
-                    this.$scrollElement = $element.on('scroll.scroll-spy.data-api', process);
-                    this.selector = (this.options.target || (href = $(element).attr('data-to')) && href.replace(/.*(?=#[^\s]+$)/, '') || '') + ' li>a';
-                    this.$body = $('body');
-                    this.refresh();
-                    this.process();
-                }
-                ScrollSpy.prototype = {
-                    constructor: ScrollSpy,
-                    refresh: function refresh() {
-                        var self = this,
-                            $targets;
-                        this.offsets = $([]);
-                        this.targets = $([]);
-                        $targets = this.$body.find(this.selector).map(function () {
-                            var $el = $(this),
-                                href = $el.data('to'),
-                                $href = /^#\w/.test(href) && $(href);
-                            return $href && $href.length && [[$href.position().top + (!$.isWindow(self.$scrollElement.get(0)) && self.$scrollElement.scrollTop()), href]] || null;
-                        }).sort(function (a, b) {
-                            return a[0] - b[0];
-                        }).each(function () {
-                            self.offsets.push(this[0]);
-                            self.targets.push(this[1]);
-                        });
-                    },
-                    process: function process() {
-                        var scrollTop = this.$scrollElement.scrollTop() + this.options.offset,
-                            scrollHeight = this.$scrollElement[0].scrollHeight || this.$body[0].scrollHeight,
-                            maxScroll = scrollHeight - this.$scrollElement.height(),
-                            offsets = this.offsets,
-                            targets = this.targets,
-                            activeTarget = this.activeTarget,
-                            i,
-                            ww = $(window).width();
-                        if (scrollTop >= maxScroll) {
-                            return activeTarget !== (i = targets.last()[0]) && this.activate(i);
-                        }
-                        for (i = offsets.length; i--;) {
-                            activeTarget !== targets[i] && scrollTop >= offsets[i] && (!offsets[i + 1] || scrollTop <= offsets[i + 1]) && this.activate(targets[i]);
-                        }
-                        if (scrollTop >= toTopDes && ww > toWidth) {
-                            $(tarFixnav).addClass('cur');
-                        } else {
-                            $(tarFixnav).removeClass('cur');
-                        }
-                    },
-                    activate: function activate(target) {
-                        var active, selector;
-                        this.activeTarget = target;
-                        $(this.selector).removeClass('cur');
-                        selector = this.selector + target + ',' + this.selector + '[data-to="' + target + '"]';
-                        active = $(selector).addClass('cur');
-                        active.trigger('activate');
-                    }
-                };
-                var old = $.fn.scrollspy;
-                $.fn.scrollspy = function (option) {
-                    return this.each(function () {
-                        var $this = $(this),
-                            data = $this.data('scrollspy'),
-                            options = (typeof option === 'undefined' ? 'undefined' : _typeof(option)) === 'object' && option;
-                        if (!data) $this.data('scrollspy', data = new ScrollSpy(this, options));
-                        if (typeof option === 'string') data[option]();
-                    });
-                };
-                $.fn.scrollspy.Constructor = ScrollSpy;
-                $.fn.scrollspy.defaults = {
-                    offset: 36
-                };
-                $.fn.scrollspy.noConflict = function () {
-                    $.fn.scrollspy = old;
-                    return this;
-                };
-                $(window).on('load', function () {
-                    $('body').each(function () {
-                        var $spy = $(this);
-                        $spy.scrollspy({
-                            target: tarFixnav
-                        });
-                    });
-                });
-            }(window.jQuery);
-            $(tarFixnav).find('a').on('click', function (e) {
-                if (e && e.preventDefault) {
-                    //阻止默认浏览器动作(W3C)
-                    e.preventDefault();
-                } else {
-                    //IE中阻止函数器默认动作的方式
-                    window.event.returnValue = false;
-                    return false;
-                }
-                var todiv = $(this).data('to'),
-                    off = $(this).data('off') || 0;
-                $('html,body').animate({ scrollTop: $(todiv).offset().top - off }, 400);
+        ztSld:function(tar){
+            var $sldwrap = $(tar),
+                $sldPrev = $sldwrap.find('.arrBtnL'),
+                $sldNext = $sldwrap.find('.arrBtnR'),
+                $sld = $sldwrap.find('.ztSld'),
+                $sldCon = $sld.find('.ztSldCon'),
+                $sldNav = $sld.find('.ztSldNav');
+
+            $sld.slide({
+                mainCell:$sldCon,
+                effect:'leftLoop',
+                delayTime:250,
+                prevCell:$sldPrev,
+                nextCell:$sldNext,
+                switchLoad:'data-src',
+                titCell:$sldNav,
+                autoPage:'<li></li>',
+                titOnClassName:'cur'
             });
-            function fixedDisplay() {
-                var ww = $(window).width();
-                if (ww > toWidth) {
-                    if ($('body').scrollTop() > toTopDes) {
-                        $(tarFixnav).addClass('cur');
-                    }
-                } else {
-                    $(tarFixnav).removeClass('cur');
+        },
+        //二维码
+        fixCode: function() {
+            var fxCode = $('.fx-code'),ft = fxCode.offset().top;
+            function scrollFunc() {
+                var $win = $(window),st = $win.scrollTop();
+                if($win.width() < 1260){
+                    fxCode.hide();
+                }else{
+                    fxCode.show();
+                }
+                if(st >= (ft-($win.height()/2 - 205))){
+                    fxCode.addClass('cur');
+                }else{
+                    fxCode.removeClass('cur');
                 }
             }
-            $(window).resize(fixedDisplay);
+            $(window).resize(scrollFunc).scroll(scrollFunc);
+        },
+        box:function () {
+            function fromQQ() {
+                function initCostDom(data, id) {
+                    var tabHtml = "";
+                    var contHtml = "";
+                    var totalHtml = "";
+                    var styleHtml = "<style>";
+                    for (var i = 0; i < data.length; i++) {
+                        styleHtml += '#' + id + ' .n' + (i + 1) + ' span{background:url(http:' + data[i].xtpc_a3 + ') no-repeat;}';
+                        styleHtml += '#' + id + ' .n' + (i + 1) + '.on span{background:url(http:' + data[i].xtm_7f + ') no-repeat;}';
+                        tabHtml += '<li class="n' + (i + 1) + '" himg="" img="" title="' + data[i].fsmc_e0 + '"><span></span></li>';
+                        contHtml += '<div class="human"><img class="line" src="ztimages/l' + (i + 1) + '.png?20180313"><img class="pic" src="http:' + data[i].dt_c8 + '" alt="' + data[i].fsmc_e0 + '"><img class="gif" src="http:' + data[i].gifpc_92 + '"></div>';
+                    }
+
+                    styleHtml += "</style>";
+                    totalHtml = '<ul class="humans">' + tabHtml + '</ul><div class="human-list">' + contHtml + '</div>';
+
+                    totalHtml = totalHtml + styleHtml;
+                    $("#" + id).html(totalHtml);
+                }
+                function zlkcallback(data) {
+                    var tempData = data.fsjh_28;
+                    var costData1 = [];
+                    var costData2 = [];
+                    var costData3 = [];
+                    var costData4 = [];
+                    var costData5 = [];
+                    var costData6 = [];
+
+                    for (var i = 0; i < tempData.length; i++) {
+                        var name = tempData[i].fsmc_e0;
+                        var id = tempData[i].fsid_06;
+                        var cid = tempData[i].fsfl_3e;
+                        var bpic = tempData[i].dt_c8;
+                        var gif = tempData[i].gifpc_92;
+                        var sex = tempData[i].xb_a6;
+                        var mpic = tempData[i].xtpc_a3;
+                        var mhpic = tempData[i].xtm_7f;
+                        if (cid == 1) {
+                            costData1.push(tempData[i]);
+                        } else if (cid == 2) {
+                            costData2.push(tempData[i]);
+                        } else if (cid == 3) {
+                            costData3.push(tempData[i]);
+                        } else if (cid == 4) {
+                            costData4.push(tempData[i]);
+                        } else if (cid == 5) {
+                            costData5.push(tempData[i]);
+                        } else if (cid == 6) {
+                            costData6.push(tempData[i]);
+                        }
+                    }
+                    initCostDom(costData1, "appar0");
+                    initCostDom(costData2, "appar1");
+                    initCostDom(costData3, "appar2");
+                    initCostDom(costData4, "appar3");
+                    initCostDom(costData5, "appar4");
+                    initCostDom(costData6, "appar5");
+
+                    var tabs09 = [];
+
+                    var tabs08 = new tabs("costs","tab-con",{
+                        timeout: 80,
+                        //延迟切换时间。默认参数为60;
+                        currCls: "on",
+                        //设置当前标签（li）class 名。默认参数为"on";
+                        disCls: "dis",
+                        //控制显示class名。默认参数为"dis";
+                        event: "mouseover",
+                        //事件类型。默认为"mouseover";
+                        onFinish: function() {
+                            setTimeout(function() {
+                                var index = tabs08.index;
+                                if (!tabs09[index]) {
+                                    tabs09[index] = new tabs("appar" + index,"human",{
+                                        timeout: 80,
+                                        //延迟切换时间。默认参数为60;
+                                        currCls: "on",
+                                        //设置当前标签（li）class 名。默认参数为"on";
+                                        disCls: "dis",
+                                        //控制显示class名。默认参数为"dis";
+                                        event: "mouseover"//事件类型。默认为"mouseover";
+                                    });
+                                }
+                            }, 80);
+                        }//回调函数。需要定义callback函数;
+                    });
+
+                    tabs09[0] = new tabs("appar" + 0,"human",{
+                        timeout: 80,
+                        //延迟切换时间。默认参数为60;
+                        currCls: "on",
+                        //设置当前标签（li）class 名。默认参数为"on";
+                        disCls: "dis",
+                        //控制显示class名。默认参数为"dis";
+                        event: "mouseover"//事件类型。默认为"mouseover";
+                    });
+                }
+
+                $.ajax({
+                    url: "http://j.gamersky.com/zhuanti/x5mbxh/fsxx.js",
+                    type: "GET",
+                    dataType: "Script",
+                    //指定服务器返回的数据类型
+                    success: function(data) {
+                        var bData = fsxxData;
+                        zlkcallback(bData);
+                    }
+                });
+            }
+            fromQQ();
+
+        },
+        lt:function () {
+            var $ltBtn = $('.ltAnimBtn');
+            $ltBtn.on('click',function () {
+                var $this = $(this);
+                $this.addClass('cur');
+                setTimeout(function () {
+                    $this.removeClass('cur');
+                    $('#ltTrueBtn').trigger('click');
+                },250);
+            })
         }
-    };
-    $('.ztTab').each(function () {
-        ymjsModel.ztTabs('#' + $(this).attr('id'));
+	};
+    $('.ztTab').each(function(){
+        ymjsModel.ztTabs('#'+$(this).attr('id'));
     });
-    ymjsModel.fnavA('#fixednav', 100, 1350);
+    $('.ztSldWrap').each(function(){
+        ymjsModel.ztSld('#'+$(this).attr('id'));
+    });
+    ymjsModel.fixCode();
+	ymjsModel.box();
+    ymjsModel.lt();
 })(jQuery);
