@@ -11,12 +11,14 @@
 </head>
 <body>
 @@include('comm/nav.html')
+<hidden class="clubId" data-clubId="2" data-selectClubId="2"></hidden>
+<hidden class="topic" data-topic="" data-topicId="0" data-selectTopic=""></hidden>
 <div class="qzMain" id="qzMain">
     @@include('comm/top-qz.html')
     @@include('comm/more-topic.html')
     <section class="qz-box qzIndex">
         @@include('comm/tab-nav.html')
-        <div class="qz-card-list" id="qzCardList" data-from="http://j.gamersky.com/user/club/wap/data/fake.data.js"></div>
+        <div class="qz-card-list" id="qzCardList" data-pageIndex="0" data-pageSize="10" data-loading="false" data-infiload="close"></div>
     </section>
 </div>
 @@include('comm/footer.html')

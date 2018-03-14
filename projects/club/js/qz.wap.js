@@ -48,6 +48,144 @@
                 }
             });
         },
+        //获取圈子列表数据接口
+        getWapClubContext:function (paramsData,callback,beforeSendFnc) {
+            var apiUrl = "http://192.168.0.100:9009/apis/club/api/getwapclubcontent";
+            $.ajax({
+                type: "get",
+                dataType: "json",
+                url: apiUrl,
+                data: paramsData,
+                beforeSend: function () {
+                    if(typeof beforeSendFnc === 'function'){
+                        beforeSendFnc();
+                    }
+                },
+                success: function (backData) {
+                    if(typeof callback === 'function'){
+                        callback(backData);
+                    }
+                },
+                error:function (err) {
+                    console.log(err)
+                }
+            });
+        },
+        //获取圈子评论数接口
+        getCommentCount:function (paramsData,callback,beforeSendFnc) {
+            var apiUrl = "http://192.168.0.100:9009/apis/club/api/getcommentcount";
+            $.ajax({
+                type: "get",
+                dataType: "jsonp",
+                url: apiUrl,
+                data: paramsData,
+                beforeSend: function () {
+                    if(typeof beforeSendFnc === 'function'){
+                        beforeSendFnc();
+                    }
+                },
+                success: function (backData) {
+                    if(typeof callback === 'function'){
+                        callback(backData);
+                    }
+                },
+                error:function (err) {
+                    console.log(err)
+                }
+            });
+        },
+        //获取圈子评论接口
+        getWapClubComment:function (paramsData,callback,beforeSendFnc) {
+            var apiUrl = "http://192.168.0.100:9009/apis/club/api/getwapclubcomment";
+            $.ajax({
+                type: "get",
+                dataType: "json",
+                url: apiUrl,
+                data: paramsData,
+                beforeSend: function () {
+                    if(typeof beforeSendFnc === 'function'){
+                        beforeSendFnc();
+                    }
+                },
+                success: function (backData) {
+                    if(typeof callback === 'function'){
+                        callback(backData);
+                    }
+                },
+                error:function (err) {
+                    console.log(err)
+                }
+            });
+        },
+        //获取点赞带头像数据接口
+        getwapclubuserlike:function (paramsData,callback,beforeSendFnc) {
+            var apiUrl = "http://192.168.0.100:9009/apis/club/api/getwapclubuserlike";
+            $.ajax({
+                type: "get",
+                dataType: "json",
+                url: apiUrl,
+                data: paramsData,
+                beforeSend: function () {
+                    if(typeof beforeSendFnc === 'function'){
+                        beforeSendFnc();
+                    }
+                },
+                success: function (backData) {
+                    if(typeof callback === 'function'){
+                        callback(backData);
+                    }
+                },
+                error:function (err) {
+                    console.log(err)
+                }
+            });
+        },
+        //获取点赞数据接口
+        getLike:function (paramsData,callback,beforeSendFnc) {
+            var apiUrl = "http://192.168.0.100:9009/apis/club/api/getlike";
+            $.ajax({
+                type: "get",
+                dataType: "jsonp",
+                url: apiUrl,
+                data: paramsData,
+                beforeSend: function () {
+                    if(typeof beforeSendFnc === 'function'){
+                        beforeSendFnc();
+                    }
+                },
+                success: function (backData) {
+                    if(typeof callback === 'function'){
+                        callback(backData);
+                    }
+                },
+                error:function (err) {
+                    console.log(err)
+                }
+            });
+        },
+        //提交点赞接口
+        addLike:function (paramsData,callback,beforeSendFnc) {
+            var apiUrl = "http://192.168.0.100:9009/apis/club/api/addlike";
+            $.ajax({
+                type: "get",
+                dataType: "jsonp",
+                url: apiUrl,
+                data: paramsData,
+                beforeSend: function () {
+                    if(typeof beforeSendFnc === 'function'){
+                        beforeSendFnc();
+                    }
+                },
+                success: function (backData) {
+                    if(typeof callback === 'function'){
+                        callback(backData);
+                    }
+                },
+                error:function (err) {
+                    console.log(err)
+                }
+            });
+        },
         //静态页演示用接口，线上不需要保留
         //获取单页评论第二页接口（接口做静态页演示专用）
         getWapCardCommentPage2:function (paramsData,callback,beforeSendFnc) {
@@ -119,6 +257,28 @@
             });
         }
     };
+    var clubConfig = {
+        //卡片列表排序方式
+        listNavSetter:{
+            //最新
+            new:{
+                sort:1,
+                type:0
+            },
+            //最热
+            hot:{
+                sort:2,
+                type:0
+            },
+            //精品
+            best:{
+                sort:1,
+                type:1
+            }
+        },
+        // 是否开启开篇列表内回复 val: open | close
+        innerCommentState:'close'
+    };
     //模拟加载更多用测试数据begin
     var isTrim = function (s) {
         if (typeof (s) == 'undefined') {
@@ -175,6 +335,17 @@
                 pw = 640;
             }
             $('html').css({ 'font-size': pw / 6.4 + 'px' });
+        },
+        //弹窗公用方法
+        popCommon:{
+            open:function () {
+                $('html').addClass('hideScroll');
+                $('.ymw-backtotop').css('display','none');
+            },
+            close:function () {
+                $('html').removeClass('hideScroll');
+                $('.ymw-backtotop').css('display','block');
+            }
         },
         //构建卡片
         createCard: function (cdp) {
@@ -273,11 +444,11 @@
             }
             //主体 end
             //底部 begin
+            //todo:2018-03-13 更新：添加分享按钮，修改排列
             cardDom += '<footer>';
-            //点赞数cdp.countlike
-            cardDom += '<a class="btn-like qzBtnLike" data-likecount="" data-clubcontentid="' + cdp.cardid + '" ><i></i><b>0</b></a><span></span>';
-            //评论数 cdp.countcomment,卡片ID cdp.cardid
-            cardDom += '<a class="btn-comment qzBtnComment" data-commcount=""  data-clubcontentid="' + cdp.cardid + '"   data-href="' + cdp.url + '">0</a>';
+            cardDom += '<a class="btn-share qzBtnShare" data-shareid="' + cdp.cardid + '">分享</a>';
+            cardDom += '<span></span><a class="btn-comment qzBtnComment" data-commcount=""  data-clubcontentid="' + cdp.cardid + '"   data-href="' + cdp.url + '">0</a>';
+            cardDom += '<span></span><a class="btn-like qzBtnLike" data-likecount="" data-clubcontentid="' + cdp.cardid + '" ><i></i><b>0</b></a>';
             cardDom += '</footer>';
             //底部 end
             cardDom += '</div>';
@@ -375,6 +546,7 @@
                         showHideOpacity: 0,
                         galleryUID: galleryElement.getAttribute('data-pswp-uid'),
                         history: false,
+                        tapToClose:true,
                         getThumbBoundsFn: function (index) {
                             var thumbnail = items[index].el.getElementsByTagName('img')[0],
                                 pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
@@ -535,7 +707,7 @@
             //绑定发布按钮事件
             $('#qzMain').on('click', '.qzBtnContext', function () {
                 $(this).UserOnline(function (response) {
-                    if (response.status == 'ok') {
+                    if (response.status == 'ok' || jsmodel === 'dev') {
                         var st = $('html').scrollTop();
                         if (st === 0) {
                             st = $('body').scrollTop();
@@ -596,7 +768,7 @@
                     return false;
                 }
                 $this.UserOnline(function (response) {
-                    if (response.status == 'ok') {
+                    if (response.status == 'ok' || jsmodel === 'dev') {
                         var st = $('html').scrollTop(),
                             cid = $this.data('clubcontentid'),
                             //评论数量
@@ -657,54 +829,6 @@
                 var $this = $(this);
                 commentInner($this);
             });
-        },
-
-        //初始化内容 卡片列表
-        initPage: function () {
-            var tar = '#qzCardList', tarInsert = $(tar);
-            if (tarInsert.length > 0) {
-                //获取数据，具体参数和方式后端自定义
-                var contentType = $(".qzNavFx a.cur").attr("data-type");
-                var sort = $(".qz-nav-sort").attr("data-sort");
-                var clubId = $(".clubId").attr("data-clubId");
-                var topic = $(".topic").attr("data-topic");
-                var topicId = $(".topic").attr("data-topicId");
-                var pageIndex = parseInt(tarInsert.attr("data-pageIndex")) + 1;
-                var pageSize = tarInsert.attr("data-pageSize");
-                var dt = 'http://192.168.0.100:9009/apis/club/api/getwapclubcontent';
-                var jsondata = {
-                    contentType: contentType,
-                    sort: sort,
-                    pageIndex: pageIndex,
-                    pageSize: pageSize,
-                    clubId: clubId,
-                    topic: topic,
-                    topicId: topicId
-                };
-                $.ajax({
-                    type: "get",
-                    dataType: "json",
-                    url: dt,
-                    data: { "jsondata": JSON.stringify(jsondata) },
-                    beforeSend: function () {
-                        //插入加载动画
-                        tarInsert.append(qzConfig.loadingDom);
-                    },
-                    success: function (result) {
-                        //判断数据状态
-                        if (result.dataType === 'ok') {
-                            //处理获取的数据
-                            tarInsert.attr('data-pageIndex', pageIndex);
-                            //允许无限加载
-                            tarInsert.attr('data-infiload', 'open');
-                            qzFunc.insertCard(tar, result.cardgroup);
-                        } else {
-                            //数据为空是插入提示
-                            tarInsert.html(qzConfig.loadnullDom);
-                        }
-                    }
-                })
-            }
         },
         //初始化内容 话题上部
         initPageTopic: function () {
@@ -825,75 +949,7 @@
                             tarInsert.append(qzConfig.loadingDom);
                         })
                     }
-                })
-                //赞 无限加载
-                function infiniteLoadCl() {
-                    function loadFunc() {
-                        var selid = $('.qzClCon.cur').attr('id'), tar, tarInsert;
-                        if (selid === 'qzClLike') {
-                            tar = '#qzClLike';
-                            tarInsert = $(tar);
-                            if (tarInsert.attr('data-infiload') === 'open') {
-                                var clubContentId = tarInsert.attr("data-cid");
-                                var pageIndex = parseInt(tarInsert.attr("data-page")) + 1;
-                                var pageSize = 10;
-                                var jsondata = {
-                                    clubContentId: clubContentId,
-                                    pageIndex: pageIndex,
-                                    pageSize: pageSize,
-                                };
-                                $.ajax({
-                                    type: "get",
-                                    dataType: "json",
-                                    url: "http://192.168.0.100:9009/apis/club/api/getwapclubuserlike",
-                                    data: { jsondata: JSON.stringify(jsondata) },
-                                    beforeSend: function () {
-                                        //插入加载动画
-                                        tarInsert.append(qzConfig.loadingDom);
-                                    },
-                                    success: function (responseObject) {
-                                        var result = $.parseJSON(responseObject.body);
-                                        //加载成功后移除加载动画
-                                        tarInsert.find('.qz-loading').remove();
-                                        //判断时候还有当前数据页码是否加载完成
-                                        if (result.likelist.length > 0) {
-                                            //设置新页码
-                                            tarInsert.attr('data-page', result.page);
-                                            //插入更多数据
-                                            qzFunc.appendCardLike(tar, result.likelist);
-                                        } else {
-                                            if (tarInsert.attr('data-infiload') === 'open') {
-                                                //全部加载完成 关闭加载
-                                                tarInsert.attr('data-infiload', 'close');
-                                                //插入 全部加载完成 提示
-                                                tarInsert.append(qzConfig.loadedDom);
-                                            }
-                                        }
-                                        qzConfig.isCanLoading = true;
-                                    }
-                                })
-                            } else {
-                                qzConfig.isCanLoading = true;
-                            }
-                        }
-                    }
-                    function scrollJudge() {
-                        var st = $('html').scrollTop(), dh = $(document).height(), wh = $(window).height();
-                        if (st === 0) {
-                            st = $('body').scrollTop();
-                        }
-                        if (st > dh - wh - 20 && st > wh - dh && qzConfig.isCanLoading === true) {
-                            qzConfig.isCanLoading = false;
-                            loadFunc();
-                        }
-                    }
-                    if ($(tar).length > 0) {
-                        $(window).scroll(function () {
-                            scrollJudge();
-                        });
-                    }
-                }
-                infiniteLoadCl();
+                });
             }
         },
         //无限加载
@@ -1045,55 +1101,6 @@
                 navFunc();
             }
         },
-        //内容单页赞-评论切换
-        tabCl: function () {
-            var $nav = $('.tabNavCl'), $con = $('.qzClCon');
-            $nav.find('a').on('click', function () {
-                var $this = $(this), tar = $this.data('tar');
-                $nav.find('a').removeClass('cur');
-                $con.removeClass('cur');
-                $this.addClass('cur');
-                $('.' + tar).addClass('cur');
-                //数据获取后端自定义
-                if (tar === 'qzClLike') {
-                    var liketar = '#qzClLike', likeurl = "http://192.168.0.100:9009/apis/club/api/getwapclubuserlike", tarInsert = $(liketar);
-                    var clubContentId = tarInsert.attr("data-cid");
-                    var pageIndex = 1;
-                    var pageSize = 10;
-                    var jsondata = {
-                        clubContentId: clubContentId,
-                        pageIndex: pageIndex,
-                        pageSize: pageSize,
-                    };
-                    if ($(liketar).attr('data-page') === undefined) {
-                        $.ajax({
-                            type: "post",
-                            dataType: "json",
-                            data: { jsondata: JSON.stringify(jsondata) },
-                            url: likeurl,
-                            beforeSend: function () {
-                                //插入加载动画
-                                $(liketar).append(qzConfig.loadingDom);
-                            },
-                            success: function (responseObject) {
-                                var result = $.parseJSON(responseObject.body);
-                                $(liketar).find('.qz-loading').remove();
-                                //判断数据状态
-                                if (result.dataType === 'ok') {
-                                    //处理获取的数据
-                                    $(liketar).attr('data-page', result.page);
-                                    $(liketar).attr('data-infiload', 'open');
-                                    qzFunc.appendCardLike(liketar, result.likelist);
-                                } else {
-                                    //数据为空时插入提示
-                                    $(commtar).html(qzConfig.loadnullDom);
-                                }
-                            }
-                        });
-                    }
-                }
-            });
-        },
         //单页跳转
         pageGoto: function () {
             var openId = $('.qz-card-list');
@@ -1125,9 +1132,19 @@
             commDom += '</div></div></li>';
             return commDom;
         },
-        //todo:2018.03.06 更新 构建卡片内评论
+        //todo 2018-03-14 更新 构建单页评论内回复
+        createCommentReply:function (replyData,cid) {
+            var reDom = '';
+            reDom += '<div class="ic-item qzBtnCommentInner" data-clubcontentid="'+cid+'" data-commid="'+replyData.commid+'" data-name="'+replyData.name+'" data-userid="'+replyData.useId+'"><a class="ici-name">'+replyData.name+'</a>';
+            if(replyData.reply !== null){
+                reDom += '<i class="ici-rpy">回复</i><a class="ici-name">'+replyData.reply+'</a>';
+            }
+            reDom += '<a class="ici-name">：&nbsp;</a><span class="ici-context">'+replyData.context+'</span></div>';
+            return reDom;
+        },
+        //todo:2018.03.13 更新 构建卡片内评论
         createCardCommentFull: function (cmdt) {
-            var commDom = '';
+            var commDom = '',that = this;
             commDom += '<li data-commid="' + cmdt.commid + '"';
             if(cmdt.replylike>=5){
                 commDom += ' class="with-hot-tags">';
@@ -1141,27 +1158,25 @@
             if(cmdt.editauth){
                 commDom += '<img src="'+cmdt.editauth+'" alt="编辑">';
             }
+            commDom += '<a class="info-like">' + cmdt.replylike + '</a>';
             commDom += '</h5>';
-            commDom += '<div class="context">';
+            commDom += '<div class="info-others"><span class="info-time">' + cmdt.replytime + '</span><span class="info-device">来自' + cmdt.replydevice + '</span></div>';
+
+            commDom += '<div class="context qzBtnCommentInner" data-clubcontentid="'+cmdt.clubContentId+'" data-commid="'+cmdt.commid+'" data-name="'+cmdt.name+'" data-userid="'+cmdt.useId+'">';
             commDom += cmdt.context;
             commDom += '</div>';
             if(cmdt.reply !== null){
                 commDom += '<div class="info-comment">';
                 $.each(cmdt.reply,function (i,item) {
                     if(i<2){
-                        commDom += '<div class="ic-item"><a class="ici-name">'+item.name+'</a>';
-                        if(item.reply !== null){
-                            commDom += '回复<a class="ici-name">'+item.reply+'</a>';
-                        }
-                        commDom += '：<span class="ici-context">'+item.context+'</span></div>';
+                        commDom += that.createCommentReply(item,cmdt.commid);
                     }
                 });
                 if(cmdt.reply.length>2){
                     commDom += '<a class="info-comment-more">查看全部'+cmdt.replycount+'条回复</a>'
                 }
-                commDom += '<a target="_blank" href="'+cmdt.url+'" class="info-comment-link"></a></div>';
+                commDom += '</div>';
             }
-            commDom += '<div class="info-bottom"><span class="info-time">' + cmdt.replytime + '</span><span class="info-device">' + cmdt.replydevice + '</span><a class="info-like">' + cmdt.replylike + '</a><a class="info-reply qzBtnCommentInner" data-clubcontentid="'+cmdt.clubContentId+'" data-commid="'+cmdt.commid+'" data-name="'+cmdt.name+'" data-userid="'+cmdt.useId+'">回复</a></div>';
             commDom += '</div></li>';
             return commDom;
         },
@@ -1473,6 +1488,65 @@
                 renderPage();
             }
         },
+        //todo 2018-03-13 更新：添加百度分享
+        //百度分享弹窗
+        popBaiduShare:function () {
+            var that = this;
+            function createPop() {
+                var popDom = '';
+                popDom += '<div class="club-pop-baidu-mask clubPopBaidu clubPopBaiduClose"></div>';
+                popDom += '<div class="club-pop-baidu-main clubPopBaidu">';
+                popDom += '<div class="club-pop-baidu-head">分享</div>';
+
+                popDom += '<div class="club-pop-baidu-body">';
+                popDom += '<div class="club-pop-baidu-btns bdsharebuttonbox" data-tag="share_1"><a class="bds_tsina" data-cmd="tsina"></a><a class="bds_sqq" data-cmd="sqq"></a><a class="bds_qzone" data-cmd="qzone"></a><a class="bds_more" data-cmd="more"></a><a class="bds_count" data-cmd="count"></a></div>';
+                popDom += '</div>';
+
+                popDom += '<div class="club-pop-baidu-foot"><a class="clubPopBaiduClose">取消</a></div>';
+                popDom += '</div>';
+                return popDom;
+            }
+            
+            function initBaiduShare() {
+                var baiduSrc = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5);
+                if(typeof _bd_share_main === 'object'){
+                    _bd_share_main.init();
+                }else{
+                    $.getScript(baiduSrc);
+                }
+            }
+
+            function closePop() {
+                var $pop = $('.clubPopBaidu');
+                $pop.removeClass('cur');
+                setTimeout(function () {
+                    $pop.remove();
+                    that.popCommon.close();
+                },250);
+            }
+
+            function showPop() {
+                var popDom = createPop();
+                $('body').append(popDom);
+                that.popCommon.open();
+                setTimeout(function () {
+                    $('.clubPopBaidu').addClass('cur');
+                },50);
+                $('.clubPopBaiduClose').on('click',function () {
+                    closePop();
+                });
+                initBaiduShare();
+            };
+
+            showPop();
+        },
+        //global bind
+        globalBind:function () {
+            var $main = $('#qzMain'),that = this;
+            $main.on('click','.qzBtnShare',function () {
+                that.popBaiduShare();
+            })
+        },
         //入口
         main: function () {
             //设置屏幕缩放
@@ -1485,8 +1559,6 @@
             //qzFunc.addLike();
             //开启发布/参与
             qzFunc.addContext();
-            //插入测试数据
-            //qzFunc.initPage();
             //插入测试数据 话题页
             qzFunc.initPageTopic();
             //插入测试数据 内容单页
@@ -1499,8 +1571,6 @@
             });
             //开启 话题页上部加载更多按钮功能
             qzFunc.topicMore();
-            //开启 内容单页评论和赞的切换功能
-            qzFunc.tabCl();
             //开启 内容单页 跳转功能
             qzFunc.pageGoto();
             //加载 全部话题 列表
@@ -1511,6 +1581,8 @@
             $(window).resize(function () {
                 qzFunc.setRem();
             });
+            //绑定全局事件
+            qzFunc.globalBind();
         }
     };
     qzFunc.main();
@@ -1702,24 +1774,26 @@
             });
         })
     };
+    //todo:2018-03-13 更新：修改排序
     $.fn.getClub = function (callback) {
         return this.each(function () {
-            var $this = $(this);
-            var contentType = $(".qzNavFx a.cur").attr("data-type");
-            var sort = $(".qz-nav-sort").attr("data-sort");
-            var clubId = $(".clubId").attr("data-clubId");
-            var topic = $(".topic").attr("data-topic");
-            var topicId = $(".topic").attr("data-topicId");
-            var pageIndex = parseInt($this.attr("data-pageIndex")) + 1;
-            var pageSize = $this.attr("data-pageSize");
-            var loading = $this.attr("data-loading");
+            var $this = $(this),
+                cfg = $(".qzNavFx a.cur").attr("data-cfg"),
+                contentType = clubConfig.listNavSetter[cfg].type,
+                sort = clubConfig.listNavSetter[cfg].sort,
+                clubId = $(".clubId").attr("data-clubId"),
+                topic = $(".topic").attr("data-topic"),
+                topicId = $(".topic").attr("data-topicId"),
+                pageIndex = parseInt($this.attr("data-pageIndex")) + 1,
+                pageSize = $this.attr("data-pageSize"),
+                loading = $this.attr("data-loading");
             if (loading == "true") {
                 return;
             }
             $this.attr("data-loading", "true");
-            var length = $this.find(".qzCard").length;
-            var index = 0;
-            var excludeIds = $this.find(".qzCard:first").attr("data-cid");
+            var length = $this.find(".qzCard").length,
+                index = 0,
+                excludeIds = $this.find(".qzCard:first").attr("data-cid");
             if (excludeIds == undefined || excludeIds==null){
                 excludeIds=""
             }
@@ -1741,50 +1815,45 @@
                 excludeIds: excludeIds
             };
             $this.attr("data-pageIndex", pageIndex);
-            $.ajax({
-                type: "get",
-                dataType: "json",
-                url: "http://192.168.0.100:9009/apis/club/api/getwapclubcontent",
-                data: { "jsondata": JSON.stringify(jsondata) },
-                beforeSend: function () {
-                    //插入加载动画
-                    $(".qz-loadnull,.qz-loaded").remove();
-                    $this.append(qzConfig.loadingDom);
-                },
-                success: function (responseObject) {
-                    var result = $.parseJSON(responseObject.body);
-                    $this.attr("data-loading", "false");
-                    $this.find('.qz-loading').remove();
-                    var len = result.cardgroup.length;
-                    if (pageIndex == 1 && len == 0) {
-                        $this.html(qzConfig.loadnullDom).attr('data-infiload', 'close');
-                    }
-                    else if (pageIndex == 1 && len > 0) {
-                        qzFunc.insertCard($this, result.cardgroup);
-                        if (len >= pageSize) {
-                            $this.attr("data-infiload", "open");
-                            qzConfig.isCanLoading = true;
-                        }
-                        else {
-                            qzConfig.isCanLoading = false;
-                            $this.attr('data-infiload', 'close').append(qzConfig.loadedDom);
-                        }
-                    }
-                    else if (pageIndex > 1 && len > 0) {
-                        qzFunc.appendCard($this, result.cardgroup);
+            var clubListParams = {jsondata: JSON.stringify(jsondata)}
+            clubApis.getWapClubContext(clubListParams,function (responseObject) {
+                var result = $.parseJSON(responseObject.body);
+                $this.attr("data-loading", "false");
+                $this.find('.qz-loading').remove();
+                var len = result.cardgroup.length;
+                if (pageIndex == 1 && len == 0) {
+                    $this.html(qzConfig.loadnullDom).attr('data-infiload', 'close');
+                }
+                else if (pageIndex == 1 && len > 0) {
+                    qzFunc.insertCard($this, result.cardgroup);
+                    if (len >= pageSize) {
                         $this.attr("data-infiload", "open");
                         qzConfig.isCanLoading = true;
                     }
                     else {
+                        qzConfig.isCanLoading = false;
                         $this.attr('data-infiload', 'close').append(qzConfig.loadedDom);
                     }
-                    if (typeof callback === 'function') {
-                        callback && callback();
-                    }
                 }
+                else if (pageIndex > 1 && len > 0) {
+                    qzFunc.appendCard($this, result.cardgroup);
+                    $this.attr("data-infiload", "open");
+                    qzConfig.isCanLoading = true;
+                }
+                else {
+                    $this.attr('data-infiload', 'close').append(qzConfig.loadedDom);
+                }
+                if (typeof callback === 'function') {
+                    callback && callback();
+                }
+            },function () {
+                //插入加载动画
+                $(".qz-loadnull,.qz-loaded").remove();
+                $this.append(qzConfig.loadingDom);
             });
         });
     };
+    //todo 2018-03-13 更新：修复点赞样式
     //获取点赞数据
     $.fn.like = function () {
         var support = "";
@@ -1797,22 +1866,21 @@
         var jsondata = {
             clubContentId: support
         };
-        $.ajax({
-            type: "get", dataType: "jsonp", url: "http://192.168.0.100:9009/apis/club/api/getlike",
-            data: { jsondata: JSON.stringify(jsondata) },
-            success: function (data) {
-                if (data.status == "ok") {
-                    var body = $.parseJSON(data.body);
-                    $.each(body, function (index, value) {
-                        $(".qzBtnLike[data-clubcontentid='" + value.Id + "']").each(function () {
-                            $(this).find("b").html(value.digg);
-                            $(this).attr("data-likecount", value.digg);
-                        });
+        var transData = {jsondata: JSON.stringify(jsondata)};
+        clubApis.getLike(transData,function (data) {
+            if (data.status == "ok") {
+                var body = $.parseJSON(data.body);
+                $.each(body, function (index, value) {
+                    $(".qzBtnLike[data-clubcontentid='" + value.Id + "']").each(function () {
+                        $(this).find("b")
+                            .html(value.digg)
+                            .attr("data-likecount", value.digg);
                     });
-                }
+                });
             }
         });
     };
+    //todo 2018-03-13 更新：修复点赞样式
     //添加点赞
     $.fn.addLike = function (options) {
         return this.each(function () {
@@ -1821,24 +1889,20 @@
             $this.click(function (event) {
                 event.preventDefault();
                 $(this).UserOnline(function (response) {
-                    if (response.status == 'ok') {
+                    if (response.status == 'ok' || jsmodel === 'dev') {
                         var Id = $this.attr("data-clubcontentid");
                         var jsondata = {
                             clubContentId: Id,
                             fromDevice: 1,
                         };
-                        $.ajax({
-                            type: "get", dataType: "jsonp", url: "http://192.168.0.100:9009/apis/club/api/addlike",
-                            data: { jsondata: JSON.stringify(jsondata) },
-                            success: function (responseJson) {
-                                if (responseJson.status == "err") {
-                                    alert(responseJson.body);
-                                }
-                                else {
-                                    var m = parseInt($this.find("b").html()) + 1;
-                                    $this.find("b").html(m);
-                                    $(".tabNavCl a").eq(1).find("i").html(m);
-                                }
+                        var transData = {jsondata: JSON.stringify(jsondata)};
+                        clubApis.addLike(transData,function (responseJson) {
+                            if (responseJson.status == "err") {
+                                alert(responseJson.body);
+                            }
+                            else {
+                                var m = parseInt($this.find("b").html()) + 1;
+                                $this.find("b").html(m);
                             }
                         });
                     }
@@ -1847,55 +1911,55 @@
         });
     };
     $.fn.commentCount = function () {
-        var support = "";
-        $(this).each(function () {
-            if (support != "") {
-                support = support + ","
-            }
-            support = support + $(this).attr("data-clubcontentid");
-        });
-        var jsondata = {
-            clubContentId: support
-        };
-        $.ajax({
-            type: "get", dataType: "jsonp", url: "http://192.168.0.100:9009/apis/club/api/getcommentcount",
-            data: { jsondata: JSON.stringify(jsondata) },
-            success: function (data) {
+        var that = this;
+        function commentDo() {
+            var support = "";
+            $(that).each(function () {
+                if (support != "") {
+                    support = support + ","
+                }
+                support = support + $(this).attr("data-clubcontentid");
+            });
+            var jsondata = {
+                clubContentId: support
+            };
+            var gCommentCountParams = {jsondata: JSON.stringify(jsondata)};
+            clubApis.getCommentCount(gCommentCountParams,function (data) {
                 if (data.status == "ok") {
                     var body = $.parseJSON(data.body);
                     $.each(body, function (index, value) {
                         $(".qzBtnComment[data-clubcontentid='" + value.Id + "']").each(function () {
-                            if ($(this).parents(".qzClComment").length > 0) {
+                            var $th = $(this);
+                            if ($(that).parents(".qzClComment").length > 0) {
                                 return;
                             }
-                            $(this).html(value.commentCount);
-                            $(this).attr("data-commcount", value.commentCount);
+                            $th.html(value.commentCount);
+                            $th.attr("data-commcount", value.commentCount);
                             if($('#qzCardList').length>0&&value.commentCount>0){
-                                $(this).insertListComment();
+                                $th.insertListComment();
                             }
                         });
                     });
                 }
-            }
-        });
+            });
+        }
+        commentDo();
     };
+    //todo:2018-03-13 更新：注释掉卡片内回复
+    //卡片列表内评论
     $.fn.insertListComment = function () {
-        var $this = $(this),$card = $this.closest('.qzCard'),commDom = '';
-
-        var commurl = "http://192.168.0.100:9009/apis/club/api/getwapclubcomment",
-            pageIndex = 1,
-            clubContentId = $this.data("clubcontentid"),
-            jsondata = {
-                clubContentId: clubContentId,
-                pageIndex: pageIndex,
-                pageSize: 10
-            };
-        $.ajax({
-            type: "get",
-            dataType: "json",
-            url: commurl,
-            data: { jsondata: JSON.stringify(jsondata) },
-            success: function (responseObject) {
+        var $this = $(this);
+        function initFnc() {
+            var $card = $this.closest('.qzCard'),commDom = '',
+                pageIndex = 1,
+                clubContentId = $this.data("clubcontentid"),
+                jsondata = {
+                    clubContentId: clubContentId,
+                    pageIndex: pageIndex,
+                    pageSize: 10
+                },
+                transData = { jsondata: JSON.stringify(jsondata) };
+            clubApis.getWapClubComment(transData,function (responseObject) {
                 var result = $.parseJSON(responseObject.body);
                 //判断数据状态
                 if (result.dataType === 'ok' && $this.attr('data-isinsert') != 'ok') {
@@ -1910,8 +1974,11 @@
                     commDom += '</ul></div>';
                     $(commDom).insertBefore($card.find('footer'));
                 }
-            }
-        });
+            });
+        }
+        if(clubConfig.innerCommentState === 'open'){
+            initFnc();
+        }
     };
     //获取参与人数
     $.fn.joinCount = function () {

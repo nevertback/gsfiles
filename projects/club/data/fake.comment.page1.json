@@ -21,6 +21,7 @@
         "reply": [
           {
             "commid": 247431,
+            "useId":1295253,
             "name": "萨格拉斯",
             "context": "哇哇，太可恶了，趁我没发的时候抽哇哇，太可恶了，趁我没发的时候抽哇哇，太可恶了，趁我没发的时候抽",
             "reply":null,
@@ -28,6 +29,7 @@
           },
           {
             "commid": 247432,
+            "useId":1295252,
             "vauth":"http://image.gamersky.com/webimg15/user/club/pc/zheng-bj.png",
             "editauth":"http://image.gamersky.com/webimg15/user/club/pc/zheng-bj.png",
             "name": "游民G娘",
@@ -37,6 +39,7 @@
           },
           {
             "commid": 247433,
+            "useId":1295252,
             "vauth":"http://image.gamersky.com/webimg15/user/club/pc/zheng-bj.png",
             "editauth":"http://image.gamersky.com/webimg15/user/club/pc/zheng-bj.png",
             "name": "游民G娘",
@@ -65,6 +68,7 @@
         "reply": [
           {
             "commid": 247432,
+            "useId":1295253,
             "vauth":"http://image.gamersky.com/webimg15/user/club/pc/zheng-bj.png",
             "editauth":"http://image.gamersky.com/webimg15/user/club/pc/zheng-bj.png",
             "name": "游民G娘",
@@ -77,6 +81,7 @@
           },
           {
             "commid": 247431,
+            "useId":1295253,
             "name": "萨格拉斯",
             "head": "http://image.gamersky.com/avatar/original/anime/anime045.jpg",
             "context": "哇哇，太可恶了，趁我没发的时候抽哇哇，太可恶了，趁我没发的时候抽哇哇，太可恶了，趁我没发的时候抽",

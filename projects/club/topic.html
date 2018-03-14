@@ -19,31 +19,7 @@
 <!-- 创建时间：20171104 设计：ONE像素 前端：MrrrTian -->
 </head>
 <body>
-<!--通用导航-->
-<!--
-<div id="gsTgWapTop"></div>
-<header class="ymw-header">
-    <nav class="ymw-meun-pop ymwMeunPop">
-        <ul>
-            <li><a href="/">首页</a></li>
-            <li><a href="/news/">资讯</a></li>
-            <li><a href="/ku/">游戏</a></li>
-            <li><a href="/gl/">攻略</a></li>
-            <li><a href="/donghua/">动画</a></li>
-            <li><a href="/shouyou/" class="ymwSyLink">手游</a></li>
-        </ul>
-        <form class="ymw-search-form" id="ymwSearchIn">
-            <input class="ymw-search-ipt" type="search" value="输入搜索内容">
-            <input type="button" class="ymw-search-btn ymwSearchBtn">
-        </form>
-    </nav>
-    <aside>
-        <a href="/" class="ymw-logo"><img src="http://image.gamersky.com/webimg13/wap/2017/0515/h-logo2017.png" alt=""></a>
-        <a href="javascript:;" class="ymw-meun ymwMeun"><i></i></a>
-        <a href="http://a.gamersky.com/app/wap.html" class="ymw-app">APP下载</a>
-    </aside>
-</header>
--->
+
 <div class="qzMain" id="qzMain">
     <!--话题页 上部 begin-->
 <section class="qz-top qz-top-topic">
@@ -71,17 +47,21 @@
 <div class="qzNavPos"></div>
 <aside class="qz-nav qzNavFxW">
     <nav class="clearfix qzNavFx">
-        <a class="cur" data-from="http://j.gamersky.com/user/club/wap/data/fake.data.js">全部</a>
-        <a data-from="http://j.gamersky.com/user/club/wap/data/fake.value.data.js">精品</a>
-        <a data-from="http://j.gamersky.com/user/club/wap/data/fake.pic.data.js">图片</a>
-        <a data-from="http://j.gamersky.com/user/club/wap/data/fake.video.data.js">视频</a>
+        <a class="cur" data-cfg="new">最新</a>
+        <a data-cfg="hot">最热</a>
+        <a data-cfg="best">精品</a>
     </nav>
-    <select class="qz-nav-sort">
-        <option value="">默认排序</option>
-        <option value="">发帖时间</option>
-        <option value="">热门排序</option>
+    <select class="clubList" style="display:none">
+        <option value="">发往圈子</option>
+        <option value="2">游民大杂烩</option>
+        <option value="8">孤岛惊魂5</option>
+        <option value="11">使命召唤15</option>
+        <option value="7">彩虹六号：围攻</option>
+        <option value="6">真三国无双8</option>
+        <option value="4">怪物猎人世界</option>
     </select>
 </aside>
+
 <!--圈子页导航 end-->
         <div class="qz-card-list" id="qzCardList" data-from="http://j.gamersky.com/user/club/wap/data/fake.data.js"></div>
     </section>
@@ -93,6 +73,8 @@
 <script type="text/javascript" src="js/qz.wap.js"></script>
 <div id="gsTgWapBottomFixed"></div>
 <script src="http://ja.gamersky.com/gs.tg.wap.all.js"></script>
+<script src="http://j.gamersky.com/file/ajaxfileupload.js"></script>
+<script src="http://wap.gamersky.com/autoinc/allsite/allsite_nav_login_js.htm"></script>
 <div style="display:none">
     <script type="text/javascript">
         var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
