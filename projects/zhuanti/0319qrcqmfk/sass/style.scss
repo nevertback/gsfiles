@@ -1,0 +1,16 @@
+@import 'reset';
+@import 'pc';
+@import 'comm';
+.yy-btn{
+    display: block;
+    position: absolute;
+    left: 730px;
+    top: 560px;
+    width: 352px;
+    height: 76px;
+    background: url(../ztimages/yy-btn.png) 0 0 no-repeat;
+    transition:all 0.25s ease;
+    &:hover{
+        transform:scale(0.95);
+    }
+}

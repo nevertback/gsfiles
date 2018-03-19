@@ -1,0 +1,64 @@
+@charset "UTF-8";
+a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,ul,var{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:14px;vertical-align:baseline}
+:focus{outline:0}
+table{border-collapse:separate;border-spacing:0}
+caption,td,th{text-align:left;font-weight:400}
+a img,iframe{border:none}
+ol,ul{list-style:none}
+button,input,select,textarea{font-size:14px;font-family:inherit}
+select{margin:inherit}
+ol{margin-left:2em}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both}
+* html .clearfix{height:1%}
+.clearfix{display:block}
+.float-l{float:left}
+.float-r{float:right}
+.hide{display:none!important}
+.show{display:block}
+.unvisibility{visibility:hidden}
+.visibility{visibility:visible}
+.wrap{min-width:1200px;max-width:1920px;margin:0 auto}
+html{background:#fff}
+.wrap{background:url(../ztimages/pc_bg.jpg) center top no-repeat;overflow:hidden}
+.wrap .main-body{height:1376px;width:1200px;margin:0 auto;overflow:hidden;position:relative}
+.wrap .main-body .home{position:absolute;background:url(../ztimages/home.png) center center repeat;width:157px;height:67px;top:10px;right:40px}
+.wrap .main-body .qr{position:absolute;top:984px;right:62px}
+.footer{position:relative;background:url(../ztimages/footer.jpg) center center no-repeat}
+.footer .footer-links{position:relative;left:50%;margin:0 0 50px 175px;top:20px}
+.footer .footer-links ul{margin-right:80px;color:#a5a6a5;font-size:14px}
+.footer .footer-links ul li{margin-top:10px;color:#fff;font-size:14px;display:block;text-decoration:none;cursor:pointer}
+.footer .footer-links ul li a{color:#fff;font-size:14px;display:block;text-decoration:none}
+.footer .company-logo{position:absolute;top:18px;right:50%;margin-right:175px}
+.footer img{display:block}
+.footer p{text-align:center;line-height:20px;color:#a5a6a5;font-size:14px}
+.footer p a{color:#a5a6a5;font-size:14px}
+.clearfix:after,.clearfix:before{display:table;content:" "}
+.clearfix:after{clear:both}
+body,html{min-width:1280px}
+body{font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px}
+h1,h2,h3,h4,h5,p,ul{margin:0;padding:0;list-style:none}
+a{text-decoration:none;cursor:pointer}
+.QZnav{min-width:1200px}
+.QZnav .topbar{width:1200px}
+.QZnav .QZ-nav{display:none}
+.Bot{width:100%;min-width:1200px;height:155px;background:#111;font-size:14px}
+.Bot .Copyright{margin:0 auto;padding-top:50px;width:1200px;height:auto;line-height:30px;text-align:center;color:#555}
+.Bot .Copyright a{margin:0 5px;color:#555}
+.Bot .Copyright a:hover{color:#777}
+.yy-form-mask{position:fixed;z-index:99998;top:0;left:0;width:100%;height:100%;background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
+.yy-form-mask.cur{opacity:1;visibility:visible}
+.yy-form{position:fixed;left:50%;top:50%;width:694px;height:494px;margin:-247px 0 0 -347px;background:#fff url(../ztimages/pop.png) 0 0 no-repeat;z-index:99999;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
+.yy-form .yy-main{position:relative;padding-top:284px}
+.yy-form .yy-main .yy-select{margin-bottom:10px;padding-left:203px;height:28px}
+.yy-form .yy-main .yy-select .yys-btn{display:block;float:left;width:28px;height:28px;background:url(../ztimages/select.png) 0 28px no-repeat}
+.yy-form .yy-main .yy-select .yys-btn.yys-ios{margin-right:162px}
+.yy-form .yy-main .yy-select .yys-btn.cur{background-position:0 0}
+.yy-form .yy-main .yy-ipts{margin-bottom:26px;height:40px}
+.yy-form .yy-main .yy-ipts .yy-ipt{display:block;margin-left:225px;width:330px;height:40px;background:0 0;border:none;font-size:18px;color:#898989}
+.yy-form .yy-main .smt{display:block;margin:0 auto;width:352px;height:76px;background:url(../ztimages/btn-yy.png) 0 0 no-repeat;-webkit-transition:all .25s ease;transition:all .25s ease}
+.yy-form .yy-main .smt:hover{-webkit-transform:scale(.95);-ms-transform:scale(.95);transform:scale(.95)}
+.yy-form .close{position:absolute;right:-65px;top:-15px;width:59px;height:69px;background:url(../ztimages/close.png) 0 0 no-repeat}
+.yy-form.cur{opacity:1;visibility:visible}
+.yy-btn{display:block;position:absolute;left:730px;top:560px;width:352px;height:76px;background:url(../ztimages/yy-btn.png) 0 0 no-repeat;-webkit-transition:all .25s ease;transition:all .25s ease}
+.yy-btn:hover{-webkit-transform:scale(.95);-ms-transform:scale(.95);transform:scale(.95)}

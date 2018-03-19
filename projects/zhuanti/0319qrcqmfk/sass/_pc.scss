@@ -1,0 +1,72 @@
+html {
+  background: #fff; }
+
+.wrap {
+  background: url(../ztimages/pc_bg.jpg) center top no-repeat;
+  overflow: hidden; }
+  .wrap .main-body {
+    height: 1376px;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; }
+    .wrap .main-body .home {
+      position: absolute;
+      background: url(../ztimages/home.png) center center repeat;
+      width: 157px;
+      height: 67px;
+      top: 10px;
+      right: 40px; }
+    .wrap .main-body .qr {
+      position: absolute;
+      top: 984px;
+      right: 62px; }
+
+.footer {
+  position: relative;
+  background: url(../ztimages/footer.jpg) center center no-repeat; }
+
+.footer .footer-links {
+  position: relative;
+  left: 50%;
+  margin: 0 0 50px 175px;
+  top: 20px; }
+
+.footer .footer-links ul {
+  margin-right: 80px;
+  color: #a5a6a5;
+  font-size: 14px; }
+
+.footer .footer-links ul li {
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  cursor: pointer; }
+
+.footer .footer-links ul li a {
+  color: #ffffff;
+  font-size: 14px;
+  display: block;
+  text-decoration: none; }
+
+.footer .company-logo {
+  position: absolute;
+  top: 18px;
+  right: 50%;
+  margin-right: 175px; }
+
+.footer img {
+  display: block; }
+
+.footer p {
+  text-align: center;
+  line-height: 20px;
+  color: #a5a6a5;
+  font-size: 14px; }
+
+.footer p a {
+  color: #a5a6a5;
+  font-size: 14px; }
+

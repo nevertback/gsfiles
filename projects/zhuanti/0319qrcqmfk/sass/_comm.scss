@@ -1,0 +1,112 @@
+.clearfix:before,
+.clearfix:after{display: table;content: " ";}
+.clearfix:after{clear: both;}
+html,body{min-width:1280px;}
+body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
+h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
+a{text-decoration: none;cursor: pointer;}
+$basewidth:1200px;
+//头部
+.QZnav {min-width:$basewidth;}
+.QZnav .topbar {width:$basewidth;}
+.QZnav .QZ-nav {display: none;}
+//底部
+.Bot{
+    width:100%; min-width:$basewidth; height:155px;
+    background:#111;font-size: 14px;
+    .Copyright {
+        margin:0 auto;padding-top:50px;
+        width:$basewidth;height:auto;line-height:30px;
+        text-align:center; color:#555;
+        a{
+            margin:0 5px; color:#555;
+            &:hover {color:#777;}
+        }
+    }
+}
+.yy-form-mask{
+    position: fixed;z-index: 99998;top: 0;left: 0;
+    width: 100%;height: 100%;
+    background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.yy-form{
+    $popwidth:694px;
+    $popheight:494px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: $popwidth;
+    height: $popheight;
+    margin: (-$popheight/2) 0 0 (-$popwidth/2);
+    background: #fff url(../ztimages/pop.png) 0 0 no-repeat;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    .yy-main{
+        position: relative;
+        padding-top: 284px;
+        .yy-select{
+            margin-bottom: 10px;
+            padding-left: 203px;
+            height: 28px;
+            .yys-btn{
+                display: block;
+                float: left;
+                width: 28px;
+                height: 28px;
+                background: url(../ztimages/select.png) 0 28px no-repeat;
+                &.yys-ios{
+                    margin-right: 162px;
+                }
+                &.cur{
+                    background-position: 0 0;
+                }
+            }
+        }
+        .yy-ipts{
+            margin-bottom: 26px;
+            height: 40px;
+            .yy-ipt{
+                display: block;
+                margin-left: 225px;
+                width: 330px;
+                height: 40px;
+                background: none;
+                border: none;
+                font-size: 18px;
+                color:#898989;
+            }
+        }
+        .smt{
+            display: block;
+            margin: 0 auto;
+            width: 352px;
+            height: 76px;
+            background: url(../ztimages/btn-yy.png) 0 0 no-repeat;
+            transition:all 0.25s ease;
+            &:hover{
+                transform:scale(0.95);
+            }
+        }
+    }
+    .close{
+        position: absolute;
+        right: -65px;
+        top: -15px;
+        width: 59px;
+        height: 69px;
+        background: url(../ztimages/close.png) 0 0 no-repeat;
+    }
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+    }
+}
