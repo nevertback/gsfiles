@@ -1,0 +1,115 @@
+.bdsharewrap.bdstyle-c{width:218px;height:33px;overflow:hidden}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox{width:800px;height:33px;*font-size:0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox.before,.bdsharewrap.bdstyle-c .bdsharebuttonbox:after{display:table;content:" "}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox:after{clear:both}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a{float:left;margin:0 4px 0 0;padding:0;width:33px;height:33px;background:url(http://image.gamersky.com/webimg13/zhuanti/common/fx9.png) 0 0 no-repeat}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tsina{background-position:0 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_weixin{background-position:-37px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_qzone{background-position:-74px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_renren{background-position:-111px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_sqq{background-position:-148px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tieba{display:none}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_douban{display:none}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_more{display:none}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_count{background-position:-185px 0;overflow:hidden;line-height:33px;text-indent:99999px}
+body,html{min-width:1280px}
+body{font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px}
+h1,h2,h3,h4,h5,p,ul{margin:0;padding:0;list-style:none}
+a{text-decoration:none;cursor:pointer}
+.clearfix:after,.clearfix:before,.container:after,.container:before{display:table;content:" "}
+.clearfix:after,.container:after{clear:both}
+.container{margin-right:auto;margin-left:auto;width:1000px}
+.zt-section{margin:0;padding:0;overflow:hidden;width:100%;min-width:1000px}
+.QZnav{min-width:1000px}
+.QZnav .topbar{width:1000px}
+.QZnav .QZ-nav{display:none}
+.Bot{width:100%;min-width:1000px;background:#111;font-size:14px;height:136px;background:url(../ztimages/zt-bg8.jpg) center 0 no-repeat}
+.Bot .Copyright{margin:0 auto;padding-top:50px;width:1000px;height:auto;line-height:30px;text-align:center;color:#555}
+.Bot .Copyright a{margin:0 5px;color:#555}
+.Bot .Copyright a:hover{color:#777}
+.gsPopupMask{position:fixed;z-index:99998;top:0;left:0;width:100%;height:100%;background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
+.gsPopupMask.cur{opacity:1;visibility:visible}
+.gsPopup{z-index:99999;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
+.gsPopup .gsPopupCon{width:100%;height:100%;background-color:#000}
+.gsPopup .gsPopupCon img{display:block}
+.gsPopup .gsPopupCon video{display:block;width:100%;height:100%}
+.gsPopup .gsPopupClose{position:absolute;top:0;right:-50px;overflow:hidden;width:38px;height:38px;background:url(http://image.gamersky.com/webimg13/zhuanti/common/gsPopupClose.png) 5px 5px no-repeat}
+.gsPopup .gsPopupClose:hover{background-position:-33px 5px}
+.gsPopup.cur{opacity:1;visibility:visible}
+.zt-section1{position:relative;height:960px;background:url(../ztimages/zt-bg1.jpg) center 0 no-repeat}
+.zt-section1 .bdsharewrap.bdstyle-c{position:absolute;top:51px;right:40px}
+.zt-section1 .bdsharewrap.bdstyle-c a{border-radius:5px}
+.zt-section1 .logo_gs{display:block;position:absolute;left:228px;top:47px;background-image:url(../ztimages/csprite.png);background-position:-436px -488px;width:186px;height:70px}
+.zt-section1 .logo_gf{display:block;position:absolute;left:26px;top:23px;background-image:url(../ztimages/csprite.png);background-position:0 -488px;width:183px;height:128px}
+.zt-section1 .container{position:relative;padding-top:895px}
+.zt-section1 .container .btn-group{padding-left:208px;height:50px;line-height:45px;font-size:26px;font-weight:700;color:#491d04;text-shadow:0 0 4px rgba(0,0,0,.2)}
+.zt-section1 .container .btn-group a{float:left;color:#491d04}
+.zt-section1 .container .btn-group a:hover{color:#fff}
+.zt-section1 .container .btn-group span{float:left;margin:0 25px}
+.zt-section1 .container .play{display:block;position:absolute;left:417px;top:680px;background-image:url(../ztimages/csprite.png);background-position:-324px -296px;width:168px;height:168px}
+.zt-section1 .container .play:hover{-webkit-animation:rotate360 3s linear infinite;animation:rotate360 3s linear infinite}
+@-webkit-keyframes rotate360{
+0%{-webkit-transform:rotate(0);transform:rotate(0)}
+100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}
+@keyframes rotate360{
+0%{-webkit-transform:rotate(0);transform:rotate(0)}
+100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}
+.para{margin:0 auto;width:820px}
+.para h5{line-height:58px;font-size:22px;color:#fefefe;text-align:center}
+.para p{line-height:32px;font-size:16px;color:#efefef;text-indent:32px}
+.zt-section2{height:304px;background:url(../ztimages/zt-bg2.jpg) center 0 no-repeat}
+.zt-section2 .container{position:relative;padding-top:15px}
+.zt-section3{height:516px;background:url(../ztimages/zt-bg3.jpg) center 0 no-repeat}
+.zt-section4{height:305px;background:url(../ztimages/zt-bg4.jpg) center 0 no-repeat}
+.zt-section4 .container{position:relative;padding-top:65px}
+.zt-section4 .container .para p{line-height:30px}
+.zt-section5{height:475px;background:url(../ztimages/zt-bg5.jpg) center 0 no-repeat}
+.zt-section5 .container{position:relative;padding-top:140px}
+.zt-section5 .container .skills{padding-left:45px;height:160px}
+.zt-section5 .container .skills a{position:relative;display:block;float:left;margin-right:32px;width:125px;height:155px;background:url(../ztimages/skills.png) 0 0 no-repeat}
+.zt-section5 .container .skills a.skill1{background-position:0 0}
+.zt-section5 .container .skills a.skill1:hover{background-position:0 -160px}
+.zt-section5 .container .skills a.skill2{background-position:-157px 0}
+.zt-section5 .container .skills a.skill2:hover{background-position:-157px -160px}
+.zt-section5 .container .skills a.skill3{background-position:-314px 0}
+.zt-section5 .container .skills a.skill3:hover{background-position:-314px -160px}
+.zt-section5 .container .skills a.skill4{background-position:-471px 0}
+.zt-section5 .container .skills a.skill4:hover{background-position:-471px -160px}
+.zt-section5 .container .skills a.skill5{background-position:-628px 0}
+.zt-section5 .container .skills a.skill5:hover{background-position:-628px -160px}
+.zt-section5 .container .skills a.skill6{background-position:-785px 0}
+.zt-section5 .container .skills a.skill6:hover{background-position:-785px -160px}
+.zt-section5 .container .skills a span{display:block;position:absolute;top:-131px;left:0;background-image:url(../ztimages/csprite.png);background-position:0 0;width:624px;height:140px;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
+.zt-section5 .container .skills a span i{display:block;padding:0 30px;font-style:normal}
+.zt-section5 .container .skills a span i.tit{padding-top:8px;line-height:40px;font-size:20px;color:#fd0b39;font-weight:700}
+.zt-section5 .container .skills a span i.des{line-height:24px;font-size:16px;color:#1e2023}
+.zt-section5 .container .skills a.skill-pop-r span{left:auto;right:0;background-image:url(../ztimages/csprite.png);background-position:0 -148px;width:624px;height:140px}
+.zt-section5 .container .skills a:hover span{opacity:1;visibility:visible}
+.zt-section5 .container .btn{display:block;margin:32px auto 0;background-image:url(../ztimages/csprite.png);background-position:-632px -368px;width:237px;height:78px}
+.zt-section5 .container .btn:hover{background-position:-191px -488px}
+.zt-section6{height:895px;background:url(../ztimages/zt-bg6.jpg) center 0 no-repeat}
+.zt-section6 .container{position:relative;padding-top:85px}
+.zt-section6 .container .para p{line-height:30px}
+.zt-section6 .container .draw{position:relative;margin:30px auto 0;width:910px;height:514px;background:url(../ztimages/draw-bg.png) 0 0 no-repeat}
+.zt-section6 .container .draw .draw-select{position:absolute;left:0;top:0;background-image:url(../ztimages/csprite.png);background-position:-632px -192px;width:300px;height:168px}
+.zt-section6 .container .draw .draw-select.draw-select0{left:0;top:0}
+.zt-section6 .container .draw .draw-select.draw-select1{left:305px;top:0}
+.zt-section6 .container .draw .draw-select.draw-select2{left:610px;top:0}
+.zt-section6 .container .draw .draw-select.draw-select3{left:610px;top:173px}
+.zt-section6 .container .draw .draw-select.draw-select4{left:610px;top:346px}
+.zt-section6 .container .draw .draw-select.draw-select5{left:305px;top:346px}
+.zt-section6 .container .draw .draw-select.draw-select6{left:0;top:346px}
+.zt-section6 .container .draw .draw-select.draw-select7{left:0;top:173px}
+.zt-section6 .container .draw .draw-btn{display:block;position:absolute;left:297px;top:171px;background-image:url(../ztimages/csprite.png);background-position:0 -296px;width:316px;height:184px}
+.zt-section6 .container .draw .draw-btn:hover{background-position:-632px 0}
+.zt-section6 .container .shares{margin-top:23px}
+.zt-section6 .container .shares p{margin-bottom:10px;line-height:30px;font-size:16px;color:#c1c1c1;text-align:center}
+.zt-section6 .container .shares .bdsharewrap.bdstyle-c{margin:0 auto}
+.zt-section6 .container .shares .bdsharewrap.bdstyle-c a{border-radius:5px}
+.zt-section7{height:305px;background:url(../ztimages/zt-bg7.jpg) center 0 no-repeat}
+.zt-section7 .container{position:relative;padding-top:27px}
+.zt-section7 .container .notices h5{margin-bottom:20px;line-height:25px;font-size:20px;color:#636363;font-weight:400}
+.zt-section7 .container .notices ul li{line-height:30px;font-size:16px;color:#efefef}
+.zt-section7 .container .notices ul li i{font-style:normal;color:#636363}

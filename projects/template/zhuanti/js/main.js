@@ -58,7 +58,7 @@
                         containerId: 'tgsVideo',
                         vid: opts.sid,
                         width: '100%',
-                        height: opts.height+35,
+                        height: opts.height,
                         autoplay:true,
                         showBullet:false,
                         showLogo: false,

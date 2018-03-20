@@ -30,19 +30,10 @@
 			display: block;
 			position: absolute;
 			top: 100px;
+			left: 10px;
 			&.btn1{
-				left: 10px;
 				@include sprite($s1-btn1);
-				&:hover{
-					@include sprite($s1-btn1-h);
-				}
-			}
-			&.btn2{
-				left: 200px;
-				@include sprite($s1-btn1);
-				&:hover{
-					@include sprite($s1-btn1-h);
-				}
+				&:hover{@include sprite-position($s1-btn1-h);}
 			}
 		}
 	}
