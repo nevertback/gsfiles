@@ -1,0 +1,46 @@
+var pageConfig = {
+    countid:'512179',
+    bgm:{
+        txt:['打开声音','关闭声音'],
+        start:'ztmedia/bgm.mp3'
+    },
+    userMute:true,
+    volClk:true,
+    isCommOpen:false,
+    isVideoPlaying:false,
+    addedComment:false,
+    addedFixed:false,
+    raceVd:'dbcb4aefe3',
+    formJs:false,
+    audPlayVol:0.1,
+    bgmvol:1,
+    imglist:{
+        loading:{
+            logo1:'ztimages/ld-logo.png',
+            logo2:'ztimages/ld-logo-g.png'
+        },
+        ldPage:{
+            vd:'ztimages/start.mp4'
+        },
+        begin:{
+            bg:'ztimages/bg_begin.jpg',
+            dgy:'http://www.gamersky.com/zl/preview/'
+        },
+        start:{
+            bg:'ztimages/bg_start.jpg'
+        },
+        end:{
+            bg:'ztimages/bg_end.jpg'
+        },
+        comm:{
+            bg:'ztimages/bg_comm.jpg',
+            rw:'ztimages/bg-comm-rw.png'
+        }
+    }
+};
+//预加载图片
+ var preLoadPicsLists = {
+     list1: [
+         pageConfig.imglist.begin.bg
+     ]
+ };
