@@ -110,14 +110,14 @@
 $('.popupBtn').gsPopup();
 (function ($) {
     var isDrawed = false,isLogin = false,
-        lid = 27, //28
+        lid = 28, //27
         prizeCfg=[
             {
                 pid:301,
                 pnm:'雷蛇萨诺键盘'
             },
             {
-                pid:540, //544
+                pid:544, //540
                 pnm:'守望手机壳'
             },
             {
@@ -133,11 +133,11 @@ $('.popupBtn').gsPopup();
                 pnm:'谢谢参与'
             },
             {
-                pid:542, //545
+                pid:545, //542
                 pnm:'温斯顿小手办'
             },
             {
-                pid:543, //546
+                pid:546, //543
                 pnm:'战网点1000点'
             },
             {
