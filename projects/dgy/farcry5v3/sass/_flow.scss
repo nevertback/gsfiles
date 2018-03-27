@@ -1,0 +1,981 @@
+.task-dialog{
+    position: absolute;
+    padding-bottom: 89px;
+    opacity: 0;
+    visibility: hidden;
+    transition:all 0.25s ease;
+    .task-dialog-context{
+        position: relative;
+        padding: 32px 10px 36px;
+        width: 524px;
+        &:before,&:after{
+            display: block;
+            content: '';
+            position: absolute;
+            left: 0;
+        }
+        &:before{
+            top: 0;
+            @include sprite($task-dia-top);
+        }
+        &:after{
+            bottom: 0;
+            @include sprite($task-dia-bot);
+        }
+        p{
+            margin-bottom: 34px;
+            line-height: 34px;
+            font-size: 22px;
+            color: #fff;
+            text-indent: 44px;
+            @extend %textBd1;
+            &:nth-last-child(1){
+                margin-bottom: 0;
+            }
+        }
+    }
+    .task-dialog-next{
+        position: absolute;
+        right: -5px;
+        bottom: 0;
+        @extend %btnGoon;
+    }
+    &.cur{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.task-tips{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 25px 0 40px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    .task-tips-context{
+        p{
+            line-height: 34px;
+            font-size: 22px;
+            color: #fff;
+            text-align: center;
+            @extend %textBd1;
+        }
+    }
+    .task-tips-next{
+        position: absolute;
+        right: 55px;
+        bottom: 30px;
+        @extend %btnGoon;
+    }
+}
+.hover-tro{
+    display: block;
+    position: absolute;
+    background: url(http://image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 no-repeat;
+    img{
+        display: block;
+        transition:all 0.25s ease;
+    }
+    .hover-tro-btn{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .hover-tro-txt{
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+    &:hover{
+        .hover-tro-btn{
+            opacity: 1;
+        }
+        .hover-tro-txt{
+            opacity: 1;
+        }
+    }
+}
+.task1{
+    .tit{
+        position: absolute;
+        top: 975px;
+        right: 0;
+        padding-right: 192px;
+        width: 894px;
+        p{
+            line-height: 34px;
+            font-size: 22px;
+            color: #fff;
+            text-indent: 44px;
+        }
+        i{
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 42px;
+            width: 60px;
+            height: 60px;
+            background: url(../ztimages/loading.gif) 0 0 no-repeat;
+        }
+    }
+}
+.task101{
+    .task-dialog0{
+        left: 183px;
+        top: 595px;
+    }
+    .task-dialog1{
+        left: 1236px;
+        top: 503px;
+    }
+}
+.task102{
+    .task-dialog0{
+        left: 1081px;
+        top: 577px;
+    }
+    .task-dialog1{
+        left: 181px;
+        top: 182px;
+    }
+}
+.task103{
+    .task-dialog0,.task-dialog2,.task-dialog4,.task-dialog6{
+        left: 183px;
+        top: 640px;
+    }
+    .task-dialog1,.task-dialog3,.task-dialog5{
+        left: 1236px;
+        top: 543px;
+    }
+}
+.task105{
+    .task-dialog0{
+        left: 1236px;
+        top: 543px;
+    }
+    .task-dialog1{
+        left: 183px;
+        top: 640px;
+    }
+}
+.task106{
+    .btn-next{
+        position: absolute;
+        left: 345px;
+        top: 469px;
+    }
+    .hover-tro{
+        left: 933px;
+        top: 375px;
+        width: 987px;
+        height: 621px;
+        .hover-tro-txt{
+            left: 213px;
+            top: -193px;
+            width: 568px;
+            height: 337px;
+        }
+    }
+}
+.task107{
+    .btn-next{
+        position: absolute;
+        left: 850px;
+        top: 405px;
+    }
+    .hover-tro{
+        left: 722px;
+        top: 0;
+        width: 642px;
+        height: 557px;
+        .hover-tro-txt{
+            left: 447px;
+            top: 143px;
+            width: 568px;
+            height: 118px;
+        }
+    }
+}
+.task108{
+    .btn-next{
+        display: block;
+        position: absolute;
+        left: 837px;
+        top: 806px;
+        @include sprite($task108-btn);
+    }
+}
+.task2{
+    .btn-next{
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        @extend %btnGoon;
+    }
+}
+.task201{
+    .btn-next{
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        @extend %btnGoon;
+    }
+}
+.task202{
+    .btn-key{
+        display: block;
+        position: absolute;
+        left: 807px;
+        top: 806px;
+        @include sprite($task202-btn-key);
+    }
+    .btn-next{
+        position: absolute;
+        left: 1547px;
+        top: 459px;
+        display: none;
+        &.cur{
+            display: block;
+        }
+    }
+}
+.task203{
+    .btn-key{
+        display: none;
+        position: absolute;
+        left: 837px;
+        top: 806px;
+        @include sprite($task203-btn-key);
+        &.cur{
+            display: block;
+        }
+    }
+    .btn-light{
+        display: block;
+        position: absolute;
+        left: 677px;
+        top: 463px;
+        width: 78px;
+        height: 349px;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            animation: flashSoftAnim 1s ease infinite;
+        }
+        &:hover{
+            img{
+                animation:none;
+            }
+        }
+    }
+    .btn-next{
+        position: absolute;
+        left: 1192px;
+        top: 466px;
+        display: none;
+        &.cur{
+            display: block;
+        }
+    }
+}
+.task204{
+    .btn-key{
+        position: absolute;
+        left: 837px;
+        top: 806px;
+        @include sprite($task204-btn-key);
+    }
+    .btn-next{
+        position: absolute;
+        left: 1275px;
+        top: 580px;
+        display: none;
+        &.cur{
+            display: block;
+        }
+    }
+}
+.task205{
+    .tro{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        font-size: 26px;
+        color: #fff;
+        text-align: center;
+    }
+    .btn-next{
+        display: block;
+        position: absolute;
+        left: 589px;
+        top: 603px;
+        width: 301px;
+        height: 102px;
+        i{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: -50px;
+            padding-left: 136px;
+            width: 140px;
+            height: 50px;
+            font-size: 22px;
+            color: #f8c838;
+            font-style: normal;
+            @extend %textBd1;
+            transition:all 0.25s ease;
+            transform:translate(0,10px);
+            opacity: 0;
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            animation: flashSoftAnim 2s ease infinite;
+        }
+        &:hover{
+            i{
+                opacity: 1;
+                transform:translate(0,0);
+            }
+            img{
+                animation: none;
+                opacity: 1;
+            }
+        }
+    }
+}
+.task206{
+    .btn-next{
+        position: absolute;
+        left: 1106px;
+        top: 267px;
+    }
+}
+%curDiy{
+    cursor: url(../ztimages/fight-mouse.cur) 16 16,crosshair;
+}
+%curDiyIe{
+    cursor: url(../ztimages/fight-mouse.cur),crosshair;
+}
+.fight-area{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @extend %curDiy;
+    .fight-fire{
+        position: absolute;
+        opacity: 0;
+        &.cur{
+            animation: fightLight 0.6s steps(9) infinite;
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .fight-gun{
+        position: absolute;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .fight-enemy{
+        display: block;
+        position: absolute;
+        @extend %curDiy;
+        &:after{
+            display: block;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            margin-left: -10px;
+            content: '';
+            @include sprite($enemy-arr);
+            animation: fightArr 1.5s ease-out infinite;
+        }
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            &.fight-enemy-half{
+                display: none;
+            }
+        }
+        &.attacked{
+            img{
+                &.fight-enemy-full{
+                    display: none;
+                }
+                &.fight-enemy-half{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.task301{
+    .fight-area{
+        .fight-fire{
+            left: 513px;
+            top: 297px;
+            width: 1407px;
+            height: 783px;
+        }
+        .fight-gun{
+            left: 1030px;
+            top: 700px;
+            width: 615px;
+            height: 380px;
+        }
+        .fight-enemy0{
+            left: 873px;
+            top: 550px;
+            width: 20px;
+            height: 54px;
+        }
+        .fight-enemy1{
+            left: 585px;
+            top: 579px;
+            width: 43px;
+            height: 121px;
+        }
+    }
+}
+.task302{
+    .fight-area{
+        .fight-fire{
+            left: 457px;
+            top: 274px;
+            width: 1424px;
+            height: 679px;
+        }
+        .fight-gun{
+            left: 994px;
+            top: 687px;
+            width: 459px;
+            height: 393px;
+        }
+        .fight-enemy0{
+            left: 1101px;
+            top: 514px;
+            width: 25px;
+            height: 69px;
+        }
+        .fight-enemy1{
+            left: 816px;
+            top: 540px;
+            width: 48px;
+            height: 53px;
+        }
+    }
+}
+.task303{
+    .fight-area{
+        .fight-fire{
+            left: 532px;
+            top: 310px;
+            width: 1388px;
+            height: 679px;
+        }
+        .fight-gun{
+            left: 1051px;
+            top: 716px;
+            width: 592px;
+            height: 364px;
+        }
+        .fight-enemy0{
+            left: 767px;
+            top: 638px;
+            width: 44px;
+            height: 126px;
+        }
+        .fight-enemy1{
+            left: 482px;
+            top: 654px;
+            width: 58px;
+            height: 123px;
+        }
+        .fight-enemy2{
+            left: 1082px;
+            top: 592px;
+            width: 23px;
+            height: 49px;
+        }
+    }
+}
+.drt-arr{
+    display: block;
+    position: absolute;
+    &:before{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+    }
+    span{
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 30px;
+        line-height: 30px;
+        white-space: nowrap;
+        font-size: 22px;
+        color: #f8c838;
+        @extend %textBd1;
+        transition:all 0.25s ease;
+        transform:translate(-10px,0);
+        opacity: 0;
+        visibility: hidden;
+    }
+    $drtAnimSpeed:1.2s;
+    &.drt-arr-up{
+        width: 33px;
+        height: 18px;
+        &:before{
+            @include sprite($task4-arr-up);
+            animation: drtArrUp $drtAnimSpeed ease infinite;
+        }
+        span{padding-left: 50px;top: -6px;}
+        &:hover{
+            &:before{
+                @include sprite-position($task4-arr-up-h);
+            }
+        }
+    }
+    &.drt-arr-right{
+        width: 97px;
+        height: 52px;
+        &:before{
+            @include sprite($task4-arr-right);
+            animation: drtArrRight $drtAnimSpeed ease infinite;
+        }
+        span{padding-left: 117px;top: 3px;}
+        &:hover{
+            &:before{
+                @include sprite-position($task4-arr-right-h);
+            }
+        }
+    }
+    &.drt-arr-right-mini{
+        width: 47px;
+        height: 25px;
+        &:before{
+            @include sprite($task4-arr-right-mini);
+            animation: drtArrRight $drtAnimSpeed ease infinite;
+        }
+        span{padding-left: 68px;top: -6px;}
+        &:hover{
+            &:before{
+                @include sprite-position($task4-arr-right-mini-h);
+            }
+        }
+    }
+    &.drt-arr-down{
+        left: 1124px;top: 916px;
+        width: 107px;
+        height: 84px;
+        &:before{
+            @include sprite($task4-arr-down);
+            animation: drtArrDown $drtAnimSpeed ease infinite;
+        }
+        span{padding-left: 120px;top: 19px;}
+        &:hover{
+            &:before{
+                @include sprite-position($task4-arr-down-h);
+            }
+        }
+    }
+    &.drt-arr-left{
+        width: 97px;
+        height: 51px;
+        &:before{
+            @include sprite($task4-arr-left);
+            animation: drtArrLeft $drtAnimSpeed ease infinite;
+        }
+        span{padding-left: 117px;top: 4px;}
+        &:hover{
+            &:before{
+                @include sprite-position($task4-arr-left-h);
+            }
+        }
+    }
+    &:hover{
+        span{
+            opacity: 1;
+            visibility: visible;
+            transform:translate(0,0);
+        }
+        &:before{
+            animation-play-state: paused;
+        }
+    }
+}
+.task401{
+    .drt-arr-left{left: 284px;top: 749px;}
+    .btn-letter{
+        display: block;
+        position: absolute;
+        left: 716px;
+        top: 948px;
+        width: 102px;
+        height: 52px;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            animation: flashSoftAnim 1.2s ease infinite;
+        }
+        &:hover{
+            img{
+                animation: none;
+            }
+        }
+    }
+    .btn-radio{
+        display: block;
+        position: absolute;
+        left: 710px;
+        top: 806px;
+        width: 185px;
+        height: 96px;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            animation: flashSoftAnim 1.2s ease infinite;
+        }
+        &:hover{
+            img{
+                animation: none;
+            }
+        }
+    }
+    .letter-mask{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        opacity: 0;
+        visibility: hidden;
+        transition:all 0.25s ease;
+        &.cur{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .letter-main{
+        position: absolute;
+        top: 190px;
+        left: 640px;
+        width: 640px;
+        opacity: 0;
+        visibility: hidden;
+        transition:all 0.25s ease;
+        &.cur{
+            opacity: 1;
+            visibility: visible;
+        }
+        h5{
+            margin-bottom: 40px;
+            height: 55px;
+            line-height: 55px;
+            font-size: 36px;
+            color: #fac937;
+            text-align: center;
+        }
+        .time{
+            margin-bottom: 38px;
+            height: 38px;
+            line-height: 38px;
+            font-size: 18px;
+            color: #b6b6b6;
+            text-align: center;
+        }
+        .letter-para{
+            line-height: 38px;
+            font-size: 18px;
+            color: #b6b6b6;
+        }
+        .letter-name{
+            margin-top: 38px;
+            height: 38px;
+            line-height: 38px;
+            font-size: 18px;
+            color: #b6b6b6;
+            text-align: right;
+        }
+    }
+    .letter-btn-group{
+        position: absolute;
+        left: 689px;
+        top: 806px;
+        opacity: 0;
+        visibility: hidden;
+        transition:all 0.25s ease;
+        &.cur{
+            opacity: 1;
+            visibility: visible;
+        }
+        a{
+            display: block;
+            float: left;
+            margin-right: 15px;
+            @include sprite($task401-letter-page);
+            line-height: 60px;
+            font-size: 22px;
+            color: #fff;
+            text-align: center;
+            &:hover{
+                color: #f8c838;
+            }
+        }
+        .letter-btn-close{
+            @include sprite($task-next-h);
+            line-height: 60px;
+            font-size: 22px;
+            color: #fff;
+            text-indent: 80px;
+            text-align: left;
+        }
+    }
+}
+.task402{
+    .drt-arr-up{left: 1124px;top: 522px;}
+    .drt-arr-right{left: 1437px;top: 672px;}
+}
+.task4021{
+    .btn-radio{
+        display: block;
+        position: absolute;
+        left: 624px;
+        top: 435px;
+        width: 183px;
+        height: 115px;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            animation: flashSoftAnim 1.2s ease infinite;
+        }
+        span{
+            display: block;
+            position: absolute;
+            left: 207px;
+            top: 50px;
+            height: 30px;
+            line-height: 30px;
+            white-space: nowrap;
+            font-size: 22px;
+            color: #f8c838;
+            @extend %textBd1;
+            transition:all 0.25s ease;
+            transform:translate(-10px,0);
+            opacity: 0;
+            visibility: hidden;
+        }
+        &:hover{
+            img{
+                animation: none;
+            }
+            span{
+                opacity: 1;
+                transform:translate(0,0);
+                visibility: visible;
+            }
+        }
+    }
+}
+.task4022{
+    .btn-key{
+        display: block;
+        position: absolute;
+        left: 837px;
+        top: 806px;
+        @include sprite($task4022-btn-key);
+    }
+}
+.task403{
+    .drt-arr-up{left: 1269px;top: 443px;}
+    .drt-arr-right-mini{left: 1365px;top: 506px;}
+}
+.task4031{
+    .drt-arr-up{left: 1005px;top: 490px;}
+}
+.task4032{
+    .drt-arr-up{left: 974px;top: 176px;}
+}
+.task404{
+    .btn-next{
+        position: absolute;
+        left: 1493px;
+        top: 385px;
+    }
+    .btn-eye1{
+        left: 516px;
+        top: 445px;
+        img{
+            left: -159px;
+            top: -254px;
+        }
+    }
+    .btn-eye2{
+        left: 1064px;
+        top: 426px;
+        img{
+            left: -226px;
+            top: -193px;
+            width: 554px;
+            height: 388px;
+        }
+    }
+}
+.task4041{
+    .btn-eye0{
+        left: 858px;top: 351px;
+        img{left: -66px;top: -153px;}
+    }
+    .btn-eye1{
+        left: 1392px;top: 537px;
+        img{left: -61px;top: -154px;}
+    }
+    .btn-eye2{
+        left: 714px;top: 798px;
+        img{left: -52px;top: -148px;}
+    }
+    .btn-eye3{
+        left: 429px;top: 482px;
+        img{left: -67px;top: -159px;}
+    }
+    .intro-mask{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        transition:all 0.25s ease;
+        opacity: 0;
+        visibility: hidden;
+        &.cur{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .intro-context{
+        position: absolute;
+        left: 640px;
+        top: 185px;
+        width: 640px;
+        height: 684px;
+        transition:all 0.25s ease;
+        opacity: 0;
+        visibility: hidden;
+        &.cur{
+            opacity: 1;
+            visibility: visible;
+        }
+        h5{
+            margin-bottom: 38px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 36px;
+            color: #fac937;
+            text-align: center;
+            font-weight: normal;
+        }
+        .intro-context-des{
+            p{
+                line-height: 38px;
+                font-size: 18px;
+                color: #b6b6b6;
+            }
+        }
+        .btn-forward{
+            position: absolute;
+            left: 230px;
+            bottom: 0;
+        }
+    }
+}
+.task4042{
+    .btn-eye{
+        left: 573px;top: 537px;
+        img{left: -288px;top: -223px;}
+    }
+}
+.task405{
+    .task-dialog{
+        left: 163px;
+        top: 540px;
+    }
+    .task-dialog-choose{
+        .task-dialog-context{
+            margin-bottom: 64px;
+        }
+    }
+    .btn-choose{
+        position: relative;
+        display: block;
+        width: 135px;
+        height: 51px;
+        line-height: 50px;
+        font-size: 22px;
+        color: #fff;
+        text-indent: 25px;
+        span{
+            display: block;
+            position: relative;
+        }
+        &:before,&:after{
+            display: block;
+            content: '';
+            position: absolute;
+        }
+        &:before{
+            left: 0;
+            top: 0;
+            @include sprite($task405-btn);
+            animation: flashSoftAnim 1.4s ease infinite;
+        }
+        &:after{
+            left: -24px;
+            top: 13px;
+            @include sprite($task405-btn-arr);
+            animation: task405arr 0.6s ease infinite;
+            opacity: 0;
+            transition: all 0.25s ease;
+        }
+        &:hover{
+            &:before{
+                animation: none;
+            }
+            &:after{
+                opacity: 1;
+            }
+        }
+    }
+}
+.task4051,.task4052{
+    .btn-back{
+        position: absolute;
+        right: 65px;
+        bottom: 25px;
+    }
+}

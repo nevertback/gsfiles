@@ -1,4 +1,3 @@
-@import "csprite";
 html,body{
 	position: relative;
 	width: 100%;height: 100%;max-height:100%;
@@ -8,27 +7,27 @@ html,body{
 		width: 8px;
 		height: 8px;
 		border-radius: 0;
-		background-color: rgba(255,255,255,0.1);
+		background-color: rgba(255,255,255,0);
 	}
 	::-webkit-scrollbar-track {
 		border-radius: 10px;
-		background-color: rgba(255,255,255,0.2);
+		background-color: rgba(255,255,255,0);
 	}
 	::-webkit-scrollbar-track:hover {
-		background-color: rgba(255,255,255,0.4);
+		background-color: rgba(255,255,255,0);
 	}
 	::-webkit-scrollbar-track:active {
-		background-color: rgba(255,255,255,0.3);
+		background-color: rgba(255,255,255,0);
 	}
 	::-webkit-scrollbar-thumb {
 		border-radius: 0;
-		background-color: rgba(255,255,255,0.8);
-	}
-	::-webkit-scrollbar-thumb:hover {
 		background-color: rgba(255,255,255,1);
 	}
-	::-webkit-scrollbar-thumb:active {
+	::-webkit-scrollbar-thumb:hover {
 		background-color: rgba(255,255,255,0.6);
+	}
+	::-webkit-scrollbar-thumb:active {
+		background-color: rgba(255,255,255,0.8);
 	}
 }
 body{
@@ -59,7 +58,7 @@ a{text-decoration: none;cursor: pointer;user-select:none}
 }
 //IE
 .ielt9{
-	position: absolute;top: 0px;left: 0;z-index: 10000;
+	position: absolute;top: 0px;left: 0;
 	width: 100%;height: 100%;
 	background:url('http://img1.gamersky.com/image2016/06/20160603_zl_91_4/ielt9.jpg') center center no-repeat;
 	p{
@@ -78,13 +77,23 @@ a{text-decoration: none;cursor: pointer;user-select:none}
 .page_bg{
 	display: block;
 }
+//层级
+.ielt9{z-index: 99999999;}
+#loading{z-index: 9998;}
+#loadingAnim{z-index: 9999;}
+.closeLoading{z-index: 9999;}
+.audio-zm{z-index: 9001;}
+.volbtn{z-index: 9000;}
+.infos{z-index: 8000;}
+.dgy_comm{z-index: 8500;}
+.fixNav{z-index: 7000;}
+.mouse-scroll-tips{z-index: 10;}
 
 //loading
 #loading{
 	position: absolute;left: 0;top: 0;
 	width: 100%;height: 100%;
 	background-color: #000;
-	z-index: 9998;
 }
 //预加载
 #jpreOverlay{
@@ -107,8 +116,8 @@ a{text-decoration: none;cursor: pointer;user-select:none}
 	width: 100%;height: 100%;
 }
 #loadingAnim{
-	$ldWidth:143px;$ldHeight:47px;
-	display: block;position: absolute;top: 50%;left: 50%;margin-left: -$ldWidth/2;margin-top: -($ldHeight + 40px)/2;z-index: 9999;
+	$ldWidth:300px;$ldHeight:94px;
+	display: block;position: absolute;top: 50%;left: 50%;margin-left: -$ldWidth/2;margin-top: -($ldHeight + 40px)/2;
 	width: $ldWidth;height:$ldHeight + 40px;
 	.loadingAnim-img-g{
 		display: block;
@@ -130,16 +139,43 @@ a{text-decoration: none;cursor: pointer;user-select:none}
 	}
 }
 .closeLoading{
-	display: none;position: absolute;top: 50%;left: 50%;margin-left: -400px;margin-top: -55px;z-index: 9999;
-	width: 800px;height: 110px;
+	display: none;position: absolute;top: 50%;left: 50%;margin-left: -400px;margin-top: -143px;
+	width: 800px;
 	.txt{
-		margin-bottom: 10px;
-		height: 60px;line-height:30px;
-		font-size: 24px;color: #ef7800;text-align: center;
-		span{display: block;font-size: 18px;color: #eee}
+		margin-bottom: 40px;
+		h5{
+			height: 34px;
+			line-height: 34px;
+			font-size: 24px;
+			color: #ffc24c;
+			text-align: center;
+			font-weight: normal;
+		}
+		img{
+			display: block;
+			margin: 0 auto;
+			width: 161px;
+			height: 169px;
+		}
+		p{
+			line-height: 36px;
+			font-size: 18px;
+			color: #8a8a8a;
+			text-align: center;
+			i{
+				font-style: normal;
+				color: #fff;
+			}
+			b{
+				font-weight: normal;
+				color: #ffc24c;
+			}
+			span{
+				font-size: 16px;
+			}
+		}
 	}
 	.btngroup{
-		width: 800px;height: 40px;line-height: 40px;
 		a{
 			display: block;margin: 10px auto 0;
 			width: 160px;height: 40px;line-height: 40px;
@@ -175,49 +211,26 @@ a{text-decoration: none;cursor: pointer;user-select:none}
 .volbtn{
 	display: none;
 	position: absolute;
-	right:28px;
-	top: 4px;
-	width: 53px;
-	height: 37px;
-	background: url(../ztimages/vol.gif) center bottom no-repeat;
-	z-index: 99;
+	right:60px;
+	top: 27px;
+	@include sprite($vol-bg);
+	&:after{
+		display: block;
+		content: '';
+		position: absolute;
+		left: 9px;
+		top: 9px;
+		@include sprite($vol-play);
+		animation: rotateAnim 3s linear infinite;
+	}
 	&.pause{
-		background: url(../ztimages/vol.png) center bottom no-repeat;
+		&:after{
+			@include sprite-position($vol-pause);
+			animation-play-state: paused;
+		}
 	}
 	&.cur{
 		display: block;
-	}
-}
-.zanbtn{
-	display: block;
-	margin: 0 auto;
-	cursor: pointer;
-	width: 120px;
-	height: 112px;
-	.ico_zan{
-		display: block;
-		margin: 0 auto;
-		@include sprite($zan);
-	}
-	span{
-		display: block;
-		height: 30px;
-		line-height: 30px;
-		font-size: 14px;
-		color: #9b7a24;
-		text-align: center;
-		i{
-			font-style: normal;
-		}
-	}
-	&:hover{
-		.ico_zan{@include sprite-position($zan-h);}
-	}
-	&.clked{
-		cursor: default;
-		&:hover{
-			.ico_zan{@include sprite-position($zan);}
-		}
 	}
 }
 //头部
@@ -225,362 +238,73 @@ a{text-decoration: none;cursor: pointer;user-select:none}
 .QZnav .topbar {width:940px;}
 .fixNav{
     position: absolute;
-	left: 50%;
-	margin-left: -206px;
-	bottom: 33px;
-    z-index: 666;
-    @include sprite($fx-bg);
+	right: 110px;
+	top: 27px;
     transition: all 0.25s ease;
     opacity: 0;
     visibility: hidden;
-	transform:translate(0,0);
     &.cur{
         opacity: 1;
         visibility: visible;
     }
     .fx_list{
-        width:500px;
         a{
             position: relative;
             display: block;
 			float: left;
-			margin-right: 48px;
-            width: 44px;
-            height: 50px;
+			margin-left: 8px;
+			width: 42px;
+			height: 42px;
             i{
-                position: absolute;
-				left: 50%;
-                top: 50%;
-				margin-left: -5px;
-				margin-top: -5px;
-                display: block;
-				width: 10px;
-				height: 10px;
-				background-color: #fff;
-				border-radius: 50%;
-                transform:scale(1);
-				transition:all 0.25s ease;
+				display: block;
+				position: relative;
+				&.icon-task{
+					@include sprite($fx-icon-task);
+				}
+				&.icon-infos{
+					@include sprite($fx-icon-infos);
+				}
+				&.icon-comm{
+					@include sprite($fx-icon-comm);
+				}
             }
             span{
                 display: block;
                 position: absolute;
-				top: -32px;
+				top: 37px;
 				left: 50%;
-				margin-left: -41px;
-				@include sprite($fx-txt);
-                line-height: 35px;
-                font-size: 15px;
-                color: #333;
+				margin-left: -25px;
+				width: 50px;
+				height: 40px;
+                line-height: 40px;
+                font-size: 18px;
+                color: #fffffe;
 				text-align: center;
+				font-weight: bold;
                 opacity:0;
-				transform-origin: 50% 100%;
-                transform:scale(0);
+				transform:translate(0,-20px);
                 transition:all 0.25s ease;
+				text-shadow: 0 0 2px #001446,0 0 2px #001446,0 0 2px #001446,0 0 2px #001446;
             }
             &:hover,&.cur{
-                i{
-					transform:scale(1.5);
-                }
+                i.icon-task{
+					@include sprite($fx-icon-task-c);
+				}
+				span{
+					opacity: 1;
+					transform:translate(0,0);
+				}
             }
-			&:hover{
-				span{
-					opacity: 1;
-					transform:scale(1,1);
-				}
-			}
 			&.cur{
-				@include sprite($fx-nav-c);
-				span{top: -48px;}
-			}
-			&.fixBtn_comm{
-				i{
-					margin-top: -11px;
-					@include sprite($fx-comm-i);
-				}
-				span{
-					opacity: 1;
-					transform:scale(1,1);
-					top: -35px;
-					margin-left: -35px;}
+				cursor: default;
 			}
         }
-		a.fixBtn_comm:before{
-			display: none;
-		}
     }
 }
 //遮罩
 .commMsk{
 	display: block;position: absolute;top: 0;left:0;
 	width: 100%;height: 100%;
-}
-.page_trans{
-	.letvwrap{
-		position: relative;
-		width: 100%;height: 100%;
-	}
-	.btn_sty.btn_sty2{
-		position: absolute;
-		left: 1700px;
-		top: 855px;
-		display: none;
-		z-index: 10;
-		&.cur{
-			display: block;
-		}
-	}
-	.gdvd_btn{
-		position: absolute;
-		left: 1600px;
-		top: 870px;
-		z-index: 10;
-		&.gdvd_loding{
-			position: absolute;
-			left: 1650px;
-			top: 1004px;
-			width: 225px;
-			height: 8px;
-			background-color: rgba(0,0,0,0.6);
-			&:before{
-				display: block;
-				content: '';
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 0;
-				height: 8px;
-				background-color: #fff;
-				transition:all 8s ease;
-			}
-			&.cur:before{
-				width: 100%;
-			}
-		}
-	}
-}
-.btn_sty{
-	display: block;
-	position: absolute;
-	&.btn_sty1{
-		width: 100px;
-		height: 100px;
-		i{
-			display: block;
-			position: absolute;
-		}
-		&.i_repair{
-			i{
-				left: 22px;
-				top: 18px;
-				@include sprite($repair)
-			}
-		}
-		&.i_climb{
-			i{
-				left: 22px;
-				top: 18px;
-				@include sprite($i-climb)
-			}
-		}
-		&.i_eye{
-			i{
-				left: 22px;
-				top: 18px;
-				@include sprite($i-eye)
-			}
-		}
-		&.i_fit{
-			i{
-				left: 22px;
-				top: 18px;
-				@include sprite($i-fit)
-			}
-		}
-		&.i_fly{
-			i{
-				left: 22px;
-				top: 18px;
-				@include sprite($i-fly)
-			}
-		}
-		&.i_go{
-			i{
-				left: 22px;
-				top: 18px;
-				@include sprite($i-go)
-			}
-		}
-		&.i_key{
-			i{
-				left: 22px;
-				top: 18px;
-				@include sprite($i-key)
-			}
-		}
-		&.i_knf{
-			i{
-				left: 22px;
-				top: 18px;
-				@include sprite($i-knf)
-			}
-		}
-		&.i_sw{
-			i{
-				left: 22px;
-				top: 18px;
-				@include sprite($i-sw)
-			}
-		}
-		&.i_moon{
-			i{
-				left: 22px;
-				top: 18px;
-				@include sprite($i-moon)
-			}
-		}
-		&.i_anniu{
-			i.anniu_bg{
-				left: 25px;
-				top: 31px;
-				@include sprite($anniu-w);
-				border-radius: 5px;
-				overflow: hidden;
-				b{
-					display: block;
-					position: absolute;
-					left: 0;
-					top: 30px;
-					@include sprite($anniu-b);
-					animation:anniuAnim 0.4s ease infinite;
-				}
-			}
-			i.anniu{
-				left: 25px;
-				top: 26px;
-				width: 50px;
-				height: 48px;
-				b{
-					display: block;
-					position: absolute;
-					left: 5px;
-					top: 2px;
-					z-index: 1;
-					width: 40px;
-					height: 36px;
-					line-height: 36px;
-					font-style: normal;
-					text-align: center;
-					font-size: 20px;
-					color: #000;
-					background-color: #fff;
-					border-radius: 5px;
-					animation:anniuAnim 0.4s ease infinite;
-				}
-			}
-		}
-		span{
-			display: block;
-			position: absolute;
-			top: 30px;
-			left: 0;
-			padding-left: 120px;
-			width: 140px;
-			height: 40px;
-			line-height: 40px;
-			font-size: 23px;
-			color: #fff;
-			font-weight: bold;
-			opacity: 0;
-			visibility: hidden;
-			transition:all 0.25s ease;
-			pointer-events: none;white-space: nowrap;
-		}
-		&:before,&:after{
-			display: block;
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			opacity: 0;
-			transition:all 0.25s ease;
-		}
-		&:before{
-			@include sprite($btn-r2);
-			animation:rotateAnim 6s linear infinite reverse;
-		}
-		&:after{
-			@include sprite($btn-r1);
-			animation:rotateAnim 4s linear infinite;
-		}
-		&:hover{
-			&:before,&:after{
-				opacity: 1;
-			}
-			span{
-				opacity: 1;
-				visibility: visible;
-			}
-		}
-	}
-	&.btn_sty2{
-		position: absolute;
-		left: 1711px;
-		top: 987px;
-		@include sprite($btn-sty2);
-		line-height: 52px;
-		font-size: 18px;
-		color: #fff;
-		text-align: center;
-		font-weight: bold;
-		&:hover {
-			color: #fccc39;
-			@include sprite-position($btn-sty2-h);
-		}
-	}
-	&.btn_sty3{
-		width: 413px;
-		height: 82px;
-		line-height: 82px;
-		font-size: 30px;
-		color: #fff;
-		font-weight: bold;
-		text-indent: 34px;
-		@extend %blank;
-		&:hover {
-			@include sprite($btn-sty3);
-		}
-	}
-	&.btn_sty_back{
-		left: 0;
-		top: 50%;
-		margin-top: -26px;
-		@include sprite($btn-back);
-		transition:all 0.25s ease;
-		transform:translate3d(-57px,0,0);
-		&:after{
-			display: block;
-			position: absolute;
-			content: '';
-			left: 69px;
-			top: 21px;
-			@include sprite($btn-back-arr);
-			animation:backArrAnim 0.5s ease infinite;
-		}
-		span{
-			display: block;
-			margin-left: 20px;
-			height: 52px;
-			line-height: 52px;
-			font-size: 18px;
-			color: #fff;
-		}
-		&:hover{
-			transform:translate3d(0,0,0);
-			&:after{
-				animation-play-state: paused;
-			}
-		}
-	}
 }
 .btn_goon{
 	display: block;
@@ -615,4 +339,175 @@ a{text-decoration: none;cursor: pointer;user-select:none}
 			animation-duration: 0.2s;
 		}
 	}
+}
+//默认按钮
+.btn-default{
+    display: block;
+    @include sprite($btn-default);
+    line-height: 46px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    &:hover{
+        color: #9d0000;
+        @include sprite-position($btn-default-h);
+    }
+}
+.btn-default-big{
+    display: block;
+    @include sprite($btn-default-big-h);
+    line-height: 79px;
+    font-size: 31px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    &:hover{
+        color: #9d0000;
+        @include sprite-position($btn-default-big);
+    }
+}
+.btn-circle{
+	display: block;
+	width: 135px;
+	height: 135px;
+	background: url(../ztimages/task-btn-go.png) 0 0 no-repeat;
+	animation: toBot 1s steps(23) infinite;
+	i{
+		display: block;
+		position: absolute;
+		left: 100px;
+		top: 48px;
+		width: 45px;
+		height: 35px;
+		line-height: 35px;
+		font-size: 22px;
+		color: #f8c838;
+		white-space: nowrap;
+		pointer-events: none;
+		transition: all 0.25s ease;
+		transform:translate(-10px,0);
+		opacity: 0;
+		@extend %textBd1;
+		font-style: normal;
+	}
+	&:hover{
+		i{
+			opacity: 1;
+			transform:translate(0,0);
+		}
+	}
+}
+.btn-back{
+	display: block;
+	@include sprite($task-back);
+	line-height: 60px;
+	font-size: 22px;
+	color: #fff;
+	text-indent: 80px;
+	&:hover{
+		@include sprite($task-back-h);
+		color: #f8c838;
+	}
+}
+.btn-eye{
+	display: block;
+	position: absolute;
+	width: 51px;
+	height: 37px;
+	&:after{
+		display: block;
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		@include sprite($task-eye);
+	}
+	img{
+		display: block;
+		position: absolute;
+		opacity: 0;
+		transition:all 0.25s ease;
+	}
+	&:hover{
+		img{
+			opacity: 1;
+		}
+	}
+}
+.btn-forward{
+	display: block;
+	@include sprite($btn-forward);
+	line-height: 62px;
+	text-indent: 83px;
+	font-size: 22px;
+	color: #fff;
+	&:hover{
+		color: #f8c838;
+		@include sprite-position($btn-forward-h);
+	}
+}
+//streamable 播放器样式
+.video-steamable{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+}
+//文字描边
+%textBd1{
+	text-shadow: 0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000;
+}
+//继续按钮
+%btnGoon{
+	display: block;
+	@include sprite($task-next);
+	line-height: 60px;
+	font-size: 22px;
+	color: #fff;
+	text-indent: 83px;
+	&:hover{
+        color: #f8c838;
+        @include sprite($task-next-h);
+    }
+}
+//前往
+%btnGo{
+	display: block;
+	width: 135px;
+	height: 135px;
+	background: url(../ztimages/task-btn-go.png) 0 0 no-repeat;
+	animation: toBot 1s steps(23) infinite;
+	i{
+		display: block;
+		position: absolute;
+		left: 114px;
+		top: 50px;
+		width: 45px;
+		height: 35px;
+		line-height: 35px;
+		font-size: 22px;
+		color: #f8c838;
+		white-space: nowrap;
+		pointer-events: none;
+		transition: all 0.25s ease;
+		transform:translate(-10px,0);
+		opacity: 0;
+		@extend %textBd1;
+	}
+	&:hover{
+		i{
+			opacity: 1;
+			transform:translate(0,0);
+		}
+	}
+}
+//动态按钮
+%keyFrameBtn514{
+	width: 514px;
+	height: 74px;
+	background:#000 url(../ztimages/menu-btn-h.png) 0 0 no-repeat;
+	animation: toBot 4s steps(59) infinite;
 }

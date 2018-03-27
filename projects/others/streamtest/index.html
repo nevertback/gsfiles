@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Streamtest</title>
+    <script type="text/javascript" src="http://j.gamersky.com/g/jquery-1.8.3.js"></script>
+</head>
+<body>
+<video id="test" width="1680" height="945"></video>
+<script>
+    function playVd(url) {
+        var vd = document.getElementById('test');
+        vd.src = url;
+        vd.play();
+    }
+    $.ajax({
+        dataType:'json',
+        url:'https://api.streamable.com/videos/8r699',
+        success:function (data) {
+            playVd(data.files.mp4.url);
+        }
+    })
+</script>
+</body>
+</html>

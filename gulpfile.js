@@ -15,7 +15,7 @@ inlinesource = require('gulp-inline-source'),
 sourcemaps = require('gulp-sourcemaps'),
 babel = require("gulp-babel");
 //当前开发目录
-var nowPath = '/zhuanti/0320owxyx/';// /zhuanti/0320owxyx/
+var nowPath = '/dgy/farcry5/';// /zhuanti/0320owxyx/
 //var nowPath = '/gswap/';
 //根目录
 var rootpath = 'projects' + nowPath;
