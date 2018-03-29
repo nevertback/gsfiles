@@ -133,9 +133,12 @@ $('.popupBtn').gsPopup();
             $nav.find('a').on({
                 click:function () {
                     var $ts = $(this),idx = $ts.index();
-                    $con.find('.item').removeClass('cur').eq(idx).addClass('cur');
                     $nav.find('a').removeClass('cur');
                     $ts.addClass('cur');
+                    $con.find('.item').removeClass('cur').eq(idx).addClass('cur').find('img').each(function(){
+                        var $this = $(this);
+                        $this.attr('src',$this.attr('data-src'));
+                    });
                 }
             })
         },
