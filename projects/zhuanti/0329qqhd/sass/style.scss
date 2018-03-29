@@ -1,0 +1,237 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 980px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 30px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 26px;
+			@include sprite($logo-gs);
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 157px;
+			top: 23px;
+			@include sprite($logo-gf);
+		}
+		.play{
+			display: block;
+			position: absolute;
+			top: 545px;
+			left: 638px;
+			@include sprite($s1-play);
+			animation: lrTenDeg 2s ease-in-out infinite;
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			transition:transform 0.25s ease;
+			&:hover{
+				transform:scale(1.1);
+			}
+			&:active{
+				transform:scale(1);
+			}
+			&.btn1{
+				left: 83px;
+				top: 810px;
+				@include sprite($s1-btn1);
+				&:hover{@include sprite-position($s1-btn1-h);}
+			}
+			&.btn2{
+				left: 281px;
+				top: 811px;
+				@include sprite($s1-btn2);
+				&:hover{@include sprite-position($s1-btn2-h);}
+			}
+			&.btn3{
+				left: 478px;
+				top: 792px;
+				@include sprite($s1-btn3);
+				&:hover{@include sprite-position($s1-btn3-h);}
+			}
+			&.btn4{
+				left: 712px;
+				top: 802px;
+				@include sprite($s1-btn4);
+				&:hover{@include sprite-position($s1-btn4-h);}
+				&.disable{
+					img{
+						display: none;
+						position: absolute;
+						left: 6px;
+						top: 65px;
+					}
+					&:hover{
+						img{
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section2{
+	height: 960px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		img{
+			display: block;
+			position: absolute;
+			left: 76px;
+			top: 140px;
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			top: 327px;
+			left: 375px;
+			@include sprite($s2-btn);
+			transition:transform 0.25s ease;
+			&:hover{
+				transform:scale(1.1);
+			}
+			&:active{
+				transform:scale(1);
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 705px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.container {
+		position: relative;
+		img {
+			display: block;
+			position: absolute;
+			left: 25px;
+			top: 193px;
+		}
+	}
+}
+.zt-section4{
+	height: 830px;
+	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.tit{
+			position: absolute;
+			top: 76px;
+			left: 425px;
+			@include sprite($s4-tit);
+		}
+		.zt-sld-wrap{
+			position: relative;
+			padding-top: 12px;
+			width: 1000px;
+			height: 830px - 12px;
+			.sld-arr{
+				top: 354px;
+			}
+			.sld-arr-prev{
+				left: 20px;
+			}
+			.sld-arr-next{
+				right: 36px;
+			}
+			.zt-sld{
+				position: relative;
+				margin-left: 101px;
+				width: 785px;
+				height: 785px;
+				.zt-sld-con{
+					li{
+						position: relative;
+						width: 785px;
+						height: 785px;
+						.play{
+							display: block;
+							position: absolute;
+							left: 333px;
+							top: 333px;
+							@include sprite($s4-play);
+						}
+						.zs-bg{
+							display: block;
+							width: 100%;
+							height: 100%;
+						}
+						.zs-tit{
+							display: block;
+							position: absolute;
+							left: 146px;
+							top: 184px;
+							width: 501px;
+							height: 68px;
+						}
+						p{
+							position: absolute;
+							top: 660px;
+							left: 50%;
+							margin-left: -225px;
+							width: 450px;
+							line-height: 34px;
+							font-size: 24px;
+							color: #fff;
+							font-weight: bold;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section5{
+	position: relative;
+	height: 1142px;
+	background:url(#{$mpath}zt-bg5.jpg) center 0 no-repeat;
+	.zt-sld-wrap{
+		position: absolute;
+		top: 174px;
+		left: 50%;
+		margin-left: -960px;
+		width: 1920px;
+		height: 960px;
+		.sld-arr{
+			top: 480px;
+			left: 50%;
+		}
+		.sld-arr-prev{
+			margin-left: -494px;
+		}
+		.sld-arr-next{
+			margin-left: 443px;
+		}
+		.zt-sld{
+			position: relative;
+			width: 1920px;
+			height: 960px;
+			.zt-sld-con{
+				li{
+					position: relative;
+					width: 1920px;
+					height: 960px;
+					img{
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="http://j.gamersky.com/g/normalize.min.css" rel="stylesheet">
+    <style>
+        body,html{
+            width: 100%;
+            overflow: hidden;
+            overflow-y: auto;
+        }
+        body,html,ul,li,h5,h6,p{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            margin: 0 auto;
+            width: 80%;
+        }
+        h4{
+            font-size: 24px;
+            color: #333333;
+        }
+        textarea{
+            display: block;
+            margin-bottom: 30px;
+            width: 100%;
+            height: 400px;
+            border: 3px solid #333;
+            outline: 0;
+            border-radius: 5px;
+            resize: none;
+        }
+        ul{list-style: none}
+        ul li{
+            cursor: pointer;
+            position: relative;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #eee;
+            transition:all 0.25s ease;
+        }
+        .u-select{
+            position: absolute;
+            padding: 20px;
+            right: 20px;
+            bottom: 20px;
+            width: 60%;
+            background-color: #ddd;
+            border-radius: 10px;
+            transition:all 0.25s ease;
+            opacity: 0;
+            visibility: hidden;
+            user-select: none;
+            color: #000;
+        }
+        ul li:hover{
+            background-color: #f5f5f5;
+            color: #b97100;
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+        }
+        ul li:hover .u-select{
+            visibility: visible;
+            opacity: 1;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+        }
+        h5{
+            height: 30px;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        h6{
+            font-size: 14px;
+        }
+        p{
+            font-size: 12px;
+        }
+        .box{}
+    </style>
+</head>
+<body>
+<div id="app" class="main">
+    <h4>下方黑框粘贴txt内容</h4>
+    <textarea v-model="paras" cols="30" rows="10"></textarea>
+    <ul>
+        <li v-for="item in formatpars">
+            <h5>Email：{{item.email}}</h5>
+            <div class="u-select">
+                <div class="box" v-for="qs in item.list">
+                    <h6>{{ques[qs.tit-1].tit}}</h6>
+                    <p v-for="as in qs.ans">
+                        {{ques[qs.tit-1].ans[as-1]}}
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript" src="http://j.gamersky.com/g/jquery-1.8.3.js"></script>
+<script src="http://j.gamersky.com/g/lib/vue.min.js"></script>
+<script>
+    var iptTimer;
+    var vm = new Vue({
+        name:'comm',
+        el:'#app',
+        data(){
+            return {
+                paras:[],
+                formatpars:[],
+                ques:[
+                    {
+                        tit: '1.【多选题，不限选】请问最近半年，您在电脑上玩过以下哪些类型的游戏？',
+                        ans: [
+                            '1.单机游戏',
+                            '2.客户端网络游戏（需要下载安装，联网对战的游戏）',
+                            '3.网页游戏（不需下载安装，打开页面就能玩）',
+                            '4.游戏平台类游戏（如QQ游戏大厅等，浩方平台等）',
+                            '5.其他',
+                            '6.以上都没有玩过'
+                        ]
+                    },
+                    {
+                        tit: '2.【多选题，不限选】请问最近半年，您玩过以下哪些类型的客户端网络游戏？',
+                        ans: [
+                            '1.角色扮演类网游（如剑灵、魔兽世界、梦幻西游等）',
+                            '2.动作类网游（如地下城与勇士、龙之谷、洛奇英雄传等）',
+                            '3.射击类网游（如穿越火线、CS online、使命召唤、守望先锋等）',
+                            '4.即时战略/Dota类/MOBA网游（如英雄联盟、DOTA1/2、星际争霸2等）',
+                            '5.赛车竞速类网游（如QQ飞车、QQ音速、跑跑卡丁车等）',
+                            '6.音乐舞蹈类网游（如QQ炫舞、劲舞团、热舞派对等）',
+                            '7.体育类网游（如NBA2K Online，FIFA Online等）',
+                            '8.卡牌类网游（如炉石传说等）',
+                            '9.宠物养成类网游（如QQ宠物企鹅等）',
+                            '10.休闲竞技类游戏（如QQ堂、泡泡堂等）',
+                            '11.以上都没玩过'
+                        ]
+                    },
+                    {
+                        tit: '3.【单选题】请问您最近半年，您最主要玩的是哪些客户端网络游戏？',
+                        ans: [
+                            '1.剑灵',
+                            '2.地下城与勇士',
+                            '3.龙之谷',
+                            '4.穿越火线',
+                            '5.英雄联盟',
+                            '6.QQ飞车',
+                            '7.QQ音速',
+                            '8.跑跑卡丁车'
+                        ]
+                    },
+                    {
+                        tit: '4.【单选题】请问以下游戏内的玩法类型，你最主要玩的是哪一种？',
+                        ans: [
+                            '1.强竞技PVP模式（如排位赛、爆破模式等强调个人或战队对抗和操作的玩法）',
+                            '2.娱乐向PVP模式（如大乱斗、道具赛、藏猫猫等注重娱乐休闲的玩法）',
+                            '3.PVE模式（如人机、剧情、闯关等玩法）',
+                            '4.都玩得差不多，没有明显偏好'
+                        ]
+                    },
+                    {
+                        tit: '5.【单选题】请问下列哪一项描述，最符合您目前玩游戏的实际情况？',
+                        ans: [
+                            '1.我玩过3D游戏，对3D视觉、操作较为熟悉',
+                            '2.我玩过3D游戏，但不太适应3D视觉和操作',
+                            '3.从不玩3D游戏，只玩2D、2.5D'
+                        ]
+                    }
+                ]
+            }
+        },
+        methods:{
+            formatText(text){
+                var newText,
+                    tmpArr = text.split('IP:'),
+                    newJsonStr = [],
+                    newJsonEmailStr = [],
+                    newEmailArr = [],
+                    complateData=[];
+                $.each(tmpArr,function (i,item) {
+                    var lenQue = item.indexOf('问卷：')+3,lenEmail = item.indexOf('邮箱：')+3;
+                    newJsonStr.push(item.substr(lenQue).replace('---',''));
+                    newJsonEmailStr.push(item.substr(lenEmail,lenQue - lenEmail - 3).replace('---',''));
+                });
+                newJsonEmailStr = newJsonEmailStr.slice(1);
+                $.each(newJsonStr.slice(1),function (i,item) {
+                    complateData[i] = {};
+                    complateData[i].list = JSON.parse(item);
+                    complateData[i].email = newJsonEmailStr[i];
+                });
+                console.log(complateData);
+                return complateData;
+            },
+            updateComm(){
+                this.formatpars = this.formatText(this.paras);
+            }
+        },
+        watch:{
+            paras:function () {
+                var _this = this;
+                clearTimeout(iptTimer);
+                iptTimer = setTimeout(function () {
+                    _this.updateComm();
+                },500);
+            }
+        }
+    });
+</script>
+</body>
+</html>

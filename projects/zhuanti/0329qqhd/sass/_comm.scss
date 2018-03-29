@@ -1,0 +1,225 @@
+$mpath:'../ztimages/';
+$basewidth:1000px;
+@import 'csprite';
+@import './scsslib/tcss/tcss';
+@import './scsslib/baidushare/bds6';
+html,body{min-width:1280px;}
+body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
+h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
+a{text-decoration: none;cursor: pointer;}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after{display: table;content: " ";}
+.clearfix:after,
+.container:after{clear: both;}
+.container{margin-right: auto;margin-left: auto;width: $basewidth;}
+.zt-section{margin: 0;padding: 0;overflow: hidden;width: 100%;min-width:$basewidth;}
+//头部
+.QZnav {min-width:$basewidth;}
+.QZnav .topbar {width:$basewidth;}
+.QZnav .QZ-nav {display: none;}
+//底部
+.Bot{
+	width:100%; min-width:$basewidth; height:155px; 
+	background:#111;font-size: 14px;
+	.Copyright {
+		margin:0 auto;padding-top:50px; 
+		width:$basewidth;height:auto;line-height:30px;
+		text-align:center; color:#555;
+		a{
+			margin:0 5px; color:#555;
+			&:hover {color:#777;}
+		}
+	}	
+}
+
+//弹层
+.gsPopupMask{
+	position: fixed;z-index: 99998;top: 0;left: 0;
+	width: 100%;height: 100%;
+	background:url(../ztimages/pop-mask.png) 0 0 repeat;
+	opacity: 0;
+	visibility: hidden;
+    transition: all 0.25s ease;
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.gsPopup{
+	z-index: 99999;
+	opacity: 0;
+	visibility: hidden;
+    transition: all 0.25s ease;
+	.gsPopupCon{
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		img{
+			display: block;
+		}
+		video{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.gsPopupClose{
+		position: absolute;top:3px;right:-40px;overflow: hidden;
+		@include sprite($close);
+		transition:all 0.25s ease;
+		&:hover{
+			transform:rotate(90deg);
+		}
+	}
+    &.cur{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+#popContext{
+	display: none;
+}
+.s2-pop{
+	.gsPopupClose{
+		top: 49px;
+	}
+	.gsPopupCon{
+		background: none;
+		.tit{
+			margin: 0 auto 13px;
+			@include sprite($s2-pop-tit);
+		}
+		.s2-pop-main{
+			padding-top: 30px;
+			width: 920px;
+			height: 659px;
+			background-color: #fff;
+			border-radius: 10px;
+		}
+		.s2-pop-main-scl{
+			margin-left: 45px;
+			width: 840px;
+			height: 629px;
+			overflow: hidden;
+			overflow-y: auto;
+		}
+	}
+	.s2-pop-email{
+		margin-bottom: 55px;
+		height: 45px;
+		label{
+			float: left;
+			width: 200px;
+			height: 45px;
+			line-height: 45px;
+			font-size: 24px;
+			color: #b97100;
+			font-weight: bold;
+		}
+		.s2-pop-ipt-wrap{
+			float: left;
+			padding: 10px 15px;
+			width: 390px - 30px;
+			height: 45px - 20px;
+			background-color: #d7c3b5;
+			border-radius: 5px;
+			input{
+				display: block;
+				width: 390px - 30px;
+				height: 25px;
+				line-height: 25px;
+				border: none;
+				background: none;
+				outline: 0;
+				font-size: 16px;
+				color: #211d46;
+			}
+		}
+	}
+	.s2-pop-smt{
+		display: block;
+		margin: 0 auto;
+		width: 220px - 4px;
+		height: 55px - 4px;
+		line-height: 52px - 4px;
+		background-color: #201e48;
+		border: 2px solid #201e48;
+		font-size: 26px;
+		color: #fff;
+		text-align: center;
+		font-weight: bold;
+		border-radius: 28px;
+		transition:all 0.25s ease;
+		&:hover{
+			background: none;
+			color: #201e48;
+		}
+	}
+	.s2-pop-ques{
+		user-select: none;
+		.s2-pop-ques-box{
+			margin-bottom: 30px;
+			h5{
+				margin-bottom: 20px;
+				line-height: 30px;
+				font-size: 18px;
+				color: #b97100;
+			}
+			a{
+				position: relative;
+				display: block;
+				margin-bottom: 10px;
+				line-height: 26px;
+				font-size: 16px;
+				color: #211d46;
+				i{
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 3px;
+					@include sprite($s2-pop-sel);
+				}
+				span{
+					display: block;
+					padding-left: 38px;
+				}
+				&:hover{
+					color: #b97100;
+				}
+				&.cur{
+					i{
+						@include sprite-position($s2-pop-sel-c);
+					}
+				}
+			}
+		}
+	}
+}
+.sld-arr{
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	opacity: 0.8;
+	&.sld-arr-prev{
+		@include sprite($arr-prev);
+	}
+	&.sld-arr-next{
+		@include sprite($arr-next);
+	}
+	&:hover{
+		opacity: 1;
+	}
+}
+@keyframes lrTenDeg {
+	0%{
+		transform:rotate(-10deg);
+	}
+	50%{
+		transform:rotate(10deg);
+	}
+	100%{
+		transform:rotate(-10deg);
+	}
+}

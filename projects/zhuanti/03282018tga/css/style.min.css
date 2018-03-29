@@ -1,0 +1,23 @@
+.clearfix:after,.clearfix:before{display:table;content:" "}
+.clearfix:after{clear:both}
+.gs-add-bot{padding-bottom:30px;padding-top:10px}
+.gs-add-bot .icon-spr{background-repeat:no-repeat;background-image:url(http://image.gamersky.com/webimg13/match/2018tga/icon-spr.png)}
+.gs-add-bot .page-bg{background-color:#1a2531;border:1px solid #1c2834;position:relative;padding:20px}
+.gs-add-bot .memorabilia-cont{width:1060px;height:480px;background-color:#131b24;margin:0 auto 20px;position:relative;overflow:hidden}
+.gs-add-bot .memorabilia-cont .memorabilia-inner{position:absolute;left:0;width:100%;height:480px}
+.gs-add-bot .memorabilia-cont .memorabilia-part{float:left;_display:inline;width:1060px;height:410px}
+.gs-add-bot .memorabilia-cont img{display:block;margin:0 auto}
+.gs-add-bot .memorabilia-nav{width:100%;background:url(http://image.gamersky.com/webimg13/match/2018tga/m-line.png) center 41px no-repeat}
+.gs-add-bot .memorabilia-nav ul{width:100%;text-align:center;font-size:0}
+.gs-add-bot .memorabilia-nav li{display:inline-block;*display:inline;*zoom:1;vertical-align:top;width:14.1%;cursor:pointer}
+.gs-add-bot .memorabilia-nav span{font-size:14px;color:#506b87;line-height:20px;height:20px;display:block;text-align:center}
+.gs-add-bot .memorabilia-nav i.icon-dot{display:block;width:36px;height:36px;margin:5px auto 10px;background-position:-208px -134px}
+.gs-add-bot .memorabilia-nav li.on i.icon-dot{background-position:-120px -134px}
+.gs-add-bot .memorabilia-nav li.on span{color:#5ca5ff}
+.gs-add-bot .schedule-box .schedule-box-nav{margin-bottom:10px;border-bottom:1px solid #2a3a4c}
+.gs-add-bot .schedule-box .schedule-box-nav a{display:block;float:left;width:100px;height:40px;line-height:40px;cursor:pointer;font-size:20px;color:#839cbb;border-bottom:4px solid transparent;text-align:center}
+.gs-add-bot .schedule-box .schedule-box-nav a.cur{color:#3079d3;border-bottom-color:#3079d3}
+.gs-add-bot .schedule-box .schedule-box-con{position:relative;width:1058px;height:790px}
+.gs-add-bot .schedule-box .schedule-box-con .schedule-box-part{position:absolute;left:0;top:0;display:none;width:100%;height:100%}
+.gs-add-bot .schedule-box .schedule-box-con .schedule-box-part.cur{display:block}
+.gs-add-bot .schedule-box .schedule-box-con .schedule-box-part img{display:block;width:100%;height:100%}
