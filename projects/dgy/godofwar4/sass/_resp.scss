@@ -1,0 +1,15 @@
+@media (max-width:1560px) {
+    .page_comm .comm_bg_rw{
+        opacity: 0.5;
+    }
+}
+@media (max-width:1024px) {
+    .page_comm .comm .cont{
+        margin-left: 30px;
+    }
+}
+.ie{
+    .fight-area, .fight-area .fight-enemy{
+        @extend %curDiyIe;
+    }
+}

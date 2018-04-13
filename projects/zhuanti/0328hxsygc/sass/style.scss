@@ -36,7 +36,19 @@
 				left: 655px;
 				top: 953px;
 				@include sprite($s1-btn3);
-				&:hover{@include sprite-position($s1-btn3-h);}
+				img{
+					display: none;
+					position: absolute;
+					left: 50px;
+					bottom: 80px;
+					width: 140px;
+				}
+				&:hover{
+					@include sprite-position($s1-btn3-h);
+					img{
+						display: block;
+					}
+				}
 			}
 		}
 	}

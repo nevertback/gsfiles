@@ -90,6 +90,8 @@ a{text-decoration:none;cursor:pointer}
 .zt-section2{height:960px;background:url(../ztimages/zt-bg2.jpg) center 0 no-repeat}
 .zt-section2 .container{position:relative}
 .zt-section2 .container img{display:block;position:absolute;left:76px;top:140px}
+.zt-section2 .container .btn-bbs{display:block;position:absolute;left:485px;top:785px;width:65px;height:25px;background-color:transparent}
+.zt-section2 .container .btn-bbs:hover{border-bottom:1px solid #00ffd8}
 .zt-section2 .container .btn{display:block;position:absolute;top:327px;left:375px;background-image:url(../ztimages/csprite.png);background-position:0 0;width:253px;height:256px;-webkit-transition:-webkit-transform .25s ease;transition:-webkit-transform .25s ease;transition:transform .25s ease;transition:transform .25s ease,-webkit-transform .25s ease}
 .zt-section2 .container .btn:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
 .zt-section2 .container .btn:active{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}

@@ -93,6 +93,18 @@
 			left: 76px;
 			top: 140px;
 		}
+		.btn-bbs{
+			display: block;
+			position: absolute;
+			left: 485px;
+			top: 785px;
+			width: 65px;
+			height: 25px;
+			background-color: transparent;
+			&:hover{
+				border-bottom: 1px solid #00ffd8;
+			}
+		}
 		.btn{
 			display: block;
 			position: absolute;

@@ -1,0 +1,4 @@
+.clearfix:after,.clearfix:before{display:table;content:" "}
+.clearfix:after{clear:both}
+body{padding:500px 0 2000px}
+#tap{display:block;margin:0 auto;width:100px;height:100px;line-height:100px;background-color:#eee;text-align:center}
