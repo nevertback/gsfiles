@@ -15,7 +15,7 @@ inlinesource = require('gulp-inline-source'),
 sourcemaps = require('gulp-sourcemaps'),
 babel = require("gulp-babel");
 //当前开发目录
-var nowPath = '/dgy/godofwar4/';// /zhuanti/0320owxyx/
+var nowPath = '/template/dgy2/';// /zhuanti/0320owxyx/
 //var nowPath = '/gswap/';
 //根目录
 var rootpath = 'projects' + nowPath;
@@ -61,6 +61,7 @@ gulp.task('cspritewap',function(){//cssTemplate:'cssTemp.scss',
 //include html
 gulp.task('fileinclude', function() {
     gulp.src(mypath.html + '*.html')
+        .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
         .pipe(fileinclude({
           prefix: '@@',
           basepath: '@file'

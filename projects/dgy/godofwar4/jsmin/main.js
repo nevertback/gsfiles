@@ -6,8 +6,8 @@ var gloCfg = {
     url:{
         channel:'http://www.gamersky.com/zl/preview/',
         club:'http://i.gamersky.com/club/8',
-        ku:'http://ku.gamersky.com/2015/Far-Cry-5/',
-        pc:'http://www.gamersky.com/review/201803/1019885.shtml'
+        ku:'http://ku.gamersky.com/2016/God-of-War-IV/',
+        pc:'http://www.gamersky.com/review/201804/1033478.shtml'
     },
     page:{
         zoom:1
