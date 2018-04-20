@@ -21,12 +21,12 @@ var gsDgyConfig = {
         pc:''
     },
     menu:{
-        data:'data/menu.data.js',
+        data:'//j.gamersky.com/zq/godofwar4/menu.data.js',
         select:'weapon'
     },
     isCommOpen:false
 };
-var gsdsPath1 = '',gsdsPath2 = '',gsDgySource;
+var gsdsPath1 = '//img7.gamersky.com/zqimg/dgy/godofwar4/',gsdsPath2 = '//img7.gamersky.com/zqimg/dgy/godofwar4/',gsDgySource;
 gsDgySource = {
     bgm:{
         start:gsdsPath1+'ztmedia/bgm.mp3'
@@ -493,7 +493,7 @@ gsDgyMethods = {
                 h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
             s.type = 'text/javascript';
             s.charset = 'utf-8';
-            s.src = 'http://j.gamersky.com/web2015/comment/js/commentconfig.js';
+            s.src = '//j.gamersky.com/web2015/comment/js/commentconfig.js';
             h.insertBefore(s, h.firstChild);
             window.SCS_NO_IFRAME = true;
         }
@@ -501,7 +501,6 @@ gsDgyMethods = {
             var cDom = '';
             cDom += '';
             cDom += '<div class="gsd-comment hei">';
-            //cDom += '<img src="'+dataOrigin.bg+'" alt="replace" class="comm_bg">';
             cDom += '<div class="gsd-comment-scl gsdCommentScl"><div class="gsd-comment-context">';
             cDom += '<div class="gsd-comment-context-area" id="SOHUCS" sid="'+gsDgyConfig.countid+'"></div>';
             cDom += '</div></div>';
@@ -644,7 +643,7 @@ gsDgyMenu = {
                 vDomNav += '<img class="light" src="'+item.nav.lgt+'" alt="innerNav">';
                 vDomNav += '</a>';
                 vDomList += '<div class="gsd-menu-innertab-box-item gsMenuTabInnerBoxItem'+isCur+'">';
-                vDomList += '<img class="box-pic gsdMenuLazy" src="http://image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="'+item.box.pic+'" alt="innerBox">';
+                vDomList += '<img class="box-pic gsdMenuLazy" src="//image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="'+item.box.pic+'" alt="innerBox">';
                 vDomList += '</div>';
             });
             vDom += '<div class="gsd-menu-innertab-box gsMenuTabInnerBox">';
@@ -693,7 +692,7 @@ gsDgyMenu = {
                 vDomNav += '<span>'+item.nav.txt+'</span>';
                 vDomNav += '</a>';
                 vDomList += '<div class="gsd-menu-innertab-box-item gsMenuTabInnerBoxItem'+isCur+'">';
-                vDomList += '<img class="box-pic gsdMenuLazy" src="http://image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="'+item.box.pic+'" alt="innerBox">';
+                vDomList += '<img class="box-pic gsdMenuLazy" src="//image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="'+item.box.pic+'" alt="innerBox">';
                 vDomList += '</div>';
             });
             vDom += '<div class="gsd-menu-innertab-box gsMenuTabInnerBox">';
@@ -748,7 +747,7 @@ gsDgyMenu = {
                 vDomList += '<div class="gsd-menu-innertab-box-item gsMenuTabInnerBoxItem'+isCur+'">';
                 vDomList += '<div class="gsd-menu-skill-infos">';
                 vDomList += '<div class="title">'+item.tit+'</div>';
-                vDomList += '<div class="pic"><img class="gsdMenuLazy" src="http://image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="'+item.pic+'" alt="innerBox"></div>';
+                vDomList += '<div class="pic"><img class="gsdMenuLazy" src="//image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="'+item.pic+'" alt="innerBox"></div>';
                 vDomList += '<div class="des"><p>'+item.des+'</p></div>';
                 vDomList += '<div class="state">'+item.state+'</div>';
                 vDomList += '<div class="plus">';

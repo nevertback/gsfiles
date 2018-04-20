@@ -224,7 +224,7 @@ gsDgyMethods = {
                 h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
             s.type = 'text/javascript';
             s.charset = 'utf-8';
-            s.src = 'http://j.gamersky.com/web2015/comment/js/commentconfig.js';
+            s.src = '//j.gamersky.com/web2015/comment/js/commentconfig.js';
             h.insertBefore(s, h.firstChild);
             window.SCS_NO_IFRAME = true;
         }
@@ -232,7 +232,6 @@ gsDgyMethods = {
             var cDom = '';
             cDom += '';
             cDom += '<div class="gsd-comment hei">';
-            //cDom += '<img src="'+dataOrigin.bg+'" alt="replace" class="comm_bg">';
             cDom += '<div class="gsd-comment-scl gsdCommentScl"><div class="gsd-comment-context">';
             cDom += '<div class="gsd-comment-context-area" id="SOHUCS" sid="'+gsDgyConfig.countid+'"></div>';
             cDom += '</div></div>';

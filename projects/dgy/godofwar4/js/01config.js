@@ -21,7 +21,7 @@ var gsDgyConfig = {
         pc:''
     },
     menu:{
-        data:'data/menu.data.js',
+        data:'//j.gamersky.com/zq/godofwar4/menu.data.js',
         select:'weapon'
     },
     isCommOpen:false

@@ -1,4 +1,4 @@
-var gsdsPath1 = '',gsdsPath2 = '',gsDgySource;
+var gsdsPath1 = '//img7.gamersky.com/zqimg/dgy/godofwar4/',gsdsPath2 = '//img7.gamersky.com/zqimg/dgy/godofwar4/',gsDgySource;
 gsDgySource = {
     bgm:{
         start:gsdsPath1+'ztmedia/bgm.mp3'

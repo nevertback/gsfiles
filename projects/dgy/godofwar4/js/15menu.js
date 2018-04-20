@@ -34,7 +34,7 @@ gsDgyMenu = {
                 vDomNav += '<img class="light" src="'+item.nav.lgt+'" alt="innerNav">';
                 vDomNav += '</a>';
                 vDomList += '<div class="gsd-menu-innertab-box-item gsMenuTabInnerBoxItem'+isCur+'">';
-                vDomList += '<img class="box-pic gsdMenuLazy" src="http://image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="'+item.box.pic+'" alt="innerBox">';
+                vDomList += '<img class="box-pic gsdMenuLazy" src="//image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="'+item.box.pic+'" alt="innerBox">';
                 vDomList += '</div>';
             });
             vDom += '<div class="gsd-menu-innertab-box gsMenuTabInnerBox">';
@@ -83,7 +83,7 @@ gsDgyMenu = {
                 vDomNav += '<span>'+item.nav.txt+'</span>';
                 vDomNav += '</a>';
                 vDomList += '<div class="gsd-menu-innertab-box-item gsMenuTabInnerBoxItem'+isCur+'">';
-                vDomList += '<img class="box-pic gsdMenuLazy" src="http://image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="'+item.box.pic+'" alt="innerBox">';
+                vDomList += '<img class="box-pic gsdMenuLazy" src="//image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="'+item.box.pic+'" alt="innerBox">';
                 vDomList += '</div>';
             });
             vDom += '<div class="gsd-menu-innertab-box gsMenuTabInnerBox">';
@@ -138,7 +138,7 @@ gsDgyMenu = {
                 vDomList += '<div class="gsd-menu-innertab-box-item gsMenuTabInnerBoxItem'+isCur+'">';
                 vDomList += '<div class="gsd-menu-skill-infos">';
                 vDomList += '<div class="title">'+item.tit+'</div>';
-                vDomList += '<div class="pic"><img class="gsdMenuLazy" src="http://image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="'+item.pic+'" alt="innerBox"></div>';
+                vDomList += '<div class="pic"><img class="gsdMenuLazy" src="//image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="'+item.pic+'" alt="innerBox"></div>';
                 vDomList += '<div class="des"><p>'+item.des+'</p></div>';
                 vDomList += '<div class="state">'+item.state+'</div>';
                 vDomList += '<div class="plus">';
