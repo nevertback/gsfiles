@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>yk</title>
+    <style>
+        a.btn{
+            float: left;
+            margin-right: 10px;
+            cursor: pointer;
+            display: block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #eee;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="youkuplayer" style="width:480px;height:400px"></div>
+<hr>
+<a class="btn" id="testYkplay">play</a>
+<a class="btn" id="testYkpause">pause</a>
+<a class="btn" id="testYkseekto">seekTo 10</a>
+<a class="btn" id="testYkcurrentTime">currentTime</a>
+<script type="text/javascript" src="//player.youku.com/jsapi"></script>
+<script type="text/javascript">
+    var player = new YKU.Player('youkuplayer',{
+        styleid: '0',
+        client_id: '6bfe5b183f11e7d9',
+        vid: 'XMzU0NjYwNzIzNg',
+        newPlayer: true,
+        show_related: false,
+        autoplay: true,
+        events:{
+            onPlayEnd: function(){
+                console.log('events onPlayEnd');
+            },
+            onPlayerReady: function(){
+                console.log('events onPlayerReady');
+            },
+            onPlayStart: function(){
+                console.log('events onPlayStart');
+            }
+        }
+    });
+    function onPlayerStart(){
+        console.log('play')
+    }
+    function onPlayEnd(){
+        console.log('end')
+    }
+    window.addEventListener('message', function(e) {
+        var data = e.data;
+        switch (data.msg) {
+            case "onPlayerStart":
+            {
+                onPlayerStart();
+                break;
+            }
+            case "onPlayEnd":
+            {
+                onPlayEnd();
+                break;
+            }
+            case 'onTimeUpdate':
+            {
+                console.info(data.time);
+                break;
+            }
+            case "state":
+            { //playing或pause
+                console.info(data.stateParam);
+                var state = data.stateParam;
+                console.info(state);
+                break;
+            }
+        }
+    }, false);
+    /*
+    function pauseVideo(){
+        player.pauseVideo();
+    }
+    function playVideo(){
+        player.playVideo();
+    }
+    function seekTo(s){
+        player.seekTo(s);
+    }
+    function currentTime(){
+        return player.currentTime();
+    }
+    document.getElementById('testYkplay').onclick = function () {
+        console.log('testYkplay clicked');
+        playVideo()
+    };
+    document.getElementById('testYkpause').onclick = function () {
+        console.log('testYkpause clicked');
+        pauseVideo()
+    };
+    document.getElementById('testYkseekto').onclick = function () {
+        console.log('testYkseekto clicked');
+        seekTo(10);
+    };
+    document.getElementById('testYkcurrentTime').onclick = function () {
+        console.log('testYkcurrentTime clicked');
+        console.log('currentTime:'+currentTime());
+    };
+    */
+
+</script>
+</body>
+</html>

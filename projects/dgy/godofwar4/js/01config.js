@@ -1,0 +1,28 @@
+var gsDgyConfig = {
+    env:'dev',
+    ieForbiddenVer:11,
+    baseSize:{
+        w:1920,
+        h:1080
+    },
+    commentOpen:true,
+    countid:1038357,
+    bgm:{
+        txt:['打开声音','关闭声音'],
+        nowplay:'',
+        mute:true,
+        volClk:false,
+        isVideoPlaying:false
+    },
+    staticUrl:{
+        channel:'//www.gamersky.com/zl/preview/',
+        club:'//i.gamersky.com/club/2',
+        ku:'',
+        pc:''
+    },
+    menu:{
+        data:'data/menu.data.js',
+        select:'weapon'
+    },
+    isCommOpen:false
+};

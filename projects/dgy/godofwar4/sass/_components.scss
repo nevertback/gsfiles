@@ -1,134 +1,344 @@
-.others-area{
-    position: relative;
-    width: 463px;
-    .zanbtn{
-        @include sprite($zan-bg);
-        @include flexbox;
-        @include ConCen;
-        .ico_zan{
-            display: block;
-            margin-right: 3px;
-            @include sprite($zan);
+/*
+ * IE屏蔽提示
+ */
+.ie-notice{
+    display: none;
+    position: absolute;top: 0;left: 0;
+    width: 100%;height: 100%;
+    background:url('http://img1.gamersky.com/image2016/06/20160603_zl_91_4/ielt9.jpg') center center no-repeat;
+    p{
+        padding-top: 25%;
+        font-size: 22px;text-align: center;line-height: 40px;
+        span{color: #ff6600}
+    }
+}
+.ie-forbidden{
+    .ie-notice{
+        display: block;
+    }
+}
+/*
+ * 主区域
+ */
+.gs-dgy-main{
+    position: absolute;
+}
+/*
+ * 音乐开关
+ */
+.music-btn{
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 429px;
+    @include sprite($vol-play);
+    &.cur{
+        display: block;
+    }
+    &:hover{
+        @include sprite($vol-play-h);
+    }
+    &.pause{
+        @include sprite($vol-pause);
+        &:hover{
+            @include sprite($vol-pause-h);
         }
-        span{
+    }
+}
+/*
+ * 导航按钮
+ */
+.fx-btn{
+    display: block;
+    position: absolute;
+    &.fx-menu{
+        top: 481px;
+        right: 29px;
+        @include sprite($fx-menu);
+        &:hover{
+            @include sprite($fx-menu-h);
+        }
+    }
+    &.fx-comm{
+        top: 556px;
+        right: 40px;
+        @include sprite($fx-comm);
+        &:hover{
+            @include sprite($fx-comm-h);
+        }
+    }
+}
+/*
+ * loading页面
+ */
+//loading
+.gs-dgy-loading-mask{
+    position: absolute;left: 0;top: 0;
+    width: 100%;height: 100%;
+    background-color: #000;
+}
+//预加载
+#jpreOverlay{
+    background-color: #000;
+    #jpreLoader{display: none;}
+}
+#jpreSlide{
+    width: 100%;height: 100%;
+}
+.gs-dgy-loading{
+    $ldWidth:906px;$ldHeight:203px;
+    display: block;position: absolute;top: 50%;left: 50%;margin-left: -$ldWidth/2;margin-top: -($ldHeight + 40px)/2;
+    width: $ldWidth;height:$ldHeight + 40px;
+    .loadingAnim-img-g{
+        display: block;
+        width: $ldWidth;height:$ldHeight;
+    }
+    .loadingAnim-img{
+        display: block;position: absolute;top: 0;right: 0;
+        width: $ldWidth;height:$ldHeight;
+        overflow: hidden;
+        img{
+            display: block;position: absolute;top: 0;right: 0;
+            width: $ldWidth;height:$ldHeight;
+        }
+    }
+    .loadingtxt{
+        position: absolute;bottom: 0;left: 0;
+        width: $ldWidth;height:33px;line-height:33px;
+        font-size: 14px;color: #fff;text-align: center;
+    }
+}
+.gs-dgy-loading-tips{
+    display: none;position: absolute;top: 50%;left: 50%;margin-left: -400px;margin-top: -143px;
+    width: 800px;
+    .txt{
+        margin-bottom: 40px;
+        h5{
+            height: 34px;
+            line-height: 34px;
+            font-size: 24px;
+            color: #ffc24c;
+            text-align: center;
+            font-weight: normal;
+        }
+        img{
             display: block;
-            font-size: 16px;
-            color: #fff;
-            text-shadow: 0 0 5px #142d5a,0 2px 2px #142d5a,2px 0 2px #142d5a,-2px 0 2px #142d5a,0 -2px 2px #142d5a;
+            margin: 0 auto;
+            width: 161px;
+            height: 169px;
+        }
+        p{
+            line-height: 36px;
+            font-size: 18px;
+            color: #8a8a8a;
+            text-align: center;
             i{
                 font-style: normal;
+                color: #fff;
+            }
+            b{
+                font-weight: normal;
+                color: #ffc24c;
+            }
+            span{
+                font-size: 16px;
             }
         }
-        &:hover{
-            .ico_zan{@include sprite-position($zan-h);}
-        }
-        &.clked{
-            cursor: default;
-            .ico_zan{@include sprite-position($zan-h);}
-        }
     }
-    .btn-group{
-        padding-top: 14px;
-        text-align: center;
+    .btngroup{
         a{
-            display: inline-block;
-            margin: 0 7px;
-        }
-        .btn-buy{
-            @include sprite($other-btn-buy);
-            &:hover{@include sprite-position($other-btn-buy-h)}
-        }
-        .btn-club{
-            @include sprite($other-btn-club);
-            &:hover{@include sprite-position($other-btn-club-h)}
-        }
-        .btn-ku{
-            @include sprite($other-btn-ku);
-            &:hover{@include sprite-position($other-btn-ku-h)}
-        }
-        .btn-pc{
-            @include sprite($other-btn-pc);
-            &:hover{@include sprite-position($other-btn-pc-h)}
-        }
-        .btn-comm{
-            @include sprite($other-btn-comm);
-            &:hover{@include sprite-position($other-btn-comm-h)}
+            display: block;margin: 10px auto 0;
+            width: 160px;height: 40px;line-height: 40px;
+            background-color: #333;
+            font-size: 20px;color: #fff;text-align: center;
+            &:hover{background-color: #555}
         }
     }
 }
-.close{
-    display: block;
-    @include sprite($close);
-    transition:transform 0.25s ease;
-    &:hover{
-        @include sprite-position($close-h);
-        transform:rotate(180deg);
+/*
+ * 主页面
+ */
+.gs-dgy-pages{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    .gs-dgy-page{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #111;
+        opacity: 0;
+        visibility: hidden;
+        transition:all 0.4s ease;
+        &.cur{
+            opacity: 1;
+            visibility: visible;
+        }
+        .gsd-page-bg{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .gsd-page-main{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
-.audio-zm{
+.gsd-page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/*
+ * 百度分享
+ */
+.bdsharewrap.bdstyle-c{
+    width:240px;height:36px;
+    overflow: hidden;
+    .bdsharebuttonbox {
+        width:800px; height:36px;
+        *font-size: 0;
+        &:after,&.before{
+            display:table;content:" ";
+        }
+        &:after{clear:both}
+        a {
+            display: block;float:left; margin:0 4px 0 0; padding:0;
+            width:36px; height:36px;
+            background:url(../ztimages/baidu-share-icons.png) 0 0 no-repeat;
+            overflow: hidden;
+            &.bds_tsina {background-position:     0 0;}
+            &.bds_weixin{background-position: -40px 0;}
+            &.bds_qzone {background-position: -80px 0;}
+            &.bds_renren{background-position:-121px 0;}
+            &.bds_sqq	{background-position:-161px 0;}
+            &.bds_count	{background-position:-201px 0;}
+            &.bds_tieba,&.bds_douban,&.bds_more
+            {display: none}
+            &:hover{
+                opacity: 1;
+                &.bds_tsina {background-position:     0 -40px;}
+                &.bds_weixin{background-position: -40px -40px;}
+                &.bds_qzone {background-position: -80px -40px;}
+                &.bds_renren{background-position:-121px -40px;}
+                &.bds_sqq	{background-position:-161px -40px;}
+                &.bds_count	{background-position:-201px -40px;}
+            }
+            &.bds_count{
+                text-indent: 9999px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+/*
+ * 评论
+ */
+.gs-dgy-comment{
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    .audio-zm-skip{
-        display: block;
-        position: absolute;
-        right: 30px;
-        bottom: 30px;
-        @include sprite($task-next);
-        line-height: 60px;
-        font-size: 22px;
-        color: #fff;
-        text-indent: 80px;
-        &:hover{
-            @include sprite($task-next-h);
-        }
-    }
-    .audio-zm-txt{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100px;
-        font-size: 26px;
-        color: #fff;
-        text-align: center;
-        opacity: 0;
-        &.cur{
-            opacity: 1;
-        }
-    }
-}
-.mouse-scroll-tips{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -116px;
-    margin-top: -60px;
-    width: 232px;
-    height: 119px;
-    background: url(../ztimages/mouse-scroll.png) 0 0 no-repeat;
-    pointer-events: none;
-}
-.toast{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: -40px;
-    margin-left: -150px;
-    padding: 20px;
-    width: 300px;
-    line-height: 40px;
-    font-size: 22px;
-    color: #fff;
-    background-color: rgba(0,0,0,0.6);
-    text-align: center;
-    border-radius: 10px;
+    transition:all 0.25s ease;
+    transform:translate(100px,0);
     opacity: 0;
     visibility: hidden;
+    background: #1b1b1b url(../ztimages/bg-comm.jpg) center 0 no-repeat;
     &.cur{
-        animation: toastAnim 1s ease 1 both;
+        transform:translate(0,0);
+        opacity: 1;
+        visibility: visible;
+    }
+    .gsd-comment-close{
+        position: absolute;
+        top: 81px;
+        left: 50%;
+        margin-left: 487px;
+        @extend %close;
+    }
+    .gsd-comment{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        .gsd-comment-scl{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            .gsd-comment-context{
+                padding-top: 80px;
+                margin: 0 auto;
+                width: 950px;
+                .gsd-comment-context-area{
+                    padding:40px 40px 40px;
+                    background-color: rgba(0,0,0,0.85);
+                }
+            }
+        }
+    }
+}
+/*
+ * 页面固定元素
+ */
+.gs-dgy-static-cells{
+    width: 632px;
+    height: 98px;
+    background: url(../ztimages/sc-bg.png) 0 0 no-repeat;
+    a{
+        display: block;
+    }
+    .cells-zan{
+        position: absolute;
+        left: 264px;
+        top: -43px;
+        width: 94px;
+        height: 119px;
+        i{
+            font-style: normal;
+        }
+        .cells-zan-icon{
+            display: block;
+            @include sprite($sc-zan);
+        }
+        span{
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+        }
+        &:hover{
+            .cells-zan-icon{@include sprite-position($sc-zan-h);}
+        }
+        &.clked{
+            &:hover{
+                .cells-zan-icon{@include sprite-position($sc-zan);}
+            }
+        }
+    }
+    .cells-buy,.cells-back,.cells-comment{
+        display: block;
+        position: absolute;
+    }
+    .cells-buy,.cells-back{
+        left: 99px;
+        top: 18px;
+    }
+    .cells-comment{
+        left: 366px;
+        top: 18px;
     }
 }

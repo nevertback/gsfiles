@@ -1,0 +1,34 @@
+.ie-notice{
+    z-index: 10000;
+}
+.gs-dgy-loading-mask{
+    z-index: 9000;
+}
+.gs-dgy-loading-tips{
+    z-index: 9001;
+}
+.gsdBuy{
+    .role{
+        z-index: 2;
+    }
+    .sld .sld-arr{
+        z-index: 1;
+    }
+    .gsd-buy-pop-mask{
+        z-index: 3;
+    }
+    .gsd-buy-pop{
+        z-index: 4;
+    }
+}
+.gs-dgy-menu{
+    z-index: 10;
+}
+.music-btn{}
+.fx-menu{}
+.fx-comm{}
+.gsdStory{
+    .btn-skip{
+        z-index: 1;
+    }
+}

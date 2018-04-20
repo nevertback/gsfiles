@@ -24,9 +24,9 @@
     <meta name="keywords" content="">
     <meta name="description" content="战神新作大观园专题，全面聚合游戏资料，以代入感更强的方式为您展现游戏的乐趣。">
     <meta itemprop="name" content="战神大观园:体验15分钟，欣赏半小时|游民星空" />
-    <meta itemprop="image" content="ztimages/350.jpg" />
+    <meta itemprop="image" content="//img7.gamersky.com/zqimg/dgy/godofwar4/ztimages/350.jpg" />
     <link href="//j.gamersky.com/css/??g/normalize.min.css,g/lib/Swiper/4.2.2/swiper.min.css" rel="stylesheet">
-    <link href="css/main.min.css" rel="stylesheet">
+    <link href="//j.gamersky.com/zq/godofwar4/main.css" rel="stylesheet">
     <!-- 创建时间：20180413 设计：Drakedooog 前端：MrrrTian -->
 </head>
 <body>
@@ -34,12 +34,12 @@
 <div style="width:0;height:0;overflow:hidden">
     <h3>战神大观园:体验15分钟，欣赏半小时|游民星空</h3>
     <p>战神新作大观园专题，全面聚合游戏资料，以代入感更强的方式为您展现游戏的乐趣。</p>
-    <img src="ztimages/350.jpg" alt="战神大观园:体验15分钟，欣赏半小时|游民星空">
+    <img src="//img7.gamersky.com/zqimg/dgy/godofwar4/ztimages/350.jpg" alt="战神大观园:体验15分钟，欣赏半小时|游民星空">
 </div>
 <!-- 分享用 end-->
 <div class="ie-notice"><p>请使用<span>IE11及以上或非IE浏览器</span>浏览体验</p></div>
 <div class="sound_effect" style="display: none;">
-    <audio id="bgm" loop="loop" src="ztmedia/bgm.mp3"></audio>
+    <audio id="bgm" loop="loop" src="//img7.gamersky.com/zqimg/dgy/godofwar4/ztmedia/bgm.mp3"></audio>
 </div>
 <div class="gs-dgy-main" id="gsDgyMain">
     <div class="gs-dgy-pages">
@@ -61,7 +61,7 @@
             common: {
                 bdText: '战神大观园:体验15分钟，欣赏半小时|游民星空',
                 bdDesc: '战神新作大观园专题，全面聚合游戏资料，以代入感更强的方式为您展现游戏的乐趣。',
-                bdPic: 'ztimages/350.jpg'
+                bdPic: '//img7.gamersky.com/zqimg/dgy/godofwar4/ztimages/350.jpg'
             },
             share: [{
                 "bdSize": 16
@@ -72,7 +72,7 @@
     bdFunc();
 </script>
 <script type="text/javascript" src="//player.youku.com/jsapi"></script>
-<script src="jsmin/main.min.js"></script>
+<script src="//j.gamersky.com/zq/godofwar4/main.min.js"></script>
 <div style="display:none">
     <script type="text/javascript">
         var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " //");
