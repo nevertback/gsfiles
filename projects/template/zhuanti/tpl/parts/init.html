@@ -10,64 +10,58 @@
 	<meta name="keywords" content="@@tkd.keywords">
 	<meta name="description" content="@@tkd.description">
 	<meta itemprop="name" content="@@tkd.title" />
-	<meta itemprop="image" content="@@imagePath/350.jpg" />
-	<link href="http://j.gamersky.com/g/normalize.min.css" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="http://j.gamersky.com/web2015/css/QZnav.css" />
+	<meta itemprop="image" content="ztimages/350.jpg" />
+	<link href="//j.gamersky.com/g/normalize.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="//j.gamersky.com/web2015/css/QZnav.css" />
 	<link href="css/style.min.css" rel="stylesheet" inline>
-	<script type="text/javascript" src="http://j.gamersky.com/g/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="//j.gamersky.com/g/jquery-1.8.3.js"></script>
 	<!-- 创建时间：@@htmlInfos.createTime 设计：@@htmlInfos.des 前端：@@htmlInfos.dev -->
 </head>
 <body>
 <!-- 全站导航 -->
-<script type="text/javascript" src="http://www.gamersky.com/autoinc/allsite/allsite_nav_js.htm"></script>
-<!-- 分享用 -->
+<script type="text/javascript" src="//www.gamersky.com/autoinc/allsite/allsite_nav_js.htm"></script>
 <div style="width:0;height:0;overflow:hidden">
 	<h3>@@tkd.title</h3>
 	<p>@@tkd.description</p>
-	<img src="@@imagePath/350.jpg" alt="@@tkd.title">
+	<img src="ztimages/350.jpg" alt="@@tkd.title">
 </div>
-<!-- 分享用 end-->
-@@include('main.html',{"imagePath":"@@imagePath"})
+@@include('main.html',{"imagePath":"ztimages/"})
 @@include('comment.html',{"countId":"@@countId"})
-<!-- Bot -->
 <div class="Bot">
-	<script type="text/javascript" src="http://www.gamersky.com/autoinc/allsite/allsite_copyright_2_js.htm"></script>
+	<script type="text/javascript" src="//www.gamersky.com/autoinc/allsite/allsite_copyright_2_js.htm"></script>
 </div>
-<!--Bot end-->
 @@include('aside.html')
 <span id="countn" generalId="@@countId" style="display:none;"></span>
-<!-- 加载页面JS -->
-<script type="text/javascript" src="http://j.gamersky.com/g/jquery.gamersky.v4.min.js"></script>
-<script src="http://j.gamersky.com/g/jquery.SuperSlide.2.1.1.js"></script>
-<script type="text/javascript" src="jsmin/main.min.js" inline></script>
+<script src="//j.gamersky.com/g/jquery.gamersky.v4.min.js"></script>
+<script src="//j.gamersky.com/g/jquery.SuperSlide.2.1.1.js"></script>
+<script src="jsmin/main.min.js" inline></script>
 <script>
-    //百度
-    window._bd_share_config = {
-        common: {
-            bdText: '@@tkd.title',
-            bdDesc: '@@tkd.description',
-            bdPic: '@@imagePath/350.jpg'
-        },
-        share: [{
-            "bdSize": 16
-        }]
-    };
-    with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
-    // 评论
-    (function() {
-        var doc = document,
-            s = doc.createElement('script'),
-            h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
-        s.type = 'text/javascript';
-        s.charset = 'utf-8';
-        s.src = 'http://j.gamersky.com/web2015/comment/js/commentconfig.js';
-        h.insertBefore(s, h.firstChild);
-        window.SCS_NO_IFRAME = true;
-    })()
 </script>
-<!-- 加载页面JS end-->
 <div style="display:none">
 	<script type="text/javascript">
+        // 评论
+        (function() {
+            var doc = document,
+                s = doc.createElement('script'),
+                h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+            s.type = 'text/javascript';
+            s.charset = 'utf-8';
+            s.src = '//j.gamersky.com/web2015/comment/js/commentconfig.js';
+            h.insertBefore(s, h.firstChild);
+            window.SCS_NO_IFRAME = true;
+        })();
+        //百度
+        window._bd_share_config = {
+            common: {
+                bdText: '@@tkd.title',
+                bdDesc: '@@tkd.description',
+                bdPic: 'ztimages/350.jpg'
+            },
+            share: [{
+                "bdSize": 16
+            }]
+        };
+        with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = '/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
         var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
         document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdcb5060fba0123ff56d253331f28db6a' type='text/javascript'%3E%3C/script%3E"));
 	</script>

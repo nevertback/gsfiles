@@ -1,0 +1,454 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 860px;
+	background:url(#{$mpath}zt-bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.slogan{
+			display: block;
+			position: absolute;
+			left: -68px;
+			top: 205px;
+		}
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 30px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 26px;
+			@include sprite($logo-gs);
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 160px;
+			top: 23px;
+			@include sprite($logo-gf);
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			&.btn1{
+				left: 170px;
+				top: 596px;
+				@include sprite($s1-btn1);
+				&:hover{
+					@include sprite($s1-btn1-h);
+				}
+			}
+			&.btn2{
+				left: 394px;
+				top: 573px;
+				@include sprite($s1-btn2);
+				&:hover{
+					@include sprite($s1-btn2-h);
+				}
+			}
+			&.btn3{
+				left: 625px;
+				top: 521px;
+				@include sprite($s1-btn3);
+				&:hover{
+					@include sprite($s1-btn3-h);
+				}
+			}
+		}
+		.btn-play{
+			display: block;
+			position: absolute;
+			left: 405px;
+			top: 417px;
+			width: 77px;
+			height: 84px;
+			i{
+				display: block;
+				position: absolute;
+				&.round{
+					left: 0;
+					top: 0;
+					@include sprite($play-round);
+					animation: routate360 4s linear infinite;
+					transform-origin: 38.5px 44px;
+				}
+				&.arr{
+					left: 28px;
+					top: 26px;
+					@include sprite($play-arr);
+				}
+			}
+		}
+	}
+}
+.zt-section2{
+	height: 962px;
+	background:url(#{$mpath}zt-bg2.jpg) center 0 no-repeat;
+	.container{
+		padding-top: 200px;
+		.ztTab{
+			width: 1000px;
+			height: 745px;
+			.ztTabCon{
+				li{
+					position: relative;
+					width: 1000px;
+					height: 630px;
+					.para{
+						p{
+							line-height: 26px;
+							font-size: 16px;
+							color: #96bcd8;
+							text-indent: 32px;
+						}
+					}
+					.imgwrap{
+						position: absolute;
+						left: 18px;
+						top: 128px;
+						width: 963px;
+						height: 478px;
+						img{
+							display: block;
+						}
+					}
+				}
+			}
+			.ztTabNavWrap{
+				margin-bottom: 42px;
+				margin-left: 286px;
+				width: 424px - 61px;
+				ul{
+					width: 600px;
+					li{
+						a{
+							&.nav1{
+								@include sprite($s2-nav1);
+							}
+							&.nav2{
+								@include sprite($s2-nav2);
+							}
+						}
+						&.cur{
+							a{
+								&.nav1{
+									@include sprite-position($s2-nav1-h);
+								}
+								&.nav2{
+									@include sprite-position($s2-nav2-h);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 894px;
+	background:url(#{$mpath}zt-bg3.jpg) center 0 no-repeat;
+	.guns{
+		.gun-pic{
+            .pic-def{
+                display: block;
+            }
+            span{
+                display: block;
+                position: absolute;
+                z-index: 2;
+                padding:15px 28px;
+                width: 410px;
+                background: url(../ztimages/s3-tab-pop.png) 0 0 repeat;
+                pointer-events: none;
+                transition:all 0.25s ease;
+                opacity: 0;
+                visibility: hidden;
+                i{
+                    display: block;
+                    line-height: 26px;
+                    font-style: normal;
+                    font-size: 14px;
+                    color: #95bcd7;
+                    &.tit{
+                        line-height: 30px;
+                        font-size: 16px;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                }
+            }
+            &:hover{
+                span{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+		}
+		&.guns1{
+			padding-top: 56px;
+			.gun-pic{
+				position: relative;
+				display: block;
+				float: left;
+				margin-right: 30px;
+				@include sprite($s3-tab-link1-bg);
+                &:hover{
+                    @include sprite-position($s3-tab-link1-bg-h);
+                }
+			}
+			.guns-row1{
+				padding-left: 74px;
+				margin-bottom: 26px;
+                width: 960px;
+			}
+			.guns-row2{
+				padding-left: 231px;
+			}
+		}
+        &.guns2{
+            padding-top: 51px;
+            padding-left: 144px;
+            .gun-pic{
+                position: relative;
+                display: block;
+                @include sprite($s3-tab-link2-bg-h);
+                &:hover{
+                    @include sprite-position($s3-tab-link2-bg);
+                }
+            }
+        }
+        &.guns3{
+            padding-top: 56px;
+            .gun-pic{
+                position: relative;
+                display: block;
+            }
+            .guns-row1{
+                padding-left: 233px;
+                margin-bottom: 26px;
+                width: 960px;
+                .gun-pic{
+                    @include sprite($s3-tab-link3-bg);
+                    &:hover{
+                        @include sprite-position($s3-tab-link3-bg-h);
+                    }
+                }
+            }
+            .guns-row2{
+                padding-left: 233px;
+                width: 960px;
+                .gun-pic{
+                    float: left;
+                    margin-right: 30px;
+                    @include sprite($s3-tab-link1-bg);
+                    &:hover{
+                        @include sprite-position($s3-tab-link1-bg-h);
+                    }
+                }
+            }
+        }
+	}
+	.container{
+		padding-top: 250px;
+		.ztTabInner{
+			position: relative;
+			width: 1000px;
+			height: 510px;
+			.ztTabInnerCon{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				.ztTabInnerConItem{
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					transition:all 0.25s ease;
+					opacity: 0;
+					visibility: hidden;
+					&.cur{
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+			.ztTabInnerNav{
+				position: absolute;
+				left: 0;
+				top: 0;
+				padding-top: 36px;
+				width: 48px;
+				height: 478px;
+				background: url(../ztimages/s3-tab-nav.png) 0 0 no-repeat;
+				a{
+					position: relative;
+					display: block;
+					margin-bottom: 15px;
+					padding: 10px 0;
+					width: 48px;
+					i{
+						display: none;
+						position: absolute;
+						left: 44px;
+						top: 50%;
+						margin-top: -67px;
+						@include sprite($s3-tab-nav-c);
+					}
+					span{
+						display: block;
+						margin: 0 auto;
+						width: 25px;
+						line-height: 20px;
+						text-align: center;
+						font-size: 18px;
+						color: #7fceff;
+					}
+					&.cur{
+						i{
+							display: block;
+						}
+						span{
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		.ztTab{
+			width: 1000px;
+			height: 650px;
+			.ztTabCon{
+				li{
+					position: relative;
+					width: 1000px;
+					height: 510px;
+					.imgwrap301{
+						position: absolute;
+						left: 43px;
+						top: 36px;
+						img{
+							display: block;
+						}
+					}
+					.imgwrap303{
+						position: absolute;
+						left: 43px;
+						top: 36px;
+						img{
+							display: block;
+						}
+					}
+				}
+			}
+			.ztTabNavWrap{
+				margin-bottom: 47px;
+				margin-left: 212px;
+				width: 574px - 61px;
+				ul{
+					width: 600px;
+					li{
+						a{
+							&.nav1{@include sprite($s3-nav1);}
+							&.nav2{@include sprite($s3-nav2);}
+							&.nav3{@include sprite($s3-nav3);}
+						}
+						&.cur{
+							a{
+								&.nav1{@include sprite-position($s3-nav1-h);}
+								&.nav2{@include sprite-position($s3-nav2-h);}
+								&.nav3{@include sprite-position($s3-nav3-h);}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section4{
+	height: 799px;
+	background:url(#{$mpath}zt-bg4.jpg) center 0 no-repeat;
+    .container{
+        position: relative;
+        padding-top: 275px;
+        .paras{
+            margin-bottom: 16px;
+            padding-left: 72px;
+            width: 1000px;
+            height: 52px;
+            .para{
+                float: left;
+                margin-right: 40px;
+                width: 400px;
+                p{
+                    line-height: 26px;
+                    text-indent: 52px;
+                    font-size: 16px;
+                    color: #96bcd8;
+                }
+            }
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+.zt-section5{
+	height: 852px;
+	background:url(#{$mpath}zt-bg5.jpg) center 0 no-repeat;
+    .container{
+        position: relative;
+        padding-top: 276px;
+        img{
+            display: block;
+            position: absolute;
+            left: 45px;
+            top: 269px;
+        }
+        .infos{
+            padding-left: 469px;
+            line-height: 26px;
+            .tit{
+                &.tit1{@include sprite($s5-tit1);}
+                &.tit2{
+                    margin-top: 23px;
+                    @include sprite($s5-tit2);
+                }
+            }
+            h5{
+                margin-top: 10px;
+                padding-left: 20px;
+                font-size: 16px;
+                color: #fff;
+            }
+            p{
+                padding-left: 20px;
+                font-size: 14px;
+                color: #95bcd7;
+            }
+        }
+    }
+}
+.zt-sectionComm{
+	padding-bottom: 60px;
+	height:auto;
+	.container{
+		position: relative;
+		padding-top: 60px;
+	}
+}
+@keyframes routate360 {
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+

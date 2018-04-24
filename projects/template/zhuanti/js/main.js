@@ -1,3 +1,5 @@
+var test = require('m/test.js');
+test();
 (function($){
     $.fn.gsPopup = function(options){
         var defaults = {

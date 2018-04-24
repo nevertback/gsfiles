@@ -1,0 +1,149 @@
+.bdsharewrap.bdstyle-c{width:242px;height:36px;overflow:hidden}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox{width:800px;height:36px;*font-size:0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox.before,.bdsharewrap.bdstyle-c .bdsharebuttonbox:after{display:table;content:" "}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox:after{clear:both}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a{float:left;margin:0 4px 0 0;padding:0;display:inline-block;*display:inline;*zoom:1;width:37px;height:36px;background:url(http://image.gamersky.com/webimg13/zhuanti/cf8zn/fx.png) 0 0 no-repeat}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tsina{background-position:0 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_weixin{background-position:-40px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_qzone{background-position:-80px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_renren{background-position:-121px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_sqq{background-position:-161px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_count{background-position:-200px 0;text-indent:9999px;white-space:nowrap;overflow:hidden}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_douban,.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_more,.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tieba{display:none}
+body,html{min-width:1280px}
+body{font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px}
+h1,h2,h3,h4,h5,p,ul{margin:0;padding:0;list-style:none}
+a{text-decoration:none;cursor:pointer}
+.clearfix:after,.clearfix:before,.container:after,.container:before{display:table;content:" "}
+.clearfix:after,.container:after{clear:both}
+.container{margin-right:auto;margin-left:auto;width:1000px}
+.zt-section{margin:0;padding:0;overflow:hidden;width:100%;min-width:1000px}
+.QZnav{min-width:1000px}
+.QZnav .topbar{width:1000px}
+.QZnav .QZ-nav{display:none}
+.Bot{width:100%;min-width:1000px;height:150px;background:#141414;font-size:14px}
+.Bot .Copyright{margin:0 auto;padding-top:45px;width:1000px;height:auto;line-height:30px;text-align:center;color:#555}
+.Bot .Copyright a{margin:0 5px;color:#555}
+.Bot .Copyright a:hover{color:#777}
+.gsPopupMask{position:fixed;z-index:99998;top:0;left:0;width:100%;height:100%;background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
+.gsPopupMask.cur{opacity:1;visibility:visible}
+.gsPopup{z-index:99999;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
+.gsPopup .gsPopupCon{width:100%;height:100%;background-color:#000}
+.gsPopup .gsPopupCon img{display:block}
+.gsPopup .gsPopupCon video{display:block;width:100%;height:100%}
+.gsPopup .gsPopupClose{position:absolute;top:0;right:-50px;overflow:hidden;width:38px;height:38px;background:url(http://image.gamersky.com/webimg13/zhuanti/common/gsPopupClose.png) 5px 5px no-repeat}
+.gsPopup .gsPopupClose:hover{background-position:-33px 5px}
+.gsPopup.cur{opacity:1;visibility:visible}
+.fixednav{display:none;position:fixed;left:50%;top:50%;margin-left:554px;margin-top:-160px;z-index:999;padding-top:67px;width:95px;height:202px;background:url(../ztimages/fx-bg.png) 0 0 no-repeat}
+.fixednav li{display:block;width:95px;height:30px}
+.fixednav li a{display:block;width:95px;height:30px;line-height:30px;font-size:14px;color:#9dcaf1;text-align:center}
+.fixednav li a.cur,.fixednav li a:hover{color:#ffd218}
+.fixednav.cur{display:block}
+.ztTab .ztTabNavWrap{position:relative;margin-left:286px;padding-left:61px;height:49px;background:url(../ztimages/nav-wrap.png) 0 bottom no-repeat}
+.ztTab .ztTabNavWrap .ztTabNavWrapRight{position:absolute;top:0;right:0;padding-right:120px;height:49px;background:url(../ztimages/nav-wrap.png) right bottom no-repeat}
+.ztTab .ztTabNavWrap ul{position:relative}
+.ztTab .ztTabNavWrap ul li{cursor:pointer;position:relative;float:left;margin-right:-20px;padding-top:16px;background-image:url(../ztimages/csprite.png);background-position:-934px -657px;width:163px;height:49px;height:33px}
+.ztTab .ztTabNavWrap ul li.cur{background-position:-763px -657px;z-index:1}
+.ztTab .ztTabNavWrap ul li a{display:block;margin:0 auto}
+.ztTab .ztTabNavWrap ul li a.nav1{background-image:url(../ztimages/csprite.png);background-position:-1077px -714px;width:106px;height:16px}
+.zt-section1{height:860px;background:url(../ztimages/zt-bg1.jpg) center 0 no-repeat}
+.zt-section1 .container{position:relative}
+.zt-section1 .container .slogan{display:block;position:absolute;left:-68px;top:205px}
+.zt-section1 .container .bdsharewrap.bdstyle-c{position:absolute;top:30px;right:0}
+.zt-section1 .container .logo_gs{display:block;position:absolute;left:0;top:26px;background-image:url(../ztimages/csprite.png);background-position:-1105px -657px;width:139px;height:45px}
+.zt-section1 .container .logo_gf{display:block;position:absolute;left:160px;top:23px;background-image:url(../ztimages/csprite.png);background-position:-992px -758px;width:113px;height:51px}
+.zt-section1 .container .btn{display:block;position:absolute}
+.zt-section1 .container .btn.btn1{left:170px;top:596px;background-image:url(../ztimages/csprite.png);background-position:0 -758px;width:240px;height:110px}
+.zt-section1 .container .btn.btn1:hover{background-image:url(../ztimages/csprite.png);background-position:-496px -758px;width:240px;height:110px}
+.zt-section1 .container .btn.btn2{left:394px;top:573px;background-image:url(../ztimages/csprite.png);background-position:-1011px -538px;width:240px;height:111px}
+.zt-section1 .container .btn.btn2:hover{background-image:url(../ztimages/csprite.png);background-position:-763px -538px;width:240px;height:111px}
+.zt-section1 .container .btn.btn3{left:625px;top:521px;background-image:url(../ztimages/csprite.png);background-position:-248px -758px;width:240px;height:110px}
+.zt-section1 .container .btn.btn3:hover{background-image:url(../ztimages/csprite.png);background-position:-744px -758px;width:240px;height:110px}
+.zt-section1 .container .btn-play{display:block;position:absolute;left:405px;top:417px;width:77px;height:84px}
+.zt-section1 .container .btn-play i{display:block;position:absolute}
+.zt-section1 .container .btn-play i.round{left:0;top:0;background-image:url(../ztimages/csprite.png);background-position:-1259px -538px;width:77px;height:84px;-webkit-animation:routate360 4s linear infinite;animation:routate360 4s linear infinite;-webkit-transform-origin:38.5px 44px;-ms-transform-origin:38.5px 44px;transform-origin:38.5px 44px}
+.zt-section1 .container .btn-play i.arr{left:28px;top:26px;background-image:url(../ztimages/csprite.png);background-position:-26px -876px;width:28px;height:34px}
+.zt-section2{height:962px;background:url(../ztimages/zt-bg2.jpg) center 0 no-repeat}
+.zt-section2 .container{padding-top:200px}
+.zt-section2 .container .ztTab{width:1000px;height:745px}
+.zt-section2 .container .ztTab .ztTabCon li{position:relative;width:1000px;height:630px}
+.zt-section2 .container .ztTab .ztTabCon li .para p{line-height:26px;font-size:16px;color:#96bcd8;text-indent:32px}
+.zt-section2 .container .ztTab .ztTabCon li .imgwrap{position:absolute;left:18px;top:128px;width:963px;height:478px}
+.zt-section2 .container .ztTab .ztTabCon li .imgwrap img{display:block}
+.zt-section2 .container .ztTab .ztTabNavWrap{margin-bottom:42px;margin-left:286px;width:363px}
+.zt-section2 .container .ztTab .ztTabNavWrap ul{width:600px}
+.zt-section2 .container .ztTab .ztTabNavWrap ul li a.nav1{background-image:url(../ztimages/csprite.png);background-position:-1077px -714px;width:106px;height:16px}
+.zt-section2 .container .ztTab .ztTabNavWrap ul li a.nav2{background-image:url(../ztimages/csprite.png);background-position:-992px -817px;width:78px;height:16px}
+.zt-section2 .container .ztTab .ztTabNavWrap ul li.cur a.nav1{background-position:-1191px -714px}
+.zt-section2 .container .ztTab .ztTabNavWrap ul li.cur a.nav2{background-position:-1205px -782px}
+.zt-section3{height:894px;background:url(../ztimages/zt-bg3.jpg) center 0 no-repeat}
+.zt-section3 .guns .gun-pic .pic-def{display:block}
+.zt-section3 .guns .gun-pic span{display:block;position:absolute;z-index:2;padding:15px 28px;width:410px;background:url(../ztimages/s3-tab-pop.png) 0 0 repeat;pointer-events:none;-webkit-transition:all .25s ease;transition:all .25s ease;opacity:0;visibility:hidden}
+.zt-section3 .guns .gun-pic span i{display:block;line-height:26px;font-style:normal;font-size:14px;color:#95bcd7}
+.zt-section3 .guns .gun-pic span i.tit{line-height:30px;font-size:16px;color:#fff;font-weight:700}
+.zt-section3 .guns .gun-pic:hover span{opacity:1;visibility:visible}
+.zt-section3 .guns.guns1{padding-top:56px}
+.zt-section3 .guns.guns1 .gun-pic{position:relative;display:block;float:left;margin-right:30px;background-image:url(../ztimages/csprite.png);background-position:-1051px -360px;width:280px;height:170px}
+.zt-section3 .guns.guns1 .gun-pic:hover{background-position:-763px -360px}
+.zt-section3 .guns.guns1 .guns-row1{padding-left:74px;margin-bottom:26px;width:960px}
+.zt-section3 .guns.guns1 .guns-row2{padding-left:231px}
+.zt-section3 .guns.guns2{padding-top:51px;padding-left:144px}
+.zt-section3 .guns.guns2 .gun-pic{position:relative;display:block;background-image:url(../ztimages/csprite.png);background-position:0 0;width:755px;height:371px}
+.zt-section3 .guns.guns2 .gun-pic:hover{background-position:0 -379px}
+.zt-section3 .guns.guns3{padding-top:56px}
+.zt-section3 .guns.guns3 .gun-pic{position:relative;display:block}
+.zt-section3 .guns.guns3 .guns-row1{padding-left:233px;margin-bottom:26px;width:960px}
+.zt-section3 .guns.guns3 .guns-row1 .gun-pic{background-image:url(../ztimages/csprite.png);background-position:-763px 0;width:585px;height:172px}
+.zt-section3 .guns.guns3 .guns-row1 .gun-pic:hover{background-position:-763px -180px}
+.zt-section3 .guns.guns3 .guns-row2{padding-left:233px;width:960px}
+.zt-section3 .guns.guns3 .guns-row2 .gun-pic{float:left;margin-right:30px;background-image:url(../ztimages/csprite.png);background-position:-1051px -360px;width:280px;height:170px}
+.zt-section3 .guns.guns3 .guns-row2 .gun-pic:hover{background-position:-763px -360px}
+.zt-section3 .container{padding-top:250px}
+.zt-section3 .container .ztTabInner{position:relative;width:1000px;height:510px}
+.zt-section3 .container .ztTabInner .ztTabInnerCon{position:relative;width:100%;height:100%}
+.zt-section3 .container .ztTabInner .ztTabInnerCon .ztTabInnerConItem{position:absolute;left:0;top:0;width:100%;height:100%;-webkit-transition:all .25s ease;transition:all .25s ease;opacity:0;visibility:hidden}
+.zt-section3 .container .ztTabInner .ztTabInnerCon .ztTabInnerConItem.cur{opacity:1;visibility:visible}
+.zt-section3 .container .ztTabInner .ztTabInnerNav{position:absolute;left:0;top:0;padding-top:36px;width:48px;height:478px;background:url(../ztimages/s3-tab-nav.png) 0 0 no-repeat}
+.zt-section3 .container .ztTabInner .ztTabInnerNav a{position:relative;display:block;margin-bottom:15px;padding:10px 0;width:48px}
+.zt-section3 .container .ztTabInner .ztTabInnerNav a i{display:none;position:absolute;left:44px;top:50%;margin-top:-67px;background-image:url(../ztimages/csprite.png);background-position:0 -876px;width:18px;height:135px}
+.zt-section3 .container .ztTabInner .ztTabInnerNav a span{display:block;margin:0 auto;width:25px;line-height:20px;text-align:center;font-size:18px;color:#7fceff}
+.zt-section3 .container .ztTabInner .ztTabInnerNav a.cur i{display:block}
+.zt-section3 .container .ztTabInner .ztTabInnerNav a.cur span{color:#fff}
+.zt-section3 .container .ztTab{width:1000px;height:650px}
+.zt-section3 .container .ztTab .ztTabCon li{position:relative;width:1000px;height:510px}
+.zt-section3 .container .ztTab .ztTabCon li .imgwrap301{position:absolute;left:43px;top:36px}
+.zt-section3 .container .ztTab .ztTabCon li .imgwrap301 img{display:block}
+.zt-section3 .container .ztTab .ztTabCon li .imgwrap303{position:absolute;left:43px;top:36px}
+.zt-section3 .container .ztTab .ztTabCon li .imgwrap303 img{display:block}
+.zt-section3 .container .ztTab .ztTabNavWrap{margin-bottom:47px;margin-left:212px;width:513px}
+.zt-section3 .container .ztTab .ztTabNavWrap ul{width:600px}
+.zt-section3 .container .ztTab .ztTabNavWrap ul li a.nav1{background-image:url(../ztimages/csprite.png);background-position:-1113px -782px;width:84px;height:16px}
+.zt-section3 .container .ztTab .ztTabNavWrap ul li a.nav2{background-image:url(../ztimages/csprite.png);background-position:-1259px -630px;width:84px;height:16px}
+.zt-section3 .container .ztTab .ztTabNavWrap ul li a.nav3{background-image:url(../ztimages/csprite.png);background-position:-1252px -657px;width:84px;height:16px}
+.zt-section3 .container .ztTab .ztTabNavWrap ul li.cur a.nav1{background-position:-1205px -758px}
+.zt-section3 .container .ztTab .ztTabNavWrap ul li.cur a.nav2{background-position:-1113px -758px}
+.zt-section3 .container .ztTab .ztTabNavWrap ul li.cur a.nav3{background-position:-1252px -681px}
+.zt-section4{height:799px;background:url(../ztimages/zt-bg4.jpg) center 0 no-repeat}
+.zt-section4 .container{position:relative;padding-top:275px}
+.zt-section4 .container .paras{margin-bottom:16px;padding-left:72px;width:1000px;height:52px}
+.zt-section4 .container .paras .para{float:left;margin-right:40px;width:400px}
+.zt-section4 .container .paras .para p{line-height:26px;text-indent:52px;font-size:16px;color:#96bcd8}
+.zt-section4 .container img{display:block;margin:0 auto}
+.zt-section5{height:852px;background:url(../ztimages/zt-bg5.jpg) center 0 no-repeat}
+.zt-section5 .container{position:relative;padding-top:276px}
+.zt-section5 .container img{display:block;position:absolute;left:45px;top:269px}
+.zt-section5 .container .infos{padding-left:469px;line-height:26px}
+.zt-section5 .container .infos .tit.tit1{background-image:url(../ztimages/csprite.png);background-position:-920px -714px;width:149px;height:35px}
+.zt-section5 .container .infos .tit.tit2{margin-top:23px;background-image:url(../ztimages/csprite.png);background-position:-763px -714px;width:149px;height:35px}
+.zt-section5 .container .infos h5{margin-top:10px;padding-left:20px;font-size:16px;color:#fff}
+.zt-section5 .container .infos p{padding-left:20px;font-size:14px;color:#95bcd7}
+.zt-sectionComm{padding-bottom:60px;height:auto}
+.zt-sectionComm .container{position:relative;padding-top:60px}
+@-webkit-keyframes routate360{
+0%{-webkit-transform:rotate(0);transform:rotate(0)}
+100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}
+@keyframes routate360{
+0%{-webkit-transform:rotate(0);transform:rotate(0)}
+100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}
