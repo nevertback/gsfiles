@@ -1,0 +1,612 @@
+body, html {
+    font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    min-width: 1280px;
+}
+h1, h2, h3, h4, h5, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.yyzq_starwrap {
+    &:after, &:before {
+        display: table;
+        content: " ";
+    }
+    &:after {
+        clear: both;
+    }
+}
+.bdsharewrap.bdstyle-c {
+    width: 274px;
+    height: 28px;
+    overflow: hidden;
+    .bdsharebuttonbox {
+        width: 800px;
+        height: 28px;
+        &.before {
+            display: table;
+            content: " ";
+        }
+        &:after {
+            display: table;
+            content: " ";
+            clear: both;
+        }
+        a {
+            float: left;
+            margin: 0 2px 0 0;
+            padding: 0;
+            display: inline-block;
+            width: 44px;
+            height: 28px;
+            background: url(http://image.gamersky.com/webimg13/zhuanti/common/fx8.png) 0 0 no-repeat;
+            &.bds_tsina {
+                background-position: 0 0;
+            }
+            &.bds_weixin {
+                background-position: -46px 0;
+            }
+            &.bds_qzone {
+                background-position: -92px 0;
+            }
+            &.bds_tieba {
+                background-position: -138px 0;
+            }
+            &.bds_renren, &.bds_douban, &.bds_sqq {
+                display: none;
+            }
+            &.bds_more {
+                background-position: -184px 0;
+            }
+            &.bds_count {
+                background-position: -230px 0;
+                font-size: 12px;
+                text-align: center;
+                line-height: 28px;
+                color: #333;
+            }
+        }
+    }
+}
+.container {
+    &:after, &:before {
+        display: table;
+        content: " ";
+    }
+}
+.container {
+    &:after {
+        clear: both;
+    }
+    margin-right: auto;
+    margin-left: auto;
+    width: 1100px;
+}
+.QZnav {
+    min-width: 1100px;
+    .topbar {
+        width: 1100px;
+    }
+}
+.Mid {
+    padding: 20px;
+    width: 1060px;
+    background-color: #f2f2f3;
+}
+.yyzq_wbg {
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.yyzq_tit {
+    position: relative;
+    padding-left: 55px;
+    margin: 30px 0 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #262626;
+    font-weight: 400;
+    i {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        background-color: #e34312;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        &.icon_pics {
+            background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-pics.png);
+        }
+        &.icon_hot {
+            background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-hot.png);
+        }
+        &.icon_comm {
+            background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-comm.png);
+        }
+    }
+}
+.yyzq_starwrap {
+    width: 200px;
+    height: 17px;
+    i {
+        display: block;
+        margin-right: 2px;
+        float: left;
+        width: 18px;
+        height: 17px;
+        background: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-star.png) 0 0 no-repeat;
+    }
+    &.yyzq_starwrap1 {
+        .yyzq_s1 {
+            background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-star.png);
+        }
+        .yyzq_s2, .yyzq_s3, .yyzq_s4, .yyzq_s5 {
+            background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-star-k.png);
+        }
+    }
+    &.yyzq_starwrap2 {
+        .yyzq_s1, .yyzq_s2 {
+            background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-star.png);
+        }
+        .yyzq_s3, .yyzq_s4, .yyzq_s5 {
+            background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-star-k.png);
+        }
+    }
+    &.yyzq_starwrap3 {
+        .yyzq_s1, .yyzq_s2, .yyzq_s3 {
+            background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-star.png);
+        }
+        .yyzq_s4, .yyzq_s5 {
+            background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-star-k.png);
+        }
+    }
+    &.yyzq_starwrap4 {
+        .yyzq_s1, .yyzq_s2, .yyzq_s3, .yyzq_s4 {
+            background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-star.png);
+        }
+        .yyzq_s5 {
+            background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-star-k.png);
+        }
+    }
+    &.yyzq_starwrap5 {
+        .yyzq_s1, .yyzq_s2, .yyzq_s3, .yyzq_s4, .yyzq_s5 {
+            background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-star.png);
+        }
+    }
+}
+.yyzq_crumb {
+    margin-bottom: 15px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #888;
+    a, span {
+        font-size: 14px;
+        color: #888;
+    }
+    a:hover {
+        color: #e34312;
+    }
+}
+.yyzq_gameinfos {
+    padding: 20px 10px 20px 20px;
+    .yyzq_gameinfos_t {
+        .yyzq_gameinfos_t_l, .yyzq_gameinfos_t_m, .yyzq_gameinfos_t_r {
+            float: left;
+            height: 224px;
+        }
+        .yyzq_gameinfos_t_l {
+            width: 360px;
+            height: 226px;
+        }
+        .yyzq_gameinfos_t_m {
+            margin-left: 20px;
+            width: 418px;
+            border-right: 2px solid #f2f2f3;
+            border-bottom: 2px solid #f2f2f3;
+            h5 {
+                margin-bottom: 9px;
+                padding-right: 10px;
+                height: 44px;
+                line-height: 44px;
+                font-size: 22px;
+                color: #333;
+                font-weight: 700;
+                overflow: hidden;
+            }
+            .yyzq_gi_row {
+                position: relative;
+                margin-bottom: 10px;
+                width: 400px;
+                max-height: 80px;
+                line-height: 20px;
+                font-size: 14px;
+                color: #666;
+                overflow: hidden;
+                a, span {
+                    font-size: 14px;
+                    color: #666;
+                }
+                a:hover {
+                    color: #e34312;
+                }
+                .yyzq_starwrap {
+                    position: absolute;
+                    top: 1px;
+                    left: 73px;
+                }
+            }
+        }
+        .yyzq_gameinfos_t_r {
+            padding-left: 52px;
+            padding-top: 20px;
+            width: 170px;
+            height: 204px;
+            border-bottom: 2px solid #f2f2f3;
+            img {
+                display: block;
+                margin-bottom: 5px;
+                width: 140px;
+                height: 140px;
+            }
+            p {
+                width: 140px;
+                line-height: 18px;
+                font-size: 14px;
+                color: #666;
+                text-align: center;
+            }
+        }
+    }
+    .yyzq_gameinfos_b {
+        position: relative;
+        margin-top: 20px;
+        .yyzq_gi_btngroup a {
+            display: block;
+            float: left;
+            width: 170px;
+            height: 50px;
+            span {
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                color: #fff;
+                background-repeat: no-repeat;
+            }
+            &.yyzq_gi_btn1 {
+                margin-right: 20px;
+                background-color: #6ab83b;
+                span {
+                    padding-left: 66px;
+                    background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-game.png);
+                    background-position: 27px 15px;
+                }
+                &:hover {
+                    background-color: #75cb40;
+                }
+            }
+            &.yyzq_gi_btn2 {
+                background-color: #f03c56;
+                span {
+                    padding-left: 71px;
+                    background-image: url(http://image.gamersky.com/webimg15/yeyou/pc/icons-gift.png);
+                    background-position: 31px 12px;
+                }
+                &:hover {
+                    background-color: #ff5069;
+                }
+            }
+        }
+        .yyzq_gi_bd {
+            position: absolute;
+            top: 12px;
+            right: 10px;
+            height: 28px;
+            line-height: 28px;
+            span {
+                display: block;
+                float: right;
+                margin-right: 5px;
+            }
+            .bdsharewrap {
+                float: right;
+            }
+        }
+        .yyzq_gi_fav {
+            position: absolute;
+            top: 12px;
+            left: 584px;
+            width: 90px;
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+            color: #666;
+            a {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 44px;
+                height: 28px;
+                background: #e22200 url(http://image.gamersky.com/webimg15/yeyou/pc/icons-fav.png) center center no-repeat;
+                &:hover {
+                    background-color: #ff3916;
+                }
+            }
+        }
+    }
+}
+.yyzq_gamepics .yyzq_picswrap {
+    position: relative;
+    padding: 30px 60px;
+    .yyzq_pics {
+        position: relative;
+        width: 940px;
+        height: 360px;
+        overflow: hidden;
+        .yyzq_picsCon li {
+            margin-right: 20px;
+            width: 202px;
+            height: 360px;
+            a, img {
+                display: block;
+                width: 202px;
+                height: 360px;
+            }
+        }
+    }
+    .yyzq_picsArr {
+        display: block;
+        position: absolute;
+        top: 188px;
+        width: 25px;
+        height: 44px;
+        background: url(http://image.gamersky.com/webimg15/yeyou/pc/arrow.png) 0 0 no-repeat;
+        &.yyzq_picsPrev {
+            background-position: 0 0;
+            left: 17px;
+        }
+        &.yyzq_picsNext {
+            background-position: 0 -50px;
+            right: 17px;
+        }
+        &.yyzq_picsPrev:hover {
+            background-position: -30px 0;
+        }
+        &.yyzq_picsNext:hover {
+            background-position: -30px -50px;
+        }
+    }
+}
+.yyzq_gamerec .yyzq_gamerec_list {
+    width: 1100px;
+    li {
+        position: relative;
+        float: left;
+        padding: 18px 18px 14px 22px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+        height: 88px;
+        .imgwrap {
+            display: block;
+            img {
+                display: block;
+                width: 88px;
+                height: 88px;
+                border-radius: 10px;
+            }
+        }
+        .txtwrap {
+            position: absolute;
+            left: 126px;
+            top: 18px;
+            width: 197px;
+            height: 88px;
+            h5 {
+                margin-bottom: 4px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 20px;
+                color: #222;
+                overflow: hidden;
+                a {
+                    font-size: 20px;
+                    color: #222;
+                    font-weight: 700;
+                    &:hover {
+                        color: #e34312;
+                    }
+                }
+            }
+            .yyzq_gamerec_list_time {
+                position: relative;
+                margin-bottom: 4px;
+                padding-left: 99px;
+                height: 19px;
+                line-height: 19px;
+                font-size: 14px;
+                color: #e34312;
+                .yyzq_starwrap {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    i {
+                        margin-right: 1px;
+                    }
+                }
+            }
+            p {
+                line-height: 18px;
+                max-height: 36px;
+                font-size: 14px;
+                color: #888;
+                overflow: hidden;
+            }
+        }
+    }
+}
+.yyzq_comment {
+    margin-top: -20px;
+}
+.hei .yyzq_tit {
+    color: #fff;
+}
+html.yyzq_login_html {
+    height: 100%;
+}
+body.yyzq_login {
+    height: 100%;
+    overflow: hidden;
+}
+.yyzq_login {
+    position: relative;
+    .gameArea {
+        position: absolute;
+        top: 36px;
+        left: 0;
+        width: 100%;
+    }
+    .logo {
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-left: -138px;
+        top: 207px;
+    }
+    .QZshade {
+        display: none !important;
+    }
+    .QZlogin.show {
+        display: block;
+        position: absolute;
+        top: 354px;
+        margin-top: 0;
+    }
+    .Bot {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        min-width: 1100px;
+        height: 80px;
+        font-size: 14px;
+        .Copyright {
+            margin: 0 auto;
+            padding-top: 20px;
+            width: 1100px;
+            height: auto;
+            line-height: 20px;
+            text-align: center;
+            color: #333;
+            a {
+                margin: 0 5px;
+                color: #333;
+                &:hover {
+                    color: #777;
+                }
+            }
+        }
+    }
+}
+.gameAreaInfos{
+    display: none;
+    &.gameAreaInfosHide{
+        display: none !important;
+    }
+    &.cur{
+        display: block;
+    }
+}
+.yyzq-logined{
+    .gameArea{
+        background: url(../ztimages/logined-bg.jpg) center center no-repeat;
+        .gameArea-left{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -600px;
+            margin-top: -186px;
+            padding-left: 9px;
+            width: 250px;
+            height: 540px;
+            background: url(../ztimages/logined-left-bg.png) 0 330px no-repeat;
+            a{
+                display: block;
+                margin-bottom: 23px;
+                width: 234px;
+                height: 74px;
+                line-height: 68px;
+                background: url(../ztimages/logined-left-btn.png) 0 0 no-repeat;
+                font-size: 24px;
+                color: #ffd7ba;
+                text-align: center;
+                font-weight: bold;
+                text-shadow: 1px 1px 2px #8c2910;
+                &:hover{
+                    background-position: 0 -90px;
+                }
+            }
+        }
+        .gameArea-right{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: 350px;
+            margin-top: -186px;
+            padding-left: 9px;
+            width: 241px;
+            height: 540px;
+            .gameArea-right-bg{
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            a{
+                position: relative;
+                display: block;
+                margin-left: 5px;
+                margin-bottom: 14px;
+                padding: 17px 40px 17px 15px;
+                width: 178px;
+                line-height: 32px;
+                background-color: rgba(197,42,0,0.5);
+                font-size: 16px;
+                color: #ffe897;
+                border-radius: 10px;
+                border: 1px solid #8f5a28;
+                i{
+                    display: block;
+                    position: absolute;
+                    right: 11px;
+                    top: 50%;
+                    margin-top: -14px;
+                    width: 14px;
+                    height: 28px;
+                    background: url(../ztimages/logined-left-btn.png) -240px 0 no-repeat;
+                }
+                &:hover{
+                    background-color: rgba(197,42,0,0.9);
+                }
+            }
+        }
+        .gamesIframe{
+            display: block;
+            margin: 0 auto;
+            background-color: #000;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+@import 'comm';
+.cj_sec {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cj_sec1 img {
+    display: block;
+    width: 100%;
+}
+
+.cj_sec2.ymw-congame.ymw-congame-m {
+    margin: 0;
+    padding: 0.4rem 0.25rem;
+    background-color: #fff;
+    .ymw-congame-infos {
+        position: relative;
+        margin-bottom: 0.25rem;
+        .ymw-congame-infos-img {
+            width: 1.5rem;
+            height: 1.5rem;
+            min-width:1.5rem;
+            img {
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 0;
+            }
+        }
+        .ymw-congame-infos-txt{
+            dl{
+                dt{
+                    padding-top: 0.1rem;
+                    margin-bottom: 0.15rem;
+                    h1{
+                        line-height: 0.4rem;
+                        font-size: 0.32rem;
+                    }
+                }
+                dd{
+                    line-height: 0.4rem;
+                    p{
+                        font-size: 0.24rem;
+                    }
+                }
+            }
+        }
+    }
+    .ymw-congame-m-dlwrap {
+        margin: 0;
+        .ymw-congame-m-dl-and a,.ymw-congame-m-dl-ios a{
+            height: 0.8rem;
+            font-size: 0.28rem;
+            border-radius: 0.08rem;
+            i{
+                margin-right: 0.1rem;
+            }
+        }
+        .ymw-congame-m-dl-ios{
+            margin-left: 0.05rem;
+        }
+        .ymw-congame-m-dl-and a {
+            position: relative;
+            background-color: #6ab83b;
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 0.77rem;
+                height: 0.82rem;
+                background: url(../ztimages/wgamezq-btn-curp.png) 0 0 no-repeat;
+                background-size: 0.77rem auto;
+                animation: curpAnim 1s steps(23) infinite;
+            }
+            i {
+                width: 0.5rem;
+                height:0.36rem;
+                background-image: url(http://image.gamersky.com/webimg15/yeyou/wap/icon-sy.png);
+                background-size: 100%;
+            }
+        }
+        .ymw-congame-m-dl-ios a {
+            background-color: #f03c56;
+            i {
+                width: 0.45rem;
+                height:0.45rem;
+                background-image: url(http://image.gamersky.com/webimg15/yeyou/wap/icon-liwu.png);
+                background-size: 100%;
+            }
+        }
+    }
+}
+@keyframes curpAnim {
+    to{
+        background-position: 0 bottom;
+    }
+}
+
+.cj_sec3 {
+    margin-top: 0.15rem;
+    background-color: #fff;
+    .ymw-jietu {
+        margin: 0;
+    }
+    .bs_para {
+        padding: 0 0.25rem 0.4rem;
+        p {
+            line-height: 0.4rem;
+            font-size: 0.28rem;
+            color: #111;
+            text-indent: 0.52rem;
+            text-align: justify;
+        }
+    }
+}
+
+.cj_sec4 {
+    margin-top: 0.15rem;
+    .ymw-rel-mgame {
+        margin: 0;
+    }
+}
+
+.cj_sec5 {
+    margin-top: 0.15rem;
+    background-color: #fff;
+}

@@ -1,0 +1,32 @@
+.cj_sec{width:100%;overflow:hidden}
+.cj_sec1 img{display:block;width:100%}
+.cj_sec2.ymw-congame.ymw-congame-m{margin:0;padding:.4rem .25rem;background-color:#fff}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-infos{position:relative;margin-bottom:.25rem}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-infos .ymw-congame-infos-img{width:1.5rem;height:1.5rem;min-width:1.5rem}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-infos .ymw-congame-infos-img img{width:1.5rem;height:1.5rem;border-radius:0}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-infos .ymw-congame-infos-txt dl dt{padding-top:.1rem;margin-bottom:.15rem}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-infos .ymw-congame-infos-txt dl dt h1{line-height:.4rem;font-size:.32rem}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-infos .ymw-congame-infos-txt dl dd{line-height:.4rem}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-infos .ymw-congame-infos-txt dl dd p{font-size:.24rem}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-m-dlwrap{margin:0}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-m-dlwrap .ymw-congame-m-dl-and a,.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-m-dlwrap .ymw-congame-m-dl-ios a{height:.8rem;font-size:.28rem;border-radius:.08rem}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-m-dlwrap .ymw-congame-m-dl-and a i,.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-m-dlwrap .ymw-congame-m-dl-ios a i{margin-right:.1rem}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-m-dlwrap .ymw-congame-m-dl-ios{margin-left:.05rem}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-m-dlwrap .ymw-congame-m-dl-and a{position:relative;background-color:#6ab83b}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-m-dlwrap .ymw-congame-m-dl-and a:after{content:'';display:block;position:absolute;right:0;top:0;width:.77rem;height:.82rem;background:url(../ztimages/wgamezq-btn-curp.png) 0 0 no-repeat;-webkit-background-size:.77rem auto;background-size:.77rem auto;-webkit-animation:curpAnim 1s steps(23) infinite;animation:curpAnim 1s steps(23) infinite}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-m-dlwrap .ymw-congame-m-dl-and a i{width:.5rem;height:.36rem;background-image:url(http://image.gamersky.com/webimg15/yeyou/wap/icon-sy.png);-webkit-background-size:100% 100%;background-size:100%}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-m-dlwrap .ymw-congame-m-dl-ios a{background-color:#f03c56}
+.cj_sec2.ymw-congame.ymw-congame-m .ymw-congame-m-dlwrap .ymw-congame-m-dl-ios a i{width:.45rem;height:.45rem;background-image:url(http://image.gamersky.com/webimg15/yeyou/wap/icon-liwu.png);-webkit-background-size:100% 100%;background-size:100%}
+@-webkit-keyframes curpAnim{
+to{background-position:0 bottom}
+}
+@keyframes curpAnim{
+to{background-position:0 bottom}
+}
+.cj_sec3{margin-top:.15rem;background-color:#fff}
+.cj_sec3 .ymw-jietu{margin:0}
+.cj_sec3 .bs_para{padding:0 .25rem .4rem}
+.cj_sec3 .bs_para p{line-height:.4rem;font-size:.28rem;color:#111;text-indent:.52rem;text-align:justify}
+.cj_sec4{margin-top:.15rem}
+.cj_sec4 .ymw-rel-mgame{margin:0}
+.cj_sec5{margin-top:.15rem;background-color:#fff}
