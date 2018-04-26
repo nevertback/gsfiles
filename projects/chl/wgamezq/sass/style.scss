@@ -63,7 +63,7 @@
             background-color: #6ab83b;
             &:after{
                 content: '';
-                display: block;
+                display: none;
                 position: absolute;
                 right: 0;
                 top: 0;
@@ -78,6 +78,11 @@
                 height:0.36rem;
                 background-image: url(http://image.gamersky.com/webimg15/yeyou/wap/icon-sy.png);
                 background-size: 100%;
+            }
+            &.cur{
+                &:after{
+                    display: block;
+                }
             }
         }
         .ymw-congame-m-dl-ios a {
