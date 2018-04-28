@@ -13,27 +13,21 @@
             var $gamearea = $('.gameArea'),
                 wh = $(window).height() - 36,
                 ww = $(window).width(),$iframe = $('.gamesIframe');
-            $gamearea.css({'height':wh,'width':ww});
+            $gamearea.css({'height':wh,'width':'100%'});
 
             if(ww<1280){
-                $('#QZnav').hide();
                 $('.gameAreaInfos').removeClass('cur');
-                wh = $(window).height();
-                $gamearea.css({'top':0,'height':wh});
-                $iframe.css({
-                    width:ww+'px',
-                    height:wh+'px'
-                });
+                $('html').css('overflow-x','auto');
             }else{
-                $('#QZnav').show();
                 $('.gameAreaInfos').addClass('cur');
-                wh = $(window).height() - 36;
-                $gamearea.css({'top':'','height':wh});
-                $iframe.css({
-                    width:wh/5*3+'px',
-                    height:wh+'px'
-                });
+                $('html').css('overflow-x','');
             }
+            wh = $(window).height() - 36;
+            $gamearea.css({'top':'','height':wh});
+            $iframe.css({
+                width:wh/5*3+'px',
+                height:wh+'px'
+            });
         },
         checklogin:function () {
             $.ajax({
