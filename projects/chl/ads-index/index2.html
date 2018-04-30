@@ -4724,7 +4724,73 @@
 	</div>
 </div><!--Bot end-->
 <!-- 20171221001 update -->
-<script src="ja/index/new_top_index_1060_3_big.js"></script>
+<script>
+    (function ($) {
+        var basepath = 'ja/';
+        var tgList = [
+            //广告-测试-联动横幅3
+            {
+                tid:'#adscontainer_banner_new_top_index_1060_1',
+                url:basepath+'index/new_top_index_1060_3_big.js'
+            },
+            //广告-测试-新首页覆盖
+            {
+                tid:'#index_fugai_900',
+                url:basepath+'index/index_fugai_900.js'
+            }
+        ];
+        function loadGsTgJs(tid,url) {
+            if($(tid).length>0){
+                $.getScript(url);
+            }
+        }
+        function loadList() {
+            for(var i = 0;i<tgList.length;i++){
+                loadGsTgJs(tgList[i].tid,tgList[i].url);
+            }
+        }
+        $(function () {
+            $.ajax({
+                dataType:'Script',
+                url:'ja/gs.common.income.js',
+                cache:false,
+                success:function () {
+                    loadList();
+                }
+            });
+        });
+    })(jQuery);
+</script>
+<script>
+    (function ($) {
+        var gsOption = {};
+        gsOption.infos = [[],[]];
+        //宽度
+        gsOption.width = '1060';
+        //高度
+        gsOption.height = '90';
+        //是否自动切换 循环为 true,不循环为 false
+        gsOption.isChange = false;
+        //图片或flash地址
+        gsOption.infos[0][0]='http://imgf.gamersky.com/img/3gzz_1060x90_0426.jpg';
+        //连接地址,不填写链接，本行不生效
+        gsOption.infos[0][1]='http://yeyou.gamersky.com/sgzz2.html';
+        //统计ID
+        gsOption.infos[0][2]='700651';
+        //监测代码
+        gsOption.jcCode = 'http://image.gamersky.com/webimg13/zhuanti/common/blank.png';
+        //广告位置
+        gsOption.tar = '#adscontainer_banner_new_top_index_1060_3';
+        gsOption.margin = '0 auto 10px';
+        if(typeof gsTg === 'object'){
+            gsTg.base(gsOption);
+        }else{
+            $.getScript('http://j.gamersky.com/g/gs.common.income.v1.js',function () {
+                gsTg.base(gsOption);
+            });
+        }
+    })(jQuery);
+</script>
 <script src="http://j.gamersky.com/common/tg/fxtg.js"></script>
 <script src="http://j.gamersky.com/common/tg/allsite.tg.monitor.js"></script>
 <div style="display:none">

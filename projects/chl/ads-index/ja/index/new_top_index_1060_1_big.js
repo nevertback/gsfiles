@@ -1,5 +1,12 @@
 (function ($) {
     var aCfg = {
+        cookieSet:{
+            //间隔（分钟）
+            interval:30,
+            //显示次数
+            times:4
+        },
+        //素材地址
         source:'http://image.gamersky.com/webimg13/zhuanti/test/ldtl03.swf',
         size:[1060,407,60],
         tar:'#adscontainer_banner_new_top_index_1060_1',
@@ -57,22 +64,58 @@
             window.LiandongShow1 = function () {
                 $(aCfg.tar).css(bCss.replay);
                 $('.Mid_top').css('overflow','visible');
+                window.gstgFugaiHide = true;
             };
             window.LiandongHidden1 = function () {
                 $(aCfg.tar).css(bCss.close);
                 $('.Mid_top').css('overflow','hidden');
+                window.gstgFugaiHide = false;
             };
             window.LdClose1 = function () {
                 $(aCfg.tar).css(bCss.close);
                 $('.Mid_top').css('overflow','hidden');
+                window.gstgFugaiHide = false;
             }
         },
         render:function () {
             this.createBanner();
             this.setCss();
+            window.gstgFugaiHide = true;
+        },
+        cookieFnc:function(callback){
+            var ckiNameStr = aCfg.son,
+                ckiName = $.cookie(ckiNameStr);
+            var cktime = new Date(),NewTimeStamp = cktime.getTime();
+            if(typeof ckiName === "undefined"){
+                if(typeof callback === "function"){
+                    callback();
+                }
+                var calcTime;
+                calcTime = aCfg.cookieSet.interval*60*1000+NewTimeStamp;
+                cktime.setTime(calcTime);
+                $.cookie(ckiNameStr,encodeURI(aCfg.cookieSet.times+'|'+calcTime),{path:"/",expires:cktime});
+            }else{
+                var ckiNum = decodeURI(ckiName),
+                    ckiVal = ckiNum.split("|"),
+                    ckiValNum = ckiVal[0],
+                    ckiValTime = ckiVal[1];
+                cktime.setTime(ckiValTime);
+                if(ckiValNum > 1){
+                    $.cookie(ckiNameStr,encodeURI(ckiValNum-1+'|'+ckiValTime),{path:"/",expires:cktime});
+                    if(typeof callback === "function"){
+                        callback();
+                    }
+                }
+                if(ckiValTime - NewTimeStamp < 0){
+                    $.cookie(ckiNameStr,null,{path:"/",expires:cktime});
+                }
+            }
         },
         init:function () {
-            this.render();
+            var _this = this;
+            _this.cookieFnc(function () {
+                _this.render();
+            });
         }
     };
     gsMethods.init();

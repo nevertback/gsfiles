@@ -4724,7 +4724,43 @@
 	</div>
 </div><!--Bot end-->
 <!-- 20171221001 update -->
-<script src="ja/index/new_top_index_1060_1_big.js"></script>
+<script>
+    (function ($) {
+        var basepath = 'ja/';
+        var tgList = [
+            //广告-测试-联动横幅1
+            {
+                tid:'#adscontainer_banner_new_top_index_1060_1',
+                url:basepath+'index/new_top_index_1060_1_big.js'
+            },
+            //广告-测试-新首页覆盖
+            {
+                tid:'#index_fugai_900',
+                url:basepath+'index/index_fugai_900.js'
+            }
+        ];
+        function loadGsTgJs(tid,url) {
+            if($(tid).length>0){
+                $.getScript(url);
+            }
+        }
+        function loadList() {
+            for(var i = 0;i<tgList.length;i++){
+                loadGsTgJs(tgList[i].tid,tgList[i].url);
+            }
+        }
+        $(function () {
+            $.ajax({
+                dataType:'Script',
+                url:'ja/gs.common.income.js',
+                cache:false,
+                success:function () {
+                    loadList();
+                }
+            });
+        });
+    })(jQuery);
+</script>
 <script>
     (function ($) {
         $.getScript('http://ja1.gamersky.com/gs.common.income.js',function(){
