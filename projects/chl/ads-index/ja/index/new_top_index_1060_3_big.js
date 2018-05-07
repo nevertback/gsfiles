@@ -7,15 +7,16 @@
             times:4
         },
         //素材地址
-        source:'http://image.gamersky.com/webimg13/zhuanti/test/liandong102.swf',
+        source:'http://image.gamersky.com/webimg13/zhuanti/test/ld02050701.swf',
+        sourceMini:'http://image.gamersky.com/webimg13/zhuanti/test/ld02050705.swf',
         size:[1060,430,90],
         tar:'#adscontainer_banner_new_top_index_1060_2',
         son:'gsincomeIndexTopBanner2Big'
     };
     var gsMethods = {
-        createSwf:function (src,w,h) {
+        createSwf:function (sid,src,w,h) {
             var swfDom = '';
-            swfDom = '<embed src="'+src+'" width="'+w+'" height="'+h+'" allowScriptAccess="always" wmode="transparent" type="application/x-shockwave-flash"></embed>';
+            swfDom = '<embed id="'+sid+'" src="'+src+'" style="position: absolute;left: 0;bottom: 0;width:'+w+'px;height:'+h+'px;" allowScriptAccess="always" wmode="transparent" type="application/x-shockwave-flash"></embed>';
             return swfDom;
         },
         createTags:function () {
@@ -29,7 +30,7 @@
             styDom += '#'+aCfg.son+'{background: url(http://image.gamersky.com/webimg15/tg/gitb3bg-bai.png) 0 46px repeat-x;}';
             styDom += '</style>';
             vDom += '<div id="'+aCfg.son+'">';
-            vDom += this.createSwf(aCfg.source,aCfg.size[0],aCfg.size[1]);
+            vDom += this.createSwf(aCfg.son+'normal',aCfg.source,aCfg.size[0],aCfg.size[1]);
             vDom += '</div>';
             vDom += '</div>'+gsMethods.createTags()+'</div>';
             $('head').append(styDom);
@@ -79,7 +80,7 @@
             this.setCss();
             window.gstgFugaiHide = true;
         },
-        cookieFnc:function(callback){
+        cookieFnc:function(callback,overCallback){
             var ckiNameStr = aCfg.son,
                 ckiName = $.cookie(ckiNameStr);
             var cktime = new Date(),NewTimeStamp = cktime.getTime();
@@ -102,16 +103,59 @@
                     if(typeof callback === "function"){
                         callback();
                     }
+                }else{
+                    if(typeof overCallback === "function"){
+                        overCallback();
+                    }
                 }
                 if(ckiValTime - NewTimeStamp < 0){
                     $.cookie(ckiNameStr,null,{path:"/",expires:cktime});
                 }
             }
         },
+        showMini:function(){
+            var _this = this,vDom = '',isChrome = false;
+            vDom += '<div id="'+aCfg.son+'">';
+            if(navigator.appVersion.indexOf('Chrome')>0){
+                isChrome = true;
+            }
+            if(isChrome === true){
+                vDom += this.createSwf(aCfg.son+'mini',aCfg.sourceMini,aCfg.size[0],800);
+            }else{
+                vDom += this.createSwf(aCfg.son+'mini',aCfg.sourceMini,aCfg.size[0],aCfg.size[2]);
+            }
+            vDom += '</div>';
+            vDom += '</div>'+gsMethods.createTags()+'</div>';
+            $(aCfg.tar).css({
+                position:'relative',
+                margin:'0 auto 10px',
+                width:aCfg.size[0]+'px',
+                height:aCfg.size[2]+'px'
+            });
+            if(isChrome === true) {
+                $(aCfg.tar).css({
+                    overflow:'visible',
+                    opacity:0
+                });
+                setTimeout(function () {
+                    $('#'+aCfg.son+'mini').css({width:aCfg.size[0]+'px',height:aCfg.size[2]+'px'});
+                    $(aCfg.tar).css({
+                        overflow:'',
+                        opacity:''
+                    })
+                },200);
+            }
+            $(aCfg.tar).html(vDom);
+            window.LiandongMiniShow1 = function () {
+                _this.render();
+            }
+        },
         init:function () {
             var _this = this;
             _this.cookieFnc(function () {
                 _this.render();
+            },function () {
+                _this.showMini();
             });
         }
     };

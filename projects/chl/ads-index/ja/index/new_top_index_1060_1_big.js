@@ -8,14 +8,15 @@
         },
         //素材地址
         source:'http://image.gamersky.com/webimg13/zhuanti/test/ldtl03.swf',
+        sourceMini:'http://image.gamersky.com/webimg13/zhuanti/test/ld02050704.swf',
         size:[1060,407,60],
         tar:'#adscontainer_banner_new_top_index_1060_1',
         son:'gsincomeIndexTopBanner1Big'
     };
     var gsMethods = {
-        createSwf:function (src,w,h) {
+        createSwf:function (sid,src,w,h) {
             var swfDom = '';
-            swfDom = '<embed src="'+src+'" width="'+w+'" height="'+h+'" allowScriptAccess="always" wmode="transparent" type="application/x-shockwave-flash"></embed>';
+            swfDom = '<embed id="'+sid+'" src="'+src+'" width="'+w+'" height="'+h+'" allowScriptAccess="always" wmode="transparent" type="application/x-shockwave-flash"></embed>';
             return swfDom;
         },
         createTags:function () {
@@ -29,7 +30,7 @@
             styDom += '#'+aCfg.son+'{background: url(http://image.gamersky.com/webimg15/tg/gitb3bg-bai.png) 0 46px repeat-x;}';
             styDom += '</style>';
             vDom += '<div id="'+aCfg.son+'">';
-            vDom += this.createSwf(aCfg.source,aCfg.size[0],aCfg.size[1]);
+            vDom += this.createSwf(aCfg.son+'normal',aCfg.source,aCfg.size[0],aCfg.size[1]);
             vDom += '</div>';
             vDom += '</div>'+gsMethods.createTags()+'</div>';
             $('head').append(styDom);
@@ -82,7 +83,7 @@
             this.setCss();
             window.gstgFugaiHide = true;
         },
-        cookieFnc:function(callback){
+        cookieFnc:function(callback,overCallback){
             var ckiNameStr = aCfg.son,
                 ckiName = $.cookie(ckiNameStr);
             var cktime = new Date(),NewTimeStamp = cktime.getTime();
@@ -105,16 +106,58 @@
                     if(typeof callback === "function"){
                         callback();
                     }
+                }else{
+                    if(typeof overCallback === "function"){
+                        overCallback();
+                    }
                 }
                 if(ckiValTime - NewTimeStamp < 0){
                     $.cookie(ckiNameStr,null,{path:"/",expires:cktime});
                 }
             }
         },
+        showMini:function(){
+            var _this = this,vDom = '',isChrome = false;
+            vDom += '<div id="'+aCfg.son+'">';
+            if(navigator.appVersion.indexOf('Chrome')>0){
+                isChrome = true;
+            }
+            if(isChrome === true){
+                vDom += this.createSwf(aCfg.son+'mini',aCfg.sourceMini,aCfg.size[0],400);
+            }else{
+                vDom += this.createSwf(aCfg.son+'mini',aCfg.sourceMini,aCfg.size[0],aCfg.size[2]);
+            }
+            vDom += '</div>';
+            vDom += '</div>'+gsMethods.createTags()+'</div>';
+            $(aCfg.tar).css({
+                position:'relative',
+                width:aCfg.size[0]+'px',
+                height:aCfg.size[2]+'px'
+            });
+            if(isChrome === true) {
+                $(aCfg.tar).css({
+                    overflow:'visible',
+                    opacity:0
+                });
+                setTimeout(function () {
+                    $('#'+aCfg.son+'mini').css({height:aCfg.size[2]+'px'});
+                    $(aCfg.tar).css({
+                        overflow:'',
+                        opacity:''
+                    })
+                },200);
+            }
+            $(aCfg.tar).html(vDom);
+            window.LiandongMiniShow1 = function () {
+                _this.render();
+            }
+        },
         init:function () {
             var _this = this;
             _this.cookieFnc(function () {
                 _this.render();
+            },function () {
+                _this.showMini();
             });
         }
     };
