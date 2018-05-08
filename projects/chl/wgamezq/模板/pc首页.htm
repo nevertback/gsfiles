@@ -1,0 +1,83 @@
+{PE.DataSource id="cone" datasource="手游专区_内容页" itemId="@RequestInt_id" xslt="true" /}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{@cone.GamerSearch}_{@cone.GamerSearch}H5游戏 _ 游民星空H5游戏平台</title>
+    <meta name="keywords" content="{@cone.keywords}" />
+    <meta name="description" content="游民星空游戏平台h5游戏{@cone.GamerSearch}，为您提供最新h5游戏，{@cone.GamerSearch}攻略，{@cone.GamerSearch}礼包，更多精彩H5游戏尽在游民星空游戏平台。" />
+    <script>var wapUrl = "http://h5.gamersky.com/z/{@cone.ZGameDir}/m.shtml";var contentPageIndex=1;var pageIndex=1;</script>
+    <!--#include File="/autoinc/abinc/web/yy_index_header.htm"-->
+</head>
+<body>
+<!--#include File="/autoinc/abinc/web/yy_index_top.htm"-->
+<div class="Mid yy_zq">
+    <div class="yyzq_crumb"><a target="_blank" href="http://web.gamersky.com/">游戏平台</a>&nbsp;&gt;&nbsp;<span>H5游戏</span>&nbsp;&gt;&nbsp;<span>{@cone.GamerSearch}</span></div>
+    <div class="yyzq_wbg yyzq_gameinfos">
+        <div class="clearfix yyzq_gameinfos_t">
+            <div class="yyzq_gameinfos_t_l">
+                <a class="imgwrap"><img src="{@cone.top}" alt="{@cone.GamerSearch}"></a>
+            </div>
+            {@cone.DeputyNavigation}
+        </div>
+        <div class="yyzq_gameinfos_b">
+            <div class="clearfix yyzq_gi_btngroup">
+                <a target="_blank" href="{@cone.BBSUrl}" class="yyzq_gi_btn1"><span>开始游戏</span></a>
+                <a target="_blank" href="{@cone.GiftUrl}" class="yyzq_gi_btn2"><span>领取礼包</span></a>
+            </div>
+            <div class="clearfix yyzq_gi_bd">
+                <!-- 百度分享 -->
+                <div class="bdsharewrap bdstyle-c">
+                    <div class="bdsharebuttonbox bdshare-button-style0-16" data-tag="share_1" data-bd-bind="1446461622481">
+                        <a class="bdicons bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                        <a class="bdicons bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                        <a class="bdicons bds_sqq" data-cmd="sqq" title="分享到QQ"></a>
+                        <a class="bdicons bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                        <a class="bdicons bds_tieba" data-cmd="tieba" title="分享到贴吧"></a>
+                        <a class="bdicons bds_renren" data-cmd="renren" title="分享到人人"></a>
+                        <a class="bdicons bds_douban" data-cmd="douban" title="分享到豆瓣"></a>
+                        <a class="bdicons bds_more" data-cmd="more"></a>
+                        <a class="bds_count" data-cmd="count" title=""></a>
+                    </div>
+                </div>
+                <!-- 百度分享 end-->
+                <span>分享：</span>
+            </div>
+        </div>
+    </div>
+    <h4 class="yyzq_tit"><i class="icon_pics"></i>游戏截图</h4>
+    <div class="yyzq_wbg yyzq_gamepics">
+        <div class="yyzq_picswrap">
+            <div id="yyzqPics" class="yyzq_pics">
+                <ul class="yyzq_picsCon">
+                    {@cone.HotSearch}
+                </ul>
+            </div>
+            <a id="yyzq_picsPrev" class="yyzq_picsArr yyzq_picsPrev"></a>
+            <a id="yyzq_picsNext" class="yyzq_picsArr yyzq_picsNext"></a>
+        </div>
+    </div>
+    <h4 class="yyzq_tit"><i class="icon_hot"></i>游戏推荐</h4>
+    {@cone.TopRrecommend}
+    <h4 class="yyzq_tit"><i class="icon_comm"></i>玩家评论</h4>
+    <div class="yyzq_comment">
+        <div id="SOHUCS" sid="@RequestInt_id"></div>
+        <!--#include File="/autoinc/abinc/web/yy_index_bot.htm"-->
+        <span id="countn" generalId="@RequestInt_id" style="display:none;"></span>
+        <script>
+            //百度
+            window._bd_share_config = {
+                common: {
+                    bdText: '{@cone.GamerSearch}_{@cone.GamerSearch}H5游戏 _ 游民星空H5游戏平台',
+                    bdDesc: '游民星空游戏平台h5游戏{@cone.GamerSearch}，为您提供最新h5游戏，{@cone.GamerSearch}攻略，{@cone.GamerSearch}礼包，更多精彩H5游戏尽在游民星空游戏平台。'
+                },
+                share: [{
+                    "bdSize": 16
+                }]
+            }
+            with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+        </script>
+        <!--#include File="/autoinc/abinc/web/yy_index_bottom.htm"-->
+</body>
+</html>

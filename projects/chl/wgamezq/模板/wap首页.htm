@@ -1,0 +1,56 @@
+{PE.DataSource id="cone" datasource="手游专区_内容页" itemId="@RequestInt_id" xslt="true" /}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>{@cone.GamerSearch}_{@cone.GamerSearch}H5游戏 _ 游民星空H5游戏平台</title>
+    <meta name="keywords" content="{@cone.GamerSearch},{@cone.GamerSearch}官网,{@cone.GamerSearch}礼包,{@cone.GamerSearch}激活码,H5游戏,H5游戏平台">
+    <meta name="description" content="游民星空游戏平台h5游戏{@cone.GamerSearch}，为您提供最新h5游戏，{@cone.GamerSearch}攻略，{@cone.GamerSearch}礼包，更多精彩H5游戏尽在游民星空游戏平台。">
+    <!--#include File="/autoinc/abinc/wap/new_wap_header.htm"-->
+    <section class="cj_sec cj_sec1">
+        {@cone.WapHotRecommend}
+    </section>
+    <section class="ymw-congame ymw-congame-m cj_sec2">
+        <aside class="clearfix ymw-congame-infos">
+            {@cone.NewGuidelines}
+        </aside>
+        <aside class="ymw-congame-m-dlwrap">
+            <div class="ymw-congame-m-dl-and">
+                <a class="startGameBtn" data-href="{@cone.Appointment}"><i></i>开始游戏</a>
+            </div>
+            <div class="ymw-congame-m-dl-ios">
+                <a href="{@cone.GiftUrl}"><i></i>领取礼包</a>
+            </div>
+        </aside>
+    </section>
+    <section class="cj_sec3">
+        <section class="ymw-jietu">
+            <h4 class="ymw-title-lev2"><span>游戏介绍</span></h4>
+            <div class="swiper-container ymwJtImg">
+                <div class="swiper-wrapper">
+                    {@cone.DataContent}
+                </div>
+            </div>
+        </section>
+        <aside class="bs_para">
+            {@cone.StrategyNavigation}
+        </aside>
+    </section>
+    <section class="cj_sec4">
+        <section class="ymw-rel-mgame">
+            {@cone.Blogroll}
+        </section>
+    </section>
+    <span id="wapcountn"  generalId="@RequestInt_id" style="display:none;"></span>
+    <section class="cj_sec5">
+        <div id="SOHUCS" sid="@RequestInt_id"></div>
+        <!--#include File="/autoinc/abinc/wap/new_wap_footer_t.htm"-->
+        <a href="http://h5.gamersky.com/game/{@cone.ZGameDir}/?tag=wap" class="ymw-btns ymw-btns-pc">
+            <!--#include File="/autoinc/abinc/wap/new_wap_footer_b.htm"-->
+            </body>
+</html>

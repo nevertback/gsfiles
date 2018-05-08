@@ -1,0 +1,114 @@
+html {overflow-y:scroll; background-color:#f9f9f9;}
+body {margin:0; padding:0; min-width:1102px; color:#000; font-size:14px; font-family:'Microsoft YaHei',SimSun,Arial,Tahoma,Helvetica;}
+body.bg {background:url(//image.gamersky.com/webimg15/user/subscribe/bg.jpg) 0 36px repeat-x;}
+
+img {border:0;vertical-align:middle;}
+a {color:#333;text-decoration:none;}
+a:hover {color:#d93a3a;}
+a:focus {outline:none;}
+ul {margin:0;padding:0;list-style-type:none;}
+ul li {list-style-type:none;vertical-align:middle;}
+div,ul,li {overflow:hidden;}
+input,textarea {border:0;outline:0;resize:none;-webkit-appearance:none;}
+p,h1,h2,h3,h4,h5,h6 {margin:0;}
+
+.none {display:none;}
+.block {display:block;}
+
+/*全站导航*/
+#QZnav {min-width:1120px; background:#151515;}/*背景色*/
+#QZnav i {color:#595959;}/*分割线*/
+#QZnav .alik {color:#ccc;}/*链接文字色*/
+#QZnav .alik:hover,#QZnav .cur .alik {color:#fff;}/*链接hover色*/
+
+/*顶部*/
+.Top {width:100%; min-width:1120px; height:auto; overflow:visible; background:url(//image.gamersky.com/webimg15/user/subscribe/tbgx.png) 0 bottom repeat-x;}
+.Top1 {margin:0 auto; width:1100px; height:80px;}
+.Top1 .logo {float:left; width:260px; height:80px; background:url(//image.gamersky.com/webimg15/user/subscribe/logo.png) 0 center no-repeat;}
+.Top1 .logo a{display: block;width: 100%;height: 100%;}
+@media screen and (min-resolution: 192dpi) {
+    .Top1 .logo {
+        background:url(//image.gamersky.com/webimg15/user/subscribe/logo@2.png) 0 center no-repeat;
+        background-size: auto 50px;
+    }
+}
+.Top1 .tnav {float:left; padding-top:2px; width:auto; height:78px;}
+.Top1 .tnav a {float:left; margin-right:30px; padding:0 10px; display:inline-block; width:auto; height:76px; line-height:78px; color:#000; font-size:17px;}
+.Top1 .tnav a:hover {color:#d93a3a;}
+.Top1 .tnav a.cur {color:#d93a3a; border-bottom:2px solid #d93a3a;}
+.Top1 .toptips {float:right; margin-top:26px; width:350px; height:30px; position:relative;}
+.Top1 .toptips .link {display:block; width:auto; height:20px; position:absolute; right:0; top:5px;}
+.Top1 .toptips .link a {float:left; margin-left:30px; display:inline-block; width:auto; height:20px; line-height:20px; color:#000; font-size:15px;}
+.Top1 .toptips .link a {background:url(//image.gamersky.com/webimg15/user/subscribe/ion1.png) no-repeat;}
+.Top1 .toptips .link a.zt {padding-left:24px; background-position:0 0;}
+.Top1 .toptips .link a.dy {padding-left:22px; background-position:0 -20px;}
+.Top1 .toptips .link a.ss {padding-left:21px; background-position:0 -40px;}
+.Top1 .toptips .link a:hover {color:#d93a3a;}
+.Top1 .toptips .search {display:none; width:auto; height:30px; position:absolute; right:0; top:0;}
+.Top1 .toptips .search input {float:left; font-family:'Microsoft YaHei';}
+.Top1 .toptips .search input.Sinput {padding:4px; width:208px; height:20px; line-height:20px; color:#000; font-size:15px;}
+.Top1 .toptips .search input.Sinput {background:#fff; border:1px solid #d9cfcf; border-right:0;}
+.Top1 .toptips .search input.Sbutton {width:50px; height:30px; line-height:30px; color:#fff; font-size:14px; text-align:center; cursor:pointer;}
+.Top1 .toptips .search input.Sbutton {background:#d93a3a; border:0; border-radius:0 3px 3px 0;}
+.Top1 .toptips .search input.Sbutton:hover {background:#ed3f3f;}
+.Top1 .toptips .search a {float:left; display:inline-block; width:30px; height:30px; background:url(//image.gamersky.com/webimg15/user/subscribe/colse.png) no-repeat;}
+.Top1 .toptips .search a:hover {background-position:0 -30px;}
+
+/*中部*/
+.Mid {margin:0 auto 30px; padding:0 10px; width:1100px; height:auto; min-height:800px;}
+.Mid1 {width:100%; height:auto;}
+.Mid2 {width:100%; height:auto;}
+.Mid2_L {float:left; margin-right:50px; width:750px; height:auto; padding-top:30px;}
+.Mid2_R {float:left; width:300px; height:auto; padding-top:30px;}
+
+/*正在加载*/
+.loading {width:auto; height:52px; background:url(//image.gamersky.com/webimg15/user/center2/loading.gif) center center no-repeat;}
+.loadpic {display:none; padding:50px 0; width:auto; height:30px; text-align:center;}
+.loadpic span {display:inline-block; height:30px; vertical-align:middle;}
+.loadpic span.img {width:30px; background:url(http://image.gamersky.com/webimg15/loading.gif) no-repeat; background-size:30px;}
+.loadpic span.txt {padding-left:10px; width:auto; line-height:30px; color:#5c5c5c; font-size:16px; font-weight:bold;}
+
+/*没有更多了*/
+.loadend {padding:15px 0; width:auto; height:auto; text-align:center;}
+.loadend fieldset {margin:0 auto; padding:0; width:290px; border:0; border-top:1px solid #E8E8E8;}
+.loadend legend {margin:0 auto; padding:0 10px; display:block; color:#888; font-size:14px; text-align:center;}
+/*没有内容*/
+.nocontent {margin:50px 0; padding:75px 0 15px; width:100%; height:auto; background:url(//image.gamersky.com/webimg15/user/subscribe/nocon.png) center 15px no-repeat;}
+.nocontent p {margin:0; line-height:20px; color:#888; font-size:14px; text-align:center;}
+/*分页*/
+.Page {margin:30px auto 40px; font-size:14px; font-family:'Microsoft YaHei'; text-align:center;}
+.Page a,.Page em {margin:0 2px; display:inline-block; width:auto; height:34px; line-height:34px; color:#666; border:1px solid #e5e5e5; border-radius:2px;}
+.Page a.p1,.Page a.p2,.Page a.p3,.Page em {padding:0 13px;}
+.Page a.p1:hover,.Page a.p2:hover {color:#d93a3a; border-color:#dc9f9f;}
+.Page a.p3 {color:#fff; font-weight:bold; background:#d93a3a; border:1px solid #d93a3a;}
+.Page a:hover {text-decoration:none;}
+.Page em {padding:0 10px;}
+.Page i {font-family:verdana; font-style:normal;}
+
+/*底部*/
+.Bot {width:100%; min-width:1100px; height:auto; background:#141414; position:relative; padding-bottom:30px; font-size:12px;}
+.Bot .Links {margin:0 auto; width:1000px; height:38px; background:#222;}
+.Bot .Links .like {float:left; width:907px; height:38px; line-height:38px; color:#555;}
+.Bot .Links .like a {margin:0 19px; color:#aaa;}
+.Bot .Links .like a:hover {color:#fff;}
+.Bot .Links .gotop {float:right; width:93px; height:38px; line-height:38px; color:#555;}
+.Bot .Links .gotop a {padding:0 15px 0 30px; display:block; width:auto; height:38px; line-height:38px; color:#aaa; cursor:pointer;}
+.Bot .Links .gotop a {background:url(//image.gamersky.com/webimg15/gotop.png) 0 6px no-repeat;}
+.Bot .Hot {width:100%; min-width:1100px; height:auto; background:#181818;}
+.Bot .Hot .Hots {margin:0 auto; width:1098px; padding-top:40px; height:auto;}
+.Bot .Hot .Hots  ul.foot {margin-bottom:24px; width:1128px; height:auto;}
+.Bot .Hot .Hots  ul.foot li {float:left; margin-right:29px; width:158px; height:auto; border-right:1px dotted #2f2f2f;}
+.Bot .Hot .Hots  ul.foot li .tit {width:129px; height:32px; line-height:20px; color:#666; font-size:16px; font-weight:bold; font-family:'Microsoft YaHei';}
+.Bot .Hot .Hots  ul.foot li .tit a {color:#666;}
+.Bot .Hot .Hots  ul.foot li .tit a:hover {color:#aaa;}
+.Bot .Hot .Hots  ul.foot li .like {width:158px; height:116px;}
+.Bot .Hot .Hots  ul.foot li .like div {float:left; width:79px; height:auto;}
+.Bot .Hot .Hots  ul.foot li .like div a {margin-bottom:15px; display:block; color:#666; font-family:SimSun;}
+.Bot .Hot .Hots  ul.foot li .like div a:hover {color:#aaa;}
+.Bot .Hot .Hots .links {padding:20px 0 10px; width:1100px; height:auto; font-family:SimSun; border-top:1px dotted #2f2f2f;}
+.Bot .Hot .Hots .links span {margin-bottom:15px; display:inline-block; color:#666;}
+.Bot .Hot .Hots .links a {margin:0 15px 15px 0; display:inline-block; color:#666;}
+.Bot .Hot .Hots .links a:hover {color:#aaa;}
+.Bot .Copyright {margin:0 auto; width:1100px; padding:30px 0 0; height:auto; line-height:30px; text-align:center; color:#454545; font-family:SimSun;}
+.Bot .Copyright a {color:#454545;}
+.Bot .Copyright a:hover {color:#aaa;}

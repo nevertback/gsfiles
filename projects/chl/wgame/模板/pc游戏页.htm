@@ -1,0 +1,25 @@
+{PE.DataSource id="cone" datasource="手游专区_内容页" itemId="@RequestInt_id" xslt="true" /}
+<!doctype html>
+<html lang="en" class="yyzq_login_html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>{@cone.title2}_{@cone.title2}H5游戏 _ 游民星空H5游戏平台</title>
+    <meta name="keywords" content="{@cone.title2},{@cone.title2}官网,{@cone.title2}礼包,{@cone.title2}激活码,H5游戏,H5游戏平台" />
+    <meta name="description" content="游民星空游戏平台h5游戏{@cone.title2}，为您提供最新h5游戏，{@cone.title2}攻略，{@cone.title2}礼包，更多精彩H5游戏尽在游民星空游戏平台。" />
+    <!--#include File="/autoinc/abinc/web/yy_game_header.htm"-->
+</head>
+<body class="yyzq_login" style="background: url({@cone.DataTitle}) center 0 no-repeat;">
+<script type="text/javascript" src="http://www.gamersky.com/autoinc/allsite/allsite_nav_js.htm"></script>
+<div class="gameArea" data-screen="{@cone.topheight}">
+    {@cone.WapData}
+    <iframe class="gamesIframe" data-game="{@cone.ZGameDir}" width="100%" height="100%" src="" frameborder="0" scrolling="no" allowtransparency="true" style="display:none"></iframe>
+</div>
+<span id="countn" generalId="@RequestInt_id" style="display:none;"></span>
+<!--#include File="/autoinc/abinc/web/yy_game_bottom.htm"-->
+</body>
+</html>

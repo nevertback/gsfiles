@@ -12,7 +12,7 @@
         setGameSize:function () {
             var $gamearea = $('.gameArea'),
                 wh = $(window).height() - 36,
-                ww = $(window).width(),$iframe = $('.gamesIframe');
+                ww = $(window).width(),$iframe = $('.gamesIframe'),screenOri = $gamearea.data('screen');
             $gamearea.css({'height':wh,'width':'100%'});
 
             if(ww<1280){
@@ -28,6 +28,24 @@
                 width:wh/5*3+'px',
                 height:wh+'px'
             });
+            if(parseInt(screenOri) === 1){
+                $('.gameAreaInfos').removeClass('cur');
+                $('html').css('overflow-x','');
+                if(ww<1280){
+                    $gamearea.css('top','0');
+                    $('#QZnav').hide();
+                    wh = $(window).height();
+                }else{
+                    $gamearea.css('top','');
+                    $('#QZnav').show();
+                    wh = $(window).height() - 36;
+                }
+                $gamearea.css('width',ww+'px');
+                $iframe.css({
+                    width:ww+'px',
+                    height:wh+'px'
+                });
+            }
         },
         checklogin:function () {
             $.ajax({
