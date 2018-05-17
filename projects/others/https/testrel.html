@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="//j.gamersky.com/g/normalize.min.css" rel="stylesheet">
+</head>
+<body>
+<img src="//image.gamersky.com/webimg13/zhuanti/yzsob/350.jpg" alt="test">
+<h5>JS输出</h5>
+<hr>
+<div id="test"></div>
+<script>
+    (function () {
+        var tmpLink = document.createElement('link');
+        tmpLink.setAttribute('href','//j.gamersky.com/test/testrel.css');
+        tmpLink.setAttribute('rel','stylesheet');
+        document.getElementsByTagName('head')[0].appendChild(tmpLink);
+        var testimage = new Image();
+        testimage.src = '//image.gamersky.com/webimg13/zhuanti/yzsob/350.jpg';
+        document.getElementById('test').appendChild(testimage);
+    })();
+</script>
+</body>
+</html>
