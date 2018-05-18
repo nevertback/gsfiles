@@ -10,14 +10,15 @@
 .gs-section1 .container .gs-logo-area ul li{float:left;margin:0 5px 5px 0;width:216px;height:106px}
 .gs-section1 .container .gs-logo-area ul li a{display:block;width:100%;height:100%}
 .gs-section1 .container .gs-logo-area ul li a img{display:block;width:100%;height:100%;border-radius:7px;-webkit-box-shadow:0 5px 27px rgba(81,81,81,.2);box-shadow:0 5px 27px rgba(81,81,81,.2)}
-.gs-section2{position:relative;height:735px}
-.gs-section2 .gs-sld-wrap{position:absolute;left:50%;top:0;margin-left:-960px;width:1920px;height:735px}
-.gs-section2 .gs-sld-wrap .gs-sld{position:relative;width:1920px;height:735px}
-.gs-section2 .gs-sld-wrap .gs-sld .gs-sld-con li{position:relative;padding-top:50px;background-color:#000}
-.gs-section2 .gs-sld-wrap .gs-sld .gs-sld-con li img{display:block;width:1920px;height:585px}
-.gs-section2 .gs-sld-wrap .gs-sld .gs-sld-con li .infos{position:absolute;left:50%;top:0;margin-left:-550px;width:1100px;height:50px}
-.gs-section2 .gs-sld-wrap .gs-sld .gs-sld-con li .infos h5{margin-left:180px;width:190px;height:52px;line-height:50px;background-color:#e5e5e5;font-size:30px;color:#000;font-weight:bolder;text-align:center}
-.gs-section2 .gs-sld-wrap .gs-sld .gs-sld-con li .infos p{position:absolute;top:0;left:390px;height:50px;line-height:50px;font-size:16px;color:#fff;letter-spacing:15px}
-.gs-section2 .gs-sld-wrap .gs-sld .gs-sld-nav{position:absolute;left:0;bottom:0;padding-top:30px;width:100%;height:70px;background-color:#242424;text-align:center;font-size:0}
+.gs-section2{position:relative;height:1020px;background-color:#242424}
+.gs-section2 .gs-sld-wrap{position:absolute;left:50%;top:0;margin-left:-550px;width:1100px;height:1020px}
+.gs-section2 .gs-sld-wrap .gs-sld{position:relative;width:1100px;height:1020px}
+.gs-section2 .gs-sld-wrap .gs-sld .gs-sld-con li{position:relative;padding-top:13px}
+.gs-section2 .gs-sld-wrap .gs-sld .gs-sld-con li img{display:block;margin:0 auto;width:1100px;height:900px}
+.gs-section2 .gs-sld-wrap .gs-sld .gs-sld-con li .infos{display:none}
+.gs-section2 .gs-sld-wrap .gs-sld .gs-sld-nav{position:absolute;left:0;bottom:0;padding-top:30px;width:100%;height:70px;text-align:center;font-size:0}
 .gs-section2 .gs-sld-wrap .gs-sld .gs-sld-nav li{cursor:pointer;display:inline-block;margin:0 6px;*display:inline;width:16px;height:16px;border:2px solid #414141;border-radius:20px}
 .gs-section2 .gs-sld-wrap .gs-sld .gs-sld-nav li.cur{background-color:#737373;border-color:#737373}
+.video-btn{position:relative;cursor:pointer;display:block;width:1100px;height:576px}
+.video-btn i{position:absolute;left:422px;top:225px;display:block;width:257px;height:257px;background:url(//image.gamersky.com/webimg13/zt/pressconference/2018wy520/vd-play.png) 0 0 no-repeat}
+.video-btn:hover i{background-position:-260px 0}
