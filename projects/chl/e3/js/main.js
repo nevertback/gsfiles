@@ -178,8 +178,12 @@
                 function initLiveStart() {
                     getData(pageSize , pageNow , pageSort , function (res) {
                         totalCount = res.total;
-                        $list.html(createListDom(res.result));
-                        moreBtn();
+                        if(res.result.length<1){
+                            $list.html('<div style="height: 1rem;line-height: 1rem;font-size: 0.24rem;color:#888;text-align: center;border-bottom: 1px solid #f5f5f5;">直播尚未开始</div>');
+                        }else{
+                            $list.html(createListDom(res.result));
+                            moreBtn();
+                        }
                     });
                 }
                 function sortBtn(){
@@ -305,11 +309,17 @@
                                 isLoading = false;
                                 totalPage = data.totalPages;
                                 var liHtml = data.body;
-                                $news.append(liHtml);
-                                $moreBtn.removeClass('loading').html('查看更多资讯');
-                                $(".cy_comment").cycm();
-                                if(initPage === totalPage){
-                                    $moreBtn.addClass('loaded').html('全部加载完成');
+                                if(data.body.indexOf('没有任何记录')>0 && initPage === 1){
+                                    liHtml = '<li style="text-align: center;line-height: 1.4rem;font-size: 0.24rem;color:#888;">没有任何记录</li>';
+                                    $news.append(liHtml);
+                                    $moreBtn.hide();
+                                }else{
+                                    $news.append(liHtml);
+                                    $moreBtn.removeClass('loading').html('查看更多资讯');
+                                    $(".cy_comment").cycm();
+                                    if(initPage === totalPage){
+                                        $moreBtn.addClass('loaded').html('全部加载完成');
+                                    }
                                 }
                             }
                         }
