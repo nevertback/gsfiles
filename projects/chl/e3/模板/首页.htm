@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="gs-e3-html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>游民星空E3 2018专题 海量现场报道一网打尽</title>
+    <meta name="keywords" content="E3 2018,E3,E3 2018游戏大展,E3游民,E3手机版,E3WAP" />
+    <meta name="description" content="E3 2018年游戏大展游民星空中文专题站，全面、深入、实时跟踪E3动态，报道PC及PS4、Xbox One主机的相关消息，以及众多游戏大作最新情报。">
+    <link rel="stylesheet" href="//j.gamersky.com/css/??g/swiper.min.css,wap/css/new/ymwap-main.css,wap/css/new/oldstyle.css,wap/css/ku.new.2017.css,wap/zq/css/wap.zq.min.css">
+    <link rel="stylesheet" href="//j.gamersky.com/zt/e3/2018/wap/style.min.css">
+    <script src="//j.gamersky.com/g/jquery-1.8.3.js"></script>
+    <script src="//j.gamersky.com/g/touch-0.2.14.min.js"></script>
+    <script>
+        !function(a){function c(){var b=a(window).width();if(b>720){b=720};a("html").css({"font-size":b/7.2+"px"}).addClass('gsRem720')}var d=navigator.userAgent;1==(navigator.appVersion,-1<d.indexOf("Android")||-1<d.indexOf("Linux"))?(a("html").removeClass("ymw-iOsWap"),a("html").addClass("ymw-androidWap")):(a("html").removeClass("ymw-androidWap"),a("html").addClass("ymw-iOsWap"));c();a(window).resize(c)}(jQuery);
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?7b87e8814f59adf402c97e19b3b2a9e2";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        var notag;
+    </script>
+</head>
+<body>
+<div class="mainArea layoutWithRem">
+    <div class="gs-e3-page gs-e3-page-index gsE3Page" data-pos="Index">
+        <div class="area-top">
+            <div class="area-nav">
+                <nav class="gsE3Nav">
+                    <a class="gsE3NavIndex" href="//wap.gamersky.com/e3/news/">首页</a>
+                    <a class="gsE3NavLive" href="//wap.gamersky.com/e3/live/">游民看E3</a>
+                    <a class="gsE3NavBriefing" href="//wap.gamersky.com/e3/briefing/">发布会</a>
+                </nav>
+            </div>
+            <div class="area-swp-top">
+                <div class="swiper-container swp-top gsE3SwpTop">
+                    <div class="swiper-wrapper">
+                        {PE.Area id="E3wap-2018-幻灯" /}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gs-e3-sec">
+            <div class="title-lev1">新闻资讯</div>
+            <div class="gs-e3-list-pictxt gsE3MoreArea" data-specialid="1682" data-isspecialid="true" data-templatekey="e3news" data-page="1">
+                <ul class="gsE3MoreList">
+                    {PE.Label id="内容带图片的信息列表数据源" sourceId="newlist" bindStyle="新闻式" models="1" bindModel="1" outputQty="10" nodes="0" specials="1682" itemListOrderType="3" usePage="true" /}
+                    {PE.Repeat id="newlist" vtl="true"}
+                    <li>
+                        ${WapArticlePic}
+                        <h5>${Title}</h5>
+                        <p><time>${UpdateTime}</time><span class="pls cy_comment" data-isconret="true" data-sid="${ArticleID}"></span></p>
+                        <a href="${WapArticleUrl}"></a>
+                    </li>
+                    {/PE.Repeat}
+                </ul>
+                <a class="gs-e3-btn-more gsE3More">查看更多资讯</a>
+            </div>
+        </div>
+        {PE.Area id="E3wap-2018-热门大作" /}
+        {PE.Area id="E3wap-2018-重磅新作" /}
+    </div>
+    <div class="gs-e3-club">
+        <div id="QZCMT" clubId="49" topicId="" topic="" data-pageIndex="1" data-scale="720"></div>
+    </div>
+    <span id="countn" generalId="1057007" style="display:none;"></span>
+    <script src="//j.gamersky.com/g/swiper-3.3.1.jquery.min.js"></script>
+    <script src="//j.gamersky.com/wap/js/new/gamersky.mobile.v4.min.js"></script>
+    <script src="//j.gamersky.com/js/??shouyou/z/js/booklayer.js,wap/js/new/ymw.others.2017.js,wap/zq/js/wap.zq.js"></script>
+    <script src="//j.gamersky.com/zt/e3/2018/wap/main.js"></script>
+    <div style="display:none">
+        <script>
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdcb5060fba0123ff56d253331f28db6a' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <!--临时清掉i站登录cookie-->
+        <script src="//i.gamersky.com/js/removeCookie.js"></script>
+        <!--临时清掉i站登录cookie-->
+    </div>
+</div>
+<script src="//wap.gamersky.com/autoinc/allsite/allsite_nav_login_js.htm"></script>
+</body>
+</html>

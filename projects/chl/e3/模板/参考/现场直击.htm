@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="format-detection" content="telephone=no">
+    <title>游民星空E3 2017专题 海量现场报道一网打尽</title>
+    <meta name="keywords" content="E3 2017,E3,E3 2017游戏大展,E3游民,E3手机版,E3WAP" />
+    <meta name="description" content="E3 2017年游戏大展游民星空中文专题站，全面、深入、实时跟踪E3动态，报道PC及PS4、Xbox One主机的相关消息，以及众多游戏大作最新情报。">
+    <script src="//j.gamersky.com/g/jquery-1.8.3.js"></script>
+    <link rel="stylesheet" href="//j.gamersky.com/g/swiper.min.css">
+    <link rel="stylesheet" href="//j.gamersky.com/wap/css/new/ymwap-main.css">
+    <link rel="stylesheet" href="//j.gamersky.com/www/zhibo/css/style.css">
+    <link rel="stylesheet" href="//j.gamersky.com/zt/e3/2017/css/wapstyle.css">
+</head>
+<body>
+
+<header class="ymw-header">
+    <nav class="ymw-meun-pop ymwMeunPop">
+        <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="/news/">资讯</a></li>
+            <li><a href="/ku/">游戏</a></li>
+            <li><a href="/gl/">攻略</a></li>
+            <li><a href="/donghua/">动画</a></li>
+            <li><a href="/shouyou/" class="ymwSyLink">手游</a></li>
+        </ul>
+        <form class="ymw-search-form" id="ymwSearchIn">
+            <input class="ymw-search-ipt" type="search" value="输入搜索内容">
+            <input type="button" class="ymw-search-btn ymwSearchBtn">
+        </form>
+    </nav>
+    <aside>
+        <a href="/" class="ymw-logo"><img src="//image.gamersky.com/webimg13/wap/2017/0515/h-logo2017.png" alt=""></a>
+        <a href="javascript:;" class="ymw-meun ymwMeun"><i></i></a>
+        <a href="http://a.gamersky.com/app/wap.html" class="ymw-app">APP下载</a>
+    </aside>
+</header>
+
+<section class="ymw-tab-three">
+    <div id="loading">
+        <div id="loadingBar" class="loading-bar"></div>
+        <div id="loadingTxt" class="loading-txt">请稍后...</div>
+    </div>
+    <div class="top">
+        <div class="topbg"><img src="//image.gamersky.com/webimg13/zt/e3/2017/waptopbg.jpg"></div>
+        <div class="topnav">
+            <a href="http://wap.gamersky.com/e3/news/">综合资讯</a>
+            <a href="http://wap.gamersky.com/e3/live/" class="cur">游民看E3</a>
+            <a href="http://wap.gamersky.com/e3/briefing/">发布会</a>
+        </div>
+    </div>
+
+    <div class="mid">
+        <div class="ymlive_main">
+            <h4 class="ymw-title-lev2"><span>正在直播</span><a id="ymlivePx" class="ymlive_px_btn_wrap" data-txt="正序"><i class="ymlive_px_btn">倒序</i></a></h4>
+            {PE.Area id="E3全程直播" /}
+            <a class="ymlive_list_more" totalPage="0" data-click="false" data-txt="查看更多内容">查看更多内容</a>
+        </div>
+        <script>
+            if($("#liveList").length==0){$(".ymlive_main").remove();}
+        </script>
+        <div class="newlist">
+            <ul class="ymw-list-tp1 speciallist" data-specialId="1052" data-isspecialId="true" data-templatekey="e3hot" data-page="1">
+                {PE.Label id="内容带图片的信息列表数据源" sourceId="newlist" bindStyle="新闻式" models="1" bindModel="1" outputQty="10" nodes="0" specials="1052" itemListOrderType="3" usePage="true" /}
+                {PE.Repeat id="newlist" vtl="true"}
+                <li>
+                    ${WapArticlePic}
+                    <h5>${Title}</h5>
+                    <p><time>${UpdateTime}</time><span class="pls cy_comment" data-isconret="true" data-sid="${ArticleID}"></span></p>
+                    <a href="${WapArticleUrl}"></a>
+                </li>
+                {/PE.Repeat}
+            </ul>
+            <a href="javascript:;" class="ymw-more ymw-more-b ymw-more-bg loadmore"><i></i><span>点击加载更多资讯</span></a>
+        </div>
+    </div>
+
+    <div class="ymw-bdshare" style="margin-bottom:26px;">
+        <div id="bdshare" class="bdshare bdshare_t bds_tools get-codes-bdshare bdsharebuttonbox" data-tag="share_1">
+            <a class="bds_tsina" data-cmd="tsina"></a>
+            <a class="bds_sqq" data-cmd="sqq"></a>
+            <a class="bds_qzone" data-cmd="qzone"></a>
+            <span class="bds_more" data-cmd="more"></span>
+            <a class="shareCount" data-cmd="count">0</a>
+        </div>
+        <script>
+            urlTmp = window.location;
+            urlTmpOri = urlTmp.origin;
+            urlTmpPath = urlTmp.pathname;
+            urlTmpCale = urlTmpOri + urlTmpPath.replace(/_\d*/, '');
+            thisPageUrl = urlTmpCale;
+            window._bd_share_config = {common: {bdUrl: thisPageUrl},share: [{"bdSize": 16}]}
+            with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+        </script>
+    </div>
+
+    <!--底部版权-->
+    <footer class="ymw-footer">
+        <a href="/" class="ymw-logo-f" target="_blank"><img src="//image.gamersky.com/webimg13/wap/2016/f-logo.png" alt="游民星空"></a>
+        <p>Gamersky.com All rights reserved.
+            <a href="http://e3.gamersky.com/Special/e3live/" class="ymw-btns ymw-btns-pc">
+                <img src="//image.gamersky.com/webimg13/wap/2016/f-pc.png" alt="">
+                <span>电脑版</span>
+            </a>
+            <a href="http://a.gamersky.com/app/" class="ymw-btns ymw-btns-app">
+                <img src="//image.gamersky.com/webimg13/wap/2016/f-app.png" alt="">
+                <span>客户端</span>
+            </a>
+    </footer>
+</section>
+<span id="wapcountn"  generalId="912619" style="display:none;"></span>
+
+<script src="//j.gamersky.com/wap/js/new/gamersky.mobile.v4.min.js"></script>
+<script src="//j.gamersky.com/www/zhibo/js/livefunc.js"></script>
+<script src="//j.gamersky.com/www/zhibo/js/livescript.js"></script>
+<script src="//j.gamersky.com/zt/e3/2017/js/getlist.data.js"></script>
+
+<div style="display:none">
+    <script>
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdcb5060fba0123ff56d253331f28db6a' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <!--临时清掉i站登录cookie-->
+    <script src="http://i.gamersky.com/js/removeCookie.js"></script>
+    <!--临时清掉i站登录cookie-->
+</div>
+
+</body>
+</html>

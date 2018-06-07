@@ -1,0 +1,80 @@
+@@include('part/e3-head.html',{
+"title":"发布会|游民星空"
+})
+<!--参数说明
+Ea：?bf=ea
+Microsoft：?bf=ms
+Bethesda：?bf=bs
+Pc gamer：?bf=pg
+Ubisoft：?bf=ub
+Playstation：?bf=ps
+Nintendo：?bf=nd
+-->
+<style>
+    body{
+        background-color: #fff;
+    }
+</style>
+<div class="gs-e3-page gs-e3-page-briefing gsE3Page" data-pos="Briefing">
+    <div class="area-top">
+        @@include('part/e3-nav.html')
+    </div>
+    <div class="logo-navs-area">
+        <div class="clearfix logo-navs logo-navs-row">
+            <a class="logo-navs-ea logoNavs" data-pgkey="ea" href="?bf=ea">
+                <span>EA发布会</span>
+            </a>
+            <i></i>
+            <a class="logo-navs-ms logoNavs" data-pgkey="ms" href="?bf=ms">
+                <span>6月11日 02:00</span>
+            </a>
+            <i></i>
+            <a class="logo-navs-bs logoNavs" data-pgkey="bs" href="?bf=bs">
+                <span>6月11日 02:00</span>
+            </a>
+            <i></i>
+            <a class="logo-navs-pg logoNavs" data-pgkey="pg" href="?bf=pg">
+                <span>6月11日 02:00</span>
+            </a>
+        </div>
+        <div class="logo-navs-line"></div>
+        <div class="clearfix logo-navs logo-navs-row">
+            <a class="logo-navs-ub logoNavs" data-pgkey="ub" href="?bf=ub">
+                <span>6月11日 02:00</span>
+            </a>
+            <i></i>
+            <a class="logo-navs-ps logoNavs" data-pgkey="ps" href="?bf=ps">
+                <span>6月11日 02:00</span>
+            </a>
+            <i></i>
+            <a class="logo-navs-nd logoNavs" data-pgkey="nd" href="?bf=nd">
+                <span>6月11日 02:00</span>
+            </a>
+            <i></i>
+        </div>
+    </div>
+    <div class="gs-e3-bf-tab gsE3Tab">
+        <div class="gs-e3-bf-tab-nav gsE3TabNav">
+            <a class="cur">新闻资讯</a>
+            <a>图文直播</a>
+        </div>
+        <div class="gs-e3-bf-tab-con gsE3TabItem cur">
+            <div class="gs-e3-list-pictxt gsE3NewsArea">
+                <ul class="gsE3News"></ul>
+                <a class="gs-e3-btn-more gsE3MoreBrief loading">加载中</a>
+            </div>
+        </div>
+        <div class="gs-e3-bf-tab-con gsE3TabItem">
+            <div class="live-stream" id="liveStream">
+                <div class="live-stream-top liveStreamTop"></div>
+                <div class="live-stream-list-area liveStreamListArea">
+                    <div class="live-stream-list liveStreamList"></div>
+                </div>
+                <div class="live-stream-comment liveStreamComment"></div>
+                <a class="live-stream-sort liveStreamSort desc"><i>倒序</i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<span id="countn" generalId="1057007" style="display:none;"></span>
+@@include('part/e3-foot.html')
