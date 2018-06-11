@@ -44,9 +44,13 @@
 
         },
         BriefingInit:function(){
-            var _this = this,bfSel = _this.getQueryString('bf');
+            var _this = this,bfSel = _this.getQueryString('bf'),pgNow = $('.gsE3LogoNav').data('now');
             if(bfSel === null){
-                bfSel = 'ea';
+                if(typeof pgNow !== "undefined" && pgNow !== ''){
+                    bfSel = pgNow;
+                }else{
+                    bfSel = 'ea';
+                }
             }
             var LsData = window.LiveStreamData;
             function setNav(){

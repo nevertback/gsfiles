@@ -1,0 +1,29 @@
+@import 'comm';
+@import 'icon';
+@import 'components';
+html,body{
+    min-height:100%;
+    background-color: #f2f2f3;
+}
+body{
+    font-size: 0.2rem;
+}
+a{
+    text-decoration: none;
+}
+
+.h5-main{
+    padding: 0 0 0.97rem;
+    margin: 0 auto;
+    width: 7.2rem;
+    &.h5-main-index,.h5-main-gift{
+        padding-top: 0.8rem;
+    }
+}
+.h5-gift{}
+/*
+ * z-index
+ */
+.h5-head,.h5-foot{
+    z-index: 190;
+}
