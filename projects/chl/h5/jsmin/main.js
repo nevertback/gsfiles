@@ -3,6 +3,10 @@
         WxCode:'//image.gamersky.com/webimg13/wap/h5/gamecenter.svg'
     };
     var h5Fnc = {
+        isInIframe:function(){
+            // true在iframe中 | false 没在iframe中
+            return window.top !== window.self;
+        },
         createLast:function(dt){
             var vDom = '',$last = $('#h5GameLast');
             vDom += '<h4 class="h5-title-lev1"><i></i>最近玩过</h4>';
@@ -10,7 +14,7 @@
             $.each(dt,function (i,item) {
                 if(i < 4){
                     vDom += '<li>';
-                    vDom += '<a target="_blank" href="//h5.gamersky.com/z/'+item.file+'/m.shtml">';
+                    vDom += '<a target="_blank" href="//h5.gamersky.com/game/'+item.file+'/">';
                     vDom += '<img src="//image.gamersky.com/webimg13/web/h5/icon/'+item.file+'.jpg" alt="'+item.name+'">';
                     vDom += '<span>'+item.name+'</span>';
                     vDom += '</a>';
@@ -29,7 +33,8 @@
         },
         login:function(){
             var _this = this,$headLogin = $('.h5HeadLogin'),btnDom = '';
-            btnDom += '<a class="h5-btn h5-btn-login h5Login">登录</a><a class="h5-btn h5-btn-register" href="http://i.gamersky.com/user/register/">注册</a>';
+            btnDom += '<a class="h5-btn h5-btn-login h5Login">登录</a>';
+            btnDom += '<a target="_blank" class="h5-btn h5-btn-register" href="http://i.gamersky.com/user/register/">注册</a>';
             $headLogin.html(btnDom);
             $(document).on('click','.h5Login',function () {
                 $(".gsZpPopLoginClose").show();
@@ -41,7 +46,7 @@
             })
         },
         postMsg:function(str){
-            window.top !== window.self && window.parent.postMessage(JSON.stringify({
+            this.isInIframe() && window.parent.postMessage(JSON.stringify({
                 cmd: str
             }), "*");
         },
