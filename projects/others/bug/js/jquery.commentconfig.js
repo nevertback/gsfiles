@@ -476,7 +476,3 @@ $(document).ready(function () {
     //    }
     //});
 });
-
-(function($){
-    //other
-})(jQuery);

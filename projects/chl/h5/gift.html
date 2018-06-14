@@ -10,7 +10,8 @@
     <title>gift</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="stylesheet" href="//j.gamersky.com/g/swiper.min.css">
+    <!-- 创建时间：20180612 设计：Hiei133 前端：MrrrTian -->
+<link rel="stylesheet" href="//j.gamersky.com/g/swiper.min.css">
 <link rel="stylesheet" href="//j.gamersky.com/wap/css/new/ymwap-main.css">
 <link rel="stylesheet" href="//at.alicdn.com/t/font_699899_37ks3dxo8icz0k9.css">
 <link rel="stylesheet" href="css/style.min.css">
@@ -25,20 +26,96 @@
         s.parentNode.insertBefore(hm, s);
     })();
     var notag;
+    if ( window.top == window.self && !/AppleWebKit.*Mobile/i.test(navigator.userAgent) && !/micromessenger/i.test(navigator.userAgent.toLowerCase()) && (!/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent)) && (!/(ipod|iphone|android|coolpad|mmp|smartphone|midp|wap|xoom|symbian|j2me|blackberry|win ce)/i.test(navigator.userAgent)) ) {
+        window.location.href = "pc.html";
+    }
 </script>
 </head>
 <body>
 <div class="h5-main h5-main-gift h5Main" data-pos="gift">
-    <div class="h5-gift h5Gift"></div>
+    <div class="h5-gift" id="h5GiftBox"></div>
 </div>
+<script>
+    window.h5GiftData = [
+        {
+            title:'一骑学院',
+            icon:'//image.gamersky.com/webimg13/web/h5/icon/yiqixueyuan.jpg',
+            gifts:[
+                {
+                    name:'一骑学院H5新手卡',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'105555'
+                }
+            ]
+        },
+        {
+            title:'葫芦娃',
+            icon:'//image.gamersky.com/webimg13/web/h5/icon/huluwa.jpg',
+            gifts:[
+                {
+                    name:'葫芦娃新手卡',
+                    des:'礼包内容：灵魂宝石×3，祝福石×100',
+                    psw:'102241'
+                },
+                {
+                    name:'葫芦娃平台专属礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'234214'
+                },
+                {
+                    name:'葫芦娃超大礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'5235'
+                },
+                {
+                    name:'葫芦娃平台专属礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'3214'
+                },
+                {
+                    name:'葫芦娃超大礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'5474'
+                },
+                {
+                    name:'葫芦娃平台专属礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'954646'
+                },
+                {
+                    name:'葫芦娃超大礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'46346'
+                }
+            ]
+        },
+        {
+            title:'皇上吉祥2',
+            icon:'//image.gamersky.com/webimg13/web/h5/icon/huangshangjixiang2.jpg',
+            gifts:[
+                {
+                    name:'皇上吉祥2新手卡',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'4123'
+                },
+                {
+                    name:'皇上吉祥2平台专属礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'68648'
+                }
+            ]
+        }
+    ];
+</script>
 <div class="h5-head">
-    <a target="_blank" href="//wap.gamersky.com/" class="h5-logo"></a>
+    <a target="_blank" href="//wap.gamersky.com/" class="h5-logo"><img src="ztimages/logo.svg" alt="logo"></a>
     <div class="h5-head-aside h5HeadLogin"></div>
 </div>
 <div class="h5-foot">
     <nav>
         <a class="h5Nav h5Nav-index" href="./"><i class="gs-h5-icon gs-h5-icon-shouye"></i><span>首页</span></a>
-        <a class="h5Nav h5Nav-gift" href="./gift.html"><i class="gs-h5-icon gs-h5-icon-libao"></i><span>礼包</span></a>
+        <!--加礼包默认6.2rem-->
+        <a class="h5Nav h5Nav-gift none" href="./gift.html"><i class="gs-h5-icon gs-h5-icon-libao"></i><span>敬请期待</span></a>
         <a class="h5Nav h5Nav-personal" href="./personal.html"><i class="gs-h5-icon gs-h5-icon-gerenzhongxin"></i><span>个人中心</span></a>
     </nav>
 </div>
@@ -46,7 +123,7 @@
 <script src="//j.gamersky.com/g/swiper-3.3.1.jquery.min.js"></script>
 <script src="//j.gamersky.com/wap/js/new/gamersky.mobile.v4.min.js"></script>
 <script src="//j.gamersky.com/wap/js/new/ymw.others.2017.js"></script>
-<script src="http://wap.gamersky.com/autoinc/allsite/allsite_nav_login_js.htm"></script>
-<script src="jsmin/main.min.js"></script>
+<script src="//wap.gamersky.com/autoinc/allsite/allsite_nav_login_js.htm"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

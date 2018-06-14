@@ -14,9 +14,82 @@
 </head>
 <body>
 <div class="h5-main h5-main-gift h5Main" data-pos="gift">
-    <div class="h5-gift h5Gift"></div>
+    <div class="h5-gift" id="h5GiftBox"></div>
 </div>
-@@include('inc/h5-fixed.html')
+<script>
+    window.h5GiftData = [
+        {
+            title:'一骑学院',
+            icon:'//image.gamersky.com/webimg13/web/h5/icon/yiqixueyuan.jpg',
+            gifts:[
+                {
+                    name:'一骑学院H5新手卡',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'105555'
+                }
+            ]
+        },
+        {
+            title:'葫芦娃',
+            icon:'//image.gamersky.com/webimg13/web/h5/icon/huluwa.jpg',
+            gifts:[
+                {
+                    name:'葫芦娃新手卡',
+                    des:'礼包内容：灵魂宝石×3，祝福石×100',
+                    psw:'102241'
+                },
+                {
+                    name:'葫芦娃平台专属礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'234214'
+                },
+                {
+                    name:'葫芦娃超大礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'5235'
+                },
+                {
+                    name:'葫芦娃平台专属礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'3214'
+                },
+                {
+                    name:'葫芦娃超大礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'5474'
+                },
+                {
+                    name:'葫芦娃平台专属礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'954646'
+                },
+                {
+                    name:'葫芦娃超大礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'46346'
+                }
+            ]
+        },
+        {
+            title:'皇上吉祥2',
+            icon:'//image.gamersky.com/webimg13/web/h5/icon/huangshangjixiang2.jpg',
+            gifts:[
+                {
+                    name:'皇上吉祥2新手卡',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'4123'
+                },
+                {
+                    name:'皇上吉祥2平台专属礼包',
+                    des:'礼包内容：灵魂宝石×3，祝福石×10，玛雅宝石×1，2倍经验药水×1，钻石×50',
+                    psw:'68648'
+                }
+            ]
+        }
+    ];
+</script>
+@@include('inc/h5-fixed-top.html')
+@@include('inc/h5-fixed-bot.html')
 @@include('inc/h5-foot.html')
 </body>
 </html>

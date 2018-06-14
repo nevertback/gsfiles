@@ -1,6 +1,16 @@
 @import 'comm';
 @import 'icon';
 @import 'components';
+html{
+    position: relative;
+    -ms-overflow-style:none;
+    overflow:-moz-scrollbars-none;
+    ::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
 html,body{
     min-height:100%;
     background-color: #f2f2f3;
@@ -10,20 +20,96 @@ body{
 }
 a{
     text-decoration: none;
+    cursor: pointer;
+}
+.none{
+    display: none !important;
 }
 
 .h5-main{
     padding: 0 0 0.97rem;
     margin: 0 auto;
     width: 7.2rem;
-    &.h5-main-index,.h5-main-gift{
+    &.h5-main-index,&.h5-main-gift{
         padding-top: 0.8rem;
     }
 }
-.h5-gift{}
+.h5-main-personal{
+    padding-bottom: 2.7rem;
+}
+.h5-gifts-pop-mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.h5-gifts-pop{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -2.8rem;
+    margin-top: -3.3rem;
+    width: 5.6rem;
+    height: 6.6rem;
+    background-color: #fff;
+    box-shadow: 0 0 0.2rem rgba(0,0,0,0.3);
+    border-radius: 0.15rem;
+    overflow: hidden;
+    h5{
+        padding: 0.6rem 0 0.3rem;
+        font-size: 0.4rem;
+        color: #000;
+        text-align: center;
+    }
+    .h5-gifts-pop-svg{
+        display: block;
+        margin: 0 auto 0.24rem;
+        width: 2.72rem;
+        height: 2.72rem;
+    }
+    p{
+        line-height: 0.32rem;
+        font-size: 0.2rem;
+        color: #888;
+        text-align: center;
+    }
+    span{
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        font-size: 0.4rem;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        background-color: #ed1f1f;
+    }
+    .h5-gifts-pop-close{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0.72rem;
+        height: 0.72rem;
+        background: url(../ztimages/close.png) 0 0 no-repeat;
+        background-size: 100%;
+    }
+}
+.h5-section-game-last{
+    display: none;
+    &.cur{
+        display: block;
+    }
+}
 /*
  * z-index
  */
-.h5-head,.h5-foot{
-    z-index: 190;
-}
+.h5-personal-pop{z-index: 180;}
+.h5-head,.h5-foot{z-index: 190;}
+.h5-gifts-pop-mask{z-index: 210;}
+.h5-gifts-pop{z-index: 211;}

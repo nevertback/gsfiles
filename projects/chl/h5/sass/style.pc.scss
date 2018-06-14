@@ -1,0 +1,178 @@
+/*
+ * 页游pc样式
+ */
+$basewidth:1100px;
+html,body{
+    min-width:1280px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
+h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
+a{text-decoration: none;cursor: pointer;}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after{display: table;content: " ";}
+.clearfix:after,
+.container:after{clear: both;}
+.container{margin-right: auto;margin-left: auto;width: $basewidth;}
+/*
+ * ie
+ */
+.lb-ie-pop-mask{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(//image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;
+    z-index: 11000;
+}
+.lb-ie-pop{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -301px;
+    margin-top: -190px;
+    width: 602px;
+    height: 380px;
+    z-index: 11010;
+    .lb-ie-bg{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .lb-ie-code{
+        display: block;
+        position: absolute;
+        left: 420px;
+        top: 198px;
+        width: 130px;
+        height: 130px;
+    }
+    .lb-ie-close{
+        position: absolute;
+        top: 10px;
+        right: -40px;
+        width: 30px;
+        height: 30px;
+        background: url(../ztimages/lb-ie-close.png) 0 0 no-repeat;
+        &:hover{
+            background-position: 0 -30px;
+        }
+    }
+}
+/*
+ * 底部
+ */
+.h5-pc-bot{
+    width:100%; min-width:$basewidth;
+    height: 120px;
+    font-size: 14px;
+    background-color: #141414;
+    .Copyright {
+        margin:0 auto;padding-top:30px;
+        width:$basewidth;height:auto;line-height:30px;
+        text-align:center; color:#454545;
+        a{
+            margin:0 5px; color:#454545;
+            &:hover {color:#666;}
+        }
+    }
+}
+/*
+ * 头部
+ */
+.h5-pc-top{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../ztimages/pc-bg.jpg) center 0 no-repeat;
+    background-size: cover;
+    .h5-pc-head{
+        position: relative;
+        height: 136px;
+        border-bottom: 2px solid #9b2602;
+        background: url(../ztimages/pc-head-bg.jpg) center 36px no-repeat;
+        .container{
+            position: relative;
+            padding-top: 24px;
+        }
+        .logo{
+            display: block;
+            width: 160px;
+            height: 53px;
+            background: url(//image.gamersky.com/webimg15/logo/chang/160x53.png) 0 0 no-repeat;
+        }
+        .h5-pc-head-notice{
+            display: block;
+            position: absolute;
+            top: 17px;
+            right: 0;
+        }
+    }
+}
+/*
+ * 全站导航
+ */
+#QZnav{
+    min-width: 1100px;
+    background: #373737 url(//image.gamersky.com/webimg15/qznav.jpg) center 0 no-repeat;
+    .topbar {
+        width: 1100px
+    }
+    i {
+        color: #595959
+    }
+    .alik {
+        color: #ccc
+    }
+    .alik:hover,.cur .alik {
+        color: #fff
+    }
+    .QZ-nav {
+        display: none
+    }
+}
+.h5-pc-view{
+    position: absolute;
+    left: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    border-radius: 28px;
+    $vw:496/100%;
+    $vh:944/100%;
+    .h5-pc-view-code{
+        position: absolute;
+        left: -414/$vw;
+        top: 163/$vh;
+        width: 1305/$vw;
+        height: 615/$vh;
+        background: url(../ztimages/pc-code.png) 0 0 no-repeat;
+        background-size: cover;
+    }
+    .h5-pc-view-bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../ztimages/pc-phone-bg.png) 0 0 no-repeat;
+        background-size: cover;
+    }
+    .h5-pc-view-iframe{
+        position: relative;
+        display: block;
+        margin: 48/$vw auto 0;
+        width: 462/$vw;
+        height:848/$vh;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        border-radius: 8px;
+        background: url(http://image.gamersky.com/webimg15/loading.gif) center center no-repeat;
+        background-size: 30px;
+    }
+}

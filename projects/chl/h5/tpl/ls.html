@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>local storage</title>
+    <script src="//j.gamersky.com/g/jquery-1.8.3.js"></script>
+</head>
+<body>
+<script>
+    (function () {
+        var lsSet = {
+            writeStorage:function(dt){
+                var wls = window.localStorage,
+                    tmpArr;
+                tmpArr = [
+                    {"file":"xinxianjianqixiazhuan","name":"新仙剑奇侠传"},
+                    {"file":"fanrenfeixian","name":"凡人飞仙"}
+                    ];
+                wls.setItem('h5last'+dt.userid,JSON.stringify(tmpArr));
+            },
+            isLogin:function(){
+                var _this = this;
+                $.ajax({
+                    type: "GET", dataType: "jsonp", url: "//i.gamersky.com/api/logincheck",
+                    success: function (responseJson) {
+                        if (responseJson.status === "ok") {
+                            _this.writeStorage(responseJson);
+                        }
+                    }
+                });
+            },
+            init:function () {
+                this.isLogin();
+            }
+        };
+        if(!window.localStorage){
+            return false;
+        }else{
+            lsSet.init();
+        }
+    })();
+</script>
+</body>
+</html>
