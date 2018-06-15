@@ -58,7 +58,7 @@
 .h5-gift .h5-gift-item .h5gi-top img{display:block;margin-right:.26rem;width:.8rem;min-width:.8rem;height:.8rem}
 .h5-gift .h5-gift-item .h5gi-top h4{display:block;height:.8rem;line-height:.8rem;font-size:.32rem;color:#333;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
 .h5-gift .h5-gift-item .h5gi-more{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-box-align:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;height:.8rem;border-top:1px solid #e2e2e2;font-size:.24rem;color:#888;text-align:center}
-.h5-gift .h5-gift-item .h5gi-more i{display:block;width:.22rem;height:.13rem;background:url(../ztimages/arr-down.png) 0 0 no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%}
+.h5-gift .h5-gift-item .h5gi-more i{display:block;width:.22rem;height:.13rem;background:url(//image.gamersky.com/webimg15/web/h5/arr-down.png) 0 0 no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%}
 .h5-gift .h5-gift-item .h5gi-more span{display:none}
 .h5-gift .h5-gift-item .h5gi-more .h5gi-more-down{display:block}
 .h5-gift .h5-gift-item .h5gi-gifts .h5gi-li{display:none;position:relative;padding:.25rem 0;border-top:1px solid #e2e2e2}
@@ -68,17 +68,17 @@
 .h5-gift .h5-gift-item .h5gi-gifts .h5gi-li .h5gi-psw{display:block;position:absolute;right:0;top:.25rem;width:1.2rem;height:.48rem;line-height:.48rem;font-size:.24rem;color:#ed1f1f;text-align:center;border:1px solid #ed1f1f;border-radius:.07rem;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 .h5-gift .h5-gift-item .h5gi-gifts .h5gi-li:first-child{display:block;border-top:none}
 .h5-gift .h5-gift-item .h5gi-gifts.cur .h5gi-li{display:block}
-.h5-gift .h5-gift-item .h5gi-gifts.cur .h5gi-more i{background-image:url(../ztimages/arr-up.png)}
+.h5-gift .h5-gift-item .h5gi-gifts.cur .h5gi-more i{background-image:url(//image.gamersky.com/webimg15/web/h5/arr-up.png)}
 .h5-gift .h5-gift-item .h5gi-gifts.cur .h5gi-more .h5gi-more-down{display:none}
 .h5-gift .h5-gift-item .h5gi-gifts.cur .h5gi-more .h5gi-more-up{display:block}
-.h5-personal-top{position:relative;padding-top:.64rem;width:7.2rem;height:2.48rem;background:url(../ztimages/personal-bg.png) 0 0 no-repeat;-webkit-background-size:7.2rem auto;background-size:7.2rem auto}
+.h5-personal-top{position:relative;padding-top:.64rem;width:7.2rem;height:2.48rem;background:url(//image.gamersky.com/webimg15/web/h5/personal-bg.png) 0 0 no-repeat;-webkit-background-size:7.2rem auto;background-size:7.2rem auto}
 .h5-personal-top .h5-personal-top-face{display:block;margin:0 auto;width:1.28rem;height:1.28rem;border-radius:1.28rem}
 .h5-personal-top .h5-personal-top-name{padding:0 .24rem;height:.8rem;line-height:.8rem;font-size:.32rem;color:#333;font-weight:700;text-align:center;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
 .h5-personal-login{position:absolute;left:50%;bottom:1.4rem;margin-left:-3.36rem;width:6.72rem;height:.88rem;line-height:.88rem;background-color:#fff;border-radius:.08rem;font-size:.28rem;color:#333;text-align:center}
 .h5-personal-buttons{padding-top:.16rem}
-.h5-personal-buttons a{display:block;margin-bottom:.16rem;padding:0 .24rem;width:6.72rem;height:.88rem;line-height:.88rem;font-size:.28rem;color:#333;background:#fff url(../ztimages/arr-right.png) 6.84rem center no-repeat;-webkit-background-size:.12rem .22rem;background-size:.12rem .22rem}
+.h5-personal-buttons a{display:block;margin-bottom:.16rem;padding:0 .24rem;width:6.72rem;height:.88rem;line-height:.88rem;font-size:.28rem;color:#333;background:#fff url(//image.gamersky.com/webimg15/web/h5/arr-right.png) 6.84rem center no-repeat;-webkit-background-size:.12rem .22rem;background-size:.12rem .22rem}
 .h5-personal-pop{position:fixed;left:50%;top:0;margin-left:-3.6rem;width:7.2rem;height:100%;background-color:#fff;-webkit-transition:all .25s ease;transition:all .25s ease;visibility:hidden;opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}
-.h5-personal-pop .h5-personal-pop-close{position:absolute;top:0;left:.07rem;width:.88rem;height:.88rem;background:url(../ztimages/arr-back.png) 0 0 no-repeat;-webkit-background-size:100% 100%;background-size:100%}
+.h5-personal-pop .h5-personal-pop-close{position:absolute;top:0;left:.07rem;width:.88rem;height:.88rem;background:url(//image.gamersky.com/webimg15/web/h5/arr-back.png) 0 0 no-repeat;-webkit-background-size:100% 100%;background-size:100%}
 .h5-personal-pop .h5p-head{height:.88rem;line-height:.88rem;min-height:.88rem;font-size:.32rem;font-weight:700;text-align:center}
 .h5-personal-pop .h5p-foot{width:100%;height:.96rem;min-height:.96rem}
 .h5-personal-pop .h5-personal-pop-main{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:100%}
@@ -122,7 +122,7 @@ a{text-decoration:none;cursor:pointer}
 .h5-gifts-pop .h5-gifts-pop-svg{display:block;margin:0 auto .24rem;width:2.72rem;height:2.72rem}
 .h5-gifts-pop p{line-height:.32rem;font-size:.2rem;color:#888;text-align:center}
 .h5-gifts-pop span{display:block;position:absolute;left:0;bottom:0;width:100%;height:1.2rem;line-height:1.2rem;font-size:.4rem;color:#fff;text-align:center;font-weight:700;background-color:#ed1f1f}
-.h5-gifts-pop .h5-gifts-pop-close{display:block;position:absolute;right:0;top:0;width:.72rem;height:.72rem;background:url(../ztimages/close.png) 0 0 no-repeat;-webkit-background-size:100% 100%;background-size:100%}
+.h5-gifts-pop .h5-gifts-pop-close{display:block;position:absolute;right:0;top:0;width:.72rem;height:.72rem;background:url(//image.gamersky.com/webimg15/web/h5/close.png) 0 0 no-repeat;-webkit-background-size:100% 100%;background-size:100%}
 .h5-section-game-last{display:none}
 .h5-section-game-last.cur{display:block}
 .h5-personal-pop{z-index:180}

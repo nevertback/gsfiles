@@ -10,14 +10,14 @@ a{text-decoration:none;cursor:pointer}
 .lb-ie-pop{display:block;position:fixed;top:50%;left:50%;margin-left:-301px;margin-top:-190px;width:602px;height:380px;z-index:11010}
 .lb-ie-pop .lb-ie-bg{display:block;width:100%;height:100%}
 .lb-ie-pop .lb-ie-code{display:block;position:absolute;left:420px;top:198px;width:130px;height:130px}
-.lb-ie-pop .lb-ie-close{position:absolute;top:10px;right:-40px;width:30px;height:30px;background:url(../ztimages/lb-ie-close.png) 0 0 no-repeat}
+.lb-ie-pop .lb-ie-close{position:absolute;top:10px;right:-40px;width:30px;height:30px;background:url(//image.gamersky.com/webimg15/web/h5/lb-ie-close.png) 0 0 no-repeat}
 .lb-ie-pop .lb-ie-close:hover{background-position:0 -30px}
 .h5-pc-bot{width:100%;min-width:1100px;height:120px;font-size:14px;background-color:#141414}
 .h5-pc-bot .Copyright{margin:0 auto;padding-top:30px;width:1100px;height:auto;line-height:30px;text-align:center;color:#454545}
 .h5-pc-bot .Copyright a{margin:0 5px;color:#454545}
 .h5-pc-bot .Copyright a:hover{color:#666}
-.h5-pc-top{position:relative;width:100%;height:100%;background:url(../ztimages/pc-bg.jpg) center 0 no-repeat;-webkit-background-size:cover;background-size:cover}
-.h5-pc-top .h5-pc-head{position:relative;height:136px;border-bottom:2px solid #9b2602;background:url(../ztimages/pc-head-bg.jpg) center 36px no-repeat}
+.h5-pc-top{position:relative;width:100%;height:100%;background:url(//image.gamersky.com/webimg15/web/h5/pc-bg.jpg) center 0 no-repeat;-webkit-background-size:cover;background-size:cover}
+.h5-pc-top .h5-pc-head{position:relative;height:136px;border-bottom:2px solid #9b2602;background:url(//image.gamersky.com/webimg15/web/h5/pc-head-bg.jpg) center 36px no-repeat}
 .h5-pc-top .h5-pc-head .container{position:relative;padding-top:24px}
 .h5-pc-top .h5-pc-head .logo{display:block;width:160px;height:53px;background:url(//image.gamersky.com/webimg15/logo/chang/160x53.png) 0 0 no-repeat}
 .h5-pc-top .h5-pc-head .h5-pc-head-notice{display:block;position:absolute;top:17px;right:0}
@@ -28,6 +28,6 @@ a{text-decoration:none;cursor:pointer}
 #QZnav .alik:hover,#QZnav .cur .alik{color:#fff}
 #QZnav .QZ-nav{display:none}
 .h5-pc-view{position:absolute;left:50%;-webkit-box-shadow:0 2px 10px rgba(0,0,0,.8);box-shadow:0 2px 10px rgba(0,0,0,.8);border-radius:28px}
-.h5-pc-view .h5-pc-view-code{position:absolute;left:-83.46774%;top:17.26695%;width:263.10484%;height:65.14831%;background:url(../ztimages/pc-code.png) 0 0 no-repeat;-webkit-background-size:cover;background-size:cover}
-.h5-pc-view .h5-pc-view-bg{position:absolute;left:0;top:0;width:100%;height:100%;background:url(../ztimages/pc-phone-bg.png) 0 0 no-repeat;-webkit-background-size:cover;background-size:cover}
+.h5-pc-view .h5-pc-view-code{position:absolute;left:-83.46774%;top:17.26695%;width:263.10484%;height:65.14831%;background:url(//image.gamersky.com/webimg15/web/h5/pc-code.png) 0 0 no-repeat;-webkit-background-size:cover;background-size:cover}
+.h5-pc-view .h5-pc-view-bg{position:absolute;left:0;top:0;width:100%;height:100%;background:url(//image.gamersky.com/webimg15/web/h5/pc-phone-bg.png) 0 0 no-repeat;-webkit-background-size:cover;background-size:cover}
 .h5-pc-view .h5-pc-view-iframe{position:relative;display:block;margin:9.67742% auto 0;width:93.14516%;height:89.83051%;border:1px solid #ccc;overflow:hidden;border-radius:8px;background:url(http://image.gamersky.com/webimg15/loading.gif) center center no-repeat;-webkit-background-size:30px 30px;background-size:30px}

@@ -60,7 +60,7 @@ a{text-decoration: none;cursor: pointer;}
         right: -40px;
         width: 30px;
         height: 30px;
-        background: url(../ztimages/lb-ie-close.png) 0 0 no-repeat;
+        background: url(//image.gamersky.com/webimg15/web/h5/lb-ie-close.png) 0 0 no-repeat;
         &:hover{
             background-position: 0 -30px;
         }
@@ -91,13 +91,13 @@ a{text-decoration: none;cursor: pointer;}
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../ztimages/pc-bg.jpg) center 0 no-repeat;
+    background: url(//image.gamersky.com/webimg15/web/h5/pc-bg.jpg) center 0 no-repeat;
     background-size: cover;
     .h5-pc-head{
         position: relative;
         height: 136px;
         border-bottom: 2px solid #9b2602;
-        background: url(../ztimages/pc-head-bg.jpg) center 36px no-repeat;
+        background: url(//image.gamersky.com/webimg15/web/h5/pc-head-bg.jpg) center 36px no-repeat;
         .container{
             position: relative;
             padding-top: 24px;
@@ -151,7 +151,7 @@ a{text-decoration: none;cursor: pointer;}
         top: 163/$vh;
         width: 1305/$vw;
         height: 615/$vh;
-        background: url(../ztimages/pc-code.png) 0 0 no-repeat;
+        background: url(//image.gamersky.com/webimg15/web/h5/pc-code.png) 0 0 no-repeat;
         background-size: cover;
     }
     .h5-pc-view-bg{
@@ -160,7 +160,7 @@ a{text-decoration: none;cursor: pointer;}
         top: 0;
         width: 100%;
         height: 100%;
-        background: url(../ztimages/pc-phone-bg.png) 0 0 no-repeat;
+        background: url(//image.gamersky.com/webimg15/web/h5/pc-phone-bg.png) 0 0 no-repeat;
         background-size: cover;
     }
     .h5-pc-view-iframe{

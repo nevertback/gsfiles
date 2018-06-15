@@ -1,10 +1,10 @@
 (function () {
-    var wapUrl = 'index.html';
+    var wapUrl = '//h5.gamersky.com';
     var h5pc = {
         isLogin:function(){
             function addNotice(){
                 var $head = $('.h5PcHead');
-                $head.append('<img class="h5-pc-head-notice" src="ztimages/pc-wx.png" alt="notice">')
+                $head.append('<img class="h5-pc-head-notice" src="//image.gamersky.com/webimg15/web/h5/pc-wx.png" alt="notice">')
             }
             $.ajax({
                 type: "GET", dataType: "jsonp", url: "//i.gamersky.com/api/logincheck",
@@ -69,7 +69,7 @@
         init:function () {
             this.setTop();
             this.msg();
-            this.isLogin();
+            //this.isLogin();
         }
     };
     h5pc.init();
